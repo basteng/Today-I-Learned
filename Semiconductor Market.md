@@ -9,5 +9,5 @@
 这些数据凸显了经济不确定性对半导体行业的影响，产量下降暗示着未来可能面临的挑战。
 ![chip ASP](/picture/7008-17153534200259752.png)
 
-<https://seekingalpha.com/article/4692036-taiwan-semiconductor-tracking-a-trailing-edge-semiconductor-slowdown>
+[链接](https://seekingalpha.com/article/4692036-taiwan-semiconductor-tracking-a-trailing-edge-semiconductor-slowdown)
 
