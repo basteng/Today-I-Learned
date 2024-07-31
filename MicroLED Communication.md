@@ -23,3 +23,11 @@
 行业领先者已经展示了可行的高性能光互连，将光学 I/O 集成到产品设计中的未来道路清晰而有前景。
 
 <https://ayarlabs.com/blog/ai-and-optical-io/?utm_content=302247967&utm_medium=social&utm_source=linkedin&hss_channel=lcp-6627049>
+
+---
+# 2. Lizhenhao Paper
+
+《Bandwidth Analysis of High-Speed InGaN Micro-LEDs by an Equivalent Circuit Model》
+
+- 半导体二极管中的载流子复合通常用电路中的一对并联电阻和电容来表示[19]，[20]。在模型中，有源区内的复合用RRec-in和CRec-in表示。有源区外的复合用RRec-out和CRec-out表示，它来自于载流子泄漏、溢出或从有源区逃逸的复合。Rs表示微型LED的串联电阻，CP表示微型LED的寄生电容，RL表示测试链路中的50°标准阻抗。
+
