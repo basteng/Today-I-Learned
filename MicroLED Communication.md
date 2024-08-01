@@ -35,6 +35,16 @@
 
 《Bandwidth Analysis of High-Speed InGaN Micro-LEDs by an Equivalent Circuit Model》
 
+- 实验装置：带宽测试系统主要由矢量网络分析仪（Keysight P5004A，9 kHz - 20 GHz）、直流电源、偏置T、射频探头（Cascade ACP40-GSG-150）、Si-PIN光电探测器（Alphalas UPD-50，7.0 GHz）和低噪声放大器（Pasternack PE15A3269，10至6000 MHz，34 dB增益）组成。图2（d）的插图显示了光学设置和透镜类型的测量图。微型LED晶圆紧密贴合在导热性良好的铜夹具上，其温度由TEC温控装置加热和稳定，以实现高温测试。
+- Micro LED通信示，实验示意图
+![system](/picture/2024-08-01%20124219.png)
+
+- 偏置T，bias-T，示意图
+  
+![bias-T](/picture/BiasT_Banner_GIF_08-01-2023_OPTIMISED.webp)
+
+<https://blog.minicircuits.com/rf-microwave-bias-tee-basics/>
+
 - 半导体二极管中的载流子复合通常用电路中的一对并联电阻和电容来表示[19]，[20]。在模型中，有源区内的复合用RRec-in和CRec-in表示。有源区外的复合用RRec-out和CRec-out表示，它来自于载流子泄漏、溢出或从有源区逃逸的复合。Rs表示微型LED的串联电阻，CP表示微型LED的寄生电容，RL表示测试链路中的50°标准阻抗。
 
 <div STYLE="page-break-after: always;"></div>
