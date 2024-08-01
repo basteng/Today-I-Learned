@@ -1,4 +1,8 @@
-## 1.2024年3月芯片单价
+- [1.2024年3月芯片单价](#12024年3月芯片单价)
+
+<div STYLE="page-break-after: always;"></div>
+
+# 1.2024年3月芯片单价
 经济不确定性导致半导体行业发展放缓
 目前，全球经济形势受到通胀压力、利率波动和难以预测的财政政策等不确定因素的影响。这些因素削弱了消费者和企业信心，可能导致消费者的消费模式更加保守。这种行为转变可能会对电子设备和半导体的需求产生负面影响，预示着芯片行业即将放缓。
 
@@ -10,4 +14,5 @@
 ![chip ASP](/picture/7008-17153534200259752.png)
 
 [链接](https://seekingalpha.com/article/4692036-taiwan-semiconductor-tracking-a-trailing-edge-semiconductor-slowdown)
+<div STYLE="page-break-after: always;"></div>
 

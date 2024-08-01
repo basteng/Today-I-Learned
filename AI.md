@@ -1,3 +1,9 @@
+- [1.变的是数据来源，没变的是数据质量 （by orange.ai）](#1变的是数据来源没变的是数据质量-by-orangeai)
+- [2.colab里如何运行nanoGPT](#2colab里如何运行nanogpt)
+
+<div STYLE="page-break-after: always;"></div>
+
+
 # 1.变的是数据来源，没变的是数据质量 （by orange.ai）
 [链接](https://x.com/oran_ge/status/1815552616979702174)
 
@@ -35,7 +41,7 @@
 
 需求如山，而山，一直在那里。
 
----
+<div STYLE="page-break-after: always;"></div>
 
 # 2.colab里如何运行nanoGPT
 
@@ -89,4 +95,4 @@ sample.py论点解释：
 
 <https://github.com/eniompw/nanoGPTshakespeare>
 
----
+<div STYLE="page-break-after: always;"></div>
