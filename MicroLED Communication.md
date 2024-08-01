@@ -1,3 +1,8 @@
+- [1.关于封装内光学 I/O 的三个常见误解](#1关于封装内光学-io-的三个常见误解)
+- [2. Lizhenhao Paper](#2-lizhenhao-paper)
+
+<div STYLE="page-break-after: always;"></div>
+
 # 1.关于封装内光学 I/O 的三个常见误解
 随着光学 I/O 逐渐融入产品设计，一些误解浮现出来，可能会影响利益相关者对这项技术的理解和期望。让我们来解释并消除关于光学 I/O 的三个常见误解。
 
@@ -24,10 +29,12 @@
 
 <https://ayarlabs.com/blog/ai-and-optical-io/?utm_content=302247967&utm_medium=social&utm_source=linkedin&hss_channel=lcp-6627049>
 
----
+<div STYLE="page-break-after: always;"></div>
+
 # 2. Lizhenhao Paper
 
 《Bandwidth Analysis of High-Speed InGaN Micro-LEDs by an Equivalent Circuit Model》
 
 - 半导体二极管中的载流子复合通常用电路中的一对并联电阻和电容来表示[19]，[20]。在模型中，有源区内的复合用RRec-in和CRec-in表示。有源区外的复合用RRec-out和CRec-out表示，它来自于载流子泄漏、溢出或从有源区逃逸的复合。Rs表示微型LED的串联电阻，CP表示微型LED的寄生电容，RL表示测试链路中的50°标准阻抗。
 
+<div STYLE="page-break-after: always;"></div>
