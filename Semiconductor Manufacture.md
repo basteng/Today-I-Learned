@@ -1,4 +1,4 @@
-## 1.CMOS 图片 来自领英 Hyeongwon Seo
+# 1.CMOS 图片 来自领英 Hyeongwon Seo
 
 20年来，先进半导体芯片的制造方法及其垂直堆叠结构和配置方法基本保持不变。
 
@@ -18,6 +18,13 @@
 ![image3](/picture/1721363315538.jpg)
 ![image4](/picture//1721363311020.jpg)
 
+---
 
+# 2.14nm FinFET 晶体管TEM
 
+随着最近等离子聚焦离子束 （Helios-5 PFIB/SEM） 的安装，我们想展示我们的 TEM 提升和 STEM/EDX 成像能力。附图显示了带有 14nm FinFET 晶体管的 12 层铜芯片的原位 TEM 提升结果。STEM成像在30kV下进行。薄片被减薄到FinFET结构的栅极。
+With the recent installation of our Plasma Focus Ion Beam (Helios-5 PFIB/SEM), we would like to present our TEM lift out and STEM/EDX imaging capabilities. Attached image showed the result of an in-situ TEM liftout of a 12 layer copper die with 14nm FinFET transistors. STEM imaging was done at 30kV. The lamella was thinned to the gate of the FinFET structure.
 
+![image5](/picture/1720812293598.gif)
+
+---
