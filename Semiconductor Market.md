@@ -1,4 +1,6 @@
 - [1.2024年3月芯片单价](#12024年3月芯片单价)
+- [2. GaN RF市场](#2-gan-rf市场)
+  - [2.1 GaN RF 2024 - Yole](#21-gan-rf-2024---yole)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -16,3 +18,13 @@
 [链接](https://seekingalpha.com/article/4692036-taiwan-semiconductor-tracking-a-trailing-edge-semiconductor-slowdown)
 <div STYLE="page-break-after: always;"></div>
 
+# 2. GaN RF市场
+## 2.1 GaN RF 2024 - Yole
+
+话题标签#Telecom 基础设施在 2023 年价值 5.22 亿美元，预计到 2029 年将增长到 8.94 亿美元，这得益于 话题标签#5G 推出以及采用 GaN-on-SiC 话题标签#technology 的 AAS 转变。
+国防市场预计将从 2023 年的 5.13 亿美元增长到 2029 年的 8.17 亿美元，这得益于军事 话题标签#radar 和 话题标签#electronic 战的进步以及对金刚石基板氮化镓的研究。
+在卫星通信中，话题标签#GaN 器件正在从地面VSAT系统中的 话题标签#GaAs 中获得份额，卫星发射的增加可能会推动GaN RF在LEO卫星中的采用。
+总体而言，到 2029 年，氮化镓 话题标签#RF 市场将出现显着增长。到本世纪末，硅基氮化镓可能会为 话题标签#6G 手机创造新的市场机会。
+
+![GaN RF 2024](/picture/屏幕截图%202024-08-01%20110024.png)
+<div STYLE="page-break-after: always;"></div>
