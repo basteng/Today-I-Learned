@@ -133,4 +133,4 @@ Gallium-nitride-based, blue micro-light-emitting diodes (micro-LEDs) with electr
 
 <https://www.nature.com/articles/d41586-024-02323-7>
 
-相关论文参见 /paper/Partial coherence enhances parallelized photonic computing.pdf
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Partial%20coherence%20enhances%20parallelized%20photonic%20computing.pdf>
