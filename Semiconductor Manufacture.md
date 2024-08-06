@@ -1,5 +1,6 @@
 - [1.CMOS 图片 来自领英 Hyeongwon Seo](#1cmos-图片-来自领英-hyeongwon-seo)
 - [2.14nm FinFET 晶体管TEM](#214nm-finfet-晶体管tem)
+- [3. SK Hynix HBM](#3-sk-hynix-hbm)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -32,3 +33,7 @@ With the recent installation of our Plasma Focus Ion Beam (Helios-5 PFIB/SEM), w
 
 ![image5](/picture/1720812293598.gif)
 <div STYLE="page-break-after: always;"></div>
+
+# 3. SK Hynix HBM
+
+Competitive Edge of #HBM ( High Bandwidth Memory )
