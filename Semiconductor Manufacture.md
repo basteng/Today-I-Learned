@@ -37,3 +37,6 @@ With the recent installation of our Plasma Focus Ion Beam (Helios-5 PFIB/SEM), w
 # 3. SK Hynix HBM
 
 Competitive Edge of #HBM ( High Bandwidth Memory )
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Competitive%20Edge%20of%20%23HBM%20(%20High%20Bandwidth%20Memory%20).pdf>
+<div STYLE="page-break-after: always;"></div>
