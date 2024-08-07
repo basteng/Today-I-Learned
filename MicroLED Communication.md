@@ -253,6 +253,7 @@ Microscopy studies of InGaN MQWs overgrown on porosified InGaN superlattice pseu
 -3 dB带宽是一个在信号处理、电子工程和通信系统中常用的概念，具体含义如下：
 
 **定义**
+
 -3 dB带宽指的是信号功率衰减到最大功率的二分之根号二倍（即功率下降到最大值的0.707倍）时，对应的频率范围。在对数坐标中，这个点被称为-3分贝点或半功率点，其定义是功率减半前的频率宽度。
 
 **解释**
@@ -268,6 +269,7 @@ Microscopy studies of InGaN MQWs overgrown on porosified InGaN superlattice pseu
 - 通信系统：在通信系统设计中，-3 dB带宽可用于评估系统的传输能力和信号完整性。
 
 **示例**
+
 假设有一个信号，其最大功率对应的频率为f0，当信号功率衰减到最大功率的一半时，对应的频率范围为f1到f2。那么，这个信号的-3 dB带宽就是从f1到f2的频率范围。
 
 **综上所述**，-3 dB带宽是一个重要的技术参数，用于描述信号的能量集中程度和频率特性，在信号处理、电子工程和通信系统中具有广泛的应用。
