@@ -149,6 +149,6 @@ GlobalFoundries 将内部设施与外部代工厂相结合，提供灵活性并�
 
 ## 6.1 半导体进出口相关海关编码
 
-<https://github.com/basteng/Today-I-Learned/blob/main/Data/%E6%B5%B7%E5%85%B3%E7%BC%96%E7%A0%81.xlsx>
+<https://github.com/basteng/Today-I-Learned/blob/main/Data/%E6%B5%B7%E5%85%B3%E7%BC%96%E7%A0%81.csv>
 
 from: <https://mp.weixin.qq.com/s/VpkjJ4hVuohccnFpu0GvMA>
