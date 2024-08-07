@@ -9,6 +9,9 @@
   - [5.1 Techovedas 观点 半导体生态系统中的商业模式](#51-techovedas-观点-半导体生态系统中的商业模式)
 - [6. 半导体进出口](#6-半导体进出口)
   - [6.1 半导体进出口相关海关编码](#61-半导体进出口相关海关编码)
+- [7. 功率半导体](#7-功率半导体)
+  - [7.1 功率半导体月度新闻](#71-功率半导体月度新闻)
+    - [2024年7月功率半导体新闻](#2024年7月功率半导体新闻)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -152,3 +155,59 @@ GlobalFoundries 将内部设施与外部代工厂相结合，提供灵活性并�
 <https://github.com/basteng/Today-I-Learned/blob/main/Data/%E6%B5%B7%E5%85%B3%E7%BC%96%E7%A0%81.csv>
 
 from: <https://mp.weixin.qq.com/s/VpkjJ4hVuohccnFpu0GvMA>
+
+# 7. 功率半导体
+
+## 7.1 功率半导体月度新闻
+
+### 2024年7月功率半导体新闻
+
+2024 年 7 月五大功率半导体新闻
+
+- SiCrystal 将在纽伦堡设立新生产基地，到 2027 年其 SiC 晶圆产能将增加三倍
+- onsemi 推出最新一代 EliteSiC M3e MOSFET
+- 东芝开发出缓解并联 SiC 功率模块寄生振荡的技术
+- VisIC Technologies 与 Heraeus 和 PINK 合作提供先进的 D3GaN 电源模块
+- 瑞能推出第二代超级结 MOSFET
+
+ 七月新闻综述
+
+- GlobalFoundries 收购 Tagore Technology 的 GaN IP 产品组合
+- Forge Nano 推出新型 200 毫米晶圆原子层沉积集群工具
+- 意法半导体推出“电力电子器件与技术”二级硕士课程第三版
+- 美国国际贸易委员会裁定关键 EPC 专利有效，且 Innoscience Technology 侵犯基础专利
+- Nexperia 推出采用 D2PAK R2P 封装的 650V 超快速恢复整流器
+- 2024 年弗劳恩霍夫 IISB 研发奖表彰杰出团队合作
+- 贸泽电子宣布与三安半导体达成全球分销协议
+- AIXTRON 支持 Nexperia 提高 SiC 和 GaN 功率器件 200mm 批量生产
+- Aehr Test Systems 宣布 2024 财年业绩
+- 东芝扩展 650V 功率 MOSFET 产品组合
+- GlobalWafers 签署了一份非约束性 PMT，根据《CHIPS 和科学法案》获得高达 4 亿美元的直接资助
+- 东芝推出两款基于最新一代 U-MOS XH 沟槽工艺的新型 150V N 沟道功率 MOSFET
+- 英飞凌科技与 Amkor Technology 携手推动脱碳和可持续发展
+- 威盛半导体推出第二代1200V eSiC MOSFET
+- Daihen Corporation 选择英飞凌科技 CoolSiC™ 2000V 模块用于创新型单元式电源调节器
+- onsemi 与大众签署协议，为可扩展系统平台提供完整的电源箱解决方案
+- 恩智浦半导体公布 2024 年第二季度财务业绩
+- 强茂推出新型薄型桥式整流器
+- 德州仪器发布 2024 年第二季度财务业绩
+- Soitec 公布 2025 财年第一季度财务业绩
+- 意法半导体公布 2024 年第二季度业绩
+- 瑞萨电子公布合并财务业绩
+- Navitas 半导体发布 4.5 kW AI 数据中心电源参考设计
+- Siltronic 公布 2024 年第二季度财务业绩
+- Micro Commercial Components 推出新型 1200V SiC MOSFET
+- 英飞凌科技扩大对 Innoscience 的诉讼
+- Power Master Semiconductor 推出符合 AEC-Q101 标准的 1200V eSiC MOSFET
+- onsemi 公布 2024 年第二季度财务业绩
+- 迈斯半导体推出全新 IGBT 模块
+- MCC Semi 推出全新 100V N 沟道 MOSFET
+- 东芝扩大600V N沟道功率超级结MOSFET产品线
+- Qorvo® 公布 2025 财年第一季度财务业绩
+- JEDEC 寻求行业贡献，推动半导体封装热特性标准发展
+- 三菱电机公布 2025 财年第一季度综合财务业绩
+- Littelfuse 公布 2024 年第二季度财务业绩
+- DENSO 公布 2025 财年第一季度全球财务业绩
+- Amkor Technology 公布 2024 年第二季度财务业绩
+
+<https://www.linkedin.com/pulse/power-semiconductors-weekly-newsletter-august-2024-alexey-cherkasov-gupsf/?trackingId=kfeOFEHpIBUpsY%2BLCAFmuw%3D%3D>
