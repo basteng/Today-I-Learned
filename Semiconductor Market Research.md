@@ -3,6 +3,8 @@
   - [2.1 GaN RF 2024 - Yole](#21-gan-rf-2024---yole)
 - [3. 欧洲半导体](#3-欧洲半导体)
   - [3.1 欧洲芯片雄心中所缺失的战略](#31-欧洲芯片雄心中所缺失的战略)
+- [4. TSMC](#4-tsmc)
+  - [4.1 2024 Q2 财报](#41-2024-q2-财报)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -18,7 +20,6 @@
 ![chip ASP](/picture/7008-17153534200259752.png)
 
 [链接](https://seekingalpha.com/article/4692036-taiwan-semiconductor-tracking-a-trailing-edge-semiconductor-slowdown)
-<div STYLE="page-break-after: always;"></div>
 
 # 2. GaN RF市场
 ## 2.1 GaN RF 2024 - Yole
@@ -29,7 +30,6 @@
 总体而言，到 2029 年，氮化镓 话题标签#RF 市场将出现显着增长。到本世纪末，硅基氮化镓可能会为 话题标签#6G 手机创造新的市场机会。
 
 ![GaN RF 2024](/picture/屏幕截图%202024-08-01%20110024.png)
-<div STYLE="page-break-after: always;"></div>
 
 # 3. 欧洲半导体
 
@@ -67,4 +67,12 @@
 
 评估欧盟提供全球 20% 芯片生产能力的目标，人们不禁要问，这将如何提高欧盟的技术竞争力、国家安全或供应链弹性。类似于危机应对工具箱56 在欧盟芯片法案中，这一目标是一项政策目标，它在其他领域可能有意义，但当应用于半导体行业或任何其他具有跨国分工、高度专业化和进入壁垒高的特征的高科技行业时，就失去了所有意义。
 
+报告pdf <https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/europe-semiconductor-strategy.pdf> 
+
 <https://www.interface-eu.org/publications/europe-semiconductor-strategy>
+
+# 4. TSMC
+
+## 4.1 2024 Q2 财报
+
+<https://github.com/basteng/Today-I-Learned/blob/main/company's%20Earning/TSMC%20Second%20Quarter%20Earnings%20PDF%202024.pdf>
