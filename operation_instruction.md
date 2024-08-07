@@ -1,49 +1,26 @@
-- [1.变的是数据来源，没变的是数据质量 （by orange.ai）](#1变的是数据来源没变的是数据质量-by-orangeai)
-- [2.colab里如何运行nanoGPT](#2colab里如何运行nanogpt)
+- [1.使用Tortoisegit git管理上传文件代码到github](#1使用tortoisegit-git管理上传文件代码到github)
+- [2.设置git全局代理端口](#2设置git全局代理端口)
+- [3.md加目录](#3md加目录)
+- [4.colab里如何运行nanoGPT](#4colab里如何运行nanogpt)
 
 <div STYLE="page-break-after: always;"></div>
 
+# 1.使用Tortoisegit git管理上传文件代码到github
 
-# 1.变的是数据来源，没变的是数据质量 （by orange.ai）
-[链接](https://x.com/oran_ge/status/1815552616979702174)
+[网页链接](https://blog.csdn.net/mao_hui_fei/article/details/118546080)
 
-需求一直在那里，但是一直没被满足好。
+# 2.设置git全局代理端口
 
-以前的数据散落在各处，就像大众点评找餐厅，我们通过搜索引擎获得了一些坐标，并前往去寻找。
+```
+git config --global http.proxy 'socks5://127.0.0.1:1080'
+git config --global https.proxy 'socks5://127.0.0.1:1080'
+```
 
-现在的数据则被汇聚到了模型里，就像一个中央厨房，我们可以随时打上一句招呼，它就端菜上桌，任君食用。
+# 3.md加目录
 
-但是预制菜嘛，就是不太新鲜，所以我们做了RAG，做了AI搜索，获取新鲜的实时信息。
+目录功能，按 Ctrl + Shift + P 呼出任务面板，然后搜索 create table 即可
 
-大到金融、医疗，小到生活百科，我们的需求一直是高质量的数据，高质量的信息。
-
-但需求从未被满足。
-
-不管是模型训练的数据、SFT的数据，还是RAG的数据，质量都是第一性原理。
-
-好数据出好结果，没有捷径，从未变过。
-
-前几天和一位前同事吃饭，他说了一句金句：
-
-最近的AI资讯其实是噪音。
-
-原因是因为AI技术的进展很小，可用性也不高，关注这样的资讯，反而不如花时间深度思考和积极行动。
-
-这句话获得了很多人的共鸣。
-
-本质是因为每个人所需要的好数据也是不同的。
-
-自己不需要的信息，其实就是噪音。
-
-人们需要的从来不是那么多信息，而是自己关心的信息。
-
-如果AI对你的兴趣有足够多足够深的了解，就会成为让推荐算法更强的推荐引擎。
-
-需求如山，而山，一直在那里。
-
-<div STYLE="page-break-after: always;"></div>
-
-# 2.colab里如何运行nanoGPT
+# 4.colab里如何运行nanoGPT
 
 首先设置GPU
 修改 - 笔记本设置 - 硬件加速器 T4 GPU
