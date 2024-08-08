@@ -341,4 +341,6 @@ LED的调制带宽受响应速率限制,而响应速率又受半导体内少子�
 - 如果载流子寿命100皮秒ps，则3dB理论带宽约为2.7Ghz
 - 如果载流子寿命100纳秒ns，则3dB理论带宽约为2.7Mhz
 
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/%E5%8F%AF%E8%A7%81%E5%85%89%E4%BF%A1%E9%81%93%E5%BB%BA%E6%A8%A1.pdf>
 
+摘自 p29~p30
