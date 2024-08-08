@@ -6,7 +6,7 @@
 - [4. TSMC](#4-tsmc)
   - [4.1 2024 Q2 财报](#41-2024-q2-财报)
 - [5. 半导体商业模式讨论 IDM vs Foundry](#5-半导体商业模式讨论-idm-vs-foundry)
-  - [5.1 Techovedas 观点 半导体生态系统中的商业模式](#51-techovedas-观点-半导体生态系统中的商业模式)
+  - [5.1 Techovedas  半导体生态系统中的商业模式](#51-techovedas--半导体生态系统中的商业模式)
 - [6. 半导体进出口](#6-半导体进出口)
   - [6.1 半导体进出口相关海关编码](#61-半导体进出口相关海关编码)
 - [7. 功率半导体](#7-功率半导体)
@@ -15,6 +15,7 @@
   - [7.2 HannahWang 功率半导体最新消息](#72-hannahwang-功率半导体最新消息)
 - [8. SiC](#8-sic)
   - [8.1 SiC驱动汽车电气化](#81-sic驱动汽车电气化)
+- [9. TechoVedas:哪个国家和公司是半导体价值链的领导者](#9-techovedas哪个国家和公司是半导体价值链的领导者)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -89,7 +90,7 @@
 
 # 5. 半导体商业模式讨论 IDM vs Foundry
 
-## 5.1 Techovedas 观点 半导体生态系统中的商业模式
+## 5.1 Techovedas  半导体生态系统中的商业模式
 
 **1.IDM（集成设备制造商）：**
 IDM 公司（例如英特尔公司）采用综合方法来运营半导体。它们在内部管理设计和制造流程，从而完全控制整个产品生命周期。
@@ -150,6 +151,8 @@ GlobalFoundries 将内部设施与外部代工厂相结合，提供灵活性并�
 ![IDM vs Foundry](/picture/IDM%20vs%20Foundry.jpg)
 
 <https://techovedas.com/what-are-3-business-model-in-semiconductor-ecosystem-pros-and-cons/>
+
+
 
 # 6. 半导体进出口
 
@@ -261,3 +264,48 @@ from: <https://mp.weixin.qq.com/s/VpkjJ4hVuohccnFpu0GvMA>
 学分：EE Times 
 
 ![SiC](/picture/SiC%20chain%20auto.jpg)
+
+# 9. TechoVedas:哪个国家和公司是半导体价值链的领导者
+
+1. 研究与开发（R&D）：
+主要国家：美国、韩国、日本、台湾
+领先公司：英特尔、三星、台积电、高通、博通
+
+2. 硅片生产：
+主要国家：日本、韩国、台湾
+主要企业：SUMCO、信越化学、SK Siltron、
+
+3. 硅片加工：
+主要国家：日本、韩国、台湾
+龙头企业：台积电、三星电子、SK海力士
+
+4. 光刻胶制造：
+主要国家：日本、韩国
+主要企业：东京大贺工业、JSR株式会社
+
+5. 蚀刻化学品生产：
+主要国家：日本、韩国、美国
+领先公司：JSR Corporation、Dow Chemical、Air Liquide
+
+6. 兴奋剂化学品生产：
+主要国家：美国、日本、德国
+龙头企业：陶氏化学、巴斯夫、霍尼韦尔
+
+7. 半导体封装：
+主要国家：中国台湾、中国、韩国
+领先公司：ASE Group、Amkor Technology、
+
+8. 半导体测试：
+主要国家：美国、日本、韩国
+领先公司：Keysight Technologies、Advantest
+
+9、半导体设备制造：
+主要国家：荷兰、日本、美国
+龙头企业：ASML、Tokyo Electron、Applied Materials
+
+10. 半导体设计软件：
+主要国家： 美国
+领先公司：Cadence、Synopsys
+
+![image](/picture/country.jpg)
+
