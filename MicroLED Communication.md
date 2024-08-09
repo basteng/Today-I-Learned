@@ -368,4 +368,10 @@ PCIe标准是Intel 2001年提出的，2003年发布1.0版本，数据传输率�
 
 <https://news.mydrivers.com/1/926/926700.htm>
 
+PCIE相关报告
 
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/DriveWorld%20PCI-SIG%20-%20Accelerating%20Automotive%20Connectivity%2C%20from%20Infotainment%20to%20ADAS.pdf>
+
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/HOTI_PCIe6.0.pdf>
+
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/SNIA-SDC23-DasSharma-PCIe-7.0-Specification-Bandwidth.pdf>
