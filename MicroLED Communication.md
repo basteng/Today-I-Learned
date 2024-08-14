@@ -16,6 +16,7 @@
   - [10.2 LED调制带宽](#102-led调制带宽)
 - [11. PCIe诞生20年来最大变革！引入光学传输](#11-pcie诞生20年来最大变革引入光学传输)
 - [12.厦门大学与阳明交大研发红/黄光Micro LED光通信技术](#12厦门大学与阳明交大研发红黄光micro-led光通信技术)
+- [13.蓝色GaN/InGaN量子阱发光晶体管的特性 2023IRDS\_BC 3.3.8 Transistor Laser](#13蓝色ganingan量子阱发光晶体管的特性-2023irds_bc-338-transistor-laser)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -395,3 +396,14 @@ PCIE相关报告
 此外，研究团队还表示，基于波长选择性，长波长的Micro LED电二极管可滤除缓慢的荧光发射，从而实现高于硅基探测器数倍的白光调制带宽。（来源：LEDinside）
 
 <https://mp.weixin.qq.com/s/rVoYMnpO0djGfXxH_3z2AA>
+
+# 13.蓝色GaN/InGaN量子阱发光晶体管的特性 2023IRDS_BC 3.3.8 Transistor Laser
+
+Other noteworthy results include demonstration of blue-emitting light-emitting transistors in the GaN/InGaN system.573
+
+Characteristics of Blue GaN/InGaN Quantum-Well Light-Emitting Transistor
+
+**摘要：**
+我们展示了第一个 GaN/InGaN 量子阱发光晶体管 (QW-LET) 的同时电调制和光调制，该晶体管在重掺杂 p 的 In0.05 Ga0.95N 基极中包含一个 In0.15 Ga0.85N QW。与 GaAs/InGaAs 同类产品不同，GaN/InGaN QW-LET 具有电流增益（高达 5）和光功率，它们随基极电流线性增加。其发射光谱以 420 nm 波长为中心，几乎不随电流注入而移动，这与典型的氮化物基 LED 的行为相反。该器件的不寻常特征可能与 QW 中的极化场引起的倾斜能带分布和 p 型掺杂问题有关。
+
+<https://ieeexplore.ieee.org/document/8911438>
