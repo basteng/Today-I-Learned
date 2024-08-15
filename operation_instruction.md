@@ -2,6 +2,7 @@
 - [2.设置git全局代理端口](#2设置git全局代理端口)
 - [3.md加目录](#3md加目录)
 - [4.colab里如何运行nanoGPT](#4colab里如何运行nanogpt)
+- [5. 树莓派增加定时运行的程序](#5-树莓派增加定时运行的程序)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -73,3 +74,13 @@ sample.py论点解释：
 <https://github.com/eniompw/nanoGPTshakespeare>
 
 <div STYLE="page-break-after: always;"></div>
+
+# 5. 树莓派增加定时运行的程序
+
+```
+sudo crontab -e
+
+设置时间
+
+sudo /etc/init.d/cron restart
+```
