@@ -17,8 +17,8 @@
 - [11. PCIe诞生20年来最大变革！引入光学传输](#11-pcie诞生20年来最大变革引入光学传输)
 - [12.厦门大学与阳明交大研发红/黄光Micro LED光通信技术](#12厦门大学与阳明交大研发红黄光micro-led光通信技术)
 - [13.蓝色GaN/InGaN量子阱发光晶体管的特性 2023IRDS\_BC 3.3.8 Transistor Laser](#13蓝色ganingan量子阱发光晶体管的特性-2023irds_bc-338-transistor-laser)
-- [14. 你也可以使用 LED 作为传感器](#14-你也可以使用-led-作为传感器)
-- [15. 如何使用 LED 检测光](#15-如何使用-led-检测光)
+- [14.你也可以使用 LED 作为传感器](#14你也可以使用-led-作为传感器)
+- [15.如何使用 LED 检测光](#15如何使用-led-检测光)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -410,7 +410,7 @@ Characteristics of Blue GaN/InGaN Quantum-Well Light-Emitting Transistor
 
 <https://ieeexplore.ieee.org/document/8911438>
 
-# 14. 你也可以使用 LED 作为传感器
+# 14.你也可以使用 LED 作为传感器
 LED 是一项很棒的技术。你只需要投入一点电力，就能发出大量的光。它们高效、便宜、数量充足。我们用它们做很多事情！
 
 您可能不知道的是，这些不起眼的组件有一个秘密功能，数据表中基本没有记录。当然，您可以使用 LED 作为光源，但您知道您可以将其用作传感器吗？
@@ -450,7 +450,7 @@ MERS 团队建议，LED 可用作各种创新应用中的传感器。您可以�
 
 <https://hackaday.com/2024/07/23/you-can-use-leds-as-sensors-too/>
 
-# 15. 如何使用 LED 检测光
+# 15.如何使用 LED 检测光
 
 ![LED2](/picture/led-1.webp)
 既然电磁电话听筒可以兼作麦克风，那么半导体光探测器是否可以兼作光发射器呢？
