@@ -16,6 +16,8 @@
 - [8. SiC](#8-sic)
   - [8.1 SiC驱动汽车电气化](#81-sic驱动汽车电气化)
 - [9. TechoVedas:哪个国家和公司是半导体价值链的领导者](#9-techovedas哪个国家和公司是半导体价值链的领导者)
+- [10.HBM](#10hbm)
+  - [10.1 HBM在DRAM中占比](#101-hbm在dram中占比)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -308,4 +310,16 @@ from: <https://mp.weixin.qq.com/s/VpkjJ4hVuohccnFpu0GvMA>
 领先公司：Cadence、Synopsys
 
 ![image](/picture/country.jpg)
+
+# 10.HBM
+
+## 10.1 HBM在DRAM中占比
+
+- HBM 晶圆在 DRAM 生产中的比例越来越高，从 2022 年的 4% 上升到 2027 年的 19%。 
+
+- 这一趋势表明，在数据密集型应用中对更高性能和效率的需求推动下，HBM 在 话题标签#semiconductor 行业中的作用越来越大。
+
+![HBM](/picture/HBM.jpg)
+
+来源：SUMCO
 
