@@ -58,3 +58,5 @@ IEDM 是一个涵盖半导体器件和技术许多领域的会议。虽然本次
 和电力电子应用。GaN 可能还有更多其他应用，例如超高和超低温操作、音频工程和电缆应用等，而本次会议未能解决这些问题。
 
 <https://www.merl.com/publications/docs/TR2023-013.pdf>
+
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/TR2023-013.pdf>
