@@ -15,6 +15,7 @@
   - [7.2 HannahWang 功率半导体最新消息](#72-hannahwang-功率半导体最新消息)
 - [8. SiC](#8-sic)
   - [8.1 SiC驱动汽车电气化](#81-sic驱动汽车电气化)
+  - [8.2 SiC需求量](#82-sic需求量)
 - [9. TechoVedas:哪个国家和公司是半导体价值链的领导者](#9-techovedas哪个国家和公司是半导体价值链的领导者)
 - [10.HBM](#10hbm)
   - [10.1 HBM在DRAM中占比](#101-hbm在dram中占比)
@@ -266,6 +267,33 @@ from: <https://mp.weixin.qq.com/s/VpkjJ4hVuohccnFpu0GvMA>
 学分：EE Times 
 
 ![SiC](/picture/SiC%20chain%20auto.jpg)
+
+## 8.2 SiC需求量
+
+表 1 显示了根据我的报告《功率半导体：市场、材料和技术》 ，对 2023-2025 年 BEV 和 PHEV 的 8 英寸 SiC 晶圆需求的分析。该分析基于以下几个因素：
+
+2023 年以及 2024 年和 2025 年预计销售的 BEV（电池电动汽车）和 PHEV（插电式混合动力电动汽车）数量。
+BEV 中主要使用的 SiC 芯片数量 = 44 个芯片
+逆变器：每个逆变器通常需要大约 24 个 SiC MOSFET。
+车载充电器：每个车载充电器使用大约 10-12 个 SiC MOSFET。
+DC-DC 转换器：每个 DC-DC 转换器使用大约 6-8 个 SiC MOSFET。
+3. PHEV 主要使用的 SiC 芯片数量 = 32 个芯片
+
+逆变器：PHEV 需要大约 12 个 SiC MOSFET。
+车载充电器：每个车载充电器使用大约 10-12 个 SiC MOSFET。
+DC-DC 转换器：每个 DC-DC 转换器使用大约 6-8 个 SiC MOSFET。
+4. 所需8英寸晶圆数量以MOSFET芯片数量计算，平均芯片尺寸为10mm×10mm= 100mm2。
+![SiC](/picture/7008-1721351094075711_origin.jpg)
+
+电动汽车（BEV 和 PHEV）并不是 SiC 晶圆的唯一应用。在图 3 中，我展示了 2024 年按应用划分的 8 英寸当量 SiC 晶圆需求份额，其中 BEV 需求最大，为 49%，而 PHEV 为 17%，其他应用为 35%。这些其他应用包括 PV/存储、电动汽车充电、PFC/电源、铁路、电机驱动、UPS。
+
+![SiC](/picture/SiC.png)
+
+根据上图 2 所示的 SiC 晶圆供应量和上图 3 所示的 SiC 晶圆需求量，表 2 显示每年的供应缺口为 404,620 个 8 英寸晶圆当量，相当于 2024 年需求量的 10.35%。2025 年，SiC 晶圆产能持续扩大和需求增加导致 2025 年的供应缺口降低至 7.4%。
+
+![SiC](/picture/SiC-1.jpg)
+
+<https://seekingalpha.com/article/4705499-stmicroelectronics-a-q2-preview-as-it-benefits-from-a-10-percent-sic-wafer-shortage-in-2024>
 
 # 9. TechoVedas:哪个国家和公司是半导体价值链的领导者
 
