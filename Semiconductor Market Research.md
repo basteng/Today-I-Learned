@@ -19,6 +19,8 @@
 - [9. TechoVedas:哪个国家和公司是半导体价值链的领导者](#9-techovedas哪个国家和公司是半导体价值链的领导者)
 - [10.HBM](#10hbm)
   - [10.1 HBM在DRAM中占比](#101-hbm在dram中占比)
+- [11.汽车半导体](#11汽车半导体)
+  - [11.1 2024 Q2 汽车市场](#111-2024-q2-汽车市场)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -351,3 +353,19 @@ DC-DC 转换器：每个 DC-DC 转换器使用大约 6-8 个 SiC MOSFET。
 
 来源：SUMCO
 
+# 11.汽车半导体
+
+## 11.1 2024 Q2 汽车市场
+
+第二季度全球 话题标签#NEV 销售额增长 24.2%;TrendForce Corporation 表示，话题标签#Chinese 补贴有望提高中国品牌的市场份额
+
+TrendForce 集邦咨询最新调查结果显示，2Q24 全球新能源车（包括 BEV、PHEV 和 FCV）销量达到 376.9 万辆。这意味着季度增长近 30%，同比增长 24.2%。虽然 Tesla 在市场份额方面保持了领先地位 话题标签#BEV 但与去年相比，其销售额有所下降。比亚迪 除了稳定的 BEV 销量外，其 话题标签#PHEV 市场份额在第二季度超过 36%。
+
+TrendForce 集邦咨询报告称，2Q24 全球 BEV 销量达到 232.8 万辆，同比增长 8%。市场领导者 话题标签#Tesla 的销售额与去年同期相比下降了 4.7%。特斯拉推出了降价和优惠利率，以帮助提振 话题标签#China 和 话题标签#USA 等主要市场的需求。比亚迪（不包括腾势）排名第二，BEV 销量同比增长约 20%。此外，比亚迪的强劲表现使包括 BEV 在内的 NEV 在 24 年第二季度出口到海外超过 100,000 辆。
+
+再次感谢 TrendForce Corporation 通过下面的💡🙏👇链接提供的完整文章，其中包含更多背景和见解
+https://lnkd.in/eQkWjkZe
+
+![auto](/picture/2024Q2_auto.jpg)
+
+<https://www.trendforce.com/presscenter/news/20240822-12266.html>
