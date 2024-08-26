@@ -2,6 +2,7 @@
 - [2.变的是数据来源，没变的是数据质量 （by orange.ai）](#2变的是数据来源没变的是数据质量-by-orangeai)
 - [3. 慢节奏的工作方式对居里夫人很有效——你也应该效仿 （Nature-articles）](#3-慢节奏的工作方式对居里夫人很有效你也应该效仿-nature-articles)
 - [4. 作为一名研究人员，如何管理时间 (Nature 职业专栏)](#4-作为一名研究人员如何管理时间-nature-职业专栏)
+- [5. 未来十年，北京高考录取率将从80%降到25%](#5-未来十年北京高考录取率将从80降到25)
 
 
 <div STYLE="page-break-after: always;"></div>
@@ -229,3 +230,10 @@ Maya Gosztyla 表示，追踪不同时间尺度上的目标可以帮助科学家
 当我们珍惜时间时，我们就会更明智地利用时间。
 
 doi: <https://doi.org/10.1038/d41586-022-04364-2>
+
+# 5. 未来十年，北京高考录取率将从80%降到25%
+
+![image](/picture/北京高考比例1.png)
+![image](/picture/北京高考比例2.png)
+
+<https://www.newsmth.net/nForum/#!article/OurEstate/3069859>
