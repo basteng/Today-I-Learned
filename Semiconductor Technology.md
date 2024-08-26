@@ -1,6 +1,7 @@
 - [1.CMOS 图片 来自领英 Hyeongwon Seo](#1cmos-图片-来自领英-hyeongwon-seo)
 - [2.14nm FinFET 晶体管TEM](#214nm-finfet-晶体管tem)
 - [3. SK Hynix HBM](#3-sk-hynix-hbm)
+- [4. 长鑫存储技术有限公司 通过使用堆叠层而不是 4F2 的 3D DRAM 路线](#4-长鑫存储技术有限公司-通过使用堆叠层而不是-4f2-的-3d-dram-路线)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -40,3 +41,13 @@ Competitive Edge of #HBM ( High Bandwidth Memory )
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Competitive%20Edge%20of%20%23HBM%20(%20High%20Bandwidth%20Memory%20).pdf>
 <div STYLE="page-break-after: always;"></div>
+
+# 4. 长鑫存储技术有限公司 通过使用堆叠层而不是 4F2 的 3D DRAM 路线
+
+设计规则预计为 3X nm （比 14nm 节点更松散），层数低于 100 层。
+
+3D 可堆叠 1T1C DRAM：架构、工艺集成和电路仿真
+
+动态随机存取存储器不断缩小⟨随着10纳米以下尺寸的不断缩小，可堆叠DRAM特征尺寸必然会遭遇诸多难以逾越的障碍，如亚10纳米图形化问题、超高纵横比（HAR）电容和窄感测边距等。一种有希望的解决方案是采用三维（3D）水平堆叠晶体管和电容的架构创新，类似于3D NAND的架构。然而，3D可堆叠DRAM架构的工艺集成方案和电路仿真却鲜有报道。本文首次系统地介绍了一种3D DRAM架构和集成方案，并进一步对3D DRAM进行了电路仿真研究，证实了所提架构的可行性，并在DRAM内核时序优化方面展现出巨大的前景。
+
+<https://ieeexplore.ieee.org/abstract/document/10145931>
