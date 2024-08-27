@@ -5,6 +5,8 @@
   - [2.1 追踪节点的一些重大变化](#21-追踪节点的一些重大变化)
   - [2.2 成熟制程各节点的应用](#22-成熟制程各节点的应用)
   - [2.3 成熟节点仍然会活得很好](#23-成熟节点仍然会活得很好)
+- [3. AI市场格局](#3-ai市场格局)
+  - [3.1 生成式AI头部企业市场份额](#31-生成式ai头部企业市场份额)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -35,8 +37,6 @@ HBM 目前掌握在三家主要厂商手中——SK 海力士、三星和美光�
 Yole Group 预计，随着制造商寻求优化成本和性能，芯片组方法将在未来占据主导地位。芯片组支持分解，因此片上系统 (SoC) 单片芯片被划分为具有不同功能的较小芯片，然后在同一封装中互连。芯片组还允许复制，因此两个或多个 SoC 单片芯片可以在同一封装中互连以形成更大的 SoC。
 
 <https://www.yolegroup.com/strategy-insights/semiconductor-technologies-evolving-to-meet-generative-ai-demand/>
-
-<div STYLE="page-break-after: always;"></div>
 
 # 2.成熟制程发展强劲
 ## 2.1 追踪节点的一些重大变化
@@ -76,4 +76,10 @@ Yole Group 预计，随着制造商寻求优化成本和性能，芯片组方法
 
 <https://semiengineering.com/legacy-process-nodes-going-strong/>
 
-<div STYLE="page-break-after: always;"></div>
+# 3. AI市场格局
+
+## 3.1 生成式AI头部企业市场份额
+
+![image](picture/AI-market%202023.png)
+
+<https://seekingalpha.com/article/4714331-intel-stock-debt-burden-far-from-competitive-sell>
