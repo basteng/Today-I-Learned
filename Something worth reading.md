@@ -237,3 +237,9 @@ doi: <https://doi.org/10.1038/d41586-022-04364-2>
 ![image](/picture/北京高考比例2.png)
 
 <https://www.newsmth.net/nForum/#!article/OurEstate/3069859>
+
+# 6. 做科研就要去最好的地方
+
+要做科研，个人认为的最好出路就是去最好的地方，和最棒的人一起工作，向他们学习，提升自己，锻炼自己真正可以独立做自己感兴趣的顶尖的科研。
+
+<https://muchong.com/html/201802/12076503.html>

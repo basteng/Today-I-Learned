@@ -1,3 +1,4 @@
+- [Google-Scholar和Researchgate链接](#google-scholar和researchgate链接)
 - [1. GaN-on-Si技术在毫米波的应用\_西安电子科技大学\_刘志宏教授](#1-gan-on-si技术在毫米波的应用_西安电子科技大学_刘志宏教授)
 - [2.IRDS关于GaN器件和衬底的分析 2022IRDS\_WP-MtM](#2irds关于gan器件和衬底的分析-2022irds_wp-mtm)
   - [2.1 GaN器件和衬底综述](#21-gan器件和衬底综述)
@@ -65,6 +66,12 @@
 - [14. 氮化镓代工](#14-氮化镓代工)
 - [15.硅基绿光LED的应变工程](#15硅基绿光led的应变工程)
 <div STYLE="page-break-after: always;"></div>
+
+# Google-Scholar和Researchgate链接
+
+<https://www.researchgate.net/profile/Wenbin-Lv-2>
+
+<https://scholar.google.com/citations?hl=en&tzom=-480&user=v3GCEFQAAAAJ>
 
 # 1. GaN-on-Si技术在毫米波的应用_西安电子科技大学_刘志宏教授
 
@@ -1164,4 +1171,5 @@ LED结构包括160nm In0.05Ga0.95N/GaN超晶格（SL）、多量子阱（MQW）�
 ![image](/picture/640%20(3).png)
 
 <https://mp.weixin.qq.com/s/g37X3T_81TDr3cuUiYE8HQ>
+
 
