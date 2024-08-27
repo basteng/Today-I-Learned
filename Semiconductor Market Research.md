@@ -22,6 +22,8 @@
 - [11.汽车半导体](#11汽车半导体)
   - [11.1 2024 Q2 汽车市场](#111-2024-q2-汽车市场)
 - [12 TI](#12-ti)
+- [13. Foundry](#13-foundry)
+  - [13.1 市场份额](#131-市场份额)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -394,3 +396,10 @@ https://lnkd.in/eQkWjkZe
 
 <https://jeffreylcooper.com/2024/08/24/visionaries-of-the-semiconductor-industry-2-min-read-3-in-series/>
 
+# 13. Foundry
+
+## 13.1 市场份额
+
+![image1](picture/2024Q1%20Foundry.png)
+
+<https://seekingalpha.com/article/4714331-intel-stock-debt-burden-far-from-competitive-sell>
