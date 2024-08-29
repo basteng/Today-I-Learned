@@ -71,13 +71,23 @@
 
 <https://blog.minicircuits.com/rf-microwave-bias-tee-basics/>
 
-- 半导体二极管中的载流子复合通常用电路中的一对并联电阻和电容来表示[19]，[20]。在模型中，有源区内的复合用RRec-in和CRec-in表示。有源区外的复合用RRec-out和CRec-out表示，它来自于载流子泄漏、溢出或从有源区逃逸的复合。Rs表示微型LED的串联电阻，CP表示微型LED的寄生电容，RL表示测试链路中的50°标准阻抗。
+**半导体二极管中的载流子复合通常用电路中的一对并联电阻和电容来表示[19]，[20]。在模型中，**
+  
+- 有源区内的复合用RRec-in和CRec-in表示
+- 有源区外的复合用RRec-out和CRec-out表示，它来自于载流子泄漏、溢出或从有源区逃逸的复合
+- Rs表示微型LED的串联电阻
+- CP表示微型LED的寄生电容
+- RL表示测试链路中的50°标准阻抗
+
+![image](/picture/circuit%20model%20InGaN%20LEDs.png)
+
+
 
 ## 2.2 《High-Speed Micro-LEDs based on Nano-Engineered InGaN Active Region towards Chip-to-Chip Interconnections》
 
 高速微尺度发光二极管（micro-LED）技术在短距离数据传输中的应用突破了传统电连接的限制，在大容量高速通信需求愈加迫切的今天，这一点尤为重要，而高速微LED光源是其中的关键部件。本工作采用交替生长中断法生长出尺寸更小、密度更高的三层InGaN纳米结构，该方法提高了局部载流子浓度，降低了差分载流子寿命。基于三层改进的InGaN纳米结构，设计并制作了蓝光微LED，实现输出光功率超过0.5mW，电-电（EE）-3dB带宽超过2.6GHz。利用该高速微型 LED 作为光源，演示了三种非归零开关键控 (NRZ-OOK) 实时通信系统：通过自由空间和石英光纤的单通道传输，以及通过塑料成像光纤的 4 通道传输，分别实现了 3.07、2.60 和 12.00 Gbps 的数据速率。此外，4 通道系统实现了 15.05 Gbps 的比特功率加载离散多音 (DMT) 传输。
 
-<https://ieeexplore.ieee.org/document/10637686/authors#authors>
+<https://ieeexplore.ieee.org/document/10637686>
 
 # 3. Wanglei Paper
 
