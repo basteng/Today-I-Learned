@@ -52,6 +52,6 @@ Yole Group 预计，随着制造商寻求优化成本和性能，芯片组方法
 该名单包括 话题标签#NVIDIA 、AMD 、英特尔 、谷歌 、亚马逊 、微软 、Meta 、字节跳动 和 华为 的芯片制造商。您可以查看 NVIDIA AI GPU 列表，包括 Ampere A100 到 Hopper H100、GH200、H200 AI GPU，以及 Blackwell B200A、B200 Ultra、GB200 Ultra 和 GB200A。但在那之后 - 我们都知道即将到来 - 是 Rubin 和 Rubin Ultra，两者都是下一代 HBM4 话题标签#memory 。
 
 非常感谢 Anthony Garreffa 和 TweakTown 通过下面的💡🙏👇链接提供完整文章，其中包含更多背景和见解
-https://lnkd.in/ex_izZTJ
+<https://www.tweaktown.com/news/100151/this-data-center-ai-chip-roadmap-shows-nvidia-will-dominate-far-into-2027-and-beyond/index.html>
 
 ![image](/picture/AI%20datacenter.jpg)
