@@ -5,6 +5,7 @@
 - [5. 未来十年，北京高考录取率将从80%降到25%](#5-未来十年北京高考录取率将从80降到25)
 - [6. 做科研就要去最好的地方](#6-做科研就要去最好的地方)
 - [7. EB-2 NIW（国家利益豁免）免费评估网站](#7-eb-2-niw国家利益豁免免费评估网站)
+- [8. 如果您可以使用世界上所有的计算能力来训练共享的开源 AI 模型，会怎么样？](#8-如果您可以使用世界上所有的计算能力来训练共享的开源-ai-模型会怎么样)
 
 
 <div STYLE="page-break-after: always;"></div>
@@ -249,3 +250,19 @@ doi: <https://doi.org/10.1038/d41586-022-04364-2>
 # 7. EB-2 NIW（国家利益豁免）免费评估网站
 
 <https://wenzo.wegreened.com/case_evaluation>
+
+# 8. 如果您可以使用世界上所有的计算能力来训练共享的开源 AI 模型，会怎么样？
+
+初步报告：https://lnkd.in/eXpXUv-M
+
+Nous Research 自豪地发布了关于 DisTrO （互联网分布式训练）的初步报告，DisTrO 是一系列与架构无关和与网络无关的分布式优化器，可在不依赖摊销分析的情况下将 GPU 间通信要求降低 1000 倍到 10000 倍，并在收敛率上与 AdamW+All-Reduce 相匹配。这支持使用异构网络硬件在慢速 Internet 带宽上对大型神经网络进行低延迟训练。
+
+DisTrO 可以通过最大限度地减少对单个实体进行计算的依赖来提高训练 LLM 的弹性和稳健性。DisTrO 是为参与构建 LLM 的所有参与者迈向更安全、更公平的环境的一步。
+
+无需依赖一家公司来管理和控制训练过程，研究人员和机构可以更自由地协作和试验新技术、算法和模型。这种日益激烈的竞争促进了创新，推动了进步，并最终使整个社会受益。
+
+这项研究要感谢 Bowen Peng、Jeffrey Quesnelle、Ari Lotter 和 Umer Adil 的辛勤工作。
+
+我们邀请有兴趣探索这一领域的研究人员加入我们的探索！
+
+<https://www.linkedin.com/posts/nousresearch_what-if-you-could-use-all-the-computing-power-activity-7234006899480801280-pCuo/?utm_source=share&utm_medium=member_android>

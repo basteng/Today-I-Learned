@@ -2,6 +2,8 @@
 - [2.Raspberry Pi Pico 2 上的实时 ML 音频噪声抑制](#2raspberry-pi-pico-2-上的实时-ml-音频噪声抑制)
 - [3.使用 Raspberry Pi Pico 创建 USB 麦克风](#3使用-raspberry-pi-pico-创建-usb-麦克风)
 - [4.Google Pigweed 登陆我们全新的 RP2350](#4google-pigweed-登陆我们全新的-rp2350)
+- [5. Pico 2 文档](#5-pico-2-文档)
+- [6. Raspberry Pi Pico W 初学者课程](#6-raspberry-pi-pico-w-初学者课程)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -26,7 +28,6 @@
 此时波形已生成，pico 的 CPU 可自由执行其他任务。总线上会有数据通信，但 pico 具有高度并行的总线结构，我预计不会出现明显的速度减慢。
 
 <https://www.instructables.com/Arbitrary-Wave-Generator-With-the-Raspberry-Pi-Pic/>
-<div STYLE="page-break-after: always;"></div>
 
 # 2.Raspberry Pi Pico 2 上的实时 ML 音频噪声抑制
 
@@ -470,3 +471,31 @@ Pigweed 团队已经构建了一个很棒的演示，供您在 Raspberry Pi Pico
 **<font color=red>构建Pigweed系统</font>**
 
 <https://pigweed.dev/docs/showcases/sense/tutorial/setup.html>
+
+# 5. Pico 2 文档
+
+
+<https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf>
+
+这也适用于 Pico2。
+
+对于设置 C 环境来说，这很方便（如果你想放弃 python 并使用 C，这相当高级）：
+
+<https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf>
+
+它看起来很新，并且因为它引用了新的 VSCode 插件，所以应该很容易遵循。
+
+最后，但并非最不重要的是 C SDK 上的文档：
+
+<https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf>
+
+from
+
+<https://www.reddit.com/r/raspberrypipico/comments/1exqudf/pico_2_documentation/>
+
+# 6. Raspberry Pi Pico W 初学者课程
+
+Paul McWhorter
+
+<https://www.youtube.com/playlist?list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5>
+
