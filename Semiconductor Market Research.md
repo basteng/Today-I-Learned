@@ -40,6 +40,7 @@
   - [17.1 2024年阶梯式复苏 模拟芯片回暖冷热不均](#171-2024年阶梯式复苏-模拟芯片回暖冷热不均)
 - [18.半导体制造主要玩家](#18半导体制造主要玩家)
 - [19. NAND](#19-nand)
+- [20. GPU](#20-gpu)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -737,3 +738,12 @@ IDC 预测，随着 话题标签#semiconductors per 话题标签#vehicle 的价�
 ![image](/picture/takashi.jpg)
 
 <https://www.linkedin.com/feed/update/urn:li:activity:7234871710653554689/>
+
+# 20. GPU
+
+英伟达报告称，中国数据中心收入在 24 年第三季度环比增长，是“重要贡献者”。
+在 Nvidia 出现大幅增长的五个季度中，中国主要云所有者的资本支出没有显著发展。那么，谁购买了足够的产品，使中国成为每季度 $26B 数据中心业务的重要贡献者呢？这将是我们将要关注的话题。作为参考，Microsoft 的资本支出为 14B$/qtr。（华为估计是数据中心的资本支出，可能已经进行了大量投资）
+
+![image](/picture/who%20buy%20GPU.jpg)
+
+<https://substack.com/profile/5566720-claus-aasholm/note/c-67169297>
