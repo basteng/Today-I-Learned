@@ -987,7 +987,10 @@ Bechtolsheim 的思想实验中的 XPU 具有 25.6 Tb/秒的总网络 I/O 带宽
 
 “这项研究表明非线性纳米光子学已达到成熟水平，我们可以创建一种连接相隔很远的波长的设计，然后实现足够的制造控制，在实践中实现该设计和预期的性能，”Srinivasan 说道。“展望未来，应该能够使用少量紧凑型芯片激光器结合灵活多变的非线性纳米光子学来生成各种所需波长。”
 
-更多信息： X. Lu、G. Moille、A. Singh、Q. Li、DA Westly、A. Rao、S.-P. Yu、T​​C Briles、SB Papp 和 K. Srinivasan，“利用硅纳米光子学实现毫瓦阈值可见光-电信光学参量振荡”，Optica，6，12，1535-1541 (2019)。DOI：<doi.org/10.1364/OPTICA.6.001535>
+更多信息： X. Lu、G. Moille、A. Singh、Q. Li、DA Westly、A. Rao、S.-P. Yu、T​​C Briles、SB Papp 和 K. Srinivasan，“利用硅纳米光子学实现毫瓦阈值可见光-电信光学参量振荡”，Optica，6，12，1535-1541 (2019)。DOI：doi.org/10.1364/OPTICA.6.001535
+
+论文链接
+<https://opg.optica.org/optica/fulltext.cfm?uri=optica-6-12-1535&id=424681>
 
 <https://phys.org/news/2019-12-on-chip-source-versatile-range-wavelengths.html>
 
@@ -1038,4 +1041,9 @@ Bechtolsheim 的思想实验中的 XPU 具有 25.6 Tb/秒的总网络 I/O 带宽
 
 更多信息： Yi Sun 等人，推进片上克尔光学参量振荡向覆盖绿隙的相干应用发展，光：科学与应用(2024)。DOI：<10.1038/s41377-024-01534-x>
 
+论文链接
+<https://www.nature.com/articles/s41377-024-01534-x>
+
 <https://phys.org/news/2024-08-tiny-lasers-gap-rainbow-visible.html>
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Advancing%20on-chip%20Kerr%20optical%20parametric%20oscillation%20towards%20coherent%20applications%20covering%20the%20green%20gap.pdf>
