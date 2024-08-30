@@ -38,6 +38,8 @@
   - [16.1 日本半导体设备综述](#161-日本半导体设备综述)
 - [17.模拟芯片](#17模拟芯片)
   - [17.1 2024年阶梯式复苏 模拟芯片回暖冷热不均](#171-2024年阶梯式复苏-模拟芯片回暖冷热不均)
+- [18.半导体制造主要玩家](#18半导体制造主要玩家)
+- [19. NAND](#19-nand)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -721,3 +723,17 @@ IDC 预测，随着 话题标签#semiconductors per 话题标签#vehicle 的价�
 更为乐观的是，据华鑫证券数据，2024年一季度，国内新能源汽车进一步去库存，库存或将降至60万辆左右，预计2024年下半年，新能源汽车有望迎来补库存周期，这将拉动对汽车模拟芯片的需求，推动模拟芯片厂商业绩回暖。
 
 <https://finance.sina.com.cn/roll/2024-07-09/doc-inccphwp7470830.shtml>
+
+# 18.半导体制造主要玩家
+
+![image](/picture/key%20players.jpg)
+
+<https://x.com/1p_semicon/status/1829166210384310412>
+
+# 19. NAND
+
+今天，8 月 29 日，我们发送了一份付费电子邮件杂志，标题为“Lam 和 TEL 在 3D NAND 的 HARC 中的战斗 - 三星的 570 层使用哪一个 - ”。 在 2023 年 6 月的 VLSI 研讨会上，东京电子 （TEL） 宣布了一项用于 3D NAND 内存孔的开创性 HF + 低温蚀刻技术。 我认为 TEL 的这款蚀刻机将用于三星计划在 2026 年量产的 570 层 3D NAND。 然而，Lam 宣布推出性能与 TEL 完全相同的蚀刻机“Cryo 3.0”。 三星的 570 层、TEL 还是 Lam 将使用哪个？　事情变得混乱了。
+
+![image](/picture/takashi.jpg)
+
+<https://www.linkedin.com/feed/update/urn:li:activity:7234871710653554689/>
