@@ -1096,8 +1096,9 @@ where ρ0 is the bulk resistivity, κ is a thickness-dependent parameter, n is t
 参考文献：
 RC 时间常数也会影响 QLED 的带宽 [35]
 
-High-Speed Visible Light Communications Using Individual Pixels in a Micro Light-Emitting Diode Array
-利用微型发光二极管阵列中的单个像素实现高速可见光通信
+**High-Speed Visible Light Communications Using Individual Pixels in a Micro Light-Emitting Diode Array**
+
+**利用微型发光二极管阵列中的单个像素实现高速可见光通信**
 
 报道了基于 III 族氮化物的微像素发光二极管阵列中单个像素的高频调制，其中每个阵列由 16 × 16 个可单独寻址的 72 微米直径像素组成。所研究的器件的峰值发射波长分别为 370、405 和 450 nm。发现 450 nm 发射器件的典型像素的光学 -3 dB 调制带宽约为 245 MHz。使用开关键控非归零调制，从 450 nm 发射的单个像素实现了高达 1 Gb/s 的数据传输速率，比特误码率小于 1 × 10 -10 。此类器件具有用于自由空间或光纤耦合可见光通信的潜力。
 
