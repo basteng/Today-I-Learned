@@ -33,7 +33,9 @@
   - [18.1 新型微芯片装置可产生多种激光色调](#181-新型微芯片装置可产生多种激光色调)
   - [18.2 片上光源可产生多种波长范围](#182-片上光源可产生多种波长范围)
   - [18.3 微型新型激光器填补了可见光彩虹色的长期空白，开辟了新的应用](#183-微型新型激光器填补了可见光彩虹色的长期空白开辟了新的应用)
-- [19. Recent progress on micro-LEDs - Nanowire -](#19-recent-progress-on-micro-leds---nanowire--)
+- [19. Recent progress on micro-LEDs - Nanowire](#19-recent-progress-on-micro-leds---nanowire)
+- [20. Data communication using blue GaN-on-Si micro-LEDs reported on a 200-mm Silicon substrate 格勒诺布尔大学](#20-data-communication-using-blue-gan-on-si-micro-leds-reported-on-a-200-mm-silicon-substrate-格勒诺布尔大学)
+- [21. 注入电流对量子点发光二极管调制带宽的影响](#21-注入电流对量子点发光二极管调制带宽的影响)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1049,9 +1051,31 @@ Bechtolsheim 的思想实验中的 XPU 具有 25.6 Tb/秒的总网络 I/O 带宽
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Advancing%20on-chip%20Kerr%20optical%20parametric%20oscillation%20towards%20coherent%20applications%20covering%20the%20green%20gap.pdf>
 
-# 19. Recent progress on micro-LEDs - Nanowire - 
+# 19. Recent progress on micro-LEDs - Nanowire
 
 随着增强现实/虚拟现实 (AR/VR) 等技术的发展，它们正朝着高效、小尺寸和超高分辨率的显示器方向发展，开发尺寸在几微米甚至更小的光电器件引起了人们的极大兴趣。在这篇评论文章中，我们概述了可见微米级发光二极管 (LED) 的一些最新发展。我们讨论了较小尺寸器件的更高表面复合、实现更长发射波长的难度以及将单个全彩色器件集成到显示器中的复杂性等主要挑战，以及为解决这些问题而开发的技术。然后，我们介绍了自下而上基于纳米结构的亚微米 LED 的最新研究，重点介绍了它们的独特优势、最新发展和广阔的潜力。最后，我们提出了未来发展微型 LED 的前景，以实现更高的效率、更好的色彩输出和更高效的集成。
 
 <https://www.light-am.com/article/doi/10.37188/lam.2023.031>
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Recent%20progress%20on%20micro-LEDs.pdf>
+
+# 20. Data communication using blue GaN-on-Si micro-LEDs reported on a 200-mm Silicon substrate 格勒诺布尔大学
+
+报告称，在 200 毫米硅基板上使用蓝色 GaN-on-Si 微型 LED 进行数据通信
+
+本文报道了在 200 毫米硅基板上制造的氮化镓 (GaN) 蓝色微发光二极管 (μLED) 用于多 Gb/s 数据传输。制造工艺与 CMOS 集成电路设计兼容，为基于 μLED 的可见光通信 (VLC) 或芯片间互连的全集成发射器铺平了道路。使用直流光正交频分复用 (DCO-OFDM) 调制实现了光纤引导传输，并且报道了使用单个 50×50 μm 2 蓝色 μLED 的 数据速率为 5.9 Gb/s，误码率 (BER) 为 3.8×10 -3 。在 μLED 仅受其非线性失真而非系统噪声限制的情况下，该数据速率进一步提高到 15.5 Gb/s，突显了 GaN μLED 的高线性度。
+
+通信作者 Yannis Le Guennec
+
+Yannis Le Guennec 于 2000 年获得法国格勒诺布尔国立物理学院工程师学位，并于 2003 年获得格勒诺布尔理工学院光学光电子学和微波博士学位。他目前是微电子、电磁学和光子学研究所 (IMEP-LAHC) 的助理教授。他感兴趣的领域是微波光子学、全光信号处理、超宽带 (UWB) 通信和光纤无线电技术。
+
+<https://ieeexplore.ieee.org/document/10654359>
+
+# 21. 注入电流对量子点发光二极管调制带宽的影响
+
+本文介绍了量子点 (QD) 发光二极管 (QLED) 的调制带宽研究。我们研究中使用的 QLED 是红光发射 CdSe/ZnS QLED，其结构为氧化铟锡 (ITO)/聚（3.4-乙烯二氧噻吩）聚苯乙烯磺酸盐 (PEDOT:PSS)/TFB/QD/ZnO/Al，发射面积为 2 或 4 mm 2 。我们发现，在较小的注入电流（低于 ~10 mA）下，电阻电容 (RC) 时间常数和载流子寿命对 QLED 带宽的影响相当，而在较大的注入电流下，带宽主要由载流子寿命决定。QD 的响应时间不是限制因素。QLED 的带宽随注入电流的增加而增加，最终受器件损伤阈值电流的限制。在相同的注入电流下，发光面积较小的QLED具有较大的电流密度，因而具有较大的带宽。在注入电流为28 mA时，2 mm 2 QLED提供11.4 MHz的带宽和156 000 cd/m 2的亮度值 ，而4 mm 2 QLED提供8.2 MHz的带宽和97 000 cd/m 2的亮度值 。我们的研究为QLED带宽优化提供了指导方针，并为QLED在照明、显示和通信应用方面的进一步开发提供了有用信息。
+
+<https://ieeexplore.ieee.org/document/8852748>
+
+
 
