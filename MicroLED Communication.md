@@ -36,6 +36,7 @@
 - [19. Recent progress on micro-LEDs - Nanowire](#19-recent-progress-on-micro-leds---nanowire)
 - [20. Data communication using blue GaN-on-Si micro-LEDs reported on a 200-mm Silicon substrate 格勒诺布尔大学](#20-data-communication-using-blue-gan-on-si-micro-leds-reported-on-a-200-mm-silicon-substrate-格勒诺布尔大学)
 - [21. 注入电流对量子点发光二极管调制带宽的影响](#21-注入电流对量子点发光二极管调制带宽的影响)
+- [22.Nonpolar m -Plane InGaN/GaN Micro-Scale Light-Emitting Diode With 1.5 GHz Modulation Bandwidth - 非极性面 - 美国新墨西哥州阿尔伯克基新墨西哥大学高科技材料中心](#22nonpolar-m--plane-ingangan-micro-scale-light-emitting-diode-with-15-ghz-modulation-bandwidth---非极性面---美国新墨西哥州阿尔伯克基新墨西哥大学高科技材料中心)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1101,3 +1102,12 @@ High-Speed Visible Light Communications Using Individual Pixels in a Micro Light
 报道了基于 III 族氮化物的微像素发光二极管阵列中单个像素的高频调制，其中每个阵列由 16 × 16 个可单独寻址的 72 微米直径像素组成。所研究的器件的峰值发射波长分别为 370、405 和 450 nm。发现 450 nm 发射器件的典型像素的光学 -3 dB 调制带宽约为 245 MHz。使用开关键控非归零调制，从 450 nm 发射的单个像素实现了高达 1 Gb/s 的数据传输速率，比特误码率小于 1 × 10 -10 。此类器件具有用于自由空间或光纤耦合可见光通信的潜力。
 
 <https://ieeexplore.ieee.org/document/5504118>
+
+# 22.Nonpolar m -Plane InGaN/GaN Micro-Scale Light-Emitting Diode With 1.5 GHz Modulation Bandwidth - 非极性面 - 美国新墨西哥州阿尔伯克基新墨西哥大学高科技材料中心
+
+我们展示了一种高速非极性 m 平面 InGaN/GaN 微尺度发光二极管 (LED)，其在电流密度为 1 kA/cm 2时具有创纪录的 1.5 GHz 电 -3 dB 调制带宽。使用速率方程模型提取了 1 kA/cm 2 时 200 ps 的差分载流子寿命 (DLT) 。较短的 DLT 归因于无极化非极性 InGaN/GaN 量子阱中较高的电子-空穴波函数重叠，与极性 c 平面量子阱相比，这导致低电流密度下的自发辐射率更高。在低电流密度下具有改进的高速性能的 LED 将有助于降低功耗并提高 Gb/s 可见光通信系统的效率。
+
+<https://ieeexplore.ieee.org/document/8283504>
+
+
+
