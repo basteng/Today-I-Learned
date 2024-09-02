@@ -1075,7 +1075,33 @@ Yannis Le Guennec 于 2000 年获得法国格勒诺布尔国立物理学院工�
 
 本文介绍了量子点 (QD) 发光二极管 (QLED) 的调制带宽研究。我们研究中使用的 QLED 是红光发射 CdSe/ZnS QLED，其结构为氧化铟锡 (ITO)/聚（3.4-乙烯二氧噻吩）聚苯乙烯磺酸盐 (PEDOT:PSS)/TFB/QD/ZnO/Al，发射面积为 2 或 4 mm 2 。我们发现，在较小的注入电流（低于 ~10 mA）下，电阻电容 (RC) 时间常数和载流子寿命对 QLED 带宽的影响相当，而在较大的注入电流下，带宽主要由载流子寿命决定。QD 的响应时间不是限制因素。QLED 的带宽随注入电流的增加而增加，最终受器件损伤阈值电流的限制。在相同的注入电流下，发光面积较小的QLED具有较大的电流密度，因而具有较大的带宽。在注入电流为28 mA时，2 mm 2 QLED提供11.4 MHz的带宽和156 000 cd/m 2的亮度值 ，而4 mm 2 QLED提供8.2 MHz的带宽和97 000 cd/m 2的亮度值 。我们的研究为QLED带宽优化提供了指导方针，并为QLED在照明、显示和通信应用方面的进一步开发提供了有用信息。
 
+The relationship between the response time τ and the modulation bandwidth f is given by f=1 /(2πτ ). If the bandwidth of the QLED was limited by the fluorescent lifetime of the QD film, with τ=10 ns, the theoretical and measured bandwidth are 15.9 and 15.5 MHz, respectively. The RC time constant should also affect the bandwidth of a QLED [35]. To obtain the R and C values of the QLED, we measured the current–voltage and capacitance–voltage relationships of the QLED with a semiconductor parameter analyzer (Keithley 4200A-SCS, 50 kHz). The variations in the R and C values with the injection current for the 2- and 4-mm2 QLEDs are shown in Fig. 7(a) and (b), respectively. At the same current, the R and C values of the 2-mm2 QLED are smaller than those of the 4-mm2 QLED. The resistivity coefficient ρ can be expressed as [36]
+响应时间 τ 与调制带宽 f 之间的关系为 f=1/(2πτ)。如果 QLED 的带宽受 QD 薄膜的荧光寿命限制，τ=10 ns，则理论带宽和测量带宽分别为 15.9 和 15.5 MHz。<font color=red>RC 时间常数也会影响 QLED 的带宽 [35]</font>。为了获得 QLED 的 R 和 C 值，我们使用半导体参数分析仪（Keithley 4200A-SCS，50 kHz）测量了 QLED 的电流-电压和电容-电压关系。图 7(a) 和 (b) 分别显示了 2 和 4 mm2 QLED 的 R 和 C 值随注入电流的变化。在相同电流下，2 mm2 QLED 的 R 和 C 值小于 4 mm2 QLED。电阻率系数 ρ 可表示为 [36]
+
+```
+\begin{equation*} \rho =\frac {\rho _{0}}{\kappa (1-In\kappa)}\tag{1}\end{equation*}
+```
+
+with
+
+```
+\begin{equation*} \rho _{0} =\frac {m\nu _{F}}{ne^{2}l_{\textrm {bulk}}}\tag{2}\end{equation*}
+```
+
+where ρ0 is the bulk resistivity, κ is a thickness-dependent parameter, n is the electron concentration, νF is the Fermi velocity, e is the electron charge, m is the effective mass of electron, and lbulk is the bulk mean free path. As the bulk resistivity is inversely proportional to the electron concentration, which is proportional to the current density, the resistance of the device decreases with an increase in the current. The total capacitance of a QLED is given by C=CD+CR , where CD is the diffusion capacitance and CR is the radiative-recombination-based capacitance [37]. An increase in the current causes a decrease in the radiative-recombination-based capacitance, which thus leads to a reduction in the total capacitance. Knowing the R and C values of the QLED, we can estimate the RC-limited bandwidth by f=1 /(2πRC ).
+
+其中，ρ0 是体电阻率，κ 是厚度相关参数，n 是电子浓度，νF 是费米速度，e 是电子电荷，m 是电子的有效质量，lbulk 是体平均自由程。由于体电阻率与电子浓度成反比，而电子浓度与电流密度成正比，所以器件的电阻会随着电流的增加而减小。QLED 的总电容由 C=CD+CR 给出，其中 CD 是扩散电容，CR 是基于辐射复合的电容 [37]。电流的增加会导致基于辐射复合的电容减小，从而导致总电容减小。了解 QLED 的 R 和 C 值后，我们可以通过 f=1/(2πRC ) 估算 RC 限制带宽。
+
 <https://ieeexplore.ieee.org/document/8852748>
 
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/%E6%B3%A8%E5%85%A5%E7%94%B5%E6%B5%81%E5%AF%B9%E9%87%8F%E5%AD%90%E7%82%B9%E5%8F%91%E5%85%89%E4%BA%8C%E6%9E%81%E7%AE%A1%E8%B0%83%E5%88%B6%E5%B8%A6%E5%AE%BD%E7%9A%84%E5%BD%B1%E5%93%8D.pdf>
 
+参考文献：
+RC 时间常数也会影响 QLED 的带宽 [35]
 
+High-Speed Visible Light Communications Using Individual Pixels in a Micro Light-Emitting Diode Array
+利用微型发光二极管阵列中的单个像素实现高速可见光通信
+
+报道了基于 III 族氮化物的微像素发光二极管阵列中单个像素的高频调制，其中每个阵列由 16 × 16 个可单独寻址的 72 微米直径像素组成。所研究的器件的峰值发射波长分别为 370、405 和 450 nm。发现 450 nm 发射器件的典型像素的光学 -3 dB 调制带宽约为 245 MHz。使用开关键控非归零调制，从 450 nm 发射的单个像素实现了高达 1 Gb/s 的数据传输速率，比特误码率小于 1 × 10 -10 。此类器件具有用于自由空间或光纤耦合可见光通信的潜力。
+
+<https://ieeexplore.ieee.org/document/5504118>
