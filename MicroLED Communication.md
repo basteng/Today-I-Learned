@@ -1078,15 +1078,11 @@ Yannis Le Guennec 于 2000 年获得法国格勒诺布尔国立物理学院工�
 The relationship between the response time τ and the modulation bandwidth f is given by f=1 /(2πτ ). If the bandwidth of the QLED was limited by the fluorescent lifetime of the QD film, with τ=10 ns, the theoretical and measured bandwidth are 15.9 and 15.5 MHz, respectively. The RC time constant should also affect the bandwidth of a QLED [35]. To obtain the R and C values of the QLED, we measured the current–voltage and capacitance–voltage relationships of the QLED with a semiconductor parameter analyzer (Keithley 4200A-SCS, 50 kHz). The variations in the R and C values with the injection current for the 2- and 4-mm2 QLEDs are shown in Fig. 7(a) and (b), respectively. At the same current, the R and C values of the 2-mm2 QLED are smaller than those of the 4-mm2 QLED. The resistivity coefficient ρ can be expressed as [36]
 响应时间 τ 与调制带宽 f 之间的关系为 f=1/(2πτ)。如果 QLED 的带宽受 QD 薄膜的荧光寿命限制，τ=10 ns，则理论带宽和测量带宽分别为 15.9 和 15.5 MHz。<font color=red>RC 时间常数也会影响 QLED 的带宽 [35]</font>。为了获得 QLED 的 R 和 C 值，我们使用半导体参数分析仪（Keithley 4200A-SCS，50 kHz）测量了 QLED 的电流-电压和电容-电压关系。图 7(a) 和 (b) 分别显示了 2 和 4 mm2 QLED 的 R 和 C 值随注入电流的变化。在相同电流下，2 mm2 QLED 的 R 和 C 值小于 4 mm2 QLED。电阻率系数 ρ 可表示为 [36]
 
-```
-\begin{equation*} \rho =\frac {\rho _{0}}{\kappa (1-In\kappa)}\tag{1}\end{equation*}
-```
+![image](/picture/evaluation1.png)
 
 with
 
-```
-\begin{equation*} \rho _{0} =\frac {m\nu _{F}}{ne^{2}l_{\textrm {bulk}}}\tag{2}\end{equation*}
-```
+![image](/picture/evaluation2.png)
 
 where ρ0 is the bulk resistivity, κ is a thickness-dependent parameter, n is the electron concentration, νF is the Fermi velocity, e is the electron charge, m is the effective mass of electron, and lbulk is the bulk mean free path. As the bulk resistivity is inversely proportional to the electron concentration, which is proportional to the current density, the resistance of the device decreases with an increase in the current. The total capacitance of a QLED is given by C=CD+CR , where CD is the diffusion capacitance and CR is the radiative-recombination-based capacitance [37]. An increase in the current causes a decrease in the radiative-recombination-based capacitance, which thus leads to a reduction in the total capacitance. Knowing the R and C values of the QLED, we can estimate the RC-limited bandwidth by f=1 /(2πRC ).
 
