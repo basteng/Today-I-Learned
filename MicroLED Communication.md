@@ -33,6 +33,7 @@
   - [18.1 新型微芯片装置可产生多种激光色调](#181-新型微芯片装置可产生多种激光色调)
   - [18.2 片上光源可产生多种波长范围](#182-片上光源可产生多种波长范围)
   - [18.3 微型新型激光器填补了可见光彩虹色的长期空白，开辟了新的应用](#183-微型新型激光器填补了可见光彩虹色的长期空白开辟了新的应用)
+- [19. Recent progress on micro-LEDs - Nanowire -](#19-recent-progress-on-micro-leds---nanowire--)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1047,3 +1048,10 @@ Bechtolsheim 的思想实验中的 XPU 具有 25.6 Tb/秒的总网络 I/O 带宽
 <https://phys.org/news/2024-08-tiny-lasers-gap-rainbow-visible.html>
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Advancing%20on-chip%20Kerr%20optical%20parametric%20oscillation%20towards%20coherent%20applications%20covering%20the%20green%20gap.pdf>
+
+# 19. Recent progress on micro-LEDs - Nanowire - 
+
+随着增强现实/虚拟现实 (AR/VR) 等技术的发展，它们正朝着高效、小尺寸和超高分辨率的显示器方向发展，开发尺寸在几微米甚至更小的光电器件引起了人们的极大兴趣。在这篇评论文章中，我们概述了可见微米级发光二极管 (LED) 的一些最新发展。我们讨论了较小尺寸器件的更高表面复合、实现更长发射波长的难度以及将单个全彩色器件集成到显示器中的复杂性等主要挑战，以及为解决这些问题而开发的技术。然后，我们介绍了自下而上基于纳米结构的亚微米 LED 的最新研究，重点介绍了它们的独特优势、最新发展和广阔的潜力。最后，我们提出了未来发展微型 LED 的前景，以实现更高的效率、更好的色彩输出和更高效的集成。
+
+<https://www.light-am.com/article/doi/10.37188/lam.2023.031>
+
