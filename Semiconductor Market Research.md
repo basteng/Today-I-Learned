@@ -41,6 +41,7 @@
 - [18.半导体制造主要玩家](#18半导体制造主要玩家)
 - [19. NAND](#19-nand)
 - [20. GPU](#20-gpu)
+- [21. 芯片设计成本](#21-芯片设计成本)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -747,3 +748,7 @@ IDC 预测，随着 话题标签#semiconductors per 话题标签#vehicle 的价�
 ![image](/picture/who%20buy%20GPU.jpg)
 
 <https://substack.com/profile/5566720-claus-aasholm/note/c-67169297>
+
+# 21. 芯片设计成本
+
+![image](/picture/cost%20of%20chip%20design%20of%20nanometer.jpg)
