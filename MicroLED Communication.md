@@ -37,6 +37,9 @@
 - [20. Data communication using blue GaN-on-Si micro-LEDs reported on a 200-mm Silicon substrate 格勒诺布尔大学](#20-data-communication-using-blue-gan-on-si-micro-leds-reported-on-a-200-mm-silicon-substrate-格勒诺布尔大学)
 - [21. 注入电流对量子点发光二极管调制带宽的影响](#21-注入电流对量子点发光二极管调制带宽的影响)
 - [22.Nonpolar m -Plane InGaN/GaN Micro-Scale Light-Emitting Diode With 1.5 GHz Modulation Bandwidth - 非极性面 - 美国新墨西哥州阿尔伯克基新墨西哥大学高科技材料中心](#22nonpolar-m--plane-ingangan-micro-scale-light-emitting-diode-with-15-ghz-modulation-bandwidth---非极性面---美国新墨西哥州阿尔伯克基新墨西哥大学高科技材料中心)
+- [23. Arista](#23-arista)
+  - [23.1 Andy Bechtolshelm：](#231-andy-bechtolshelm)
+- [24.数据中心交换芯片](#24数据中心交换芯片)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1109,6 +1112,133 @@ RC 时间常数也会影响 QLED 的带宽 [35]
 我们展示了一种高速非极性 m 平面 InGaN/GaN 微尺度发光二极管 (LED)，其在电流密度为 1 kA/cm 2时具有创纪录的 1.5 GHz 电 -3 dB 调制带宽。使用速率方程模型提取了 1 kA/cm 2 时 200 ps 的差分载流子寿命 (DLT) 。较短的 DLT 归因于无极化非极性 InGaN/GaN 量子阱中较高的电子-空穴波函数重叠，与极性 c 平面量子阱相比，这导致低电流密度下的自发辐射率更高。在低电流密度下具有改进的高速性能的 LED 将有助于降低功耗并提高 Gb/s 可见光通信系统的效率。
 
 <https://ieeexplore.ieee.org/document/8283504>
+
+# 23. Arista
+
+## 23.1 Andy Bechtolshelm：
+
+这是他在2024年8月底Hotchips听说的使用MicroLED的OSPF，而并不是实际应用中使用了MicroLED
+
+![image](/picture/OSFP-MicroLED.png)
+
+# 24.数据中心交换芯片
+
+数据中心交换芯片的演进趋势是：每两年翻一番的快速增长，25.6T交换芯片采用7nm工艺，51.2T必须选择5nm工艺节点，预计2025年3nm工艺节点将问世，为交换芯片带来102.4T的容量。
+
+![image](/picture/Commercial-Switching-Chip-Capacity-1024x576.webp)
+
+光口方面，25.6T光模块搭配64个400G光模块，2021年已经实现，预计明年将搭配64个800G模块，8x100G方案支持交换机升级到51.2T
+
+对于102.T的交换容量，需要1.6T的光模块，光口需达到200G每波长速率，预计2025年进入产业节点。
+
+![image](/picture/Switch-density-doubles-every-two-years-1024x576.webp)
+
+单通道100G是大节点，可以支持400G、800G光模块的落地，有机会做16x100G 1.6T的方案，但是FiberMall认为8x200G 1.6T才是产业价值。
+
+![image](/picture/Switching-capacity-of-different-serdes-rates-1024x525.webp)
+
+当前，800G即将进入产业化的关键阶段。
+
+1、2020年已完成800G光模块的规范 
+
+2、800G光模块已具备部署条件
+
+这是第一个在系统技术成熟前就能部署的光模块。
+
+3、下一代交换芯片全部支持800G光模块接入
+
+采用8*100G解决方案
+
+![image](/picture/51.webp)
+
+800G光模块主要为2x400G解决方案。
+
+![image](/picture/800G-optical-module-1024x576.webp)
+
+![image](/picture/LC-1-1024x576.webp)
+
+![image](/picture/dual-MPO.webp)
+
+![image](/picture/dual-MPO.webp)
+
+![image](/picture/duplex-LC.webp)
+
+OSFP-XD的MSA在2022年9月有一个草案，MSA的第13页引用了Lightcounting的一张图表，Top5云供应商的以太网光模块市场趋势，其中800G光模块将成为以太网光模块的下一个主导产品。
+
+![image](/picture/sales-of-ethernet-transceivers-to-the-top5-cloud-companies-1024x576.webp)
+
+1.6T光模块
+
+基于200G波长的1.6T光模块
+SerDes 接口为 100G 或 200G
+降低单位功耗和单位成本的前景
+
+![image](/picture/1.6T-transceiver-1024x576.png)
+
+基于16x100G OSFP-XD1600方案的1.6T光模块预计在2024年带动产业链技术成熟节点，基于8x200G的OSFP1600预计在2026年成熟。
+
+![image](/picture/evolutionary-route-of-OSFP-and-OSFPXD-1024x520.webp)
+
+![image](/picture/rates-of-optical-and-electrical-port-1024x576.webp)
+
+800G、1.6T、以及3.2T采用热插拔模块封装，功耗是需要解决的巨大问题。
+
+![image](/picture/consumption-of-optical-module-1024x575.webp)
+
+下图蓝色部分为以太网模块，橙色部分为相干模块，模块功耗曲线如下。
+
+![image](/picture/Hot-pluggable-module-power-consumption-1024x556.webp)
+
+转换后，基本具有单位位转换函数递减的趋势。
+
+![image](/picture/power-consumption-of-Hot-pluggable-module-1024x576.webp)
+
+根据功耗，以下光模块尺寸可用于不同的解决方案。
+
+![image](/picture/power-consumption-of-Hot-pluggable-optical-module-1024x576.webp)
+
+对于相干的1.6T ZR来说，功耗太大，不能选择QSFP-DD这样的小封装，下图是这几种模块外形尺寸的对比。
+
+![image](/picture/module-form-factor-1024x509.webp)
+
+![image](/picture/optical-module-form-factor-1024x476.webp)
+
+![image](/picture/power-consumption-1024x576.webp)
+
+FiberMall预计2025年将具备单波200G的产业部署能力，基于此，1.6T将具有单位功耗和成本的优势。有可能出现热插拔和CPO竞争，1.6T仍然可以选择热插拔并支持交换机升级到102.T，避免使用产业链不熟悉的CPO封装。
+
+![image](/picture/The-per-channel-rate-will-transition-to-200G-in-2025-1024x575.webp)
+
+**概括**
+
+1. 产业将快速过渡到800G、1.6T光模块端口。
+单位成本更低，单位电耗更低。
+
+2. 800G光模块大部分采用2x400G解决方案。
+采用2×4×100G解决方案。
+
+3. 1.6T光模块大多采用2x800G方案。
+采用2x4x200G解决方案。
+
+4. 1.6T光模块只能使用OSFP/OSFP-XD。
+QSFP-DD封装的散热能力不足以满足1.6T ZR的需求。
+
+5. 51.2T/102.4T主流模块封装，无需CPO即可热插拔。
+
+<https://www.fibermall.com/blog/fibermall-1600g-optical-module-roadmap.htm?srsltid=AfmBOopYi2Dm84lSw2dTLUAdCclZd6mtLZ7g3PSqbnyEWrXY4DKmFoHf>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

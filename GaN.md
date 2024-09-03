@@ -64,6 +64,9 @@
   - [13.4 设计多量子阱的目的](#134-设计多量子阱的目的)
     - [总结：](#总结-2)
 - [14. 氮化镓代工](#14-氮化镓代工)
+  - [14.1 半导体行业观察2020年综述](#141-半导体行业观察2020年综述)
+  - [14.2 GlobalFoundries](#142-globalfoundries)
+  - [14.2.1 Finwave Semiconductor 与 GlobalFoundries 合作开发用于蜂窝手机应用的 RF GaN-on-Si 技术](#1421-finwave-semiconductor-与-globalfoundries-合作开发用于蜂窝手机应用的-rf-gan-on-si-技术)
 - [15.硅基绿光LED的应变工程](#15硅基绿光led的应变工程)
 <div STYLE="page-break-after: always;"></div>
 
@@ -1081,6 +1084,8 @@ FR3 频段还处于早期阶段，尚未正式公布。此外，FR1 和 FR2 频�
 
 # 14. 氮化镓代工
 
+## 14.1 半导体行业观察2020年综述
+
 2020/3/2 1:12:17
 
 来源：半导体行业观察
@@ -1136,6 +1141,26 @@ FR3 频段还处于早期阶段，尚未正式公布。此外，FR1 和 FR2 频�
 结语
 
 从目前来看，氮化镓充电器将会成为消费电子领域的标配，同时，5G市场的爆发也将成为氮化镓器件发展的后续动力。下游市场的火爆，也让更多的设计厂商投入到了氮化镓的竞争当中，而他们的参与，也会推动代工厂在氮化镓领域进行发展。而在这当中，或许又会有新的黑马脱颖而出。
+
+## 14.2 GlobalFoundries
+
+## 14.2.1 Finwave Semiconductor 与 GlobalFoundries 合作开发用于蜂窝手机应用的 RF GaN-on-Si 技术
+
+马萨诸塞州沃尔瑟姆，2024 年 8 月 29 日（GLOBE NEWSWIRE）—— GaN（氮化镓）技术领域的领先创新者Finwave Semiconductor, Inc.今天宣布与GlobalFoundries (GF)达成战略技术开发和许可协议，GlobalFoundries 是全球领先的专业代工厂，在 RF 领导领域拥有丰富的历史。
+
+此次合作将 Finwave 尖端的 GaN-on-Si 技术与 GF 在美国的大批量生产能力和悠久的 RF 创新传统（包括业界领先的 RF 绝缘体上硅和硅锗解决方案）相结合。此次合作将专注于优化和扩展 Finwave 创新的增强模式 (E-mode) MISHEMT 技术，以便在 GF 位于佛蒙特州伯灵顿的 200 毫米半导体制造工厂进行批量生产。
+
+Finwave 先进的 200mm GaN-on-Si E-mode MISHEMT 平台提供卓越的射频性能，在低于 5V 的电压下提供出色的增益和效率，同时确保 200mm 晶圆的高均匀性，正如 Finwave 在 CS Mantech 2024 行业会议上的最新演讲中所强调的那样。利用 Finwave 的技术，GF 全面的 90RFGaN 平台将提供高功率密度和效率，从而实现高性能、优化的设备，节省占用空间和成本。此次合作为传统 GaAs 和 Si 技术不足的应用中的高效功率放大器提供了引人注目的解决方案，包括新的更高频率的 5G FR2/FR3 频段、6G 和 mmWave 放大器以及高功率 Wi-Fi 7 系统，其中卓越的范围和效率至关重要。
+
+Finwave Semiconductor 首席执行官 Pierre-Yves Lesaicherre 博士表示：“这项协议标志着 Finwave 的一个重要里程碑。通过利用 GlobalFoundries 广泛的制造能力并将 Finwave 的 E-mode MISHEMT 技术突破投入批量生产，我们将在应对日益苛刻的无线通信领域时释放巨大的增长机会。此次合作为进一步创新和将 RF 前端集成到单个 GaN-on-Si 设备上打开了大门。这是前所未有的，并且有可能降低成本和尺寸，而这两者对于手机来说都是至关重要的。”
+
+GF射频业务副总裁兼总经理 Shankaran Janardhanan 表示：“由于下一代无线网络需要在更高频率下运行的设备，Finwave 的低压 GaN-on-Si 技术与 GF 的 90RFGaN 平台相结合，将成为未来手机功率放大器的重要组成部分，确保强大的性能和高功率效率。”
+
+Finwave 的 E-mode MISHEMT 技术经过十多年的研究和创新而开发，并获得了美国能源部高级研究计划署能源项目 (ARPA-E) 通过其“为具有未开发潜力的领先能源技术播种关键进展”(SCALEUP) 计划提供的联邦资金支持，以及来自深度技术投资者和战略合作伙伴的私人投资。
+
+利用 GF 的大批量 CMOS 制造能力，Finwave 和 GlobalFoundries 的目标是在 2026 年上半年实现该技术的量产。
+
+<https://www.globenewswire.com/news-release/2024/08/29/2937890/0/en/Finwave-Semiconductor-and-GlobalFoundries-Partner-on-RF-GaN-on-Si-Technology-for-Cellular-Handset-Applications.html>
 
 # 15.硅基绿光LED的应变工程
 
