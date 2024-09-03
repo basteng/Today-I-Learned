@@ -66,7 +66,7 @@
 - [14. 氮化镓代工](#14-氮化镓代工)
   - [14.1 半导体行业观察2020年综述](#141-半导体行业观察2020年综述)
   - [14.2 GlobalFoundries](#142-globalfoundries)
-  - [14.2.1 Finwave Semiconductor 与 GlobalFoundries 合作开发用于蜂窝手机应用的 RF GaN-on-Si 技术](#1421-finwave-semiconductor-与-globalfoundries-合作开发用于蜂窝手机应用的-rf-gan-on-si-技术)
+    - [14.2.1 Finwave Semiconductor 与 GlobalFoundries 合作开发用于蜂窝手机应用的 RF GaN-on-Si 技术](#1421-finwave-semiconductor-与-globalfoundries-合作开发用于蜂窝手机应用的-rf-gan-on-si-技术)
 - [15.硅基绿光LED的应变工程](#15硅基绿光led的应变工程)
 <div STYLE="page-break-after: always;"></div>
 
@@ -1144,7 +1144,7 @@ FR3 频段还处于早期阶段，尚未正式公布。此外，FR1 和 FR2 频�
 
 ## 14.2 GlobalFoundries
 
-## 14.2.1 Finwave Semiconductor 与 GlobalFoundries 合作开发用于蜂窝手机应用的 RF GaN-on-Si 技术
+### 14.2.1 Finwave Semiconductor 与 GlobalFoundries 合作开发用于蜂窝手机应用的 RF GaN-on-Si 技术
 
 马萨诸塞州沃尔瑟姆，2024 年 8 月 29 日（GLOBE NEWSWIRE）—— GaN（氮化镓）技术领域的领先创新者Finwave Semiconductor, Inc.今天宣布与GlobalFoundries (GF)达成战略技术开发和许可协议，GlobalFoundries 是全球领先的专业代工厂，在 RF 领导领域拥有丰富的历史。
 
