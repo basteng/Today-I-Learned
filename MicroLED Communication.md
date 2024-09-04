@@ -17,6 +17,7 @@
     - [5.3.4 用例和应用：现实生活中的光子学](#534-用例和应用现实生活中的光子学)
     - [5.3.5 底线](#535-底线)
   - [5.4 2024 Hotchips演讲](#54-2024-hotchips演讲)
+- [5.5 Data goes blue with GaN interconnects - Avicena《Compound Semiconductor》 VOLUME 27 ISSUE IV 2021](#55-data-goes-blue-with-gan-interconnects---avicenacompound-semiconductor-volume-27-issue-iv-2021)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -460,6 +461,116 @@ Pezeshki 表示：“对于 Nvidia 或英特尔来说，推出一款配备紧密
 ## 5.4 2024 Hotchips演讲
 
 <https://events.zoom.us/ejl/Aoq11R4nSJcHRv0c5cDQkB3kzhWGFrJgrvvzDI9aQvc1Itt0s2sU~AxApfK-xtbOe5Mxq-obdLfvfRLEM6Ql-B-U_6qHeAHG2zgV273-oJZy6QJr78kjymBh-T3pMXY7MJXOmpTKs-aSmCf_Wc1i0oCe4/home>
+
+# 5.5 Data goes blue with GaN interconnects - Avicena《Compound Semiconductor》 VOLUME 27 ISSUE IV 2021
+
+ MOST OF THE ENERGY consumed in computing systems is not in the computation, but in moving data, and the longer the distance, the greater the challenge in terms of energy and density.  At longer length scales, fibre optic links have replaced copper, but at short distances the significant amount of energy required to convert data back and forth between photons and electrons makes optical interfaces prohibitive.
+
+ 计算系统中消耗的大部分能量并不在于计算，而是在于数据的传输，而且传输距离越长，能耗和密度的挑战就越大。在较长的距离上，光纤链路已经取代了铜线，但在短距离内，将数据在光子和电子之间相互转换所需的大量能量使得光学接口变得难以实现。
+
+ Although it may raise a few eyebrows, at these shorter length scales, optimized optical emitters derived from GaN microLEDs could be a promising candidate for optical communications by leveraging their success in the display industry. Such a move could transform the $400 billion computer hardware industry and enable  entirely new architectures for parallel computing, machine learning, and processors.
+
+ 尽管这一想法可能引起一些质疑，但在这些较短的距离尺度上，通过利用GaN微型LED在显示行业中的成功，优化的光学发射器可能成为光通信的有力候选者。这样的创新可能会变革价值4,000亿美元的计算机硬件行业，并推动并行计算、机器学习和处理器的新型架构的实现。
+
+ Within the semiconductor industry, the days of enjoying rapid rates of progress on multiple fronts are long gone. There has been little increase in chip clock rates during the last two decades. There are also limits on the number of IC package input and output pins. Consequently, almost all high-performance chips utilize high-speed Serializers/De-serializers – known as SerDes – for input/output on the periphery of the die. Their role is to dramatically increase the bit rate compared with on-chip clock speeds so that all the information can be to squeezed through a limited number of pins. This takes energy, real estate, and chokes data flow – and the situation is only going to get worse with future system advances being realised primarily through new architectures that interconnect more chips rather than improvements in raw transistor performance.
+
+ 在半导体行业，享受多方面快速进步的日子早已一去不复返。过去二十年里，芯片时钟频率几乎没有提升，芯片封装输入输出引脚数量也有限制。因此，几乎所有高性能芯片都在芯片边缘使用高速串行器/解串器（SerDes）进行输入输出。SerDes的作用是显著提升比特率，以便通过有限的引脚传输所有信息。然而，这需要消耗能量、占用芯片面积，并限制数据流动。而随着未来系统的进步主要通过更多芯片的互连而非晶体管性能的提升来实现，这一问题只会更加严重。
+
+ Basic physics accounts for the decline in performance of longer electrical interconnects, which are limited by resistance and capacitance of electrical lines. When lines are longer, more capacitance needs to be charged and discharged through their resistance. Increasing density is also problematic – making wires thinner and closer together increases both resistance and capacitance, decreasing maximum interconnect lengths. And that’s by no means the only issue to consider. There’s crosstalk, non-linearities in the dielectric constant of the material causing distortions in the waveform, and the skin effect, which causes an increase in electrical resistance at higher frequencies.  By packaging chips on silicon interposers with a far higher density of lines, electrical data-pipes can be connected to very wide busses and operate close to the clock speed of the chips. However, for reasons 
+already outlined, a high density limits the reach, with chips typically having to be placed edge-to-edge. It is common to co-package high-bandwidth memory chips adjacent to the processor (see the leftmost illustration in Figure 1), and communicate over a bus that is typically about 1000 lanes wide, running at only 1 or 2 Gbit/s. Note that Intel’s AIB bus, TSMC’s LIPINCON bus and the Open Compute Project BoW busses are all wide and slow, with hundreds or thousands of lanes, each operating at 1 Gbit/s to 16 Gbit/s.
+
+基本的物理原理解释了较长电气互连性能下降的原因，这主要受限于电线的电阻和电容。当导线变长时，需要通过电阻对更大的电容进行充放电。提高密度同样存在问题——让导线变得更细、更靠近会增加电阻和电容，从而缩短最大互连长度。而这绝不仅仅是需要考虑的问题。还有串扰、材料介电常数的非线性导致的波形失真，以及在更高频率下导致电阻增加的集肤效应等问题。
+
+通过将芯片封装在具有更高线密度的硅中介层上，可以将电信号通过数据通道连接到非常宽的总线，并接近芯片时钟速度运行。然而，由于前面提到的原因，高密度限制了传输距离，芯片通常需要边缘对边缘放置。常见做法是将高带宽存储芯片与处理器并排封装（见图1最左侧的插图），并通过约1000条通道的总线通信，这些总线的运行速度通常仅为1到2 Gbit/s。值得注意的是，英特尔的AIB总线、台积电的LIPINCON总线以及开放计算项目的BoW总线都是宽而慢的，每个通道的运行速度为1 Gbit/s到16 Gbit/s，且总线拥有数百到数千条通道。
+
+**Different optics**
+ 
+ It has been known for decades that even very short optical interconnects promise significant power and density advantages over electrical interconnects. This advantage, based on ‘quantum impedance transformation’, hinges on the use of low-capacitance,  high-quantum-efficiency optoelectronic devices. Unfortunately, despite decades of effort, such sources are still to emerge for short links. Edge-emitting lasers, VCSELs, quantum-well modulators and silicon photonics modulators all fall far short of what is needed for practical short optical interconnects (from 1 mm to 10 m). A litany of issues has prevented success, including a high drive power, large size, poor high-temperature performance, expensive and bulky packaging, and a poor yield.
+
+几十年来，人们已经知道，即使是非常短的光互连也在功耗和密度方面具有显著优势，这种优势源于“量子阻抗变换”，依赖于低电容、高量子效率的光电器件。然而，尽管数十年的努力，适用于短距离互连的理想光源仍未出现。边发射激光器、VCSELs（垂直腔面发射激光器）、量子阱调制器和硅光子调制器等都远未达到实际短距离光互连（1毫米到10米）的要求。阻碍成功的因素多种多样，包括高驱动功耗、体积大、在高温下表现差、昂贵且笨重的封装，以及较低的良率。
+
+ These challenges are not insurmountable. What’s needed is a very different approach; our team in Mountain View, California is pioneering a new type of optical emitter derived from high-speed microLEDs. These devices that we call CROMEs (cavity-reinforced optical micro-emitters) utilize very innovative epitaxial and device structures to achieve far shorter carrier lifetimes, and a much higher modulation bandwidth than their more common cousins deployed in ubiquitous lighting and display applications. We have demonstrated CROMEs that are fast enough for current and future high-performance IC interconnects.  
+
+
+这些挑战并非无法克服。我们需要的是一种截然不同的方法；我们位于加利福尼亚州山景城的团队正在开创一种全新的光发射器，这种发射器源自高速微型LED。我们称之为CROME（腔增强光微发射器）的设备采用了非常创新的外延和器件结构，从而实现了更短的载流子寿命和比常用于照明和显示的传统微型LED更高的调制带宽。我们已经展示了足够快的CROME技术，可以满足当前和未来高性能集成电路互连的需求。
+
+A significant advantage of using visible light is that it allows the fabrication of low-capacitance, large-area CMOS detectors, which can be integrated with simple amplifier circuits to form fast, extremely low power receivers. Thanks to the large area of the detectors, alignment is simple while the packaging cost is low.
+
+
+使用可见光的一个显著优势在于，它能够制造低电容、大面积的CMOS探测器，这些探测器可以与简单的放大电路集成，形成高速、超低功耗的接收器。由于探测器面积较大，对准变得简单，且封装成本低。
+
+ There are several options for moving the light between chips. This can be carried out with monolithically fabricated waveguides on an interposer or with various kinds of multicore and imaging fibres. The use of high 
+density multicore fibres is well established, having been employed for decades in imaging applications, and used in borescopes, medical endoscopy and other ‘display’ applications. Operating in the visible spectrum with optimized 
+CROMEs and CMOS-compatible photodetectors that  are integrated with amplifiers, virtually all capacitance is eliminated. We estimate that such links can deliver an energy efficiency below 100 fJ/bit and deliver a multi-Tbit/s throughput at a density in excess of 10 Tbit s-1 mm-2.
+
+在芯片之间传输光信号有多种选择，可以通过在中介层上单片集成的波导来实现，也可以使用多芯光纤和成像光纤等多种方式。高密度多芯光纤技术已经非常成熟，几十年来已被用于成像应用，如内窥镜、医疗内镜和其他“显示”应用。在可见光谱中，使用优化的CROME发射器和与放大器集成的CMOS兼容光电探测器，几乎可以完全消除电容。我们估计这种链路可以实现每比特低于100飞焦耳的能效，并在超过10 Tbit/s mm²的密度下实现多Tbit/s的数据吞吐量。
+
+ A block diagram of our ‘LightBundle’ approach, together with details of a single lane, is shown in Figure 2. Each lane consists of an optical transmitter, a fibre core (or waveguide), and a receiver. The CROME transmitters are powered by simple drive circuitry, driven between 20 μA and 500 μA and optically coupled to a waveguide. Each light emitter has a diameter between 1 μm and 10 μm and may be modulated up to around 10 Gbit/s. The receiver consists of a silicon photodetector, optically coupled to a waveguide and monolithically integrated with CMOS transimpedance and limiting amplifiers. There has already been considerable interest in high-speed visible wavelength LEDs for free-space optical interconnects and ‘LiFi’, where LEDs are used to generate ambient lighting and transmit data. Such LEDs have a range of criteria to fulfil, needing to be both very efficient and fast. But in a chip-to-chip application considerations are markedly different, and one can trade off quantum efficiency for speed. In fact, the benefits of doing so are tremendous. By optimizing the device’s doping, quantum well structure, device design, and other features, CROMEs can be fast enough for very high-density, high performance IC interconnects. We have demonstrated CROME-based links with wide open eyes at even 10 Gbit/s (see Figure 3), a speed previously accessible only with high-speed lasers or modulators.  
+
+
+图2展示了我们的“LightBundle”方法的框图以及单通道的详细结构。每个通道由一个光发射器、光纤芯（或波导）和接收器组成。CROME发射器由简单的驱动电路供电，工作电流在20 μA到500 μA之间，并与波导进行光耦合。每个光发射器的直径在1 μm到10 μm之间，可调制至约10 Gbit/s。接收器由硅光电探测器组成，光耦合到波导，并与CMOS跨阻放大器和限幅放大器单片集成。
+
+高速可见光LED在自由空间光互连和“LiFi”领域引起了广泛关注，这些应用中LED不仅用于环境照明，还用于数据传输。这类LED需要同时具备高效能和高速度，但在芯片间互连应用中，考虑因素截然不同，可以在量子效率和速度之间做权衡。事实上，这样的优化带来了巨大的好处。通过优化器件的掺杂、量子阱结构、器件设计等特性，CROME可以达到非常高密度和高性能IC互连所需的速度。我们已经展示了基于CROME的链路，在高达10 Gbit/s的速度下依然具有宽眼图（见图3），这是以往仅通过高速激光器或调制器才能实现的速度。
+
+Other factors that increase speed at very low current densities are coulombic enhancement, microcavity effects, and non-radiative recombination. All these help the CROMEs achieve high modulation speeds. Figure 4 shows some CROME experimental results. At very low current densities the 3dB bandwidth reaches about 2 GHz (or around 4 Gbit/s for on-off modulation). Good link performance is realised at drive currents of a few tens of microamps. This allows 
+the power consumption per bit to be far lower than  that for lasers. Note that even very small VCSELs, the most energy-efficient lasers, typically have a threshold current of a milliamp. Using blue light for data transmission is incredibly advantageous at the receiver. Silicon is a nearly ideal material for detecting blue light, with an absorption length of just 0.2 μm. This enables CMOS-compatible fabrication of receivers with integrated photodiodes. 
+These photodiodes with very low parasitic capacitance (less than 10 fF) allow use of innovative, simplified transimpedance amplifier designs, enabling receiver power dissipation of below 50 fJ/bit. Such a low power is not possible with ‘typical receivers’, which are hampered by a much higher capacitance and greater complexity.
+
+其他在极低电流密度下提升速度的因素包括库仑增强、微腔效应和非辐射复合，这些都帮助CROME实现了高调制速度。图4展示了一些CROME的实验结果。在非常低的电流密度下，3dB带宽可达到约2 GHz（相当于开关键控下约4 Gbit/s）。在驱动电流为几十微安时，链路表现良好。这使得每比特的功耗远低于激光器。即便是能效最高的激光器，如极小型的VCSEL，阈值电流通常也需要毫安级别。
+
+使用蓝光进行数据传输在接收端非常有利。硅是检测蓝光的理想材料，其吸收长度仅为0.2微米。这使得接收器可以采用CMOS兼容的制造工艺，并集成光电二极管。这些光电二极管具有极低的寄生电容（小于10飞法），可以采用创新、简化的跨阻放大器设计，使接收器的功耗低于50飞焦耳/比特。这样的低功耗是典型接收器难以实现的，因为它们受限于更高的电容和更复杂的设计。
+
+ Such a detector structure can be fabricated by using the source and drain implant/diffusions for the CMOS transistors to make lateral p-i-n diodes. Our eight-element array, used for the multi-channel measurements of Figure 4, shows a bandwidth of over 6 GHz (see Figure 5). The shadowing by the fingers on the detector and a thin SOI substrate limited quantum efficiency to about 50 percent, but  quantum efficiencies of more than 90 percent should be achievable in optimized devices.
+
+ 这种探测器结构可以通过利用CMOS晶体管的源极和漏极掺杂/扩散来制造横向p-i-n二极管。我们用于图4中的多通道测量的八元素阵列显示了超过6 GHz的带宽（见图5）。由于探测器上的电极遮挡和薄SOI基板，量子效率限制在约50％，但在优化的器件中，量子效率超过90％是可以实现的。
+
+ **Perfecting the package**
+ 
+ We use highly multimode fibres and waveguides to realise efficient optical coupling to the sources and detectors. This relaxes alignment tolerances. One of the merits of this approach is that it allows us to select between a variety of useful packaging architectures, each with a different range of benefits. Our fibre-based links are optimized for longer interconnects, spanning distances from 10 cm to 10 m. These links transfer data between chips and multi-chip modules at the board, shelf and rack levels. Transmitters are connected to receivers using high core-count or imaging fibre (see Figure 6). A typical imaging fibre has hundreds or thousands of cores, each with a diameter ranging from 2 μm to 20 μm. Manufacture involves standard ‘stack and draw’ optical fibre fabrication techniques. Optical channels can be sent through this fiber on a square grid with 20 μm centre-to-centre spacing, with each carrying 4 Gbit/s. This gives an areal interconnect bandwidth density of 10 Tbit s-1 mm-2. Sending 256 of these channels through a fiber provides a total throughput of 1 Tbit/s. As such a fibre is less than 500 μm in diameter, multi-fibre ribbons and cables capable of carrying more than 10 Tbit/s are very compact and flexible. That’s in dramatic contrast to bulky DAC twinax. Since all our processes are fully CMOS compatible, interconnects can also be made directly from the surface of a large complex IC. This direct ‘optical pin-out’ enables ultra-dense, ultra-low-power optical interconnects directly from anywhere on an IC. Operating with an interconnect density of 10 Tbit s-1 mm-2 and an energy per bit of just 100 fJ/bit, these links could provide outputs and inputs for a 100 Tbit/s (bidirectional) switch IC from a 20 mm2 footprint, and a power consumption of just 20 W.  
+
+ 我们使用高模态光纤和波导来实现对光源和探测器的高效光耦合，这样可以放宽对准公差。该方法的优点之一是它允许我们在多种有用的封装架构之间进行选择，每种架构都有不同的优点。我们的光纤链接优化用于较长的互连，跨度从10厘米到10米。这些链接用于在板级、架子级和机架级之间传输芯片和多芯片模块的数据。发射器通过高核数或成像光纤与接收器连接（见图6）。典型的成像光纤具有数百到数千个光纤核心，每个核心的直径范围从2微米到20微米。制造过程中使用标准的“堆叠和拉伸”光纤制造技术。光信号可以通过这种光纤在20微米中心间距的方形网格中传输，每条光信号通道的速率为4 Gbit/s。这提供了10 Tbit/s/mm²的面积互连带宽密度。通过光纤传输256条这样的通道可以提供总吞吐量1 Tbit/s。由于光纤的直径小于500微米，多光纤带和电缆能够携带超过10 Tbit/s的数据，非常紧凑且灵活。这与笨重的DAC双轴电缆形成了鲜明的对比。由于我们所有的工艺完全兼容CMOS，互连还可以直接从大型复杂IC的表面制造。这种直接的“光学引脚输出”使得从IC的任何地方实现超密集、超低功耗的光互连成为可能。以10 Tbit/s/mm²的互连密度和每比特仅100飞焦耳的能量，这些链接可以为100 Tbit/s（双向）开关IC提供输入和输出，面积为20 mm²，功耗仅为20瓦。
+
+  For distances of just 1 mm up to 10 cm, data can be routed through lithographically formed waveguides. An array of multimode waveguides, formed from SiO2 , SiN or polymers, can be fabricated on a planar substrate. Deploying these ‘optically-enhanced’ interposers greatly increases practical interconnect distances while decreasing power consumption. The use of lithographic registration enables small sources, which have a typical diameter below 2 μm, to be efficiently coupled into optical waveguides that are only slightly wider than the CROME diameterCompelling credentials
+
+  对于距离仅为1毫米到10厘米的数据传输，可以通过光刻形成的波导来进行。由SiO₂、SiN或聚合物制成的多模波导阵列可以在平面基板上制造。使用这些“光学增强”中介层大大增加了实际的互连距离，同时减少了功耗。光刻注册的使用使得直径通常小于2微米的小型光源能够有效地耦合到仅比CROME直径稍宽的光波导中。
+
+   The strengths of our CROME interconnect technology go well beyond performance. They also fulfil all the other requirements for practical high-volume products: they have a high reliability, they deliver excellent high temperature operation, they are low in cost, easy to package, and they are compatible with existing high volume manufacturing and test capabilities. Our links’ optical interfaces are formed from a variety of technologies that are used in very high volumes in different applications. From a manufacturing perspective, CROME arrays can be thought of as very small GaN microLED displays. As regular readers know, GaN is manufactured in huge volumes for solid state lighting and power devices and is becoming increasingly important for displays. Production of this device is underpinned by a massive ecosystem that supports high volume, low-cost manufacturing. In general, GaN is a far more reliable and robust material system than other III-Vs, such as GaAs and InP, due to its excellent high-temperature performance and insensitivity to defects. Unlike devices made from other III-Vs, those built from GaN can operate at high temperatures, such as 150 °C, with extremely low failure-in-time rates.
+
+   我们的CROME互连技术的优势远超性能层面。它们还满足了高容量产品的所有其他要求：具有高可靠性，优秀的高温操作性能，低成本，易于封装，并且与现有的大规模生产和测试能力兼容。我们的链路光学接口采用了各种在不同应用中以非常高的数量使用的技术。从制造的角度来看，CROME阵列可以视为非常小的GaN微型LED显示器。如常读者所知，GaN用于固态照明和功率器件的生产规模巨大，并且在显示器中越来越重要。该器件的生产得到了支持大规模、低成本制造的大型生态系统的支撑。一般来说，由于GaN具有优良的高温性能和对缺陷的不敏感性，GaN比其他III-V族材料（如GaAs和InP）更为可靠和稳健。与其他III-V族材料制成的器件不同，GaN器件能够在高温（如150°C）下运行，并具有极低的故障率。
+
+    We are able to draw on existing high-volume manufacturing processes used in the lighting and display industries for the mass transfer of thousands to millions of CROMEs from a sapphire source wafer to a target silicon CMOS driver wafer containing transceiver circuitry. Compared to display requirements, the data interconnect is very undemanding: there are fewer than tens of thousands of lanes, and the application is insensitive to colour and brightness variations, both critical concerns for display makers. Another positive for us is that some redundancy can be built in with spare channels, which is also done in wide slow electrical busses. 
+
+    我们能够利用现有的用于照明和显示行业的高容量制造工艺，将成千上万到数百万个CROME从蓝宝石源晶圆转移到包含收发器电路的目标硅CMOS驱动晶圆上。与显示要求相比，数据互连的要求非常宽松：通道数量少于几万，而且应用对颜色和亮度变化不敏感，这对于显示制造商来说是关键问题。另一个积极因素是，我们可以通过备用通道来增加一些冗余，这与宽慢速电气总线中的冗余处理类似。
+
+    Our transceiver circuitry and our photodiodes are manufactured using standard CMOS. We can use older process nodes, thanks to the modest link speeds. For coupling we can use polymer micro optics, similar to those in smartphone cameras.  By leveraging all these high-volume technologies, we estimate that the costs of these Tbit/s wide parallel GaN-based links are one to two orders of magnitude lower than the cost of other high speed serial optical link technologies, such as pluggable optical transceivers, board mounted optics, or even silicon photonics co-packaged optics aimed for datacenter and computing environments. Although our technology is multimode and limited to 10 m reaches, it clearly promises to have an important role to play in advancing the performance of computing systems
+
+    我们的收发器电路和光电二极管使用标准CMOS制造。由于链路速度较低，我们可以使用较旧的工艺节点。对于耦合，我们可以使用类似于智能手机摄像头中使用的聚合物微光学技术。通过利用这些高容量技术，我们估计这些Tbit/s级宽的GaN基链接的成本比其他高速串行光学链接技术（如可插拔光学收发器、板载光学组件或甚至针对数据中心和计算环境的硅光子学集成光学）低一个到两个数量级。尽管我们的技术是多模的，且范围限制在10米以内，但它显然有望在提升计算系统性能方面发挥重要作用。
+
+    **OPPORTUNITIES FOR CROME-BASED LINKS**
+
+    CLOUD-SCALE data centres and high-performance computing are dominated by interconnects. To ease the data bottleneck, a great deal of attention and investment has been directed at the copackaging of silicon photonics with ASICs, GPUs and memory. CROME-based interconnects offer a complementary technology to silicon photonics. While silicon photonics may provide an excellent solution for interconnects longer than 10 m, CROME-based  links offer a far more dense, lower-cost solution at smaller length scales.
+
+    在云规模数据中心和高性能计算领域，互连技术占据主导地位。为了缓解数据瓶颈，很多关注和投资都集中在将硅光子学与ASIC、GPU和内存进行联合封装上。基于CROME的互连提供了硅光子学的互补技术。虽然硅光子学可能为超过10米的互连提供卓越的解决方案，但基于CROME的链路在较短长度尺度上提供了更高密度、成本更低的解决方案。
+
+     CROME-based interconnects could provide welcome solutions to various problems. As switch ASICs in routers and switches move to more than 100 Tbit/s total throughput, CROME-based interconnects could move the data from the switch ASIC to the chassis front plate, where standard ethernet transceivers could be deployed, and down the rack to the NIC cards in the servers. In the move towards disaggregated infrastructure, CROME-based links could provide low latency, low power connections to shared memory or connect processor clusters. These high-density links increase connectivity for both learning and inference in machine-learning and deep neural networks. 
+
+
+基于CROME的互连可以为各种问题提供令人欢迎的解决方案。随着路由器和交换机中的交换ASIC总吞吐量超过100 Tbit/s，CROME基的互连可以将数据从交换ASIC传输到机箱前面板，在那里可以部署标准以太网收发器，然后向下传输到服务器中的网络接口卡。在向解耦基础设施发展的过程中，CROME基的链路可以提供低延迟、低功耗的连接，以连接共享内存或处理器集群。这些高密度链路增加了机器学习和深度神经网络中学习和推理的连接性。
+
+Looking further ahead, there are opportunities for optical interfaces to be implemented directly on large complex ICs, where they will provide the best power, latency, density, and cost. In decades gone by, the fundamental density and power limitations of electrical interconnects compelled the migration to SerDes-based input/output (I/O) for high-speed interfaces. Now these interfaces consume significant IC power and real-estate, and low power optical interfaces hold much promise. Introducing them could unlock the door to a new generation of ICs incorporating ‘lightweight’ high-performance IOs with greatly improved density, latency, and reach while consuming far less IC real estate and power.
+
+
+展望未来，光学接口有可能直接集成在大型复杂IC上，这将提供最佳的功耗、延迟、密度和成本。在过去，电气互连的基本密度和功耗限制迫使我们迁移到基于SerDes的高速输入/输出（I/O）接口。如今，这些接口消耗了大量的IC功耗和空间，而低功耗光学接口则充满了潜力。引入光学接口可以开启IC的新一代技术，将“轻量化”的高性能I/O集成在IC中，显著提高密度、降低延迟和扩展范围，同时减少IC占用的空间和功耗。
+
+ In the latter part of the twentieth century, numerous groups in academia and research labs looked to photonics to revolutionize computing, pointing out that optical beams enable very high connectivity. 
+ 
+In this vein, a team at AT&T Bell Laboratories demonstrated simple optical computers using quantum well modulators with gratings and holograms. But despite massive funding and huge interest from DARPA and other resources, the technology never matured – perhaps because the components and the applications needed to make these breakthroughs did not exist. Today that’s not the case. The technology and the need are now both there, and perhaps the dreams of the visionaries can be realized with these new CROME devices.
+
+
+在二十世纪后期，众多学术和研究实验室的团队希望通过光子学来革新计算，指出光束能够实现非常高的连接性。
+
+在这一背景下，AT&T贝尔实验室的一个团队展示了使用量子阱调制器、光栅和全息图的简单光学计算机。然而，尽管得到了大量资金和来自DARPA等资源的巨大关注，这项技术从未成熟——可能是因为当时所需的组件和应用尚未存在。今天情况不同了。技术和需求现在都已经到位，也许这些新型CROME设备可以实现当年那些先知梦想的愿景。
+
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
