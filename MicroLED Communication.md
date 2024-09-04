@@ -16,6 +16,7 @@
     - [5.3.3 长距离光子学与短距离通信](#533-长距离光子学与短距离通信)
     - [5.3.4 用例和应用：现实生活中的光子学](#534-用例和应用现实生活中的光子学)
     - [5.3.5 底线](#535-底线)
+  - [5.4 2024 Hotchips演讲](#54-2024-hotchips演讲)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -455,6 +456,10 @@ Pezeshki 表示：“对于 Nvidia 或英特尔来说，推出一款配备紧密
 为了进一步迈向技术的未来，世界需要更快、更高效的处理和传输，以及更密集的连接以实现同步通信。光子学和光能提供所有这些，甚至更多。
 
 <https://www.techopedia.com/what-is-photonics-next-chapter-of-computing>
+
+## 5.4 2024 Hotchips演讲
+
+<https://events.zoom.us/ejl/Aoq11R4nSJcHRv0c5cDQkB3kzhWGFrJgrvvzDI9aQvc1Itt0s2sU~AxApfK-xtbOe5Mxq-obdLfvfRLEM6Ql-B-U_6qHeAHG2zgV273-oJZy6QJr78kjymBh-T3pMXY7MJXOmpTKs-aSmCf_Wc1i0oCe4/home>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
