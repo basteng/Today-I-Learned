@@ -17,7 +17,7 @@
     - [5.3.4 用例和应用：现实生活中的光子学](#534-用例和应用现实生活中的光子学)
     - [5.3.5 底线](#535-底线)
   - [5.4 2024 Hotchips演讲](#54-2024-hotchips演讲)
-- [5.5 Data goes blue with GaN interconnects - Avicena《Compound Semiconductor》 VOLUME 27 ISSUE IV 2021](#55-data-goes-blue-with-gan-interconnects---avicenacompound-semiconductor-volume-27-issue-iv-2021)
+  - [5.5 Data goes blue with GaN interconnects - Avicena《Compound Semiconductor》 VOLUME 27 ISSUE IV 2021](#55-data-goes-blue-with-gan-interconnects---avicenacompound-semiconductor-volume-27-issue-iv-2021)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -462,7 +462,7 @@ Pezeshki 表示：“对于 Nvidia 或英特尔来说，推出一款配备紧密
 
 <https://events.zoom.us/ejl/Aoq11R4nSJcHRv0c5cDQkB3kzhWGFrJgrvvzDI9aQvc1Itt0s2sU~AxApfK-xtbOe5Mxq-obdLfvfRLEM6Ql-B-U_6qHeAHG2zgV273-oJZy6QJr78kjymBh-T3pMXY7MJXOmpTKs-aSmCf_Wc1i0oCe4/home>
 
-# 5.5 Data goes blue with GaN interconnects - Avicena《Compound Semiconductor》 VOLUME 27 ISSUE IV 2021
+## 5.5 Data goes blue with GaN interconnects - Avicena《Compound Semiconductor》 VOLUME 27 ISSUE IV 2021
 
 MOST OF THE ENERGY consumed in computing systems is not in the computation, but in moving data, and the longer the distance, the greater the challenge in terms of energy and density.  At longer length scales, fibre optic links have replaced copper, but at short distances the significant amount of energy required to convert data back and forth between photons and electrons makes optical interfaces prohibitive.
 
