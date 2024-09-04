@@ -42,7 +42,7 @@
 - [24.数据中心交换芯片](#24数据中心交换芯片)
 - [25. 初创公司](#25-初创公司)
   - [25.1 Lightwave](#251-lightwave)
-  - [25.2 Lightwave](#252-lightwave)
+  - [25.2 POET](#252-poet)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1264,7 +1264,7 @@ LPI 使用金属陶瓷和故意掺杂 n 型的 GaN 制作镜子，这两种材�
 
 <https://lightwavephotonics.com/>
 
-## 25.2 Lightwave
+## 25.2 POET
 
 作为一家公司，POET Technologies 一直专注于其技术的颠覆性潜力。我们利用对有源光子器件和光波导的设计和制造知识，并深入了解半导体制造技术，创造了有史以来第一个将电子和光子集成到单个器件中的晶圆级产品 - POET 光学中介层。
 
