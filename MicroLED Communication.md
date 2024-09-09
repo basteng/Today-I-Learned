@@ -7,6 +7,7 @@
   - [4.1 Ayar Labs 暗示产品将在未来 2-3 年内出货 (HPC wire)](#41-ayar-labs-暗示产品将在未来-2-3-年内出货-hpc-wire)
   - [4.2 Ayar Labs 旨在以光速消除人工智能的瓶颈 (Bloomberg podcast)](#42-ayar-labs-旨在以光速消除人工智能的瓶颈-bloomberg-podcast)
   - [4.3 光学 I/O 如何助力生成式 AI 的未来：与 Vladimir Stojanovic 的访谈](#43-光学-io-如何助力生成式-ai-的未来与-vladimir-stojanovic-的访谈)
+  - [4.4 我们正在使用 Ayar Labs 的光学 I/O 解决方案重新思考下一代 AI 架构，以实现纵向扩展和内存扩展。](#44-我们正在使用-ayar-labs-的光学-io-解决方案重新思考下一代-ai-架构以实现纵向扩展和内存扩展)
 - [5. Avicena](#5-avicena)
   - [5.1《High Bandwidth GaN-based Micro-LEDs at Temperatures up to 400°C》](#51high-bandwidth-gan-based-micro-leds-at-temperatures-up-to-400c)
   - [5.2 硅光子学联合封装。 凉！ 但它实用吗？Bardia Pezeshki post at Linkedin](#52-硅光子学联合封装-凉-但它实用吗bardia-pezeshki-post-at-linkedin)
@@ -236,6 +237,9 @@ Nvidia 的 AI 重点还在于高效利用能源。Nvidia 的 GPU 包含自己的
 
 <https://ayarlabs.com/blog/how-optical-i-o-is-enabling-the-future-of-generative-ai-a-qa-with-vladimir-stojanovic/>
 
+## 4.4 我们正在使用 Ayar Labs 的光学 I/O 解决方案重新思考下一代 AI 架构，以实现纵向扩展和内存扩展。
+
+![image](/picture/ayarlabs1.jpg)
 
 # 5. Avicena
 
