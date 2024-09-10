@@ -8,6 +8,7 @@
   - [4.2 Ayar Labs 旨在以光速消除人工智能的瓶颈 (Bloomberg podcast)](#42-ayar-labs-旨在以光速消除人工智能的瓶颈-bloomberg-podcast)
   - [4.3 光学 I/O 如何助力生成式 AI 的未来：与 Vladimir Stojanovic 的访谈](#43-光学-io-如何助力生成式-ai-的未来与-vladimir-stojanovic-的访谈)
   - [4.4 我们正在使用 Ayar Labs 的光学 I/O 解决方案重新思考下一代 AI 架构，以实现纵向扩展和内存扩展。](#44-我们正在使用-ayar-labs-的光学-io-解决方案重新思考下一代-ai-架构以实现纵向扩展和内存扩展)
+  - [4.5 GlobalFoundries 与 Silicon Catalyst 合作，加速为半导体初创公司提供差异化​​技术解决方案](#45-globalfoundries-与-silicon-catalyst-合作加速为半导体初创公司提供差异化技术解决方案)
 - [5. Avicena](#5-avicena)
   - [5.1《High Bandwidth GaN-based Micro-LEDs at Temperatures up to 400°C》](#51high-bandwidth-gan-based-micro-leds-at-temperatures-up-to-400c)
   - [5.2 硅光子学联合封装。 凉！ 但它实用吗？Bardia Pezeshki post at Linkedin](#52-硅光子学联合封装-凉-但它实用吗bardia-pezeshki-post-at-linkedin)
@@ -240,6 +241,24 @@ Nvidia 的 AI 重点还在于高效利用能源。Nvidia 的 GPU 包含自己的
 ## 4.4 我们正在使用 Ayar Labs 的光学 I/O 解决方案重新思考下一代 AI 架构，以实现纵向扩展和内存扩展。
 
 ![image](/picture/ayarlabs1.jpg)
+
+## 4.5 GlobalFoundries 与 Silicon Catalyst 合作，加速为半导体初创公司提供差异化​​技术解决方案
+
+加州硅谷和纽约州马耳他，2024 年 9 月 9 日——GlobalFoundries（纳斯达克股票代码：GFS）（GF）和全球唯一专注于半导体解决方案的孵化器+加速器Silicon Catalyst今天宣布，GF 已作为战略合作伙伴和实物合作伙伴 (IKP) 加入孵化器的半导体初创企业生态系统。此次合作将为创新型初创公司提供 GF 差异化平台，以加速下一代物联网、汽车和生成式人工智能应用的开发和商业化，同时预测医疗和量子计算等未来增长市场。
+
+作为战略合作伙伴，GF 将与 Silicon Catalyst 密切合作，招募、评估和选择寻求参与其计划的早期初创公司。作为 IKP 生态系统的成员，GF 将提供 PDK、MPW、基础 IP 和参考设计，以加快 GF 22FDX®、硅光子学和氮化镓 (GaN) 平台上已获批准的早期公司的产品上市时间。
+
+Silicon Catalyst 校友 Ayar Labs 首席执行官兼联合创始人 Mark Wade 表示：“我们与 GlobalFoundries 的长期合作关系对我们将突破性的光学 I/O 解决方案推向市场起到了重要作用。与 Silicon Catalyst 等项目合作，再加上使用 GlobalFoundries 的平台，使 Ayar Labs 等公司能够专注于我们最擅长的领域——突破 AI 基础设施的界限，以应对 AI 模型日益增长的规模和复杂性。”
+
+格芯首席技术官 Gregg Bartlett 表示：“格芯市场领先的差异化关键芯片技术根植于创新与协作。通过与 Silicon Catalyst 合作，我们将与早期初创公司合作，让我们能够亲眼目睹新兴创新，突破我们差异化技术的界限，提供定制解决方案，让这些公司在进入市场时获得竞争优势。”
+
+Silicon Catalyst 首席执行官 Pete Rodriguez 表示：“GlobalFoundries 致力于推动创新，为客户提供差异化​​技术解决方案。我们很高兴他们加入 Silicon Catalyst 生态系统。我们的合作为初创公司提供了一个独特的机会，让他们与 GF 合作，获得其差异化、经济高效的解决方案。这一宝贵的合作有望推动半导体创新的新一轮发展，同时帮助新公司应对从创意到实现的挑战。”
+
+Silicon Catalyst 的生态系统包括 350 多名半导体行业顾问、14 个战略合作伙伴、70 个实物合作伙伴、广泛的投资者网络以及与国内外主要学术机构的紧密联系。此次合作将使 GF 能够深入了解半导体行业。 
+
+欢迎加入 Silicon Catalyst 团队，参加 9 月 9 日至 12 日在加利福尼亚州圣何塞举行的 AI 硬件和边缘 AI 峰会，Silicon Catalyst 投资组合公司的三位首席执行官将在技术会议上发言。与会者受邀参观 AI 创新展区的 Silicon Catalyst 展位，以了解有关 GF 和 Silicon Catalyst 合作伙伴关系的更多信息，以及它将如何帮助半导体初创公司构建支持 AI、量子计算、汽车和物联网等变革性行业的基础解决方案。
+
+<https://gf.com/gf-press-release/globalfoundries-and-silicon-catalyst-partner-to-accelerate-differentiated-technology-solutions-for-semiconductor-startups/>
 
 # 5. Avicena
 
