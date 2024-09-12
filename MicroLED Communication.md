@@ -1556,7 +1556,9 @@ POET 光学中介层™ 采用一种新颖的波导技术，可将电子和光�
 
 <https://opg.optica.org/ViewMedia.cfm?uri=prj-10-10-2394&seq=0&html=true>
 
+论文pdf
 
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/%E7%94%A8%E4%BA%8E%E8%B6%85%E8%BF%87%2010%20Gbps%20%E5%8F%AF%E8%A7%81%E5%85%89%E9%80%9A%E4%BF%A1%E7%9A%84%20Si%20%E5%9F%BA%E6%9D%BF%E5%9E%82%E7%9B%B4%E7%BB%93%E6%9E%84%20InGaNGaN%20%E5%BE%AE%E5%9E%8B%20LED%20%E5%85%89%E7%94%B5%E6%8E%A2%E6%B5%8B%E5%99%A8.pdf>
 
 
 
