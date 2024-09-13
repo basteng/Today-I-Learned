@@ -1601,6 +1601,11 @@ H_{eq} = \frac{1}{2\left(1 + \frac{R_L}{R_4 + \frac{j\omega L_1}{1 - \omega^2 C_
 
 **幅度均衡器的详细原理见27.3**
 
+<https://ieeexplore.ieee.org/document/7273821>
+
+原文pdf
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/2.0-Gb_s_Visible_Light_Link_Based_on_Adaptive_Bit_Allocation_OFDM_of_a_Single_Phosphorescent_White_LED.pdf>
+
 ## 27.3 采用硬件预均衡电路的 Gb/s VLC 传输
 
 在本文中，我们提出了一种用于高速可见光通信 (VLC) 系统的恒电阻对称桥式 T 型幅度均衡器。利用该硬件均衡器，我们成功地演示了基于 RGB LED 在 80 厘米自由空间中实现每秒千兆比特的 VLC 传输。在 1.05 Gb/s 的 64 二次幅度调制 (64QAM) 单载波调制、1.05 Gb/s 的 64QAM 正交频分复用 (OFDM) 以及 1.42 Gb/s 的比特和功率加载 OFDM 调制下测量的信号的比特误码率 (BER) 均低于 7% 前向纠错 (pre-FEC) 限制 3.8 × 10 -3 ，清楚地验证了所提出的均衡器的可行性。与不使用均衡器的系统相比，VLC 系统的 BER 性能可以至少提高 1 个数量级。此外，由于均衡器体积小巧，只需使用无源元件即可轻松安装，因此可以轻松集成到放大器或 LED 中。据我们所知，这是使用预均衡电路的最高数据速率和最长传输距离。
