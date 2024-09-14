@@ -9,6 +9,8 @@
   - [4.3 光学 I/O 如何助力生成式 AI 的未来：与 Vladimir Stojanovic 的访谈](#43-光学-io-如何助力生成式-ai-的未来与-vladimir-stojanovic-的访谈)
   - [4.4 我们正在使用 Ayar Labs 的光学 I/O 解决方案重新思考下一代 AI 架构，以实现纵向扩展和内存扩展。](#44-我们正在使用-ayar-labs-的光学-io-解决方案重新思考下一代-ai-架构以实现纵向扩展和内存扩展)
   - [4.5 GlobalFoundries 与 Silicon Catalyst 合作，加速为半导体初创公司提供差异化​​技术解决方案](#45-globalfoundries-与-silicon-catalyst-合作加速为半导体初创公司提供差异化技术解决方案)
+  - [4.6 光进铜退，已成定局？](#46-光进铜退已成定局)
+  - [4.7 HPE 与 Ayar Labs 合作，为 Slingshot Interconnect 添加硅光子技术](#47-hpe-与-ayar-labs-合作为-slingshot-interconnect-添加硅光子技术)
 - [5. Avicena](#5-avicena)
   - [5.1《High Bandwidth GaN-based Micro-LEDs at Temperatures up to 400°C》](#51high-bandwidth-gan-based-micro-leds-at-temperatures-up-to-400c)
   - [5.2 硅光子学联合封装。 凉！ 但它实用吗？Bardia Pezeshki post at Linkedin](#52-硅光子学联合封装-凉-但它实用吗bardia-pezeshki-post-at-linkedin)
@@ -43,7 +45,8 @@
 - [21. 注入电流对量子点发光二极管调制带宽的影响](#21-注入电流对量子点发光二极管调制带宽的影响)
 - [22.Nonpolar m -Plane InGaN/GaN Micro-Scale Light-Emitting Diode With 1.5 GHz Modulation Bandwidth - 非极性面 - 美国新墨西哥州阿尔伯克基新墨西哥大学高科技材料中心](#22nonpolar-m--plane-ingangan-micro-scale-light-emitting-diode-with-15-ghz-modulation-bandwidth---非极性面---美国新墨西哥州阿尔伯克基新墨西哥大学高科技材料中心)
 - [23. Arista](#23-arista)
-  - [23.1 Andy Bechtolshelm：](#231-andy-bechtolshelm)
+  - [23.1 Andy Bechtolshelm - 2024 Hotchips：](#231-andy-bechtolshelm---2024-hotchips)
+  - [23.2 400G 以太网之路由 Bechtolsheim 的意图铺就](#232-400g-以太网之路由-bechtolsheim-的意图铺就)
 - [24.数据中心交换芯片](#24数据中心交换芯片)
 - [25. 初创公司](#25-初创公司)
   - [25.1 Lightwave](#251-lightwave)
@@ -55,6 +58,8 @@
     - [27.1.1 实验装置](#2711-实验装置)
   - [27.2 基于单个磷光白色 LED 的自适应比特分配 OFDM 的 2.0-Gb/s 可见光链路](#272-基于单个磷光白色-led-的自适应比特分配-ofdm-的-20-gbs-可见光链路)
   - [27.3 采用硬件预均衡电路的 Gb/s VLC 传输](#273-采用硬件预均衡电路的-gbs-vlc-传输)
+- [28. Nvidia](#28-nvidia)
+  - [28.1 Nvidia 展示了光学连接的 GPU 系统可能是什么样子](#281-nvidia-展示了光学连接的-gpu-系统可能是什么样子)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -264,6 +269,50 @@ Silicon Catalyst 的生态系统包括 350 多名半导体行业顾问、14 个�
 欢迎加入 Silicon Catalyst 团队，参加 9 月 9 日至 12 日在加利福尼亚州圣何塞举行的 AI 硬件和边缘 AI 峰会，Silicon Catalyst 投资组合公司的三位首席执行官将在技术会议上发言。与会者受邀参观 AI 创新展区的 Silicon Catalyst 展位，以了解有关 GF 和 Silicon Catalyst 合作伙伴关系的更多信息，以及它将如何帮助半导体初创公司构建支持 AI、量子计算、汽车和物联网等变革性行业的基础解决方案。
 
 <https://gf.com/gf-press-release/globalfoundries-and-silicon-catalyst-partner-to-accelerate-differentiated-technology-solutions-for-semiconductor-startups/>
+
+## 4.6 光进铜退，已成定局？
+
+Ayar Labs提出的三个性能指标，吞吐量、交互性、处理的盈利能力
+
+![image](/picture/ayar-simulator-figures-of-merit.jpg)
+
+Nvidia 2026 年路线图上的未来“Rubin”GPU 以及 2027 年内存升级，可能会采用当前的电气/铜线方式和假设的光纤/光纤方式进行架构。看一下这个：
+
+![iamge](/picture/ayar-simulator-next-gen-gpu-table.jpg)
+
+如下所示，随着现有的 Hopper 和 Blackwell 配置从 8 个 GPU 扩展到 64 个 GPU，所有机器都被推入批量性能领域，只有使用铜 NVLink 互连的 Rubin 机架式机器才能进入人机领域。但是，借助节点内和节点间的光学 I/O 以及扩展到 256 个 Rubin GPU，Nvidia 可以构建一台可以扩展到人机和机器对机器领域的推理机，同时在交互性和成本方面提供可接受的改进。
+
+![image](/picture/ayar-simulator-hopper-blackwell-rubin-gpt-x.jpg)
+
+该图表是 Ayar Labs、Eliyan、Avicena、Lightmatter 和 Celestial AI 等公司的广告。我们强烈怀疑 Rubin 会将 NVLink 转移到光学互连，坦率地说，考虑到Nvidia 多年前所做的原型设计以及 Nvidia 已经与 Ayar Labs 以及很可能与上面提到的其他一些公司合作的工作，我们已经预料到这样的机器了。
+
+NVLink 只是一种协议，现在或许是时候将其转移到光学传输中了。我们迫不及待地想看看 Nvidia 会在这里做些什么。在机架中塞入更多 GPU 并将功率密度提高到 200 千瓦或人们谈论的疯狂的 500 千瓦可能不是答案。光学互连会将这个铁芯稍微隔开一点，也许足以防止光学器件出现不良行为。
+
+<https://www.nextplatform.com/2024/09/13/copper-wires-have-already-failed-clustered-ai-systems/>
+
+## 4.7 HPE 与 Ayar Labs 合作，为 Slingshot Interconnect 添加硅光子技术
+
+随着这些设备的带宽不断增加，电信号传输距离也随之缩短。到目前为止，材料科学家以及 PHY 和 SerDes 设计师已经能够避免这种情况的发生，但迟早，元素周期表中可用的原子会耗尽，这就是硅光子学的发展如此重要的原因。
+
+惠普企业 (Hewlett Packard Enterprise) 在光通信方面也不甘示弱，光通信是 The Machine 的核心之一，The Machine 是一个以内存为中心的并行系统，由惠普实验室于多年前构建，作为光互连和内存池的试验台。HPE 也是 Gen-Z 协议的支持者，甚至在美国能源部 PathForward 计划的支持下为服务器创建了光学 Gen-Z 交换机和电光 Gen-Z 适配器，我们早在 2019 年 9 月就对此进行了详细介绍。此后不久，与竞争对手 HPE 一起作为 Gen-Z 的主要支持者的戴尔展示了基于 Gen-Z 技术的内存服务器。
+
+但是，当它考虑如何将硅光子学应用于未来几代 Slingshot 以太网互连的交换机 ASIC 和网络接口时（我们最近与 HPE 讨论了这个问题），该系统制造商决定与 Ayar Labs 合作，这是一家由美国国防高级研究计划局资助的硅光子学初创公司，于 2019 年初推出了首款电光芯片，我们在当年夏季晚些时候的 Hot Chips 2019 会议上了解了很多相关信息。Ayar Labs 认为，超过 112 Gb/秒的本机信令（在消除编码开销后转换为 100 Gb/秒），电信令将遇到瓶颈。正如我们最初在本文指出的那样，四年前，安迪·贝克托尔斯海姆（Andy Bechtolsheim，Arista Networks、Granite Systems 和 Sun Microsystems 的创始人）就曾表达过这种观点，但现在看来，到 2025 年，电信号将再次获得喘息机会，并向 224 Gb/秒（编码后为 200 Gb/秒）的原生速度迈进。障碍已经消失。但在未来几年的某个时候，它将成为真正的障碍。
+
+每个交换机 ASIC 和每个网络适配器都将利用 50 Gb/秒、100 Gb/秒和未来的 200 Gb/秒信号、NRZ 和 PAM-4 编码（可能还有其他级别的脉冲幅度调制编码）和通道数的组合来创建 200 Gb/秒、400 Gb/秒、800 Gb/秒甚至 1.6 Tb/秒的设备。但根据英特尔 Barefoot Networks 网络团队和 Broadcom 硅光子学团队已经创建的研究和原型，我们认为，在未来一两代互连中，这堵电信号墙必须被硅光子学突破。（我们指的是路线图，而不是即将从晶圆厂推出的产品。）
+
+这并不遥远，因此 HPE 和 Ayar Labs 建立了合作伙伴关系。
+
+Terpstra 解释道：“如果你看看 400 Gb/秒或 800 Gb/秒交换机的外观，就会发现其内部设计越来越复杂。过去，对于带宽较低的交换机设计，你有一个交换机 ASIC，只需将电信号一直传输到前面板即可。在某些情况下，现在你无法再这样做，或者必须使用特殊电缆。我们将在 Slingshot 产品组合中遇到这个问题，我们与 Ayar Labs 的交流已经一年多了，他们通过创建基于硅光子学和集成封装的光互连，在该领域处于领先地位。他们不只是要制造组件，他们实际上想要创建一个生态系统，这使他们成为我们的完美合作伙伴。其他组件供应商将需要相同类型的集成、共封装硅光子学。我们必须有异构解决方案，我们不能想出专有的东西。这种方法存在一些阻力。我们有十年的硅光子学研究经验，我们本可以将它产品化，但我们故意选择不这么做。我们真正需要的是广泛的行业联盟，这样我们才能真正创建合法的异构系统。”
+
+Ayar Labs UK 商业运营高级副总裁兼董事总经理 Hugo Saleh 说，这正是 Ayar Labs 想要做的事情。
+
+Saleh 解释说：“由于我们将光从封装中传输出去，因此我们希望专注于构建一个生态系统，该生态系统可以协调使用的波长数量、波长之间的距离以及峰值的高度。” “我们对我们构建的光学 I/O 和芯片感到兴奋，但我们专注于光的特性，以便我们能够实现未来供应商之间的互操作性。要使这个生态系统蓬勃发展，必须有其他公司参与这一业务。这就是为什么我们很高兴与 HPE 合作，因为他们可以设定期望并对供应商提出要求。”
+
+自从退出隐身模式以来，Ayar Labs 一直在与英特尔进行某种形式的合作，因此可以合理地预期，一些超大规模企业和云构建商可能会开始尝试，而戴尔、浪潮、联想和 IBM 也可能效仿。思科系统可能会更难一些，因为它有自己的网络业务。但正如我们多次讨论的那样，硅光子学将成为实现可覆盖整个数据中心的分解和可组合基础设施的关键技术之一。
+
+作为与 Ayar Labs 合作协议的一部分，惠普的风险投资部门 Hewlett Packard Pathfinder 将向这家 SiPho 新创公司投入一笔未披露金额的资金。Ayar Labs 已筹集了 6450 万美元的种子资金以及两轮风险投资（不包括 HPE 的投资），投资者包括英特尔资本和 Globalfoundries，以及 BlueSky Capital、Applied Ventures、Castor Ventures 和 Lockheed Martin Ventures 等。
+
+<https://www.nextplatform.com/2022/02/24/hpe-taps-ayar-labs-to-add-silicon-photonics-to-slingshot-interconnect/>
 
 # 5. Avicena
 
@@ -1350,11 +1399,43 @@ RC 时间常数也会影响 QLED 的带宽 [35]
 
 # 23. Arista
 
-## 23.1 Andy Bechtolshelm：
+## 23.1 Andy Bechtolshelm - 2024 Hotchips：
 
 这是他在2024年8月底Hotchips听说的使用MicroLED的OSPF，而并不是实际应用中使用了MicroLED
 
 ![image](/picture/OSFP-MicroLED.png)
+
+## 23.2 400G 以太网之路由 Bechtolsheim 的意图铺就
+
+掀起波澜的最佳方式就是引起轰动，而安迪·贝希托尔斯海姆（Andy Bechtolsheim）或许是 IT 基础设施领域最著名的连续创业者，他在这方面就非常擅长。作为 Sun Microsystems 和一系列网络和系统初创公司的联合创始人之一，以及谷歌的第一位投资者，他不仅看到浪潮，而且制造浪潮，然后乘风破浪，一路创建公司和市场。
+
+当时，贝克托尔斯海姆还是斯坦福大学的一名博士生，正在从事一个旨在将网络接口与处理器集成在一起的项目。斯科特·麦克尼利和维诺德·科斯拉邀请贝克托尔斯海姆担任 Sun Microsystems 的第一任首席技术官。Sun 从工作站转向系统，取得了巨大的成功。1995 年，贝克托尔斯海姆带着大量资金离开，创办了一家名为 Granite Systems 的公司，专门生产更便宜的千兆以太网交换机。在成立仅仅一年多一点的时间后，贝克托尔斯海姆将公司出售给了以太网路由巨头思科系统，思科系统凭借其 Catalyst 4000 系列铁板产品，在以太网交换领域奠定了基础。
+
+五年后，随着互联网泡沫的破灭，贝克托尔斯海姆再次回到网络系统接口问题上，并成立了一家名为 Kealia 的公司，该公司生产巨型 InfiniBand 模块化交换机和一系列基于 Opteron 的服务器，这些服务器的设计理念是超级计算机，但针对的是企业。到 2004 年，Sun Microsystems 在服务器领域的日子并不好过，它收购了 Kealia，并让贝克托尔斯海姆重返公司，这些系统的基本架构至今仍存在于 Sun 产品线中，尤其是 Exadata 数据库集群。
+
+解决了这个问题后，贝希托尔斯海姆转向了网络领域的下一个浪潮——10 Gb/秒以太网，他与斯坦福大学教授戴维·切瑞顿共同创立了 Arista Networks。切瑞顿领导着分布式系统小组，是 Granite Systems 的联合创始人，也是 Google 的早期投资者。（谢尔盖·布林和拉里·佩奇是切瑞顿的学生，当贝希托尔斯海姆在切瑞顿家门廊上掏出一张 10 万美元的支票给他们俩创办搜索引擎公司时，切瑞顿随后又拿出了一张 20 万美元的支票。）切瑞顿的另一名学生肯·杜达是 Arista Networks 的联合创始人， 2008 年，当贝希托尔斯海姆不再在 Sun 工作，并承认自己大部分时间都在一家新公司工作时，Arista Networks也退出了低调模式。一年半后，Arista Networks 推出了其首款模块化交换机，该交换机配备 384 个 10 Gb/秒端口以及其上的 Linux 可扩展操作系统 (EOS) 变体，并于 2011 年 3 月推出了基于 Broadcom 的 Trident+ 和 Fulcrum Microsystems 的 Bali 交换机 ASIC 的架顶式交换机。
+
+在谈到 100 Gb/秒以太网及其后续产品时，Bechtolsheim 表示：“从收入增长来看，这无疑是有史以来增长最快的以太网标准。400 Gb/秒以太网将在 2018 年底推出，并在 2019 年至 2020 年逐步普及。它的发展速度不会快于 100 Gb/秒以太网，因为它更昂贵。因此，100 Gb/秒以太网将继续大批量出货，也许会在 2021 年实现普及。”
+
+对于超大规模和云构建者来说，重要的是 400 Gb/秒将直接进入数据中心中当前使用 100 Gb/秒的相同位置，而无需更改机架内、跨行、跨数据中心、跨地区和跨地域当前使用的铜缆和光纤线路 - 这正是微软研究人员所预测的必要条件，当时每个人都在 2013 年在 IEEE 上讨论 400 Gb/秒以太网标准的需求。当时，25G 联盟距离推出还有一年的时间，因此我们将获得的 400 Gb/秒在某些方面与我们在没有超大规模压力的情况下获得的有所不同。
+
+我们注意到，Bechtolsheim 对 200 Gb/秒网络没有太多评论，他更专注于直接跃升至 400 Gb/秒。这恰恰是博通 (Broadcom) 对其“Tomahawk-3”芯片组所做的事情，我们一个月前曾谈到过这一点，这绝非巧合。借助 Tomhawk-3，博通将从使用非零返回 (NRZ) 信令组合四个 25 Gb/秒通道的端口转变为使用四通道脉冲幅度调制 (PAM-4) 信令以 50 Gb/秒运行的八个端口。这一切都很好，除了一件事。Bechtolsheim — — 我们推测至少部分超大规模提供商和云构建者 — — 希望直接转向 100 Gb/秒信令，并减少通道数、散热和成本。 （如果你能想象那个怪物的话，IEEE 400 Gb/秒的规范最初是 16 条通道，以 25 Gb/秒的速度运行。）
+
+Bechtolsheim 在演讲中表示：“唯一真正有意义的做法是直接实现每通道 100 Gb/秒的速度”，并指出，随着超大规模和云构建者的需求，带宽跳跃变得越来越大、越来越快，交换机 ASIC 中每个 SERDES 速度的有效寿命越来越短。
+
+![image](/picture/arista-ethernet-lane-speeds.jpg)
+
+事实上，Bechtolsheim 预测，400 Gb/秒设备中的大多数端口将基于 100 Gb/秒信令，而不是当前的 50 Gb/秒信令，因此我们几乎可以猜测出博通的“Tomahawk-4”芯片可能是什么样子以及何时上市。
+
+其中一些转变耗时很长，从 NRZ 到 PAM-4 信号的转变只是其中之一。“问题在于经济因素，”Bechtolsheim 解释道。“人们迅速转向更便宜、更耗电的产品。我们在从 10 Gb/秒到 25 Gb/秒以及从 40 Gb/秒到 100 Gb/秒的转变中看到了这一点，在不到一年的时间里——大概在六个月到九个月之间——我们的大部分订单都转向了新一代产品，该产品在各个指标上都更胜一筹。”事实上，他补充说，客户接受产品的速度和 Arista Networks 生产产品的速度一样快。
+
+这与以太网交换机市场在其存在后的头几十年所展现出的缓慢、可预测和有条不紊的发展方式截然不同。好消息是，每个 IT 组织都将受益于超大规模企业和云构建者通过 Bechtolsheim 等杰出人物向交换机芯片制造商和制造光互连和电线的下游参与者施加的压力。
+
+最后一点：Bechtolsheim 表示，<font color=red>让 SERDES 的速度超过 100 Gb/秒非常困难</font>。这种快速切换本身就是一种障碍。那么，我们该怎么做才能加快速度呢？提高脉冲幅度调制。通过转向 PAM-8 信号，您可以在四条通道上以 100 Gb/秒的速度将每端口速度翻倍至 800 Gb/秒，而使用 PAM-16 信号，您可以获得高达 1.6 Tb/秒的速度。如果您必须以 100 Gb/秒的速度运行八条通道——虽然没有人认为这是可取的，但这可能是必要的——那么根据我们的估计，这将使您的速度达到 3.2 Tb/秒。这可能是使用这些方法的极限，就像在 300 毫米晶圆上的 3 纳米极紫外 (EUV) 工艺上塞入 48 个到 64 个核心的东西可能是使用近乎当前的芯片制造方法的摩尔定律的实际极限。
+
+和往常一样，十年后一切看起来都会走向衰败。这正是 IT 行业令人兴奋的地方。
+
+<https://www.nextplatform.com/2018/02/21/road-400g-ethernet-paved-bechtolsheims-intentions/>
 
 # 24.数据中心交换芯片
 
@@ -1612,9 +1693,15 @@ H_{eq} = \frac{1}{2\left(1 + \frac{R_L}{R_4 + \frac{j\omega L_1}{1 - \omega^2 C_
 
 <https://ieeexplore.ieee.org/document/7124419>
 
+# 28. Nvidia
 
+## 28.1 Nvidia 展示了光学连接的 GPU 系统可能是什么样子
 
+几周前，Nvidia 与 Ayar Labs 签署了研发合作协议，我们坐下来与这家硅光子学初创公司的首席执行官 Charlie Wuischpard 聊了聊，谈论了两家公司将开展哪些合作。Nvidia 参与了 Ayar Labs 今年早些时候进行的 C 轮融资，当时该公司筹集了 1.3 亿美元用于开发其带外激光器和硅光子互连。惠普企业 (Hewlett Packard Enterprise) 也在今年 4 月的那轮融资中投资了该公司，该公司今年 2 月还与 Ayar Labs 签署了一项协议，以研究如何将硅光子学引入 Slingshot 互连。Ayar Labs 也得到了英特尔的早期支持，尽管英特尔希望将激光器嵌入芯片内部，而不是像 Ayar Labs 那样从芯片外部泵入激光信号。 （如果现在有什么是真的，那就是英特尔现在不能犯任何错误。因此，英特尔利用硅光子学来规避风险是件好事。）
 
+下面是 GPU 和 NVSwitch 如何使用光学引擎将电信号转换为光信号以创建 GPU 的 NVSwitch 网络的框图：
 
+![image](/picture/nvidia-dally-optical-engine-interconnect.jpg)
 
+<https://www.nextplatform.com/2022/08/17/nvidia-shows-what-optically-linked-gpu-systems-might-look-like/>
 
