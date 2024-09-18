@@ -201,3 +201,6 @@ AI算力硬件主要包括算、连、存三个部分。**计算部分主要包�
 
 ## 5.1 Accelerated Infrastructure for the AI Era 2024.04
 
+<https://www.marvell.com/company/events/ai-era-event.html>
+
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/marvell-accelerated-infrastructure-for-the-ai-era-event.pdf>
