@@ -14,6 +14,8 @@
     - [4.2.3 AI服务器PCB](#423-ai服务器pcb)
     - [4.2.4 以太网交换机](#424-以太网交换机)
     - [4.2.5 总结：算、连、存是AI算力硬件的核心](#425-总结算连存是ai算力硬件的核心)
+- [5. Marvell](#5-marvell)
+  - [5.1 Accelerated Infrastructure for the AI Era 2024.04](#51-accelerated-infrastructure-for-the-ai-era-202404)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -194,3 +196,8 @@ AI算力硬件主要包括算、连、存三个部分。**计算部分主要包�
 ![image](/picture/big_model.png)
 
 ![image](/picture/AI_hardware_chaine.png)
+
+# 5. Marvell
+
+## 5.1 Accelerated Infrastructure for the AI Era 2024.04
+

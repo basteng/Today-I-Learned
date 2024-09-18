@@ -3,6 +3,7 @@
 - [3. SK Hynix HBM](#3-sk-hynix-hbm)
 - [4. 长鑫存储技术有限公司 通过使用堆叠层而不是 4F2 的 3D DRAM 路线](#4-长鑫存储技术有限公司-通过使用堆叠层而不是-4f2-的-3d-dram-路线)
 - [5. 实现高密度半导体结构的考虑因素：现代 DRAM 中的 4F2 和 6F2](#5-实现高密度半导体结构的考虑因素现代-dram-中的-4f2-和-6f2)
+- [6. 刻蚀](#6-刻蚀)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -72,3 +73,13 @@ Competitive Edge of #HBM ( High Bandwidth Memory )
 ![image](/picture/8f2-6f2-4f2-dram-and-3d-cell-1024x276-1.webp)
 
 <https://semihpc.com/considerations-in-achieving-high-density-semiconductor-structures-the-4f26f2-in-modern-dram/>
+
+# 6. 刻蚀
+
+Dry etch gas chemistry review
+
+ 刻蚀化学是刻蚀特定材料的起点，也是工艺优化的关键控制旋钮之一。高电负性元素，卤素，如 F、Cl 和 Br，是用添加剂气体和前驱体蚀刻原料气的常见元素。
+ 
+在本文中，介绍了 Si 刻蚀的各向异性，介绍了 Si、SiO 和 SiN 之间的选择性研究，以了解原料气和反应性添加剂如何影响刻蚀行为。还包含与掺杂、晶体学和离子诱导织构相关的蚀刻依赖性，以通过薄膜特性掌握蚀刻效应。
+
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/Dry%20etch%20gas%20chemistry%20review.pptx>
