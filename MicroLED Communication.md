@@ -26,8 +26,8 @@
   - [5.8 专利：使用基于 MicroOLED 的互连系统 SYSTEMS USING MICROLED-BASED INTERCONNECTS](#58-专利使用基于-microoled-的互连系统-systems-using-microled-based-interconnects)
   - [5.9 高温大带宽蓝色 InGaN/GaN 微型 LED](#59-高温大带宽蓝色-ingangan-微型-led)
   - [5.10 304 通道 MicroLED CMOS 收发器 IC，总计 1 Tbps，每比特亚皮焦耳容量](#510-304-通道-microled-cmos-收发器-ic总计-1-tbps每比特亚皮焦耳容量)
-- [5.11 专利：相干光纤束平行光链路  COHERENT FIBER BUNDLE PARALLEL OPTICAL LINKS](#511-专利相干光纤束平行光链路--coherent-fiber-bundle-parallel-optical-links)
-- [5.12 专利：使用 microLED 的芯片级光学互连 Chip-scale optical interconnect using microLEDs](#512-专利使用-microled-的芯片级光学互连-chip-scale-optical-interconnect-using-microleds)
+  - [5.11 专利：相干光纤束平行光链路  COHERENT FIBER BUNDLE PARALLEL OPTICAL LINKS](#511-专利相干光纤束平行光链路--coherent-fiber-bundle-parallel-optical-links)
+  - [5.12 专利：使用 microLED 的芯片级光学互连 Chip-scale optical interconnect using microLEDs](#512-专利使用-microled-的芯片级光学互连-chip-scale-optical-interconnect-using-microleds)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -693,7 +693,7 @@ High Temperature and Large Bandwidth Blue InGaN/GaN Micro-LEDs
 
 <https://ieeexplore.ieee.org/abstract/document/10527157>
 
-# 5.11 专利：相干光纤束平行光链路  COHERENT FIBER BUNDLE PARALLEL OPTICAL LINKS
+## 5.11 专利：相干光纤束平行光链路  COHERENT FIBER BUNDLE PARALLEL OPTICAL LINKS
 
 发明背景
 计算和网络性能需求不断增长。突出的应用包括数据中心服务器、高性能计算集群、人工神经网络和网络交换机。
@@ -710,7 +710,7 @@ High Temperature and Large Bandwidth Blue InGaN/GaN Micro-LEDs
 
 <https://www.freepatentsonline.com/y2024/0305379.html>
 
-# 5.12 专利：使用 microLED 的芯片级光学互连 Chip-scale optical interconnect using microLEDs
+## 5.12 专利：使用 microLED 的芯片级光学互连 Chip-scale optical interconnect using microLEDs
 
 发明背景
 本申请一般涉及使用光链路进行短距离连接的高速电子封装。
@@ -737,6 +737,8 @@ HBM 模块可以实现在内存堆栈 121是 DRAM 堆栈，安装在连接到图
 介质也是一个问题。将光纤耦合到硅芯片以及将横向光波导与同封装激光器和电子设备集成起来既复杂又昂贵。此外，它不会打破平面信号二维限制。使用 VCSEL 或垂直腔调制器，可以在自由空间中、芯片上和芯片外使用光学器件，但讨论过的所有与激光器有关的问题仍然适用。
 
 <https://patents.google.com/patent/US12074192B2/en>
+
+
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
