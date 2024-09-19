@@ -27,6 +27,8 @@
 - [27.High-Speed Visible Light Communications Using Individual Pixels in a Micro Light-Emitting Diode Array](#27high-speed-visible-light-communications-using-individual-pixels-in-a-micro-light-emitting-diode-array)
 - [28.Nonpolar m -Plane InGaN/GaN Micro-Scale Light-Emitting Diode With 1.5 GHz Modulation Bandwidth](#28nonpolar-m--plane-ingangan-micro-scale-light-emitting-diode-with-15-ghz-modulation-bandwidth)
 - [29.A Gb/s VLC Transmission Using Hardware Preequalization Circuit](#29a-gbs-vlc-transmission-using-hardware-preequalization-circuit)
+- [30.High Temperature and Large Bandwidth Blue InGaN/GaN Micro-LEDs](#30high-temperature-and-large-bandwidth-blue-ingangan-micro-leds)
+- [31.304 channel MicroLED based CMOS transceiver IC with aggregate 1 Tbps and sub-pJ per bit capability](#31304-channel-microled-based-cmos-transceiver-ic-with-aggregate-1-tbps-and-sub-pj-per-bit-capability)
 
 
 20240102以后 （未下载）
@@ -188,4 +190,9 @@ https://ieeexplore.ieee.org/document/8283504
 # 29.A Gb/s VLC Transmission Using Hardware Preequalization Circuit
 https://ieeexplore.ieee.org/document/7124419
 
+# 30.High Temperature and Large Bandwidth Blue InGaN/GaN Micro-LEDs
+<https://opg.optica.org/viewmedia.cfm?uri=OFC-2024-Th3D.6&seq=0>
 
+# 31.304 channel MicroLED based CMOS transceiver IC with aggregate 1 Tbps and sub-pJ per bit capability
+
+<https://ieeexplore.ieee.org/abstract/document/10527157>
