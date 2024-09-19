@@ -22,6 +22,7 @@
     - [5.3.5 底线](#535-底线)
   - [5.4 2024 Hotchips演讲](#54-2024-hotchips演讲)
   - [5.5 Data goes blue with GaN interconnects - Avicena《Compound Semiconductor》 VOLUME 27 ISSUE IV 2021](#55-data-goes-blue-with-gan-interconnects---avicenacompound-semiconductor-volume-27-issue-iv-2021)
+  - [5.7 光学芯片互连有望加速计算应用 - Bardia Pezeshki electronicdesign 专访](#57-光学芯片互连有望加速计算应用---bardia-pezeshki-electronicdesign-专访)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -658,6 +659,9 @@ In this vein, a team at AT&T Bell Laboratories demonstrated simple optical compu
 
 总的来说，量子阻抗变换是一个多学科交叉的领域，将量子力学与电路理论结合起来，以解决量子计算和量子通信中遇到的实际问题。
 
+## 5.7 光学芯片互连有望加速计算应用 - Bardia Pezeshki electronicdesign 专访
+
+<https://www.electronicdesign.com/podcasts/inside-electronics/podcast/55140590/electronic-design-optical-chiplet-interconnect-promises-to-accelerate-computing-apps>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
