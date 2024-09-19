@@ -30,6 +30,7 @@
 - [30.High Temperature and Large Bandwidth Blue InGaN/GaN Micro-LEDs](#30high-temperature-and-large-bandwidth-blue-ingangan-micro-leds)
 - [31.304 channel MicroLED based CMOS transceiver IC with aggregate 1 Tbps and sub-pJ per bit capability](#31304-channel-microled-based-cmos-transceiver-ic-with-aggregate-1-tbps-and-sub-pj-per-bit-capability)
 - [32. Recombination Rate Analysis of High-Speed Blue InGaN/GaN micro-LEDs at Elevated Temperatures](#32-recombination-rate-analysis-of-high-speed-blue-ingangan-micro-leds-at-elevated-temperatures)
+- [33. 304 channel MicroLED based CMOS transceiver IC with aggregate 1 Tbps and sub-pJ per bit capability](#33-304-channel-microled-based-cmos-transceiver-ic-with-aggregate-1-tbps-and-sub-pj-per-bit-capability)
 
 
 20240102以后 （未下载）
@@ -201,3 +202,7 @@ https://ieeexplore.ieee.org/document/7124419
 # 32. Recombination Rate Analysis of High-Speed Blue InGaN/GaN micro-LEDs at Elevated Temperatures
 
 <https://opg.optica.org/abstract.cfm?uri=cleo_at-2024-ATu4J.6>
+
+# 33. 304 channel MicroLED based CMOS transceiver IC with aggregate 1 Tbps and sub-pJ per bit capability
+
+<https://ieeexplore.ieee.org/abstract/document/10527157>
