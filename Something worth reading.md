@@ -11,6 +11,7 @@
 - [11. 你想学习物理学](#11-你想学习物理学)
 - [12. 提升品味以打造更好的产品](#12-提升品味以打造更好的产品)
 - [13. Claus Aasholm 关于市场研究和战略研究的观点](#13-claus-aasholm-关于市场研究和战略研究的观点)
+- [14. 博士学位的价值](#14-博士学位的价值)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -453,3 +454,16 @@ DisTrO 可以通过最大限度地减少对单个实体进行计算的依赖来�
 ```
 
 <https://clausaasholm.substack.com/p/serving-their-ai-masters>
+
+# 14. 博士学位的价值 
+
+不要卖空自己 - 你变得比你想象的要多。
+Don't sell yourself short - you become more than you think you do.
+
+是的，你成为了一名学科专家 - 这是你在博士论文上的专家名字，你的 “专业宝贝”
+
+但是，在潜在雇主眼中，无论他们是在生物技术行业、银行、非政府组织还是其他地方，您都要重要得多。
+
+如果你重视自己的价值，欣赏自己的知识和技能，那么其他人很可能也重视你。 
+
+![image](/picture/phdvalue.jpg)
