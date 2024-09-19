@@ -675,6 +675,9 @@ In this vein, a team at AT&T Bell Laboratories demonstrated simple optical compu
 
 <https://www.freepatentsonline.com/y2024/0302605.html>
 
+论文pdf
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/US20240302605A1_SYSTEMS%20USING%20MICROLED-BASED%20INTERCONNECTS.pdf>
+
 ## 5.9 高温大带宽蓝色 InGaN/GaN 微型 LED
 
 High Temperature and Large Bandwidth Blue InGaN/GaN Micro-LEDs
@@ -710,6 +713,9 @@ High Temperature and Large Bandwidth Blue InGaN/GaN Micro-LEDs
 
 <https://www.freepatentsonline.com/y2024/0305379.html>
 
+论文pdf
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/US20240305379A1_COHERENT%20FIBER%20BUNDLE%20PARALLEL%20OPTICAL%20LINKS.pdf>
+
 ## 5.12 专利：使用 microLED 的芯片级光学互连 Chip-scale optical interconnect using microLEDs
 
 发明背景
@@ -738,7 +744,8 @@ HBM 模块可以实现在内存堆栈 121是 DRAM 堆栈，安装在连接到图
 
 <https://patents.google.com/patent/US12074192B2/en>
 
-
+论文pdf
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/US12074192_Chip-scale%20optical%20interconnect%20using%20microLEDs.pdf>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
