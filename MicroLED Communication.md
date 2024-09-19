@@ -29,6 +29,9 @@
   - [5.11 专利：相干光纤束平行光链路  COHERENT FIBER BUNDLE PARALLEL OPTICAL LINKS](#511-专利相干光纤束平行光链路--coherent-fiber-bundle-parallel-optical-links)
   - [5.12 专利：使用 microLED 的芯片级光学互连 Chip-scale optical interconnect using microLEDs](#512-专利使用-microled-的芯片级光学互连-chip-scale-optical-interconnect-using-microleds)
   - [5.13 专利：带分线的 LED 互连，适用于内存应用 Led interconnect with breakout for memory applications](#513-专利带分线的-led-互连适用于内存应用-led-interconnect-with-breakout-for-memory-applications)
+  - [5.14 专利：增强型 microLED，用于芯片间通信 Enhanced microLEDs for inter-chip communications](#514-专利增强型-microled用于芯片间通信-enhanced-microleds-for-inter-chip-communications)
+  - [5.15 高温下高速蓝色 InGaN/GaN 微型 LED 的复合率分析 Recombination Rate Analysis of High-Speed Blue InGaN/GaN micro-LEDs at Elevated Temperatures](#515-高温下高速蓝色-ingangan-微型-led-的复合率分析-recombination-rate-analysis-of-high-speed-blue-ingangan-micro-leds-at-elevated-temperatures)
+  - [5.16 使用基于 MicroLED 的光学链路互连网络 Interconnect networks using microled-based optical links](#516-使用基于-microled-的光学链路互连网络-interconnect-networks-using-microled-based-optical-links)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -776,6 +779,50 @@ HBM 模块可以实现在内存堆栈 121是 DRAM 堆栈，安装在连接到图
 
 专利pdf
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/US20240241333A1_Led%20interconnect%20with%20breakout%20for%20memory%20applications.pdf>
+
+## 5.14 专利：增强型 microLED，用于芯片间通信 Enhanced microLEDs for inter-chip communications
+
+发明背景
+本发明一般涉及LED，并且更具体地涉及光通信系统中的LED。
+由于激光器具有窄线宽、单空间模式输出和高速特性，因此在光通信领域中占主导地位。激光器的窄线宽允许高速信号通过色散介质长距离传输，而不会产生不可补偿的脉冲展宽。长距离光纤链路经常受到色散的限制，因此窄线宽激光器对于长距离光纤链路来说可能是必不可少的。激光器的单空间模式也相对容易耦合到单模光纤中。
+激光的受激辐射也可能实现较高的调制速度。使用激光直接调制的光链路可能能够以 25 Gb/s 的速度运行，使用 PAM4 调制则可能能够承载 50 Gb/s 的信息。
+然而，使用激光可能会给极短距离的光通信（例如芯片到芯片的通信）带来困难。
+
+<https://patents.google.com/patent/US12034096B2/en>
+
+专利pdf
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/US12034096_%E5%A2%9E%E5%BC%BA%E5%9E%8B%20microLED%EF%BC%8C%E7%94%A8%E4%BA%8E%E8%8A%AF%E7%89%87%E9%97%B4%E9%80%9A%E4%BF%A1.pdf>
+
+## 5.15 高温下高速蓝色 InGaN/GaN 微型 LED 的复合率分析 Recombination Rate Analysis of High-Speed Blue InGaN/GaN micro-LEDs at Elevated Temperatures
+
+演示了在高温 (250C) 下具有高带宽 (2.6 GHz) 的 InGaN/GaN 微发光二极管。进行复合率分析以了解辐射和非辐射率对不同温度下调制响应的影响。
+
+<https://opg.optica.org/abstract.cfm?uri=cleo_at-2024-ATu4J.6>
+
+## 5.16 使用基于 MicroLED 的光学链路互连网络 Interconnect networks using microled-based optical links
+
+发明背景
+
+对提高计算和网络性能的需求似乎无处不在且永无止境。突出的应用包括数据中心服务器、高性能计算集群、人工神经网络和网络交换机。
+
+几十年来，晶体管尺寸的缩小和芯片尺寸的增大推动了集成电路 (IC) 性能和成本的大幅改善，这可以概括为著名的摩尔定律。数十亿个晶体管的数量使得之前分散在多个 IC 上的功能可以整合到单个片上系统 (SoC) 上。
+
+然而，随着边际性能优势的下降、产量的下降和每个晶体管成本的增加，进一步缩小晶体管尺寸所带来的好处正在急剧减少。除了这些限制之外，单个 IC 只能包含这么多功能，而这些功能受到限制，因为 IC 的工艺无法同时针对不同的功能（例如逻辑、DRAM 和 I/O）进行优化。
+
+事实上，将 SoC“去集成”为更小的“芯片”有显著的好处，包括：
+
+每个芯片的工艺可以根据其功能进行优化，例如逻辑、DRAM、高速 I/O 等。
+
+芯片非常适合在多种设计中重复使用。
+
+芯片的设计成本较低。
+
+由于芯片尺寸更小且设备数量更少，因此产量更高。
+
+然而，与 SoC 相比，Chiplet 有一个主要缺点：使用 Chiplet 通常需要更多的芯片间连接。与 SoC 中功能块之间的片上连接相比，芯片间连接通常密度低得多，需要的功率也高得多（例如以每比特能量为单位）。
+
+<https://patents.google.com/patent/US20240137132A1/en>
+
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
