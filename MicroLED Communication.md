@@ -32,6 +32,7 @@
   - [5.14 专利：增强型 microLED，用于芯片间通信 Enhanced microLEDs for inter-chip communications](#514-专利增强型-microled用于芯片间通信-enhanced-microleds-for-inter-chip-communications)
   - [5.15 高温下高速蓝色 InGaN/GaN 微型 LED 的复合率分析 Recombination Rate Analysis of High-Speed Blue InGaN/GaN micro-LEDs at Elevated Temperatures](#515-高温下高速蓝色-ingangan-微型-led-的复合率分析-recombination-rate-analysis-of-high-speed-blue-ingangan-micro-leds-at-elevated-temperatures)
   - [5.16 使用基于 MicroLED 的光学链路互连网络 Interconnect networks using microled-based optical links](#516-使用基于-microled-的光学链路互连网络-interconnect-networks-using-microled-based-optical-links)
+  - [5.17 304 通道 MicroLED CMOS 收发器 IC，总计 1 Tbps，每比特亚皮焦耳容量 304 channel MicroLED based CMOS transceiver IC with aggregate 1 Tbps and sub-pJ per bit capability](#517-304-通道-microled-cmos-收发器-ic总计-1-tbps每比特亚皮焦耳容量-304-channel-microled-based-cmos-transceiver-ic-with-aggregate-1-tbps-and-sub-pj-per-bit-capability)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -823,6 +824,16 @@ HBM 模块可以实现在内存堆栈 121是 DRAM 堆栈，安装在连接到图
 
 <https://patents.google.com/patent/US20240137132A1/en>
 
+专利pdf
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/US20240137132A1_%E4%BD%BF%E7%94%A8%E5%9F%BA%E4%BA%8E%20MicroLED%20%E7%9A%84%E5%85%89%E5%AD%A6%E9%93%BE%E8%B7%AF%E4%BA%92%E8%BF%9E%E7%BD%91%E7%BB%9C.pdf>
+
+## 5.17 304 通道 MicroLED CMOS 收发器 IC，总计 1 Tbps，每比特亚皮焦耳容量 304 channel MicroLED based CMOS transceiver IC with aggregate 1 Tbps and sub-pJ per bit capability
+
+1Tbps 16nm-CMOS 收发器 IC 配备基于 microLED 阵列的发射器和混合硅探测器阵列，运行速度约为 1pJ/bit，使用 304 个通道，每通道 3.3Gbps。图中显示了单通道和各种配置的初始结果。
+
+数据连接限制了 ML/AI 和 HPC 系统等高级计算应用的性能。它们的能效、密度和成本要求对性能至关重要，并且正在突破铜互连的根本极限。光互连被认为是解决这一瓶颈的潜在解决方案。单模光纤上的硅光子 (SiPh) 链路（通常使用外部 DFB 源）已显示出低功耗结果（~5pJ/bit）[1],[2]。多模光纤中基于 VCSEL 的链路已显示出低至 1pJ/bit 的结果 [3]，通常采用比 SiPh 更简单的封装。这些传统的光链路通常在几个通道上以数十 Gb/s 的速度运行，并且两端都需要 SerDes。
+
+<https://ieeexplore.ieee.org/abstract/document/10527157>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
