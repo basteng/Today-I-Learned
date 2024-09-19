@@ -774,7 +774,8 @@ HBM 模块可以实现在内存堆栈 121是 DRAM 堆栈，安装在连接到图
 
 <https://patents.google.com/patent/US20240241333A1/en>
 
-
+专利pdf
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/US20240241333A1_Led%20interconnect%20with%20breakout%20for%20memory%20applications.pdf>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
