@@ -31,6 +31,7 @@
 - [31.304 channel MicroLED based CMOS transceiver IC with aggregate 1 Tbps and sub-pJ per bit capability](#31304-channel-microled-based-cmos-transceiver-ic-with-aggregate-1-tbps-and-sub-pj-per-bit-capability)
 - [32. Recombination Rate Analysis of High-Speed Blue InGaN/GaN micro-LEDs at Elevated Temperatures](#32-recombination-rate-analysis-of-high-speed-blue-ingangan-micro-leds-at-elevated-temperatures)
 - [33. 304 channel MicroLED based CMOS transceiver IC with aggregate 1 Tbps and sub-pJ per bit capability](#33-304-channel-microled-based-cmos-transceiver-ic-with-aggregate-1-tbps-and-sub-pj-per-bit-capability)
+- [34. xperimental investigation of high-speed WDM-visible light communication using blue, green, and red InGaN µLEDs](#34-xperimental-investigation-of-high-speed-wdm-visible-light-communication-using-blue-green-and-red-ingan-µleds)
 
 
 20240102以后 （未下载）
@@ -206,3 +207,7 @@ https://ieeexplore.ieee.org/document/7124419
 # 33. 304 channel MicroLED based CMOS transceiver IC with aggregate 1 Tbps and sub-pJ per bit capability
 
 <https://ieeexplore.ieee.org/abstract/document/10527157>
+
+# 34. xperimental investigation of high-speed WDM-visible light communication using blue, green, and red InGaN µLEDs
+
+<https://opg.optica.org/ol/viewmedia.cfm?uri=ol-49-16-4697&seq=0&html=true>
