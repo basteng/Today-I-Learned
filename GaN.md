@@ -71,6 +71,7 @@
 - [16.保罗·德鲁德固体电子研究所、柏林电子研究协会莱布尼茨研究所、华为 - 通过等离子体辅助分子束外延在独立式多晶金刚石晶片上生长的 （Sc，Al）N 薄膜中产生 GHz 表面声波](#16保罗德鲁德固体电子研究所柏林电子研究协会莱布尼茨研究所华为---通过等离子体辅助分子束外延在独立式多晶金刚石晶片上生长的-scaln-薄膜中产生-ghz-表面声波)
   - [16.1 有一位作者是Zhuohui Chen，华为技术有限公司，加拿大安大略省渥太华](#161-有一位作者是zhuohui-chen华为技术有限公司加拿大安大略省渥太华)
 - [17. Sony - 氮化镓基谐振隧道二极管振荡器](#17-sony---氮化镓基谐振隧道二极管振荡器)
+- [18. GaN\_LandScape](#18-gan_landscape)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -1238,3 +1239,6 @@ LED结构包括160nm In0.05Ga0.95N/GaN超晶格（SL）、多量子阱（MQW）�
 
 <https://doi.org/10.1063/5.0225312>
 
+# 18. GaN_LandScape
+
+![image](/picture/GaN_landscape.jpg)
