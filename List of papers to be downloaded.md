@@ -32,6 +32,11 @@
 - [32. Recombination Rate Analysis of High-Speed Blue InGaN/GaN micro-LEDs at Elevated Temperatures](#32-recombination-rate-analysis-of-high-speed-blue-ingangan-micro-leds-at-elevated-temperatures)
 - [33. 304 channel MicroLED based CMOS transceiver IC with aggregate 1 Tbps and sub-pJ per bit capability](#33-304-channel-microled-based-cmos-transceiver-ic-with-aggregate-1-tbps-and-sub-pj-per-bit-capability)
 - [34. xperimental investigation of high-speed WDM-visible light communication using blue, green, and red InGaN µLEDs](#34-xperimental-investigation-of-high-speed-wdm-visible-light-communication-using-blue-green-and-red-ingan-µleds)
+- [35. Generation of GHz surface acoustic waves in (Sc,Al)N thin films grown on free-standing polycrystalline diamond wafers by plasma-assisted molecular beam epitaxy](#35-generation-of-ghz-surface-acoustic-waves-in-scaln-thin-films-grown-on-free-standing-polycrystalline-diamond-wafers-by-plasma-assisted-molecular-beam-epitaxy)
+- [36. Zeta potential and nanodiamond self assembly assisted diamond growth on lithium niobate and lithium tantalate single crystal](#36-zeta-potential-and-nanodiamond-self-assembly-assisted-diamond-growth-on-lithium-niobate-and-lithium-tantalate-single-crystal)
+- [37. Giant Reflection Coefficient on Sc0.26Al0.74N Polycrystalline Diamond Surface Acoustic Wave Resonators](#37-giant-reflection-coefficient-on-sc026al074n-polycrystalline-diamond-surface-acoustic-wave-resonators)
+- [38. Temperature characteristics of SAW resonators on Sc0.26Al0.74N/polycrystalline diamond heterostructures](#38-temperature-characteristics-of-saw-resonators-on-sc026al074npolycrystalline-diamond-heterostructures)
+- [39. Gallium nitride-based resonant tunneling diode oscillators](#39-gallium-nitride-based-resonant-tunneling-diode-oscillators)
 
 
 20240102以后 （未下载）
@@ -211,3 +216,23 @@ https://ieeexplore.ieee.org/document/7124419
 # 34. xperimental investigation of high-speed WDM-visible light communication using blue, green, and red InGaN µLEDs
 
 <https://opg.optica.org/ol/viewmedia.cfm?uri=ol-49-16-4697&seq=0&html=true>
+
+# 35. Generation of GHz surface acoustic waves in (Sc,Al)N thin films grown on free-standing polycrystalline diamond wafers by plasma-assisted molecular beam epitaxy
+
+<https://iopscience.iop.org/article/10.1088/1361-6463/ad76ba>
+
+# 36. Zeta potential and nanodiamond self assembly assisted diamond growth on lithium niobate and lithium tantalate single crystal
+
+<https://doi.org/10.1016/j.carbon.2023.118160>
+
+# 37. Giant Reflection Coefficient on Sc0.26Al0.74N Polycrystalline Diamond Surface Acoustic Wave Resonators
+
+<https://doi.org/10.1002/pssa.201900360>
+
+# 38. Temperature characteristics of SAW resonators on Sc0.26Al0.74N/polycrystalline diamond heterostructures
+
+<https://doi.org/10.1088/1361-665x/aabca4>
+
+# 39. Gallium nitride-based resonant tunneling diode oscillators
+
+<https://doi.org/10.1063/5.0225312>
