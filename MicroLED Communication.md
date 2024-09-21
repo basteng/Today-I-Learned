@@ -11,6 +11,7 @@
   - [4.5 GlobalFoundries 与 Silicon Catalyst 合作，加速为半导体初创公司提供差异化​​技术解决方案](#45-globalfoundries-与-silicon-catalyst-合作加速为半导体初创公司提供差异化技术解决方案)
   - [4.6 光进铜退，已成定局？](#46-光进铜退已成定局)
   - [4.7 HPE 与 Ayar Labs 合作，为 Slingshot Interconnect 添加硅光子技术](#47-hpe-与-ayar-labs-合作为-slingshot-interconnect-添加硅光子技术)
+  - [4.8 SuperNova™ 远程光源](#48-supernova-远程光源)
 - [5. Avicena](#5-avicena)
   - [5.1《High Bandwidth GaN-based Micro-LEDs at Temperatures up to 400°C》](#51high-bandwidth-gan-based-micro-leds-at-temperatures-up-to-400c)
   - [5.2 硅光子学联合封装。 凉！ 但它实用吗？Bardia Pezeshki post at Linkedin](#52-硅光子学联合封装-凉-但它实用吗bardia-pezeshki-post-at-linkedin)
@@ -33,6 +34,8 @@
   - [5.15 高温下高速蓝色 InGaN/GaN 微型 LED 的复合率分析 Recombination Rate Analysis of High-Speed Blue InGaN/GaN micro-LEDs at Elevated Temperatures](#515-高温下高速蓝色-ingangan-微型-led-的复合率分析-recombination-rate-analysis-of-high-speed-blue-ingangan-micro-leds-at-elevated-temperatures)
   - [5.16 使用基于 MicroLED 的光学链路互连网络 Interconnect networks using microled-based optical links](#516-使用基于-microled-的光学链路互连网络-interconnect-networks-using-microled-based-optical-links)
   - [5.17 304 通道 MicroLED CMOS 收发器 IC，总计 1 Tbps，每比特亚皮焦耳容量 304 channel MicroLED based CMOS transceiver IC with aggregate 1 Tbps and sub-pJ per bit capability](#517-304-通道-microled-cmos-收发器-ic总计-1-tbps每比特亚皮焦耳容量-304-channel-microled-based-cmos-transceiver-ic-with-aggregate-1-tbps-and-sub-pj-per-bit-capability)
+  - [5.18 乐高演示 ECOC2024 Bardia Pezeshki - 20240921 Linkedin](#518-乐高演示-ecoc2024-bardia-pezeshki---20240921-linkedin)
+  - [5.19 了解基于 microLED 的互连如何释放 HPC 和 AI 的潜力 - Jess Brown](#519-了解基于-microled-的互连如何释放-hpc-和-ai-的潜力---jess-brown)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -326,6 +329,16 @@ Saleh 解释说：“由于我们将光从封装中传输出去，因此我们�
 作为与 Ayar Labs 合作协议的一部分，惠普的风险投资部门 Hewlett Packard Pathfinder 将向这家 SiPho 新创公司投入一笔未披露金额的资金。Ayar Labs 已筹集了 6450 万美元的种子资金以及两轮风险投资（不包括 HPE 的投资），投资者包括英特尔资本和 Globalfoundries，以及 BlueSky Capital、Applied Ventures、Castor Ventures 和 Lockheed Martin Ventures 等。
 
 <https://www.nextplatform.com/2022/02/24/hpe-taps-ayar-labs-to-add-silicon-photonics-to-slingshot-interconnect/>
+
+## 4.8 SuperNova™ 远程光源
+
+SuperNova™ 远程光源是 Ayar Labs TeraPHY™ 光学 I/O 小芯片解决方案的支柱，用于下一代 AI 架构，提供多达 16 种波长的光，并为多达 16 个端口供电。 
+
+SuperNova™ 的核心是我们的 16 波长分布式反馈 （DFB） 激光阵列，这是一种先进的光子芯片，可在单个阵列中提供多种波长的光，以优化、简化和降低波分复用 （WDM） 应用的封装成本。 
+
+欢迎在 2024 年 9 月 23 日至 25 日的法兰克福 ECOC 展会期间在 C106 展位观看我们现场演示这项开创性的使能技术。
+
+![image](/picture/Ayarlabs_lightsource.jpg)
 
 # 5. Avicena
 
@@ -836,6 +849,22 @@ HBM 模块可以实现在内存堆栈 121是 DRAM 堆栈，安装在连接到图
 数据连接限制了 ML/AI 和 HPC 系统等高级计算应用的性能。它们的能效、密度和成本要求对性能至关重要，并且正在突破铜互连的根本极限。光互连被认为是解决这一瓶颈的潜在解决方案。单模光纤上的硅光子 (SiPh) 链路（通常使用外部 DFB 源）已显示出低功耗结果（~5pJ/bit）[1],[2]。多模光纤中基于 VCSEL 的链路已显示出低至 1pJ/bit 的结果 [3]，通常采用比 SiPh 更简单的封装。这些传统的光链路通常在几个通道上以数十 Gb/s 的速度运行，并且两端都需要 SerDes。
 
 <https://ieeexplore.ieee.org/abstract/document/10527157>
+
+## 5.18 乐高演示 ECOC2024 Bardia Pezeshki - 20240921 Linkedin 
+
+One of the challenges with silicon photonics is the complexity of the fiber attach. Lots of single mode fibers, all of which need to be precisely aligned to sub-micron positions ultimately affects costs and impacts yield. MicroLED based LightBundle, on the other hand, where hundreds of low cost illumination fibers are connected simultaneously with low precision is much easier. To prove the point, at the European Conference on Optical Communications next week, we will be doing a demo with Legos -our standard 1mm diameter 331 fiber cable for 1Tb/s link with a connector assembled using standard Lego pieces! Come see it for yourself and play with Legos in Frankfurt next week.
+
+硅光子学的挑战之一是光纤连接的复杂性。 大量的单模光纤，所有这些光纤都需要精确对准亚微米位置，最终会影响成本和产量。 另一方面，基于 MicroLED 的 LightBundle 可以以低精度同时连接数百根低成本照明光纤，这要容易得多。 为了证明这一点，在下周的欧洲光通信会议上，我们将用乐高积木做一个演示 - 我们的标准 1 毫米直径 331 光纤电缆，用于 1Tb/s 链接，连接器使用标准乐高积木组装！ 下周在法兰克福亲眼看看和乐高积木一起玩吧。
+
+![image](/picture/avicena_lego.jpg)
+
+it's an array of borosilicate illumination fiber, each of which is 50um diameter. Almost all core and of course very multimode. These types of fibers are used for lighting. You may have a bundle in your lab microscope light. For us, we make them ordered so all the channels align simultaneously
+
+它是一系列硼硅酸盐照明光纤，每根光纤的直径为 50 微米。 几乎所有的内核，当然还有非常多模式的。这些类型的纤维用于照明。您的实验室显微镜灯中可能有一束。对我们来说，我们让它们有序，以便所有通道同时对齐
+
+## 5.19 了解基于 microLED 的互连如何释放 HPC 和 AI 的潜力 - Jess Brown 
+
+<https://online.flippingbook.com/view/1043419875/10/>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
