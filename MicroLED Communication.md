@@ -36,6 +36,7 @@
   - [5.17 304 通道 MicroLED CMOS 收发器 IC，总计 1 Tbps，每比特亚皮焦耳容量 304 channel MicroLED based CMOS transceiver IC with aggregate 1 Tbps and sub-pJ per bit capability](#517-304-通道-microled-cmos-收发器-ic总计-1-tbps每比特亚皮焦耳容量-304-channel-microled-based-cmos-transceiver-ic-with-aggregate-1-tbps-and-sub-pj-per-bit-capability)
   - [5.18 乐高演示 ECOC2024 Bardia Pezeshki - 20240921 Linkedin](#518-乐高演示-ecoc2024-bardia-pezeshki---20240921-linkedin)
   - [5.19 了解基于 microLED 的互连如何释放 HPC 和 AI 的潜力 - Jess Brown](#519-了解基于-microled-的互连如何释放-hpc-和-ai-的潜力---jess-brown)
+  - [5.20 Avicena 在欧洲光通信会议上展示了基于 microLED 的 LightBundle 技术，覆盖范围达 30 米](#520-avicena-在欧洲光通信会议上展示了基于-microled-的-lightbundle-技术覆盖范围达-30-米)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -869,6 +870,25 @@ it's an array of borosilicate illumination fiber, each of which is 50um diameter
 pdf
 
 <https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/OC24-Autumn-Flipping-Book_with%20links.pdf>
+
+## 5.20 Avicena 在欧洲光通信会议上展示了基于 microLED 的 LightBundle 技术，覆盖范围达 30 米
+
+德国法兰克福--( BUSINESS WIRE )--总部位于加州桑尼维尔的 Avicena 将在德国法兰克福举行的 ECOC 2024 上展示全球首个基于 microLED 的 30 米链路 ( https://www.ecoc2024.org/ )，该链路的覆盖范围是之前公开演示的三倍。与其他光学互连技术相比，Avicena 的 LightBundle TM基于 microLED 的链路可提供卓越的带宽密度、能源效率、可靠性和成本。现在，凭借 30 米的覆盖范围，LightBundle 互连可以跨越整排数据中心机架，从而释放 HPC 和 AI 集群无与伦比的性能。
+
+
+**“在 30 米的距离内，这些互连可以轻松覆盖数据中心的一排机架或汽车应用中的商用车（如公交车）的整个长度。通过进一步优化设备和光纤，这项技术可以实现 100 米或更长的覆盖范围。”**
+
+人工智能 (AI) 正在推动对计算和内存性能的需求空前激增。这需要更高的密度、更低的功率、处理器之间以及处理器与内存之间的更长互连。
+
+如今，高速互连技术已形成双寡头垄断：距离最远约 1 米的电气链路占主导地位，而基于激光的光学链路则是更长距离的选择。电气互连既经济高效又可靠，而基于激光的链路成本明显更高，并且可靠性有限。“在 Avicena，我们很高兴展示基于 microLED 的链路，其覆盖范围可达 30 米，此前我们曾公开展示过 10 米链路，”Avicena 创始人兼首席执行官 Bardia Pezeshki 表示。“在 30 米的距离下，这些互连可以轻松覆盖数据中心的一排机架或汽车应用中的商用车（如公交车）的全长。通过进一步优化设备和光纤，这项技术可以实现 100 米或更长的覆盖范围。”
+
+Avicena 首席技术官兼联合创始人 Rob Kalman 表示：“与更传统的光互连技术相比，LightBundle 链路具有更高的密度、功率效率和成本，但传输距离较短。将 LightBundle 的传输距离从 10 米扩展到 30 米开辟了重要的新应用，并表明我们正在继续快速推进这项令人兴奋的新技术。”
+
+Avicena 还将在其展位上展示 LightBundle 技术套件使用标准 LEGO TM组件 大大放宽的对准公差。这强调了这样一个事实：与基于单模的硅光子学的严格公差相比，对准基于 LED 的光学链路确实是“小菜一碟”，从而使 LightBundle 能够实现更低的制造成本和更高的封装可靠性。
+
+<https://www.businesswire.com/news/home/20240922201225/en/Avicena-Demonstrates-30m-Reach-of-microLED-based-LightBundle-Technology-at-European-Conference-on-Optical-Communication>
+
+<https://avicena.tech/avicena-demonstrates-30m-reach-of-microled-based-lightbundle-technology-at-european-conference-on-optical-communications/>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
