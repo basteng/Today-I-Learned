@@ -3,6 +3,8 @@
   - [1.2 Blocks \& Files 存储新闻、信息和分析网站](#12-blocks--files-存储新闻信息和分析网站)
   - [1.3 DRAM 技术网站 Joe Chang，SQL Server 性能负责人](#13-dram-技术网站-joe-changsql-server-性能负责人)
   - [1.4 SRAM 技术网站 Joe Chang，SQL Server 性能负责人](#14-sram-技术网站-joe-changsql-server-性能负责人)
+  - [1.5 MRAM-info](#15-mram-info)
+  - [1.6 RRAM-Info](#16-rram-info)
 - [2.半导体综合网站](#2半导体综合网站)
   - [2.1 techovedas 印度人写的网站](#21-techovedas-印度人写的网站)
 
@@ -25,6 +27,14 @@ http://www.qdpma.com/ServerSystems/DRAM.html
 ## 1.4 SRAM 技术网站 Joe Chang，SQL Server 性能负责人
 
 http://www.qdpma.com/ServerSystems/SRAM2018.html
+
+## 1.5 MRAM-info
+
+https://www.mram-info.com/
+
+## 1.6 RRAM-Info
+
+https://www.rram-info.com/
 
 # 2.半导体综合网站
 
