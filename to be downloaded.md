@@ -149,10 +149,12 @@ Nanya Technology Corporation, Taoyuan, R. O. C, Taiwan
 Jeng-Ping Lin
 Nanya Technology Corporation, Taoyuan, R. O. C, Taiwan
 
+********************************************************
 # 14. TSV Interface for DRAM
 https://link.springer.com/chapter/10.1007/978-3-319-02381-6_5
 Authors: Chulwoo Kim, Junyoung Song & Hyun-Woo Lee 
 
+*******************************************
 # 15. Introduction to the Light-Emitting Diode
 https://link.springer.com/book/10.1007/978-3-031-59971-2
 
@@ -183,6 +185,7 @@ https://ieeexplore.ieee.org/abstract/document/10145931
 # 24.Parallel Versus Serial: Design of an Optical Receiver With Integrated Blue Photodetectors and Digitally Tunable Low-End Cutoff Frequency for MicroLED-Based Parallel Interchip Communication
 https://ieeexplore.ieee.org/document/10286829
 
+******************************************************************************************************************************
 # 25.High-Speed Micro-LEDs based on Nano-Engineered InGaN Active Region towards Chip-to-Chip Interconnections
 https://ieeexplore.ieee.org/document/10637686
 
@@ -208,10 +211,6 @@ https://ieeexplore.ieee.org/document/7124419
 # 32. Recombination Rate Analysis of High-Speed Blue InGaN/GaN micro-LEDs at Elevated Temperatures
 
 <https://opg.optica.org/abstract.cfm?uri=cleo_at-2024-ATu4J.6>
-
-# 33. 304 channel MicroLED based CMOS transceiver IC with aggregate 1 Tbps and sub-pJ per bit capability
-
-<https://ieeexplore.ieee.org/abstract/document/10527157>
 
 # 34. xperimental investigation of high-speed WDM-visible light communication using blue, green, and red InGaN µLEDs
 
