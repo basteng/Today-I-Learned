@@ -24,4 +24,3 @@ https://link.springer.com/book/10.1007/978-3-031-59971-2
 # 3.High-Speed Micro-LEDs based on Nano-Engineered InGaN Active Region towards Chip-to-Chip Interconnections
 https://ieeexplore.ieee.org/document/10637686
 
-
