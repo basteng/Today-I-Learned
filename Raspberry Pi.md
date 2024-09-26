@@ -4,6 +4,10 @@
 - [4.Google Pigweed 登陆我们全新的 RP2350](#4google-pigweed-登陆我们全新的-rp2350)
 - [5. Pico 2 文档](#5-pico-2-文档)
 - [6. Raspberry Pi Pico W 初学者课程](#6-raspberry-pi-pico-w-初学者课程)
+- [7. 如何构建 Raspberry Pi 集群](#7-如何构建-raspberry-pi-集群)
+  - [7.1 官方教程](#71-官方教程)
+  - [7.2 Raspberry Pi 3B 构建集群教程](#72-raspberry-pi-3b-构建集群教程)
+  - [7.3 ClusterHat 教程 Pi Zero W](#73-clusterhat-教程-pi-zero-w)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -499,3 +503,54 @@ Paul McWhorter
 
 <https://www.youtube.com/playlist?list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5>
 
+# 7. 如何构建 Raspberry Pi 集群
+
+## 7.1 官方教程
+
+清单
+- 8 个 Raspberry Pi 4
+- 8 个 Raspberry Pi PoE+ HAT
+- 8 端口千兆 PoE 交换机
+- USB 3 转千兆以太网适配器
+- USB 3 转 SATA 适配器
+- SSD SATA 驱动器
+- 8 条以太网电缆
+- 16 GB SD 卡
+- 集群架
+
+<https://www.raspberrypi.com/tutorials/cluster-raspberry-pi-tutorial/>
+
+## 7.2 Raspberry Pi 3B 构建集群教程
+
+清单
+- 3 个 Raspberry Pi 3 Model B — 用于计算节点
+- 1 个 Raspberry Pi 3 Model B — 用于主/登录节点
+- 4 张 MicroSD 卡
+- 4 条微型 USB 电源线
+- 1 个 8 端口 10/100/1000 网络交换机
+- 1x 6 端口 USB 电源
+- 1x 64GB USB 驱动器（或 NAS，见下文）
+
+第一部分 — 基础知识
+<https://glmdev.medium.com/building-a-raspberry-pi-cluster-784f0df9afbd>
+
+第二部分 - 一些简单的工作
+<https://glmdev.medium.com/building-a-raspberry-pi-cluster-aaa8d1f3d2ca>
+
+第三部分 —OpenMPI、Python 和并行作业
+<https://glmdev.medium.com/building-a-raspberry-pi-cluster-f5f2446702e8>
+
+## 7.3 ClusterHat 教程 Pi Zero W
+
+- 1 x ClusterHat — 购买链接有单品或套件可供选择
+- 1 x Raspberry Pi 3 或 4 —我正在使用 Raspberry Pi 3，它运行良好。
+- 4 个 Raspberry Pi Zero 或 Zero W —无线网络不是必需的，但如果你已经有一个 W，你可以把它插上
+- 5 张 MicroSD 卡 —这将保存每个 Raspberry Pi 的操作系统。ClusterHat网站上有一个教程，可让您通过网络运行节点映像。但是，虽然这种方法可以为您节省一点钱，但您应该知道，节点的运行速度很可能会更慢，因为它们将通过网络运行其操作系统。
+- 1 个拇指驱动器或外部硬盘驱动器 —可选，但推荐
+- PSU —主控制器 Raspberry Pi 将为其他控制器供电，因此您需要确保电源足够强大，能够为所有三个控制器供电。整个系统的最低功率要求为 1–1.2A（取决于您使用的是 Zeros 还是 Zero Ws），我使用 2.5A PSU 运行该设置时没有遇到任何问题
+- 耐心 —我花了一整个下午才看完 Mill 的教程，因为我必须将他的方法翻译成 ClusterHat，并解决自他第一次写教程以来似乎出现的一些问题。我非常熟悉 Linux 和命令行，本教程也反映了这一点。您的情况可能会有所不同！
+
+<https://medium.com/@dhuck/the-missing-clusterhat-tutorial-45ad2241d738>
+
+ClusterHat 淘宝链接
+<https://item.taobao.com/item.htm?abbucket=1&id=706903663956&ns=1&pisk=gAF-LkbuTijoxk82TH6mKZUgoKQcmWUPquz6tDmkdoEYRmAhzbXE9knYY0DoN0AK9yEUxkUFz2iQAkn3EtfgzzlEOGAds14za-rP3kHSOqTbuVpBF1x8Pb8SOGjG9KYjUgcQKCvNtm9j7mgSRY95ksgK8XgSV2_xc23wd3ZIOZQxW2YWPLgBhngZc3iIRLajcV3MNUgSRZUj02Gz-diFrDOLLkFbbwdikBOQM4HfnzifKoFjy7oTP7dBOeu-ecaSDGxrO5kb8vFe8BH3PRrE5ut5vDPYl7w_fivoVR3LSJE1-Lump7lxA71wWmN8JSHzn39SWbn-C7ZX7N4xd-FxZ7seQr4xVAh0ntSoKbE8Qck53irLk0qQwxtRmD2go7MYfiAYYveQZjN5c1IzL5V9dOxiX2v5kZpeLYg4yzM6eaL4LhgxjZ4eLpkDkqnGkZpeLYgqkcbmhpJEnEC..&priceTId=213e386217273227471263717e3f46&skuId=5137159806411&spm=a21n57.1.item.4.44fe523cX52glq&utparam=%7B%22aplus_abtest%22%3A%2275ef080006834215d1113927bd8c76b1%22%7D&xxc=taobaoSearch>
