@@ -4,9 +4,9 @@
 - [2. AI市场格局](#2-ai市场格局)
   - [2.1 生成式AI头部企业市场份额](#21-生成式ai头部企业市场份额)
 - [3. 数据中心AI芯片路线图](#3-数据中心ai芯片路线图)
-- [5. Marvell](#5-marvell)
-  - [5.1 Accelerated Infrastructure for the AI Era 2024.04](#51-accelerated-infrastructure-for-the-ai-era-202404)
-- [6. 高盛：AI未来的四大巨头](#6-高盛ai未来的四大巨头)
+- [4. Marvell](#4-marvell)
+  - [4.1 Accelerated Infrastructure for the AI Era 2024.04](#41-accelerated-infrastructure-for-the-ai-era-202404)
+- [5. 高盛：AI未来的四大巨头](#5-高盛ai未来的四大巨头)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -59,15 +59,15 @@ Yole Group 预计，随着制造商寻求优化成本和性能，芯片组方法
 
 ![image](/picture/AI%20datacenter.jpg)
 
-# 5. Marvell
+# 4. Marvell
 
-## 5.1 Accelerated Infrastructure for the AI Era 2024.04
+## 4.1 Accelerated Infrastructure for the AI Era 2024.04
 
 <https://www.marvell.com/company/events/ai-era-event.html>
 
 <https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/marvell-accelerated-infrastructure-for-the-ai-era-event.pdf>
 
-# 6. 高盛：AI未来的四大巨头
+# 5. 高盛：AI未来的四大巨头
 
 **听起来你是说这是一个赢家通吃的市场。这是否像互联网的发展一样，会有一个主导者，就像我们在搜索或电子邮件平台中看到的那样？**
 
