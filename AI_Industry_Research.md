@@ -4,16 +4,6 @@
 - [2. AI市场格局](#2-ai市场格局)
   - [2.1 生成式AI头部企业市场份额](#21-生成式ai头部企业市场份额)
 - [3. 数据中心AI芯片路线图](#3-数据中心ai芯片路线图)
-- [4. AI带来的机会](#4-ai带来的机会)
-  - [4.1 中信建投2023分析](#41-中信建投2023分析)
-    - [4.1.1 大算力时代的先进封装投资机遇](#411-大算力时代的先进封装投资机遇)
-    - [4.1.2 算力产业链](#412-算力产业链)
-  - [4.2 广发证券](#42-广发证券)
-    - [4.2.1 先进工艺、先进设备](#421-先进工艺先进设备)
-    - [4.2.2 Retimer和CXL](#422-retimer和cxl)
-    - [4.2.3 AI服务器PCB](#423-ai服务器pcb)
-    - [4.2.4 以太网交换机](#424-以太网交换机)
-    - [4.2.5 总结：算、连、存是AI算力硬件的核心](#425-总结算连存是ai算力硬件的核心)
 - [5. Marvell](#5-marvell)
   - [5.1 Accelerated Infrastructure for the AI Era 2024.04](#51-accelerated-infrastructure-for-the-ai-era-202404)
 - [6. 高盛：AI未来的四大巨头](#6-高盛ai未来的四大巨头)
@@ -68,8 +58,6 @@ Yole Group 预计，随着制造商寻求优化成本和性能，芯片组方法
 <https://www.tweaktown.com/news/100151/this-data-center-ai-chip-roadmap-shows-nvidia-will-dominate-far-into-2027-and-beyond/index.html>
 
 ![image](/picture/AI%20datacenter.jpg)
-
-
 
 # 5. Marvell
 
