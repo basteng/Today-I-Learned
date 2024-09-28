@@ -1364,7 +1364,7 @@ OSAT 应利用其传统的高产量、高成本效益制造优势，专注于一
 
 元图也许是 ASE 的FoCoS_Bridge，类似于 T 公司的CoWoS_L
 
-
+<https://github.com/basteng/Today-I-Learned/blob/main/picture/20240928_144933_AdvancePackaging_demo.mp4>
 
 # 26.整体市场预测
 
