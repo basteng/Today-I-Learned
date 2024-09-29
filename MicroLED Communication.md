@@ -66,6 +66,7 @@
 - [23. Arista](#23-arista)
   - [23.1 Andy Bechtolshelm - 2024 Hotchips：](#231-andy-bechtolshelm---2024-hotchips)
   - [23.2 400G 以太网之路由 Bechtolsheim 的意图铺就](#232-400g-以太网之路由-bechtolsheim-的意图铺就)
+  - [23.3 Andreas “Andy” Bechtolsheim ECOC 2024 演讲](#233-andreas-andy-bechtolsheim-ecoc-2024-演讲)
 - [24.数据中心交换芯片](#24数据中心交换芯片)
 - [25. 初创公司](#25-初创公司)
   - [25.1 Lightwave](#251-lightwave)
@@ -1807,6 +1808,9 @@ RC 时间常数也会影响 QLED 的带宽 [35]
 
 ![image](/picture/OSFP-MicroLED.png)
 
+视频
+<https://www.youtube.com/watch?v=Rnwguy1Af_I>
+
 ## 23.2 400G 以太网之路由 Bechtolsheim 的意图铺就
 
 掀起波澜的最佳方式就是引起轰动，而安迪·贝希托尔斯海姆（Andy Bechtolsheim）或许是 IT 基础设施领域最著名的连续创业者，他在这方面就非常擅长。作为 Sun Microsystems 和一系列网络和系统初创公司的联合创始人之一，以及谷歌的第一位投资者，他不仅看到浪潮，而且制造浪潮，然后乘风破浪，一路创建公司和市场。
@@ -1838,6 +1842,26 @@ Bechtolsheim 在演讲中表示：“唯一真正有意义的做法是直接实�
 和往常一样，十年后一切看起来都会走向衰败。这正是 IT 行业令人兴奋的地方。
 
 <https://www.nextplatform.com/2018/02/21/road-400g-ethernet-paved-bechtolsheims-intentions/>
+
+## 23.3 Andreas “Andy” Bechtolsheim ECOC 2024 演讲
+
+ECOC 2024介绍
+
+Arista Networks 联合创始人兼首席架构师
+
+此前，Andy 是 Sun Microsystems 的联合创始人兼首席系统架构师，负责下一代服务器、存储和网络架构。
+
+作为一名私人风险投资人，安迪参与了包括谷歌、VMware、Mellanox 和 Brocade 在内的多家公司的融资。他曾担任超过 25 家公司的董事会成员，其中大多数公司已上市或被收购。
+
+安迪于 1976 年获得卡内基梅隆大学计算机工程硕士学位，并于 1977 年至 1982 年在斯坦福大学攻读计算机工程博士学位。
+
+他曾获得富布赖特奖学金、Studienstiftung 奖学金、斯坦福年度企业家公司奖、史密森尼创新领导奖，并且是美国国家工程院院士。
+
+互连能否跟上人工智能的步伐？
+Can Interconnects Keep Up with AI?
+AI 集群的带宽需求对 AI Fabric 互连提出了前所未有的挑战。我将讨论如何改善光学器件的功率、成本和可靠性、铜线和光学器件之间的界限以及封装创新的机会。
+
+<https://www.ecoc2024.org/programme/plenary-speakers/>
 
 # 24.数据中心交换芯片
 
