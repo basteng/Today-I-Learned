@@ -38,6 +38,7 @@
   - [5.18 乐高演示 ECOC2024 Bardia Pezeshki - 20240921 Linkedin](#518-乐高演示-ecoc2024-bardia-pezeshki---20240921-linkedin)
   - [5.19 了解基于 microLED 的互连如何释放 HPC 和 AI 的潜力 - Jess Brown](#519-了解基于-microled-的互连如何释放-hpc-和-ai-的潜力---jess-brown)
   - [5.20 Avicena 在欧洲光通信会议上展示了基于 microLED 的 LightBundle 技术，覆盖范围达 30 米](#520-avicena-在欧洲光通信会议上展示了基于-microled-的-lightbundle-技术覆盖范围达-30-米)
+  - [5.21 采用光纤的芯片到芯片垂直发射光通信](#521-采用光纤的芯片到芯片垂直发射光通信)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -1041,6 +1042,12 @@ Avicena 还将在其展位上展示 LightBundle 技术套件使用标准 LEGO TM
 <https://www.businesswire.com/news/home/20240922201225/en/Avicena-Demonstrates-30m-Reach-of-microLED-based-LightBundle-Technology-at-European-Conference-on-Optical-Communication>
 
 <https://avicena.tech/avicena-demonstrates-30m-reach-of-microled-based-lightbundle-technology-at-european-conference-on-optical-communications/>
+
+## 5.21 采用光纤的芯片到芯片垂直发射光通信
+
+不同半导体封装中的多芯片模块可以是光学数据通过多芯光纤连接的 LED 和光电探测器耦合。这多芯光纤可以穿过半导体封装中的孔，具有半导体封装中的 LED 和光电探测器阵列，提供和分别接收由在多芯片模块
+
+<https://patents.google.com/patent/US20230412282A1/en>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
