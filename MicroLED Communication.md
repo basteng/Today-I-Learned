@@ -1049,6 +1049,10 @@ Avicena 还将在其展位上展示 LightBundle 技术套件使用标准 LEGO TM
 
 <https://patents.google.com/patent/US20230412282A1/en>
 
+pdf
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Led%20chip-to-chip%20vertically%20launched%20optical%20communications%20with%20optical%20fiber%20-%20patent.pdf>
+
 # 6. 《廉价光源可使人工智能更节能》Nature
 
 随着人工智能 (AI) 算法迅速成为日常生活中不可或缺的一部分，人们对训练和运行这些算法所需的大量能源产生了担忧1。实现更节能的 AI 的方法之一是用模拟元件替换传统数字计算机的某些部分。称为光子张量处理单元的设备依靠光来执行机器学习算法所需的矩阵乘法运算2，并且是这条道路上的关键一步。其中一些单元已经在使用3、4，但要在不大幅增加其尺寸的情况下增加它们所包含的组件数量 5 是一项挑战。Dong等人6在《自然》杂志上撰文提出了一种解决方案——一种利用廉价、高效的发光二极管 (LED) 产生的低质量光的计算机架构。
