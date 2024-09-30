@@ -1245,9 +1245,22 @@ LED结构包括160nm In0.05Ga0.95N/GaN超晶格（SL）、多量子阱（MQW）�
 
 # 17. Sony - 氮化镓基谐振隧道二极管振荡器
 
+作者来自 Compound Semiconductor Development Department, Sony Semiconductor Solutions Corporation, Atsugi-shi,
+Kanagawa 243-0014, Japan
+
+厚木技术中心
+243-0014 日本神奈川县厚木市旭町
+
+这个部门属于索尼半导体解决方案 - 光子器件与复合半导体
+
+https://www.sony.com/en/SonyInfo/research/research-areas/photonic_devices-compound_semiconductor/
+
+
 **摘要**
 
 我们展示了采用单片微波集成电路的 GaN 基谐振隧道二极管 (RTD) 振荡器。使用金属有机化学气相沉积法在独立的 c 平面半绝缘 GaN 衬底上生长具有 GaN 量子阱和 AlN 双势垒的 GaN 基 RTD。电路组件（包括 RTD、共面波导、金属绝缘体金属电容器和分流电阻器）在 GaN 衬底上单片制造。电路以 17 GHz 的基频振荡，与使用三维电磁模拟器和电路模拟器估计的频率非常接近。这项研究有助于推动用于毫米波和太赫兹应用的半导体高频器件的发展。
+**
+**全文总结**
 
 本文展示了基于氮化镓的谐振隧穿二极管 (RTD) 振荡器，该振荡器采用单片微波集成电路。采用金属有机化学气相沉积法在自由悬浮的 c 面半绝缘氮化镓衬底上生长了具有氮化镓量子阱和氮化铝双势垒的基于氮化镓的 RTD。电路元件，包括 RTD、共面波导、金属-绝缘体-金属电容器和分流电阻，在氮化镓衬底上单片集成。电路在基频为 17 GHz 时振荡，这与使用三维电磁模拟器和电路模拟器估算的频率非常接近。这项研究促进了半导体高频器件在毫米波和太赫兹应用中的发展。
 
