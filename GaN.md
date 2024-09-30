@@ -1249,6 +1249,10 @@ LED结构包括160nm In0.05Ga0.95N/GaN超晶格（SL）、多量子阱（MQW）�
 
 <https://doi.org/10.1063/5.0225312>
 
+pdf
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/39.Gallium%20nitride-based%20resonant%20tunneling%20diode%20oscillators.pdf>
+
 # 18. GaN_LandScape
 
 ![image](/picture/GaN_landscape.jpg)
