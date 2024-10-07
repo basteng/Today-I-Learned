@@ -3,6 +3,7 @@
 - [3.High-Speed Micro-LEDs based on Nano-Engineered InGaN Active Region towards Chip-to-Chip Interconnections](#3high-speed-micro-leds-based-on-nano-engineered-ingan-active-region-towards-chip-to-chip-interconnections)
 - [4. Enhancement of DRAMs performance using resonant tunneling diode buffer](#4-enhancement-of-drams-performance-using-resonant-tunneling-diode-buffer)
 - [5. Emerging GaN Technologies for Next-Generation Millimeter-Wave Applications](#5-emerging-gan-technologies-for-next-generation-millimeter-wave-applications)
+- [6. Highly Reliable and Manufacturable MRAM embedded in 14nm FinFET node](#6-highly-reliable-and-manufacturable-mram-embedded-in-14nm-finfet-node)
 
 
 20240925以后 （未下载）
@@ -31,6 +32,9 @@ https://ieeexplore.ieee.org/document/7065706
 
 # 5. Emerging GaN Technologies for Next-Generation Millimeter-Wave Applications
 https://ieeexplore.ieee.org/document/10682425
+
+# 6. Highly Reliable and Manufacturable MRAM embedded in 14nm FinFET node
+https://ieeexplore.ieee.org/abstract/document/10185248
 
 
 

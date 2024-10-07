@@ -14,6 +14,7 @@
   - [4.8 SuperNova™ 远程光源](#48-supernova-远程光源)
   - [4.9 人工智能基础设施的未来：利用光学 I/O 实现盈利之路](#49-人工智能基础设施的未来利用光学-io-实现盈利之路)
   - [4.10 如何在不破坏数据中心的情况下打造更强大的芯片 - economist](#410-如何在不破坏数据中心的情况下打造更强大的芯片---economist)
+  - [4.11 ECOC 2024](#411-ecoc-2024)
 - [5. Avicena](#5-avicena)
   - [5.1《High Bandwidth GaN-based Micro-LEDs at Temperatures up to 400°C》](#51high-bandwidth-gan-based-micro-leds-at-temperatures-up-to-400c)
   - [5.2 硅光子学联合封装。 凉！ 但它实用吗？Bardia Pezeshki post at Linkedin](#52-硅光子学联合封装-凉-但它实用吗bardia-pezeshki-post-at-linkedin)
@@ -506,6 +507,11 @@ Blackwell 将不同部件组合在一起，表明了芯片制造商在提高计�
 2015 年，戈登·摩尔承认，他对自己预测的持续时间感到“惊讶”。但他认为，要将摩尔定律再延续几十年，需要“大量优秀的工程技术”。台积电认为，到 2030 年，这些方法的结合可以在芯片上产生一万亿个晶体管。芯片制造商显然还没有完成。
 
 <https://www.economist.com/technology-quarterly/2024/09/16/how-to-build-more-powerful-chips-without-frying-the-data-centre>
+
+## 4.11 ECOC 2024
+
+• Altera 、Ayar Labs 和 Corning Optical Communications 展示了采用康宁高级玻璃波导模块的 4 Tbps 光学 FPGA 的概念验证
+• Ayar Labs 和 Sivers Photonics 现场演示了 Ayar Labs 的业界首个符合 CW-WDM MSA 标准的 16 波长光源和 Sirers 的 16 波长 DFB 激光阵列
 
 # 5. Avicena
 

@@ -7,6 +7,8 @@
   - [1.6 RRAM-Info](#16-rram-info)
 - [2.半导体综合网站](#2半导体综合网站)
   - [2.1 techovedas 印度人写的网站](#21-techovedas-印度人写的网站)
+- [3.综合类网站](#3综合类网站)
+  - [3.1 经济学人 技术季刊](#31-经济学人-技术季刊)
 
 
 # 1. 存储
@@ -41,3 +43,9 @@ https://www.rram-info.com/
 ## 2.1 techovedas 印度人写的网站
 
 https://techovedas.com/
+
+# 3.综合类网站
+
+## 3.1 经济学人 技术季刊
+
+https://www.economist.com/technology-quarterly
