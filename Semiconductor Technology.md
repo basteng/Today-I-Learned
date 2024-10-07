@@ -4,6 +4,7 @@
 - [4. 长鑫存储技术有限公司 通过使用堆叠层而不是 4F2 的 3D DRAM 路线](#4-长鑫存储技术有限公司-通过使用堆叠层而不是-4f2-的-3d-dram-路线)
 - [5. 实现高密度半导体结构的考虑因素：现代 DRAM 中的 4F2 和 6F2](#5-实现高密度半导体结构的考虑因素现代-dram-中的-4f2-和-6f2)
 - [6. 刻蚀](#6-刻蚀)
+- [7. 新型存储](#7-新型存储)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -83,3 +84,9 @@ Dry etch gas chemistry review
 在本文中，介绍了 Si 刻蚀的各向异性，介绍了 Si、SiO 和 SiN 之间的选择性研究，以了解原料气和反应性添加剂如何影响刻蚀行为。还包含与掺杂、晶体学和离子诱导织构相关的蚀刻依赖性，以通过薄膜特性掌握蚀刻效应。
 
 <https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/Dry%20etch%20gas%20chemistry%20review.pptx>
+
+# 7. 新型存储
+
+在 VLSI 2023 上，三星显然展示了其 MRAM 路线图，显示其 14nm MRAM 的单元为 0.0242 um2，预计其 8nm MRAM 的单元为 0.016 um2。这对于小于任何 NOR Flash 或 SRAM 信元大小非常重要。该 cell 大小的 current drive 也可能足以用于 ReRAM。
+
+<https://ieeexplore.ieee.org/abstract/document/10185248>
