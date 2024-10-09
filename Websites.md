@@ -9,6 +9,8 @@
   - [2.1 techovedas 印度人写的网站](#21-techovedas-印度人写的网站)
 - [3.综合类网站](#3综合类网站)
   - [3.1 经济学人 技术季刊](#31-经济学人-技术季刊)
+- [4. AI](#4-ai)
+  - [4.1 LifeArchitect.ai 一个非常有意思的AI新闻网站，深入浅出](#41-lifearchitectai-一个非常有意思的ai新闻网站深入浅出)
 
 
 # 1. 存储
@@ -49,3 +51,9 @@ https://techovedas.com/
 ## 3.1 经济学人 技术季刊
 
 https://www.economist.com/technology-quarterly
+
+# 4. AI
+
+## 4.1 LifeArchitect.ai 一个非常有意思的AI新闻网站，深入浅出
+
+https://lifearchitect.substack.com/
