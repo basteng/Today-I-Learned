@@ -4,6 +4,7 @@
 - [4. Enhancement of DRAMs performance using resonant tunneling diode buffer](#4-enhancement-of-drams-performance-using-resonant-tunneling-diode-buffer)
 - [5. Emerging GaN Technologies for Next-Generation Millimeter-Wave Applications](#5-emerging-gan-technologies-for-next-generation-millimeter-wave-applications)
 - [6. Highly Reliable and Manufacturable MRAM embedded in 14nm FinFET node](#6-highly-reliable-and-manufacturable-mram-embedded-in-14nm-finfet-node)
+- [7. Simplified All-in-One Load Network of the Broadband Doherty Power Amplifier](#7-simplified-all-in-one-load-network-of-the-broadband-doherty-power-amplifier)
 
 
 20240925以后 （未下载）
@@ -36,5 +37,7 @@ https://ieeexplore.ieee.org/document/10682425
 # 6. Highly Reliable and Manufacturable MRAM embedded in 14nm FinFET node
 https://ieeexplore.ieee.org/abstract/document/10185248
 
+# 7. Simplified All-in-One Load Network of the Broadband Doherty Power Amplifier
+https://ieeexplore.ieee.org/document/10630607
 
 
