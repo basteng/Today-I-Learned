@@ -711,20 +711,35 @@ AlphaFold 3是目前最强大的结构预测工具之一，它可以预测相互
 至于AlphaFold 3，以及未来的第n代AlphaFold会不会胡说八道……就交给诺奖得主们去操心吧。
 
 参考文献
+
 [1]https://www.163.com/sports/article/BHLG664200051CAQ.html
+
 [2]https://achievement.org/achiever/demis-hassabis-ph-d/#interview
+
 [3]https://achievement.org/achiever/demis-hassabis-ph-d/
+
 [4]https://www.nural.cc/deepmind-ai-framework/
+
 [5]https://deepmind.google/discover/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-by-40/
+
 [6]https://www.businessinsider.com/the-incredible-life-of-deepmind-cofounder-demis-hassabis-2017-5
+
 [7]Jumper, J. M. (2017). New Methods Using Rigorous Machine Learning for Coarse-Grained Protein Folding and Dynamics. Knowledge UChicago. Retrieved from 
+
 [8]https://knowledge.uchicago.edu/record/229?v=pdf
+
 [9]How AI Revolutionized Protein Science, but Didn’t End It | Quanta Magazine. (2024, June 28). Retrieved from 
+
 [10]https://www.quantamagazine.org/how-ai-revolutionized-protein-science-but-didnt-end-it-20240626
+
 [11]Booth, H. (2024). See Everyone on the 2024 TIME100 AI List. Time. Retrieved from https://time.com/7012710/john-jumper-2
+
 [12]Nature’s 10. (2021, December 15). Retrieved from https://www.nature.com/immersive/d41586-021-03621-0/index.html#section-7cgEBpkV9L
+
 [13]Sosnick, T. R. (2023). AlphaFold developers Demis Hassabis and John Jumper share the 2023 Albert Lasker Basic Medical Research Award. J. Clin. Invest., 133(19). doi: 10.1172/JCI174915
+
 [14]Browne, G. (2021). DeepMind’s AI has finally shown how useful it can be. WIRED. Retrieved from https://www.wired.com/story/deepmind-protein-folding-database
+
 [15]Heaven, W. D. (2021). DeepMind’s protein-folding AI has solved a 50-year-old grand challenge of biology. MIT Technology Review. Retrieved from https://www.technologyreview.com/2020/11/30/1012712/deepmind-protein-folding-ai-solved-biology-science-drugs-disease
 
 
