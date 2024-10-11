@@ -712,7 +712,7 @@ AlphaFold 3是目前最强大的结构预测工具之一，它可以预测相互
 
 参考文献
 
-[1]https://www.163.com/sports/article/BHLG664200051CAQ.html
+[1]https://www.163.com/sports/article/BHLG664200051CAQ.html  
 
 [2]https://achievement.org/achiever/demis-hassabis-ph-d/#interview
 
@@ -743,6 +743,8 @@ AlphaFold 3是目前最强大的结构预测工具之一，它可以预测相互
 [15]Heaven, W. D. (2021). DeepMind’s protein-folding AI has solved a 50-year-old grand challenge of biology. MIT Technology Review. Retrieved from https://www.technologyreview.com/2020/11/30/1012712/deepmind-protein-folding-ai-solved-biology-science-drugs-disease
 
 
-作者：麦麦，游识猷，李小葵编辑：窗敲雨封面图来源：Anjney Midha
+作者：麦麦，游识猷，李小葵
+编辑：窗敲雨
+封面图来源：Anjney Midha
 
 <https://mp.weixin.qq.com/s/LoIByh9l_Q-T1A4gVhuMbQ>
