@@ -19,6 +19,7 @@
   - [16.3 桌面上的骆驼模型：Ollama](#163-桌面上的骆驼模型ollama)
   - [16.4 与自己的文档聊天：h2oGPT](#164-与自己的文档聊天h2ogpt)
   - [16.5 轻松但缓慢地与您的数据聊天：PrivateGPT](#165-轻松但缓慢地与您的数据聊天privategpt)
+- [17. 2024年诺贝尔化学奖 - AlphaFold 和 Fold](#17-2024年诺贝尔化学奖---alphafold-和-fold)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -621,3 +622,112 @@ PrivateGPT 具有脚本功能，可以提取数据文件、将其拆分成块、
 PrivateGPT 包含了您在终端中“与自己的文档聊天”应用中最想要的功能，但文档警告说它不适用于生产。一旦运行它，您可能会明白原因：即使是小模型选项在我家的电脑上运行也很慢。但请记住，家庭互联网的早期也非常慢。我预计这些类型的个人项目会加快速度。
 
 <https://www.infoworld.com/article/2338922/5-easy-ways-to-run-an-llm-locally.html>
+
+# 17. 2024年诺贝尔化学奖 - AlphaFold 和 Fold
+
+今天的诺贝尔化学奖授予了两组研究者，其中大卫·贝克（David Baker）推动了蛋白质计算设计的发展，而戴密斯·哈萨比斯（Demis Hassabis）与约翰·朱默帕（John M. Jumper）则开发了AI蛋白质分析工具Alphafold。
+
+**哈萨比斯：有点厉害的棋牌大师**
+
+我们知道他开发的AlphaGo下围棋赢了人类（没啥直接经济效益），AlphaFold能分析蛋白质结构（研究太基础了），所以谷歌收购DeepMind到底赚到啥了？
+
+谷歌抹泪：它真的好替我省钱。
+
+2014年，谷歌收购了哈萨比斯创立的DeepMind，据说收购价高达数亿美元，但DeepMind大概已经替谷歌把这笔钱赚回来了。
+
+谷歌的电费大头，并不是办公室的照明和烧水，而是用在给数据中心降温上。你手机运行个游戏还会发热呢，谷歌处理gmail、google search等的大型数据中心，发热更厉害，必须降温才能继续用。而且随着数据量爆炸式增长，降温电费只会越来越高。
+
+在被谷歌收购2年后，DeepMind就开发出了一个人工智能框架，经过挺复杂（且你们也不感兴趣）（我也并不太懂）的过程，成功让数据中心的降温电费少了40%——据说能让谷歌在未来好几年里，省下几亿美元。
+赚了，真的赚大发了。
+
+**贝克：从哲学到生物学 Fold和Rosetta@Home**
+
+大卫·贝克出生于1962年，现在是华盛顿大学蛋白设计所的主任。
+
+他人生的大部分时间都在这所大学度过，小时候，他的父母都是这里的教授——父亲研究弦理论和夸克，母亲研究天体物理和大气科学。但贝克当时对科学并不感兴趣，到哈佛大学念本科时，他选择了哲学和社会科学，想知道人类大脑是如何做决定的。
+
+直到大学最后一年，他上了发育生物学课程，读到了<font color=red>《细胞分子生物学》</font>这本书，才开始对生物学感兴趣。博士时期，他加入了加州大学伯克利分校的细胞生物学家兰迪·谢克曼（Randy Schekman）的实验室（兰迪·谢克曼在2013年获得了诺贝尔生理学或医学奖），研究细胞是如何组织的。再之后，他的兴趣逐渐转移到了结构生物学上。
+
+90年代末期，贝克实验室开始开发计算机软件Rosetta，这个软件成功预测了氨基酸序列如何折叠成最终的蛋白质构型。贝克随后意识到，它可以反过来用——从蛋白质结构反向推出氨基酸序列，从而让从头设计蛋白质成为可能。正是这个想法引领他获得了诺贝尔化学奖。
+
+贝克是徒步爱好者，他在一次徒步旅行中想到：可以让公众参与蛋白质折叠的研究。
+
+2005年，贝克实验室开始运行志愿分布式计算项目Rosetta@Home。任何人只要在自己的电脑上完成配置后，电脑就会自动利用空闲计算力参与蛋白质结构预测的研究。2008年，他又与两位计算机教授合作，开发了蛋白质折叠游戏Foldit，希望以此吸引公众，帮助蛋白质结构研究推进。
+
+在游戏中，用户使用工具，尽可能完美地折叠蛋白质的结构。研究人员会对游戏中的最高分方案进行分析，确定这些方案是否可以应用于现实世界，为疾病、药物开发等研究提供灵感。这并非痴人说梦，比如在2011年，Foldit玩家就帮助破译了Mason-Pfizer猴病毒的逆转录病毒蛋白酶的晶体结构。
+
+<font color=red>2019年，贝克在一次TED演讲中描述了他对人造蛋白质的五个期待</font>：用于流感、艾滋病和癌症的通用疫苗；治疗慢性疼痛的先进药物；能够将已使用的药物运送到特定细胞的蛋白质纳米容器（这或许能消除副作用）；治疗神经退行性疾病；能用于太阳能捕获的自组装蛋白质。虽然不知道这些目标何时可以实现，但科学嘛，总能带给人们突破不可能的希望。
+
+**朱默帕：学物理和数学的化学奖得主**
+
+在还是青少年的时候，约翰·朱默帕（John Jumper）就自学了计算机编程，他在物理上也很有天赋，所以他本科读了物理和数学。
+
+朱默帕说，“我一直很喜欢发现宇宙真相，以为我会成为一个‘发现宇宙定律’的物理学家”。与此同时，他那对都是工程师的父母，在担心这孩子以后永远找不到工作。
+
+在本科阶段，他就和费米加速器实验室的人一起合作，研究被称为夸克的亚原子粒子的奇怪性质。有一天Jumper和研究人员一起吃午餐聊天，朱默帕问，“我们正在进行的这个实验，什么时候才能启动呢?”其中一个教授说他可能会先退休，另一个更老的教授说他可能活不到那一天了。于是，朱默帕决定要去搞点速度更快、能在更短时间内完成的科学研究。
+
+本科毕业后，他去了剑桥大学读凝聚态物理的博士——但因为不喜欢研究课题，他没读完就走了。然后朱默帕去了一家私人研究机构D.E.Shaw 研究公司，从事蛋白质的计算机模拟工作。
+
+“我当年加入的时候都不知道蛋白质是啥。”朱默帕回忆说。但研究公司里提供了很好的硬件环境，他可以用超级计算机来模拟分子，“我在一个周二做的模拟比我整个（剑桥）读博期间做的还要多。”
+
+然后朱默帕决定再读一次博士，这次他去了芝加哥大学读博，他仍然对蛋白质结构感兴趣，而且开始转向机器学习和神经网络。他博士论文的标题是《基于严格机器学习的粗粒度蛋白质折叠与动力学新方法》，在第一页，他引用了英国统计学家乔治· 鲍克斯(George Box)的名言，“所有模型都是错的，但有些模型是有用的。”
+
+这句话也非常适合用来形容AI。
+
+2017年Jumper拿到博士学位，博士毕业7年后就拿了诺贝尔化学奖。从诺贝尔化学奖经常不发给传统化学家的角度来说，也非常合理。
+
+要不是加入Deepmind，可能就不搞科研了
+
+从芝加哥大学博士毕业的2017年，朱默帕加入了谷歌DeepMind团队。
+
+当时他已经听说了Deepmind有计划解决蛋白质结构预测的问题，不过那时这个项目还在保密阶段。在去Deepmind面试时，他只要一提蛋白质折叠，Deepmind团队就转移话题。
+
+不过， 朱默帕对此很感兴趣，也决意加入。“如果不是为了 DeepMind，我可能会离开科学界。”
+
+敢于转向的Alphafold功臣
+
+2018年，DeepMind团队拿出了第一代AlphaFold，参加了第十三届全球蛋白质结构预测比赛（CASP），这个比赛相当于蛋白结构预测界的奥林匹克，比的是预测的结构与实验室里实际确定的蛋白质实际结构有多接近。
+
+当时他们还讨论过要不要匿名参加，因为如果是一个学术界的团队参加而且惨败了，也没什么，但是如果是谷歌这样市值数十亿美元的科技公司参与还失败了，那就搞不好是个大新闻，而且股价也要波动了。不过，他们最后还是决定以谷歌 DeepMind 的名义实名参赛。
+
+第一代AlphaFold表现得很好，但还没有达到足够高的准确率。当时，正是朱默帕决定抛弃原本的路线，重头开始。同事回忆说，早期版本的“ AlphaFold2”表现比它的前辈差得多，但朱默帕坚持了下来，“他不害怕接受新的方向。”
+
+仅仅2年后的2020年，朱默帕就带着第二代AlphaFold参加了第十四届全球蛋白质结构预测比赛（CASP14），预测了几十种蛋白质的结构，误差范围仅为1.6埃——这意味着预测精度已经达到了单个原子的级别，在研究中已经很实用了。
+
+顺便一提，2020年正值新冠大流行，所以CASP14这场比赛是在线上举办，通过zoom远程召开的。在Alphafold2的比赛结果出来后，很多结构科学家们呆在自己家里，盯着屏幕，意识到蛋白质科学的世界被永久改变了。
+
+朱默帕认为，在有些方面，AI比人类有明显优势。他说过，“我们人类在预测蛋白质结构方面是垃圾。”
+
+AlphaFold并不会完全取代实验方法。科学家们还需要用实验来验证AI的猜测，尤其是那些AI自己都拿不太准的区域。但它能够将需要验证的范围大幅缩小，由此省下相当可观的研究费用与时间。
+
+朱默帕说，“我最自豪的是，AlphaFold2让所有所有结构生物学的速度提高了5% 或10% ，生物学家现在可以节省一到两年时间。”他们可以更快地去检验和确定某种蛋白质的结构。
+
+已经有科学家用Alphafold2来绘制更好的人类心脏图表，建立抗生素耐药模型，鉴定澳大利亚5万年前灭绝的鸟类的蛋。
+
+AlphaFold此前两代都是开源的，但出于商业的考虑，Jumper 团队2024年5月发布的 AlphaFold 3是不开源的。
+
+AlphaFold 3是目前最强大的结构预测工具之一，它可以预测相互结合的蛋白质、DNA 和、RNA 以及其他小分子的结构。不过，因为AlphaFold 3引入了“diffusion模型”，也就是那些文字生图、文字生视频的底层技术，所以也无可避免地会引入这个模型的“幻觉”问题。
+
+至于AlphaFold 3，以及未来的第n代AlphaFold会不会胡说八道……就交给诺奖得主们去操心吧。
+
+参考文献
+[1]https://www.163.com/sports/article/BHLG664200051CAQ.html
+[2]https://achievement.org/achiever/demis-hassabis-ph-d/#interview
+[3]https://achievement.org/achiever/demis-hassabis-ph-d/
+[4]https://www.nural.cc/deepmind-ai-framework/
+[5]https://deepmind.google/discover/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-by-40/
+[6]https://www.businessinsider.com/the-incredible-life-of-deepmind-cofounder-demis-hassabis-2017-5
+[7]Jumper, J. M. (2017). New Methods Using Rigorous Machine Learning for Coarse-Grained Protein Folding and Dynamics. Knowledge UChicago. Retrieved from 
+[8]https://knowledge.uchicago.edu/record/229?v=pdf
+[9]How AI Revolutionized Protein Science, but Didn’t End It | Quanta Magazine. (2024, June 28). Retrieved from 
+[10]https://www.quantamagazine.org/how-ai-revolutionized-protein-science-but-didnt-end-it-20240626
+[11]Booth, H. (2024). See Everyone on the 2024 TIME100 AI List. Time. Retrieved from https://time.com/7012710/john-jumper-2
+[12]Nature’s 10. (2021, December 15). Retrieved from https://www.nature.com/immersive/d41586-021-03621-0/index.html#section-7cgEBpkV9L
+[13]Sosnick, T. R. (2023). AlphaFold developers Demis Hassabis and John Jumper share the 2023 Albert Lasker Basic Medical Research Award. J. Clin. Invest., 133(19). doi: 10.1172/JCI174915
+[14]Browne, G. (2021). DeepMind’s AI has finally shown how useful it can be. WIRED. Retrieved from https://www.wired.com/story/deepmind-protein-folding-database
+[15]Heaven, W. D. (2021). DeepMind’s protein-folding AI has solved a 50-year-old grand challenge of biology. MIT Technology Review. Retrieved from https://www.technologyreview.com/2020/11/30/1012712/deepmind-protein-folding-ai-solved-biology-science-drugs-disease
+
+
+作者：麦麦，游识猷，李小葵编辑：窗敲雨封面图来源：Anjney Midha
+
+<https://mp.weixin.qq.com/s/LoIByh9l_Q-T1A4gVhuMbQ>
