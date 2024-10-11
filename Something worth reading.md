@@ -658,6 +658,9 @@ PrivateGPT 包含了您在终端中“与自己的文档聊天”应用中最想
 
 <font color=red>2019年，贝克在一次TED演讲中描述了他对人造蛋白质的五个期待</font>：用于流感、艾滋病和癌症的通用疫苗；治疗慢性疼痛的先进药物；能够将已使用的药物运送到特定细胞的蛋白质纳米容器（这或许能消除副作用）；治疗神经退行性疾病；能用于太阳能捕获的自组装蛋白质。虽然不知道这些目标何时可以实现，但科学嘛，总能带给人们突破不可能的希望。
 
+贝克TED演讲链接
+<https://www.ted.com/talks/david_baker_5_challenges_we_could_solve_by_designing_new_proteins?language=zh-cn&subtitle=en>
+
 **朱默帕：学物理和数学的化学奖得主**
 
 在还是青少年的时候，约翰·朱默帕（John Jumper）就自学了计算机编程，他在物理上也很有天赋，所以他本科读了物理和数学。
