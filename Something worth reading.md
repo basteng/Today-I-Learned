@@ -751,3 +751,7 @@ AlphaFold 3是目前最强大的结构预测工具之一，它可以预测相互
 封面图来源：Anjney Midha
 
 <https://mp.weixin.qq.com/s/LoIByh9l_Q-T1A4gVhuMbQ>
+
+# 18. O'Reilly和酒
+
+![image](/picture/1728004222874.jpg)
