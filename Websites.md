@@ -21,6 +21,7 @@
     - [7.1.1 HRL Laboratories - 前休斯研究实验室](#711-hrl-laboratories---前休斯研究实验室)
     - [7.1.2 Teledyne Scientific and Imaging - Teledyne中央研究实验室](#712-teledyne-scientific-and-imaging---teledyne中央研究实验室)
 - [8. GaN newsletter monthly - 领英上Rémi Comyn整理的GaN新闻和最新进展，做得很好，很有启发](#8-gan-newsletter-monthly---领英上rémi-comyn整理的gan新闻和最新进展做得很好很有启发)
+- [9. Gazettabyte - 关于电信、硅光领域的网站](#9-gazettabyte---关于电信硅光领域的网站)
 
 
 # 1. 存储
@@ -148,3 +149,7 @@ Teledyne Imaging Sensors 是军事、太空、天文学和商业应用领域高�
 # 8. GaN newsletter monthly - 领英上Rémi Comyn整理的GaN新闻和最新进展，做得很好，很有启发
 
 <https://www.linkedin.com/in/remicomyn/recent-activity/all/>
+
+# 9. Gazettabyte - 关于电信、硅光领域的网站
+
+https://www.gazettabyte.com/
