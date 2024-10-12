@@ -92,6 +92,9 @@
 - [24.GaN MMIC 功率放大器中的动态热耦合 - 瑞典哥德堡查尔姆斯理工大学微波电子实验室微技术与纳米科学系, 萨博公司](#24gan-mmic-功率放大器中的动态热耦合---瑞典哥德堡查尔姆斯理工大学微波电子实验室微技术与纳米科学系-萨博公司)
   - [24.1 值得注意的是有三位作者是萨博公司的，难道萨博公司也在研究GaN？](#241-值得注意的是有三位作者是萨博公司的难道萨博公司也在研究gan)
 - [25. 高电流、高电压 AlN 肖特基势垒二极管 - 北卡罗来纳州立大学](#25-高电流高电压-aln-肖特基势垒二极管---北卡罗来纳州立大学)
+- [26. 适用于下一代毫米波应用的新兴 GaN 技术 - CNRS-IEMN，Teledyne Scientific and Imaging，弗劳恩霍夫应用固体物理研究所，HRL Laboratories，雷神技术公司，加利福尼亚大学圣巴巴拉分校电气与计算机工程系，意大利帕多瓦大学信息工程系，英国布里斯托大学设备热成像与可靠性中心](#26-适用于下一代毫米波应用的新兴-gan-技术---cnrs-iemnteledyne-scientific-and-imaging弗劳恩霍夫应用固体物理研究所hrl-laboratories雷神技术公司加利福尼亚大学圣巴巴拉分校电气与计算机工程系意大利帕多瓦大学信息工程系英国布里斯托大学设备热成像与可靠性中心)
+  - [26.1 Teledyne Scientific and Imaging 介绍](#261-teledyne-scientific-and-imaging-介绍)
+  - [26.2 HRL Laboratories介绍](#262-hrl-laboratories介绍)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -1573,23 +1576,66 @@ Holger Kapels 教授博士毕业于不来梅大学电气工程专业，并于 20
 
 通过瞬态测量、数值模拟和等效电路建模，研究了动态热耦合对氮化镓 (GaN) 单片微波集成电路 (MMIC) 功率放大器 (PA) 的影响。测得的热耦合表现出低通滤波响应，其中幅度和截止频率随着与热源的距离增加而降低。在测量中，两个相邻晶体管通道之间的耦合表现出分数阶瞬态响应，并且在大约 1 μs 后温度明显升高。同一 MMIC 上晶体管之间的耦合接近一阶瞬态响应，并且在测量结构中在 100 μs 到 2.6 ms 后显示出明显的温度升高。结果表明，热耦合导致 PA 中的晶体管在不同温度下工作，其中 PA 的瞬态响应表现出五个不同的时间区域。提取等效线性网络以在电路模拟器中有效地模拟该效应。本文表明，相邻晶体管之间的热耦合可以显著改变 10 kHz 以下 PA 的热响应。概述的结果为预测 GaN PA 中的动态自热提供了指导。
 
+<https://ieeexplore.ieee.org/document/10693626>
+
 ## 24.1 值得注意的是有三位作者是萨博公司的，难道萨博公司也在研究GaN？
 
 Torbjörn M. J. Nilsson
 Saab AB, Gothenburg, Sweden
 
+<https://ieeexplore.ieee.org/author/177011867939572>
+
 Andreas Divinyi
 Saab AB, Gothenburg, Sweden
+
+<https://ieeexplore.ieee.org/author/37090057132>
 
 Mattias Thorsell
 Department of Microtechnology and Nanoscience, Microwave Electronics Laboratory, Chalmers University of Technology, Gothenburg, Sweden
 Saab AB, Gothenburg, Sweden
 
+Mattias Thorsell (S'08–M'11) 分别于 2007 年和 2011 年获得瑞典哥德堡查尔姆斯理工大学电气工程硕士和博士学位。他目前是查尔姆斯理工大学的助理教授。他目前的研究兴趣包括非线性微波半导体器件的特性和建模。
 
-
-<https://ieeexplore.ieee.org/document/10693626>
+<https://ieeexplore.ieee.org/author/37319765400>
 
 # 25. 高电流、高电压 AlN 肖特基势垒二极管 - 北卡罗来纳州立大学
 
 报道了具有低理想因子 (<1.2)、高电流密度 (>5 kA/cm 2 ) 和高击穿电压 (680 V) 的 AlN 肖特基势垒二极管。准垂直器件结构由在 AlN 衬底上生长的轻掺杂 AlN 漂移层和重掺杂 Al 0.75 Ga 0.25 N 欧姆接触层组成。模拟、电流-电压测量和阻抗谱分析相结合的结果表明，由于两种材料之间的导带偏移，AlN/AlGaN 界面引入了寄生电子势垒。我们表明，引入成分渐变层可降低界面势垒，并将制备的二极管的正向电流密度提高 10 4倍。
+
+<https://iopscience.iop.org/article/10.35848/1882-0786/ad81c9>
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/High-current%2C%20high-voltage%20AlN%20Schottky%20Barrier%20Diodes.pdf>
+
+# 26. 适用于下一代毫米波应用的新兴 GaN 技术 - CNRS-IEMN，Teledyne Scientific and Imaging，弗劳恩霍夫应用固体物理研究所，HRL Laboratories，雷神技术公司，加利福尼亚大学圣巴巴拉分校电气与计算机工程系，意大利帕多瓦大学信息工程系，英国布里斯托大学设备热成像与可靠性中心
+
+**摘要**
+
+先进的毫米波 (mm-wave) 收发器系统，包括未来的毫米波 5G 和 6G 移动网络，对于支持高数据速率通信（例如 10 Gb/s 或更高）和 >50 Gb/s 的回程通信具有重要意义。由于 E 波段及更高频段也可以支持多千兆赫带宽，因此人们对相控阵实现的兴趣也日益浓厚。凭借其固有的集成优势，SiGe 相控阵已在 W 波段 [1] 得到演示，最新结果的数据速率超过了 10 Gb/s [2]。在点对点无线链路的情况下，III-V 技术[例如伪晶高电子迁移率晶体管 (pHEMT)] 也已用于全双工 W 波段链路，峰值数据速率为 10 Gb/s [2]。
+
+## 26.1 Teledyne Scientific and Imaging 介绍
+
+Teledyne Scientific & Imaging 由 Teledyne Scientific Company 和 Teledyne Imaging Sensors 组成。
+
+作为 Teledyne 的中央研究实验室，Teledyne Scientific Company 将利用美国政府研发资助机构的合同研发投资开发的技术转化为 Teledyne 的各种业务。我们是高性能复合半导体器件和集成电路、陶瓷和功能材料、高效实时信息处理算法以及光学传感器和组件的技术领导者。
+
+Teledyne Imaging Sensors 是军事、太空、天文学和商业应用领域高性能成像系统的领导者。我们的产品包括红外 (IR) 和可见光传感器、读出集成电路 (ROIC)、红外科学和战术相机以及嵌入先进算法的相机电子设备。​
+
+<https://www.teledyne-si.com/who-we-are/about-us>
+
+## 26.2 HRL Laboratories介绍
+
+HRL 实验室是物理和信息科学的下一个前沿领域的先驱。HRL 为汽车、航空航天和国防领域提供变革性技术，推动客户的关键任务，帮助他们消除限制并创造竞争优势。然后，HRL 将工作交还给客户，准备投入实际应用。70 多年来，HRL 丰富的科学发现和工程创新组合不断相互促进，往往以意想不到、深刻而深远的方式。作为波音和通用汽车共同拥有的一家私营公司，HRL 将目标置于利润之上，大大提高了技术水平。
+
+公司概况
+- 前身为休斯研究实验室（成立于 1948 年）
+- 1997 年成立有限责任公司 (LLC)
+- 波音公司和通用汽车公司（有限责任公司成员）的研发
+- 政府和商业合同（总包商和分包商）
+- 国防部可信铸造厂
+- 有限的 AS9100/ISO 认证
+- 250,000 平方英尺的实验室空间
+- 10,000 平方英尺 10 级洁净室
+- 位于南加州多个校区
+
+<https://www.hrl.com/about>
 
