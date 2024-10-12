@@ -15,7 +15,7 @@
   - [5.1 hackaday.com 来自互联网的新鲜技术，非常有意思的网站，很有技术大牛](#51-hackadaycom-来自互联网的新鲜技术非常有意思的网站很有技术大牛)
   - [5.2 hackster.io 和 hackaday.com 是姊妹网站，主要介绍一些具体的项目](#52-hacksterio-和-hackadaycom-是姊妹网站主要介绍一些具体的项目)
 - [6. 技术大牛博客](#6-技术大牛博客)
-  - [6.1 Dmitry Grinberg](#61-dmitry-grinberg)
+  - [6.1 Dmitry Grinberg - 在英特尔 4004 上缓慢启动完整的 Linux](#61-dmitry-grinberg---在英特尔-4004-上缓慢启动完整的-linux)
 - [7. 国外知名大学研究机构网站](#7-国外知名大学研究机构网站)
   - [7.1 GaN相关](#71-gan相关)
     - [7.1.1 HRL Laboratories - 前休斯研究实验室](#711-hrl-laboratories---前休斯研究实验室)
@@ -83,7 +83,7 @@ https://www.hackster.io/
 
 # 6. 技术大牛博客
 
-## 6.1 Dmitry Grinberg
+## 6.1 Dmitry Grinberg - 在英特尔 4004 上缓慢启动完整的 Linux
 
 俄罗斯人，UIUS毕业，曾在 VMWare、Lab126、Kno、Google 和 Apple工作，现在在 Cruise 工作。
 代表作“在英特尔 4004 上缓慢启动完整的 Linux”
