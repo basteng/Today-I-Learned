@@ -1662,3 +1662,7 @@ CSIS 简报：解决镓供应链风险
 美国决策者越来越多地利用对先进半导体和相关技术的出口管制来限制中国发展军事和两用能力。但值得注意的是，美国不断扩大的贸易限制加大了中国半导体公司的政治和商业压力，迫使它们尽可能摆脱对美国技术的依赖，这可能会对美国的技术领先地位产生负面影响。本报告是四份系列报告中的第一份，解释了出口管制如何加速和扩大中国“设计外包”（即采用美国技术的替代来源）和“规避设计”（即创新完全绕过美国技术的新技术）的努力，最终促使全球半导体供应链从美国转移。本报告描述了“设计外包”和“规避设计”战略如何因将销售和创新转移到中国和其他国家的技术领军企业而危及美国的经济和国家安全。报告随后描述了中国为发展先进封装能力以“超越”美国及其盟友在尖端芯片设计和制造方面的领导地位所做的努力。有人认为，先进封装是设计规避趋势的一个关键例子，并有可能改变中美在关键技术领域的竞争平衡。报告最后强调了加强多边化的重要性和挑战，以及减轻管制对美国公司负面影响的潜在途径。 
 
 <https://www.csis.org/analysis/double-edged-sword-semiconductor-export-controls>
+
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/241004_Whitney_Export_Controls.pdf>
+
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/241004_Whitney_Export_Controls_translate.pdf>
