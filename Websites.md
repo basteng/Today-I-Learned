@@ -19,7 +19,7 @@
 - [7. 国外知名大学研究机构网站](#7-国外知名大学研究机构网站)
   - [7.1 GaN相关](#71-gan相关)
     - [7.1.1 HRL Laboratories - 前休斯研究实验室](#711-hrl-laboratories---前休斯研究实验室)
-  - [7.1.2 Teledyne Scientific and Imaging - Teledyne中央研究实验室](#712-teledyne-scientific-and-imaging---teledyne中央研究实验室)
+    - [7.1.2 Teledyne Scientific and Imaging - Teledyne中央研究实验室](#712-teledyne-scientific-and-imaging---teledyne中央研究实验室)
 
 
 # 1. 存储
@@ -124,7 +124,7 @@ HRL 实验室是物理和信息科学的下一个前沿领域的先驱。HRL 为
 
 - 机械车间：HRL的机械车间提供最高品质的工艺、最先进的机械和设备以及完全计算机化的环境，由拥有多年经验的机械师组成。四十多年来，我们一直为汽车和航天工业提供专业加工服务和定制零件开发。
 
-## 7.1.2 Teledyne Scientific and Imaging - Teledyne中央研究实验室
+### 7.1.2 Teledyne Scientific and Imaging - Teledyne中央研究实验室
 
 Teledyne Scientific & Imaging 由 Teledyne Scientific Company 和 Teledyne Imaging Sensors 组成。
 
