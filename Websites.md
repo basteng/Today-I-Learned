@@ -20,8 +20,11 @@
   - [7.1 GaN相关](#71-gan相关)
     - [7.1.1 HRL Laboratories - 前休斯研究实验室](#711-hrl-laboratories---前休斯研究实验室)
     - [7.1.2 Teledyne Scientific and Imaging - Teledyne中央研究实验室](#712-teledyne-scientific-and-imaging---teledyne中央研究实验室)
-- [8. GaN newsletter monthly - 领英上Rémi Comyn整理的GaN新闻和最新进展，做得很好，很有启发](#8-gan-newsletter-monthly---领英上rémi-comyn整理的gan新闻和最新进展做得很好很有启发)
-- [9. Gazettabyte - 关于电信、硅光领域的网站](#9-gazettabyte---关于电信硅光领域的网站)
+- [8. 技术网站](#8-技术网站)
+  - [8.1 GaN newsletter monthly - 领英上Rémi Comyn整理的GaN新闻和最新进展，做得很好，很有启发](#81-gan-newsletter-monthly---领英上rémi-comyn整理的gan新闻和最新进展做得很好很有启发)
+- [9. 科学读物、媒体报道](#9-科学读物媒体报道)
+  - [9.1 Gazettabyte - 关于电信、硅光领域的网站](#91-gazettabyte---关于电信硅光领域的网站)
+  - [9.2 Quanta Magazine - 西蒙斯基金会 科学新闻在线刊物](#92-quanta-magazine---西蒙斯基金会-科学新闻在线刊物)
 
 
 # 1. 存储
@@ -146,10 +149,26 @@ Teledyne Imaging Sensors 是军事、太空、天文学和商业应用领域高�
 - 半导体制造服务
 - 测试与测量
 
-# 8. GaN newsletter monthly - 领英上Rémi Comyn整理的GaN新闻和最新进展，做得很好，很有启发
+# 8. 技术网站
+
+## 8.1 GaN newsletter monthly - 领英上Rémi Comyn整理的GaN新闻和最新进展，做得很好，很有启发
 
 <https://www.linkedin.com/in/remicomyn/recent-activity/all/>
 
-# 9. Gazettabyte - 关于电信、硅光领域的网站
+# 9. 科学读物、媒体报道
 
-https://www.gazettabyte.com/
+## 9.1 Gazettabyte - 关于电信、硅光领域的网站
+
+<https://www.gazettabyte.com/>
+
+## 9.2 Quanta Magazine - 西蒙斯基金会 科学新闻在线刊物
+
+Quanta Magazine是西蒙斯基金会于 2012 年推出的独立编辑在线刊物，旨在增进公众对科学的了解。为什么选择Quanta？阿尔伯特·爱因斯坦将光子称为“光的量子”。我们的目标是“照亮科学”。
+
+我们的记者专注于数学、理论物理、理论计算机科学和基础生命科学的发展。最好的传统新闻机构对健康、医学、技术、工程和环境等应用科学领域提供出色的报道。我们努力补充和扩大现有的媒体报道。
+
+我们的工作往往类似于新闻炼金术——我们将科学的复杂性与讲故事的可塑性艺术融合在一起，试图打造出一种珍贵的新合金。这可能是一项令人费解的事业，但我们乐于接受挑战。
+
+在《Quanta Magazine》中，科学准确性与讲述一个好故事同样重要。由于《Quanta》是一份由非营利基金会资助的出版物，其所有资源都用于制作负责任的、免费访问的新闻报道，这些新闻报道都经过了细致的研究、报道、编辑、文字编辑和事实核查。我们的编辑独立性确保了我们科学报道的公正性——我们的文章不反映或代表西蒙斯基金会的观点。所有编辑决定，包括报道哪些研究或研究人员，均由向主编汇报的《Quanta 》员工做出；编辑内容在发表前不会由新闻团队以外的任何人审查； 《Quanta》不参与西蒙斯基金会的任何资助或研究工作；接受该基金会资助的研究人员不会受到优待。报道某位研究人员或研究成果的决定完全是基于编辑为了服务读者而做出的。
+
+<https://www.quantamagazine.org/about/>
