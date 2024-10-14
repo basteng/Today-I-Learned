@@ -16,6 +16,7 @@
   - [5.2 hackster.io 和 hackaday.com 是姊妹网站，主要介绍一些具体的项目](#52-hacksterio-和-hackadaycom-是姊妹网站主要介绍一些具体的项目)
 - [6. 技术大牛博客](#6-技术大牛博客)
   - [6.1 Dmitry Grinberg - 在英特尔 4004 上缓慢启动完整的 Linux](#61-dmitry-grinberg---在英特尔-4004-上缓慢启动完整的-linux)
+  - [6.2 Dario Amodei - Anthropic CEO, 代表作品Claude](#62-dario-amodei---anthropic-ceo-代表作品claude)
 - [7. 国外知名大学研究机构网站](#7-国外知名大学研究机构网站)
   - [7.1 GaN相关](#71-gan相关)
     - [7.1.1 HRL Laboratories - 前休斯研究实验室](#711-hrl-laboratories---前休斯研究实验室)
@@ -96,6 +97,10 @@ https://dmitry.gr/?r=05.Projects&proj=35.%20Linux4004
 
 网站链接：
 https://dmitry.gr/?
+
+## 6.2 Dario Amodei - Anthropic CEO, 代表作品Claude
+
+<https://darioamodei.com/>
 
 # 7. 国外知名大学研究机构网站
 
