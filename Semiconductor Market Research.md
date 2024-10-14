@@ -64,6 +64,7 @@
   - [25.2 先进封装正在彻底重塑芯片生态系统 BCG](#252-先进封装正在彻底重塑芯片生态系统-bcg)
   - [25.3 先进封装的增长势头正在超越先进工艺节点](#253-先进封装的增长势头正在超越先进工艺节点)
   - [25.4 先进封装结构示意图](#254-先进封装结构示意图)
+  - [25.5 先进封装供应链](#255-先进封装供应链)
 - [26.整体市场预测](#26整体市场预测)
   - [26.1 2028年各应用占比](#261-2028年各应用占比)
 - [27.封装](#27封装)
@@ -1372,6 +1373,12 @@ OSAT 应利用其传统的高产量、高成本效益制造优势，专注于一
 元图也许是 ASE 的FoCoS_Bridge，类似于 T 公司的CoWoS_L
 
 <https://github.com/basteng/Today-I-Learned/blob/main/picture/20240928_144933_AdvancePackaging_demo.mp4>
+
+## 25.5 先进封装供应链
+
+![](/picture/1728807012520.jpg)
+
+<https://www.csis.org/analysis/double-edged-sword-semiconductor-export-controls>
 
 # 26.整体市场预测
 
