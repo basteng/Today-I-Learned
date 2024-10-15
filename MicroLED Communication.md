@@ -15,6 +15,7 @@
   - [4.9 人工智能基础设施的未来：利用光学 I/O 实现盈利之路](#49-人工智能基础设施的未来利用光学-io-实现盈利之路)
   - [4.10 如何在不破坏数据中心的情况下打造更强大的芯片 - economist](#410-如何在不破坏数据中心的情况下打造更强大的芯片---economist)
   - [4.11 ECOC 2024](#411-ecoc-2024)
+  - [4.12 通过三重谐振光子分子实现高效宽带可调谐射频光转换](#412-通过三重谐振光子分子实现高效宽带可调谐射频光转换)
 - [5. Avicena](#5-avicena)
   - [5.1《High Bandwidth GaN-based Micro-LEDs at Temperatures up to 400°C》](#51high-bandwidth-gan-based-micro-leds-at-temperatures-up-to-400c)
   - [5.2 硅光子学联合封装。 凉！ 但它实用吗？Bardia Pezeshki post at Linkedin](#52-硅光子学联合封装-凉-但它实用吗bardia-pezeshki-post-at-linkedin)
@@ -512,6 +513,22 @@ Blackwell 将不同部件组合在一起，表明了芯片制造商在提高计�
 
 • Altera 、Ayar Labs 和 Corning Optical Communications 展示了采用康宁高级玻璃波导模块的 4 Tbps 光学 FPGA 的概念验证
 • Ayar Labs 和 Sivers Photonics 现场演示了 Ayar Labs 的业界首个符合 CW-WDM MSA 标准的 16 波长光源和 Sirers 的 16 波长 DFB 激光阵列
+
+## 4.12 通过三重谐振光子分子实现高效宽带可调谐射频光转换
+
+我们最近在 Optics Letters 上发表的题为“Efficient wideband tunable radio frequency–optical conversion via triply resonant photonic molecules”的论文被选为“聚焦光学”。你可以在这里找到这项工作的一个很好的总结（https://lnkd.in/eePZ9a-w）。该论文现在对任何感兴趣的人开放获取。
+
+在这项工作中，我们提出了一种新颖的三腔配置，通过为射频光转换过程提供目标射频载波的宽带可调谐性，该配置可以在 5G/6G 无线通信、毫米波光子学和雷达系统中发挥重要作用。在我攻读博士学位的早期，我们成功地演示了该设计与 GlobalFoundries 的 45RFSOI 平台上的 LNA 的单片集成，所有这些都在单个芯片上。虽然完整的期刊论文目前正在进行中，但您可以在此处 （https://lnkd.in/eC_TDsUf） 访问我们实验演示的相关会议论文。
+
+特别感谢 Milos Popovic 教授和 Xinchang Zhang 教授对论文的贡献。这项工作由最近的 NSF FuSe 计划奖资助，并与加州大学伯克利分校的 Vladimir Stojanovic 教授和 Ruocheng Wang 合作完成。我们还要感谢 Ayar Labs 和 GlobalFoundries 多年来支持这些单片电子光子平台的开发，使这些 CMOS 工艺能够实现如此复杂的射频调制器。
+
+<https://www.linkedin.com/feed/update/urn:li:activity:7251423725034553344/>
+
+![](/picture/Ayarlabs2.jpg)
+![](/picture/Ayarlabs3.jpg)
+![](/picture/Ayarlabs4.jpg)
+![](/picture/Ayarlabs5.jpg)
+
 
 # 5. Avicena
 
