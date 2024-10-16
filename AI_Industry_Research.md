@@ -7,6 +7,7 @@
 - [4. Marvell](#4-marvell)
   - [4.1 Accelerated Infrastructure for the AI Era 2024.04](#41-accelerated-infrastructure-for-the-ai-era-202404)
 - [5. 高盛：AI未来的四大巨头](#5-高盛ai未来的四大巨头)
+- [6. AI数据中心价值链](#6-ai数据中心价值链)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -104,3 +105,15 @@ Yole Group 预计，随着制造商寻求优化成本和性能，芯片组方法
 我们越来越有信心，这个技术周期是真实的。正如人们所说，它将会是一个巨大的进步。
 
 <https://www.goldmansachs.com/insights/articles/will-the-1-trillion-of-generative-ai-investment-pay-off>
+
+# 6. AI数据中心价值链
+
+AI 数据中心的扩建是历史上最大的计算基础设施扩建之一。
+
+在过去的四个季度中，仅 Microsoft、Amazon、Google 和 Meta 就看到了 $150B+ 的资本支出。
+
+随着数千亿美元流经生态系统，供应链在堆栈的每一层都捉襟见肘。
+
+从能源到建筑再到半导体，公司都有机会解决这些瓶颈。
+
+![](/picture/1728999063008.jpg)

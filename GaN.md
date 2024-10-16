@@ -85,6 +85,7 @@
 - [20. 全球知名研究机构](#20-全球知名研究机构)
   - [20.1 弗劳恩霍夫硅技术研究所 ISIT](#201-弗劳恩霍夫硅技术研究所-isit)
     - [20.1.1 2024.10月招GaN博士后](#2011-202410月招gan博士后)
+  - [20.2 GEECI 氮化镓生态系统支持中心和孵化器，印度理工学院班加罗尔分校](#202-geeci-氮化镓生态系统支持中心和孵化器印度理工学院班加罗尔分校)
     - [20.1.2 简介](#2012-简介)
 - [21. 富士通 - 高功率和效率 W 波段 InAlGaN/AlN/GaN 高电子迁移率晶体管，适用于未来高容量无线通信](#21-富士通---高功率和效率-w-波段-inalganalngan-高电子迁移率晶体管适用于未来高容量无线通信)
 - [22. 三星 - 宽带 Doherty 功率放大器的简化一体化负载网络](#22-三星---宽带-doherty-功率放大器的简化一体化负载网络)
@@ -1530,6 +1531,12 @@ Fraunhofer Institute for Silicon Technology ISIT 年 GaN 的激动人心的时�
 https://lnkd.in/gGKBhT7m
 
 <https://www.linkedin.com/feed/update/urn:li:activity:7242433022627610625/>
+
+## 20.2 GEECI 氮化镓生态系统支持中心和孵化器，印度理工学院班加罗尔分校
+
+GEECI 是一家小批量半导体晶圆和器件生产、特性分析和封装设施；孵化器；和 GaN 生态系统推动者，由印度电子和信息技术部 (GOI) 批准，在印度科学研究院创新与发展协会 (IISc) 的支持下。它很快将成为一家第 8 节公司。GEECI 由国家纳米制造中心 (NNfC)、CeNSE（纳米科学与工程中心）、IISc 设立的专用 GaN HEMT 器件开发工具线提供服务。在 Twitter 上关注我们：https://twitter.com/GEECI_GaN
+
+<https://www.linkedin.com/company/gallium-nitride-ecosystem-enabling-centre-and-incubator-geeci-iisc-bangalore/about/>
 
 ### 20.1.2 简介
 
