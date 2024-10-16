@@ -1123,6 +1123,20 @@ pdf
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Led%20chip-to-chip%20vertically%20launched%20optical%20communications%20with%20optical%20fiber%20-%20patent.pdf>
 
+## 5.22 Avicena 任命前 Oclaro 首席执行官 Greg Dougherty 为董事会成员
+
+2024 年 10 月 15 日 上午 6:00 东部夏令时间
+
+加州桑尼维尔--( BUSINESS WIRE )--Avicena 是一家提供先进 LED 计算光学互连的供应商，该公司今天宣布任命 Greg Dougherty 为其董事会成员，任命立即生效。Dougherty 先生为董事会带来了卓越的执行领导能力和丰富的光通信行业经验，以及在开发创新光学产品和技术方面强大的运营专业知识。
+
+Avicena 首席执行官 Bardia Pezeshki 表示：“我们很高兴欢迎 Greg 这样有能力的高管加入我们的董事会。随着我们继续将创新的 microLED 光学墨水产品化，Greg 的深厚行业知识和专业知识将发挥巨大作用，无论是作为独立光学器件，还是作为用于计算集群中处理器间和处理器到内存互连的共封装芯片。Greg 的见解和指导对公司和我们的投资者来说都是巨大的财富。”
+
+Dougherty 先生目前担任 Infinera 和 MaxLinear 的董事。他自 2013 年 6 月起担任 Oclaro 的首席执行官，直至 2018 年 12 月该公司被 Lumentum 以 18 亿美元收购。他还自 2009 年 4 月起担任 Oclaro 的董事，直至 2018 年 12 月完成出售。在加入 Oclaro 之前，Dougherty 先生自 2005 年 4 月起担任全球领先的智能光子解决方案提供商 Avanex Corporation 的董事，2009 年 4 月 Avanex 与 Bookham 合并成立 Oclaro。 Dougherty 先生还曾于 2002 年 10 月至 2013 年 8 月担任 Picarro, Inc. 董事，该公司是一家使用激光技术的超灵敏气体光谱设备制造商，并于 2002 年 1 月至 2004 年 4 月担任该公司的临时首席执行官。他还曾于 2004 年 1 月至 2009 年 12 月担任斯坦福罗纳德麦当劳之家董事会成员，并担任湾区许愿基金会董事会成员。在职业生涯早期，Dougherty 先生曾于 1997 年至 2001 年担任 SDL 的首席运营官，后来该公司被 JDS Uniphase Corporation 收购，他一直担任该职位直到 2002 年。1989 年至 1997 年，Dougherty 先生还曾担任朗讯科技微电子公司光电子战略业务部的高管职务。
+
+Dougherty 先生表示：“我很荣幸加入 Avicena 董事会。多年前，我很荣幸与一些团队成员共事，现在我很高兴能够帮助将这项创新的互连技术推向产品阶段，从而解决先进电子产品领域可能最大的瓶颈。”
+
+<https://www.businesswire.com/news/home/20241015390740/en/Avicena-Appoints-Former-Oclaro-CEO-Greg-Dougherty-to-its-Board-of-Directors?utm_campaign=shareaholic&utm_medium=linkedin&utm_source=socialnetwork>
+
 # 6. 《廉价光源可使人工智能更节能》Nature
 
 随着人工智能 (AI) 算法迅速成为日常生活中不可或缺的一部分，人们对训练和运行这些算法所需的大量能源产生了担忧1。实现更节能的 AI 的方法之一是用模拟元件替换传统数字计算机的某些部分。称为光子张量处理单元的设备依靠光来执行机器学习算法所需的矩阵乘法运算2，并且是这条道路上的关键一步。其中一些单元已经在使用3、4，但要在不大幅增加其尺寸的情况下增加它们所包含的组件数量 5 是一项挑战。Dong等人6在《自然》杂志上撰文提出了一种解决方案——一种利用廉价、高效的发光二极管 (LED) 产生的低质量光的计算机架构。
