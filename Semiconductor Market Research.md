@@ -81,9 +81,11 @@
   - [31.1 从独立渠道看韩国先进芯片产业](#311-从独立渠道看韩国先进芯片产业)
 - [32 关键矿产风险](#32-关键矿产风险)
   - [32.1 CSIS 简报：解决镓、锗、钯和硅供应链风险](#321-csis-简报解决镓锗钯和硅供应链风险)
-- [33. 智库观点](#33-智库观点)
+- [33. 第三方机构 \& 智库观点](#33-第三方机构--智库观点)
   - [33.1 CSIS](#331-csis)
     - [33.1.1 半导体出口管制的双刃剑 2024.10.4](#3311-半导体出口管制的双刃剑-2024104)
+  - [33.2 Deloitte](#332-deloitte)
+    - [33.3 2024 global semiconductor industry outlook](#333-2024-global-semiconductor-industry-outlook)
 - [34. Nvidia](#34-nvidia)
   - [34.1 Nvidia 如何在 5G 和 6G 领域威胁爱立信和诺基亚](#341-nvidia-如何在-5g-和-6g-领域威胁爱立信和诺基亚)
 - [35.专家观点](#35专家观点)
@@ -1672,7 +1674,7 @@ CSIS 简报：解决镓供应链风险
 
 <https://www.linkedin.com/pulse/ralfs-gan-sic-news-october-10-2024-ralf-higgelke-f7qdf/?trackingId=o8AYYPkBCKkP1Psg8Lh8lw%3D%3D>
 
-# 33. 智库观点
+# 33. 第三方机构 & 智库观点
 
 ## 33.1 CSIS
 
@@ -1685,6 +1687,12 @@ CSIS 简报：解决镓供应链风险
 <https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/241004_Whitney_Export_Controls.pdf>
 
 <https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/241004_Whitney_Export_Controls_translate.pdf>
+
+## 33.2 Deloitte
+
+### 33.3 2024 global semiconductor industry outlook
+
+
 
 # 34. Nvidia
 
