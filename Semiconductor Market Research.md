@@ -7,6 +7,7 @@
   - [3.2 “BelGaN 的动荡故事对整个欧洲来说都是一个教训”：可能的收购者破产了芯片工厂](#32-belgan-的动荡故事对整个欧洲来说都是一个教训可能的收购者破产了芯片工厂)
 - [4. TSMC](#4-tsmc)
   - [4.1 2024 Q2 财报](#41-2024-q2-财报)
+  - [4.2 2024 Q3 - 主要客户营收占比 - 市场规模](#42-2024-q3---主要客户营收占比---市场规模)
 - [5. 半导体商业模式讨论 IDM vs Foundry](#5-半导体商业模式讨论-idm-vs-foundry)
   - [5.1 Techovedas  半导体生态系统中的商业模式](#51-techovedas--半导体生态系统中的商业模式)
 - [6. 半导体进出口](#6-半导体进出口)
@@ -255,6 +256,12 @@ GaN 或氮化镓可以成为一种有趣的手段，用于替代晶圆上通常�
 ## 4.1 2024 Q2 财报
 
 <https://github.com/basteng/Today-I-Learned/blob/main/company's%20Earning/TSMC%20Second%20Quarter%20Earnings%20PDF%202024.pdf>
+
+## 4.2 2024 Q3 - 主要客户营收占比 - 市场规模
+
+![](/picture/TSMC_customer.jpg)
+![](/picture/TSMC_market.jpg)
+
 
 # 5. 半导体商业模式讨论 IDM vs Foundry
 
