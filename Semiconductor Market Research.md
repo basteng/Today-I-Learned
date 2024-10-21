@@ -1692,7 +1692,7 @@ CSIS 简报：解决镓供应链风险
 
 ### 33.3 2024 global semiconductor industry outlook
 
-
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/us-tmt-semiconductor-industry-outlook-2024v2.pdf>
 
 # 34. Nvidia
 
