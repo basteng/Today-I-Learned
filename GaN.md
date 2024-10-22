@@ -82,11 +82,13 @@
   - [19.4 电子的能量与量子阱中的一个离散能级匹配](#194-电子的能量与量子阱中的一个离散能级匹配)
   - [19.5 为什么能级匹配就容易隧穿？](#195-为什么能级匹配就容易隧穿)
   - [19.6 使用共振隧穿二极管缓冲器增强 DRAM 性能](#196-使用共振隧穿二极管缓冲器增强-dram-性能)
-- [20. 全球知名研究机构](#20-全球知名研究机构)
+- [20. 全球知名研究机构 \& 学者](#20-全球知名研究机构--学者)
   - [20.1 弗劳恩霍夫硅技术研究所 ISIT](#201-弗劳恩霍夫硅技术研究所-isit)
     - [20.1.1 2024.10月招GaN博士后](#2011-202410月招gan博士后)
-  - [20.2 GEECI 氮化镓生态系统支持中心和孵化器，印度理工学院班加罗尔分校](#202-geeci-氮化镓生态系统支持中心和孵化器印度理工学院班加罗尔分校)
     - [20.1.2 简介](#2012-简介)
+  - [20.2 GEECI 氮化镓生态系统支持中心和孵化器，印度理工学院班加罗尔分校](#202-geeci-氮化镓生态系统支持中心和孵化器印度理工学院班加罗尔分校)
+  - [20.3 复旦大学 迟楠课题组](#203-复旦大学-迟楠课题组)
+    - [20.3.1 田鹏飞](#2031-田鹏飞)
 - [21. 富士通 - 高功率和效率 W 波段 InAlGaN/AlN/GaN 高电子迁移率晶体管，适用于未来高容量无线通信](#21-富士通---高功率和效率-w-波段-inalganalngan-高电子迁移率晶体管适用于未来高容量无线通信)
 - [22. 三星 - 宽带 Doherty 功率放大器的简化一体化负载网络](#22-三星---宽带-doherty-功率放大器的简化一体化负载网络)
 - [23.通过阴极发光强度图和电子显微镜的统计分析揭示 InGaN/GaN 纳米线中的非辐射复合中心 - 格勒诺布尔阿尔卑斯大学](#23通过阴极发光强度图和电子显微镜的统计分析揭示-ingangan-纳米线中的非辐射复合中心---格勒诺布尔阿尔卑斯大学)
@@ -97,6 +99,7 @@
   - [26.1 Teledyne Scientific and Imaging 介绍](#261-teledyne-scientific-and-imaging-介绍)
   - [26.2 HRL Laboratories介绍](#262-hrl-laboratories介绍)
 - [27. 氮化镓在电动汽车发展中的作用：能源应用、技术和挑战](#27-氮化镓在电动汽车发展中的作用能源应用技术和挑战)
+- [28. 基于等效电路模型的GaN基Micro-LED调制带宽分析](#28-基于等效电路模型的gan基micro-led调制带宽分析)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -1509,7 +1512,7 @@ DRAM 行业在过去的几十年中因其高密度（由于其结构简单）和
 
 <https://ieeexplore.ieee.org/document/7065706>
 
-# 20. 全球知名研究机构
+# 20. 全球知名研究机构 & 学者
 
 ## 20.1 弗劳恩霍夫硅技术研究所 ISIT
 
@@ -1533,12 +1536,6 @@ https://lnkd.in/gGKBhT7m
 
 <https://www.linkedin.com/feed/update/urn:li:activity:7242433022627610625/>
 
-## 20.2 GEECI 氮化镓生态系统支持中心和孵化器，印度理工学院班加罗尔分校
-
-GEECI 是一家小批量半导体晶圆和器件生产、特性分析和封装设施；孵化器；和 GaN 生态系统推动者，由印度电子和信息技术部 (GOI) 批准，在印度科学研究院创新与发展协会 (IISc) 的支持下。它很快将成为一家第 8 节公司。GEECI 由国家纳米制造中心 (NNfC)、CeNSE（纳米科学与工程中心）、IISc 设立的专用 GaN HEMT 器件开发工具线提供服务。在 Twitter 上关注我们：https://twitter.com/GEECI_GaN
-
-<https://www.linkedin.com/company/gallium-nitride-ecosystem-enabling-centre-and-incubator-geeci-iisc-bangalore/about/>
-
 ### 20.1.2 简介
 
 弗劳恩霍夫硅技术研究所 ISIT 开发和生产电力电子和微系统技术的客户专用组件。其重要应用领域包括能源技术、汽车和交通工程、消费品行业、医疗技术、通信和自动化技术。基于 200 毫米硅片技术的先进技术设备和数十年来积累的专业知识确保 ISIT 及其客户在该领域处于全球领先地位。
@@ -1559,6 +1556,20 @@ Holger Kapels 教授博士毕业于不来梅大学电气工程专业，并于 20
 他是众多国内外出版物和专利的作者或合著者。
 
 <https://www.isit.fraunhofer.de/en/brief-portrait.html>
+
+## 20.2 GEECI 氮化镓生态系统支持中心和孵化器，印度理工学院班加罗尔分校
+
+GEECI 是一家小批量半导体晶圆和器件生产、特性分析和封装设施；孵化器；和 GaN 生态系统推动者，由印度电子和信息技术部 (GOI) 批准，在印度科学研究院创新与发展协会 (IISc) 的支持下。它很快将成为一家第 8 节公司。GEECI 由国家纳米制造中心 (NNfC)、CeNSE（纳米科学与工程中心）、IISc 设立的专用 GaN HEMT 器件开发工具线提供服务。在 Twitter 上关注我们：https://twitter.com/GEECI_GaN
+
+<https://www.linkedin.com/company/gallium-nitride-ecosystem-enabling-centre-and-incubator-geeci-iisc-bangalore/about/>
+
+## 20.3 复旦大学 迟楠课题组
+
+### 20.3.1 田鹏飞
+
+学术主页 
+<https://orcid.org/0000-0001-8479-2727>
+
 
 # 21. 富士通 - 高功率和效率 W 波段 InAlGaN/AlN/GaN 高电子迁移率晶体管，适用于未来高容量无线通信
 
@@ -1654,3 +1665,10 @@ HRL 实验室是物理和信息科学的下一个前沿领域的先驱。HRL 为
 <https://pubs.aip.org/aip/apr/article/11/3/031322/3312258/The-role-of-gallium-nitride-in-the-evolution-of>
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/The%20role%20of%20gallium%20nitride%20in%20the%20evolution%20of%20electric%20vehicles.pdf>
+
+# 28. 基于等效电路模型的GaN基Micro-LED调制带宽分析
+
+我们建立了基于 GaN 的 Micro-LED 系统的等效电路模型，其中融入了印刷电路板和键合线的寄生参数。我们的深入分析表明，本征 Micro-LED 的参数显著影响 Micro-LED 的调制带宽。随着 Micro-LED 的电阻和电容的增加，Micro-LED 的带宽急剧下降。为了解决这个关键问题，我们基于等效电路模型的分析提出了几种可行的策略。特别是，我们开发了深蚀刻技术来提高 Micro-LED 系统的带宽。通过拟合浅蚀刻和深蚀刻 Micro-LED 等效电路模型的阻抗参数，深蚀刻器件的电极电容与浅蚀刻器件相比降低了 24.9 pF。这使得在 4 kA/cm 2的低电流密度下调制带宽从 203 MHz 显着提高到 249.8 MHz 。拟合参数模拟带宽的高度一致性证明了我们提出的等效电路模型的有效性和可靠性。
+
+<https://opg.optica.org/oe/fulltext.cfm?uri=oe-32-22-39974&id=561574>
+
