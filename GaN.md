@@ -1672,3 +1672,4 @@ HRL 实验室是物理和信息科学的下一个前沿领域的先驱。HRL 为
 
 <https://opg.optica.org/oe/fulltext.cfm?uri=oe-32-22-39974&id=561574>
 
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Modulation%20bandwidth%20analysis%20of%20GaN-based%20micro-LED%20deduced%20by%20an%20equivalent%20circuit%20model.pdf>
