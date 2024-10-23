@@ -1681,3 +1681,4 @@ HRL 实验室是物理和信息科学的下一个前沿领域的先驱。HRL 为
 
 <https://iopscience.iop.org/article/10.1088/1361-6641/ad7754>
 
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Design%20and%20simulation%20of%20a%20III-Nitride%20light%20emitting%20transistor.pdf>
