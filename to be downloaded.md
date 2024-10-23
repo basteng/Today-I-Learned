@@ -8,6 +8,7 @@
 - [8. Non-radiative recombination centres in InGaN/GaN nanowires revealed by statistical analysis of cathodoluminescence intensity maps and electron microscopy](#8-non-radiative-recombination-centres-in-ingangan-nanowires-revealed-by-statistical-analysis-of-cathodoluminescence-intensity-maps-and-electron-microscopy)
 - [9. Dynamic Thermal Coupling in GaN MMIC Power Amplifiers](#9-dynamic-thermal-coupling-in-gan-mmic-power-amplifiers)
 - [10. Emerging GaN Technologies for Next-Generation Millimeter-Wave Applications](#10-emerging-gan-technologies-for-next-generation-millimeter-wave-applications)
+- [11. 王磊博士论文下载](#11-王磊博士论文下载)
 
 
 20240925以后 （未下载）
@@ -54,6 +55,12 @@ https://ieeexplore.ieee.org/document/10693626
 # 10. Emerging GaN Technologies for Next-Generation Millimeter-Wave Applications
 
 https://ieeexplore.ieee.org/document/10682425
+
+# 11. 王磊博士论文下载
+
+https://newetds.lib.tsinghua.edu.cn/home/qh/index
+
+下拉菜单：作者 - 王磊
 
 
 
