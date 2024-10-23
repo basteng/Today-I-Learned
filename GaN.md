@@ -100,6 +100,7 @@
   - [26.2 HRL Laboratories介绍](#262-hrl-laboratories介绍)
 - [27. 氮化镓在电动汽车发展中的作用：能源应用、技术和挑战](#27-氮化镓在电动汽车发展中的作用能源应用技术和挑战)
 - [28. 基于等效电路模型的GaN基Micro-LED调制带宽分析](#28-基于等效电路模型的gan基micro-led调制带宽分析)
+- [29. III 族氮化物发光晶体管的设计与模拟](#29-iii-族氮化物发光晶体管的设计与模拟)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -1673,3 +1674,10 @@ HRL 实验室是物理和信息科学的下一个前沿领域的先驱。HRL 为
 <https://opg.optica.org/oe/fulltext.cfm?uri=oe-32-22-39974&id=561574>
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Modulation%20bandwidth%20analysis%20of%20GaN-based%20micro-LED%20deduced%20by%20an%20equivalent%20circuit%20model.pdf>
+
+# 29. III 族氮化物发光晶体管的设计与模拟
+
+本文介绍了单片集成三端栅控 III-氮化物发光二极管 (LED) 器件的设计和特性。分析了沟道掺杂和厚度对晶体管-LED 混合器件电压损失的影响，并表明通过适当的设计，可以实现集成栅控 LED 结构上的低压降。研究了器件设计对开关电荷的影响，并表明与独立发光二极管相比，采用集成 LED/晶体管结构可以将开关 LED 显示器件操作所需的开关电荷降低一个数量级。
+
+<https://iopscience.iop.org/article/10.1088/1361-6641/ad7754>
+
