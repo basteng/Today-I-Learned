@@ -1,6 +1,7 @@
 - [1.关于封装内光学 I/O 的三个常见误解](#1关于封装内光学-io-的三个常见误解)
 - [2. Lizhenhao Paper](#2-lizhenhao-paper)
   - [2.1 《Bandwidth Analysis of High-Speed InGaN Micro-LEDs by an Equivalent Circuit Model》](#21-bandwidth-analysis-of-high-speed-ingan-micro-leds-by-an-equivalent-circuit-model)
+    - [2.1.1 阅读笔记](#211-阅读笔记)
   - [2.2 《High-Speed Micro-LEDs based on Nano-Engineered InGaN Active Region towards Chip-to-Chip Interconnections》](#22-high-speed-micro-leds-based-on-nano-engineered-ingan-active-region-towards-chip-to-chip-interconnections)
 - [3. Wanglei Paper](#3-wanglei-paper)
 - [4. Ayar Labs](#4-ayar-labs)
@@ -42,6 +43,7 @@
   - [5.19 了解基于 microLED 的互连如何释放 HPC 和 AI 的潜力 - Jess Brown](#519-了解基于-microled-的互连如何释放-hpc-和-ai-的潜力---jess-brown)
   - [5.20 Avicena 在欧洲光通信会议上展示了基于 microLED 的 LightBundle 技术，覆盖范围达 30 米](#520-avicena-在欧洲光通信会议上展示了基于-microled-的-lightbundle-技术覆盖范围达-30-米)
   - [5.21 采用光纤的芯片到芯片垂直发射光通信](#521-采用光纤的芯片到芯片垂直发射光通信)
+  - [5.22 Avicena 任命前 Oclaro 首席执行官 Greg Dougherty 为董事会成员](#522-avicena-任命前-oclaro-首席执行官-greg-dougherty-为董事会成员)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -138,7 +140,9 @@
 
 ![image](/picture/circuit%20model%20InGaN%20LEDs.png)
 
+### 2.1.1 阅读笔记
 
+- 实际上等效电路可以计算频率响应曲线 H(f)，也即信号与系统里的传递函数，通过传递函数就可以计算-3dB带宽。
 
 ## 2.2 《High-Speed Micro-LEDs based on Nano-Engineered InGaN Active Region towards Chip-to-Chip Interconnections》
 
