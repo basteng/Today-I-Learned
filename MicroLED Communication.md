@@ -142,7 +142,7 @@
 
 ### 2.1.1 阅读笔记
 
-- 实际上等效电路可以计算频率响应曲线 H(f)，也即信号与系统里的传递函数，通过传递函数就可以计算-3dB带宽。
+- 其实一个LED可以看做一个传输系统，输入电压即输入，输出即LED的光。实际上等效电路可以计算频率响应曲线 H(f)，也即信号与系统里的传递函数，通过传递函数就可以计算-3dB带宽。
 
 ## 2.2 《High-Speed Micro-LEDs based on Nano-Engineered InGaN Active Region towards Chip-to-Chip Interconnections》
 
