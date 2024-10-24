@@ -7,6 +7,7 @@
   - [1.6 RRAM-Info](#16-rram-info)
 - [2.半导体综合网站](#2半导体综合网站)
   - [2.1 techovedas 印度人写的网站](#21-techovedas-印度人写的网站)
+  - [2.1 semiconportal 日本人的半导体网站](#21-semiconportal-日本人的半导体网站)
 - [3.综合类网站](#3综合类网站)
   - [3.1 经济学人 技术季刊](#31-经济学人-技术季刊)
 - [4. AI](#4-ai)
@@ -27,6 +28,7 @@
   - [9.1 Gazettabyte - 关于电信、硅光领域的网站](#91-gazettabyte---关于电信硅光领域的网站)
   - [9.2 Quanta Magazine - 西蒙斯基金会 科学新闻在线刊物](#92-quanta-magazine---西蒙斯基金会-科学新闻在线刊物)
   - [9.3 Communications of the ACM - 计算机和信息技术领域领先的在线和印刷出版物](#93-communications-of-the-acm---计算机和信息技术领域领先的在线和印刷出版物)
+  - [9.4 各类新鲜的科技产品报道](#94-各类新鲜的科技产品报道)
 
 
 # 1. 存储
@@ -61,6 +63,10 @@ https://www.rram-info.com/
 ## 2.1 techovedas 印度人写的网站
 
 https://techovedas.com/
+
+## 2.1 semiconportal 日本人的半导体网站
+
+https://www.semiconportal.com/
 
 # 3.综合类网站
 
@@ -186,3 +192,7 @@ Quanta Magazine是西蒙斯基金会于 2012 年推出的独立编辑在线刊�
 秉承《通讯》杂志的传统，该杂志每月为超过 100,000 名 ACM 会员读者提供关于计算机科学新兴领域、信息技术新趋势和实际应用的深入报道，《通讯》网站每天为计算专业人士提供新研究以及热门新闻和观点内容。ACM 的会员包括 IT 行业最受尊敬的领导者和决策者。60 多年来，行业领导者一直使用《通讯》作为平台来展示和讨论各种技术影响、公共政策、工程挑战和市场趋势。《通讯》网站延续了这一做法。
 
 <https://cacm.acm.org/about-us/>
+
+## 9.4 各类新鲜的科技产品报道
+
+https://www.techpowerup.com/
