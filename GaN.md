@@ -101,6 +101,7 @@
 - [27. 氮化镓在电动汽车发展中的作用：能源应用、技术和挑战](#27-氮化镓在电动汽车发展中的作用能源应用技术和挑战)
 - [28. 基于等效电路模型的GaN基Micro-LED调制带宽分析](#28-基于等效电路模型的gan基micro-led调制带宽分析)
 - [29. III 族氮化物发光晶体管的设计与模拟](#29-iii-族氮化物发光晶体管的设计与模拟)
+- [30. SiC和GaN在电动汽车中的应用](#30-sic和gan在电动汽车中的应用)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -1682,3 +1683,39 @@ HRL 实验室是物理和信息科学的下一个前沿领域的先驱。HRL 为
 <https://iopscience.iop.org/article/10.1088/1361-6641/ad7754>
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Design%20and%20simulation%20of%20a%20III-Nitride%20light%20emitting%20transistor.pdf>
+
+# 30. SiC和GaN在电动汽车中的应用
+
+SiC 和 GaN 都有望在未来汽车电力电子领域发挥核心作用，改变新能源汽车行业并促进其快速增长。
+
+🔘 SiC 和 GaN 在汽车行业的日益普及：
+- SiC 正在成为电动汽车的关键技术，EXEED STERRA ES、AION V、BYD SEAL 和 ZEEKR 007 等著名车型都采用了 SiC 技术。
+- GaN 也在取得进展，尤其是在 OBC 和汽车 LiDAR 方面，Infineon 和 EPC 等公司在这方面处于领先地位。
+
+🔘 新能源汽车中的 SiC 功率器件：
+- SiC 的广泛采用得到了 STMicroelectronics、Infineon 和 onsemi 等国际半导体巨头的支持，这些公司拥有技术和市场优势。
+- 中国新能源汽车市场正在经历爆炸式增长，促使国际参与者大力投资建立本地合作伙伴关系以扩大其影响力，例如意法半导体与三安光电合作进行本地化生产。
+
+🔘 SiC 的技术进步和成本降低：
+- 由于技术进步，例如英飞凌的新型 SiC 沟槽栅极 MOSFET 技术，SiC 功率器件变得越来越高效和具有成本效益，该技术将性能提高了 20%。
+- SiC 生产正在从 6 英寸硅片转向 8 英寸硅片，这将进一步降本增效，促进其在中低端新能源汽车中的更广泛应用。
+
+🔘 GaN 在汽车应用中的作用越来越大：
+- 虽然 GaN 在汽车场景中的采用仍处于早期阶段，但它在汽车 LiDAR 系统、OBC 和 DC-DC 转换器中显示出前景。
+- GaN 的高效率、快速开关速度和更小的尺寸使其成为低压（低于 400V）汽车应用的理想选择，未来有望用于高压 GaN 器件，例如博世的 1200V GaN 技术。
+
+🔘 战略合作伙伴关系和投资：
+- 意法半导体与长城汽车合作，英飞凌与小米合作，安森美与理想汽车合作。这些合作旨在降低供应链成本，确保产能，并增加中国蓬勃发展的新能源汽车行业的市场份额。
+
+🔘 未来趋势和市场增长
+- 新能源汽车从 400V 到 800V 系统的过渡正在加速，SiC 功率器件在提高充电速度、电机效率和电池性能方面发挥着关键作用。
+- SiC 在 800V 平台中的作用正在成为最新新能源车型的标准，为新能源汽车市场的整体增长做出了贡献。
+- GaN 器件虽然目前仅限于 400V 以下的应用，但预计到 2030 年将渗透到主驱动逆变器中。
+
+参考来源： https://lnkd.in/dHr6nAFm
+
+汽车的未来：挫折与进步 https://lnkd.in/dAb6zxrv
+
+![](/picture/SiC_and_GaN_EV.jpg)
+
+<https://www.linkedin.com/posts/jack-tsaur-58468a183_both-sic-and-gan-are-poised-to-play-a-central-activity-7255119625514811392-qcSn?utm_source=share&utm_medium=member_desktop>
