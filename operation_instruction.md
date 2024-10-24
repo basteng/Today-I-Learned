@@ -7,6 +7,7 @@
   - [6.1 拉取行业数据](#61-拉取行业数据)
 - [7. 非工程师指南：训练 LLaMA 2 聊天机器人](#7-非工程师指南训练-llama-2-聊天机器人)
 - [8. 更大的世界](#8-更大的世界)
+- [9. 海外手机卡](#9-海外手机卡)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -214,5 +215,41 @@ ssrcloud
 <https://t.me/thisissupport>
 
 <https://github.com/LeeYo2005/SS-SSR-V2RAY?tab=readme-ov-file#%E6%8E%A8%E8%8D%90%E5%A5%BD%E7%94%A8%E7%9A%84ssv2raytrojan%E6%9C%BA%E5%9C%BA>
+
+# 9. 海外手机卡
+
+卡片一：Giffgaff英国卡 🇬🇧
+
+申请卡片免费，需要充值10英镑话费
+无月租，接收短信免费
+半年发一次短信保号
+这是我目前用的卡，绑定Claude和推特很顺利
+
+申请教程链接：https://rh0w322x8w.feishu.cn/wiki/ASkswc9BliHK9IkQX5xcfeeSnJg
+淘宝购买，96元，自带 10 英镑话费
+群友推荐，可以获得 15 英镑话费
+
+📍 卡片二：5ber esim 🇹🇭
+
+购卡 $12
+2元/月保号
+拥有泰国实体号码 + 原生IP
+支持微信、支付宝充值
+官网购买📄：http://esim.5ber.com
+
+📍 卡片三：新西兰 Skinny 卡 🇳🇿
+
+购卡 100 多元
+无月租，接收短信免费
+25元/年保号
+支持银联充值
+推特很多人在卖，搜一下就能找到
+
+📍 卡片四：Ultra Mobile 紫卡 🇺🇸
+
+淘宝可以买
+月租 $3，不便宜
+
+<https://x.com/Crypto_QianXun/status/1815969126122488116>
 
 
