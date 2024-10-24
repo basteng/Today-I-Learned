@@ -44,6 +44,7 @@
   - [5.20 Avicena 在欧洲光通信会议上展示了基于 microLED 的 LightBundle 技术，覆盖范围达 30 米](#520-avicena-在欧洲光通信会议上展示了基于-microled-的-lightbundle-技术覆盖范围达-30-米)
   - [5.21 采用光纤的芯片到芯片垂直发射光通信](#521-采用光纤的芯片到芯片垂直发射光通信)
   - [5.22 Avicena 任命前 Oclaro 首席执行官 Greg Dougherty 为董事会成员](#522-avicena-任命前-oclaro-首席执行官-greg-dougherty-为董事会成员)
+  - [5.23 20241023 加利福尼亚州硅谷举行的 PECC 峰会](#523-20241023-加利福尼亚州硅谷举行的-pecc-峰会)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -72,6 +73,7 @@
   - [23.1 Andy Bechtolshelm - 2024 Hotchips：](#231-andy-bechtolshelm---2024-hotchips)
   - [23.2 400G 以太网之路由 Bechtolsheim 的意图铺就](#232-400g-以太网之路由-bechtolsheim-的意图铺就)
   - [23.3 Andreas “Andy” Bechtolsheim ECOC 2024 演讲](#233-andreas-andy-bechtolsheim-ecoc-2024-演讲)
+  - [23.4 20241023 加利福尼亚州硅谷举行的 PECC 峰会](#234-20241023-加利福尼亚州硅谷举行的-pecc-峰会)
 - [24.数据中心交换芯片](#24数据中心交换芯片)
 - [25. 初创公司](#25-初创公司)
   - [25.1 Lightwave](#251-lightwave)
@@ -1141,6 +1143,12 @@ Dougherty 先生表示：“我很荣幸加入 Avicena 董事会。多年前，�
 
 <https://www.businesswire.com/news/home/20241015390740/en/Avicena-Appoints-Former-Oclaro-CEO-Greg-Dougherty-to-its-Board-of-Directors?utm_campaign=shareaholic&utm_medium=linkedin&utm_source=socialnetwork>
 
+## 5.23 20241023 加利福尼亚州硅谷举行的 PECC 峰会
+
+“LPO 是当今的标准，但当你进入 MicroLED +D2D 时，游戏规则才是真正改变的地方——这是一种 AI 放大技术，”Avicena Tech Chris Pfistner 
+
+![](/picture/Avicena1.gif)
+
 # 6. 《廉价光源可使人工智能更节能》Nature
 
 随着人工智能 (AI) 算法迅速成为日常生活中不可或缺的一部分，人们对训练和运行这些算法所需的大量能源产生了担忧1。实现更节能的 AI 的方法之一是用模拟元件替换传统数字计算机的某些部分。称为光子张量处理单元的设备依靠光来执行机器学习算法所需的矩阵乘法运算2，并且是这条道路上的关键一步。其中一些单元已经在使用3、4，但要在不大幅增加其尺寸的情况下增加它们所包含的组件数量 5 是一项挑战。Dong等人6在《自然》杂志上撰文提出了一种解决方案——一种利用廉价、高效的发光二极管 (LED) 产生的低质量光的计算机架构。
@@ -1949,6 +1957,20 @@ Can Interconnects Keep Up with AI?
 AI 集群的带宽需求对 AI Fabric 互连提出了前所未有的挑战。我将讨论如何改善光学器件的功率、成本和可靠性、铜线和光学器件之间的界限以及封装创新的机会。
 
 <https://www.ecoc2024.org/programme/plenary-speakers/>
+
+## 23.4 20241023 加利福尼亚州硅谷举行的 PECC 峰会
+
+“电力仍然是一个问题”
+
+![](/picture/Arista1.gif)
+
+硅控和光学现状
+
+![](/picture/Arista2.gif)
+
+总结幻灯片
+
+![](/picture/Arista3.gif)
 
 # 24.数据中心交换芯片
 
