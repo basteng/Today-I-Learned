@@ -28,7 +28,8 @@
   - [9.1 Gazettabyte - 关于电信、硅光领域的网站](#91-gazettabyte---关于电信硅光领域的网站)
   - [9.2 Quanta Magazine - 西蒙斯基金会 科学新闻在线刊物](#92-quanta-magazine---西蒙斯基金会-科学新闻在线刊物)
   - [9.3 Communications of the ACM - 计算机和信息技术领域领先的在线和印刷出版物](#93-communications-of-the-acm---计算机和信息技术领域领先的在线和印刷出版物)
-  - [9.4 各类新鲜的科技产品报道](#94-各类新鲜的科技产品报道)
+  - [9.4 techpowerup 各类新鲜的科技产品报道](#94-techpowerup-各类新鲜的科技产品报道)
+  - [9.5 wccftech 外媒总能出现的科技网站](#95-wccftech-外媒总能出现的科技网站)
 
 
 # 1. 存储
@@ -193,6 +194,10 @@ Quanta Magazine是西蒙斯基金会于 2012 年推出的独立编辑在线刊�
 
 <https://cacm.acm.org/about-us/>
 
-## 9.4 各类新鲜的科技产品报道
+## 9.4 techpowerup 各类新鲜的科技产品报道
 
 https://www.techpowerup.com/
+
+## 9.5 wccftech 外媒总能出现的科技网站
+
+https://wccftech.com/
