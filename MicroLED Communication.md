@@ -1164,6 +1164,8 @@ Dougherty 先生表示：“我很荣幸加入 Avicena 董事会。多年前，�
 
 实现更长（厘米到米）HBM 互连的能力将带来许多好处，其中可能包括使 SoC 能够访问更多的 HBM 容量、将 HBM​​ 与热 SoC 物理分离（可能允许 HBM 在较低温度下运行，从而提高其性能），并且通过适当的架构，给定的 HBM 堆栈可由多个 SoC 访问。
 
+![](/picture/Avicena_patent3.png)
+
 **详细描述**
 
 ![](/picture/Avicena_patent1.png)
