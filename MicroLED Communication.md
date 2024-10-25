@@ -1186,9 +1186,10 @@ SoC 通过硅中介层上的电气通路与电子和光子 IC 进行电气数据
 
 在一些实施例中，第二 MCP 包括通过无源硅中介层上的 D2D 互连连接到 HBM 堆栈的 EPIC，其中 EPIC 包括 HBM 内存控制器 (MC)。在一些实施例中，第二 MCP 包括支持 EPIC 和 HBM 堆栈之间的 D2D 互连的有源硅中介层，其中中介层包括 HBM MC。在一些实施例中，第二 MCP 包括安装有 HBM 堆栈的 EPIC，其中 EPIC 包括 HBM MC。在一些实施例中，第二 MCP 包括安装有 HBM 堆栈的 EPIC，其中 HBM 堆栈的缓冲器芯片包括 HBM MC。
 
-
-
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/OPTICALLY%20INTERCONNECTED%20HIGH%20BANDWIDTH%20MEMORY%20ARCHITECTURES.pdf>
+
+网页链接
+<https://www.freepatentsonline.com/y2024/0345344.html>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
