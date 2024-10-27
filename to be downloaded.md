@@ -9,6 +9,7 @@
 - [9. Dynamic Thermal Coupling in GaN MMIC Power Amplifiers](#9-dynamic-thermal-coupling-in-gan-mmic-power-amplifiers)
 - [10. Emerging GaN Technologies for Next-Generation Millimeter-Wave Applications](#10-emerging-gan-technologies-for-next-generation-millimeter-wave-applications)
 - [11. 王磊博士论文下载](#11-王磊博士论文下载)
+- [12. Vertically Integrated Self-Monitoring AlGaN-Based Deep Ultraviolet Micro-LED Array with Photodetector Via a Transparent Sapphire Substrate Toward Stable and Compact Maskless Photolithography Application](#12-vertically-integrated-self-monitoring-algan-based-deep-ultraviolet-micro-led-array-with-photodetector-via-a-transparent-sapphire-substrate-toward-stable-and-compact-maskless-photolithography-application)
 
 
 20240925以后 （未下载）
@@ -61,6 +62,12 @@ https://ieeexplore.ieee.org/document/10682425
 https://newetds.lib.tsinghua.edu.cn/home/qh/index
 
 下拉菜单：作者 - 王磊
+
+# 12. Vertically Integrated Self-Monitoring AlGaN-Based Deep Ultraviolet Micro-LED Array with Photodetector Via a Transparent Sapphire Substrate Toward Stable and Compact Maskless Photolithography Application
+
+https://onlinelibrary.wiley.com/doi/full/10.1002/lpor.202401220
+
+
 
 
 
