@@ -93,6 +93,7 @@
 - [30. 光互连的思考：哪些铜互连将被光互连取代](#30-光互连的思考哪些铜互连将被光互连取代)
 - [32. 用于传感、生产和通信的紫外线微型 LED - 柏林费迪南德-布劳恩研究所 (FBH)](#32-用于传感生产和通信的紫外线微型-led---柏林费迪南德-布劳恩研究所-fbh)
 - [33. Introduction and Research Trends on Micro LED Technology](#33-introduction-and-research-trends-on-micro-led-technology)
+  - [34. Influence of dislocation density on internal quantum efficiency of GaN-based semiconductors - 余佳东](#34-influence-of-dislocation-density-on-internal-quantum-efficiency-of-gan-based-semiconductors---余佳东)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2364,7 +2365,15 @@ https://techxplore.com/news/2022-07-uv-micro-leds-production.html
 
 # 33. Introduction and Research Trends on Micro LED Technology
 
+Abstract Currently, micro LEDs (Light Emitting Diode) are attracting attention in the lighting field along with next-generation displays and have advantages such as high luminance, operating speed, energy efficiency, and long-term driving. It is predicted to bring new innovations in smartphones, televisions, and wearable electronic devices. These micro displays are self-luminous displays that emit light by themselves by being implemented as pixels composed of micrometer-sized LED …
+•	Cites: Influence of dislocation density on internal quantum efficiency of …
+
 new citation to articles by Lai Wang
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Introduction%20and%20Research%20Trends%20on%20Micro%20LED%20Technology.pdf>
+
+## 34. Influence of dislocation density on internal quantum efficiency of GaN-based semiconductors - 余佳东
+
 
 
 
