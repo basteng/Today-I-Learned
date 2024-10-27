@@ -2387,6 +2387,6 @@ new citation to articles by Lai Wang
 
 <https://pubs.aip.org/aip/app/article/9/10/100904/3317660>
 
-
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/InGaN%20quantum%20dots%20for%20micro-LEDs.pdf>
 
 
