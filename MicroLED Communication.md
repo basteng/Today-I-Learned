@@ -93,7 +93,8 @@
 - [30. 光互连的思考：哪些铜互连将被光互连取代](#30-光互连的思考哪些铜互连将被光互连取代)
 - [32. 用于传感、生产和通信的紫外线微型 LED - 柏林费迪南德-布劳恩研究所 (FBH)](#32-用于传感生产和通信的紫外线微型-led---柏林费迪南德-布劳恩研究所-fbh)
 - [33. Introduction and Research Trends on Micro LED Technology](#33-introduction-and-research-trends-on-micro-led-technology)
-  - [34. Influence of dislocation density on internal quantum efficiency of GaN-based semiconductors - 余佳东](#34-influence-of-dislocation-density-on-internal-quantum-efficiency-of-gan-based-semiconductors---余佳东)
+- [34. Influence of dislocation density on internal quantum efficiency of GaN-based semiconductors - 余佳东](#34-influence-of-dislocation-density-on-internal-quantum-efficiency-of-gan-based-semiconductors---余佳东)
+- [35. InGaN quantum dots for micro-LEDs - 汪莱](#35-ingan-quantum-dots-for-micro-leds---汪莱)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2372,7 +2373,19 @@ new citation to articles by Lai Wang
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Introduction%20and%20Research%20Trends%20on%20Micro%20LED%20Technology.pdf>
 
-## 34. Influence of dislocation density on internal quantum efficiency of GaN-based semiconductors - 余佳东
+# 34. Influence of dislocation density on internal quantum efficiency of GaN-based semiconductors - 余佳东
+
+<https://pubs.aip.org/aip/adv/article-pdf/doi/10.1063/1.4979504/8465403/035321_1_online.pdf>
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/035321_1_online.pdf>
+
+# 35. InGaN quantum dots for micro-LEDs - 汪莱
+
+综述
+
+引文52，53是W.B.Lv文章
+
+<https://pubs.aip.org/aip/app/article/9/10/100904/3317660>
 
 
 
