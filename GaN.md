@@ -1719,3 +1719,4 @@ SiC 和 GaN 都有望在未来汽车电力电子领域发挥核心作用，改�
 ![](/picture/SiC_and_GaN_EV.jpg)
 
 <https://www.linkedin.com/posts/jack-tsaur-58468a183_both-sic-and-gan-are-poised-to-play-a-central-activity-7255119625514811392-qcSn?utm_source=share&utm_medium=member_desktop>
+
