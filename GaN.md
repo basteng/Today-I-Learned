@@ -101,7 +101,6 @@
 - [27. 氮化镓在电动汽车发展中的作用：能源应用、技术和挑战](#27-氮化镓在电动汽车发展中的作用能源应用技术和挑战)
 - [28. III 族氮化物发光晶体管的设计与模拟](#28-iii-族氮化物发光晶体管的设计与模拟)
 - [29. SiC和GaN在电动汽车中的应用](#29-sic和gan在电动汽车中的应用)
-- [30. 大电流、高电压 AlN 肖特基势垒二极管 - 美国北卡罗莱纳州立大学 和 Adroit Materials](#30-大电流高电压-aln-肖特基势垒二极管---美国北卡罗莱纳州立大学-和-adroit-materials)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -1711,9 +1710,3 @@ SiC 和 GaN 都有望在未来汽车电力电子领域发挥核心作用，改�
 ![](/picture/SiC_and_GaN_EV.jpg)
 
 <https://www.linkedin.com/posts/jack-tsaur-58468a183_both-sic-and-gan-are-poised-to-play-a-central-activity-7255119625514811392-qcSn?utm_source=share&utm_medium=member_desktop>
-
-# 30. 大电流、高电压 AlN 肖特基势垒二极管 - 美国北卡罗莱纳州立大学 和 Adroit Materials 
-
-报道了具有低理想因子（<1.2）、低差分导通电阻（<0.6 mΩ cm 2）、高电流密度（>5 kA cm −2）和高击穿电压（680 V）的 AlN 肖特基势垒二极管。器件结构由双层准垂直设计组成，其中轻掺杂的 AlN 漂移层和在 AlN 衬底上生长的高掺杂的 Al 0.75 Ga 0.25 N 欧姆接触层。模拟、电流电压测量和阻抗谱分析相结合的结果表明，由于两种材料之间的导带偏移，AlN/AlGaN 界面引入了寄生电子势垒。发现该势垒会限制制备二极管中的正向电流。此外，我们表明，在 AlN 和 AlGaN 之间引入组分渐变层可降低界面势垒，并将制备二极管的正向电流密度提高 10 4倍。
-
-<https://iopscience.iop.org/article/10.35848/1882-0786/ad81c9>
