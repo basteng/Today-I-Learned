@@ -99,9 +99,9 @@
   - [26.1 Teledyne Scientific and Imaging 介绍](#261-teledyne-scientific-and-imaging-介绍)
   - [26.2 HRL Laboratories介绍](#262-hrl-laboratories介绍)
 - [27. 氮化镓在电动汽车发展中的作用：能源应用、技术和挑战](#27-氮化镓在电动汽车发展中的作用能源应用技术和挑战)
-- [28. 基于等效电路模型的GaN基Micro-LED调制带宽分析](#28-基于等效电路模型的gan基micro-led调制带宽分析)
-- [29. III 族氮化物发光晶体管的设计与模拟](#29-iii-族氮化物发光晶体管的设计与模拟)
-- [30. SiC和GaN在电动汽车中的应用](#30-sic和gan在电动汽车中的应用)
+- [28. III 族氮化物发光晶体管的设计与模拟](#28-iii-族氮化物发光晶体管的设计与模拟)
+- [29. SiC和GaN在电动汽车中的应用](#29-sic和gan在电动汽车中的应用)
+- [30. 大电流、高电压 AlN 肖特基势垒二极管 - 美国北卡罗莱纳州立大学 和 Adroit Materials](#30-大电流高电压-aln-肖特基势垒二极管---美国北卡罗莱纳州立大学-和-adroit-materials)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -1668,15 +1668,7 @@ HRL 实验室是物理和信息科学的下一个前沿领域的先驱。HRL 为
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/The%20role%20of%20gallium%20nitride%20in%20the%20evolution%20of%20electric%20vehicles.pdf>
 
-# 28. 基于等效电路模型的GaN基Micro-LED调制带宽分析
-
-我们建立了基于 GaN 的 Micro-LED 系统的等效电路模型，其中融入了印刷电路板和键合线的寄生参数。我们的深入分析表明，本征 Micro-LED 的参数显著影响 Micro-LED 的调制带宽。随着 Micro-LED 的电阻和电容的增加，Micro-LED 的带宽急剧下降。为了解决这个关键问题，我们基于等效电路模型的分析提出了几种可行的策略。特别是，我们开发了深蚀刻技术来提高 Micro-LED 系统的带宽。通过拟合浅蚀刻和深蚀刻 Micro-LED 等效电路模型的阻抗参数，深蚀刻器件的电极电容与浅蚀刻器件相比降低了 24.9 pF。这使得在 4 kA/cm 2的低电流密度下调制带宽从 203 MHz 显着提高到 249.8 MHz 。拟合参数模拟带宽的高度一致性证明了我们提出的等效电路模型的有效性和可靠性。
-
-<https://opg.optica.org/oe/fulltext.cfm?uri=oe-32-22-39974&id=561574>
-
-<https://github.com/basteng/Today-I-Learned/blob/main/paper/Modulation%20bandwidth%20analysis%20of%20GaN-based%20micro-LED%20deduced%20by%20an%20equivalent%20circuit%20model.pdf>
-
-# 29. III 族氮化物发光晶体管的设计与模拟
+# 28. III 族氮化物发光晶体管的设计与模拟
 
 本文介绍了单片集成三端栅控 III-氮化物发光二极管 (LED) 器件的设计和特性。分析了沟道掺杂和厚度对晶体管-LED 混合器件电压损失的影响，并表明通过适当的设计，可以实现集成栅控 LED 结构上的低压降。研究了器件设计对开关电荷的影响，并表明与独立发光二极管相比，采用集成 LED/晶体管结构可以将开关 LED 显示器件操作所需的开关电荷降低一个数量级。
 
@@ -1684,7 +1676,7 @@ HRL 实验室是物理和信息科学的下一个前沿领域的先驱。HRL 为
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Design%20and%20simulation%20of%20a%20III-Nitride%20light%20emitting%20transistor.pdf>
 
-# 30. SiC和GaN在电动汽车中的应用
+# 29. SiC和GaN在电动汽车中的应用
 
 SiC 和 GaN 都有望在未来汽车电力电子领域发挥核心作用，改变新能源汽车行业并促进其快速增长。
 
@@ -1720,3 +1712,8 @@ SiC 和 GaN 都有望在未来汽车电力电子领域发挥核心作用，改�
 
 <https://www.linkedin.com/posts/jack-tsaur-58468a183_both-sic-and-gan-are-poised-to-play-a-central-activity-7255119625514811392-qcSn?utm_source=share&utm_medium=member_desktop>
 
+# 30. 大电流、高电压 AlN 肖特基势垒二极管 - 美国北卡罗莱纳州立大学 和 Adroit Materials 
+
+报道了具有低理想因子（<1.2）、低差分导通电阻（<0.6 mΩ cm 2）、高电流密度（>5 kA cm −2）和高击穿电压（680 V）的 AlN 肖特基势垒二极管。器件结构由双层准垂直设计组成，其中轻掺杂的 AlN 漂移层和在 AlN 衬底上生长的高掺杂的 Al 0.75 Ga 0.25 N 欧姆接触层。模拟、电流电压测量和阻抗谱分析相结合的结果表明，由于两种材料之间的导带偏移，AlN/AlGaN 界面引入了寄生电子势垒。发现该势垒会限制制备二极管中的正向电流。此外，我们表明，在 AlN 和 AlGaN 之间引入组分渐变层可降低界面势垒，并将制备二极管的正向电流密度提高 10 4倍。
+
+<https://iopscience.iop.org/article/10.35848/1882-0786/ad81c9>

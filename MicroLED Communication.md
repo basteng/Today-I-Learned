@@ -95,6 +95,7 @@
 - [33. Introduction and Research Trends on Micro LED Technology](#33-introduction-and-research-trends-on-micro-led-technology)
 - [34. Influence of dislocation density on internal quantum efficiency of GaN-based semiconductors - 余佳东](#34-influence-of-dislocation-density-on-internal-quantum-efficiency-of-gan-based-semiconductors---余佳东)
 - [35. InGaN quantum dots for micro-LEDs - 汪莱](#35-ingan-quantum-dots-for-micro-leds---汪莱)
+- [36. 基于等效电路模型的GaN基Micro-LED调制带宽分析 - 厦门大学/复旦 田鹏飞](#36-基于等效电路模型的gan基micro-led调制带宽分析---厦门大学复旦-田鹏飞)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2389,4 +2390,11 @@ new citation to articles by Lai Wang
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/InGaN%20quantum%20dots%20for%20micro-LEDs.pdf>
 
+# 36. 基于等效电路模型的GaN基Micro-LED调制带宽分析 - 厦门大学/复旦 田鹏飞
+
+我们建立了基于 GaN 的 Micro-LED 系统的等效电路模型，其中融入了印刷电路板和键合线的寄生参数。我们的深入分析表明，本征 Micro-LED 的参数显著影响 Micro-LED 的调制带宽。随着 Micro-LED 的电阻和电容的增加，Micro-LED 的带宽急剧下降。为了解决这个关键问题，我们基于等效电路模型的分析提出了几种可行的策略。特别是，我们开发了深蚀刻技术来提高 Micro-LED 系统的带宽。通过拟合浅蚀刻和深蚀刻 Micro-LED 等效电路模型的阻抗参数，深蚀刻器件的电极电容与浅蚀刻器件相比降低了 24.9 pF。这使得在 4 kA/cm 2的低电流密度下调制带宽从 203 MHz 显着提高到 249.8 MHz 。拟合参数模拟带宽的高度一致性证明了我们提出的等效电路模型的有效性和可靠性。
+
+<https://opg.optica.org/oe/fulltext.cfm?uri=oe-32-22-39974&id=561574>
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Modulation%20bandwidth%20analysis%20of%20GaN-based%20micro-LED%20deduced%20by%20an%20equivalent%20circuit%20model.pdf>
 
