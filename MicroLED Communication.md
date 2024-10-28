@@ -2398,3 +2398,9 @@ new citation to articles by Lai Wang
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Modulation%20bandwidth%20analysis%20of%20GaN-based%20micro-LED%20deduced%20by%20an%20equivalent%20circuit%20model.pdf>
 
+# 37. 使用网络分析仪测量确定 LED 等效电路
+
+我们对一些偏置为 1 至 10 mA 的预生产 DH LED 进行了测量，对于每种情况，我们都获得了宽带输入阻抗图，该图给出了幅度和相位随频率的变化。我们从这些图中推导出每个二极管的载流子寿命、差分二极管电阻、扩散电容、寄生电阻和理想因子。然后在等效电路中使用这些参数来计算设备的模型输入阻抗，然后将其与测量结果进行比较。在很宽的频率范围内，至少在频率等于 1/（载流子寿命）时，一致性很好。我们的模型充分考虑了之前在单端口激光测量中注意到的最大相位滞后的存在。
+
+<https://ieeexplore.ieee.org/document/791628>
+
