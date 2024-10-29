@@ -75,6 +75,7 @@
   - [23.2 400G 以太网之路由 Bechtolsheim 的意图铺就](#232-400g-以太网之路由-bechtolsheim-的意图铺就)
   - [23.3 Andreas “Andy” Bechtolsheim ECOC 2024 演讲](#233-andreas-andy-bechtolsheim-ecoc-2024-演讲)
   - [23.4 20241023 加利福尼亚州硅谷举行的 PECC 峰会](#234-20241023-加利福尼亚州硅谷举行的-pecc-峰会)
+  - [23.5 OCP](#235-ocp)
 - [24.数据中心交换芯片](#24数据中心交换芯片)
 - [25. 初创公司](#25-初创公司)
   - [25.1 Lightwave](#251-lightwave)
@@ -96,6 +97,7 @@
 - [34. Influence of dislocation density on internal quantum efficiency of GaN-based semiconductors - 余佳东](#34-influence-of-dislocation-density-on-internal-quantum-efficiency-of-gan-based-semiconductors---余佳东)
 - [35. InGaN quantum dots for micro-LEDs - 汪莱](#35-ingan-quantum-dots-for-micro-leds---汪莱)
 - [36. 基于等效电路模型的GaN基Micro-LED调制带宽分析 - 厦门大学/复旦 田鹏飞](#36-基于等效电路模型的gan基micro-led调制带宽分析---厦门大学复旦-田鹏飞)
+- [37. 使用网络分析仪测量确定 LED 等效电路](#37-使用网络分析仪测量确定-led-等效电路)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2018,6 +2020,12 @@ AI 集群的带宽需求对 AI Fabric 互连提出了前所未有的挑战。我
 总结幻灯片
 
 ![](/picture/Arista3.gif)
+
+## 23.5 OCP
+
+Sustainable Optics for Scaling AI
+
+
 
 # 24.数据中心交换芯片
 
