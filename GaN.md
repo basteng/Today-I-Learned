@@ -1714,5 +1714,5 @@ SiC 和 GaN 都有望在未来汽车电力电子领域发挥核心作用，改�
 
 # 30. GaN FOR EV POWER TRAIN: BREAKTHROUGHS AND CHALLENGES
 
-
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/GaN%20FOR%20EV%20POWER%20TRAIN%20BREAKTHROUGHS%20AND%20CHALLENGES.pdf>
 
