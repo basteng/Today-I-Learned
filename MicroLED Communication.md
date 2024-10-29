@@ -2031,6 +2031,8 @@ Sustainable Optics for Scaling AI
 
 <https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/Sustainable%20Optics%20for%20Scaling%20AI.pdf>
 
+<https://www.opencompute.org/events/past-events/2024-ocp-global-summit>
+
 # 24.数据中心交换芯片
 
 数据中心交换芯片的演进趋势是：每两年翻一番的快速增长，25.6T交换芯片采用7nm工艺，51.2T必须选择5nm工艺节点，预计2025年3nm工艺节点将问世，为交换芯片带来102.4T的容量。
