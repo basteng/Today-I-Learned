@@ -2025,7 +2025,11 @@ AI 集群的带宽需求对 AI Fabric 互连提出了前所未有的挑战。我
 
 Sustainable Optics for Scaling AI
 
+![](/picture/Arista-OCP2024_1.png)
 
+![](/picture/Arista-OCP2024_2.png)
+
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/Sustainable%20Optics%20for%20Scaling%20AI.pdf>
 
 # 24.数据中心交换芯片
 
