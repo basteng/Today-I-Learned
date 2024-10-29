@@ -101,6 +101,7 @@
 - [27. 氮化镓在电动汽车发展中的作用：能源应用、技术和挑战](#27-氮化镓在电动汽车发展中的作用能源应用技术和挑战)
 - [28. III 族氮化物发光晶体管的设计与模拟](#28-iii-族氮化物发光晶体管的设计与模拟)
 - [29. SiC和GaN在电动汽车中的应用](#29-sic和gan在电动汽车中的应用)
+- [30. GaN FOR EV POWER TRAIN: BREAKTHROUGHS AND CHALLENGES](#30-gan-for-ev-power-train-breakthroughs-and-challenges)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -1710,3 +1711,8 @@ SiC 和 GaN 都有望在未来汽车电力电子领域发挥核心作用，改�
 ![](/picture/SiC_and_GaN_EV.jpg)
 
 <https://www.linkedin.com/posts/jack-tsaur-58468a183_both-sic-and-gan-are-poised-to-play-a-central-activity-7255119625514811392-qcSn?utm_source=share&utm_medium=member_desktop>
+
+# 30. GaN FOR EV POWER TRAIN: BREAKTHROUGHS AND CHALLENGES
+
+
+
