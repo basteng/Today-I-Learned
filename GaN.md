@@ -102,6 +102,8 @@
 - [28. III 族氮化物发光晶体管的设计与模拟](#28-iii-族氮化物发光晶体管的设计与模拟)
 - [29. SiC和GaN在电动汽车中的应用](#29-sic和gan在电动汽车中的应用)
 - [30. GaN FOR EV POWER TRAIN: BREAKTHROUGHS AND CHALLENGES](#30-gan-for-ev-power-train-breakthroughs-and-challenges)
+- [31. GaN市场](#31-gan市场)
+  - [31. 商业模式讨论 IDM Fabless](#31-商业模式讨论-idm-fabless)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -1716,3 +1718,49 @@ SiC 和 GaN 都有望在未来汽车电力电子领域发挥核心作用，改�
 
 <https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/GaN%20FOR%20EV%20POWER%20TRAIN%20BREAKTHROUGHS%20AND%20CHALLENGES.pdf>
 
+# 31. GaN市场
+
+## 31. 商业模式讨论 IDM Fabless
+
+在 SiC 行业中，IDM 历来发挥着重要作用。这些 IDM 控制着从材料生长到设备制造的整个过程，使他们能够保持竞争优势。
+
+GaN 是否会遵循与 SiC 类似的趋势，以 IDM 为主？我认为我们可以考虑以下几点。
+
+- 高资本投资：这使得小公司难以进入市场并与更大、更成熟的 IDM 竞争。
+- 复杂的制造工艺： 这需要专业知识和技能，而 IDM 更有可能拥有这些。
+- 需要垂直整合：GaN 器件通常需要在器件和封装之间紧密集成。对于没有自己的封装设施的无晶圆厂公司来说，这可能很难实现。
+
+然而，GaN 市场也可能比 SiC 市场更加分散，IDM、无晶圆厂公司和代工厂的组合更多。这是因为 GaN 是一种比 SiC 更新的技术，并且该领域仍有许多创新和发展。
+
+一般来说，IDM 的市场份额最大，其次是无晶圆厂公司，然后是代工厂。
+
+IDM：
+- Wolfspeed：35-40%
+- Qorvo：20-25%
+- 英飞凌：15-20%
+
+无晶圆厂公司：
+- 氮化镓系统：10-15%
+- 纳微半导体和 Transphorm：各 5-10%
+- GaN Power Electronics 和 EPC：各 2-5%
+
+铸造：
+- TSMC、GlobalFoundries、X-Fab、Episil 和 Win Semiconductors：各占 2-5%
+
+这些百分比是估计值，可能会因数据源而异。
+
+GaN 市场仍处于早期阶段，但正在迅速增长。2022 年，全球 GaN 市场价值为 12 亿美元，预计到 2027 年将增长到 53 亿美元。
+
+与 SiC 类似，GaN 也面临着与供应链相关的挑战。GaN 晶圆和衬底不像硅那样容易获得，基于 GaN 的器件的制造工艺仍在不断发展。
+
+GaN 基器件中的缺陷密度对其性能和可靠性起着关键作用。采用先进的生长技术来最大限度地减少 GaN 材料晶体生长过程中的缺陷。
+
+1. 氢化物气相外延 （HVPE） 在高生长速率和低成本方面具有优势。它能够以降低缺陷密度的厚度生长 GaN 层。
+2. 金属有机气相外延 （MOVPE），也称为金属有机化学气相沉积 （MOCVD），是一种广泛用于生长高质量 GaN 晶体的技术。
+3. 分子束外延 （MBE） 以其产生原子光滑和高质量 GaN 薄膜的能力而闻名。
+4. Pendeo-Epitaxy 是一种选择性横向生长技术，旨在通过在图案衬底上生长 GaN 层来降低缺陷密度。
+5. 纳米外延是一种专注于缺陷密度降低的 GaN 纳米结构（如纳米线或纳米棒）生长的技术。
+
+展望未来，让我们期待一个蓬勃发展的 GaN 市场。
+
+<https://www.linkedin.com/posts/jack-tsaur-58468a183_in-the-sic-industry-idms-have-historically-activity-7150689871236345856-u8pd?utm_source=share&utm_medium=member_desktop>

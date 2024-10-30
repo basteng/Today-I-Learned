@@ -10,6 +10,7 @@
   - [4.2 2024 Q3 - 主要客户营收占比 - 市场规模](#42-2024-q3---主要客户营收占比---市场规模)
 - [5. 半导体商业模式讨论 IDM vs Foundry](#5-半导体商业模式讨论-idm-vs-foundry)
   - [5.1 Techovedas  半导体生态系统中的商业模式](#51-techovedas--半导体生态系统中的商业模式)
+  - [5.2 Fabless 和 Fablite 与 IDM - Jack Tsaur](#52-fabless-和-fablite-与-idm---jack-tsaur)
 - [6. 半导体进出口](#6-半导体进出口)
   - [6.1 半导体进出口相关海关编码](#61-半导体进出口相关海关编码)
 - [7. 功率半导体](#7-功率半导体)
@@ -70,7 +71,7 @@
   - [25.3 先进封装的增长势头正在超越先进工艺节点](#253-先进封装的增长势头正在超越先进工艺节点)
   - [25.4 先进封装结构示意图](#254-先进封装结构示意图)
   - [25.5 先进封装供应链](#255-先进封装供应链)
-- [25.6 Chiplet 成本比较](#256-chiplet-成本比较)
+  - [25.6 Chiplet 成本比较](#256-chiplet-成本比较)
 - [26.整体市场预测](#26整体市场预测)
   - [26.1 2028年各应用占比](#261-2028年各应用占比)
 - [27.封装](#27封装)
@@ -335,6 +336,28 @@ GlobalFoundries 将内部设施与外部代工厂相结合，提供灵活性并�
 ![IDM vs Foundry](/picture/IDM%20vs%20Foundry.jpg)
 
 <https://techovedas.com/what-are-3-business-model-in-semiconductor-ecosystem-pros-and-cons/>
+
+## 5.2 Fabless 和 Fablite 与 IDM - Jack Tsaur
+
+Fabless 和 Fablite 与 IDM
+
+在过去的几十年里，在晶圆厂的高成本和代工厂的专业化的推动下，半导体行业已经从 IDM 模式向无晶圆厂和 Fablite 模式进行了重大转变。然而，最近的地缘政治变化、政府激励措施和供应链担忧促使 IDM 模式重新崛起，因为英特尔和德州仪器等公司对国内制造能力进行了再投资。半导体制造的未来可能会涉及所有三种模式（无晶圆厂、fablite 和 IDM）的混合，公司将根据市场动态、技术需求和地缘政治压力调整其战略。
+
+🔘 IDM 复兴：
+- 英特尔：英特尔正在采取重大措施，通过在美国和欧洲建立新的晶圆厂来重振其 IDM 模式，旨在重新夺回其在先进工艺技术方面的领导地位，此前该公司近年来落后于台积电和三星。
+- 德州仪器 （TI）：德州仪器 （TI） 也一直在扩大其制造能力，对新晶圆厂进行了大量投资，这标志着其战略正在转向更加注重 IDM 的战略。TI，最后的 IDM？https://lnkd.in/gKHfuTht
+
+🔘 Fabless 继续蓬勃发展：
+- 无晶圆厂公司继续主导市场，尤其是在智能手机、GPU、CPU、人工智能和汽车芯片等高增长领域。高通、NVIDIA 和 Apple 等公司利用台积电等代工厂的专业知识，在这种模式下蓬勃发展。
+
+🔘 Fablite 作为一种灵活的方法：
+- 许多公司采用了 fablite 方法来保持一些内部制造能力，同时将更复杂或更先进的生产外包给外部代工厂。这种混合模式允许灵活性和成本控制。
+
+![](/picture/1730190138469.jpg)
+
+![](/picture/1730190138581_new.jpg)
+
+<https://www.linkedin.com/posts/jack-tsaur-58468a183_fabless-and-fablite-vs-idm-in-the-past-ugcPost-7256943424220606465-8j8r?utm_source=share&utm_medium=member_desktop>
 
 
 
@@ -1482,7 +1505,7 @@ OSAT 应利用其传统的高产量、高成本效益制造优势，专注于一
 
 <https://www.csis.org/analysis/double-edged-sword-semiconductor-export-controls>
 
-# 25.6 Chiplet 成本比较
+## 25.6 Chiplet 成本比较
 
 Amy Lujan - President at SavanSys
 
@@ -1499,6 +1522,19 @@ Amy Lujan
 确实 Joe Dickson ！从硅芯片到封装选项，再到 PCB，所有设计选项都相互依赖。
 
 <https://www.linkedin.com/posts/amy-lujan-26125bb_chiplets-activity-7256716160132362241-kPfB?utm_source=share&utm_medium=member_desktop>
+
+## 25.7 CoWoS 的先进封装结构中使用的关键材料和供应商清单
+
+从图片中可以明显看出，超过 90% 的后端包装材料由日本公司主导！比例非常高！
+
+然而，目前，台积电的 CoWoS 产能不断增加，但一些日本材料制造商无法跟上需求。据了解，几种关键材料已经出现短缺，主要的 AI 芯片公司开始要求 OSAT/衬底制造商提前准备第二个来源，以满足未来的产能需求。
+
+✴️ 注意： 一些供应商提供先进的包装材料，但不属于 话题标签#TSMC 话题标签#CoWoS 供应链的一部分。
+
+![](/picture/CoWoS_Material.jpg)
+
+<https://tspasemiconductor.substack.com/>
+
 
 # 26.整体市场预测
 
