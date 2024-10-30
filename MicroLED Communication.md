@@ -46,6 +46,7 @@
   - [5.22 Avicena 任命前 Oclaro 首席执行官 Greg Dougherty 为董事会成员](#522-avicena-任命前-oclaro-首席执行官-greg-dougherty-为董事会成员)
   - [5.23 20241023 加利福尼亚州硅谷举行的 PECC 峰会](#523-20241023-加利福尼亚州硅谷举行的-pecc-峰会)
   - [5.24 光学互连高带宽存储器架构专利](#524-光学互连高带宽存储器架构专利)
+  - [5.25 CPO Example - MicroLED Parallel D2D Links](#525-cpo-example---microled-parallel-d2d-links)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -91,7 +92,10 @@
   - [28.1 Nvidia 展示了光学连接的 GPU 系统可能是什么样子](#281-nvidia-展示了光学连接的-gpu-系统可能是什么样子)
 - [29. OELab动态](#29-oelab动态)
   - [29.1 清华大学罗毅院士团队到北京芯能交流技术 2022.9](#291-清华大学罗毅院士团队到北京芯能交流技术-20229)
-- [30. 光互连的思考：哪些铜互连将被光互连取代](#30-光互连的思考哪些铜互连将被光互连取代)
+- [30. 光互连的思考](#30-光互连的思考)
+  - [30.1 光互连的思考：哪些铜互连将被光互连取代 VPIphotonics](#301-光互连的思考哪些铜互连将被光互连取代-vpiphotonics)
+  - [30.2 信息图 Tuesday （IT）：光互连将以 5 比 1 甚至 10 比 1 的比率增长比 XPU 更快 Marvell](#302-信息图-tuesday-it光互连将以-5-比-1-甚至-10-比-1-的比率增长比-xpu-更快-marvell)
+- [31. 新型深紫外微型 LED 阵列推动无掩模光刻技术发展 - 中科大](#31-新型深紫外微型-led-阵列推动无掩模光刻技术发展---中科大)
 - [32. 用于传感、生产和通信的紫外线微型 LED - 柏林费迪南德-布劳恩研究所 (FBH)](#32-用于传感生产和通信的紫外线微型-led---柏林费迪南德-布劳恩研究所-fbh)
 - [33. Introduction and Research Trends on Micro LED Technology](#33-introduction-and-research-trends-on-micro-led-technology)
 - [34. Influence of dislocation density on internal quantum efficiency of GaN-based semiconductors - 余佳东](#34-influence-of-dislocation-density-on-internal-quantum-efficiency-of-gan-based-semiconductors---余佳东)
@@ -1197,6 +1201,37 @@ SoC 通过硅中介层上的电气通路与电子和光子 IC 进行电气数据
 
 网页链接
 <https://www.freepatentsonline.com/y2024/0345344.html>
+
+## 5.25 CPO Example - MicroLED Parallel D2D Links
+
+在 2024 年 5 月 IEEE Journal of Solid-State Circuits （JSSC） 🏷️ https://lnkd.in/gsam8vuc 中，Avicena Tech 和 密西根大学 报道了一种电光 32 元件接收器 （RX） 阵列，该阵列集成了兼容 CMOS 的蓝光光电探测器，该阵列专为 420nm 波长的基于 MicroLED 的并行光学 Die-to-Die （话题标签#D2D ） 链路量身定制。采用 0.13μm CMOS SOI 工艺制造，每个 RX 阵列元件占用 50μmx50μm 的面积，功耗为 1mW（1V DC 时），灵敏度为 -19.3dBm，同时实现 10-12 的误码率 （BER） 和 0.5pJ/bit 的能效。
+
+摘录（编辑）：
+📝在这项工作中，我们将串行 话题标签#optical 链路的能效与并行链路的能效进行了比较;在相同的数据吞吐量和 BER 下进行短距离芯片间通信。我们的分析预测，将并行链路与其最快的串行链路进行比较，能效提高 >10 倍是可行的。
+📝在这项工作中，我们提出了 2Gbps 集成 RX 的设计，为此进行了跨阻噪声优化，以降低直流功耗和有效面积，而不会实际牺牲信噪比 （SNR） 性能。本文报道了一种新颖的差分数字偏移消除 （DDOC） 设计。
+📝GaN MicroLED 的波长在 400-450nm 之间;归类为蓝光。
+📝蓝光是并行光链路的良好候选者，因为它使紧凑型 RX 能够与具有低单位面积电容的光电探测器集成，这对 P/I（例如，能源效率）和 S/I（例如，参考输入的 RMS 噪声）有益。
+📝最好将光电探测器集成到 话题标签#CMOS 中，因为这样做有助于最大限度地减少与 ESD 二极管和焊盘相关的电容。它还支持高 话题标签#TIA 增益，同时降低 RX 的输入参考噪声和直流功耗。此外，包装成本降低，密度提高。
+📝由于在撰写本文时，32 元件 RX 阵列（采用 X-FAB 130nm CMOS SOI 技术）的光纤测试装置尚未完成，因此我们使用自由空间光学测试装置提供单个 RX 阵列元件的测量结果。
+
+🔍观察：
+话题标签#Parallel 或 话题标签#Serial ，集成光电探测器或片上激光器，话题标签#MicroLED 、VCSEL 或 FP、420nm、850nm 或 1310nm、NRZ、PAM 或相干...重要的是，在新 话题标签#AI 时代，无论是短距离 （<10m) interchip communications and short-range (<1km) 话题标签#datacenter interconnects (DCI)—and everything in between—demand continued and accelerated scaling in spectral/bandwidth density and energy efficiency. 
+
+VCSEL: Vertical-Cavity Surface-Emitting Laser
+FP: Fabry-Perot (laser)
+NRZ: Non-Return-to-Zero
+PAM: Pulse Amplitude Modulation
+
+![](/picture/1718755938597.jpg)
+
+ Additional reading:
+🏷️Full article: https://lnkd.in/gdn9qgUe 
+🏷️O-Band Link: https://lnkd.in/gheaJCis 
+🏷️TIA Design: https://lnkd.in/g2m9cxpp 
+🏷️CPO (IV): https://lnkd.in/g4TM84Kp 
+🏷️CPO (V): https://lnkd.in/gAGh_nwK 
+
+<https://www.linkedin.com/posts/mingliangliu_d2d-optical-cmos-activity-7208984910638796801-pBFZ?utm_source=share&utm_medium=member_desktop>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
@@ -2317,7 +2352,9 @@ H_{eq} = \frac{1}{2\left(1 + \frac{R_L}{R_4 + \frac{j\omega L_1}{1 - \omega^2 C_
 
 <http://bxet-vision.com/#/newsdetail?id=425>
 
-# 30. 光互连的思考：哪些铜互连将被光互连取代
+# 30. 光互连的思考
+
+## 30.1 光互连的思考：哪些铜互连将被光互连取代 VPIphotonics
 
 支持光子的云计算 （PECC） 峰会今天刚刚结束，以下是我个人从此次活动中得到的收获：
 
@@ -2335,7 +2372,39 @@ VPIphotonics 通过提供仿真工具来帮助解决这些挑战，这些工具�
 
 Linkedin: Chris MaloneyChris Maloney
 
-#31. 新型深紫外微型 LED 阵列推动无掩模光刻技术发展 - 中科大
+## 30.2 信息图 Tuesday （IT）：光互连将以 5 比 1 甚至 10 比 1 的比率增长比 XPU 更快 Marvell
+
+“光纤 [互连] 是唯一可以为您提供连接整个数据中心数万台服务器所需的带宽和覆盖范围的技术...虽然铜仍然是芯片到芯片和其他短距离连接的可行技术，但光学是 AI 的主要介质......随着速度的提高和距离的扩大，互连的数量将急剧增加......光互连的增长速度将比 AI 集群中的加速器 [或 XPU] 增长更快。
+
+![](/picture/optical_interconnects.jpg)
+
+<https://www.linkedin.com/posts/mingliangliu_semiconductorindustry-semiconductor-semiconductors-activity-7257047321077571585-0uo9?utm_source=share&utm_medium=member_desktop>
+
+补充阅读：
+🏷️扩展 AI 意味着扩展互连：<https://www.marvell.com/blogs/scaling-ai-means-scaling-interconnects.html>
+
+🏷️数据中心内链接：<https://www.linkedin.com/posts/mingliangliu_ai-hpc-semiconductor-activity-7217311426044993537-Chdc/>
+
+数据中心内互连 （DCI） 市场正在经历一场重大变革。与 Inter-DCI 市场相比，Intra-DCI 市场需要更大的端口/链路/电缆运输量和对数据传输 （I/O） 能效、信号延迟、通道速率或信道速度（每个波长）、带宽（海岸线）密度和系统可扩展性的更严格要求，再加上人工智能 （话题标签#AI ） 和高性能计算 （话题标签#HPC ） 应用的天文数字增长。 📈
+ 
+2024 年是数据中心部署共封装光学器件 （CPO） 的“年⃣”1️吗？
+💡与其现在匆忙下结论，不如让我们在一两年后回过头来。
+
+![](/picture/Intra-Datacenter.jpg)
+
+<https://www.linkedin.com/posts/mingliangliu_ai-hpc-semiconductor-activity-7217311426044993537-Chdc?utm_source=share&utm_medium=member_desktop>
+
+补充阅读：
+🏷️英特尔 的光计算互连 （OCI） 技术： https://lnkd.in/gWfrDceC
+🏷️ 台积公司 的“COUPE”：https://lnkd.in/gkyKm_HD
+🏷️ GlobalFoundries 的“Fotonix”：https://lnkd.in/gKHwSfDR
+🏷️ 诺基亚 已购买 Infinera ： https://lnkd.in/gZJdvnVi
+🏷️CPO 示例 （V）：https://lnkd.in/gAGh_nwK
+🏷️CPO 示例 （VI）：https://lnkd.in/gbajACdV
+
+
+
+# 31. 新型深紫外微型 LED 阵列推动无掩模光刻技术发展 - 中科大
 
 ![](/picture/new-duv-micro-led-arra.jpg)
 
