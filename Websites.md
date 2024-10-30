@@ -24,6 +24,7 @@
     - [7.1.2 Teledyne Scientific and Imaging - Teledyne中央研究实验室](#712-teledyne-scientific-and-imaging---teledyne中央研究实验室)
 - [8. 技术网站](#8-技术网站)
   - [8.1 GaN newsletter monthly - 领英上Rémi Comyn整理的GaN新闻和最新进展，做得很好，很有启发](#81-gan-newsletter-monthly---领英上rémi-comyn整理的gan新闻和最新进展做得很好很有启发)
+  - [8.2 brilliant.org 互动教学，动画演示](#82-brilliantorg-互动教学动画演示)
 - [9. 科学读物、媒体报道](#9-科学读物媒体报道)
   - [9.1 Gazettabyte - 关于电信、硅光领域的网站](#91-gazettabyte---关于电信硅光领域的网站)
   - [9.2 Quanta Magazine - 西蒙斯基金会 科学新闻在线刊物](#92-quanta-magazine---西蒙斯基金会-科学新闻在线刊物)
@@ -171,6 +172,16 @@ Teledyne Imaging Sensors 是军事、太空、天文学和商业应用领域高�
 ## 8.1 GaN newsletter monthly - 领英上Rémi Comyn整理的GaN新闻和最新进展，做得很好，很有启发
 
 <https://www.linkedin.com/in/remicomyn/recent-activity/all/>
+
+## 8.2 brilliant.org 互动教学，动画演示
+
+brilliant.org 这个网站的互动教学做的特别好，比如它用网页交互的方式演示神经网络如何工作的，你用鼠标画一个数字，它马上画出来根据神经网络计算，跟哪个数字匹配的概率更高！
+
+动画中的交互来自其CS & Programming · Level 5 课程 5.1 Introduction to Neural Networks
+
+<http://t.cn/A6ncwVwz>
+
+<https://brilliant.org/courses/intro-neural-networks/introduction-65/?from_llp=computer-science&continueFlag=eb45ced267fd33d3d83806bbce451b38>
 
 # 9. 科学读物、媒体报道
 

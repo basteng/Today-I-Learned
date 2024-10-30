@@ -29,6 +29,8 @@
 - [24. Y Combinator创始人：如何做出伟大工作](#24-y-combinator创始人如何做出伟大工作)
 - [25. 内容行业的内幕 - 行业研究类似](#25-内容行业的内幕---行业研究类似)
 - [26. 6G的命运是否会重复5G无线的失败？](#26-6g的命运是否会重复5g无线的失败)
+- [27. 谷歌首席执行官桑达尔·皮查伊接受大卫·鲁宾斯坦秀采访 20241030](#27-谷歌首席执行官桑达尔皮查伊接受大卫鲁宾斯坦秀采访-20241030)
+- [28. Groq 首席执行官乔纳森·罗斯：人工智能语言模型是思维的望远镜，它们将帮助我们看到智能比我们想象的更广阔](#28-groq-首席执行官乔纳森罗斯人工智能语言模型是思维的望远镜它们将帮助我们看到智能比我们想象的更广阔)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1157,5 +1159,16 @@ Webb 表示：“他们需要从网络中删除身份验证和本地语音配置
 
 <https://www.amazon.com/6G-Manifesto-William-Webb-ebook/dp/B0DJDQXX2G/ref=sr_1_2?crid=PVD7XBXRVDSL&dib=eyJ2IjoiMSJ9.FZyq85iUmG7Q2kijrlo5Vt90f9hcZBM8Fa5EkwNVtfwvDWO4sHbp_DOzEXc-8HX5ThbVYjoT47ywLuz9t7EhKR9srTzQVaK6BOhZSFXnaQXt5ZegQxObJPuy7w6dq1QM9gHLgesBim705jXJkHx7t21WvWGt8beaTj-ifRJK21aCQG0wK-PAL7h-R1AiV_fjyjrRjUmTb0Tz0K5sCM4JdVtrEwRHQRY19yzDZttgDw8.YEpoNCCJdU5F0ifL7uhokCcT0Z5cHACeOwTW01KoVOc&dib_tag=se&keywords=william+webb&qid=1729600577&sprefix=william+webb%2Caps%2C316&sr=8-2>
 
+# 27. 谷歌首席执行官桑达尔·皮查伊接受大卫·鲁宾斯坦秀采访 20241030
 
+这个采访精彩的地方在于，它为我们投资者提供了一个关于布局未来科技的CEO视角，也难得讲述了自己的人生经历，采访的精彩部分主要包括：1、谷歌人工智能领域其实是最早的先驱，进行了深入投资，但2022 年被微软合作伙伴 OpenAI 抢先推出了轰动一时的 ChatGPT 产品，那么google现在的战略是什么？如何应对？ 2、深入探讨了他对人工智能的基本信念，认为人工智能在作为一项新技术的能力上可以与火和电相媲美，能够“跨越每个行业，无处不在” 3、谈了AI人工智能对谷歌搜索业务基本盘的影响，认为商业意图，并不会因为底层技术的更新而改变 4、自己的人生经历，如何从印度一步步来到美国，最终于 2015 年成为谷歌的首席执行官，并于 2019 年成为母公司Alphabet 的首席执行官
 
+<https://weibo.com/tv/show/1034:5094216515387410?from=old_pc_videoshow>
+
+# 28. Groq 首席执行官乔纳森·罗斯：人工智能语言模型是思维的望远镜，它们将帮助我们看到智能比我们想象的更广阔
+
+回想一下伽利略——一个陷入很多麻烦的人。他陷入麻烦的原因是他发明了望远镜，并推广了它，并声称我们比每个人都想相信的要小得多。我们本应是宇宙的中心，但事实证明我们不是。望远镜越好，我们的渺小就越明显。大型语言模型是思维的望远镜。很明显，智力比我们更大，它让我们感到非常非常渺小，这很可怕。但随着时间的推移，我们意识到宇宙比我们想象的要大，并且我们已经习惯了这一点，我们开始意识到它是多么美丽，以及我们在宇宙中的位置。我认为这就是即将发生的事情。我们将意识到智力比我们想象的要广阔，我们将了解我们在其中的位置，我们不会害怕它。
+
+‘Think back to Galileo—someone who got in a lot of trouble. The reason he got in trouble was he invented the telescope, popularized it, and made some claims that we were much smaller than everyone wanted to believe. We were supposed to be the center of the universe, and it turns out we weren’t. And the better the telescope got, the more obvious it became that we were small. Large language models are the telescope for the mind. It’s become clear that intelligence is larger than we are, and it makes us feel really, really small, and it’s scary. But what happened over time was as we realized the universe was larger than we thought and we got used to that, we started to realize how beautiful it was, and our place in the universe. I think that's what’s going to happen. We’re going to realize intelligence is more vast than we ever imagined, and we're going to understand our place in it, and we're not going to be afraid of it.’
+
+<https://www.youtube.com/watch?v=UneoszmxRGg&t=2014s>
