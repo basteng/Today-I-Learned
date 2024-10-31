@@ -47,6 +47,8 @@
   - [5.23 20241023 加利福尼亚州硅谷举行的 PECC 峰会](#523-20241023-加利福尼亚州硅谷举行的-pecc-峰会)
   - [5.24 光学互连高带宽存储器架构专利](#524-光学互连高带宽存储器架构专利)
   - [5.25 CPO Example - MicroLED Parallel D2D Links](#525-cpo-example---microled-parallel-d2d-links)
+  - [5.26 High Bandwidth GaN-Based Micro-LEDs at Temperatures up to 400 ◦C](#526-high-bandwidth-gan-based-micro-leds-at-temperatures-up-to-400-c)
+    - [5.26.1 \[参考文献16\] 电注入 III 族氮化物发光二极管中的差异载流子寿命和传输效应](#5261-参考文献16-电注入-iii-族氮化物发光二极管中的差异载流子寿命和传输效应)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -1233,6 +1235,14 @@ PAM: Pulse Amplitude Modulation
 🏷️CPO (V): https://lnkd.in/gAGh_nwK 
 
 <https://www.linkedin.com/posts/mingliangliu_d2d-optical-cmos-activity-7208984910638796801-pBFZ?utm_source=share&utm_medium=member_desktop>
+
+## 5.26 High Bandwidth GaN-Based Micro-LEDs at Temperatures up to 400 ◦C
+
+<https://ieeexplore.ieee.org/document/10613856>
+
+### 5.26.1 [参考文献16] 电注入 III 族氮化物发光二极管中的差异载流子寿命和传输效应
+
+
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 

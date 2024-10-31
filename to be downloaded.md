@@ -82,6 +82,11 @@ https://newetds.lib.tsinghua.edu.cn/home/qh/index
 
 https://ieeexplore.ieee.org/document/791628
 
+# 14. Differential Carrier Lifetime in AlGaN Based Multiple Quantum Well Deep UV Light Emitting Diodes at 325 nm
+
+https://iopscience.iop.org/article/10.1143/JJAP.41.L1146
+
+
 
 
 
