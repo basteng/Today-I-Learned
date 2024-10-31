@@ -48,7 +48,8 @@
   - [5.24 光学互连高带宽存储器架构专利](#524-光学互连高带宽存储器架构专利)
   - [5.25 CPO Example - MicroLED Parallel D2D Links](#525-cpo-example---microled-parallel-d2d-links)
   - [5.26 High Bandwidth GaN-Based Micro-LEDs at Temperatures up to 400 ◦C](#526-high-bandwidth-gan-based-micro-leds-at-temperatures-up-to-400-c)
-    - [5.26.1 \[参考文献16\] 电注入 III 族氮化物发光二极管中的差异载流子寿命和传输效应](#5261-参考文献16-电注入-iii-族氮化物发光二极管中的差异载流子寿命和传输效应)
+    - [5.26.1 参考文献16 电注入 III 族氮化物发光二极管中的差异载流子寿命和传输效应](#5261-参考文献16-电注入-iii-族氮化物发光二极管中的差异载流子寿命和传输效应)
+    - [5.26.2 参考文献12 III 族氮化物量子异质结构中的载流子动力学和库仑增强捕获](#5262-参考文献12-iii-族氮化物量子异质结构中的载流子动力学和库仑增强捕获)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -161,6 +162,11 @@
 ### 2.1.1 阅读笔记
 
 - 其实一个LED可以看做一个通信系统，输入电压即输入，输出即LED的光。实际上等效电路可以计算频率响应曲线 H(f)，也即信号与系统里的传递函数，通过传递函数就可以计算-3dB带宽。
+- 引用模型的参考文献，好好读一下，尤其是参考文献19，Avicena 400℃的文章里也提到这篇文章
+  
+  [19].Differential carrier lifetime in AlGaN based multiple quantum well deep UV light emitting diodes at 325 nm
+  [20].Capacitance measurements of p-n junctions: Depletion layer and diffusion capacitance contributions
+
 
 ## 2.2 《High-Speed Micro-LEDs based on Nano-Engineered InGaN Active Region towards Chip-to-Chip Interconnections》
 
@@ -1240,9 +1246,15 @@ PAM: Pulse Amplitude Modulation
 
 <https://ieeexplore.ieee.org/document/10613856>
 
-### 5.26.1 [参考文献16] 电注入 III 族氮化物发光二极管中的差异载流子寿命和传输效应
+### 5.26.1 参考文献16 电注入 III 族氮化物发光二极管中的差异载流子寿命和传输效应
 
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Differential%20carrier%20lifetime%20and%20transport%20effects%20in%20electrically%20injected%20III-nitride%20light-emitting%20diodes.pdf>
 
+### 5.26.2 参考文献12 III 族氮化物量子异质结构中的载流子动力学和库仑增强捕获
+
+本文详细研究了 III 族氮化物量子阱 (QW) 发光二极管的小信号响应，其中同时测量了电响应和光响应。引入了完整的传输复合模型来解释测量结果。这可以正确评估复合寿命并准确量化 QW 中的热电子载流子逃逸。此外，还确定并量化了一种尚未报告的载流子捕获机制；它随着 QW 中载流子密度的增加而增加，并带有库仑散射过程的特征。
+
+<https://pubs.aip.org/aip/apl/article-abstract/109/3/033504/1078292/Carrier-dynamics-and-Coulomb-enhanced-capture-in?redirectedFrom=fulltext>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 

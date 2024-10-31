@@ -13,6 +13,9 @@
 - [12. 李振浩博士论文下载](#12-李振浩博士论文下载)
 - [12. Vertically Integrated Self-Monitoring AlGaN-Based Deep Ultraviolet Micro-LED Array with Photodetector Via a Transparent Sapphire Substrate Toward Stable and Compact Maskless Photolithography Application](#12-vertically-integrated-self-monitoring-algan-based-deep-ultraviolet-micro-led-array-with-photodetector-via-a-transparent-sapphire-substrate-toward-stable-and-compact-maskless-photolithography-application-1)
 - [13. Determination of LED equivalent circuits using network analyser measurements](#13-determination-of-led-equivalent-circuits-using-network-analyser-measurements)
+- [14. Differential Carrier Lifetime in AlGaN Based Multiple Quantum Well Deep UV Light Emitting Diodes at 325 nm](#14-differential-carrier-lifetime-in-algan-based-multiple-quantum-well-deep-uv-light-emitting-diodes-at-325-nm)
+- [15. Capacitance measurements of p-n junctions: depletion layer and diffusion capacitance contributions](#15-capacitance-measurements-of-p-n-junctions-depletion-layer-and-diffusion-capacitance-contributions)
+- [16. Carrier dynamics and Coulomb-enhanced capture in III-nitride quantum heterostructures](#16-carrier-dynamics-and-coulomb-enhanced-capture-in-iii-nitride-quantum-heterostructures)
 
 
 20240925以后 （未下载）
@@ -85,6 +88,14 @@ https://ieeexplore.ieee.org/document/791628
 # 14. Differential Carrier Lifetime in AlGaN Based Multiple Quantum Well Deep UV Light Emitting Diodes at 325 nm
 
 https://iopscience.iop.org/article/10.1143/JJAP.41.L1146
+
+# 15. Capacitance measurements of p-n junctions: depletion layer and diffusion capacitance contributions
+
+https://iopscience.iop.org/article/10.1088/0143-0807/14/2/009
+
+# 16. Carrier dynamics and Coulomb-enhanced capture in III-nitride quantum heterostructures
+
+https://pubs.aip.org/aip/apl/article-abstract/109/3/033504/1078292/Carrier-dynamics-and-Coulomb-enhanced-capture-in?redirectedFrom=fulltext
 
 
 
