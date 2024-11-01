@@ -6,8 +6,17 @@
 - [6. 慧博投研](#6-慧博投研)
   - [6.1 拉取行业数据](#61-拉取行业数据)
 - [7. 非工程师指南：训练 LLaMA 2 聊天机器人](#7-非工程师指南训练-llama-2-聊天机器人)
-- [8. 更大的世界](#8-更大的世界)
+- [8. 推荐好用的SS/V2RAY/TROJAN机场](#8-推荐好用的ssv2raytrojan机场)
 - [9. 海外手机卡](#9-海外手机卡)
+- [10. 树莓派科学上网](#10-树莓派科学上网)
+- [10.1 简单方式 - raspberry\_pi\_shadowsocks](#101-简单方式---raspberry_pi_shadowsocks)
+  - [本文为使用 python 版本的 shadowsocks 客户端来实现科学上网](#本文为使用-python-版本的-shadowsocks-客户端来实现科学上网)
+  - [raspberry\_shadowsocks.sh](#raspberry_shadowsockssh)
+  - [配置 chromium/firefox SwitchOmega](#配置-chromiumfirefox-switchomega)
+- [10.2 稍微复杂一点方式 - shadowsocks-for-raspberry](#102-稍微复杂一点方式---shadowsocks-for-raspberry)
+  - [安装shadowsocks](#安装shadowsocks)
+  - [安装SwitchyOmega](#安装switchyomega)
+  - [安装privoxy](#安装privoxy)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -111,9 +120,8 @@ A股一致性预期分析系统 - 行业一致性预期，选择“半导体”
 
 https://huggingface.co/blog/Llama2-for-non-engineers
 
-# 8. 更大的世界
+# 8. 推荐好用的SS/V2RAY/TROJAN机场
 
-推荐好用的SS/V2RAY/TROJAN机场
 为什么推荐机场，因为稳定和廉价，自己折腾服务器一个是不稳定，一个是水管太小总是不够用，线路没有机场全。
 机场有出口大的中转服务器中转海外线路，晚高峰优先级高，延迟稳定，出口带宽充足。
 机场线路流媒体支持完善，个人自建比较难找到原生IP服务器。
@@ -251,5 +259,148 @@ ssrcloud
 月租 $3，不便宜
 
 <https://x.com/Crypto_QianXun/status/1815969126122488116>
+
+# 10. 树莓派科学上网
+
+# 10.1 简单方式 - raspberry_pi_shadowsocks
+raspberry pi 3b+ 树莓派 shadowsocks 科学上网
+
+  >Raspberry pi 3 Model B+  
+  >OS：原装系统  
+  >版本：Element 14  
+  
+## 本文为使用 python 版本的 shadowsocks 客户端来实现科学上网  
+
+安装 python 版本的 shadowsocks 客户端与相关套件  
+
+    sudo apt-get install python-pip python-m2crypto  
+    sudo apt-get install shadowsocks  
+    
+修改配置文件:  
+
+    cd /etc/shadowsocks  
+    sudo vim config.json  
+    
+修改为如下内容：  
+
+    {
+        "server":"xxx.xxx.xxx.xxx",
+        "server_port":xxxx,
+        "local_address":"127.0.0.1",
+        "local_port":1080,
+        "password":"xxxxxxxx",
+        "timeout":600,
+        "method":"aes-256-cfb",
+        "fast_open":false
+    }
+
+  >server ：服务端IP  
+  >server_port ：服务端开放的端口，注意没有双引号  
+  >password ：端口对应的密码  
+  >method ：根据自己设定的服务端的加密方式来改  
+  
+启动：  
+
+    sudo /usr/bin/sslocal -c /etc/shadowsocks/config.json -d start  
+
+若报错：  
+
+    Traceback (most recent call last):  
+    File "/usr/local/bin/sslocal", line 9, in   
+    load_entry_point('shadowsocks==2.8.2', 'console_scripts', 'sslocal')()  
+    ....  
+    ....  
+    ....  
+    AttributeError: /usr/local/lib/libcrypto.so.1.1: undefined symbol: EVP_CIPHER_CTX_cleanup  
+    
+则是由于Openssl库更新导致的方法名称变更问题，修复方法如下：  
+
+    sudo vim /usr/local/lib/python2.7/distpackages/shadowsocks/crypto/openssl.py  
+
+修改两条语句：  
+
+    libcrypto.EVP_CIPHER_CTX_cleanup.argtypes = (c_void_p,)  
+    #改为  
+    libcrypto.EVP_CIPHER_CTX_reset.argtypes = (c_void_p,)
+>
+    libcrypto.EVP_CIPHER_CTX_cleanup.argtypes = (self._ctx)  
+    #改为  
+    libcrypto.EVP_CIPHER_CTX_reset.argtypes = (self._ctx)  
+
+重启，再次执行启动命令即可  
+
+添加开机启动：  
+
+    sudo vim /etc/rc.local  
+
+在文件尾部 `exit 0` 前面添加如下两行  
+
+    sudo /usr/bin/local -c /etc/shadowsocks/config.json -d stop  
+    sudo /usr/bin/local -c /etc/shadowsocks/config.json -d start  
+
+至此，ss 客户端已经配置完毕！！！
+
+## raspberry_shadowsocks.sh  
+一键配置脚本，包括以上全部下载和全部修改  
+用户只需按照提示提供自己梯子的相关信息即可  
+
+## 配置 chromium/firefox SwitchOmega 
+
+下载链接：[SwitchOmega](https://github.com/FelisCatus/SwitchyOmega/releases)  
+
+把下载好的直接拉进扩展程序  
+
+  >代理协议：SOCKS5  
+  >代理服务器：127.0.0.1  
+  >代理端口：1080  
+
+![image](https://github.com/Garletta/raspberry_pi_shadowsocks/raw/master/image/raspberry_youtube.png)  
+
+# 10.2 稍微复杂一点方式 - shadowsocks-for-raspberry
+新到手了树莓派4,没有ss总感觉怎么弄都不太舒服，所以折腾了半天。不保证一定正确和最优
+## 安装shadowsocks
+其实可以使用sudo apt-get install shadowsocks直接解决，奈何我申请的vps使用aes-256-gcm加密的，apt下来的好像没有这种加密方式，所以还是自己下载吧。
+- 到https://github.com/shadowsocks/shadowsocks git clone 这个项目
+- 进入目录，python setup.py --build 编译
+- python setup.py --install 安装，应该可以使用--prefix指定安装目录
+- suod vim /etc/shadowsocks/config.json 编辑服务器的信息
+- 使用sudo sslocal -c /etc/shadowsocks/config.json -d -start 就可以运行ss了
+- 设置开机自动启动，新建一个sh脚本，输入下列代码，加入执行权限，sudo chmod 755 shadowsocks.sh， 然后编辑开机启动脚本sudo vim /etc/rc.local，在exit 0 之前加入/home/pi/Documents/shadowsocks.sh
+```
+#!/bin/bash
+
+sudo sslocal -c /etc/shadowsocks/config.json -d start
+```
+OK，shadowsocks就安装好了，但是socks5不支持http和https的协议，所以还需要安装代理，首先给chromimum安装switchyomega
+
+## 安装SwitchyOmega
+- 由于chromimum没有商店，所以到https://github.com/FelisCatus/SwitchyOmega/releases 下载.crx格式的最新插件
+- 现在的chromimum不支持拖入安装，所以需要更改.crx为.zip或者.rar解压到文件夹之后，在chromimum插件页面导入整个文件夹
+- 进入SwitchyOmega，在proxy页面配置ss，协议选socks，代理服务器127.0.0.1，端口1080
+- 可以配置auto switch， 默认直连，代理规则选刚配置完的proxy，规则列表格式选AutoProxy，网址写入https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
+好的，现在chromimum已经能上谷歌了，如果想要shell也能使用ss，就需要安装privoxy
+
+## 安装privoxy
+- 安装privoxy， sudo apt-get install privoxy
+- 配置privoxy，sudo vim /etc/privoxy/config，找到并修改为以下代码
+```
+listen-address  127.0.0.1:8118
+forward-socks5   /               127.0.0.1:1080 .
+# 访问局域网不走ss
+forward         192.168.*.*/     .
+forward            10.*.*.*/     .
+forward           127.*.*.*/     .
+```
+- 启动privoxy，systemctl start privoxy
+- 现在进行测试，curl google.com --proxy 127.0.0.1:8118，如果有结果那么配置成功了，现在可以通过privoxy代理任意程序了
+- 局部代理
+- 局部代理 sudo vim /etc/local/bin/proxy，输入以下代码，需要使用时可以通过proxy加命令执行,例如proxy curl google.com
+```
+#!/bin/bash
+http_proxy=http://127.0.0.1:8118 https_proxy=http://127.0.0.1:8118 ftp_proxy=ftp://127.0.0.1:8118 $*
+```
+大功告成，上个谷歌不容易
+
+~~可能有人需要gfwlist设置网络代理，可以通过sudo pip install genpac安装genpac，然后sudo genpac --pac-proxy="SOCKS5 127.0.0.1:1080" -o autoproxy.pac --gfwlist-url="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt"获得~~
 
 
