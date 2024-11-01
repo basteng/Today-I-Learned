@@ -104,6 +104,8 @@
 - [30. GaN FOR EV POWER TRAIN: BREAKTHROUGHS AND CHALLENGES](#30-gan-for-ev-power-train-breakthroughs-and-challenges)
 - [31. GaN市场](#31-gan市场)
   - [31. 商业模式讨论 IDM Fabless](#31-商业模式讨论-idm-fabless)
+- [32. 主要会议](#32-主要会议)
+- [32.1 IEEE Workshop on Wide Bandgap Power Devices \& Applications](#321-ieee-workshop-on-wide-bandgap-power-devices--applications)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -1764,3 +1766,9 @@ GaN 基器件中的缺陷密度对其性能和可靠性起着关键作用。采�
 展望未来，让我们期待一个蓬勃发展的 GaN 市场。
 
 <https://www.linkedin.com/posts/jack-tsaur-58468a183_in-the-sic-industry-idms-have-historically-activity-7150689871236345856-u8pd?utm_source=share&utm_medium=member_desktop>
+
+# 32. 主要会议
+
+# 32.1 IEEE Workshop on Wide Bandgap Power Devices & Applications 
+
+https://wipda.org/
