@@ -17,6 +17,7 @@
   - [安装shadowsocks](#安装shadowsocks)
   - [安装SwitchyOmega](#安装switchyomega)
   - [安装privoxy](#安装privoxy)
+- [11. SSR 导入](#11-ssr-导入)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -487,4 +488,13 @@ http_proxy=http://127.0.0.1:8118 https_proxy=http://127.0.0.1:8118 ftp_proxy=ftp
 
 ~~可能有人需要gfwlist设置网络代理，可以通过sudo pip install genpac安装genpac，然后sudo genpac --pac-proxy="SOCKS5 127.0.0.1:1080" -o autoproxy.pac --gfwlist-url="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt"获得~~
 
+# 11. SSR 导入
 
+SSRCloud导入方法
+
+- 1.服务器订阅 -> 更新服务器订阅(不通过代理)
+- 2.随便选择一个服务器
+- 3.代理规则 - "绕过..."
+- 4.右键点SSR
+- 5.用户中心 -> [SSR] 拷贝全部节点 URL 
+- 6.点击剪贴板批量导入ssr://链接
