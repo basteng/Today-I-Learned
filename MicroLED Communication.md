@@ -2765,7 +2765,7 @@ GaAs-AlGaAs 高亮度 LED 用于光通信系统的功率和调制带宽
 17. 总过剩电流密度公式：\(J'=J_{n}'+J_{p}'\)。
 18. 限制因子公式：\(C=\frac{1}{1+(J'/J)}\)。
 
-
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Power_and_modulation_bandwidth_of_gaAs-AlGaAs_high-radiance_LEDs_for_optical_communication_systems.pdf>
 
 
 
