@@ -110,7 +110,6 @@
 - [39. GaAs-AlGaAs 高亮度 LED 用于光通信系统的功率和调制带宽](#39-gaas-algaas-高亮度-led-用于光通信系统的功率和调制带宽)
   - [39.1 Google给出的总结](#391-google给出的总结)
   - [39.2 豆包给出的总结](#392-豆包给出的总结)
-- [GaAs - AlGaAs高辐射LED用于光通信系统的功率和调制带宽研究](#gaas---algaas高辐射led用于光通信系统的功率和调制带宽研究)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2681,7 +2680,8 @@ GaAs-AlGaAs 高亮度 LED 用于光通信系统的功率和调制带宽
 
 ## 39.2 豆包给出的总结
 
-# GaAs - AlGaAs高辐射LED用于光通信系统的功率和调制带宽研究
+GaAs - AlGaAs高辐射LED用于光通信系统的功率和调制带宽研究
+
 **作者**：TIEN PEI LEE、ANDREW G. DENTAI
 **发表刊物**：IEEE JOURNAL OF QUANTUM ELECTRONICS, VOL. QE - 14, NO. 3, MARCH 1978
 **研究内容**：分析用于光通信系统的GaAs - AlGaAs双异质结构高辐射LED，考虑自吸收、异质界面复合、掺杂浓度、有源层宽度、注入载流子密度和载流子限制等参数对LED输出功率和调制带宽的影响，并给出实验结果。
