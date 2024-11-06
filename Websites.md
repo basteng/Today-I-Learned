@@ -36,6 +36,9 @@
     - [9.6.2 医学快讯 Medical Xpress 涵盖所有医学研究进展和健康新闻。](#962-医学快讯-medical-xpress-涵盖所有医学研究进展和健康新闻)
     - [9.6.3 科技探索 Tech Xplore 涵盖最新的工程、电子和技术进步。](#963-科技探索-tech-xplore-涵盖最新的工程电子和技术进步)
   - [9.7 网络通信 - 光通信 市场研究](#97-网络通信---光通信-市场研究)
+    - [9.7.1 代表文章 ：光学元件初创企业追踪](#971-代表文章-光学元件初创企业追踪)
+  - [9.8 Korea Economic Daily Global Edition](#98-korea-economic-daily-global-edition)
+    - [9.7.2 代表文章：随着中国企业迎头赶上，SK 海力士和三星将削减传统 DRAM 产量](#972-代表文章随着中国企业迎头赶上sk-海力士和三星将削减传统-dram-产量)
 
 
 # 1. 存储
@@ -257,7 +260,15 @@ Science X 运用先进的编程技术，将新闻以清晰明确的分类呈现�
 
 ## 9.7 网络通信 - 光通信 市场研究
 
-代表文章 ：光学元件初创企业追踪
+<https://cignal.ai/>
+
+### 9.7.1 代表文章 ：光学元件初创企业追踪
 <https://cignal.ai/2024/10/optical-component-startup-tracker/>
 
-<https://cignal.ai/>
+## 9.8 Korea Economic Daily Global Edition
+
+<https://www.kedglobal.com/>
+
+### 9.7.2 代表文章：随着中国企业迎头赶上，SK 海力士和三星将削减传统 DRAM 产量
+
+<https://www.kedglobal.com/korean-chipmakers/newsView/ked202411010010>
