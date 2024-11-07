@@ -12,6 +12,8 @@
   - [3.1 经济学人 技术季刊](#31-经济学人-技术季刊)
 - [4. AI](#4-ai)
   - [4.1 LifeArchitect.ai 一个非常有意思的AI新闻网站，深入浅出](#41-lifearchitectai-一个非常有意思的ai新闻网站深入浅出)
+  - [4.2 寒武纪AI](#42-寒武纪ai)
+    - [4.2.1 代表作 新兴的以内存为中心的数据中心](#421-代表作-新兴的以内存为中心的数据中心)
 - [5. 黑客](#5-黑客)
   - [5.1 hackaday.com 来自互联网的新鲜技术，非常有意思的网站，很有技术大牛](#51-hackadaycom-来自互联网的新鲜技术非常有意思的网站很有技术大牛)
   - [5.2 hackster.io 和 hackaday.com 是姊妹网站，主要介绍一些具体的项目](#52-hacksterio-和-hackadaycom-是姊妹网站主要介绍一些具体的项目)
@@ -38,7 +40,9 @@
   - [9.7 网络通信 - 光通信 市场研究](#97-网络通信---光通信-市场研究)
     - [9.7.1 代表文章 ：光学元件初创企业追踪](#971-代表文章-光学元件初创企业追踪)
   - [9.8 Korea Economic Daily Global Edition](#98-korea-economic-daily-global-edition)
-    - [9.7.2 代表文章：随着中国企业迎头赶上，SK 海力士和三星将削减传统 DRAM 产量](#972-代表文章随着中国企业迎头赶上sk-海力士和三星将削减传统-dram-产量)
+    - [9.8.1 代表文章：随着中国企业迎头赶上，SK 海力士和三星将削减传统 DRAM 产量](#981-代表文章随着中国企业迎头赶上sk-海力士和三星将削减传统-dram-产量)
+- [10. 化合物半导体](#10-化合物半导体)
+  - [10.1 compoundsemiconductor](#101-compoundsemiconductor)
 
 
 # 1. 存储
@@ -89,6 +93,14 @@ https://www.economist.com/technology-quarterly
 ## 4.1 LifeArchitect.ai 一个非常有意思的AI新闻网站，深入浅出
 
 https://lifearchitect.substack.com/
+
+## 4.2 寒武纪AI
+
+https://cambrian-ai.com/
+
+### 4.2.1 代表作 新兴的以内存为中心的数据中心
+
+https://cambrian-ai.com/downloads/the-emerging-memory-centric-data-center/
 
 # 5. 黑客
 
@@ -269,6 +281,12 @@ Science X 运用先进的编程技术，将新闻以清晰明确的分类呈现�
 
 <https://www.kedglobal.com/>
 
-### 9.7.2 代表文章：随着中国企业迎头赶上，SK 海力士和三星将削减传统 DRAM 产量
+### 9.8.1 代表文章：随着中国企业迎头赶上，SK 海力士和三星将削减传统 DRAM 产量
 
 <https://www.kedglobal.com/korean-chipmakers/newsView/ked202411010010>
+
+# 10. 化合物半导体
+
+## 10.1 compoundsemiconductor
+
+https://compoundsemiconductor.net/home
