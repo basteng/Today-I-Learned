@@ -10,6 +10,7 @@
   - [2.1 semiconportal 日本人的半导体网站](#21-semiconportal-日本人的半导体网站)
 - [3.综合类网站](#3综合类网站)
   - [3.1 经济学人 技术季刊](#31-经济学人-技术季刊)
+  - [3.2 荷兰 金融时报](#32-荷兰-金融时报)
 - [4. AI](#4-ai)
   - [4.1 LifeArchitect.ai 一个非常有意思的AI新闻网站，深入浅出](#41-lifearchitectai-一个非常有意思的ai新闻网站深入浅出)
   - [4.2 寒武纪AI](#42-寒武纪ai)
@@ -87,6 +88,10 @@ https://www.semiconportal.com/
 ## 3.1 经济学人 技术季刊
 
 https://www.economist.com/technology-quarterly
+
+## 3.2 荷兰 金融时报
+
+https://fd.nl/
 
 # 4. AI
 
