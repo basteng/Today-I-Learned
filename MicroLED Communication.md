@@ -53,6 +53,8 @@
   - [5.27 Cignal.ai评价Avicena](#527-cignalai评价avicena)
   - [5.28 Bardia Pezeshiki - MicroLED阵列有冗余](#528-bardia-pezeshiki---microled阵列有冗余)
   - [5.29 使用基于 LED 的并行性实现快速光学互连 gazettabyte](#529-使用基于-led-的并行性实现快速光学互连-gazettabyte)
+  - [5.30 不同的光链路配置 - DR8 为 1.6 TB，使用 224G SerDes - PECC峰会](#530-不同的光链路配置---dr8-为-16-tb使用-224g-serdes---pecc峰会)
+  - [5.31 LED同样有调制能力 - PECC峰会](#531-led同样有调制能力---pecc峰会)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -1363,6 +1365,22 @@ HBM 的一个优点是它使用大型总线 - 1024 个电气通道宽，每个�
 Avicena 目前专注于准备客户演示套件并提高产量，然后提高首款产品的产量，这些主题将在 OFC 2024 上讨论。
 
 <https://www.gazettabyte.com/home/2024/1/24/using-led-based-parallelism-for-fast-optical-interconnects.html>
+
+## 5.30 不同的光链路配置 - DR8 为 1.6 TB，使用 224G SerDes - PECC峰会
+
+不同的光链路配置 - DR8 为 1.6 TB，使用 224G SerDes，如 Avicena Tech 在 Optica 和 Advanced Photonics Coalition  的 PECC 峰会上的 Chris Pfistner 所示
+
+![](/picture/Different%20Optical%20Link%20Configurations.jpg)
+
+<https://www.linkedin.com/posts/advanced-photonics-coalition_technology-innovation-photonics-activity-7262531545687564288-oAhw?utm_source=share&utm_medium=member_desktop>
+
+## 5.31 LED同样有调制能力 - PECC峰会
+
+LED（发光二极管）简介 - 取代白炽灯和 CFL 灯 - 与激光器不同 - 但具有调制能力，如 Optica 和 Advanced Photonics Coalition  在 PECC 峰会上 Chris Pfistner Avicena Tech 所
+
+![](/picture/LED_Modulated.jpg)
+
+<https://www.linkedin.com/posts/advanced-photonics-coalition_technology-innovation-future-activity-7262347135835086848-0_p2?utm_source=share&utm_medium=member_desktop>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
