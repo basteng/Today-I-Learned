@@ -9,6 +9,8 @@
 - [5. 高盛：AI未来的四大巨头](#5-高盛ai未来的四大巨头)
 - [6. AI数据中心价值链](#6-ai数据中心价值链)
 - [7. AI芯片供应链](#7-ai芯片供应链)
+- [8. Nvidia](#8-nvidia)
+  - [8.1 NVLink](#81-nvlink)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -144,3 +146,31 @@ TSMC 是世界领先的半导体代工厂。该公司在先进芯片制造方面
 AWS 拥有 32% 的可观市场份额，可提供训练和推理任务所需的计算能力。该公司促进了 AI 解决方案的大规模部署。
 
 ![](/picture/AI_Semiconductor_Ecosystem.jpg)
+
+# 8. Nvidia
+
+## 8.1 NVLink
+
+想象一下，你有一群人在做一个巨大的谜题。如果他们不能快速地相互交谈或有效地分享作品，他们将难以取得进展。话题标签#NVLink 就像给这些人提供具有即时通信和超快速共享功能的对讲机。在计算方面，NVLink 为 GPU 执行此操作！
+
+什么是 NVLink？
+NVLink 是 NVIDIA 开发的一种高速连接技术。它使多个 GPU（图形处理单元）能够比 话题标签#PCIExpress 等传统技术更快地相互通信，后者仍在许多计算机中使用。从本质上讲，NVLink 将单个 GPU 变成了一个可以无缝协作的“超级团队”。
+
+为什么 NVLink 很重要？
+在 NVIDIA 的 Blackwell 系统 （https://lnkd.in/gtu-f-6E） 中，可以使用 NVLink 互连 144 个 GPU。这种大规模的互连性使所有 GPU 都可以作为一个统一的系统运行。数据毫不费力地流动，延迟最小，可以更快、更高效地完成大型任务，例如训练 AI 模型。
+
+好处
+处理大数据：在 AI 等任务中，数据在 GPU 之间不断移动。如果通信速度慢，系统就会陷入困境。使用 NVLink，数据移动速度更快，使一切保持同步。
+
+生成式 AI：创建新图像或生成类似人类的文本等应用程序需要同时进行大量计算。借助 NVLink，所有涉及的 GPU 都可以协同工作而不会降低速度。
+
+扩大规模：需要更多功能？NVLink 允许轻松添加更多 GPU，并且它们都可以有效地相互“对话”。这种可扩展性对于不断增长的 AI 工作负载至关重要。
+
+更大的图景
+虽然 NVLink 乍一看似乎只是一个更快的连接，但它是一项基础技术，允许像 Blackwell 这样的大型 AI 系统作为一台超级强大的智能机器运行。通过保持 GPU 连接和数据平稳移动，NVLink 成为推动 AI 未来发展的关键部分。
+
+🚀 下次当您考虑复杂的 AI 应用程序或大型数据处理任务时，请记住，NVLink 等技术是实现这些惊人突破的原因。
+
+![](/picture/NVLink.gif)
+
+<https://www.linkedin.com/posts/chandan-h-p-271b61108_nvidia-nvlink-pciexpress-activity-7261365061510717441-lN3M?utm_source=share&utm_medium=member_desktop>
