@@ -17,6 +17,7 @@
   - [4.10 如何在不破坏数据中心的情况下打造更强大的芯片 - economist](#410-如何在不破坏数据中心的情况下打造更强大的芯片---economist)
   - [4.11 ECOC 2024](#411-ecoc-2024)
   - [4.12 通过三重谐振光子分子实现高效宽带可调谐射频光转换](#412-通过三重谐振光子分子实现高效宽带可调谐射频光转换)
+  - [4.13 光学技术：革新带宽密度和能效 示意图](#413-光学技术革新带宽密度和能效-示意图)
 - [5. Avicena](#5-avicena)
   - [5.1《High Bandwidth GaN-based Micro-LEDs at Temperatures up to 400°C》](#51high-bandwidth-gan-based-micro-leds-at-temperatures-up-to-400c)
   - [5.2 硅光子学联合封装。 凉！ 但它实用吗？Bardia Pezeshki post at Linkedin](#52-硅光子学联合封装-凉-但它实用吗bardia-pezeshki-post-at-linkedin)
@@ -573,6 +574,15 @@ Blackwell 将不同部件组合在一起，表明了芯片制造商在提高计�
 ![](/picture/Ayarlabs4.jpg)
 ![](/picture/Ayarlabs5.jpg)
 
+## 4.13 光学技术：革新带宽密度和能效 示意图
+
+电线提供 10 到 100 Gbps 的带宽，能耗更高 （~10 pJ/bit）。相比之下，光子线（使用单模光纤）实现了 10 到 20 Tbps 的带宽，而消耗的带宽不到 1 pJ/bit。
+
+光学器件通过在更小的物理占用空间内利用多个波长来提供卓越的带宽密度，从而实现更快、更节能的数据传输。
+
+资料来源：Ayar Labs
+
+![](/picture/Ayarlabs6.jpg)
 
 # 5. Avicena
 
