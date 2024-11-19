@@ -31,6 +31,7 @@
 - [26. 6G的命运是否会重复5G无线的失败？](#26-6g的命运是否会重复5g无线的失败)
 - [27. 谷歌首席执行官桑达尔·皮查伊接受大卫·鲁宾斯坦秀采访 20241030](#27-谷歌首席执行官桑达尔皮查伊接受大卫鲁宾斯坦秀采访-20241030)
 - [28. Groq 首席执行官乔纳森·罗斯：人工智能语言模型是思维的望远镜，它们将帮助我们看到智能比我们想象的更广阔](#28-groq-首席执行官乔纳森罗斯人工智能语言模型是思维的望远镜它们将帮助我们看到智能比我们想象的更广阔)
+- [29. 你知道什么是反科学吗？](#29-你知道什么是反科学吗)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1172,3 +1173,43 @@ Webb 表示：“他们需要从网络中删除身份验证和本地语音配置
 ‘Think back to Galileo—someone who got in a lot of trouble. The reason he got in trouble was he invented the telescope, popularized it, and made some claims that we were much smaller than everyone wanted to believe. We were supposed to be the center of the universe, and it turns out we weren’t. And the better the telescope got, the more obvious it became that we were small. Large language models are the telescope for the mind. It’s become clear that intelligence is larger than we are, and it makes us feel really, really small, and it’s scary. But what happened over time was as we realized the universe was larger than we thought and we got used to that, we started to realize how beautiful it was, and our place in the universe. I think that's what’s going to happen. We’re going to realize intelligence is more vast than we ever imagined, and we're going to understand our place in it, and we're not going to be afraid of it.’
 
 <https://www.youtube.com/watch?v=UneoszmxRGg&t=2014s>
+
+# 29. 你知道什么是反科学吗？
+
+你知道什么是反科学吗？
+
+- 声称任何体型的人都能保持健康。
+- 声称 2 型糖尿病是一种慢性渐进性疾病。
+- 声称高血压是盐摄入量的问题。
+- 声称红肉会致癌
+- 声称疫苗没有潜在的严重副作用。
+
+你知道什么是支持科学吗？
+
+- 承认肥胖危害健康。
+- 了解 2 型糖尿病是一种饮食疾病。
+- 明白高血压通常是代谢问题，而不是盐摄入问题。
+- 了解红肉是地球上最健康的食物。
+- 在为数百万健康人注射疫苗之前，要求对疫苗进行长期安全研究，就像对其他药物进行严格测试一样。
+
+---埃利-贾鲁格医学博士
+
+You know what’s Anti-Science?
+
+- Claiming that you can be healthy at every size.
+- Claiming that type 2 diabetes is a chronic, progressive disease.
+- Claiming that high blood pressure is a salt intake problem.
+- Claiming that red meat causes cancer.
+- Claiming that vaccines don’t have potential serious side effects.
+
+You know what’s Pro-Science?
+
+- Acknowledging that obesity is a health hazard.
+- Understanding that type 2 diabetes is a dietary disease.
+- Understanding that high blood pressure is often a metabolic issue, not a salt intake problem.
+- Understanding that red meat is the healthiest food on the planet. 
+- Demanding long-term safety studies on vaccines before injecting millions of healthy people, just as other medications are rigorously tested.
+
+---Elie Jarrouge, MD
+
+<https://x.com/ElieJarrougeMD/status/1858620984527646999>
