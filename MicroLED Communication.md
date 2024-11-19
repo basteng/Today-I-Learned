@@ -1243,7 +1243,7 @@ SoC 通过硅中介层上的电气通路与电子和光子 IC 进行电气数据
 
 摘录（编辑）：
 
-📝在这项工作中，我们将串行 话题标签#optical 链路的能效与并行链路的能效进行了比较;在相同的数据吞吐量和 BER 下进行短距离芯片间通信。我们的分析预测，将并行链路与其最快的串行链路进行比较，能效提高 >10 倍是可行的。
+📝在这项工作中，我们将串行 optical 链路的能效与并行链路的能效进行了比较;在相同的数据吞吐量和 BER 下进行短距离芯片间通信。我们的分析预测，将并行链路与其最快的串行链路进行比较，能效提高 >10 倍是可行的。
 
 📝在这项工作中，我们提出了 2Gbps 集成 RX 的设计，为此进行了跨阻噪声优化，以降低直流功耗和有效面积，而不会实际牺牲信噪比 （SNR） 性能。本文报道了一种新颖的差分数字偏移消除 （DDOC） 设计。
 
@@ -1251,12 +1251,12 @@ SoC 通过硅中介层上的电气通路与电子和光子 IC 进行电气数据
 
 📝蓝光是并行光链路的良好候选者，因为它使紧凑型 RX 能够与具有低单位面积电容的光电探测器集成，这对 P/I（例如，能源效率）和 S/I（例如，参考输入的 RMS 噪声）有益。
 
-📝最好将光电探测器集成到 话题标签#CMOS 中，因为这样做有助于最大限度地减少与 ESD 二极管和焊盘相关的电容。它还支持高 话题标签#TIA 增益，同时降低 RX 的输入参考噪声和直流功耗。此外，包装成本降低，密度提高。
+📝最好将光电探测器集成到 CMOS 中，因为这样做有助于最大限度地减少与 ESD 二极管和焊盘相关的电容。它还支持高 话题标签#TIA 增益，同时降低 RX 的输入参考噪声和直流功耗。此外，包装成本降低，密度提高。
 
 📝由于在撰写本文时，32 元件 RX 阵列（采用 X-FAB 130nm CMOS SOI 技术）的光纤测试装置尚未完成，因此我们使用自由空间光学测试装置提供单个 RX 阵列元件的测量结果。
 
 🔍观察：
-话题标签#Parallel 或 话题标签#Serial ，集成光电探测器或片上激光器，话题标签#MicroLED 、VCSEL 或 FP、420nm、850nm 或 1310nm、NRZ、PAM 或相干...重要的是，在新AI 时代，无论是短距离 （<10m) interchip communications and short-range (<1km) 话题标签#datacenter interconnects (DCI)—and everything in between—demand continued and accelerated scaling in spectral/bandwidth density and energy efficiency. 
+Parallel 或 Serial ，集成光电探测器或片上激光器，MicroLED 、VCSEL 或 FP、420nm、850nm 或 1310nm、NRZ、PAM 或相干...重要的是，在新AI 时代，无论是短距离 （<10m) interchip communications and short-range (<1km) 话题标签#datacenter interconnects (DCI)—and everything in between—demand continued and accelerated scaling in spectral/bandwidth density and energy efficiency. 
 
 VCSEL: Vertical-Cavity Surface-Emitting Laser
 FP: Fabry-Perot (laser)
