@@ -48,6 +48,7 @@
   - [5.23 20241023 加利福尼亚州硅谷举行的 PECC 峰会](#523-20241023-加利福尼亚州硅谷举行的-pecc-峰会)
   - [5.24 光学互连高带宽存储器架构专利](#524-光学互连高带宽存储器架构专利)
   - [5.25 CPO Example - MicroLED Parallel D2D Links](#525-cpo-example---microled-parallel-d2d-links)
+    - [5.25.1 Parallel Versus Serial: Design of an Optical Receiver With Integrated Blue Photodetectors and Digitally Tunable Low-End Cutoff Frequency for MicroLED-Based Parallel Interchip Communication](#5251-parallel-versus-serial-design-of-an-optical-receiver-with-integrated-blue-photodetectors-and-digitally-tunable-low-end-cutoff-frequency-for-microled-based-parallel-interchip-communication)
   - [5.26 High Bandwidth GaN-Based Micro-LEDs at Temperatures up to 400 ◦C](#526-high-bandwidth-gan-based-micro-leds-at-temperatures-up-to-400-c)
     - [5.26.1 参考文献16 电注入 III 族氮化物发光二极管中的差异载流子寿命和传输效应](#5261-参考文献16-电注入-iii-族氮化物发光二极管中的差异载流子寿命和传输效应)
     - [5.26.2 参考文献12 III 族氮化物量子异质结构中的载流子动力学和库仑增强捕获](#5262-参考文献12-iii-族氮化物量子异质结构中的载流子动力学和库仑增强捕获)
@@ -1266,7 +1267,7 @@ PAM: Pulse Amplitude Modulation
 ![](/picture/1718755938597.jpg)
 
  Additional reading:
- 
+
 🏷️Full article: https://lnkd.in/gdn9qgUe 
 
 🏷️O-Band Link: https://lnkd.in/gheaJCis 
@@ -1278,6 +1279,23 @@ PAM: Pulse Amplitude Modulation
 🏷️CPO (V): https://lnkd.in/gAGh_nwK 
 
 <https://www.linkedin.com/posts/mingliangliu_d2d-optical-cmos-activity-7208984910638796801-pBFZ?utm_source=share&utm_medium=member_desktop>
+
+### 5.25.1 Parallel Versus Serial: Design of an Optical Receiver With Integrated Blue Photodetectors and Digitally Tunable Low-End Cutoff Frequency for MicroLED-Based Parallel Interchip Communication
+
+这篇论文发表于《IEEE固态电路杂志》2024年5月刊，标题为“Parallel Versus Serial: Design of an Optical Receiver With Integrated Blue Photodetectors and Digitally Tunable Low-End Cutoff Frequency for MicroLED-Based Parallel Interchip Communication”，主要研究了基于微LED的并行芯片间通信中光接收机的设计。以下是论文的核心内容总结：
+
+1. **并行与串行光链路能效对比**
+    - **去除SerDes和CDR**：多数电气通信系统接口宽且单通道速度低，串行光链路需数据序列化和反序列化，并行链路可避免，且能分摊时钟通道功耗，从而提升能效。
+    - **光发射机（TX）能效提升**：并行光链路中，各通道比特率降低，接收机输入参考均方根噪声电流减小，为保持信噪比和误码率，发射功率可降低，使并行TX功耗变为串行的\(1 / \sqrt{N}\)。
+    - **光接收机（RX）能效提升**：并行接收机阵列元素带宽要求降低，TIA反馈电阻增大、输入参考均方根噪声电流减小，信号摆幅增大。为达相同信噪比，并行接收机阵列元素光电探测器电流减小，通过计算，并行接收机相比串行在能效上有显著提升，且随着并行通道数\(N\)增加，能效提升明显，但存在上限，超过上限后提升饱和。
+2. **并行芯片间通信光接收机设计**
+    - **集成蓝光光电探测器**：CMOS工艺集成光电探测器可提高前端TIA增益、降低噪声和功耗、减少封装成本、增加阵列密度。本文设计的光电探测器在420nm波长下响应度为0.17A/W，结电容约10fF（15×15µm尺寸）。
+    - **差分平衡并联反馈TIA的跨阻 - 噪声优化**：多数光接收机采用基于逆变器的TIA，但存在电源噪声抑制不足和噪声性能问题。本文采用差分放大器配置反馈，通过分析简化电路模型，得出跨阻传递函数、带宽和噪声等表达式，提出跨阻 - 噪声优化方法，设计TIA时使阻尼系数\(\zeta = 0.71\)，以降低噪声、增强带宽，同时确定了优化的输入电容\(C_{I}\)范围（约\(0.3C_{PD}\)），可降低功耗、提高紧凑性，避免使用多级或伸缩式配置来提升直流增益。
+    - **后置放大器（PA）和限幅放大器（LA）**：PA1、PA2和\(G_{m}\)晶体管对用于补偿光电探测器直流电流和放大器失调，\(G_{m}\)级在PA2输出端补偿可降低噪声贡献和对DAC分辨率要求，LA采用五级，总增益约46dB，确保在最差条件下也能达到相同信号摆幅。
+    - **差分数字失调消除（DDOC）**：传统模拟失调消除电路中，RC滤波器实现低截止频率需大电容，不切实际。本文提出DDOC，通过\(R_{1}C_{1}\)网络滤波、动态比较器、数字增益控制（DGC）、数字积分器和DAC等实现低至几赫兹的截止频率可调，可提供零低频，通过合理选择DAC位数（5位），在保证性能的同时避免确定性抖动过大和设计复杂度过高，确保了DDOC正确运行。
+3. **实验结果**：采用0.13µm XFab CMOS SOI工艺制作了光接收机阵列，对单接收阵列元素测试，在1V电源下功耗1mW，面积50×50µm。测试结果表明，误码率为\(10^{-12}\)时灵敏度为 - 19.3dBm，与其他同类工作相比，该原型在能效和紧凑性方面表现出色，证明其是并行芯片间通信有潜力的光接口。
+
+综上所述，论文通过理论分析对比了并行与串行光链路能效，提出了一种适用于并行芯片间通信的光接收机设计，包括集成蓝光光电探测器、优化TIA、设计相关放大器和DDOC电路等，实验结果验证了设计的有效性和优越性。
 
 ## 5.26 High Bandwidth GaN-Based Micro-LEDs at Temperatures up to 400 ◦C
 
