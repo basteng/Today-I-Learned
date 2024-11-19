@@ -10,6 +10,7 @@
 - [10. Microprocessor 和 Microcontoller 有什么区别？](#10-microprocessor-和-microcontoller-有什么区别)
 - [11. CFET](#11-cfet)
   - [11.1 台积电、IBM 和三星将于 12 月在一场活动中展示其下一代 CFET 晶体管创新](#111-台积电ibm-和三星将于-12-月在一场活动中展示其下一代-cfet-晶体管创新)
+- [12.Memory Hierarchy: Basics](#12memory-hierarchy-basics)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -473,3 +474,6 @@ IMEC 将展示其在“双排 CFET”方面的工作，旨在进一步在垂直�
 IEDM 会议将于 2024 年 12 月 7 日至 11 日在旧金山举行，会议结束后可在线访问录制的演讲。
 
 <https://www.tomshardware.com/tech-industry/tsmc-ibm-and-samsung-to-present-their-next-gen-cfet-transistor-innovations-at-an-event-in-december>
+
+# 12.Memory Hierarchy: Basics
+
