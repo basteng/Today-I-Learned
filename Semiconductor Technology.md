@@ -482,3 +482,4 @@ IEDM 会议将于 2024 年 12 月 7 日至 11 日在旧金山举行，会议结�
 
 # 13. Potential of EUV for high volume manufacturing of DRAM
 
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/Potential%20of%20EUV%20for%20high%20volume%20manufacturing%20of%20DRAM.pdf>
