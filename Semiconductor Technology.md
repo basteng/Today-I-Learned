@@ -477,3 +477,4 @@ IEDM 会议将于 2024 年 12 月 7 日至 11 日在旧金山举行，会议结�
 
 # 12.Memory Hierarchy: Basics
 
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/Memory%20Hierarchy%20Basics.pdf>
