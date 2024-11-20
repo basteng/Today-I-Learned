@@ -113,6 +113,29 @@
   - [36.4 Equipment](#364-equipment)
   - [36.5 Material](#365-material)
   - [36.6 EDA](#366-eda)
+- [37. 产业链角色](#37-产业链角色)
+  - [37.1 Fabless](#371-fabless)
+  - [37.2 Foundry](#372-foundry)
+  - [37.3 IDM](#373-idm)
+  - [37.4 OSAT](#374-osat)
+  - [37.5 Equipment](#375-equipment)
+  - [37.6 Material](#376-material)
+  - [37.7 EDA](#377-eda)
+  - [37.8 Others](#378-others)
+    - [37.8.1 PCB](#3781-pcb)
+      - [37.8.1.1 市场](#37811-市场)
+        - [37.8.1.1.1 印刷电路板 (PCB) 全球市场和供应商](#378111-印刷电路板-pcb-全球市场和供应商)
+- [38. 芯片类型](#38-芯片类型)
+  - [38.1 IC](#381-ic)
+  - [38.2 Discrets](#382-discrets)
+  - [38.3 Optoelectronics](#383-optoelectronics)
+  - [38.4 Sensors \& Actuators](#384-sensors--actuators)
+- [39. 应用领域](#39-应用领域)
+  - [39.1 HPC](#391-hpc)
+  - [39.2 Mobile](#392-mobile)
+  - [39.3 CE](#393-ce)
+  - [39.4 Auto](#394-auto)
+  - [39.5 Industry / Gov.](#395-industry--gov)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2139,5 +2162,100 @@ AI数据中心有季节，智能手机有季节，PC和电视有季节，汽车�
 ## 36.5 Material
 
 ## 36.6 EDA
+
+# 37. 产业链角色
+
+## 37.1 Fabless
+
+## 37.2 Foundry
+
+## 37.3 IDM
+
+## 37.4 OSAT
+
+## 37.5 Equipment
+
+## 37.6 Material
+
+## 37.7 EDA
+
+## 37.8 Others
+
+### 37.8.1 PCB
+
+#### 37.8.1.1 市场
+
+##### 37.8.1.1.1 印刷电路板 (PCB) 全球市场和供应商
+
+PCB 是 Printed Circuit Board（印刷电路板）的缩写，是由基材、绝缘层、铜箔等构成的电路基板，通过印刷、蚀刻等工序形成电路。
+
+PCB主要分为三类：:
+
+刚性 PCB（RPCB、HDI）Rigid PCBs (RPCB, HDI)
+
+柔性印刷电路（FPC）Flexible printed circuits (FPC)
+
+集成电路载板（ABF、BT）IC substrates (ABF, BT)
+
+![](/picture/PCB1.webp)
+
+如何制作 PCB？
+
+![](/picture/PCB2.webp)
+
+IC载板：FC-BGAIC substrate: FC-BGA
+
+高密度半导体封装基板上的FC-BGA（倒装芯片球栅阵列）可使高速LSI芯片具有更多的功能。
+
+![](/picture/PCB3.webp)
+
+FC-BGA基板（Build-up基板）的结构
+
+![](/picture/PCB4.webp)
+
+类CoWoS封装的结构
+
+![](/picture/PCB5.webp)
+
+目前PCB类型仍以多层刚性板为主，其次为柔性板，其中HDI板受ADAS自动驾驶系统、HPC高速传输需求带动，份额逐渐上升；IC载板也受AI服务器性能需求提升带动，份额逐渐上升。
+
+PCB行业市场概况
+
+![](/picture/PCB6.webp)
+
+推动 PCB 市场发展的因素包括电子设备需求的不断增长、技术进步、汽车行业电子元件集成度的提高、全球电信基础设施的不断扩张以及供应链的稳定性和效率。
+
+2022年全球PCB分析及顶级PCB制造商排名估计，去年PCB产值达到975亿美元，较2021年增长6.7%。按资金来源，台湾公司以31.97%的市场份额保持全球第一。值得注意的是，中国公司近年来迅速追赶，以31.52%的份额排名第二，其次是日本（15.9%）和韩国（10.67%）。
+
+![](/picture/PCB7.webp)
+![](/picture/PCB8.webp)
+
+从生产角度来看，约有58.1%的电路板在中国大陆生产，是全球最大的生产基地，其次是台湾（12.2%）、韩国（8.8%）和日本（6.7%）。上世纪80年代，中国和台湾在全球PCB领域都只是小角色，但现在超过70%的电路板都是在这些地区生产的。随着两岸PCB制造商在泰国投资，其全球市场份额预计将继续上升。虽然电路板制造商之间存在竞争，但集群效应可以进一步推动进步。
+
+![](/picture/PCB9.webp)
+![](/picture/PCB10.webp)
+
+# 38. 芯片类型
+
+## 38.1 IC
+
+## 38.2 Discrets
+
+## 38.3 Optoelectronics
+
+## 38.4 Sensors & Actuators
+
+# 39. 应用领域
+
+## 39.1 HPC
+
+## 39.2 Mobile
+
+## 39.3 CE
+
+## 39.4 Auto
+
+## 39.5 Industry / Gov.
+
 
 
