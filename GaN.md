@@ -105,7 +105,8 @@
 - [31. GaN市场](#31-gan市场)
   - [31. 商业模式讨论 IDM Fabless](#31-商业模式讨论-idm-fabless)
 - [32. 主要会议](#32-主要会议)
-- [32.1 IEEE Workshop on Wide Bandgap Power Devices \& Applications](#321-ieee-workshop-on-wide-bandgap-power-devices--applications)
+  - [32.1 IEEE Workshop on Wide Bandgap Power Devices \& Applications](#321-ieee-workshop-on-wide-bandgap-power-devices--applications)
+- [33.氮化硼 可以取代 氮化镓 吗？](#33氮化硼-可以取代-氮化镓-吗)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -1769,6 +1770,30 @@ GaN 基器件中的缺陷密度对其性能和可靠性起着关键作用。采�
 
 # 32. 主要会议
 
-# 32.1 IEEE Workshop on Wide Bandgap Power Devices & Applications 
+## 32.1 IEEE Workshop on Wide Bandgap Power Devices & Applications 
 
 https://wipda.org/
+
+# 33.氮化硼 可以取代 氮化镓 吗？
+
+根据美国地质调查局的数据，中国生产的半导体镓占全球供应量的近 98%。为了应对中国限制该化合物出口的举措，美国能源部 (DOE) 向美国科学家发出征集提案，以设计一种替代 GaN 基半导体的解决方案，并向四个团队奖励 100 万美元，用于为期一年的研究冲刺。
+
+宾夕法尼亚州立大学工程科学与力学教授帕特里克·莱纳汉 (Patrick Lenahan) 将研究用氮化硼替代 GaN 基器件的可能性。俄亥俄州立大学、爱荷华大学和 QuantCAD（一家在爱荷华州爱荷华城和芝加哥设有办事处的量子技术初创公司）的联合首席研究员将与莱纳汉一起参与调查。
+
+“我们认为，在一些技术关键的 GaN 基应用中，硼是镓的潜在替代品，但我们不知道具体效果如何，”Lenahan 说道。“我们的团队由理论家和实验家组成，他们将努力确定氮化硼在实际系统中的物理工作原理，以及用它代替 GaN 可能存在哪些缺点。”
+
+氮化硼的物理特性与 GaN 相当，但人们对其了解甚少，在某些关键应用中可能具有类似的性能。“硼的进口限制与镓不同，因此它可以成为多种应用中的长期替代品，”Lenahan 说道。
+
+Lenahan 和他实验室的学生将使用电检测磁共振、近零场磁阻和常规电子顺磁共振等技术，结合各种电测量来评估用氮化硼制造的半导体器件。这三种技术都通过测试电子的自旋特性，提供有关电子与氮化硼缺陷相互作用方式的信息。Lenahan 表示，这种理解将是评估氮化硼作为半导体的有效性的关键。
+
+他补充道：“这个项目很大程度上是团队合作的结果，涉及设备制造、各种测量和理论分析。”
+
+俄亥俄州立大学物理学教授兼量子信息科学与工程中心联席主任 Ezekiel Johnston-Halperin 将制造由二维氮化硼层构成的设备，并通过称为电子隧穿的过程探索电子传输。
+
+Johnston-Halperin 的实验室已经试验了一种构建超薄结构的工艺，该工艺利用电子隧穿来灵敏地探测氮化硼中原子杂质的性质。“通过选择刚好超出这种隧穿过程范围的氮化硼厚度，通过该设备的电流对晶体缺陷的存在变得极为敏感，”他说。
+
+Lenahan 和 Johnston-Halperin 将与 QuantCAD 的 Sina Soleimanikahnoj 和爱荷华大学的研究员 Durga Paudyal 共同努力，获取氮化硼中杂质的独特“指纹”，以优化该化合物的化学结构设计。
+
+在这一年的研究冲刺中，时间非常紧迫，合作者将齐心协力，确定氮化硼是否存在切实可行的前进道路，并大致确定科学家和技术人员如何最有效地沿着这条道路前进。
+
+<https://compoundsemiconductor.net/article/120611/Could_BN_replace_GaN>
