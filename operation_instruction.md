@@ -9,15 +9,16 @@
 - [8. 推荐好用的SS/V2RAY/TROJAN机场](#8-推荐好用的ssv2raytrojan机场)
 - [9. 海外手机卡](#9-海外手机卡)
 - [10. 树莓派科学上网](#10-树莓派科学上网)
-- [10.1 简单方式 - raspberry\_pi\_shadowsocks](#101-简单方式---raspberry_pi_shadowsocks)
-  - [本文为使用 python 版本的 shadowsocks 客户端来实现科学上网](#本文为使用-python-版本的-shadowsocks-客户端来实现科学上网)
-  - [raspberry\_shadowsocks.sh](#raspberry_shadowsockssh)
-  - [配置 chromium/firefox SwitchOmega](#配置-chromiumfirefox-switchomega)
-- [10.2 稍微复杂一点方式 - shadowsocks-for-raspberry](#102-稍微复杂一点方式---shadowsocks-for-raspberry)
-  - [安装shadowsocks](#安装shadowsocks)
-  - [安装SwitchyOmega](#安装switchyomega)
-  - [安装privoxy](#安装privoxy)
+  - [10.1 简单方式 - raspberry\_pi\_shadowsocks](#101-简单方式---raspberry_pi_shadowsocks)
+    - [本文为使用 python 版本的 shadowsocks 客户端来实现科学上网](#本文为使用-python-版本的-shadowsocks-客户端来实现科学上网)
+    - [raspberry\_shadowsocks.sh](#raspberry_shadowsockssh)
+    - [配置 chromium/firefox SwitchOmega](#配置-chromiumfirefox-switchomega)
+  - [10.2 稍微复杂一点方式 - shadowsocks-for-raspberry](#102-稍微复杂一点方式---shadowsocks-for-raspberry)
+    - [安装shadowsocks](#安装shadowsocks)
+    - [安装SwitchyOmega](#安装switchyomega)
+    - [安装privoxy](#安装privoxy)
 - [11. SSR 导入](#11-ssr-导入)
+- [12. Transformer by hand - Full Stack in Excel](#12-transformer-by-hand---full-stack-in-excel)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -347,14 +348,14 @@ ssrcloud
 
 # 10. 树莓派科学上网
 
-# 10.1 简单方式 - raspberry_pi_shadowsocks
+## 10.1 简单方式 - raspberry_pi_shadowsocks
 raspberry pi 3b+ 树莓派 shadowsocks 科学上网
 
   >Raspberry pi 3 Model B+  
   >OS：原装系统  
   >版本：Element 14  
   
-## 本文为使用 python 版本的 shadowsocks 客户端来实现科学上网  
+### 本文为使用 python 版本的 shadowsocks 客户端来实现科学上网  
 
 安装 python 版本的 shadowsocks 客户端与相关套件  
 
@@ -425,11 +426,11 @@ raspberry pi 3b+ 树莓派 shadowsocks 科学上网
 
 至此，ss 客户端已经配置完毕！！！
 
-## raspberry_shadowsocks.sh  
+### raspberry_shadowsocks.sh  
 一键配置脚本，包括以上全部下载和全部修改  
 用户只需按照提示提供自己梯子的相关信息即可  
 
-## 配置 chromium/firefox SwitchOmega 
+### 配置 chromium/firefox SwitchOmega 
 
 下载链接：[SwitchOmega](https://github.com/FelisCatus/SwitchyOmega/releases)  
 
@@ -441,9 +442,9 @@ raspberry pi 3b+ 树莓派 shadowsocks 科学上网
 
 ![image](https://github.com/Garletta/raspberry_pi_shadowsocks/raw/master/image/raspberry_youtube.png)  
 
-# 10.2 稍微复杂一点方式 - shadowsocks-for-raspberry
+## 10.2 稍微复杂一点方式 - shadowsocks-for-raspberry
 新到手了树莓派4,没有ss总感觉怎么弄都不太舒服，所以折腾了半天。不保证一定正确和最优
-## 安装shadowsocks
+### 安装shadowsocks
 其实可以使用sudo apt-get install shadowsocks直接解决，奈何我申请的vps使用aes-256-gcm加密的，apt下来的好像没有这种加密方式，所以还是自己下载吧。
 - 到https://github.com/shadowsocks/shadowsocks git clone 这个项目
 - 进入目录，python setup.py --build 编译
@@ -458,14 +459,14 @@ sudo sslocal -c /etc/shadowsocks/config.json -d start
 ```
 OK，shadowsocks就安装好了，但是socks5不支持http和https的协议，所以还需要安装代理，首先给chromimum安装switchyomega
 
-## 安装SwitchyOmega
+### 安装SwitchyOmega
 - 由于chromimum没有商店，所以到https://github.com/FelisCatus/SwitchyOmega/releases 下载.crx格式的最新插件
 - 现在的chromimum不支持拖入安装，所以需要更改.crx为.zip或者.rar解压到文件夹之后，在chromimum插件页面导入整个文件夹
 - 进入SwitchyOmega，在proxy页面配置ss，协议选socks，代理服务器127.0.0.1，端口1080
 - 可以配置auto switch， 默认直连，代理规则选刚配置完的proxy，规则列表格式选AutoProxy，网址写入https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
 好的，现在chromimum已经能上谷歌了，如果想要shell也能使用ss，就需要安装privoxy
 
-## 安装privoxy
+### 安装privoxy
 - 安装privoxy， sudo apt-get install privoxy
 - 配置privoxy，sudo vim /etc/privoxy/config，找到并修改为以下代码
 ```
@@ -498,3 +499,30 @@ SSRCloud导入方法
 - 4.右键点SSR
 - 5.用户中心 -> [SSR] 拷贝全部节点 URL 
 - 6.点击剪贴板批量导入ssr://链接
+
+# 12. Transformer by hand - Full Stack in Excel
+
+<https://github.com/ImagineAILab/ai-by-hand-excel/>
+
+我刚刚发布了我的第一个 Transformer 模型的 “全栈” Excel 实现。随意下载和尝试。
+
+= 特点 =
+
+• 输入嵌入
+• 输出嵌入
+•译码器
+•编码器
+• 位置编码
+• 自我关注
+• 交叉注意力
+• 多头注意力
+• 休闲口罩
+• 缩放点积
+• 跳过连接
+• LayerNorm
+• ReLU 激活
+• 前馈
+• Softmax
+• 输出概率
+
+<https://www.linkedin.com/posts/tom-yeh_transformer-aibyhand-excel-activity-7265044110388932608-w3Te?utm_source=share&utm_medium=member_desktop>
