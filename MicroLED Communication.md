@@ -3050,4 +3050,5 @@ GaAs - AlGaAs高辐射LED用于光通信系统的功率和调制带宽研究
 
 # 41. MicroLED Displays Industry status and Roadmap
 
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/MicroLED%20Displays%20Industry%20status%20and%20Roadmap.pdf>
 
