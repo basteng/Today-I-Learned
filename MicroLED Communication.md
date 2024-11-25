@@ -57,7 +57,7 @@
   - [5.29 使用基于 LED 的并行性实现快速光学互连 gazettabyte](#529-使用基于-led-的并行性实现快速光学互连-gazettabyte)
   - [5.30 不同的光链路配置 - DR8 为 1.6 TB，使用 224G SerDes - PECC峰会](#530-不同的光链路配置---dr8-为-16-tb使用-224g-serdes---pecc峰会)
   - [5.31 LED同样有调制能力 - PECC峰会](#531-led同样有调制能力---pecc峰会)
-- [5.32 Avicena 采用uLED做为AI组网的光源](#532-avicena-采用uled做为ai组网的光源)
+  - [5.32 Avicena 采用uLED做为AI组网的光源](#532-avicena-采用uled做为ai组网的光源)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -1424,7 +1424,7 @@ LED（发光二极管）简介 - 取代白炽灯和 CFL 灯 - 与激光器不同
 
 <https://www.linkedin.com/posts/advanced-photonics-coalition_technology-innovation-future-activity-7262347135835086848-0_p2?utm_source=share&utm_medium=member_desktop>
 
-# 5.32 Avicena 采用uLED做为AI组网的光源
+## 5.32 Avicena 采用uLED做为AI组网的光源
 
 Y10T317 Arista对于AI组网光模块发展观点
 提到用铜缆具有很好的可靠性，也有低能耗的特点，只是趋肤效应导致其传输距离有限。
