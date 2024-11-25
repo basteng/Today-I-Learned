@@ -57,6 +57,7 @@
   - [5.29 使用基于 LED 的并行性实现快速光学互连 gazettabyte](#529-使用基于-led-的并行性实现快速光学互连-gazettabyte)
   - [5.30 不同的光链路配置 - DR8 为 1.6 TB，使用 224G SerDes - PECC峰会](#530-不同的光链路配置---dr8-为-16-tb使用-224g-serdes---pecc峰会)
   - [5.31 LED同样有调制能力 - PECC峰会](#531-led同样有调制能力---pecc峰会)
+- [5.32 Avicena 采用uLED做为AI组网的光源](#532-avicena-采用uled做为ai组网的光源)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -1422,6 +1423,61 @@ LED（发光二极管）简介 - 取代白炽灯和 CFL 灯 - 与激光器不同
 ![](/picture/LED_Modulated.jpg)
 
 <https://www.linkedin.com/posts/advanced-photonics-coalition_technology-innovation-future-activity-7262347135835086848-0_p2?utm_source=share&utm_medium=member_desktop>
+
+# 5.32 Avicena 采用uLED做为AI组网的光源
+
+Y10T317 Arista对于AI组网光模块发展观点
+提到用铜缆具有很好的可靠性，也有低能耗的特点，只是趋肤效应导致其传输距离有限。
+
+![](/picture/Avicena3.png)
+
+100G/ch的传输速率，经过优化后可传输2m左右，前一阵儿Marvell也发布基于他家3nm的128G的PCI互联，也可以采用铜缆互联。
+
+![](/picture/Avicena4.png)
+
+光模块呢，主要是失效率高，可靠性差一些。Avicena给出一个图，说的硅基量子阱工艺的激光器，老化失效导致性能退化，而采用量子点工艺可以缓解这种失效风险。
+
+![](/picture/Avicena5.png)
+
+当然，Avicena给出上面的曲线，是为了提出他家的方案，也就是除了用量子点来缓解量子阱的可靠性隐患。还可以采用uLEC的发光二极管方案，就不仅仅拘泥于硅基量子阱激光器，还是量子点激光器了。
+
+【2024-11-2】 高速光模块所用激光器的各种分类
+
+Y10T278 华为与UCSB硅基外延生长量子点激光器的对比
+
+Avicena给出上面的曲线是为了提出他家的方案，所以隐藏了一个常用设置，就是量子阱激光器更多的是选择在三五族晶圆衬底上的，而不是硅衬底上。Y10T278，有很多图来描述硅的衬底与InP或GaAs的晶格不适配，导致的可靠性风险。
+
+其实传统量子阱工艺在5000-1000小时的老化数据，很多的。
+
+![](/picture/Avicena6.png)
+
+刚才是插了一句话，现在回到Avicena引出的LED方案，就是用发光二极管替代多模VCSEL，在2-20m的距离占得一个席位。距离再长，uLED就支持不了了，再短一点那还是铜的优势更大。
+
+![](/picture/Avicena7.png)
+
+用GaN做的小型化LED，也就是uLED，相比较传统DFB，具有更小的激活能，以及温度无关的劣化特性。
+
+怎么说呢？激活能小，这是个劣势，性能随时间劣化的很快，但是呢，没有突然失效。
+
+就类似端妃的一格电娘娘，弱，可活的久。且在不同温度下的工作状态，都是一样的弱。
+
+![](/picture/Avicena8.png)
+
+活得久，也是个优势。
+
+![](/picture/Avicena9.png)
+
+现在的uLED的调制速率大约可支持到4Gbps，需要256个uLED才能达到1Tbps的总的传输容量。
+
+![](/picture/Avicena10.png)
+
+最大可支持到10-30m的互联，所以Avicena选择<20m这个赛道。
+
+![](/picture/Avicena11.png)
+
+![](/picture/Avicena12.png)
+
+<https://mp.weixin.qq.com/s/7nTEIRgbs8A2hG-sloBGkg>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
