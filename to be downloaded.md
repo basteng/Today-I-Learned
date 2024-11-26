@@ -16,6 +16,8 @@
 - [14. Differential Carrier Lifetime in AlGaN Based Multiple Quantum Well Deep UV Light Emitting Diodes at 325 nm](#14-differential-carrier-lifetime-in-algan-based-multiple-quantum-well-deep-uv-light-emitting-diodes-at-325-nm)
 - [15. Capacitance measurements of p-n junctions: depletion layer and diffusion capacitance contributions](#15-capacitance-measurements-of-p-n-junctions-depletion-layer-and-diffusion-capacitance-contributions)
 - [16. Carrier dynamics and Coulomb-enhanced capture in III-nitride quantum heterostructures](#16-carrier-dynamics-and-coulomb-enhanced-capture-in-iii-nitride-quantum-heterostructures)
+- [17. Recombination Rate Analysis of InGaN-Based Red-Emitting Light-Emitting Diodes](#17-recombination-rate-analysis-of-ingan-based-red-emitting-light-emitting-diodes)
+- [18. Droop in InGaN light-emitting diodes: A differential carrier lifetime analysis](#18-droop-in-ingan-light-emitting-diodes-a-differential-carrier-lifetime-analysis)
 
 
 20240925以后 （未下载）
@@ -97,7 +99,13 @@ https://iopscience.iop.org/article/10.1088/0143-0807/14/2/009
 
 https://pubs.aip.org/aip/apl/article-abstract/109/3/033504/1078292/Carrier-dynamics-and-Coulomb-enhanced-capture-in?redirectedFrom=fulltext
 
+# 17. Recombination Rate Analysis of InGaN-Based Red-Emitting Light-Emitting Diodes
 
+https://ieeexplore.ieee.org/document/10049437
+
+# 18. Droop in InGaN light-emitting diodes: A differential carrier lifetime analysis
+
+https://pubs.aip.org/aip/apl/article-abstract/96/10/103504/150538/Droop-in-InGaN-light-emitting-diodes-A?redirectedFrom=fulltext
 
 
 
