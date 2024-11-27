@@ -18,6 +18,7 @@
 - [16. Carrier dynamics and Coulomb-enhanced capture in III-nitride quantum heterostructures](#16-carrier-dynamics-and-coulomb-enhanced-capture-in-iii-nitride-quantum-heterostructures)
 - [17. Recombination Rate Analysis of InGaN-Based Red-Emitting Light-Emitting Diodes](#17-recombination-rate-analysis-of-ingan-based-red-emitting-light-emitting-diodes)
 - [18. Droop in InGaN light-emitting diodes: A differential carrier lifetime analysis](#18-droop-in-ingan-light-emitting-diodes-a-differential-carrier-lifetime-analysis)
+- [19. Large signal circuit model for LED's used in optical communication](#19-large-signal-circuit-model-for-leds-used-in-optical-communication)
 
 
 20240925以后 （未下载）
@@ -106,6 +107,10 @@ https://ieeexplore.ieee.org/document/10049437
 # 18. Droop in InGaN light-emitting diodes: A differential carrier lifetime analysis
 
 https://pubs.aip.org/aip/apl/article-abstract/96/10/103504/150538/Droop-in-InGaN-light-emitting-diodes-A?redirectedFrom=fulltext
+
+# 19. Large signal circuit model for LED's used in optical communication
+
+https://ieeexplore.ieee.org/abstract/document/1481505
 
 
 
