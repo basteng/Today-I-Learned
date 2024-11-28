@@ -4,6 +4,7 @@
 - [2. AI市场格局](#2-ai市场格局)
   - [2.1 生成式AI头部企业市场份额](#21-生成式ai头部企业市场份额)
   - [2.2 美国制裁如何重塑人工智能芯片市场：英伟达的挑战和中国的崛起 - Robert Castellano](#22-美国制裁如何重塑人工智能芯片市场英伟达的挑战和中国的崛起---robert-castellano)
+  - [2.3 AI供应链](#23-ai供应链)
 - [3. 数据中心AI芯片路线图](#3-数据中心ai芯片路线图)
 - [4. Marvell](#4-marvell)
   - [4.1 Accelerated Infrastructure for the AI Era 2024.04](#41-accelerated-infrastructure-for-the-ai-era-202404)
@@ -84,6 +85,14 @@ Nvidia 历来在中国 AI 芯片市场占据主导地位，其 A100 和 H100 GPU
 ![](/picture/AIChip.webp)
 
 <https://drrobertcastellano.substack.com/p/how-us-sanctions-are-reshaping-the?r=2u1w1w&utm_campaign=post&utm_medium=web&triedRedirect=true>
+
+## 2.3 AI供应链
+
+![](/picture/AI-supply-chain.png)
+
+![](/picture/AI-supply-chain1.png)
+
+<https://www.rcdadvisors.com/post/piloting-ai-s-next-hardware-innovations>
 
 # 3. 数据中心AI芯片路线图
 
