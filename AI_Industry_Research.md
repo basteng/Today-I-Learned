@@ -13,6 +13,7 @@
 - [7. AI芯片供应链](#7-ai芯片供应链)
 - [8. Nvidia](#8-nvidia)
   - [8.1 NVLink](#81-nvlink)
+  - [8.2 Nvidia的顶级供应商和客户](#82-nvidia的顶级供应商和客户)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -218,3 +219,18 @@ NVLink 是 NVIDIA 开发的一种高速连接技术。它使多个 GPU（图形�
 ![](/picture/NVLink.gif)
 
 <https://www.linkedin.com/posts/chandan-h-p-271b61108_nvidia-nvlink-pciexpress-activity-7261365061510717441-lN3M?utm_source=share&utm_medium=member_desktop>
+
+## 8.2 Nvidia的顶级供应商和客户
+
+Suppliers: Customers:
+$FN      - 35.1%     $MSFT  - 18.9%
+Wistron  - 17.8%     $META  - 10.1%
+$TSMC    - 10.1%     $SMCI  - 7.8%
+$AMKR    - 6.2%      $GOOGL - 5.9%
+SK Hynix - 5.3%      $AMZN  - 5.4%
+$FLEX    - 3.6%      $DELL  - 3.1%
+ASE      - 2.5%      $TSLA  - 2.1%
+
+![](/picture/Nvidia-supplyer.jpg)
+
+<https://www.linkedin.com/posts/subhash-km-6b5443123_nvidias-top-suppliers-customers-suppliers-activity-7265703131018080256-l2CH?utm_source=share&utm_medium=member_desktop>
