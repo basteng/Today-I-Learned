@@ -1,5 +1,5 @@
 - [1. TSV Interface for DRAM](#1-tsv-interface-for-dram)
-- [2. Introduction to the Light-Emitting Diode](#2-introduction-to-the-light-emitting-diode)
+- [2. Introduction to the Light-Emitting Diode - 未下载](#2-introduction-to-the-light-emitting-diode---未下载)
 - [3.High-Speed Micro-LEDs based on Nano-Engineered InGaN Active Region towards Chip-to-Chip Interconnections](#3high-speed-micro-leds-based-on-nano-engineered-ingan-active-region-towards-chip-to-chip-interconnections)
 - [4. Enhancement of DRAMs performance using resonant tunneling diode buffer](#4-enhancement-of-drams-performance-using-resonant-tunneling-diode-buffer)
 - [5. Emerging GaN Technologies for Next-Generation Millimeter-Wave Applications](#5-emerging-gan-technologies-for-next-generation-millimeter-wave-applications)
@@ -11,7 +11,6 @@
 - [11. 王磊博士论文下载](#11-王磊博士论文下载)
 - [12. Vertically Integrated Self-Monitoring AlGaN-Based Deep Ultraviolet Micro-LED Array with Photodetector Via a Transparent Sapphire Substrate Toward Stable and Compact Maskless Photolithography Application](#12-vertically-integrated-self-monitoring-algan-based-deep-ultraviolet-micro-led-array-with-photodetector-via-a-transparent-sapphire-substrate-toward-stable-and-compact-maskless-photolithography-application)
 - [12. 李振浩博士论文下载](#12-李振浩博士论文下载)
-- [12. Vertically Integrated Self-Monitoring AlGaN-Based Deep Ultraviolet Micro-LED Array with Photodetector Via a Transparent Sapphire Substrate Toward Stable and Compact Maskless Photolithography Application](#12-vertically-integrated-self-monitoring-algan-based-deep-ultraviolet-micro-led-array-with-photodetector-via-a-transparent-sapphire-substrate-toward-stable-and-compact-maskless-photolithography-application-1)
 - [13. Determination of LED equivalent circuits using network analyser measurements](#13-determination-of-led-equivalent-circuits-using-network-analyser-measurements)
 - [14. Differential Carrier Lifetime in AlGaN Based Multiple Quantum Well Deep UV Light Emitting Diodes at 325 nm](#14-differential-carrier-lifetime-in-algan-based-multiple-quantum-well-deep-uv-light-emitting-diodes-at-325-nm)
 - [15. Capacitance measurements of p-n junctions: depletion layer and diffusion capacitance contributions](#15-capacitance-measurements-of-p-n-junctions-depletion-layer-and-diffusion-capacitance-contributions)
@@ -36,7 +35,7 @@ https://link.springer.com/chapter/10.1007/978-3-319-02381-6_5
 
 Authors: Chulwoo Kim, Junyoung Song & Hyun-Woo Lee 
 
-# 2. Introduction to the Light-Emitting Diode
+# 2. Introduction to the Light-Emitting Diode - 未下载
 https://link.springer.com/book/10.1007/978-3-031-59971-2
 
 # 3.High-Speed Micro-LEDs based on Nano-Engineered InGaN Active Region towards Chip-to-Chip Interconnections
@@ -81,8 +80,6 @@ https://onlinelibrary.wiley.com/doi/full/10.1002/lpor.202401220
 https://newetds.lib.tsinghua.edu.cn/home/qh/index
 
 下拉菜单：作者 - 李振浩
-
-# 12. Vertically Integrated Self-Monitoring AlGaN-Based Deep Ultraviolet Micro-LED Array with Photodetector Via a Transparent Sapphire Substrate Toward Stable and Compact Maskless Photolithography Application
 
 # 13. Determination of LED equivalent circuits using network analyser measurements
 
