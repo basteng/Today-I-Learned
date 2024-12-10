@@ -12,6 +12,7 @@
   - [11.1 台积电、IBM 和三星将于 12 月在一场活动中展示其下一代 CFET 晶体管创新](#111-台积电ibm-和三星将于-12-月在一场活动中展示其下一代-cfet-晶体管创新)
 - [12.Memory Hierarchy: Basics](#12memory-hierarchy-basics)
 - [13. Potential of EUV for high volume manufacturing of DRAM](#13-potential-of-euv-for-high-volume-manufacturing-of-dram)
+- [14. 台积电 高带宽 die-to-die IEDM2024](#14-台积电-高带宽-die-to-die-iedm2024)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -483,3 +484,10 @@ IEDM 会议将于 2024 年 12 月 7 日至 11 日在旧金山举行，会议结�
 # 13. Potential of EUV for high volume manufacturing of DRAM
 
 <https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/Potential%20of%20EUV%20for%20high%20volume%20manufacturing%20of%20DRAM.pdf>
+
+# 14. 台积电 高带宽 die-to-die IEDM2024
+
+![](/picture/D2D-Interconnect.jpg)
+
+<https://www.linkedin.com/posts/mingliangliu_d2d-chiplet-interconnects-activity-7271910436294262786-eYqM?utm_source=share&utm_medium=member_desktop>
+
