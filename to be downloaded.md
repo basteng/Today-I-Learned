@@ -30,84 +30,24 @@
 
 https://
 
-# 1. TSV Interface for DRAM
-https://link.springer.com/chapter/10.1007/978-3-319-02381-6_5
-
-Authors: Chulwoo Kim, Junyoung Song & Hyun-Woo Lee 
-
-# 2. Introduction to the Light-Emitting Diode - 未下载
+# I.Introduction to the Light-Emitting Diode - 未下载
 https://link.springer.com/book/10.1007/978-3-031-59971-2
 
-# 3.High-Speed Micro-LEDs based on Nano-Engineered InGaN Active Region towards Chip-to-Chip Interconnections
-https://ieeexplore.ieee.org/document/10637686
-
-# 4. Enhancement of DRAMs performance using resonant tunneling diode buffer
-https://ieeexplore.ieee.org/document/7065706
-
-# 5. Emerging GaN Technologies for Next-Generation Millimeter-Wave Applications
-https://ieeexplore.ieee.org/document/10682425
-
-# 6. Highly Reliable and Manufacturable MRAM embedded in 14nm FinFET node
-https://ieeexplore.ieee.org/abstract/document/10185248
-
-# 7. Simplified All-in-One Load Network of the Broadband Doherty Power Amplifier
-https://ieeexplore.ieee.org/document/10630607
-
-# 8. Non-radiative recombination centres in InGaN/GaN nanowires revealed by statistical analysis of cathodoluminescence intensity maps and electron microscopy
-
-https://iopscience.iop.org/article/10.1088/1361-6528/ad7b43
-
-# 9. Dynamic Thermal Coupling in GaN MMIC Power Amplifiers
-
-https://ieeexplore.ieee.org/document/10693626
-
-# 10. Emerging GaN Technologies for Next-Generation Millimeter-Wave Applications
-
-https://ieeexplore.ieee.org/document/10682425
-
-# 11. 王磊博士论文下载
+# II.王磊博士论文下载
 
 https://newetds.lib.tsinghua.edu.cn/home/qh/index
 
 下拉菜单：作者 - 王磊
 
-# 12. Vertically Integrated Self-Monitoring AlGaN-Based Deep Ultraviolet Micro-LED Array with Photodetector Via a Transparent Sapphire Substrate Toward Stable and Compact Maskless Photolithography Application
-
-https://onlinelibrary.wiley.com/doi/full/10.1002/lpor.202401220
-
-# 12. 李振浩博士论文下载
+# III.李振浩博士论文下载
 
 https://newetds.lib.tsinghua.edu.cn/home/qh/index
 
 下拉菜单：作者 - 李振浩
 
-# 13. Determination of LED equivalent circuits using network analyser measurements
+# 1. Developments of VCSEL-based transceivers for Co-Packaging
 
-https://ieeexplore.ieee.org/document/791628
-
-# 14. Differential Carrier Lifetime in AlGaN Based Multiple Quantum Well Deep UV Light Emitting Diodes at 325 nm
-
-https://iopscience.iop.org/article/10.1143/JJAP.41.L1146
-
-# 15. Capacitance measurements of p-n junctions: depletion layer and diffusion capacitance contributions
-
-https://iopscience.iop.org/article/10.1088/0143-0807/14/2/009
-
-# 16. Carrier dynamics and Coulomb-enhanced capture in III-nitride quantum heterostructures
-
-https://pubs.aip.org/aip/apl/article-abstract/109/3/033504/1078292/Carrier-dynamics-and-Coulomb-enhanced-capture-in?redirectedFrom=fulltext
-
-# 17. Recombination Rate Analysis of InGaN-Based Red-Emitting Light-Emitting Diodes
-
-https://ieeexplore.ieee.org/document/10049437
-
-# 18. Droop in InGaN light-emitting diodes: A differential carrier lifetime analysis
-
-https://pubs.aip.org/aip/apl/article-abstract/96/10/103504/150538/Droop-in-InGaN-light-emitting-diodes-A?redirectedFrom=fulltext
-
-# 19. Large signal circuit model for LED's used in optical communication
-
-https://ieeexplore.ieee.org/abstract/document/1481505
+https://opg.optica.org/abstract.cfm?uri=OFC-2023-M4E.6
 
 
 
