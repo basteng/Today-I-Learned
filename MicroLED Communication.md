@@ -3201,3 +3201,5 @@ GaAs - AlGaAs高辐射LED用于光通信系统的功率和调制带宽研究
 
 <https://mp.weixin.qq.com/s/gmio2UcQUwfsTxmMSxQ14g>
 
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/Analysis%20of%20the%20Development%20Trend%20of%20Inter-Chip%20Optical%20Interconnection.pdf>
+
