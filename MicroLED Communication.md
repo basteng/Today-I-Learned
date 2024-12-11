@@ -132,6 +132,7 @@
 - [41. MicroLED Displays Industry status and Roadmap](#41-microled-displays-industry-status-and-roadmap)
 - [42. MicroLED 展现出神经形态计算的潜力](#42-microled-展现出神经形态计算的潜力)
 - [43. 850nm超结构单横模VCSEL芯片，助力短距离高速光通信 - 常瑞华团队](#43-850nm超结构单横模vcsel芯片助力短距离高速光通信---常瑞华团队)
+- [44. 片间光互连发展态势分析 - 信通院 刘璐团队](#44-片间光互连发展态势分析---信通院-刘璐团队)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -3193,4 +3194,10 @@ GaAs - AlGaAs高辐射LED用于光通信系统的功率和调制带宽研究
 <https://opg.optica.org/optica/fulltext.cfm?uri=optica-11-11-1567&id=563444>
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/optica-11-11-1567.pdf>
+
+# 44. 片间光互连发展态势分析 - 信通院 刘璐团队
+
+本文通过对数据中心和计算中心场景下片间光互连技术的研究，展示了 CPO 和 OIO 技术的发展情况，包括技术优势、产业现状和标准建立等方面。强调了片间光互连虽有进展，但面临挑战，需技术、产业和标准协同发展，以满足高带宽、低延迟和高能效的要求，推动其在多领域的应用。
+
+<https://mp.weixin.qq.com/s/gmio2UcQUwfsTxmMSxQ14g>
 
