@@ -121,6 +121,8 @@
   - [37.3 IDM](#373-idm)
   - [37.4 OSAT](#374-osat)
   - [37.5 Equipment](#375-equipment)
+    - [37.5.1 市场](#3751-市场)
+      - [37.5.1.1 SEMI预测](#37511-semi预测)
   - [37.6 Material](#376-material)
   - [37.7 EDA](#377-eda)
   - [37.8 Others](#378-others)
@@ -156,6 +158,8 @@
   - [CSIS](#csis)
     - [1. 中国成熟的半导体产能过剩：存在吗？重要吗？](#1-中国成熟的半导体产能过剩存在吗重要吗)
     - [2. 盟国出口管制对美国和中国半导体制造设备行业的真正影响](#2-盟国出口管制对美国和中国半导体制造设备行业的真正影响)
+  - [SEMI](#semi)
+    - [1.设备/制造/材料市场数据](#1设备制造材料市场数据)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2217,6 +2221,12 @@ Bren，我一直都在关注 KLA，而且我已经报道 KLA 26 年了。所以�
 
 ## 37.5 Equipment
 
+### 37.5.1 市场
+
+#### 37.5.1.1 SEMI预测
+
+<https://www.semi.org/en/products-services/market-data/equipment-article-archive>
+
 ## 37.6 Material
 
 ## 37.7 EDA
@@ -2643,7 +2653,11 @@ CSIS 估算了美国三大半导体设备公司在中国的半导体设备收入
 <https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/241126_Allen_True_Impact.pdf>
 
 
+## SEMI
 
+### 1.设备/制造/材料市场数据
+
+<https://www.semi.org/en/products-services/market-intelligence>
 
 
 
