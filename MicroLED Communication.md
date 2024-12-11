@@ -3192,3 +3192,5 @@ GaAs - AlGaAs高辐射LED用于光通信系统的功率和调制带宽研究
 
 <https://opg.optica.org/optica/fulltext.cfm?uri=optica-11-11-1567&id=563444>
 
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/optica-11-11-1567.pdf>
+
