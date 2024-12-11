@@ -18,6 +18,8 @@
   - [4.11 ECOC 2024](#411-ecoc-2024)
   - [4.12 通过三重谐振光子分子实现高效宽带可调谐射频光转换](#412-通过三重谐振光子分子实现高效宽带可调谐射频光转换)
   - [4.13 光学技术：革新带宽密度和能效 示意图](#413-光学技术革新带宽密度和能效-示意图)
+  - [4.14 Ayar Labs 与合作伙伴合作解决 HPC 和 AI 系统中的 I/O 瓶颈问题 - SC24](#414-ayar-labs-与合作伙伴合作解决-hpc-和-ai-系统中的-io-瓶颈问题---sc24)
+  - [4.15 SC24 演示](#415-sc24-演示)
 - [5. Avicena](#5-avicena)
   - [5.1《High Bandwidth GaN-based Micro-LEDs at Temperatures up to 400°C》](#51high-bandwidth-gan-based-micro-leds-at-temperatures-up-to-400c)
   - [5.2 硅光子学联合封装。 凉！ 但它实用吗？Bardia Pezeshki post at Linkedin](#52-硅光子学联合封装-凉-但它实用吗bardia-pezeshki-post-at-linkedin)
@@ -58,6 +60,7 @@
   - [5.30 不同的光链路配置 - DR8 为 1.6 TB，使用 224G SerDes - PECC峰会](#530-不同的光链路配置---dr8-为-16-tb使用-224g-serdes---pecc峰会)
   - [5.31 LED同样有调制能力 - PECC峰会](#531-led同样有调制能力---pecc峰会)
   - [5.32 Avicena 采用uLED做为AI组网的光源](#532-avicena-采用uled做为ai组网的光源)
+  - [5.33 SC24上的图片](#533-sc24上的图片)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -128,6 +131,7 @@
   - [三、总结](#三总结)
 - [41. MicroLED Displays Industry status and Roadmap](#41-microled-displays-industry-status-and-roadmap)
 - [42. MicroLED 展现出神经形态计算的潜力](#42-microled-展现出神经形态计算的潜力)
+- [43. 850nm超结构单横模VCSEL芯片，助力短距离高速光通信 - 常瑞华团队](#43-850nm超结构单横模vcsel芯片助力短距离高速光通信---常瑞华团队)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -588,6 +592,37 @@ Blackwell 将不同部件组合在一起，表明了芯片制造商在提高计�
 资料来源：Ayar Labs
 
 ![](/picture/Ayarlabs6.jpg)
+
+## 4.14 Ayar Labs 与合作伙伴合作解决 HPC 和 AI 系统中的 I/O 瓶颈问题 - SC24
+
+在SC24，Ayar Labs 的业务开发经理 Jeff Demain 和 Corning Optical Communications 的联合封装业务开发总监 Benoit Fleury 演示了概念验证演示，展示了 Ayar Labs 的 TeraPHY 光学 I/O 小芯片与康宁先进的玻璃波导的直接集成。
+
+<https://www.linkedin.com/posts/ayar-labs_sc24-optical-photonics-activity-7272409007011573760-wI0s?utm_source=share&utm_medium=member_desktop>
+
+## 4.15 SC24 演示
+
+Ayar Labs的官网上也有SC24的预告，先翻译一下。他们与富士通有限公司、英特尔、康宁公司、Altera等一起展示其技术在各种人工智能基础设施概念中的应用。
+
+      在Ayar Labs的展位上，将展示一个概念模型，该模型将Ayar Labs的光学I/O解决方案与富士通A64FX处理器集成在PRIMEHPC FX700机箱中，每个CPU集成两个TeraPHY™光学I/O芯片，代表高达16 Tbps的双向带宽。       除了展示的模型外，Ayar Labs和富士通还共同发表题为“满足下一代人工智能/高性能计算系统架构性能和总体拥有成本要求的新型基于光学的扩展结构”的演讲，讨论当前架构中的关键挑战和未来系统的要求，同时Ayar Labs将解释基于光学I/O的扩展结构如何提高这些系统的系统级性能并降低总体拥有成本。       
+
+在SC24上进行的其他演示和展示包括：
+- 创新的人工智能系统架构工具：位的参观者可以看到Ayar Labs的光学I/O对扩展大型语言模型（LLM）推理的影响，在未来的GPT模型中，盈利能力可提高多达20倍，交互性可提高3 - 4倍。
+- 利用光学FPGA推进人工智能：Ayar Labs、Altera和康宁合作开创了一种新的光学现场可编程门阵列（FPGA）解决方案。这个概念验证通过将Ayar Labs的TeraPHY™光学I/O芯片与康宁的玻璃波导模块集成到Altera的FPGA结构中，提供了4 Tbps的双向I/O数据传输。
+- 4 Tbps In-Package 光I/O解决方案：SC24的嘉宾可以体验Ayar Labs由其SuperNova™光源驱动的4 Tbps光学I/O解决方案的现场演示。参观者可以亲眼看到在无需前向纠错（FEC）的情况下，以极低的延迟实现超高效的数据传输。
+- 可拆卸光学连接器生态系统：Ayar Labs将重点介绍用于光学I/O的可拆卸光学连接器的最新进展，包括最新的英特尔可拆卸光子玻璃互连和Teramount TeraVERSE®可拆卸连接器。这些连接器使Ayar Labs用于人工智能的封装内光学I/O解决方案能够灵活、高效且具有成本效益地进行部署和维护。       底下就是现场展示的光IO照片了。图中有展示了两个SuperNova光源，Altera FPGA集成TeraPHY光IO chiplet，以及4个光IO，通过Corning的玻璃波导基板形成互连。
+
+![](/picture/Ayarlabs7.jpg)
+![](/picture/Ayarlabs8.jpg)
+![](/picture/Ayarlabs9.jpg)
+
+连接器方案展示了Intel Foundry和Teramount的两套方案，Intel的方案是Glass interposer，而Teramount是带反射镜硅基板的大容差表面耦合，都是专门给CPO/OIO应用开发的高密连接方案。
+
+![](/picture/Ayarlabs10.jpg)
+![](/picture/Ayarlabs11.jpg)
+
+后边就是他们的外置光源展示，第二代SuperNova的光源从第一代的8波长×8光纤升级到了16波长×8光纤的128信道。
+
+![](/picture/Ayarlabs12.jpg)
 
 # 5. Avicena
 
@@ -1479,6 +1514,18 @@ Avicena给出上面的曲线是为了提出他家的方案，所以隐藏了一�
 ![](/picture/Avicena12.png)
 
 <https://mp.weixin.qq.com/s/7nTEIRgbs8A2hG-sloBGkg>
+
+## 5.33 SC24上的图片
+
+![](/picture/Avicena13.jpg)
+![](/picture/Avicena14.jpg)
+![](/picture/Avicena15.jpg)
+![](/picture/Avicena16.jpg)
+![](/picture/Avicena17.jpg)
+
+Avicena是基于MicroLED发射＋多模光纤＋CMOS Image Sensor接收搞的光互连方案，LED虽然速率不高，但胜在功耗低，可靠性高(-55℃到125℃)，密度大(50um pitch)。他们展出的这款1.6T 互连demo，带宽密度为1Tbps/mm，功耗仅有10W，多模光纤传10m，时延仅有6ns，能效说是＜1pJ/bit。分别展出了与HBM互连和GPU的互连。
+
+<https://mp.weixin.qq.com/s/LqOzHsIZzR7bpzhZlBkaGQ>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
@@ -3134,4 +3181,14 @@ GaAs - AlGaAs高辐射LED用于光通信系统的功率和调制带宽研究
 这项研究发表在《物理光子学杂志》（www.doi.org/10.1088/2515-7647/ad8615）上。
 
 <https://iopscience.iop.org/article/10.1088/2515-7647/ad8615#fnref-jpphotonad8615bib6>
+
+# 43. 850nm超结构单横模VCSEL芯片，助力短距离高速光通信 - 常瑞华团队
+
+人工智能大模型的基础设施建设迫切需要单通道100Gbps及更高传输速率的数据互联技术。传统的多模VCSEL+多模光纤技术，凭借低功耗和高性价比，已广泛应用于数据中心和智算中心的短距离光互连，但其受限于激光器的色度色散和光纤中的模式色散，该方案存在信道的速率和传输距离的瓶颈问题。相比之下，单横模VCSEL与单模光纤的组合可以从根本上解决传输瓶颈问题，是更高效且更具成本优势的传输方案。近日，清华大学常瑞华院士团队提出一种基于啁啾高对比度超结构（chirped High-Contrast Metastructure, chirped HCM）的850nm单横模垂直腔面发射激光器（VCSEL）芯片，实现了106 Gbps PAM4传输速率。该设计提出chirped HCM作为VCSEL的顶部反射镜（图1），通过在chirped HCM反射镜中引入了横向渐变的反射率，使其能够与激光的基模强度分布更好地匹配，从而有效抑制高阶模式，最终实现高质量、稳定的单横模激光输出。这一设计与传统多层分布式布拉格反射镜（DBR）相比，不仅具备优异性能，而且简化了制造工艺，非常适合量产。
+
+<https://mp.weixin.qq.com/s/Xk4kGUyjGVuaCo_MGsQVeg>
+
+论文链接
+
+<https://opg.optica.org/optica/fulltext.cfm?uri=optica-11-11-1567&id=563444>
 
