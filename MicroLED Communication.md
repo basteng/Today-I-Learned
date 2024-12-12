@@ -648,6 +648,31 @@ Ayar Labs 旨在利用光学创新减少 AI 基础设施瓶颈。首席执行官
 
 <https://www.linkedin.com/posts/bloombergtelevision_ayar-labs-aims-to-reduce-ai-infrastructure-activity-7272700598842535936-GxHI?utm_source=share&utm_medium=member_desktop>
 
+彭博新闻
+
+Nvidia、AMD 和英特尔投资为芯片带来光明的初创公司
+
+- 光学互连设计公司 Ayar Labs 融资 1.55 亿美元
+- 这家加州公司的估值目前超过 10 亿美元
+
+Ayar Labs Inc.是一家专门利用光在芯片之间传输数据的公司，随着业界追求更高效的人工智能处理，该公司获得了美国三大半导体设计公司的投资。
+
+这家总部位于加利福尼亚州圣何塞的公司表示，在由 Advent Global Opportunities 和 Light Street Capital 领投的一轮融资中，该公司从Nvidia Corp. 、AMD Ventures 和 Intel Capital 筹集了 1.55 亿美元。联合创始人兼首席执行官马克·韦德 (Mark Wade)告诉彭博新闻社，凭借这笔投资，Ayar Labs 的估值超过了 10 亿美元。
+
+人工智能热潮是一项耗电大、投资昂贵的事业。支持人工智能的技术主要是 Nvidia 图形处理单元，用于同时处理多项任务，这要求服务器系统快速、持续地传输数据。这会产生瓶颈，需要大量电力，并且在运行时会产生大量热量。Ayar Labs 针对这些挑战的解决方案是使用光或光子来加速数据传输。
+
+“人工智能工作负载确实对现有硬件基础设施造成了巨大压力，尤其是在互连方面，”韦德说。“我们已经想出了一种替代这些电气互连的方法。”
+
+几十年来，人们一直使用光来传输数据，例如连接各大洲的海底光缆。Ayar Labs 已将该技术缩小了几个数量级，以将其装入芯片封装中。
+
+韦德表示，客户已经在试用 Ayar Labs 的芯片，他的目标是到 2026 年中期让这些芯片具备大批量生产资格。他说，本轮融资的资金将用于扩大生产规模。
+
+如今，这些芯片由GlobalFoundries Inc.生产，Ayar Labs 还与英特尔公司合作，将其技术整合到这家圣克拉拉公司的制造产品中。Wade 的初创公司还在与行业领导者台湾半导体制造公司洽谈。
+
+VentureTech Alliance与台积电建立了战略合作伙伴关系，是 Ayar Labs 的现有投资者。台积电是今年成立硅光子学行业联盟的多家公司之一，该联盟旨在帮助加速该技术的使用，包括芯片封装。
+
+<https://www.bloomberg.com/news/articles/2024-12-11/nvidia-amd-and-intel-invest-in-startup-bringing-light-to-chips?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTczMzkyMTEyMCwiZXhwIjoxNzM0NTI1OTIwLCJhcnRpY2xlSWQiOiJTTzk0S0NUMEcxS1cwMCIsImJjb25uZWN0SWQiOiJBMTkwM0Q0NjcwOTU0MEYwQjA5RjA2NUE3NTk0OTEyQSJ9.AO42H3j_1j1qyMEvnIJzWlLWPnmN6qqDR_NnTPBE5io>
+
 # 5. Avicena
 
 ## 5.1《High Bandwidth GaN-based Micro-LEDs at Temperatures up to 400°C》
