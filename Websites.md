@@ -50,6 +50,8 @@
     - [9.9.1 代表作 华为拥有一项美国难以伤害的 5G 优势](#991-代表作-华为拥有一项美国难以伤害的-5g-优势)
 - [10. 化合物半导体](#10-化合物半导体)
   - [10.1 compoundsemiconductor](#101-compoundsemiconductor)
+- [11.IMF 国际货币基金组织](#11imf-国际货币基金组织)
+  - [11.1 代表作 每月经济展望](#111-代表作-每月经济展望)
 
 
 # 1. 存储
@@ -323,3 +325,12 @@ https://www.lightreading.com/
 ## 10.1 compoundsemiconductor
 
 https://compoundsemiconductor.net/home
+
+# 11.IMF 国际货币基金组织
+
+<https://www.imf.org/en/home>
+
+## 11.1 代表作 每月经济展望
+
+<https://www.imf.org/zh/Publications/WEO/Issues/2024/10/22/world-economic-outlook-october-2024>
+
