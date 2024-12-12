@@ -19,6 +19,7 @@
     - [安装privoxy](#安装privoxy)
 - [11. SSR 导入](#11-ssr-导入)
 - [12. Transformer by hand - Full Stack in Excel](#12-transformer-by-hand---full-stack-in-excel)
+- [13. 模拟电路设计](#13-模拟电路设计)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -526,3 +527,13 @@ SSRCloud导入方法
 • 输出概率
 
 <https://www.linkedin.com/posts/tom-yeh_transformer-aibyhand-excel-activity-7265044110388932608-w3Te?utm_source=share&utm_medium=member_desktop>
+
+# 13. 模拟电路设计
+
+这是 JKU 举办的中级 MOSFET 模拟电路设计课程的材料，课程编号为 336.009（“KV Analoge Schaltungstechnik”）。
+
+本课程大量使用电路仿真，使用Xschem输入原理图，使用ngspice进行仿真。采用IHP Microelectronics的130nm CMOS技术SG13G2 。
+
+工具和PDK集成在IIC-OSIC-TOOLS Docker镜像中，将在课程中使用。
+
+<https://iic-jku.github.io/analog-circuit-design/>
