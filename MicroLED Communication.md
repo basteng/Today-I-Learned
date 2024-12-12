@@ -20,6 +20,7 @@
   - [4.13 光学技术：革新带宽密度和能效 示意图](#413-光学技术革新带宽密度和能效-示意图)
   - [4.14 Ayar Labs 与合作伙伴合作解决 HPC 和 AI 系统中的 I/O 瓶颈问题 - SC24](#414-ayar-labs-与合作伙伴合作解决-hpc-和-ai-系统中的-io-瓶颈问题---sc24)
   - [4.15 SC24 演示](#415-sc24-演示)
+  - [4.16 2024.12.12获得AMD、Intel和Nvidia的1.55亿美元投资](#416-20241212获得amdintel和nvidia的155亿美元投资)
 - [5. Avicena](#5-avicena)
   - [5.1《High Bandwidth GaN-based Micro-LEDs at Temperatures up to 400°C》](#51high-bandwidth-gan-based-micro-leds-at-temperatures-up-to-400c)
   - [5.2 硅光子学联合封装。 凉！ 但它实用吗？Bardia Pezeshki post at Linkedin](#52-硅光子学联合封装-凉-但它实用吗bardia-pezeshki-post-at-linkedin)
@@ -624,6 +625,28 @@ Ayar Labs的官网上也有SC24的预告，先翻译一下。他们与富士通�
 后边就是他们的外置光源展示，第二代SuperNova的光源从第一代的8波长×8光纤升级到了16波长×8光纤的128信道。
 
 ![](/picture/Ayarlabs12.jpg)
+
+## 4.16 2024.12.12获得AMD、Intel和Nvidia的1.55亿美元投资
+
+今天，Ayar Labs 宣布已获得 AMD 、Intel Capital 和 英伟达 的 1.55 亿美元投资，以满足对可扩展、经济高效的 AI 基础设施的迫切需求。
+
+Advent Global Opportunities 和 Light Street Capital 引领了 D 轮融资，以加速 Ayar Labs 封装内光学互连产品的大批量生产。
+
+感谢我们所有的投资者和合作伙伴，感谢你们在大规模提供光学 I/O 以满足大规模 AI 工作负载需求方面的支持！
+
+<https://ayarlabs.com/news/ayar-labs-155m-series-d-to-address-ai-infrastructure-includes-amd-intel-capital-nvidia?utm_campaign=241108-series-d&utm_source=linkedin&utm_medium=social>
+
+![](/picture/1733926105037.jpg)
+
+<https://www.linkedin.com/posts/ayar-labs_optical-photonics-semiconductor-activity-7272613202532691968-osUe?utm_source=share&utm_medium=member_desktop>
+
+彭博社采访CEO
+
+Ayar Labs 旨在利用光学创新减少 AI 基础设施瓶颈。首席执行官 Mark Wade 讨论了他们最新的 $155M 融资以及他们如何与 Nvidia、Intel 和 AMD 等合作伙伴合作 
+
+<https://trib.al/nHxUk3O>
+
+<https://www.linkedin.com/posts/bloombergtelevision_ayar-labs-aims-to-reduce-ai-infrastructure-activity-7272700598842535936-GxHI?utm_source=share&utm_medium=member_desktop>
 
 # 5. Avicena
 

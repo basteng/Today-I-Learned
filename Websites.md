@@ -44,6 +44,8 @@
     - [9.7.1 代表文章 ：光学元件初创企业追踪](#971-代表文章-光学元件初创企业追踪)
   - [9.8 Korea Economic Daily Global Edition](#98-korea-economic-daily-global-edition)
     - [9.8.1 代表文章：随着中国企业迎头赶上，SK 海力士和三星将削减传统 DRAM 产量](#981-代表文章随着中国企业迎头赶上sk-海力士和三星将削减传统-dram-产量)
+  - [9.9 sinolytics 完全专注于中国的研究型商业咨询公司](#99-sinolytics-完全专注于中国的研究型商业咨询公司)
+    - [9.9.1 代表做 每周主要趋势](#991-代表做-每周主要趋势)
 - [10. 化合物半导体](#10-化合物半导体)
   - [10.1 compoundsemiconductor](#101-compoundsemiconductor)
 
@@ -297,6 +299,14 @@ Science X 运用先进的编程技术，将新闻以清晰明确的分类呈现�
 ### 9.8.1 代表文章：随着中国企业迎头赶上，SK 海力士和三星将削减传统 DRAM 产量
 
 <https://www.kedglobal.com/korean-chipmakers/newsView/ked202411010010>
+
+## 9.9 sinolytics 完全专注于中国的研究型商业咨询公司
+
+
+
+### 9.9.1 代表做 每周主要趋势
+
+<https://www.sinolytics.de/weekly-infographics/>
 
 # 10. 化合物半导体
 
