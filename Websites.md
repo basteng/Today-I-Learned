@@ -13,6 +13,8 @@
   - [3.2 荷兰 金融时报](#32-荷兰-金融时报)
   - [3.3 韩国中央日报中文版](#33-韩国中央日报中文版)
     - [3.3.1 代表作 韩国对进口中国半导体核心原材料的依赖度进一步提高](#331-代表作-韩国对进口中国半导体核心原材料的依赖度进一步提高)
+  - [9.4 sinolytics 完全专注于中国的研究型商业咨询公司](#94-sinolytics-完全专注于中国的研究型商业咨询公司)
+    - [3.4.1 代表做 每周主要趋势](#341-代表做-每周主要趋势)
 - [4. AI](#4-ai)
   - [4.1 LifeArchitect.ai 一个非常有意思的AI新闻网站，深入浅出](#41-lifearchitectai-一个非常有意思的ai新闻网站深入浅出)
   - [4.2 寒武纪AI](#42-寒武纪ai)
@@ -44,8 +46,8 @@
     - [9.7.1 代表文章 ：光学元件初创企业追踪](#971-代表文章-光学元件初创企业追踪)
   - [9.8 Korea Economic Daily Global Edition](#98-korea-economic-daily-global-edition)
     - [9.8.1 代表文章：随着中国企业迎头赶上，SK 海力士和三星将削减传统 DRAM 产量](#981-代表文章随着中国企业迎头赶上sk-海力士和三星将削减传统-dram-产量)
-  - [9.9 sinolytics 完全专注于中国的研究型商业咨询公司](#99-sinolytics-完全专注于中国的研究型商业咨询公司)
-    - [9.9.1 代表做 每周主要趋势](#991-代表做-每周主要趋势)
+  - [9.9 移动通信 - lightreading - 来自Omdia](#99-移动通信---lightreading---来自omdia)
+    - [9.9.1 代表作 华为拥有一项美国难以伤害的 5G 优势](#991-代表作-华为拥有一项美国难以伤害的-5g-优势)
 - [10. 化合物半导体](#10-化合物半导体)
   - [10.1 compoundsemiconductor](#101-compoundsemiconductor)
 
@@ -102,6 +104,14 @@ https://fd.nl/
 ### 3.3.1 代表作 韩国对进口中国半导体核心原材料的依赖度进一步提高
 
 https://chinese.joins.com/
+
+## 9.4 sinolytics 完全专注于中国的研究型商业咨询公司
+
+<https://www.sinolytics.de/>
+
+### 3.4.1 代表做 每周主要趋势
+
+<<https://www.sinolytics.de/weekly-infographics/>>
 
 # 4. AI
 
@@ -300,13 +310,13 @@ Science X 运用先进的编程技术，将新闻以清晰明确的分类呈现�
 
 <https://www.kedglobal.com/korean-chipmakers/newsView/ked202411010010>
 
-## 9.9 sinolytics 完全专注于中国的研究型商业咨询公司
+## 9.9 移动通信 - lightreading - 来自Omdia
 
+https://www.lightreading.com/
 
+### 9.9.1 代表作 华为拥有一项美国难以伤害的 5G 优势
 
-### 9.9.1 代表做 每周主要趋势
-
-<https://www.sinolytics.de/weekly-infographics/>
+<https://www.lightreading.com/5g/huawei-has-one-5g-power-that-is-hard-for-the-us-to-hurt>
 
 # 10. 化合物半导体
 
