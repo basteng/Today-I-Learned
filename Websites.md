@@ -13,8 +13,10 @@
   - [3.2 荷兰 金融时报](#32-荷兰-金融时报)
   - [3.3 韩国中央日报中文版](#33-韩国中央日报中文版)
     - [3.3.1 代表作 韩国对进口中国半导体核心原材料的依赖度进一步提高](#331-代表作-韩国对进口中国半导体核心原材料的依赖度进一步提高)
-  - [9.4 sinolytics 完全专注于中国的研究型商业咨询公司](#94-sinolytics-完全专注于中国的研究型商业咨询公司)
+  - [3.4 sinolytics 德国一家完全专注于中国的研究型商业咨询公司](#34-sinolytics-德国一家完全专注于中国的研究型商业咨询公司)
     - [3.4.1 代表做 每周主要趋势](#341-代表做-每周主要趋势)
+  - [3.5 IMF 国际货币基金组织](#35-imf-国际货币基金组织)
+    - [3.5.1 代表作 每月经济展望](#351-代表作-每月经济展望)
 - [4. AI](#4-ai)
   - [4.1 LifeArchitect.ai 一个非常有意思的AI新闻网站，深入浅出](#41-lifearchitectai-一个非常有意思的ai新闻网站深入浅出)
   - [4.2 寒武纪AI](#42-寒武纪ai)
@@ -50,8 +52,6 @@
     - [9.9.1 代表作 华为拥有一项美国难以伤害的 5G 优势](#991-代表作-华为拥有一项美国难以伤害的-5g-优势)
 - [10. 化合物半导体](#10-化合物半导体)
   - [10.1 compoundsemiconductor](#101-compoundsemiconductor)
-- [11.IMF 国际货币基金组织](#11imf-国际货币基金组织)
-  - [11.1 代表作 每月经济展望](#111-代表作-每月经济展望)
 
 
 # 1. 存储
@@ -107,13 +107,21 @@ https://fd.nl/
 
 https://chinese.joins.com/
 
-## 9.4 sinolytics 完全专注于中国的研究型商业咨询公司
+## 3.4 sinolytics 德国一家完全专注于中国的研究型商业咨询公司
 
 <https://www.sinolytics.de/>
 
 ### 3.4.1 代表做 每周主要趋势
 
-<<https://www.sinolytics.de/weekly-infographics/>>
+<https://www.sinolytics.de/weekly-infographics/>
+
+## 3.5 IMF 国际货币基金组织
+
+<https://www.imf.org/en/home>
+
+### 3.5.1 代表作 每月经济展望
+
+<https://www.imf.org/zh/Publications/WEO/Issues/2024/10/22/world-economic-outlook-october-2024>
 
 # 4. AI
 
@@ -326,11 +334,5 @@ https://www.lightreading.com/
 
 https://compoundsemiconductor.net/home
 
-# 11.IMF 国际货币基金组织
 
-<https://www.imf.org/en/home>
-
-## 11.1 代表作 每月经济展望
-
-<https://www.imf.org/zh/Publications/WEO/Issues/2024/10/22/world-economic-outlook-october-2024>
 
