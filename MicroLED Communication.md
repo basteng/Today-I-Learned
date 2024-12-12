@@ -62,6 +62,7 @@
   - [5.31 LED同样有调制能力 - PECC峰会](#531-led同样有调制能力---pecc峰会)
   - [5.32 Avicena 采用uLED做为AI组网的光源](#532-avicena-采用uled做为ai组网的光源)
   - [5.33 SC24上的图片](#533-sc24上的图片)
+  - [5.34 LightCounting在Supercompute 24 的亮点中介绍了 Avicena](#534-lightcounting在supercompute-24-的亮点中介绍了-avicena)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -1575,6 +1576,16 @@ Avicena给出上面的曲线是为了提出他家的方案，所以隐藏了一�
 Avicena是基于MicroLED发射＋多模光纤＋CMOS Image Sensor接收搞的光互连方案，LED虽然速率不高，但胜在功耗低，可靠性高(-55℃到125℃)，密度大(50um pitch)。他们展出的这款1.6T 互连demo，带宽密度为1Tbps/mm，功耗仅有10W，多模光纤传10m，时延仅有6ns，能效说是＜1pJ/bit。分别展出了与HBM互连和GPU的互连。
 
 <https://mp.weixin.qq.com/s/LqOzHsIZzR7bpzhZlBkaGQ>
+
+## 5.34 LightCounting在Supercompute 24 的亮点中介绍了 Avicena
+
+“Avicena 在 SC23 上展示了基于该公司 microLED 技术的微型 1Tb/s 光收发器芯片。LightBundle ASIC 尺寸为 3mm x 4mm，支持高达 10m 的覆盖范围，非常适合芯片间和机架间通信。基于 LED 的接口可在高达 150OC 的温度下工作。氮化镓 microLED 直接集成到 CMOS IC 上。每个 microLED 阵列通过多芯光纤电缆连接到相应的光电探测器。Avicena ASIC 支持 331 个通道，每个通道为 4Gb/s，总带宽超过 1Tb/s。但是，其下一代设计将支持 1.6Tb/s，也将用于 AOC 产品。ASIC 包括用于光发射器和接收器阵列的电路。
+
+在 SC24 上，Avicena 展示了其技术，包括如何将其 LightBundle ASIC 放置在 GPU 旁边的电路板上以及如何将其作为小芯片嵌入 GPU 的模型，见图 10。Avicena 正在利用其技术开发有源光缆，并希望首先证明其板载光学设计技术，然后再推进到共同封装设计。还展示了 4,000 个 50 微米光纤束，可支持高达 12.8Tb/s 的吞吐量。”
+
+![](/picture/Avicena-Demo_SC24-300x225.jpg)
+
+<https://avicena.tech/portfolio-item/sc24/>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
