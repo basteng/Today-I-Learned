@@ -3372,7 +3372,7 @@ GaAs - AlGaAs高辐射LED用于光通信系统的功率和调制带宽研究
 
 Analog Iterative Machine (AIM): using light to solve quadratic optimization problems with mixed variables
 
-
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Analog%20Iterative%20Machine%20(AIM)%20using%20light%20to%20solve%20quadratic%20optimization%20problems%20with%20mixed%20variables.pdf>
 
 
 
