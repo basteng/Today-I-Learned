@@ -35,6 +35,7 @@
 - [30. 你所不知道的 Dijkstra](#30-你所不知道的-dijkstra)
 - [31. 谷歌学术搜索 (Google Scholar) 能否在人工智能革命中幸存下来？](#31-谷歌学术搜索-google-scholar-能否在人工智能革命中幸存下来)
 - [32. 《金钱心理学》读后感](#32-金钱心理学读后感)
+- [33. AI Engineering作者Highlight](#33-ai-engineering作者highlight)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1322,3 +1323,37 @@ Google Scholar 尚未实现的一件事是包含 AI 生成的搜索查询答案�
 - 我们都希望我们身处的复杂世界是有意义的，因此我们会编造故事来填补我们不理解的部分；
 
 <https://weibo.com/1639597372/P19Srz7wI>
+
+# 33. AI Engineering作者Highlight
+
+在编写 AI Engineering 的过程中，我阅读了大量论文、案例研究、博客文章、存储库、工具等。这个 repo 包含 ~100 个资源，这些资源真正帮助我了解了使用基础模型进行构建的各个方面。
+
+https://lnkd.in/gwdK4tNu
+
+以下是亮点：
+
+1. Anthropic 的 Prompt Engineering 交互式教程
+基于 Google 表格的交互式练习可以轻松尝试不同的提示，并立即查看哪些有效，哪些无效。我很惊讶其他模型提供商没有类似的交互式指南：https://lnkd.in/gqr5uQqg
+
+2. OpenAI 的微调最佳实践
+虽然本指南侧重于 GPT-3，但许多技术通常适用于完全微调。它解释了微调的工作原理、如何准备训练数据、如何选择训练超参数以及常见的微调错误：https://lnkd.in/g7_kspz4
+
+3. 骆驼 3 纸
+关于训练后数据的部分是一座金矿，因为它详细介绍了他们用来生成 270 万个用于监督微调的示例的不同技术。它还涵盖了一个关键但较少被谈论的话题：数据验证、如何评估合成数据的质量：https://lnkd.in/g3ZaMAYZ
+
+4. 有效扩展 Transformer 推理（Pope 等人，2022 年）
+由 Jeff Dean 合著的一篇关于 transformer 模型推理优化的精彩论文。它不仅涵盖了不同的优化技术及其权衡，还提供了如果要针对不同方面进行优化的指南，例如尽可能低的延迟、尽可能高的吞吐量或最长的上下文长度，该怎么办：https://lnkd.in/gq2N7AUb
+
+5. Chameleon：使用大型语言模型的即插即用组合推理 （Lu et al.， 2023）
+我最喜欢的关于 LLM 规划者的研究，他们如何使用工具，以及他们的失败模式。一个有趣的发现是，不同的 LLM 具有不同的工具首选项：https://lnkd.in/g-F3Ayab
+
+6. AI 事件数据库
+对于那些有兴趣了解 AI 如何出错的人来说，其中包含 3000 多份 AI 危害报告：https://lnkd.in/gvSWwTJ7
+
+7. 我发现成功部署 AI 应用程序的团队的案例研究非常有教育意义。以下是一些有用的企业案例研究。我很快就会添加更多案例研究！
+- LinkedIn：https://lnkd.in/gsRf2Sw6
+- Pinterest 的文本转 SQL：https://lnkd.in/gF3zKHMf
+- Gmail 的智能撰写 （2019）：https://lnkd.in/gWS9gqcE
+- 抓取：https://lnkd.in/g7qRV4Fn
+
+<https://www.linkedin.com/posts/chiphuyen_aie-bookresourcesmd-at-main-chiphuyen-activity-7273179076809400320-OT83?utm_source=share&utm_medium=member_desktop>

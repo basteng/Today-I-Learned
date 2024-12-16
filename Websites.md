@@ -52,6 +52,8 @@
     - [9.9.1 代表作 华为拥有一项美国难以伤害的 5G 优势](#991-代表作-华为拥有一项美国难以伤害的-5g-优势)
 - [10. 化合物半导体](#10-化合物半导体)
   - [10.1 compoundsemiconductor](#101-compoundsemiconductor)
+- [11. Github](#11-github)
+  - [11.1 Oreilly - AI Engineering 作者，非常好看，所有关于AI Prompt的内容](#111-oreilly---ai-engineering-作者非常好看所有关于ai-prompt的内容)
 
 
 # 1. 存储
@@ -333,6 +335,13 @@ https://www.lightreading.com/
 ## 10.1 compoundsemiconductor
 
 https://compoundsemiconductor.net/home
+
+# 11. Github
+
+## 11.1 Oreilly - AI Engineering 作者，非常好看，所有关于AI Prompt的内容
+
+<https://github.com/chiphuyen/aie-book/blob/main/resources.md>
+
 
 
 
