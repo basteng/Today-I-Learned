@@ -528,7 +528,7 @@ SSRCloud导入方法
 
 <https://www.linkedin.com/posts/tom-yeh_transformer-aibyhand-excel-activity-7265044110388932608-w3Te?utm_source=share&utm_medium=member_desktop>
 
-# 13. 模拟电路设计
+# 13. 模拟电路设计 - JKU 举办的中级 MOSFET模拟电路设计课程
 
 这是 JKU 举办的中级 MOSFET 模拟电路设计课程的材料，课程编号为 336.009（“KV Analoge Schaltungstechnik”）。
 
@@ -537,3 +537,24 @@ SSRCloud导入方法
 工具和PDK集成在IIC-OSIC-TOOLS Docker镜像中，将在课程中使用。
 
 <https://iic-jku.github.io/analog-circuit-design/>
+
+# 14. MOSbius 芯片 - 集成电路课程中为学生提供连接测量、仿真和分析的动手实验
+
+想在集成电路课程中为学生提供连接测量、仿真和分析的动手实验吗？为此，我们创建了 MOSbius 芯片！https://mosbius.org 上提供了文档和示例实验。
+
+68 引脚 MOSbius 芯片包含 nMOS 和 pMOS 器件作为单独的晶体管，采用电流镜、差分对、共源配置、简单操作跨导放大器或逆变器等典型配置。电路可以用外部电线构建，还有一个 65x10 片上数字控制开关矩阵，可以将 63 个晶体管端子引脚以及 VDD 和 VSS 连接到芯片上的 10 条总线上以构建电路。
+
+MOSbius 平台提供芯片、用于将芯片放置在无焊试验板上的适配器 PCB，以及用于对芯片进行编程和处理测量结果的软件工具。此外，还提供了一个 LTspice 库来运行电路仿真。
+
+该平台允许（学生）设计人员在独特的动手环境中试验和学习 IC 风格的 MOS 电路。他们测量实际的 CMOS 电路，并将其操作与分析模型和电路仿真进行比较。
+
+今年秋季学期，我们在模拟电子电路课程中为大四学生和研究生提供了第一批电路实验。学生们非常感谢与课程中学习的电路的实际实现进行交互的学习机会。
+
+如果您想在课程中使用 MOSbius，请随时与我们联系。
+
+最后但并非最不重要的一点是，请务必查看 https://lnkd.in/eucWz7-w 以查看此项目的所有热情贡献者。 
+
+![](/picture/1734466096503.jpg)
+
+<https://www.linkedin.com/posts/peter-kinget-7481a3_want-to-offer-your-students-hands-on-labs-activity-7274878090617524225-iGPm?utm_source=share&utm_medium=member_desktop>
+
