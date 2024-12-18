@@ -108,6 +108,8 @@
 - [32. 主要会议](#32-主要会议)
   - [32.1 IEEE Workshop on Wide Bandgap Power Devices \& Applications](#321-ieee-workshop-on-wide-bandgap-power-devices--applications)
 - [33.氮化硼 可以取代 氮化镓 吗？](#33氮化硼-可以取代-氮化镓-吗)
+- [34. 主要媒体](#34-主要媒体)
+  - [34.1 Linkedin - Gallium Nitride Semiconductor (III-N Compounds)](#341-linkedin---gallium-nitride-semiconductor-iii-n-compounds)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -1837,3 +1839,35 @@ Lenahan 和 Johnston-Halperin 将与 QuantCAD 的 Sina Soleimanikahnoj 和爱荷
 在这一年的研究冲刺中，时间非常紧迫，合作者将齐心协力，确定氮化硼是否存在切实可行的前进道路，并大致确定科学家和技术人员如何最有效地沿着这条道路前进。
 
 <https://compoundsemiconductor.net/article/120611/Could_BN_replace_GaN>
+
+# 34. 主要媒体
+
+## 34.1 Linkedin - Gallium Nitride Semiconductor (III-N Compounds)
+
+GaN 半导体器件 - 终极 PDF 指南
+
+下载 PDF 手册： https://lnkd.in/dEHsiZva
+
+氮化镓 （GaN） 半导体器件以其卓越的性能和效率正在彻底改变电子行业。GaN 是一种宽带隙材料，具有高击穿电压、导热性和电子迁移率等优异性能，使其成为高功率和高频应用的理想选择。这些器件通常用于功率转换器、射频 （RF） 放大器和光电器件，与传统的硅基半导体相比具有显著优势。GaN 器件能够在更高的电压、温度和开关速度下工作，因此能够开发更紧凑、更轻便、更节能的系统。
+
+GaN 技术的采用正在推动电信、汽车和可再生能源等行业的进步。在 5G 基础设施中，基于 GaN 的射频器件提供了更高的信号强度和效率，而在电动汽车中，GaN 功率晶体管有助于加快充电速度并扩大续航里程。此外，它们在能量转换系统中的高效性减少了能量损失并最大限度地减少了热量的产生，使其成为现代电子产品的可持续解决方案。随着对高性能、高能效器件的需求不断增长，GaN 半导体将在塑造电子产品的未来方面发挥关键作用。
+
+GaN Semiconductor 器件动力学
+
+驱动因素：消费和商业企业越来越多地采用 GaN 半导体器件
+
+制约因素：制造成本高
+
+机会：GaN 半导体器件在汽车行业的日益集成
+
+挑战：与 GaN 半导体器件相关的制造复杂性
+
+GaN 半导体器件行业的最新发展：
+
+2023 年 6 月，Qorvo， Inc. 宣布推出基于 GaN 的功率放大器 QPB3810。它集成了 5G 大规模多输入多输出 （mMIMO） 应用的偏置控制。
+
+2023 年 3 月，英飞凌科技宣布计划以 8.3 亿美元收购 GaN Systems。此次收购将加强 GaN 产品组合及其在电力系统市场的地位。
+
+![](/picture/GaN-Linkedin.jpg)
+
+<https://www.linkedin.com/feed/update/urn:li:activity:7274984455713226752?utm_source=share&utm_medium=member_desktop>
