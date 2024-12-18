@@ -2,6 +2,7 @@
 - [1. “信息光子器件与集成”专题概述](#1-信息光子器件与集成专题概述)
 - [2. 光调制器和集成光子学的未来 - IEEE](#2-光调制器和集成光子学的未来---ieee)
 - [3.硅光子模块的内部](#3硅光子模块的内部)
+- [4. 1.6 Tbps FOWLP-Based Silicon Photonic Engine for Co-Packaged Optics](#4-16-tbps-fowlp-based-silicon-photonic-engine-for-co-packaged-optics)
 
 
 # 1. “信息光子器件与集成”专题概述
@@ -433,3 +434,7 @@ Marvell 执行副总裁兼云光学总经理 Loi Nguyen 表示：“光学基本
 世界将继续由人工智能驱动，而互连技术必须扩展以满足需求。通过将硅光子技术引入数据中心，Marvell 可以继续提供所需的带宽，同时提高可扩展性并降低成本。  
 
 <https://www.marvell.com/blogs/silicon-photonics-comes-of-age.html>
+
+# 4. 1.6 Tbps FOWLP-Based Silicon Photonic Engine for Co-Packaged Optics
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/1.6%20Tbps%20FOWLP-Based%20Silicon%20Photonic%20Engine%20for%20Co-Packaged%20Optics.pdf>
