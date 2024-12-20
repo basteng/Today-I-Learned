@@ -3384,7 +3384,9 @@ Improving the Modulation Bandwidth of GaN-Based Light-Emitting Diodes for High-S
 
 可见光通信（VLC）已成为无线通信领域的广泛关注点，GaN基发光二极管（LED）的普及也为VLC的应用奠定了坚实的基础。作为VLC的光源，LED的调制带宽直接决定了通信的速度。本文综述了GaN LED发射端调制带宽改进方案的进展，涵盖了从外延到器件的各个方面。外延方法包括c极性面外延优化、非/半极性面外延生长，以及微型LED、纳米LED、谐振腔LED（RC-LED）、等离子体和超腔LED等芯片方案。在白光LED方面，综述了解决传统荧光粉斯托克斯传输慢和载流子寿命长的方法，包括新的颜色转换材料（CCM）和新的能量传输途径。本综述推动了GaN基LED作为高速VLC发射端的发展。
 
+<https://onlinelibrary.wiley.com/doi/epdf/10.1002/adpr.202100093>
 
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Advanced%20Photonics%20Research%20-%202021%20-%20Wan%20-%20Improving%20the%20Modulation%20Bandwidth%20of%20GaN%E2%80%90Based%20Light%E2%80%90Emitting%20Diodes%20for.pdf>
 
 
 
