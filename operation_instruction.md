@@ -8,6 +8,7 @@
 - [7. 非工程师指南：训练 LLaMA 2 聊天机器人](#7-非工程师指南训练-llama-2-聊天机器人)
 - [8. 推荐好用的SS/V2RAY/TROJAN机场](#8-推荐好用的ssv2raytrojan机场)
 - [9. 海外手机卡](#9-海外手机卡)
+  - [9.1 Giffgaff激活事项](#91-giffgaff激活事项)
 - [10. 树莓派科学上网](#10-树莓派科学上网)
   - [10.1 简单方式 - raspberry\_pi\_shadowsocks](#101-简单方式---raspberry_pi_shadowsocks)
     - [本文为使用 python 版本的 shadowsocks 客户端来实现科学上网](#本文为使用-python-版本的-shadowsocks-客户端来实现科学上网)
@@ -19,7 +20,8 @@
     - [安装privoxy](#安装privoxy)
 - [11. SSR 导入](#11-ssr-导入)
 - [12. Transformer by hand - Full Stack in Excel](#12-transformer-by-hand---full-stack-in-excel)
-- [13. 模拟电路设计](#13-模拟电路设计)
+- [13. 模拟电路设计 - JKU 举办的中级 MOSFET模拟电路设计课程](#13-模拟电路设计---jku-举办的中级-mosfet模拟电路设计课程)
+- [14. MOSbius 芯片 - 集成电路课程中为学生提供连接测量、仿真和分析的动手实验](#14-mosbius-芯片---集成电路课程中为学生提供连接测量仿真和分析的动手实验)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -323,6 +325,21 @@ ssrcloud
 申请教程链接：https://rh0w322x8w.feishu.cn/wiki/ASkswc9BliHK9IkQX5xcfeeSnJg
 淘宝购买，96元，自带 10 英镑话费
 群友推荐，可以获得 15 英镑话费
+
+## 9.1 Giffgaff激活事项
+
+注意事项：
+
+1.关闭手机卡的流量设置
+2.注意每6个月发短信保号
+
+激活网站
+
+<https://www.giffgaff.com/activate>
+
+中文操作指南
+
+<https://www.lpolaris.com/article/giffgaff>
 
 📍 卡片二：5ber esim 🇹🇭
 
