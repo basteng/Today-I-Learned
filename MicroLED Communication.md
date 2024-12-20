@@ -137,6 +137,7 @@
 - [44. 片间光互连发展态势分析 - 信通院 刘璐团队](#44-片间光互连发展态势分析---信通院-刘璐团队)
 - [45. 微软：基于Micro-LED＋CIS的模拟光学计算实现加速计算](#45-微软基于micro-ledcis的模拟光学计算实现加速计算)
   - [45.1 arXiv上的论文](#451-arxiv上的论文)
+- [46. 提高GaN基发光二极管调制带宽用于高速可见光通信的对策与挑战 - 郭浩中 李晋闽](#46-提高gan基发光二极管调制带宽用于高速可见光通信的对策与挑战---郭浩中-李晋闽)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -3375,6 +3376,13 @@ Analog Iterative Machine (AIM): using light to solve quadratic optimization prob
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Analog%20Iterative%20Machine%20(AIM)%20using%20light%20to%20solve%20quadratic%20optimization%20problems%20with%20mixed%20variables.pdf>
 
 
+# 46. 提高GaN基发光二极管调制带宽用于高速可见光通信的对策与挑战 - 郭浩中 李晋闽
+
+Improving the Modulation Bandwidth of GaN-Based Light-Emitting Diodes for High-Speed Visible Light Communication: Countermeasures and Challenges
+
+摘要：
+
+可见光通信（VLC）已成为无线通信领域的广泛关注点，GaN基发光二极管（LED）的普及也为VLC的应用奠定了坚实的基础。作为VLC的光源，LED的调制带宽直接决定了通信的速度。本文综述了GaN LED发射端调制带宽改进方案的进展，涵盖了从外延到器件的各个方面。外延方法包括c极性面外延优化、非/半极性面外延生长，以及微型LED、纳米LED、谐振腔LED（RC-LED）、等离子体和超腔LED等芯片方案。在白光LED方面，综述了解决传统荧光粉斯托克斯传输慢和载流子寿命长的方法，包括新的颜色转换材料（CCM）和新的能量传输途径。本综述推动了GaN基LED作为高速VLC发射端的发展。
 
 
 
