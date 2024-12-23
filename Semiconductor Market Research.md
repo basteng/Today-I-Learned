@@ -2759,7 +2759,7 @@ CSIS 估算了美国三大半导体设备公司在中国的半导体设备收入
  • 硅光子学的测试挑战 
  • 后起之秀：CPO（共封装光学器件）和 CPC（共封装铜缆）
 
-
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/SEMI%20VISION-Semiconductor%20Industry%20Overview%202024.11.pdf>
 
  <https://www.linkedin.com/feed/update/urn:li:activity:7269285487113052160?utm_source=share&utm_medium=member_desktop>
 
