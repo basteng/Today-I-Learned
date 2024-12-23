@@ -21,6 +21,8 @@
   - [4.14 Ayar Labs 与合作伙伴合作解决 HPC 和 AI 系统中的 I/O 瓶颈问题 - SC24](#414-ayar-labs-与合作伙伴合作解决-hpc-和-ai-系统中的-io-瓶颈问题---sc24)
   - [4.15 SC24 演示](#415-sc24-演示)
   - [4.16 2024.12.12获得AMD、Intel和Nvidia的1.55亿美元投资](#416-20241212获得amdintel和nvidia的155亿美元投资)
+  - [4.17 人工智能的野心正在将铜推向极限 Ayar Labs 认为硅光子技术将成为超越机架并控制热量的关键](#417-人工智能的野心正在将铜推向极限-ayar-labs-认为硅光子技术将成为超越机架并控制热量的关键)
+  - [4.17.1 NVLlink坚持使用铜缆，因为会增加20W功耗](#4171-nvllink坚持使用铜缆因为会增加20w功耗)
 - [5. Avicena](#5-avicena)
   - [5.1《High Bandwidth GaN-based Micro-LEDs at Temperatures up to 400°C》](#51high-bandwidth-gan-based-micro-leds-at-temperatures-up-to-400c)
   - [5.2 硅光子学联合封装。 凉！ 但它实用吗？Bardia Pezeshki post at Linkedin](#52-硅光子学联合封装-凉-但它实用吗bardia-pezeshki-post-at-linkedin)
@@ -638,7 +640,33 @@ Advent Global Opportunities 和 Light Street Capital 引领了 D 轮融资，以
 
 感谢我们所有的投资者和合作伙伴，感谢你们在大规模提供光学 I/O 以满足大规模 AI 工作负载需求方面的支持！
 
+加利福尼亚州圣何塞——2024 年 12 月 11 日——Ayar Labs是大规模 AI 工作负载光学互连解决方案的领导者，该公司今天宣布已获得由 Advent Global Opportunities 和 Light Street Capital 领投的 1.55 亿美元融资，旨在利用其光学 I/O 技术打破 AI 数据移动瓶颈。这使该公司的总融资额达到 3.7 亿美元，并将公司的估值提高到 10 亿美元以上。
+
+本轮融资的规模和投资者的素质（包括 AMD Ventures、Intel Capital 和 NVIDIA 的参与）标志着 Ayar Labs 的又一个重要里程碑，该公司正在准备其光学解决方案，以战略性地配合客户路线图进行大批量生产。参与本轮融资的其他新战略和金融投资者包括 3M Ventures 和 Autopilot。他们加入了现有投资者，例如 Applied Ventures LLC、Axial Partners、Boardman Bay Capital Management、GlobalFoundries、IAG Capital Partners、Lockheed Martin Ventures、Playground Global 和 VentureTech Alliance。
+
+Ayar Labs 首席执行官兼联合创始人 Mark Wade 表示：“领先的 GPU 提供商 AMD 和 NVIDIA 以及半导体代工厂 GlobalFoundries、Intel Foundry 和 TSMC，再加上 Advent、Light Street 和我们其他投资者的支持，凸显了我们的光学 I/O 技术重新定义 AI 基础设施未来的潜力。”“我们非常幸运，在这轮融资中，Light Street 在技术特定投资方面的深厚专业知识以及 Advent 强大的私募和成长股权背景为我们提供了支持。”
+
+预计未来十年人工智能基础设施的投资将超过 1 万亿美元，这凸显了消除传统铜互连和可插拔光学器件造成的瓶颈的解决方案的迫切需求。
+
+Ayar Labs 开发了业界首款封装内光学 I/O 解决方案，用于替代电气 I/O，该解决方案基于标准、商业化且针对 AI 训练和推理进行了优化。光学 I/O 可让客户最大限度地提高其 AI 基础设施的计算效率和性能，同时降低成本和功耗，从而大幅提高 AI 应用的盈利能力指标。
+
+Advent Global Opportunities 合伙人 Jordan Katz 将加入 Ayar Labs 董事会，他表示：“我们相信光学 I/O 即将彻底改变 AI 基础设施的未来，我们也认识到封装内光学互连的巨大增长潜力。我们对互连市场的深入研究表明，Ayar Labs 由世界一流的团队领导，拥有行业领先的技术，并与一级客户建立了令人兴奋的合作关系。我们相信，支持 Ayar Labs 及其突破性技术将为 AI 系统带来变革性的好处。”
+
+Light Street Capital 合伙人 Shef Osborn 表示：“我们致力于推动引领技术创新的公司成长。凭借此次重大资本注入，Ayar Labs 有能力支持其不断增长的客户群并满足对光学 I/O 解决方案的爆炸式需求。”“这笔资金向其客户表明，Ayar Labs 拥有支持其 AI 基础设施需求所需的资源。”
+
+这笔资金使该公司能够扩大其突破性的光学 I/O 技术，这是业界首个由强大的制造生态系统支持的具有商业可行性的光学互连解决方案。今年早些时候，福布斯将 Ayar Labs 评为美国最佳创业公司雇主之一，该公司计划明年增加招聘人数。公司空缺职位列表可在此处查看。
+
+附加投资者声明
+
+- 英特尔投资董事总经理 Srini Ananth 表示：“英特尔投资早已认识到开拓新互连技术以提高计算效率和性能的重要性。我们一直致力于支持 Ayar Labs 的持续发展，并自豪地重申我们对其旨在颠覆人工智能行业的光学 I/O 解决方案的承诺。”
+
+- Applied Ventures 全球负责人兼 Ayar Labs 董事会观察员 Anand Kamannavar 表示：“作为早期投资者和合作者，Applied Ventures 期待继续与 Ayar Labs 合作，利用基于光子学的光学互连技术推动节能计算。Ayar Labs 在帮助解决在芯片和数据中心系统之间高效传输大量数据这一关键挑战方面发挥着关键作用。”
+
+- 3M 新增长风险投资高级副总裁 Mark Copman 表示：“3M 很高兴投资 Ayar Labs 并有机会与我们合作。此次合作加强了 3M 利用其领先的材料科学专业知识推进数据中心和下一代 AI 基础设施解决方案的承诺。”
+
 <https://ayarlabs.com/news/ayar-labs-155m-series-d-to-address-ai-infrastructure-includes-amd-intel-capital-nvidia?utm_campaign=241108-series-d&utm_source=linkedin&utm_medium=social>
+
+<https://ayarlabs.com/news/ayar-labs-155m-series-d-to-address-ai-infrastructure-includes-amd-intel-capital-nvidia?utm_campaign=241108-series-d&utm_content=320082612&utm_medium=social&utm_source=linkedin&hss_channel=lcp-6627049>
 
 ![](/picture/1733926105037.jpg)
 
@@ -676,6 +704,175 @@ Ayar Labs Inc.是一家专门利用光在芯片之间传输数据的公司，随
 VentureTech Alliance与台积电建立了战略合作伙伴关系，是 Ayar Labs 的现有投资者。台积电是今年成立硅光子学行业联盟的多家公司之一，该联盟旨在帮助加速该技术的使用，包括芯片封装。
 
 <https://www.bloomberg.com/news/articles/2024-12-11/nvidia-amd-and-intel-invest-in-startup-bringing-light-to-chips?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTczMzkyMTEyMCwiZXhwIjoxNzM0NTI1OTIwLCJhcnRpY2xlSWQiOiJTTzk0S0NUMEcxS1cwMCIsImJjb25uZWN0SWQiOiJBMTkwM0Q0NjcwOTU0MEYwQjA5RjA2NUE3NTk0OTEyQSJ9.AO42H3j_1j1qyMEvnIJzWlLWPnmN6qqDR_NnTPBE5io>
+
+## 4.17 人工智能的野心正在将铜推向极限 Ayar Labs 认为硅光子技术将成为超越机架并控制热量的关键
+
+SC24数据中心多年来一直趋向于更密集、更耗电的系统。如果您错过了，19 英寸机架现在在高密度配置中将功率需求推高至 120 千瓦以上，许多机架都改用直接液体冷却来控制热量。
+
+这一趋势在很大程度上是由支持越来越大的 AI 模型的需求所驱动。据富士通研究人员称，AI 系统中的参数数量大约每三年增长 32 倍。为了支持这些模型，Nvidia 等芯片设计商使用极高速的互连（每秒约 1.8 TB）来使八个或更多 GPU 看起来和表现得像一个设备。
+
+但问题是，数据在电线上的传输速度越快，信号可维持的距离就越短。在这种速度下，铜缆上的传输距离只能限制在一两米左右。
+
+另一种方法是使用光学器件，它可以在更远的距离上保持信号。事实上，光学器件已经用于许多机架到机架的横向扩展结构，例如用于 AI 模型训练的结构。不幸的是，在目前的形式下，可插拔光学器件并不是特别高效或特别快。
+
+**早在 2024 年 GTC 大会上，Nvidia 首席执行官黄仁勋就表示，如果公司使用光学器件而不是铜来连接组成其NVL72 机架系统的 72 个 GPU，那么将需要额外 20 千瓦的电力。**
+
+那么，这是否意味着光学器件不再是问题，而更密集的机架是不可避免的呢？Ayar Labs 的研究人员认为，情况并非如此，他们认为，通过将光学器件直接集成到计算中，芯片制造商不仅可以缓解带宽瓶颈，还可以降低支持不断增长的模型参数数量所需的机架密度。
+
+照亮去致密化之路
+
+有许多光子学初创公司致力于克服铜互连的局限性并提高光学 I/O 的效率，但 Ayar 是首批其中之一。
+
+这家总部位于旧金山的初创公司自 2015 年以来一直在开发光学互连芯片。这些光学设备旨在与 CPU 或 GPU 一起封装，以便在比铜线更长的距离上实现更高的带宽。
+
+对于大规模人工智能训练和推理等应用，光纤可能会取代 Nvidia 的 NVLink 或 AMD 的 Infinity Fabric 将多个芯片连接在一起。
+
+![](/picture/ayar_render_optical_gpu.jpg)
+
+Ayar Labs 商业运营副总裁 Terry Thorn 在最近的一次采访中告诉 El Reg：“如果你想摆脱单一机架，转而使用多个机架，并将计算基础扩展到 64-72 个 GPU 以上，你就必须做一些不同于铜和电的事情。” “目前存在的可插拔设备无法满足需求。当你使用封装内光学 I/O 时，你开始满足需求，并开始开启拥有这种扩展结构的能力。”
+
+虽然该技术可以让计算和内存域扩展到数十个机架上的数百个 GPU，但这也意味着不再需要将几乎同样多的加速器塞进一个机架中，从而减轻了数据中心运营商目前面临的一些电力和散热挑战。
+
+Thorn 解释道：“你可能会觉得使用铜线时，你必须留在那个机架中，而且根据功率密度、占地面积和面积，你可以连接的数量可能会受到限制。”“如果你开始采用光学 I/O，你可以开始分散电力的分配，从而让那些受电力限制的人能够在更大的面积上建立 AI 连接基础设施。”
+
+换句话说，计算不再需要在同一个盒子里，更不用说同一个机架里，才能作为一个逻辑系统发挥作用，这意味着每个机架的功率和热密度可以大大降低。
+
+还有更多工作要做
+
+尽管硅光子技术前景光明，但在将其集成到生产硬件之前，该技术仍面临诸多挑战。这些挑战包括开发能够在功率和带宽上与现有铜互连相匹配的芯片，以及开发通信协议（如 UCIe），以便两者能够相互通信。
+
+Ayar 对这些障碍并不陌生，过去几年来，该公司一直致力于将其硅光子芯片集成到多个原型系统中。几年前，我们曾探讨过 Ayar 与英特尔为 DARPA打造的超线程图形数据库加速器的集成。Ayar 还将其芯片集成到英特尔的 Agilex FPGA 中。
+
+最近，Ayar 透露，它正在与富士通合作，将两款下一代光子芯片集成到他们的 CPU 中，每款芯片能够提供约 8Tbps 的双向带宽。
+
+在 SC24 上，Ayar 展示了一对 TeraPHY 芯片与 A64FX 处理器一起封装的模型，但没有任何迹象表明这实际上会制造出来，也没有迹象表明富士通打算将该技术商业化。就像英特尔一样，这可能只是一次测试该技术可行性的实验。
+
+![](/picture/ayar_fujitsu_mockup.jpg)
+
+然而，构建和集成光子芯片只是更大难题中的一小部分。由于它们将永久绑定到昂贵的加速器上，因此它们必须可靠。
+
+对于光学可插拔设备，如果出现问题，更换它相对容易且便宜，至少与 GPU 之类的设备相比：只需更换损坏的芯片，然后恢复工作即可。如果光学芯片出现故障，那么价值 40,000 美元的加速器就没戏了。
+
+索恩说：“我认为我们正在采取一些行动来解决人们在谈论计算芯片中的光学器件时出现的一些担忧。”
+
+第一个举措是将光源与芯片分离。“有办法在芯片内部制造激光器，但这会使激光器本身处于非常高的动态范围温度……这往往会影响其可靠性和长期可行性，”他解释道。
+
+这种方法的好处是，如果激光器确实出现故障，它不会带走 GPU 或加速器，并且可以在后期更换或升级。
+
+Ayar 还在开发一种光学测试流程，以便在晶圆厂将坏芯片粘合到 GPU 之前找出它们。Thorn 说：“我们正在确定如何在晶圆上进行光学和电气测试，以帮助识别已知的好芯片。”他补充说，这应该有助于避免芯片因光学故障而损坏。
+
+![](/picture/ayar_intel_optical_attach.webp)
+
+说到光学故障，您不仅要担心芯片，还要担心光纤本身。多年来，Ayar 探索了几种不同的光纤连接方法，其中包括英特尔代工厂开发的一种方法，可水平插入芯片侧面。我们被告知，连接的测试仍处于早期阶段，但 Ayar 已成功通过它传输数据。
+
+正如我们之前提到的，Ayar 并不是唯一一家致力于克服这些挑战的公司，在许多情况下，光纤附件、通信协议以及测试和验证方法等发展可能会实现标准化，以造福更广泛的生态系统。
+
+<https://www.theregister.com/2024/11/28/ai_copper_cables_limits/?utm_campaign=241018-sc24&utm_content=318166665&utm_medium=social&utm_source=linkedin&hss_channel=lcp-6627049>
+
+## 4.17.1 NVLlink坚持使用铜缆，因为会增加20W功耗
+
+**决定坚持使用铜缆而不是光纤似乎是一个奇怪的选择，特别是考虑到我们正在谈论的带宽量，但显然支持光纤所需的所有重定时器和收发器会使系统本来就巨大的功耗再增加 20kW。**
+
+**这也许可以解释为什么 NVLink 交换机托架位于两个计算机组之间，因为这样做可以使电缆长度保持在最短。**
+
+一个机架。120kW 计算能力。近距离观察 Nvidia 的 DGX GB200 NVL72 猛兽
+
+
+GTC Nvidia 周一发布了迄今为止最强大的 DGX 服务器。这款 120kW 机架式系统使用 NVLink 将 72 个新的 Blackwell 加速器拼接成一个大型 GPU，性能超过 1.4 exaFLOPS — 无论如何，精度达到 FP4。
+
+在本周的 GTC 大会上，我们有机会仔细研究机架规模系统，Nvidia 声称它可以支持大型训练工作负载以及高达 27 万亿个参数的模型推理——但目前还没有任何这么大的模型。
+
+![](/picture/nvidia_gb200_nvl72_front.jpg)
+Nvidia 的 DGX GB200 NVL72 是一个机架规模系统，它使用 NVLink 将 72 个 Blackwell 加速器整合成一个大型 GPU
+
+该系统被称为 DGX GB200 NVL72，是 Nvidia去年 11 月展示的Grace-Hopper Superchip 机架系统的升级版。不过，该系统的 GPU 数量是前者的两倍多。
+
+计算堆栈
+
+虽然重达 1.36 公吨（3,000 磅）的机架系统作为一块大型 GPU 进行销售，但它是由 18 个 1U 计算节点组装而成，每个计算节点都配备了两个 Nvidia 的 2,700W Grace-Blackwell 超级芯片（GB200）。
+
+![](/picture/nvidia_twin_gb200_system.jpg)
+这里我们看到了两个 GB200 超级芯片，1U 液冷机箱中没有散热器和冷板
+
+您可以在我们的发布日报道中找到有关 GB200 的更多详细信息，但简而言之，大量部件使用 Nvidia 的 900GBps NVLink-C2C 互连将 72 核 Grace CPU 与一对顶级 Blackwell GPU 结合在一起。
+
+总体而言，每个 Superchip 都配备 864GB 内存（480GB LPDDR5x 和 384GB HBM3e），据 Nvidia 称，可以实现 40 petaFLOPS 的稀疏 FP4 性能。这意味着每个计算节点能够产生 80 petaFLOPS 的 AI 计算，整个机架可以进行 1.44 exaFLOPS 的超低精度浮点数学运算。
+
+![](/picture/nvidia_gb200_superchip.jpg)
+Nvidia 的 Grace-Blackwell 超级芯片（简称 GB200）结合了 72 个 Arm 核心 CPU 和一对 1,200W GPU
+
+系统前端有四个 InfiniBand NIC（请注意机箱面板左侧和中央的四个 QSFP-DD 笼），它们构成了计算网络。系统还配备了 BlueField-3 DPU，据说它负责处理与存储网络的通信。
+
+除了几个管理端口外，机箱还配备四个小型 NVMe 存储托架。
+
+![](/picture/nvidia_nvl72_compute_sleds.webp)
+NVL72 的 18 个计算节点标配四个 Connect-X InfiniBand NIC 和一个 BlueField-3 DPU
+
+有了两个 GB200 超级芯片和五个 NIC，我们估计每个节点的功耗在 5.4kW 到 5.7kW 之间。绝大部分热量将通过直接到芯片 (DTC) 液体冷却带走。Nvidia 在 GTC 上展示的 DGX 系统没有冷却板，但我们确实看到了来自合作供应商的几个原型系统，比如联想的这个。
+
+![](/picture/lenovo_gb200_prototype.jpg)
+
+然而，与我们从 HPE Cray 或联想 Neptune 系列中看到的一些使用液体冷却所有东西的 HPC 中心节点不同，Nvidia 选择使用传统的 40 毫米风扇来冷却 NIC 和系统存储等低功耗外围设备。
+
+把所有东西拼接在一起
+
+首席执行官兼皮夹克爱好者黄仁勋在主题演讲中将 NVL72 描述为一个大型 GPU。这是因为所有 18 个超密集计算节点都通过位于机架中间的九个 NVLink 交换机堆栈相互连接。
+
+![](/picture/nvidia_nvl72_nvlink.webp)
+NVL72 的计算节点之间是九个 NVLink 交换机的堆栈，为系统 72 个 GPU 中的每个 GPU 提供 1.8 TBps 的双向带宽
+
+Nvidia 的 HGX 节点也使用同样的技术，让 8 个 GPU 像一个 GPU 一样运行。不过，NVL72 并没有像下面 Blackwell HGX 那样将 NVLink 交换机嵌入到载板上，而是将其作为独立设备。
+
+![](/picture/nvidia_b200_hgx.jpg)
+NVLink 交换机传统上集成到 Nvidia 的 SXM 载板中，例如此处显示的 Blackwell HGX 板
+
+这些交换机设备内部有一对 Nvidia 的 NVLink 7.2T ASIC，总共提供 144 个 100 GBps 链路。每个机架有 9 个 NVLink 交换机，相当于为机架中的 72 个 GPU 中的每一个提供 1.8 TBps（18 个链路）的双向带宽。
+
+![](/picture/nvidia_nvlink_switch.jpg)
+这里展示的是 NVL72 的九个交换机托架中各有两个第五代 NVLink ASIC
+
+NVLink 交换机和计算底座都插入盲插背板，并配有超过 2 英里（3.2 公里）的铜缆。透过机架背面，您可以隐约看到一捆巨大的电缆，它们负责将 GPU 连接在一起，使它们能够作为一个整体运行。
+
+![](/picture/nvidia_nvl72_cabling.webp)
+如果仔细观察，你会看到构成机架 NVLink 背板的大量电缆
+
+<font color=red>决定坚持使用铜缆而不是光纤似乎是一个奇怪的选择，特别是考虑到我们正在谈论的带宽量，但显然支持光纤所需的所有重定时器和收发器会使系统本来就巨大的功耗再增加 20kW。
+
+这也许可以解释为什么 NVLink 交换机托架位于两个计算机组之间，因为这样做可以使电缆长度保持在最短。</font>
+
+电源、冷却和管理
+
+在机架的最顶部，我们发现了几个 52 端口 Spectrum 交换机 — 48 个千兆 RJ45 和四个 QSFP28 100Gbps 聚合端口。据我们所知，这些交换机用于管理和传输来自组成系统的各个计算节点、NVLink 交换机托架和电源架的流式遥测数据。
+
+![](/picture/nvidia_nvl72_switches_power.webp)
+在 NVL72 的顶部，我们发现了几个开关和六个电源架中的三个
+
+这些交换机正下方是 NVL72 正面可见的六个电源架中的第一个——三个在机架顶部，三个在底部。我们对它们了解不多，只知道它们负责为 120kW 机架供电。
+
+根据我们的估计，六个 415V、60A 的 PSU 足以满足这一要求。不过，Nvidia 或其硬件合作伙伴可能已在设计中加入了一定程度的冗余。这让我们相信这些电源的运行电流可能超过 60A。我们已要求 Nvidia 提供有关电源架的更多详细信息；我们会告诉您我们的发现。
+
+不管他们是怎么做的，电力都是通过机架背面的超大规模直流母线输送的。如果你仔细观察，你就能发现母线沿着机架中间延伸。
+
+![](/picture/nvidia_nvl72_watercooling.jpg)
+据首席执行官黄仁勋介绍，冷却液设计为以每秒 2 升的速度泵送通过机架
+
+当然，冷却 120kW 的计算并非易事。但随着芯片越来越热，计算需求不断增长，我们看到越来越多的数据中心供应商（包括 Digital Realty 和 Equinix）扩大了对高密度 HPC 和 AI 部署的支持。
+
+对于 Nvidia 的 NVL72，计算和 NVLink 交换机均采用液体冷却。据黄先生介绍，冷却剂以每秒两升的速度进入机架，温度为 25 摄氏度，离开机架时温度会高出 20 度。
+
+扩展
+
+如果 DGX GB200 NVL72 的 13.5 TB HBM3e 和 1.44 exaFLOPS 稀疏 FP4 不够用的话，可以将其中 8 个联网在一起，形成一个带有 576 个 GPU 的大型 DGX Superpod。
+
+![](/picture/nvidia_dgx_gb200_superpod.jpg)
+八个 DGX NVL72 机架可以串联起来形成 Nvidia 的液冷 DGX GB200 Superpod
+
+如果您需要更多计算来支持大型训练工作负载，可以添加额外的 Superpod 以进一步扩展系统。这正是亚马逊网络服务 (Amazon Web Services) 对Ceiba 项目所做的。这款人工智能超级计算机最初于 11 月宣布，现在使用 Nvidia 的 DGX GB200 NVL72 作为模板。据报道，完成后，该机器将拥有 20,736 个 GB200 加速器。然而，该系统的独特之处在于 Ceiba 将使用 AWS 自主开发的 Elastic Fabric Adapter (EFA) 网络，而不是 Nvidia 的 InfiniBand 或以太网套件。
+
+Nvidia 表示，其 Blackwell 部件（包括机架式系统）将于今年晚些时候开始上市
+
+<https://www.theregister.com/2024/03/21/nvidia_dgx_gb200_nvk72/>
+
 
 # 5. Avicena
 
