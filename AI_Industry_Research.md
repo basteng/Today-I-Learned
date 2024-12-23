@@ -14,6 +14,7 @@
 - [8. Nvidia](#8-nvidia)
   - [8.1 NVLink](#81-nvlink)
   - [8.2 Nvidia的顶级供应商和客户](#82-nvidia的顶级供应商和客户)
+  - [8.3 Nvidia和Broadcom 谁会胜出](#83-nvidia和broadcom-谁会胜出)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -234,3 +235,64 @@ ASE      - 2.5%      $TSLA  - 2.1%
 ![](/picture/Nvidia-supplyer.jpg)
 
 <https://www.linkedin.com/posts/subhash-km-6b5443123_nvidias-top-suppliers-customers-suppliers-activity-7265703131018080256-l2CH?utm_source=share&utm_medium=member_desktop>
+
+## 8.3 Nvidia和Broadcom 谁会胜出
+
+🏎️ Nvidia 与 Broadcom — 谁会胜出？ 
+
+定制芯片机会有多大 
+这对 Nvidia 意味着什么 
+ 
+
+我们的每周文摘旨在让您始终处于数据基础设施、软件和网络安全投资的前沿。
+
+Nvidia 与定制芯片  
+ 
+
+博通和 Marvell 都是定制芯片 (ASIC) 领域的领导者，它们抢走了 Nvidia 的风头，自第二季度末以来，其表现分别远远超过这家科技巨头约 30% 和 50%。 
+
+ 
+
+随着亚马逊、谷歌和微软等科技巨头纷纷开发和加大自主芯片的生产，市场终于意识到了定制芯片的机会。 
+
+![](/picture/Relative%20Price.webp)
+
+**定制机会有多大？ **
+
+根据两家定制芯片领导者的评论，我们估计到2027 年定制芯片市场规模将达到900 亿美元，复合年增长率将达到 60% 以上。Marvell在今年早些时候给出了更为保守的预测，即到 2028 年市场规模将达到 750 亿美元，但在看到早期客户增长后，该公司暗示市场还有上升空间。Broadcom 以 600-900 亿美元的市场规模震惊了市场 😮
+
+两家公司都拥有强大的平台，Marvell 的最大客户是亚马逊和微软，而博通的最大客户是谷歌、Meta 和字节跳动。每家公司在哪些方面可以取胜？  
+
+**迈威尔**
+
+Marvell 预计 到 28 年 AI 可寻址市场规模将达到750 亿美元 ，其中大部分（420 亿美元）用于服装计算，这意味着定制计算复合年增长率为 45%，整体 AI 复合年增长率约为 30%。 
+该公司最大的客户是：亚马逊（25 年扩张业务）和微软（26 年扩张业务）。
+这意味着在对亚马逊和微软的了解越来越多后，他们的市场估计是保守的。 
+
+**博通**
+
+博通甚至给出了更为激进的估计， 即到27年，人工智能可寻址市场规模将达到600-900亿美元。
+该公司最大的客户是：谷歌、Meta和字节跳动，它们都将在 2027 财年转向 1M XPU 大小的集群。
+据报道，博通又赢得了两个客户（可能是苹果和 OpenAI）
+
+![](/picture/custom%20chip%20platforms%20and%20wins.webp)
+
+这对 Nvidia 意味着什么？
+
+Nvidia 的股价已经停滞到一个水平，目前该公司的 EV/EBITDA 成本低于 Marvell 和 Broadcom。 
+
+![](/picture/EV%20to%20EBITDA.webp)
+
+投资者现在预计 2027 年英伟达的市场份额将大幅下降，因此营收增长也会下降。但市场低估了两点： 
+
+CUDA 优势
+一年的产品改进周期
+我们认为 CUDA 的优势限制了云服务提供商 (CSP) 可以向其客户推销的定制芯片数量。由于云占据了整个市场的约 50%，我们认为在 2027-2030 年期间赢得约一半的市场份额对于定制芯片提供商来说将是一个巨大的胜利。  
+
+根据博通首席执行官的评论，市场目前假设大部分 CSP 收入将流向定制提供商，但事实证明这种假设过于激进。 
+
+此外，定制芯片是否能跟上 Nvidia 引领的 1 年产品发布节奏还有待观察——每一代新产品都会带来显著的性能改进。我们最好的估计是，竞争对手仍处于约 1+ 至 2 年的创新周期。 
+
+![](/picture/nvidia%20vs%20asic.webp)
+
+<https://learn.spear-invest.com/%F0%9F%8F%8E%EF%B8%8F-nvidia-vs.-broadcom-which-one-wins?utm_medium=email&_hsenc=p2ANqtz-_TZA5JFO9EsklzDWWapIqvs0p166uJ8r4ysqBlEgyMpG_o5rupeniBQ0-PqSE5Cqhhn3Y3vX0OrDD00jr_xyQ0d00WMA&_hsmi=337026080&utm_content=337026080&utm_source=hs_automation>
