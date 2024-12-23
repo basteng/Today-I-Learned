@@ -50,6 +50,8 @@
     - [9.8.1 代表文章：随着中国企业迎头赶上，SK 海力士和三星将削减传统 DRAM 产量](#981-代表文章随着中国企业迎头赶上sk-海力士和三星将削减传统-dram-产量)
   - [9.9 移动通信 - lightreading - 来自Omdia](#99-移动通信---lightreading---来自omdia)
     - [9.9.1 代表作 华为拥有一项美国难以伤害的 5G 优势](#991-代表作-华为拥有一项美国难以伤害的-5g-优势)
+  - [9.10 Converge AI-通信-咨询网站](#910-converge-ai-通信-咨询网站)
+    - [9.10.1 代表作 视频：与 Ayar Labs 合作推进光学 I/O 连接](#9101-代表作-视频与-ayar-labs-合作推进光学-io-连接)
 - [10. 化合物半导体](#10-化合物半导体)
   - [10.1 compoundsemiconductor](#101-compoundsemiconductor)
 - [11. Github](#11-github)
@@ -330,6 +332,14 @@ https://www.lightreading.com/
 ### 9.9.1 代表作 华为拥有一项美国难以伤害的 5G 优势
 
 <https://www.lightreading.com/5g/huawei-has-one-5g-power-that-is-hard-for-the-us-to-hurt>
+
+## 9.10 Converge AI-通信-咨询网站
+
+https://convergedigest.com/
+
+### 9.10.1 代表作 视频：与 Ayar Labs 合作推进光学 I/O 连接
+
+<https://convergedigest.com/video-advancing-optical-i-o-connectivity-with-ayar-labs/?utm_campaign=241018-sc24&utm_content=318505477&utm_medium=social&utm_source=linkedin&hss_channel=lcp-6627049>
 
 # 10. 化合物半导体
 

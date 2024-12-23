@@ -23,6 +23,7 @@
   - [4.16 2024.12.12获得AMD、Intel和Nvidia的1.55亿美元投资](#416-20241212获得amdintel和nvidia的155亿美元投资)
   - [4.17 人工智能的野心正在将铜推向极限 Ayar Labs 认为硅光子技术将成为超越机架并控制热量的关键](#417-人工智能的野心正在将铜推向极限-ayar-labs-认为硅光子技术将成为超越机架并控制热量的关键)
   - [4.17.1 NVLlink坚持使用铜缆，因为会增加20W功耗](#4171-nvllink坚持使用铜缆因为会增加20w功耗)
+  - [4.18 与 Ayar Labs 合作推进光学 I/O 连接](#418-与-ayar-labs-合作推进光学-io-连接)
 - [5. Avicena](#5-avicena)
   - [5.1《High Bandwidth GaN-based Micro-LEDs at Temperatures up to 400°C》](#51high-bandwidth-gan-based-micro-leds-at-temperatures-up-to-400c)
   - [5.2 硅光子学联合封装。 凉！ 但它实用吗？Bardia Pezeshki post at Linkedin](#52-硅光子学联合封装-凉-但它实用吗bardia-pezeshki-post-at-linkedin)
@@ -873,6 +874,23 @@ Nvidia 表示，其 Blackwell 部件（包括机架式系统）将于今年晚�
 
 <https://www.theregister.com/2024/03/21/nvidia_dgx_gb200_nvk72/>
 
+## 4.18 与 Ayar Labs 合作推进光学 I/O 连接
+
+这是Ayar Labs忙碌的一年，它正在推进解决光学 I/O 瓶颈的使命。
+
+在三月份的光纤通信 (OFC) 大会上，Ayar Labs 推出了业界首款符合 CW-WDM MSA 标准的 16 波长光源 SuperNova™。这项创新可提供每秒 16 兆兆位 (Tbps) 的双向带宽，这对于 AI 工作负载至关重要。
+
+11 月，在亚特兰大举行的 2024 年超级计算大会期间，Ayar Labs 与主要合作伙伴展示了一系列光学 I/O 实现。Ayar Labs 商业运营副总裁 Terry Thorn 解释道：
+
+– Ayar Labs 展示与 Supernova 光源配对的光学 IO 芯片，可实现高速、节能的数据传输
+
+– 该公司推出了用于光纤连接的可拆卸连接器，有助于大批量生产和测试多芯片封装 –
+
+Ayar Labs 展示了一款 AI 模拟器，展示了部署光学 IO 后 AI 模型的盈利能力和交互性得到提高，展现了超越人类感知极限的优势
+
+<https://youtu.be/T1NPCj92_vc>
+
+<https://convergedigest.com/video-advancing-optical-i-o-connectivity-with-ayar-labs/?utm_campaign=241018-sc24&utm_content=318505477&utm_medium=social&utm_source=linkedin&hss_channel=lcp-6627049>
 
 # 5. Avicena
 
