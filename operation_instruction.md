@@ -22,6 +22,7 @@
 - [12. Transformer by hand - Full Stack in Excel](#12-transformer-by-hand---full-stack-in-excel)
 - [13. 模拟电路设计 - JKU 举办的中级 MOSFET模拟电路设计课程](#13-模拟电路设计---jku-举办的中级-mosfet模拟电路设计课程)
 - [14. MOSbius 芯片 - 集成电路课程中为学生提供连接测量、仿真和分析的动手实验](#14-mosbius-芯片---集成电路课程中为学生提供连接测量仿真和分析的动手实验)
+- [15.  Jetson Orin Nano Super](#15--jetson-orin-nano-super)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -575,3 +576,34 @@ MOSbius 平台提供芯片、用于将芯片放置在无焊试验板上的适配
 
 <https://www.linkedin.com/posts/peter-kinget-7481a3_want-to-offer-your-students-hands-on-labs-activity-7274878090617524225-iGPm?utm_source=share&utm_medium=member_desktop>
 
+# 15.  Jetson Orin Nano Super
+
+AI 的树莓派：NVIDIA 廉价的 AI 迷你 PC 有何用途？
+
+NVIDIA 本周推出了 Jetson Orin Nano Super，这是一款功能强大的小型计算机，能够在本地运行生成式 AI，价格仅为 249 美元。
+
+作为人工智能竞赛的女王，NVIDIA 正在扩大其项目，并刚刚推出了 Jetson Orin Nano 超级开发套件。这个对于普通人来说有点野蛮的名字背后，我们发现了一个专门用于人工智能处理的开发套件——或者更确切地说是一个迷你超级计算机。该项目已经存在多年（2014 年推出了 Jetson TK1），并定期更新，直到 2019 年的 Nano 和 2022 年的 Orin Nano。顾名思义，后者现在是这个超级版本的基础，包含许多改进的更新。
+
+适合开发者和人工智能爱好者的强大迷你电脑
+
+有点像 Raspberry Pi，Jetson Orin Nano Super 并不是一台能够运行应用程序的简单迷你 PC。它更适合那些希望以非常紧凑的格式在本地运行生成式人工智能的修补者。
+
+除了提高性能外，新型迷你 PC 还显着提高了人工智能应用程序的性能。 NVIDIA 声称，在某些生成式 AI 使用案例中，这些性能提高了 70%，AI 性能高达 67 TOPS。相比之下，旧版本的速度为 40 TOPS，而配备 M4 芯片的 Mac mini 则为 38 TOPS。新型号的内存带宽也提高了 50%，达到 102 GB/s。
+
+正如我们来自专业网站Hardware & Co 的同事所解释的那样，NVIDIA 为其 Jetson Orin Nano Super 使用了一个简单的方法：超频。软件更新为迷你 PC 添加了 25 W 配置文件以提高性能，允许 ARM CPU 部分（六个 Cortex-A78E 内核）获得 200 MHz 达到 1.7 GHz。最重要的是，巧妙的手法让 GPU 的频率几乎翻倍，从 635 MHz 升至 1020 MHz。 Ampere一代iGPU拥有1,024个核心和32个Tensor核心。
+
+正如我们来自专业网站Hardware & Co 的同事所解释的那样，NVIDIA 为其 Jetson Orin Nano Super 使用了一个简单的方法：超频。软件更新为迷你 PC 添加了 25 W 配置文件以提高性能，允许 ARM CPU 部分（六个 Cortex-A78E 内核）获得 200 MHz 达到 1.7 GHz。最重要的是，巧妙的手法让 GPU 的频率几乎翻倍，从 635 MHz 升至 1020 MHz。 Ampere一代iGPU拥有1,024个核心和32个Tensor核心。
+
+<https://hardwareand.co/actualites/breves/nvidia-super-ise-sa-plateforme-de-developpement-jetson-orin-nano>
+
+NVIDIA 将价格减半（这是有充分理由的）
+
+NVIDIA 还寻求以 249 美元的价格提供其套件，比之前的型号（499 美元）便宜一半。这一决定旨在帮助变色龙继续前进，继续保持人工智能之王的地位。 2024 年对于 NVIDIA 来说是特别多产的一年，它真正改变了维度。
+
+Jetson Orin Nano Super“降价”的决定也与这款迷你 PC 并未在硬件层面进化有关。它尤其受益于 NVIDIA 将向旧版 Jetson Orin Nano 用户免费提供的更新。除了 7 W 和 15 W 配置文件之外，后者还将能够受益于 25 W 配置文件的相同改进。但是，人们可能想知道为什么该品牌要等待才发布其小套件。
+
+NVIDIA 合作伙伴 Palit 借此机会展示了Pandora。该公司并未将其称为“迷你电脑”，而是将其称为“迷你人工智能硬件”，并且不打算将其面向公众。它是为爱好者和开发人员设计的，有多种配置（8 GB 或 16 GB RAM），这将决定最大 TOPS 速度。然而，在撰写本文时，价格和供货情况仍未知。
+
+<https://videocardz.com/pixel/palit-launches-pandora-nvidia-jetson-orin-nx-turned-mini-pc>
+
+<https://www.journaldugeek.com/2024/12/20/raspberry-de-lia-a-quoi-sert-le-mini-pc-ia-pas-cher-de-nvidia/>
