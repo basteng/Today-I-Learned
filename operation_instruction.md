@@ -309,8 +309,11 @@ ssrcloud
 
 <https://ace-taffy.com/user/>
 
-售后群
+**售后群**
 <https://t.me/thisissupport>
+
+**公告牌**
+<https://t.me/s/ssrdata>
 
 <https://github.com/LeeYo2005/SS-SSR-V2RAY?tab=readme-ov-file#%E6%8E%A8%E8%8D%90%E5%A5%BD%E7%94%A8%E7%9A%84ssv2raytrojan%E6%9C%BA%E5%9C%BA>
 
