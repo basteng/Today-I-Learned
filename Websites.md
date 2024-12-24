@@ -57,6 +57,8 @@
 - [11. Github](#11-github)
   - [11.1 Oreilly - AI Engineering 作者，非常好看，所有关于AI Prompt的内容](#111-oreilly---ai-engineering-作者非常好看所有关于ai-prompt的内容)
 - [12. beagleboard 类似树莓派的开发板](#12-beagleboard-类似树莓派的开发板)
+- [13. 财经网站](#13-财经网站)
+  - [13.1 Thefly 美股网站](#131-thefly-美股网站)
 
 
 # 1. 存储
@@ -357,6 +359,10 @@ https://compoundsemiconductor.net/home
 
 <https://www.beagleboard.org/>
 
+# 13. 财经网站
 
+## 13.1 Thefly 美股网站
+
+<https://thefly.com/>
 
 
