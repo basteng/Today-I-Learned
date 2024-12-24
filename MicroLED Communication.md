@@ -3634,3 +3634,5 @@ Improving the Modulation Bandwidth of GaN-Based Light-Emitting Diodes for High-S
     - 制造商不应过度依赖成熟消费电子市场，应利用Micro - LED显示特性与多样传感器解决方案结合，开发新功能和小众应用，加速市场渗透和创新。
 
 <https://www.semiconductor-today.com/features/PDF/semiconductor-today-nov-dec-2024-Micro-LED.pdf>
+
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/semiconductor-today-nov-dec-2024-Micro-LED.pdf>
