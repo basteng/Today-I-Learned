@@ -21,7 +21,7 @@
 # 2024年12月
 
 - 参考文档《债券投资入门》
-<D:\14_Github\TIL\Today-I-Learned\Yang\债券投资入门.pdf>
+<https://github.com/basteng/Today-I-Learned/blob/main/Yang/%E5%80%BA%E5%88%B8%E6%8A%95%E8%B5%84%E5%85%A5%E9%97%A8.pdf>
 
 
 
