@@ -113,6 +113,8 @@
   - [36.4 Equipment](#364-equipment)
     - [36.4.1 KLA](#3641-kla)
       - [36.4.1.1 KLA Corporation（KLAC）首席财务官 Bren Higgins 主持瑞银全球技术和人工智能会议（文字记录）](#36411-kla-corporationklac首席财务官-bren-higgins-主持瑞银全球技术和人工智能会议文字记录)
+    - [36.4.2 ASML](#3642-asml)
+      - [36.4.2.1 ASML Small Talk 2024- DUV products and business opportunity](#36421-asml-small-talk-2024--duv-products-and-business-opportunity)
   - [36.5 Material](#365-material)
   - [36.6 EDA](#366-eda)
 - [37. 产业链角色](#37-产业链角色)
@@ -2216,6 +2218,13 @@ Bren，我一直都在关注 KLA，而且我已经报道 KLA 26 年了。所以�
 因此，系统本身的实际运行情况如何，但其他一些有助于利用这些信息的软件包也是公司的重点，我认为这种重点会继续增长。我认为客户过去经常自己做很多这样的工作，我认为他们正在寻找我们，并了解整个工具组合的互操作性，这具有收集数据的网络效应，我认为这对我们的竞争地位非常重要，它使我们能够真正整理这些数据，并思考这些数据如何影响流程或设备性能。
 
 <https://seekingalpha.com/article/4742209-kla-corporation-klac-cfo-bren-higgins-hosts-ubs-global-technology-and-ai-conference>
+
+### 36.4.2 ASML
+
+#### 36.4.2.1 ASML Small Talk 2024- DUV products and business opportunity
+
+
+
 
 ## 36.5 Material
 
