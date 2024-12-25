@@ -2223,8 +2223,7 @@ Bren，我一直都在关注 KLA，而且我已经报道 KLA 26 年了。所以�
 
 #### 36.4.2.1 ASML Small Talk 2024- DUV products and business opportunity
 
-
-
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/05_duv-products-and-business-opportunity---herman-boom.pdf>
 
 ## 36.5 Material
 
