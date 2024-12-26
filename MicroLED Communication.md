@@ -3544,7 +3544,7 @@ GaAs - AlGaAs高辐射LED用于光通信系统的功率和调制带宽研究
 
 <http://www.iccsz.com/site/cn/News/2023/10/29/20231029140847063209.htm>
 
-
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/%E7%89%87%E9%97%B4%E5%85%89%E4%BA%92%E8%BF%9E%E5%8F%91%E5%B1%95%E6%80%81%E5%8A%BF%E5%88%86%E6%9E%90.pdf>
 
 ## 44.2 信息光子技术发展与应用研究报告-2024 吴冰冰团队
 
@@ -3563,6 +3563,8 @@ GaAs - AlGaAs高辐射LED用于光通信系统的功率和调制带宽研究
 6. 意见建议方面，我国及美、欧、日、韩等全球主要经济体均高度重视光子能力构建，为推动信息光子技术产业高质量发展，需加强战略研究与统筹规划、提升创新能力与产业基础、深化生态建设与应用牵引，促进多方要素形成合力，“政产学研用”各类主体共同打造融合式创新。
 
 <https://mp.weixin.qq.com/s/hiYbSOqQRz2-DY1Wcqwhng>
+
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/%E4%BF%A1%E6%81%AF%E5%85%89%E5%AD%90%E6%8A%80%E6%9C%AF%E5%8F%91%E5%B1%95%E4%B8%8E%E5%BA%94%E7%94%A8%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-2024.pdf>
 
 # 45. 微软：基于Micro-LED＋CIS的模拟光学计算实现加速计算
 
