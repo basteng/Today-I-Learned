@@ -147,6 +147,8 @@
   - [47.1 TrendForce](#471-trendforce)
     - [47.1.1 2024年12月3日预测2024年市场规模3880万美元](#4711-2024年12月3日预测2024年市场规模3880万美元)
 - [48. 面向能效型千万亿级(Petascale)互连的光I/O技术](#48-面向能效型千万亿级petascale互连的光io技术)
+- [49. 高带宽 die-to-die](#49-高带宽-die-to-die)
+  - [49.1 台积电 2024 IEEE Open Journal of the Solid-State Circuits Society文章](#491-台积电-2024-ieee-open-journal-of-the-solid-state-circuits-society文章)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -3685,6 +3687,21 @@ Improving the Modulation Bandwidth of GaN-Based Light-Emitting Diodes for High-S
 - (f) 多自由光谱范围通道排列应用25.69nm自由光谱范围的微谐振器，每条总线最多可支持17个通道。其中虚线凹陷表示共振别名，星号标记表示标称共振蓝侧，撇号标记表示标称共振红侧。这种设计方案通过创新的集成方式和先进的光电技术，实现了高效率、高带宽的数据传输系统。系统充分利用波长复用技术，在保持适度单通道数据率的同时，显著提升了整体传输容量。
 
 <https://mp.weixin.qq.com/s/S_wcElDPckglpFGP7Rlrew>
+
+# 49. 高带宽 die-to-die
+
+## 49.1 台积电 2024 IEEE Open Journal of the Solid-State Circuits Society文章
+
+最近，台积公司 年在 IEEE Open Journal of the Solid-State Circuits Society https://lnkd.in/gupeBDjB 上发表了一篇关于实现高带宽 die-to-die 的关键设计注意事项的综述。
+
+摘录（编辑）：
+📝运行速率为 56-112Gbps 的串行器/解串器 （SerDes ） 通常用于 2D/2.1D/2.2D/2.3D 封装中，以最大限度地提高每引脚数据速率。相比之下，基于 2.5D 中介层的封装通常配备高速并行数据链路，因为它们具有卓越的能源和面积效率。同时，先进的 3D 堆叠技术最受益于更简单、低速的并行链路，这些链路具有最少的缓冲器和触发器，并且没有专用的均衡器/校准电路，从而实现了比 2.5D 更高的数据面积/带宽密度和能效。
+📝对于大多数倒装芯片封装 （2D/2.1D/2.2D/2.3D），焊料凸点和金属走线的间距相对较粗。因此，人们通常被迫通过具有差分信号的串行链路（例如 PCIe-32/64Gbps、CEI-112/224Gbps）来最大化每个引脚的数据带宽密度。
+📝先进的 2.5D 封装技术允许在每个单元几何结构的更多并行单端信号链路上应用每个引脚的较低数据速率，以最大限度地提高带宽密度（例如，4-32Gbps 的 UCIe x64），同时简化系统设计并提高能效。
+📝3D 堆叠的密度继续上升（间距 P≤9μm）。根据涵盖 UCIe-3D™ 的最新 话题标签#UCIe 2.0 标准，每个 3D 互连的有效面积应小于凸块的面积，以最大限度地提高互连效率（≜带宽密度 x 能效），并且每个并行数据链路应保持 5Gbps 的“慢速”，以减轻时序工作负载。无需采用专用校准或线性均衡，从而进一步降低了系统复杂性和开销。
+📝先进封装中常见的去耦帽 （decap） 类型包括——从上到下;如下所示—A） 片上去耦电容，通常是电容密度为 ~50nF/mm² 的超高密度金属内金属电容器 （SHDMIM） 或 ~10nF/mm² 的硅电容器，B） 上中介层去耦电容，例如 >1000nF/mm² 的嵌入式深沟槽电容器 （eDTC），以及 C） 封装上/衬底分立式去耦电容，通常在 μF 范围内。
+
+![](/picture/chiplet%20Example%20IX%20A%20D2D%20Interconnect%20Survey.jpg)
 
 
 
