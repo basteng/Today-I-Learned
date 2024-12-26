@@ -3,6 +3,7 @@
 - [III.李振浩博士论文下载](#iii李振浩博士论文下载)
 - [1. Co-Designed Silicon Photonics Chip I/O for Energy-Efficient Petascale Connectivity](#1-co-designed-silicon-photonics-chip-io-for-energy-efficient-petascale-connectivity)
 - [2. AlN/GaN/AlGaN-on-Si HEMT Achieving 1.3 W/mm at 5 V for 5G FR2 Handsets](#2-alnganalgan-on-si-hemt-achieving-13-wmm-at-5-v-for-5g-fr2-handsets)
+- [3. A 0.297-pJ/Bit 50.4-Gb/s/Wire Inverter-Based Short-Reach Simultaneous Bi-Directional Transceiver for Die-to-Die Interface in 5-nm CMOS](#3-a-0297-pjbit-504-gbswire-inverter-based-short-reach-simultaneous-bi-directional-transceiver-for-die-to-die-interface-in-5-nm-cmos)
 
 20241204以后 （未下载）
 
@@ -37,3 +38,6 @@ https://ieeexplore.ieee.org/abstract/document/10745546
 
 https://ieeexplore.ieee.org/document/10726629
 
+# 3. A 0.297-pJ/Bit 50.4-Gb/s/Wire Inverter-Based Short-Reach Simultaneous Bi-Directional Transceiver for Die-to-Die Interface in 5-nm CMOS
+
+https://ieeexplore.ieee.org/document/10011563
