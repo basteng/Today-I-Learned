@@ -59,6 +59,8 @@
 - [12. beagleboard 类似树莓派的开发板](#12-beagleboard-类似树莓派的开发板)
 - [13. 财经网站](#13-财经网站)
   - [13.1 Thefly 美股网站](#131-thefly-美股网站)
+- [14. Linkedin 知名人物](#14-linkedin-知名人物)
+  - [14.1 植茶雅史](#141-植茶雅史)
 
 
 # 1. 存储
@@ -365,4 +367,11 @@ https://compoundsemiconductor.net/home
 
 <https://thefly.com/>
 
+# 14. Linkedin 知名人物
+
+## 14.1 植茶雅史
+
+很多有趣的图片
+
+<https://www.linkedin.com/in/%E9%9B%85%E5%8F%B2-%E6%A4%8D%E8%8C%B6-4897062a0/recent-activity/all/>
 
