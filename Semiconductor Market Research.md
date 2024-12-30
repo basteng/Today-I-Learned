@@ -123,6 +123,8 @@
     - [37.2.1 市场](#3721-市场)
       - [37.2.1.1 TrendForce](#37211-trendforce)
         - [37.2.1.1.1 2024年Q3市场排名](#372111-2024年q3市场排名)
+  - [37.2.1.2 MEMS Foundry](#37212-mems-foundry)
+  - [37.2.1.2.1 TechoVedas关于MEMS Foundry的科普](#372121-techovedas关于mems-foundry的科普)
   - [37.3 IDM](#373-idm)
   - [37.4 OSAT](#374-osat)
   - [37.5 Equipment](#375-equipment)
@@ -2278,6 +2280,36 @@ gelgoog:
 使用最新工具的全新中国大陆晶圆厂（Nexchip 就是一个例子）将提供更好的经济效益和更低的每芯片边际价格。Nexchip 将在 12 英寸晶圆上生产 150-55nm 芯片，其晶圆面积是台积电在其旧晶圆厂中使用的 8 英寸晶圆的 2.25 倍。2.25 倍的晶圆面积，机器以相似或更高的 wpm 频率运行。全球空白 8 英寸晶圆的供应也存在问题，而空白 12 英寸晶圆似乎不存在这样的问题，因为全球产能仍在增加。8 英寸晶圆厂的成本进一步增加。
 
 台积电、联电和 GlobalFoundries 将不得不决定如何处理他们的 8 英寸晶圆厂。他们要么关闭这些设施，要么大幅降低产能来运营它们。
+
+## 37.2.1.2 MEMS Foundry
+
+## 37.2.1.2.1 TechoVedas关于MEMS Foundry的科普
+
+从潜在投资的角度来看，什么是 MEMS 晶圆厂？
+
+MEMS 工厂是生产微机电系统 （MEMS） 器件的专用制造设施。MEMS 在微观尺度上集成了机械和电气组件，使传感器、执行器和其他系统中的应用成为可能。
+
+示例包括加速度计、陀螺仪、压力传感器、麦克风和光学 MEMS。
+
+主要公司包括 STMicro、Analog devices、Texas Instruments 等。
+
+🚀 CAPEX 概述
+
+初始投资：与先进半导体晶圆厂相比，MEMS 晶圆厂通常需要较低的资本支出 （CAPEX）。
+估计成本： 中小型晶圆厂的 $100M–$500M。
+高级晶圆厂（例如，用于汽车或工业应用的 MEMS）：$500M–$1B。
+
+🚀 为什么投资 MEMS 晶圆厂
+
+应用多样化：MEMS 用于汽车、医疗保健、消费电子和工业物联网，确保需求稳定。
+更低的资本支出：与领先的半导体晶圆厂相比，入门成本更低。
+高利润率： MEMS 器件由于其专业性，通常具有更高的利润率。
+不断增长的市场：在物联网、自动驾驶汽车和可穿戴设备的推动下，MEMS 市场预计将显着增长。
+定制机会：MEMS 器件可以针对利基市场进行定制，从而减少与大批量制造商的竞争。
+
+![](/picture/MEMS_Foundry.jpg)
+
+<https://www.linkedin.com/posts/kumar-priyadarshi-b0a2a7a2_what-is-a-mems-fab-from-potential-investment-activity-7279338142707437568-PW7Z?utm_source=share&utm_medium=member_desktop>
 
 ## 37.3 IDM
 

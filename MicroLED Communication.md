@@ -906,6 +906,23 @@ Ayar Labs 展示了一款 AI 模拟器，展示了部署光学 IO 后 AI 模型�
 
 <https://convergedigest.com/video-advancing-optical-i-o-connectivity-with-ayar-labs/?utm_campaign=241018-sc24&utm_content=318505477&utm_medium=social&utm_source=linkedin&hss_channel=lcp-6627049>
 
+## 4.19 2024年12月有关硅光技术的评论
+
+随着 12 月接近尾声，今年见证了许多创新，但 AI 行业仍然是讨论最多的话题。
+
+一个值得注意的进展是 NVIDIA 在 GB200 中采用了 TSMC 的先进封装技术 CoWoS-L。NVIDIA 还对硅光子学表现出浓厚的兴趣，这主要是因为它在高速数据传输中发挥着关键作用。目前，1.6T 光模块是目前最先进的量产产品，满足了对数据传输速率日益增长的需求。
+
+作为半导体行业的全球领导者，台积电一直在推进自己的硅光子平台 COUPE。该平台融合了多项关键技术，包括：
+ •耦合
+ • 2D FAU（光纤阵列单元）
+ • 与光计算相关的概念
+
+除了这些进步之外，监控光学 I/O 的发展也至关重要。该领域的主要参与者包括 Lightmatter、Arya Lab 和 Intel，它们都在光学数据传输技术方面取得了重大进展。
+
+这些技术的集成对于下一代 AI 系统至关重要，可在数据密集型应用程序中实现更高的性能和可扩展性。
+
+<https://www.linkedin.com/posts/eddy-t-788339336_as-december-comes-to-an-end-this-year-has-activity-7275803857270583297-K0BR?utm_source=share&utm_medium=member_desktop>
+
 # 5. Avicena
 
 ## 5.1《High Bandwidth GaN-based Micro-LEDs at Temperatures up to 400°C》
