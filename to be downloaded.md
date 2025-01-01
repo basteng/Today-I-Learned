@@ -5,6 +5,8 @@
 - [2. AlN/GaN/AlGaN-on-Si HEMT Achieving 1.3 W/mm at 5 V for 5G FR2 Handsets](#2-alnganalgan-on-si-hemt-achieving-13-wmm-at-5-v-for-5g-fr2-handsets)
 - [3. A 0.297-pJ/Bit 50.4-Gb/s/Wire Inverter-Based Short-Reach Simultaneous Bi-Directional Transceiver for Die-to-Die Interface in 5-nm CMOS](#3-a-0297-pjbit-504-gbswire-inverter-based-short-reach-simultaneous-bi-directional-transceiver-for-die-to-die-interface-in-5-nm-cmos)
 - [4. Addressing interconnect challenges for enhanced computing performance](#4-addressing-interconnect-challenges-for-enhanced-computing-performance)
+- [5.MicroLED Array-based Optical Links Using Imaging Fiber for Chip-to-chip Communications](#5microled-array-based-optical-links-using-imaging-fiber-for-chip-to-chip-communications)
+- [6. Bandwidth Scaling for AI Interconnect - More Wavelengths versusMore Fiber?](#6-bandwidth-scaling-for-ai-interconnect---more-wavelengths-versusmore-fiber)
 
 20241204以后 （未下载）
 
@@ -46,3 +48,12 @@ https://ieeexplore.ieee.org/document/10011563
 # 4. Addressing interconnect challenges for enhanced computing performance
 
 https://www.science.org/doi/10.1126/science.adk6189
+
+# 5.MicroLED Array-based Optical Links Using Imaging Fiber for Chip-to-chip Communications
+
+https://opg.optica.org/abstract.cfm?uri=ofc-2022-W1E.1
+
+# 6. Bandwidth Scaling for AI Interconnect - More Wavelengths versusMore Fiber?
+
+https://ieeexplore.ieee.org/abstract/document/10664393
+
