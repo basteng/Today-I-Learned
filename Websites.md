@@ -52,6 +52,8 @@
     - [9.9.1 代表作 华为拥有一项美国难以伤害的 5G 优势](#991-代表作-华为拥有一项美国难以伤害的-5g-优势)
   - [9.10 Converge AI-通信-咨询网站](#910-converge-ai-通信-咨询网站)
     - [9.10.1 代表作 视频：与 Ayar Labs 合作推进光学 I/O 连接](#9101-代表作-视频与-ayar-labs-合作推进光学-io-连接)
+  - [9.11 Electronicsforu](#911-electronicsforu)
+    - [9.11.1 代表作：每通道 200Gbps 芯片组助力 AI 网络发展](#9111-代表作每通道-200gbps-芯片组助力-ai-网络发展)
 - [10. 化合物半导体](#10-化合物半导体)
   - [10.1 compoundsemiconductor](#101-compoundsemiconductor)
 - [11. Github](#11-github)
@@ -344,6 +346,14 @@ https://convergedigest.com/
 ### 9.10.1 代表作 视频：与 Ayar Labs 合作推进光学 I/O 连接
 
 <https://convergedigest.com/video-advancing-optical-i-o-connectivity-with-ayar-labs/?utm_campaign=241018-sc24&utm_content=318505477&utm_medium=social&utm_source=linkedin&hss_channel=lcp-6627049>
+
+## 9.11 Electronicsforu
+
+<https://www.electronicsforu.com/>
+
+### 9.11.1 代表作：每通道 200Gbps 芯片组助力 AI 网络发展
+
+<https://www.electronicsforu.com/news/ai-networks-get-a-boost-with-200gbps-per-lane-chipset>
 
 # 10. 化合物半导体
 
