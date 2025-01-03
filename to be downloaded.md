@@ -7,6 +7,7 @@
 - [4. Addressing interconnect challenges for enhanced computing performance](#4-addressing-interconnect-challenges-for-enhanced-computing-performance)
 - [5.MicroLED Array-based Optical Links Using Imaging Fiber for Chip-to-chip Communications](#5microled-array-based-optical-links-using-imaging-fiber-for-chip-to-chip-communications)
 - [6. Bandwidth Scaling for AI Interconnect - More Wavelengths versusMore Fiber?](#6-bandwidth-scaling-for-ai-interconnect---more-wavelengths-versusmore-fiber)
+- [7. Modeling of GaN HEMT I-V Characteristics Using Artificial Intelligence: Optimization Study](#7-modeling-of-gan-hemt-i-v-characteristics-using-artificial-intelligence-optimization-study)
 
 20241204以后 （未下载）
 
@@ -57,3 +58,6 @@ https://opg.optica.org/abstract.cfm?uri=ofc-2022-W1E.1
 
 https://ieeexplore.ieee.org/abstract/document/10664393
 
+# 7. Modeling of GaN HEMT I-V Characteristics Using Artificial Intelligence: Optimization Study
+
+https://ieeexplore.ieee.org/document/10776659
