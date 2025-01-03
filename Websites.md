@@ -27,6 +27,7 @@
 - [6. 技术大牛博客](#6-技术大牛博客)
   - [6.1 Dmitry Grinberg - 在英特尔 4004 上缓慢启动完整的 Linux](#61-dmitry-grinberg---在英特尔-4004-上缓慢启动完整的-linux)
   - [6.2 Dario Amodei - Anthropic CEO, 代表作品Claude](#62-dario-amodei---anthropic-ceo-代表作品claude)
+  - [6.3 英国程序员西蒙·威利森（Simon Willison）](#63-英国程序员西蒙威利森simon-willison)
 - [7. 国外知名大学研究机构网站](#7-国外知名大学研究机构网站)
   - [7.1 GaN相关](#71-gan相关)
     - [7.1.1 HRL Laboratories - 前休斯研究实验室](#711-hrl-laboratories---前休斯研究实验室)
@@ -176,6 +177,18 @@ https://dmitry.gr/?
 ## 6.2 Dario Amodei - Anthropic CEO, 代表作品Claude
 
 <https://darioamodei.com/>
+
+## 6.3 英国程序员西蒙·威利森（Simon Willison）
+
+英国程序员西蒙·威利森（Simon Willison）最近两年非常出名，他的个人网站有很多文章，介绍 AI 的最新进展。
+
+本周，他发表了很长一篇的2024年大模型回顾[8]（非官方的中译[9]），非常精彩。
+
+<https://mp.weixin.qq.com/s/eV1FKhEmTDPqNheqS1B0zQ>
+
+网站链接：
+
+<https://simonwillison.net/>
 
 # 7. 国外知名大学研究机构网站
 
