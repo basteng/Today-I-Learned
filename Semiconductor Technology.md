@@ -10,8 +10,9 @@
   - [8.2 日本 PC WATCH 各制程的特征尺寸](#82-日本-pc-watch-各制程的特征尺寸)
   - [8.3 7nm需要的光刻](#83-7nm需要的光刻)
     - [8.3.1 semianalysis](#831-semianalysis)
-  - [8.3.2 台积电7nm特征尺寸](#832-台积电7nm特征尺寸)
-  - [8.3.4 金属材料](#834-金属材料)
+    - [8.3.2 台积电7nm特征尺寸](#832-台积电7nm特征尺寸)
+    - [8.3.4 金属材料](#834-金属材料)
+    - [8.3.5 实际有7nm尺寸](#835-实际有7nm尺寸)
 - [9. 内存墙：DRAM 的过去、现在和未来The Memory Wall: Past, Present, and Future of DRAM](#9-内存墙dram-的过去现在和未来the-memory-wall-past-present-and-future-of-dram)
 - [10. Microprocessor 和 Microcontoller 有什么区别？](#10-microprocessor-和-microcontoller-有什么区别)
 - [11. CFET](#11-cfet)
@@ -171,17 +172,41 @@ ASML 声称最新的 1980Fi 每小时可以进行 330 层光刻，但我们认�
 
 <https://semianalysis.com/2023/09/12/china-ai-and-semiconductors-rise/>
 
-## 8.3.2 台积电7nm特征尺寸
+### 8.3.2 台积电7nm特征尺寸
 
 ![](/picture/31be451c8dde49c48b494345d810f39d.png)
 
 <https://www.laohu8.com/post/219172666392592>
 
-## 8.3.4 金属材料
+### 8.3.4 金属材料
 
 ![](/picture/metal_7nm.jpg)
 
 <https://www.163.com/dy/article/JBFUK3A505119JRD.html>
+
+### 8.3.5 实际有7nm尺寸
+
+了解完7nm 制程的特征尺寸，看起来其实7nm 制程工艺并没有我们想象的那么小，甚至和7nm这个长度完全没有什么关系，那么7nm 制程工艺的晶体管中就没有特征尺寸在7nm 左右的位置吗？
+
+答案是：还真有。
+
+以下是各厂商7nm 制程工艺的特征尺寸和一些工艺参数，我们可以发现其中有两个比较小的特征尺寸，一个是Fin的宽度只有6nm, 另一个是 Gate length 在8~10nm;
+
+![](/picture/v2-ef6f1a580bd21ebb30487955e2f421eb_1440w.png)
+
+那么7nm 是不是指Fin 的宽度呢？其实早在22nm Finfet 制程工艺的时候，Fin 的宽度就已经做到了8nm，但是由于实际每一个晶体管包含多个Fin, 所以Fin 的宽度并不能作为衡量晶体管密度的特征参数；Gate length也是，Gate length虽然很小，但是如果Gate 间距很大，单位面积可以容纳的晶体管数目依然很少。
+
+![](/picture/v2-5cd9c54e814dc0702cf6e320137f6cc5_1440w.png)
+
+下图是实际Finfet 中Fin 的TEM图片，Fin 的顶端宽度约为8nm：
+
+![](/picture/v2-898f2da1f908f69c8cf4d17e70f3dee1_1440w.png)
+
+总结，
+
+7nm 制程工艺仅仅只是一个代表某种特定尺寸和技术的商业名称，并不指代实际的 Gate length 或者 half pitch。每个厂商对于7nm 制程工艺都有不同的Gate pitch 和 Interconnect pitch的定义设计，不同厂商相同制程工艺的产品也不完全具有可比性。
+
+<https://zhuanlan.zhihu.com/p/150817892>
 
 # 9. 内存墙：DRAM 的过去、现在和未来The Memory Wall: Past, Present, and Future of DRAM
 
