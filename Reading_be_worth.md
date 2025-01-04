@@ -39,6 +39,8 @@
 - [34. 陶哲轩：不要过早痴迷于某一个“大问题”或“大理论”](#34-陶哲轩不要过早痴迷于某一个大问题或大理论)
 - [35. 掌控每天4小时大脑巅峰期，时间才真正属于你](#35-掌控每天4小时大脑巅峰期时间才真正属于你)
 - [36. 如何通过行业博士后找到自己的科学定位](#36-如何通过行业博士后找到自己的科学定位)
+- [37. Science 有趣的物理解释](#37-science-有趣的物理解释)
+  - [37.1 电流流动的动图](#371-电流流动的动图)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1541,3 +1543,28 @@ KATE CARBONE：从学术界到工业界再回到学术界
 机构编号: https://doi.org/10.1038/d41586-024-04169-5
 
 <https://www.nature.com/articles/d41586-024-04169-5>
+
+# 37. Science 有趣的物理解释
+
+## 37.1 电流流动的动图
+
+有没有想过为什么电力感觉就像魔法一样流经我们的家？ ⚡
+
+就像水需要压力才能流过管道一样，电子需要电压才能通过电路。
+
+它们相互碰撞，沿途传递能量 - 这就是您的设备栩栩如生的方式！💫
+
+<https://www.linkedin.com/posts/scientisthub_science-electricity-physics-activity-7280500746809221120--Tez?utm_source=share&utm_medium=member_desktop>
+
+Riccardo Bevilacqua
+
+Radiation Safety Expert, PhD in Applied Nuclear Physics | Bridging Nuclear Science & MedTech at Elekta
+
+只是这不是真的！电子几乎不移动，能量通过电缆外部的电磁场传递
+
+
+Dr DAVID MCCORMICK (retired)
+
+Director of DMPK Solutions Ltd
+
+关键的是电场传播，而不是电子漂移，后者实际上非常慢
