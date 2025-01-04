@@ -8,6 +8,7 @@
 - [5.MicroLED Array-based Optical Links Using Imaging Fiber for Chip-to-chip Communications](#5microled-array-based-optical-links-using-imaging-fiber-for-chip-to-chip-communications)
 - [6. Bandwidth Scaling for AI Interconnect - More Wavelengths versusMore Fiber?](#6-bandwidth-scaling-for-ai-interconnect---more-wavelengths-versusmore-fiber)
 - [7. Modeling of GaN HEMT I-V Characteristics Using Artificial Intelligence: Optimization Study](#7-modeling-of-gan-hemt-i-v-characteristics-using-artificial-intelligence-optimization-study)
+- [8. A streamlined algorithm for two-dimensional bandgaps and defect-state energy variations in InGaN-based micro-LEDs](#8-a-streamlined-algorithm-for-two-dimensional-bandgaps-and-defect-state-energy-variations-in-ingan-based-micro-leds)
 
 20241204以后 （未下载）
 
@@ -61,3 +62,7 @@ https://ieeexplore.ieee.org/abstract/document/10664393
 # 7. Modeling of GaN HEMT I-V Characteristics Using Artificial Intelligence: Optimization Study
 
 https://ieeexplore.ieee.org/document/10776659
+
+# 8. A streamlined algorithm for two-dimensional bandgaps and defect-state energy variations in InGaN-based micro-LEDs
+
+https://pubs.rsc.org/en/content/articlelanding/2025/mh/d4mh01149j
