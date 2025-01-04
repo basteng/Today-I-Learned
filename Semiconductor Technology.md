@@ -20,6 +20,7 @@
 - [12.Memory Hierarchy: Basics](#12memory-hierarchy-basics)
 - [13. Potential of EUV for high volume manufacturing of DRAM](#13-potential-of-euv-for-high-volume-manufacturing-of-dram)
 - [14. 台积电 高带宽 die-to-die IEDM2024](#14-台积电-高带宽-die-to-die-iedm2024)
+- [15. 迈向 3D DRAM 的第一步](#15-迈向-3d-dram-的第一步)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -607,3 +608,21 @@ IEDM 会议将于 2024 年 12 月 7 日至 11 日在旧金山举行，会议结�
 <https://www.linkedin.com/posts/mingliangliu_d2d-chiplet-interconnects-activity-7271910436294262786-eYqM?utm_source=share&utm_medium=member_desktop>
 
 <https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/High-Bandwidth_Chiplet_Interconnects_for_Advanced_Packaging_Technologies_in_AI_ML_Applications_Challenges_and_Solutions.pdf>
+
+# 15. 迈向 3D DRAM 的第一步
+
+堆叠层意味着对架构进行彻底的重新思考。
+
+闪存凭借 200 多层堆叠实现的单片 3D 处理技术，实现了惊人的容量飞跃，未来几代将达到 1,000 层。[1] 但同样重要的 DRAM 也实现了类似的可制造 3D 架构。事实证明，对足够大的电荷存储装置（如电容器）的需求难以实现。
+
+目前，有几种用于构建带电容器和不带电容器的 3D DRAM 的新想法正在进行中。
+
+“DRAM 的进步是由微缩技术推动的，随着每一代 [工艺] 的进步，DRAM 的整体占用空间都在缩小，” Lam Research全球半导体工艺和集成高级经理 Benjamin Vincent在最近的一篇博客中表示。[2]“DRAM 正追随 NAND 的脚步，向三维方向发展，以便在单位面积上构建更多的存储空间。这对行业来说是件好事，因为它推动了内存的技术发展，而且每平方微米的位数越多，生产成本就越低。”
+
+减小单元尺寸是增加单层 DRAM 芯片上可存储数据量最明显的方法。但垂直电容器会产生非常厚的层，难以堆叠。一些尝试尝试水平运行电容器。另一些尝试则完全取消电容器。然而，没有一种方法可以达到最佳效果。虽然我们可能还需要数年时间才能实现这种 DRAM 的商业化生产，但正在采取的措施具有启发意义。
+
+3D DRAM 有两个含义，其中之一已经投入生产。“3D DRAM 最常见的用例是 HBM（高带宽内存），” Synopsys HBM 接口解决方案高级产品经理 Bhavana Chaurasia 表示。“HBM 为当今的高性能数据中心 SoC 提供了所需的带宽和性能。”
+
+但 HBM 是一种堆叠芯片存储器，而不是像 3D NAND 闪存那样的单片芯片。如果在 HBM 架构中使用单片 3D DRAM 芯片，则可以立即带来提升。“当商业上可行的 3D DRAM 可用并且芯片堆叠挑战（例如热管理）得到进一步解决时，这对 HBM 提供商来说将是一个好消息，因为它引入了内存密度和能效改进，这将对数据中心和 AI 应用产生影响，”Synopsys 嵌入式存储器首席产品经理 Daryl Seitzer 表示。
+
+<https://semiengineering.com/baby-steps-towards-3d-dram/>
