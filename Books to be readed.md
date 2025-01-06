@@ -1,6 +1,7 @@
 - [1. The Hour Between Dog and Wolf: How Risk Taking Transforms Us, Body and Mind](#1-the-hour-between-dog-and-wolf-how-risk-taking-transforms-us-body-and-mind)
 - [2. Gazettabyte 书籍推荐](#2-gazettabyte-书籍推荐)
   - [2.1 2024年推荐](#21-2024年推荐)
+- [3. 中国半导体行业十年：一个美国人的故事](#3-中国半导体行业十年一个美国人的故事)
 
 
 
@@ -73,3 +74,7 @@ Gazettabyte 邀请业内人士挑选他们今年最值得一读的书籍。Haral
 要求我重点介绍 2024 年读过的书，这让我想起了过去一年里我读过的书。也许令人失望的是，我发现这些书大多都是不值得一看的小说。
 
 <https://www.gazettabyte.com/home/2024/12/30/books-of-2024-part-1.html>
+
+# 3. 中国半导体行业十年：一个美国人的故事
+
+<https://www.amazon.com/Decade-Chinese-Semiconductor-Industry-Americans/dp/B0DMVM7TXQ/ref=tmm_pap_swatch_0?_encoding=UTF8&sr=>
