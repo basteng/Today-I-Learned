@@ -41,6 +41,7 @@
 - [36. 如何通过行业博士后找到自己的科学定位](#36-如何通过行业博士后找到自己的科学定位)
 - [37. Science 有趣的物理解释](#37-science-有趣的物理解释)
   - [37.1 电流流动的动图](#371-电流流动的动图)
+- [38. 我们必须拥有本地模式的另一个原因](#38-我们必须拥有本地模式的另一个原因)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1568,3 +1569,29 @@ Dr DAVID MCCORMICK (retired)
 Director of DMPK Solutions Ltd
 
 关键的是电场传播，而不是电子漂移，后者实际上非常慢
+
+# 38. 我们必须拥有本地模式的另一个原因
+
+还记得 Uber 售价 6 美元的时候吗？那是 VC 补贴的拼车时代。
+
+现在我们正处于风险投资（和大型科技公司）补贴 AI 的时代。除了你得到的不是廉价的乘车上班，而是廉价的情报
+
+趁它持续使用！ 
+
+<https://www.linkedin.com/posts/dan-hock_remember-when-ubers-cost-6-that-was-the-activity-7282070935132688386-Hx8y?utm_source=share&utm_medium=member_desktop>
+
+那是风险投资补贴交通的时代。
+
+如今，我们正处于风险投资资助的人工智能时代。我们得到的不是廉价的交通工具，而是廉价的情报。
+
+正如 Dan Hockenmaier 最近指出的那样：趁还有空的时候赶紧利用起来——因为这么好的东西都不可能永远免费。
+
+这是对 Sam Altman 在 X 上的帖子的回应：
+
+疯狂的事情：我们目前在 openai pro 订阅上亏损！人们使用它的次数远远超出了我们的预期。
+
+原文： https: //www.linkedin.com/posts/rubendominguezibar_remember-when-uber-rides-cost-next-to-nothing-activity-7282134404733284352-Sdz1?utm_source= share&utm_medium=member_android
+
+这是一个非常有趣的观点，我不知道它是否属实，但话又说回来，在过去的两年里，我们已经将模型做得更小、更快、更便宜，情况可能并非如此。你觉得呢？
+
+<https://www.reddit.com/r/LocalLLaMA/comments/1hva9ka/yet_another_reason_why_we_must_have_local_models/>
