@@ -4305,4 +4305,4 @@ LightCounting 创始人兼首席执行官 Vlad Kozlov 表示：“云超大规�
 
 随着数据中心和高性能计算系统需求的增长，高速短距离光互连技术成为研究热点。本文围绕数据中心应用中约 100m 距离的光互连技术，对光收发器、锁相环（PLL）和时钟数据恢复（CDR）等方面的设计挑战与进展进行了综述和分析。
 
-
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Recent_Advances_of_High-Speed_Short-Reach_Optical_Interconnects_for_Data_Centers.pdf>
