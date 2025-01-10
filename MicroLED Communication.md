@@ -168,6 +168,7 @@
 - [53. 香港科技大学工程系研究人员研发出全球首款用于无掩模光刻的深紫外 MicroLED 显示芯片](#53-香港科技大学工程系研究人员研发出全球首款用于无掩模光刻的深紫外-microled-显示芯片)
 - [54. Marvell](#54-marvell)
   - [54.1 今日宣布推出采用共封装光学器件 （CPO） 技术的定制 XPU 架构](#541-今日宣布推出采用共封装光学器件-cpo-技术的定制-xpu-架构)
+- [55. Recent Advances of High-Speed Short-Reach Optical Interconnects for Data Centers](#55-recent-advances-of-high-speed-short-reach-optical-interconnects-for-data-centers)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -4299,3 +4300,9 @@ Marvell 光学平台高级副总裁兼首席技术官 Radha Nagarajan 表示：�
 LightCounting 创始人兼首席执行官 Vlad Kozlov 表示：“云超大规模企业将把 CPO 技术集成到其下一代定制 XPU 和扩展服务器中，以满足 AI 不断增长的性能需求。我们预测，到 2029 年，CPO 端口出货量将从目前的不到 5 万个增长到超过 1800 万个，其中大多数端口将用于服务器内的连接。”“凭借其在光学技术和定制 XPU 方面的经验，Marvell 处于理想位置，可以帮助超大规模企业释放 CPO 的潜力，并使其成为其基础设施不可或缺的一部分。”
 
 <https://www.marvell.com/company/newsroom/marvell-co-packaged-optics-architecture-custom-ai-accelerators.html?utm_source=li&utm_medium=pr&utm_campaign=cpo>
+
+# 55. Recent Advances of High-Speed Short-Reach Optical Interconnects for Data Centers
+
+随着数据中心和高性能计算系统需求的增长，高速短距离光互连技术成为研究热点。本文围绕数据中心应用中约 100m 距离的光互连技术，对光收发器、锁相环（PLL）和时钟数据恢复（CDR）等方面的设计挑战与进展进行了综述和分析。
+
+
