@@ -17,7 +17,10 @@
     - [3.4.1 代表做 每周主要趋势](#341-代表做-每周主要趋势)
   - [3.5 IMF 国际货币基金组织](#35-imf-国际货币基金组织)
     - [3.5.1 代表作 每月经济展望](#351-代表作-每月经济展望)
-- [4. AI](#4-ai)
+  - [3.6 Time](#36-time)
+    - [3.6.1 Ideas](#361-ideas)
+    - [3.6.2 科学](#362-科学)
+    - [3.6.3 技术](#363-技术)
   - [4.1 LifeArchitect.ai 一个非常有意思的AI新闻网站，深入浅出](#41-lifearchitectai-一个非常有意思的ai新闻网站深入浅出)
   - [4.2 寒武纪AI](#42-寒武纪ai)
     - [4.2.1 代表作 新兴的以内存为中心的数据中心](#421-代表作-新兴的以内存为中心的数据中心)
@@ -135,7 +138,19 @@ https://chinese.joins.com/
 
 <https://www.imf.org/zh/Publications/WEO/Issues/2024/10/22/world-economic-outlook-october-2024>
 
-# 4. AI
+## 3.6 Time
+
+### 3.6.1 Ideas
+
+https://time.com/section/ideas/
+
+### 3.6.2 科学
+
+https://time.com/section/science/
+
+### 3.6.3 技术
+
+https://time.com/section/tech/
 
 ## 4.1 LifeArchitect.ai 一个非常有意思的AI新闻网站，深入浅出
 
