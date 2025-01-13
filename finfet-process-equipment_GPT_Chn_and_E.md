@@ -1,0 +1,28 @@
+以下是增加了对应英文的**FinFET CMOS工艺步骤表**，使中英文对照更加清晰：
+
+---
+
+### **FinFET CMOS 工艺步骤表**
+
+| **工艺阶段**       | **Stage**          | **步骤**                       | **Step**                        | **描述与关键点**                                                       | **Description & Key Points**                                        | **使用的设备**                          | **Equipment**                  |
+|--------------------|--------------------|-------------------------------|---------------------------------|-----------------------------------------------------------------------|----------------------------------------------------------------------|----------------------------------------|--------------------------------|
+| **前道工艺 (FEoL)** | Front-End of Line  | 鳍（Fin）形成                 | Fin Formation                  | 1. 热生长垫氧化层和沉积硅化氮（SiN）层作为硬掩膜。                      | 1. Grow pad oxide thermally and deposit SiN as a hard mask.          | PECVD（氧化层沉积），ALD（氮化层沉积） | PECVD (Oxide), ALD (Nitride)   |
+|                    |                    |                               |                                 | 2. 使用自对准双图案化（SADP）技术生成鳍图案。                           | 2. Use Self-Aligned Double Patterning (SADP) to create fin patterns. | 光刻机（DUV/EUV），干法蚀刻机           | Lithography (DUV/EUV), Etcher  |
+|                    |                    |                               |                                 | 3. 通过各向异性蚀刻形成硅鳍结构，控制鳍高度和间距。                      | 3. Perform anisotropic etching to form silicon fins and control height/spacing. | 干法蚀刻机                              | Dry Etcher                     |
+|                    |                    | 栅极（Gate）形成              | Gate Formation                 | 1. 沉积占位层并完成图案化，形成栅极间距（<80nm）的线条图案。              | 1. Deposit dummy gate layer and pattern lines with spacing <80nm.    | 光刻机，ALD或PVD设备                   | Lithography, ALD/PVD           |
+|                    |                    |                               |                                 | 2. 替换占位层为高k材料（如HfO₂）和金属栅（TiN、TaN）。                   | 2. Replace dummy gate with high-k material (HfO₂) and metal gate (TiN, TaN). | ALD（高k材料沉积），PVD（金属栅沉积）   | ALD (High-k), PVD (Metal Gate) |
+|                    |                    |                               |                                 | 3. 确保栅极与鳍结构的对齐精度。                                         | 3. Ensure alignment accuracy between gate and fins.                  | 光刻机，刻蚀机                          | Lithography, Etcher            |
+|                    |                    | 源/漏（S/D）结构              | Source/Drain Structure         | 1. 沉积间隔层（Spacer）保护鳍侧壁。                                     | 1. Deposit spacers to protect fin sidewalls.                         | PECVD或ALD设备                          | PECVD/ALD                      |
+|                    |                    |                               |                                 | 2. 离子注入形成掺杂区域。                                               | 2. Perform ion implantation to create doped regions.                 | 离子注入机                              | Ion Implanter                  |
+|                    |                    |                               |                                 | 3. 通过选择性外延生长（SEG）技术沉积SiGe或硅，优化源/漏性能。             | 3. Use Selective Epitaxial Growth (SEG) to deposit SiGe or silicon.  | 外延生长设备（CVD/MOCVD）              | Epitaxy (CVD/MOCVD)            |
+|                    |                    |                               |                                 | 4. 使用自对准硅化工艺（Salicide）在源/漏区域形成低电阻硅化物层。          | 4. Create low-resistance silicide layers using self-aligned silicide. | RTP（快速热处理设备）                   | RTP (Rapid Thermal Processing) |
+| **中道工艺 (MEoL)** | Middle-End of Line | 接触结构的建立（S/D 和 Gate） | Contact Formation (S/D & Gate) | 1. 沉积间隙填充氧化物（ILD）并进行化学机械抛光（CMP）。                  | 1. Deposit Inter-Layer Dielectric (ILD) and perform CMP.             | PECVD（氧化物沉积），CMP设备            | PECVD (Oxide), CMP             |
+|                    |                    |                               |                                 | 2. 使用双图案化技术定义接触孔（Via）。                                   | 2. Use dual patterning to define contact vias.                       | 光刻机，干法蚀刻机                      | Lithography, Dry Etcher        |
+|                    |                    |                               |                                 | 3. 沉积钛氮（TiN）屏障层并填充钨（W），形成接触插塞（Plug）。             | 3. Deposit TiN barrier and fill with tungsten (W) to form plugs.     | PVD（屏障层沉积），CVD（钨填充）        | PVD (Barrier), CVD (W Fill)    |
+| **后道工艺 (BEoL)** | Back-End of Line   | 金属互连层构建                 | Metal Interconnect Formation   | 1. 沉积超低介电常数材料（Ultra-Low-k Dielectric）作为绝缘层。             | 1. Deposit Ultra-Low-k Dielectric as insulation layer.               | PECVD（低k材料沉积）                    | PECVD (Low-k)                  |
+|                    |                    |                               |                                 | 2. 使用双镶嵌（Dual-Damascene）工艺制作金属线条和过孔（Via）。             | 2. Use Dual-Damascene process to create metal lines and vias.        | 光刻机，干法蚀刻机                      | Lithography, Dry Etcher        |
+|                    |                    |                               |                                 | 3. 使用铜（Cu）填充并通过CMP完成平面化处理。                             | 3. Fill with copper (Cu) and perform CMP for planarization.          | PVD（铜沉积），CMP设备                  | PVD (Copper), CMP              |
+
+---
+
+此表格为每一列增加了对应的英文翻译，使中英文并列，更清晰直观地展示了**FinFET CMOS工艺步骤**的内容。
