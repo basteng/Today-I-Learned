@@ -127,6 +127,8 @@
   - [37.2.1.2.1 TechoVedas关于MEMS Foundry的科普](#372121-techovedas关于mems-foundry的科普)
   - [37.3 IDM](#373-idm)
   - [37.4 OSAT](#374-osat)
+    - [37.4.1 先进封装](#3741-先进封装)
+      - [37.4.1.2 玻璃基板](#37412-玻璃基板)
   - [37.5 Equipment](#375-equipment)
     - [37.5.1 市场](#3751-市场)
       - [37.5.1.1 SEMI预测](#37511-semi预测)
@@ -2318,6 +2320,25 @@ MEMS 工厂是生产微机电系统 （MEMS） 器件的专用制造设施。MEM
 ## 37.3 IDM
 
 ## 37.4 OSAT
+
+### 37.4.1 先进封装
+
+#### 37.4.1.2 玻璃基板
+
+推动advancedPackaging路线图的创新：第一部分
+具有不断缩小的线/空间要求的有机基板和玻璃基板的可行性
+
+一段时间以来，先进 IC 载板 （AICS） 一直在向 2μm 线/间距 （L/S） 再分布层 （RDL） technology 节点迈进。然而，关于有机衬底能否满足下一代先进封装 （AP） 的线路/间距要求，即低于 2μm L/S 甚至 1.5μm L/S 的封装，仍然存在许多问题。简而言之：有机衬底能否应对挑战？
+
+答案是否定的。
+
+但随着最近的发展，有机基材达到 2μm 以下的可能性似乎正在发生变化。
+
+![](/picture/advanced_pack1.jpg)
+
+<https://www.linkedin.com/posts/marcomezger_advancedpackaging-technology-semiconductors-activity-7285664620994842625-FmJ-?utm_source=share&utm_medium=member_desktop>
+
+<《https://semiengineering.com/innovations-driving-the-advanced-packaging-roadmap-part-one/>
 
 ## 37.5 Equipment
 
