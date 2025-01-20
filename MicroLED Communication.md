@@ -4402,7 +4402,7 @@ LightCounting 创始人兼首席执行官 Vlad Kozlov 表示：“云超大规�
 
 [6] Optical communications in space
 
-
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Optical_communications_in_space.pdf>
 
 [10] Demonstrating Intra-Spacecraft Optical Wireless Links
 
