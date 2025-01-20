@@ -172,6 +172,8 @@
 - [56. VCSEL](#56-vcsel)
   - [56.1 New Prospects of Optical Wireless Communication Systems Exploiting VCSEL-based Transmitters](#561-new-prospects-of-optical-wireless-communication-systems-exploiting-vcsel-based-transmitters)
     - [56.1.2 \[10\] Demonstrating Intra-Spacecraft Optical Wireless Links](#5612-10-demonstrating-intra-spacecraft-optical-wireless-links)
+- [57. SERDES](#57-serdes)
+  - [57.1 开发 SERDES 类似于 mini-SOC](#571-开发-serdes-类似于-mini-soc)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -4439,3 +4441,35 @@ LightCounting 创始人兼首席执行官 Vlad Kozlov 表示：“云超大规�
 **第一作者主页 Giulio Cossu**
 
 https://www.santannapisa.it/it/giulio-cossu?f%5B0%5D=pubblicazioni_persona_con_filtri_categoria%3A5016
+
+# 57. SERDES
+
+## 57.1 开发 SERDES 类似于 mini-SOC
+
+开发 SERDES 类似于 mini-SOC：
+
+在高速数据通信领域，SERDES （串行器/解串器） IP 在实现跨各种系统的可靠数据传输方面发挥着至关重要的作用。虽然它看起来只是芯片设计生态系统中的另一个组件，但使用 SERDES IP 类似于设计微型片上系统 （SoC）。为什么？因为它集成了模拟和数字设计等不同领域，需要嵌入式内存模块，甚至包括一个微型处理器来执行固件。在这里，我将探讨 SERDES IP 设计的多面性，以及为什么它对工程师来说是一个令人兴奋的挑战。
+
+模拟和数字领域的融合：
+在 SERDES IP 中，模拟和数字电路的融合确实令人着迷：
+- 模拟域：PLL（锁相环）、CDR（时钟数据恢复）、CTLE 和 DFE 模块等关键组件构成了前端，在工艺变化、温度波动和噪声挑战中管理信号完整性和高速数据传输。
+- 数字王国：后端编排编码、纠错和协议管理，确保精确的序列化和解串化，同时满足严格的时序约束。混合信号设计方面的专业知识对于无缝协调模拟前端和数字后端至关重要。
+
+Multi Power Domains 和 Clock Domains：
+SERDES 架构通常将数字和模拟功能分离到具有不同内核和 IO 电源的多个电源域中，因此需要细致的电源意图定义以进行优化。这种设置支持多个 clock的不同 link speed，在不同模式之间引入了 clock switching 的复杂性。
+
+测试和调试命令：
+有效的硅调试是混合信号 IP 成功的基石。强大的调试选项有助于识别和解决芯片问题，并得到固件支持。此外，确保可测试性设计 （DFT） 对混合信号 IP 构成了重大挑战。
+
+内存和处理动态：
+嵌入式存储器模块和处理器构成了 SERDES IP 的主干，包含用于校准和适配目的的基本固件。该固件复杂地管理校准和均衡任务，展示了硬件和软件在解决模拟挑战方面的相互依赖性。
+
+固件的重要作用：
+固件是执行 SERDES 功能所需的校准和调整的关键，有助于解决硅问题。
+
+如果您已经研究过 SERDES IP 或正在考虑使用 SERDES IP，请知道您正在为现代高速通信的基石做出贡献。这真的是一个伪装的 mini-SoC！
+
+![](/picture/SERDES_IP.jpg)
+
+<https://www.linkedin.com/posts/srinivas-gaddam-78429815_developing-serdes-is-akin-to-mini-soc-in-activity-7286290638029889536-5NMA?utm_source=share&utm_medium=member_desktop>
+
