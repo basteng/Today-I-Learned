@@ -9,6 +9,8 @@
 - [6. Bandwidth Scaling for AI Interconnect - More Wavelengths versusMore Fiber?](#6-bandwidth-scaling-for-ai-interconnect---more-wavelengths-versusmore-fiber)
 - [7. Modeling of GaN HEMT I-V Characteristics Using Artificial Intelligence: Optimization Study](#7-modeling-of-gan-hemt-i-v-characteristics-using-artificial-intelligence-optimization-study)
 - [8. A streamlined algorithm for two-dimensional bandgaps and defect-state energy variations in InGaN-based micro-LEDs](#8-a-streamlined-algorithm-for-two-dimensional-bandgaps-and-defect-state-energy-variations-in-ingan-based-micro-leds)
+- [9. Bi-directional 400 Mbit/s LED-based optical wireless communication for non-directed line-of-sight transmission](#9-bi-directional-400-mbits-led-based-optical-wireless-communication-for-non-directed-line-of-sight-transmission)
+- [10. OWC Using a Fully Integrated Optical Receiver With Large-Diameter APD](#10-owc-using-a-fully-integrated-optical-receiver-with-large-diameter-apd)
 
 20241204以后 （未下载）
 
@@ -66,3 +68,12 @@ https://ieeexplore.ieee.org/document/10776659
 # 8. A streamlined algorithm for two-dimensional bandgaps and defect-state energy variations in InGaN-based micro-LEDs
 
 https://pubs.rsc.org/en/content/articlelanding/2025/mh/d4mh01149j
+
+# 9. Bi-directional 400 Mbit/s LED-based optical wireless communication for non-directed line-of-sight transmission
+
+https://ieeexplore.ieee.org/document/6886664
+
+# 10. OWC Using a Fully Integrated Optical Receiver With Large-Diameter APD
+
+https://ieeexplore.ieee.org/document/6994819
+
