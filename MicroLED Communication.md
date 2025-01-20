@@ -4402,10 +4402,20 @@ LightCounting 创始人兼首席执行官 Vlad Kozlov 表示：“云超大规�
 
 [6] Optical communications in space
 
-[10] Demonstrating Intra-SpacecraftOptical Wireless Links
+
+
+[10] Demonstrating Intra-Spacecraft Optical Wireless Links
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Demonstrating_Intra-Spacecraft_Optical_Wireless_Links.pdf>
+
+<https://www.iris.sssup.it/retrieve/d1baeb79-c27a-43ff-aed1-35575a39bc8d/Demonstrating_Intra-Spacecraft_Optical_Wireless_Links.pdf>
 
 室内光通信
 
 [9] Survey on optical camera communications: challenges and opportunities
+
+<https://ietresearch.onlinelibrary.wiley.com/doi/epdf/10.1049/iet-opt.2014.0151>
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/IET%20Optoelectronics%20-%202015%20-%20Saha%20-%20Survey%20on%20optical%20camera%20communications%20%20challenges%20and%20opportunities.pdf>
 
 
