@@ -171,6 +171,7 @@
 - [55. Recent Advances of High-Speed Short-Reach Optical Interconnects for Data Centers](#55-recent-advances-of-high-speed-short-reach-optical-interconnects-for-data-centers)
 - [56. VCSEL](#56-vcsel)
   - [56.1 New Prospects of Optical Wireless Communication Systems Exploiting VCSEL-based Transmitters](#561-new-prospects-of-optical-wireless-communication-systems-exploiting-vcsel-based-transmitters)
+    - [56.1.2 \[10\] Demonstrating Intra-Spacecraft Optical Wireless Links](#5612-10-demonstrating-intra-spacecraft-optical-wireless-links)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -4419,3 +4420,22 @@ LightCounting 创始人兼首席执行官 Vlad Kozlov 表示：“云超大规�
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/IET%20Optoelectronics%20-%202015%20-%20Saha%20-%20Survey%20on%20optical%20camera%20communications%20%20challenges%20and%20opportunities.pdf>
 
 
+### 56.1.2 [10] Demonstrating Intra-Spacecraft Optical Wireless Links
+
+“Demonstrating Intra-Spacecraft Optical Wireless Links”由Giulio Cossu等人撰写，提出并展示了一种用于航天器内部的光无线通信（OWC）系统，<font color=red>可替代MIL-STD-1553B电缆</font>，有效减轻重量、降低成本，为未来航天器数据网络提供实用解决方案。
+1. **研究背景与目的**：航天器中大量电缆连接导致质量增加、装配集成测试困难和布线成本高昂。无线通信可减少电缆使用，射频技术存在电磁兼容性和安全性问题，光无线通信（OWC）成为有吸引力的替代方案。欧洲航天局资助TOWS项目，旨在开发用自由空间光信号替代电缆通信的简单接口，本文展示了在航天器内部用OWC系统替代MIL-STD-1553B电缆的应用。
+2. **实验设置**
+    - **模型布置**：使用Cosmo - SkyMed卫星模型，其内部被分为四个房间，在房间中放置模拟设备，模拟真实卫星环境。设置SMU - PLDIU、SMU - Gyro、SMU - ST三种链路，链路中信号延迟远低于比特时间，且LED光源产生的非相干光不会造成干扰。因部分链路光功率低，部署两个光信号再生器以增强信号覆盖。
+    - **收发器与再生器**：设计的OWC收发器由信号适配、发射（TX）和接收（RX）三部分组成，使用商用现货（COTS）模拟器件，适用于多种TOWS场景。TX模块用850nm红外LED，RX模块采用大视场PIN光电二极管。再生器由两对背靠背的TX和RX组成，可实现相邻房间信号双向传输。收发器重约40g，功耗约0.5W，未来有望进一步降低。
+3. **传输实验**
+    - **实验装置**：MIL-STD-1553B网络实验中，四个测试模块模拟总线上不同设备，通过个人计算机提取连接状态信息。先进行点对点链路测试，再进行完整总线演示。
+    - **点对点传输**：以SMU - PLDIU链路为例，通信过程中无错误比特，其他链路（SMU - Gyro、SMU - ST）也无传输错误，眼图显示低照度下检测信号质量良好。
+    - **总线演示**：所有四个单元同时参与的总线传输实验成功，各单元按标准正确响应，日志记录无错误，证明OWC - MIL - STD - 1553B总线传输可行。
+4. **光功率特性**
+    - **接收光功率值**：测量所有链路光功率，结果显示接收光功率均高于RX灵敏度（-37.5dBm），满足通信要求。
+    - **辐照度分布**：对模型内部表面光辐照度进行映射测量，最低检测值约为 - 33dBm，高于RX灵敏度，表明在模型内任何位置建立通信均可行。
+5. **研究结论**：成功演示了航天器内MIL-STD-1553B信号的OWC传输，设计的OWC板可与现有设备接口，实现无线双向通信，且通信测试无错误。光强度测量表明在模型内任意位置传输均可行，OWC可有效替代MIL-STD-1553B电缆。未来可进一步优化收发器尺寸、重量和功耗，并研究信号适配阶段以适配其他总线标准 。 
+
+**第一作者主页 Giulio Cossu**
+
+https://www.santannapisa.it/it/giulio-cossu?f%5B0%5D=pubblicazioni_persona_con_filtri_categoria%3A5016
