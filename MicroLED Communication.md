@@ -174,6 +174,7 @@
     - [56.1.2 \[10\] Demonstrating Intra-Spacecraft Optical Wireless Links](#5612-10-demonstrating-intra-spacecraft-optical-wireless-links)
 - [57. SERDES](#57-serdes)
   - [57.1 开发 SERDES 类似于 mini-SOC](#571-开发-serdes-类似于-mini-soc)
+  - [57.2 基于 PAM4 的设计中的误码率 （BER）](#572-基于-pam4-的设计中的误码率-ber)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -4472,4 +4473,22 @@ SERDES 架构通常将数字和模拟功能分离到具有不同内核和 IO 电
 ![](/picture/SERDES_IP.jpg)
 
 <https://www.linkedin.com/posts/srinivas-gaddam-78429815_developing-serdes-is-akin-to-mini-soc-in-activity-7286290638029889536-5NMA?utm_source=share&utm_medium=member_desktop>
+
+## 57.2 基于 PAM4 的设计中的误码率 （BER）
+
+SERDES （SERializer - DESerializer） 是现代芯片到芯片通信的关键组件。高速接口的演变已经见证了从前几代的 NRZ（不归零）信令转变为最近设计中更先进的 PAM4 信令。
+
+在评估 SERDES 性能时，误码率 （BER） 是一个关键指标。基于 NRZ 的信令保持 1e-12 的 BER，而 PAM4 信令的 BER 仅为 1e-6。信噪比 （SNR） 因其四个电压电平而成为影响 PAM4 BER 的关键因素，与 NRZ 信令相比，导致眼图张开度更窄。这种降低的裕量放大了噪声的影响，增加了误码的可能性。
+
+PAM4 的复杂性及其更接近的电压水平使其更容易受到噪声和时序抖动的影响，即使有轻微的中断，也容易出现信号解码错误。此外，与 NRZ 相比，PAM4 信号在较高频率下的传输通道中会遇到更明显的衰减，从而导致信号质量进一步下降。
+
+如何在基于 PAM4 的设计中改进 BER？
+
+在 PAM4 中将 BER 提高到 1e-12 或更高涉及利用高级均衡技术、时钟恢复机制和通道优化。前向纠错 （FEC） 码、格雷编码和预编码等数字策略在错误检测和纠正中起着至关重要的作用，从而提高了整体链路可靠性。
+
+格雷编码确保连续的符号值仅相差一位，而预编码可减轻突发误差，这在高辐射环境中至关重要。实现 PCIe Gen6、100G 以太网和 USB4 v2 等标准中常见的 Reed-Solomon （RS） 代码，增加了一层额外的纠错层。这些代码在发送端将奇偶校验代码附加到数据上，有助于在接收器的 FEC 解码器上进行纠错。
+
+![](/picture/PAM4.jpg)
+
+<https://www.linkedin.com/posts/srinivas-gaddam-78429815_bit-error-rate-ber-in-pam4-based-designs-activity-7281566152630181888-hlq7?utm_source=share&utm_medium=member_desktop>
 
