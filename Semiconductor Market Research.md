@@ -124,7 +124,7 @@
       - [37.2.1.1 TrendForce](#37211-trendforce)
         - [37.2.1.1.1 2024年Q3市场排名](#372111-2024年q3市场排名)
   - [37.2.1.2 MEMS Foundry](#37212-mems-foundry)
-  - [37.2.1.2.1 TechoVedas关于MEMS Foundry的科普](#372121-techovedas关于mems-foundry的科普)
+    - [37.2.1.2.1 TechoVedas关于MEMS Foundry的科普](#372121-techovedas关于mems-foundry的科普)
   - [37.3 IDM](#373-idm)
   - [37.4 OSAT](#374-osat)
     - [37.4.1 先进封装](#3741-先进封装)
@@ -179,7 +179,8 @@
     - [40.5.1 经济学人智库中国团队刚刚发布了我们对美国关税对中国影响的评估：三种情景 20241218](#4051-经济学人智库中国团队刚刚发布了我们对美国关税对中国影响的评估三种情景-20241218)
   - [40.5 美国制裁](#405-美国制裁)
     - [40.5.1 BIS](#4051-bis)
-    - [3B001 半导体器件、材料或相关设备的制造设备](#3b001-半导体器件材料或相关设备的制造设备)
+      - [3B001 半导体器件、材料或相关设备的制造设备](#3b001-半导体器件材料或相关设备的制造设备)
+  - [40.6 全球 IC 晶圆厂和设施报告：2024 年 - Semiengineering](#406-全球-ic-晶圆厂和设施报告2024-年---semiengineering)
 - [41. 机构观点](#41-机构观点)
   - [CSIS](#csis)
     - [1. 中国成熟的半导体产能过剩：存在吗？重要吗？](#1-中国成熟的半导体产能过剩存在吗重要吗)
@@ -2293,7 +2294,7 @@ gelgoog:
 
 ## 37.2.1.2 MEMS Foundry
 
-## 37.2.1.2.1 TechoVedas关于MEMS Foundry的科普
+### 37.2.1.2.1 TechoVedas关于MEMS Foundry的科普
 
 从潜在投资的角度来看，什么是 MEMS 晶圆厂？
 
@@ -2996,7 +2997,7 @@ https://www.gartner.com/en/newsroom/press-releases/2024-10-28-gartner-forecasts-
 
 ### 40.5.1 BIS
 
-### 3B001 半导体器件、材料或相关设备的制造设备
+#### 3B001 半导体器件、材料或相关设备的制造设备
 
 - 设备及相关部件清单：
 外延生长设备：包括用于生长除硅外材料层且厚度均匀性达特定标准的设备、金属有机化学气相沉积反应器、分子束外延生长设备，以及特定硅及相关材料外延生长设备（多腔室、高真空或惰性环境、预清洗室、特定温度等条件）。
@@ -3008,6 +3009,13 @@ https://www.gartner.com/en/newsroom/press-releases/2024-10-28-gartner-forecasts-
 - 其他设备及部件：包括集成电路用掩模和掩模版、多层掩模（特定光源波长）、压印光刻模板、用于极紫外（EUV）光刻的掩模基板空白、EUV 反射镜制造设备、EUV 光罩、EUV 光罩制造设备、用于 EUV 光刻的光刻胶涂层等设备、退火设备、去除和清洁设备（多种功能及条件）。
 
 <https://www.bis.gov/ear/title-15/subtitle-b/chapter-vii/subchapter-c/part-774/supplement-no-1-part-774-commerce-control#category3>
+
+## 40.6 全球 IC 晶圆厂和设施报告：2024 年 - Semiengineering
+
+2024 年投资表
+下表列出了自我们上一份报告 发布以来，2024 年宣布的重大新设施/晶圆厂投资，但除了这份名单之外，还有更多。有些项目包含对先前宣布的计划的更改。有些也出现在我们关于政府资助的系列文章中。该表目前按公司或组织的字母顺序排列，但也可以按国家或其他特征排序。
+
+<https://semiengineering.com/chip-industry-investments-kept-flowing-in-2024-even-as-some-projects-stalled/>
 
 # 41. 机构观点
 
