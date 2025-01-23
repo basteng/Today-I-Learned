@@ -148,13 +148,16 @@
         - [37.8.1.1.1 印刷电路板 (PCB) 全球市场和供应商](#378111-印刷电路板-pcb-全球市场和供应商)
 - [38. 芯片类型](#38-芯片类型)
   - [38.1 IC](#381-ic)
-  - [38.1.1 Tcon](#3811-tcon)
-    - [38.1.1.1 Tcon IC国产化渗透低，Hiview（信芯微）挤进头部行列](#38111-tcon-ic国产化渗透低hiview信芯微挤进头部行列)
+    - [38.1.1 Tcon](#3811-tcon)
+      - [38.1.1.1 Tcon IC国产化渗透低，Hiview（信芯微）挤进头部行列](#38111-tcon-ic国产化渗透低hiview信芯微挤进头部行列)
+    - [38.1.2 Memory](#3812-memory)
+      - [HBM](#hbm)
+        - [HBM供求关系](#hbm供求关系)
   - [38.2 Discrets](#382-discrets)
-  - [38.2.1 Power](#3821-power)
-    - [38.2.1.1 SiC](#38211-sic)
-      - [38.2.1.1.1 市场](#382111-市场)
-        - [38.2.1.1.1.1 和谐共存：硅 IGBT 和 SiC MOSFET](#3821111-和谐共存硅-igbt-和-sic-mosfet)
+    - [38.2.1 Power](#3821-power)
+      - [38.2.1.1 SiC](#38211-sic)
+        - [38.2.1.1.1 市场](#382111-市场)
+          - [38.2.1.1.1.1 和谐共存：硅 IGBT 和 SiC MOSFET](#3821111-和谐共存硅-igbt-和-sic-mosfet)
         - [38.2.1.1.1.2 2025 年功率半导体的五大关键趋势 - Techinsights](#3821112-2025-年功率半导体的五大关键趋势---techinsights)
   - [38.3 Optoelectronics](#383-optoelectronics)
   - [38.4 Sensors \& Actuators](#384-sensors--actuators)
@@ -2658,23 +2661,31 @@ PCB行业市场概况
 
 ## 38.1 IC
 
-## 38.1.1 Tcon
+### 38.1.1 Tcon
 
-### 38.1.1.1 Tcon IC国产化渗透低，Hiview（信芯微）挤进头部行列
+#### 38.1.1.1 Tcon IC国产化渗透低，Hiview（信芯微）挤进头部行列
 
 Tcon制程在22~55nm之间，在12英寸晶圆厂代工生产，主要由TSMC和UMC晶圆代工厂占据主导地位，近几年，随着大陆晶圆厂12英寸产能将逐渐释放，SMIC产能爬坡，积极抢单，也占据一定的市场份额，同时随着Nexchip/HLMC产能的扩大，Tcon业务也日渐成熟，Nexchip今年完成28nm Tcon芯片的开发与设计，为Tcon国产化的道路提供了支持。
 
 <https://mp.weixin.qq.com/s/_3BdeKZqUwkaeptaacjoRA>
 
+### 38.1.2 Memory
+
+#### HBM
+
+##### HBM供求关系
+
+![](/picture/008soB9Oly1hxuitm32k4j30s10zk40p.jpg)
+
 ## 38.2 Discrets
 
-## 38.2.1 Power
+### 38.2.1 Power
 
-### 38.2.1.1 SiC
+#### 38.2.1.1 SiC
 
-#### 38.2.1.1.1 市场
+##### 38.2.1.1.1 市场
 
-##### 38.2.1.1.1.1 和谐共存：硅 IGBT 和 SiC MOSFET
+###### 38.2.1.1.1.1 和谐共存：硅 IGBT 和 SiC MOSFET
 
 拥有电池驱动汽车的人会知道，在许多方面，驾驶体验与使用汽油或柴油的汽车并无不同。但还是存在一些显著差异。
 
