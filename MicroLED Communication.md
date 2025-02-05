@@ -172,6 +172,7 @@
 - [56. VCSEL](#56-vcsel)
   - [56.1 New Prospects of Optical Wireless Communication Systems Exploiting VCSEL-based Transmitters](#561-new-prospects-of-optical-wireless-communication-systems-exploiting-vcsel-based-transmitters)
     - [56.1.2 \[10\] Demonstrating Intra-Spacecraft Optical Wireless Links](#5612-10-demonstrating-intra-spacecraft-optical-wireless-links)
+  - [56.2 Multi-Gbit/s LiFi Experiments with a VCSEL TX and an Enhanced Pulsed Modulation PHY](#562-multi-gbits-lifi-experiments-with-a-vcsel-tx-and-an-enhanced-pulsed-modulation-phy)
 - [57. SERDES](#57-serdes)
   - [57.1 开发 SERDES 类似于 mini-SOC](#571-开发-serdes-类似于-mini-soc)
   - [57.2 基于 PAM4 的设计中的误码率 （BER）](#572-基于-pam4-的设计中的误码率-ber)
@@ -4442,6 +4443,10 @@ LightCounting 创始人兼首席执行官 Vlad Kozlov 表示：“云超大规�
 **第一作者主页 Giulio Cossu**
 
 https://www.santannapisa.it/it/giulio-cossu?f%5B0%5D=pubblicazioni_persona_con_filtri_categoria%3A5016
+
+## 56.2 Multi-Gbit/s LiFi Experiments with a VCSEL TX and an Enhanced Pulsed Modulation PHY
+
+
 
 # 57. SERDES
 
