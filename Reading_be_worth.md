@@ -44,6 +44,7 @@
 - [38. 我们必须拥有本地模式的另一个原因](#38-我们必须拥有本地模式的另一个原因)
 - [39. Groq创始人关于Jevons Paradox的精彩论断](#39-groq创始人关于jevons-paradox的精彩论断)
 - [40. 工作也有利息 - 阮一峰](#40-工作也有利息---阮一峰)
+- [41. DeepSeek](#41-deepseek)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1850,3 +1851,15 @@ Michaels, Robert J. (2012 年 7 月 6 日)。能源效率与气候政策：反�
 找到你真正感兴趣的事情。然后投入大量时间，无论是质量还是数量，这样当你长大后，你就可以做任何你喜欢的事情了。 
 
 <https://www.linkedin.com/pulse/time-value-mike-speiser/>
+
+# 41. DeepSeek
+
+关于 DeepSeek 的新闻是否像大家所说的那样重要？
+
+是的，它是 Sputnik。它是 Sputnik 2.0。
+
+你知道 NASA 如何花费 100 万美元设计一种可以在太空中书写的笔，而俄罗斯人带来了一支铅笔的故事吗？
+
+这种情况又发生了。
+
+<https://www.linkedin.com/posts/ross-jonathan_is-the-news-about-deepseek-as-big-a-deal-activity-7292549992798396416-AN9W?utm_source=share&utm_medium=member_desktop>
