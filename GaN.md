@@ -113,6 +113,7 @@
   - [34.1 Linkedin - Gallium Nitride Semiconductor (III-N Compounds)](#341-linkedin---gallium-nitride-semiconductor-iii-n-compounds)
 - [35. 市场](#35-市场)
   - [35.1 onsemi 是否会稳步重返 GaN 市场？](#351-onsemi-是否会稳步重返-gan-市场)
+- [36. GaN 互补逻辑电路构建块 - 类似CMOS？](#36-gan-互补逻辑电路构建块---类似cmos)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -2046,3 +2047,55 @@ DeWitt 工厂使安森美半导体能够迅速扩大 GaN 产量，缩短上市�
 展望 2025 年及以后，安森美在宽带隙半导体技术方面的精心投资使其成为电力电子市场的全能型企业。安森美能够适应不断变化的需求，为各种应用提供创新解决方案，这将巩固其在推动节能电力系统未来发展方面的作用。
 
 <https://procurementpro.com/japan-supply-chain-management-market-to-reach-4224-15m/>
+
+# 36. GaN 互补逻辑电路构建块 - 类似CMOS？
+
+中国研究人员在 2024 年 12 月举行的国际电子器件会议上展示了基于氮化镓场效应晶体管 (FET) 的互补逻辑 (CL) 电路的“突破性”性能[Teng Li 等，IEDM session 16-1, 2024 ]。
+
+北京大学、北京工业大学、中国科学技术大学和香港科技大学的团队评论说：“这项工作展示了 GaN 互补逻辑在 MHz 功率集成电路 (PIC) 和恶劣环境电子产品中的潜力。”
+
+GaN 互补逻辑性能的一个关键瓶颈是 p 通道 FET 与成熟的 n-FET 的互补。GaN p-FET 的最大漏极电流通常小于 10mA/mm。这与镁 (Mg) 作为电子受体产生正空穴电荷载体的性能较差有关。
+
+为了解决这个问题，研究人员采用了外延材料，在 p 型层中插入一层氮化铝 (AlN) 层。这产生了一个电荷极化场，改变了 p 型层中的费米能级，增强了 Mg 受体的电离。
+
+研究人员解释说：“p-FET 具有一个 AlN 插入层，它将受体能级 (E Mg ) 推至费米能级 (E F ) 以下，因此来自 E Mg能级的空穴完全电离并转移到 AlN 上方。”
+
+![](/picture/25013_pekinguniversity_f1.jpg)
+
+图 1：(a) GaN 互补逻辑 (CL) 平台方案。(b) 导通状态下 p-FET 栅极区域的模拟能带图。(c) 工艺流程。
+
+用于电路制造的外延结构（图1）由200nm GaN、13nm AlGaN阻挡层、10nm p-GaN、1.5nm AlN插入层和蓝宝石上GaN衬底晶片上的60nm p-GaN组成。
+
+n-FET 的制作方法是蚀刻 p 型层，并与 AlGaN 势垒下方形成的 n 型二维电子气 (2DEG) 通道建立源极/漏极接触。用于欧姆接触的退火金属是钛/铝/镍/金 (Ti/Al/Ni/Au)。
+
+利用多种能量的氟离子注入实现了平面器件隔离。
+
+互补逻辑的 p-FET 侧采用凹槽栅极和 20nm 氮化硅栅极绝缘层制造。在这种情况下，欧姆源/漏极触点采用退火 Ni/Au。栅极电极和探针焊盘的最终金属化为 Ti/Au。
+
+两种器件的栅极均位于源极和漏极电极之间的中央。p-FET 和 n-FET 栅极长度分别为 2μm 和 4μm，源极/漏极间距分别为 4μm 和 3μm。
+
+单个 p-FET 的最大漏极电流为 23mA/mm。阈值电压 (V th ) 为 −0.5V，提供增强 (E) 模式、“常关”操作。开/关电流比为 6.5x10 7。亚阈值摆幅为 89mV/十倍。n-FET 也是 E 模式，阈值为 +1.3V。
+
+![](/picture/25013_pekinguniversity_f2.jpg)
+
+图 2：GaN p-FET 基准（不包括 FinFET 和/或三栅极 FET）。为了进行公平比较，V th由 10μA/mm 漏极电流决定。
+
+根据已发表研究的基准图（图 2），该团队声称“在 E 型 GaN p-FET 中，I max和 I ON /IO FF更出色”。由于该研究针对的是电源 IC 部署，因此基准不包括 FinFET 和三栅极结构，这些结构针对的是高速/射频性能。
+
+研究人员在各种互补逻辑拓扑中测试了他们的设备：反相器；传输/NAND/NOR 门；RS（复位-设置）锁存器/触发器；带功率 HEMT 的缓冲器；以及环形振荡器。反相器的最大电压增益为 118.9。
+
+![](/picture/25013_pekinguniversity_f3.jpg)
+
+图 3：(a) GaN 互补逻辑缓冲器与功率 HEMT 单片集成，驱动外部负载电阻。(b) 输入和输出波形。
+
+互补逻辑缓冲器工作在 6V V DD，这是电源 IC 的典型电压（图 3）。缓冲器用于驱动 17μm 栅极长度功率 HEMT，E 模式阈值为 +1.3V。HEMT 的总线电压为 400V。
+
+该团队评论道：“良好的开关操作验证了 GaN 互补逻辑电路用于 GaN 功率集成电路 (PIC) 的能力。作为大学实验室的初步研究，功率 HEMT 的栅极宽度仅为 100μm。为了展示快速开关操作，需要大面积功率 HEMT 来最大限度地减少寄生电容的影响，这仍然是未来的工作。”
+
+![](/picture/25013_pekinguniversity_f4.jpg)
+
+图 4：(a) 环形振荡器 (RO) 电路。(b) 15 级 RO 的显微照片。(c)–(d) V DD = 6V 时 15 级 RO 的电压波形和功率谱，提供 ~400ns 振荡周期 (T osc ) 和 2.5MHz 基频 (f osc )。(e) T osc与 RO 级数 (N) 的关系。
+
+对于 RO 电路（图 4），研究人员评论道：“这项研究中的 GaN RO 表现出突破性的传播延迟 τ pd，短至约 13 纳秒，而之前出版物中的传播延迟则为 >30 纳秒。”
+
+<https://iedm24.mapyourshow.com/8_0/sessions/session-details.cfm?ScheduleID=118>
