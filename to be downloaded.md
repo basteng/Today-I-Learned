@@ -1,6 +1,6 @@
 - [I.Introduction to the Light-Emitting Diode - 未下载](#iintroduction-to-the-light-emitting-diode---未下载)
-- [II.王磊博士论文下载](#ii王磊博士论文下载)
-- [III.李振浩博士论文下载](#iii李振浩博士论文下载)
+- [II.王磊博士论文](#ii王磊博士论文)
+- [III.李振浩博士论文](#iii李振浩博士论文)
 - [1. Co-Designed Silicon Photonics Chip I/O for Energy-Efficient Petascale Connectivity](#1-co-designed-silicon-photonics-chip-io-for-energy-efficient-petascale-connectivity)
 - [2. AlN/GaN/AlGaN-on-Si HEMT Achieving 1.3 W/mm at 5 V for 5G FR2 Handsets](#2-alnganalgan-on-si-hemt-achieving-13-wmm-at-5-v-for-5g-fr2-handsets)
 - [3. A 0.297-pJ/Bit 50.4-Gb/s/Wire Inverter-Based Short-Reach Simultaneous Bi-Directional Transceiver for Die-to-Die Interface in 5-nm CMOS](#3-a-0297-pjbit-504-gbswire-inverter-based-short-reach-simultaneous-bi-directional-transceiver-for-die-to-die-interface-in-5-nm-cmos)
@@ -11,6 +11,7 @@
 - [8. A streamlined algorithm for two-dimensional bandgaps and defect-state energy variations in InGaN-based micro-LEDs](#8-a-streamlined-algorithm-for-two-dimensional-bandgaps-and-defect-state-energy-variations-in-ingan-based-micro-leds)
 - [9. Bi-directional 400 Mbit/s LED-based optical wireless communication for non-directed line-of-sight transmission](#9-bi-directional-400-mbits-led-based-optical-wireless-communication-for-non-directed-line-of-sight-transmission)
 - [10. OWC Using a Fully Integrated Optical Receiver With Large-Diameter APD](#10-owc-using-a-fully-integrated-optical-receiver-with-large-diameter-apd)
+- [11. Building Many-Core Processor-to-DRAM Networks with Monolithic CMOS Silicon Photonics](#11-building-many-core-processor-to-dram-networks-with-monolithic-cmos-silicon-photonics)
 
 20241204以后 （未下载）
 
@@ -25,17 +26,19 @@ https://
 # I.Introduction to the Light-Emitting Diode - 未下载
 https://link.springer.com/book/10.1007/978-3-031-59971-2
 
-# II.王磊博士论文下载
+# II.王磊博士论文
 
 https://newetds.lib.tsinghua.edu.cn/home/qh/index
 
 下拉菜单：作者 - 王磊
 
-# III.李振浩博士论文下载
+# III.李振浩博士论文
 
 https://newetds.lib.tsinghua.edu.cn/home/qh/index
 
 下拉菜单：作者 - 李振浩
+
+**From 20241204**
 
 # 1. Co-Designed Silicon Photonics Chip I/O for Energy-Efficient Petascale Connectivity
 
@@ -76,4 +79,8 @@ https://ieeexplore.ieee.org/document/6886664
 # 10. OWC Using a Fully Integrated Optical Receiver With Large-Diameter APD
 
 https://ieeexplore.ieee.org/document/6994819
+
+# 11. Building Many-Core Processor-to-DRAM Networks with Monolithic CMOS Silicon Photonics
+
+https://ieeexplore.ieee.org/abstract/document/5209931
 
