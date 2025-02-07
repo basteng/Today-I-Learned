@@ -47,6 +47,7 @@
 - [41. DeepSeek](#41-deepseek)
   - [41.1 Groq - 关于 DeepSeek 的新闻是否像大家所说的那样重要？](#411-groq---关于-deepseek-的新闻是否像大家所说的那样重要)
 - [42. 阿兰·图灵秘密“黛利拉”计划的失落故事](#42-阿兰图灵秘密黛利拉计划的失落故事)
+- [43. 苏黎世大学经济学教授Dina D. Pomeranz今年开设Global Policy Analysis课程](#43-苏黎世大学经济学教授dina-d-pomeranz今年开设global-policy-analysis课程)
 
 <div STYLE="page-break-after: always;"></div>
 
