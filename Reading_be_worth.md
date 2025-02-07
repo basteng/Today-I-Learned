@@ -1967,3 +1967,9 @@ Delilah密钥生成器的蓝图（图3）
 原文
 
 <https://spectrum.ieee.org/alan-turings-delilah>
+
+# 43. 苏黎世大学经济学教授Dina D. Pomeranz今年开设Global Policy Analysis课程
+
+她在推特上表示会开放给来自发展中国家的学生远程学习。课程需要最入门级的经济学和统计基础。感兴趣的同学可以报名，积极参与并完成作业和考试的可以获得教授个人颁发的结课证书，也可以只听课不做作业（当然也就没有证书）。报名截止到2月5号，课程是2月18号到5月27号，北京时间晚上11:15到凌晨1点。详情请参考她的推特和报名链接
+
+<https://docs.google.com/forms/d/e/1FAIpQLScr3GfTSHlQ8xTbqZG4pG4cRzrsPUDiSlElTj4Grn6JZZbGPQ/closedform>
