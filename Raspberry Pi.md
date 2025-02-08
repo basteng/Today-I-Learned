@@ -8,6 +8,7 @@
   - [7.1 官方教程](#71-官方教程)
   - [7.2 Raspberry Pi 3B 构建集群教程](#72-raspberry-pi-3b-构建集群教程)
   - [7.3 ClusterHat 教程 Pi Zero W](#73-clusterhat-教程-pi-zero-w)
+- [8. Raspberry Pi Pico 2 构筑自己的音序器](#8-raspberry-pi-pico-2-构筑自己的音序器)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -554,3 +555,19 @@ Paul McWhorter
 
 ClusterHat 淘宝链接
 <https://item.taobao.com/item.htm?abbucket=1&id=706903663956&ns=1&pisk=gAF-LkbuTijoxk82TH6mKZUgoKQcmWUPquz6tDmkdoEYRmAhzbXE9knYY0DoN0AK9yEUxkUFz2iQAkn3EtfgzzlEOGAds14za-rP3kHSOqTbuVpBF1x8Pb8SOGjG9KYjUgcQKCvNtm9j7mgSRY95ksgK8XgSV2_xc23wd3ZIOZQxW2YWPLgBhngZc3iIRLajcV3MNUgSRZUj02Gz-diFrDOLLkFbbwdikBOQM4HfnzifKoFjy7oTP7dBOeu-ecaSDGxrO5kb8vFe8BH3PRrE5ut5vDPYl7w_fivoVR3LSJE1-Lump7lxA71wWmN8JSHzn39SWbn-C7ZX7N4xd-FxZ7seQr4xVAh0ntSoKbE8Qck53irLk0qQwxtRmD2go7MYfiAYYveQZjN5c1IzL5V9dOxiX2v5kZpeLYg4yzM6eaL4LhgxjZ4eLpkDkqnGkZpeLYgqkcbmhpJEnEC..&priceTId=213e386217273227471263717e3f46&skuId=5137159806411&spm=a21n57.1.item.4.44fe523cX52glq&utparam=%7B%22aplus_abtest%22%3A%2275ef080006834215d1113927bd8c76b1%22%7D&xxc=taobaoSearch>
+
+# 8. Raspberry Pi Pico 2 构筑自己的音序器
+
+大家非常熟悉 Raspberry Pi 和 Raspberry Pi Pico 在音乐行业的潜力，并且都梦想着组建自己的 Pi 乐队。正是像 Arnov Sharma 这样的项目，通过展示最小的 Raspberry Pi Raspberry Pi Pico 的酷炫潜力，永远重新点燃了这种幻想。使用大家最喜欢的微控制器，他组装了一个由 Pico 提供支持的音序器。
+
+![](/picture/pico_music.png)
+
+根据 Sharma 的说法，这个项目的灵感来自 Teenage Engineering 的 Pocket Operator 合成音序器。顾名思义，这些是小型袖珍的音序器，可以使用其集成的工具套件在您喜欢的任何地方轻松召唤音乐。
+
+这个定制的 Raspberry Pi Pico 迭代由 25 个按钮组成，这些按钮排列在一个矩阵中，使用 Pico 上的 GPIO 进行作。它有一个用于音频输出的扬声器，并依靠音频放大模块来处理声音。最终结果是一个类似的音序器，还有一个额外的好处，那就是从头开始为自己构建一些东西。
+
+![](/picture/pico_music1.png)
+
+控制一切的主板是最新的 Raspberry Pi Pico 2。它连接到一个定制的 PCB，该 PCB 为以 5 x 5 网格模式布局的所有按钮留出了空间。选择的音频放大模块是一种PAM8403，它使 Pico 能够通过连接的扬声器输出音乐。该项目的源代码已在 Hackster 上提供，供任何人探索。在其中，我们很好地了解了 Sharma 编程到这个特定音序器中的一些工具，其中包括录制音频序列、添加延迟甚至从 Pico 生成音调的能力
+
+<https://www.hackster.io/Arnov_Sharma_makes/pico-sequencer-173a5f>
