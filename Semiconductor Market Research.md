@@ -141,6 +141,8 @@
   - [37.6 Material](#376-material)
     - [37.6.1 市场展望](#3761-市场展望)
       - [37.6.1.1 2025年展望——半导体材料有望实现增长](#37611-2025年展望半导体材料有望实现增长)
+    - [37.6.2 硅片](#3762-硅片)
+      - [37.6.2.1 SUMCO的预测](#37621-sumco的预测)
   - [37.7 EDA](#377-eda)
   - [37.8 Others](#378-others)
     - [37.8.1 PCB](#3781-pcb)
@@ -2598,6 +2600,22 @@ KLA 和 ASML 都是各自子行业的技术领导者。正如 KLA 段落中所�
 ![](/picture/Screenshot-2025-01-13-at-5.09.44-PM.png)
 
 <https://techcet.com/2025-looking-up-semiconductor-materials-aimed-for-growth/>
+
+### 37.6.2 硅片
+
+#### 37.6.2.1 SUMCO的预测
+
+截至 2024 年，话题标签#SUMCO 估计将占据全球硅 话题标签#wafer 市场份额的约 25-30%，在 300 毫米晶圆领域占有重要地位。
+
+📌 高库存是个问题吗？
+◼️ 短期问题：
+库存水平升高可能意味着生产过剩或供需不匹配，从而导致潜在的价格压力和供应商盈利能力下降。
+◼️长期影响：
+如果最终用户需求（例如，话题标签#AI 、话题标签#5G 或 话题标签#HPC ）没有像预期的那样增加，这可能会导致库存调整期延长，从而影响硅片供应商和芯片制造商。
+
+![](/picture/sumco_wafer.jpg)
+
+<https://www.linkedin.com/posts/jett-c-17972258_sumco-wafer-ai-activity-7293801128939462656-t_zm?utm_source=share&utm_medium=member_desktop>
 
 ## 37.7 EDA
 

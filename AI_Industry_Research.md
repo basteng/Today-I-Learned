@@ -17,6 +17,7 @@
   - [8.3 Nvidia和Broadcom 谁会胜出](#83-nvidia和broadcom-谁会胜出)
 - [9. Deepseek](#9-deepseek)
   - [9.1 Anthropic首席执行官Dario Amodei再次回应DeepSeek崛起](#91-anthropic首席执行官dario-amodei再次回应deepseek崛起)
+  - [9.2 DeepSeek AI R1 的含义：generativeAI 价值链中的赢家和输家](#92-deepseek-ai-r1-的含义generativeai-价值链中的赢家和输家)
 - [10. 中国AI芯片需求](#10-中国ai芯片需求)
   - [10.1 中国奇怪的芯片过剩现象China’s Weird Chip Surplus, Explained](#101-中国奇怪的芯片过剩现象chinas-weird-chip-surplus-explained)
 - [11. AI晶圆需求](#11-ai晶圆需求)
@@ -387,6 +388,18 @@ Dario Amodei：我觉得这两者其实是同一个世界观的两面。在《Ma
 原文
 
 <https://www.chinatalk.media/p/anthropics-dario-amodei-on-ai-competition>
+
+## 9.2 DeepSeek AI R1 的含义：generativeAI 价值链中的赢家和输家
+
+最近发布的 DeepSeek R1 模型震撼了科技股，自 2025 年 1 月 27 日以来，一些市场参与者（例如 NVIDIA）的股价下跌了 ~20%。R1 在很大程度上是开放的，与领先的专有模型相当，似乎以显着较低的成本进行了训练，并且在 API 访问方面使用起来更便宜，所有这些都表明一项创新可能会改变生成式 话题标签#AI 领域的竞争动态。
+
+根据《2025-2030 年生成式 AI 市场报告》（2025 年 1 月发布）中的价值链分析，IoT Analytics 认为最终用户和 AI 应用程序提供商是这些最新发展的最大赢家，而专有模型提供商的损失最大。
+
+![](/picture/Deepseek-implications-winners-and-losers-in-the-genai-value-chain-vw.png)
+
+<https://iot-analytics.com/winners-losers-generative-ai-value-chain/>
+
+<https://www.linkedin.com/posts/marcomezger_generativeai-ai-semidonctorindustry-activity-7294131971134287872-pITI?utm_source=share&utm_medium=member_desktop>
 
 # 10. 中国AI芯片需求
 
