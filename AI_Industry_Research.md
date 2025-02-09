@@ -19,6 +19,7 @@
   - [9.1 Anthropic首席执行官Dario Amodei再次回应DeepSeek崛起](#91-anthropic首席执行官dario-amodei再次回应deepseek崛起)
 - [10. 中国AI芯片需求](#10-中国ai芯片需求)
   - [10.1 中国奇怪的芯片过剩现象China’s Weird Chip Surplus, Explained](#101-中国奇怪的芯片过剩现象chinas-weird-chip-surplus-explained)
+- [11. AI晶圆需求](#11-ai晶圆需求)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -392,6 +393,17 @@ Dario Amodei：我觉得这两者其实是同一个世界观的两面。在《Ma
 ## 10.1 中国奇怪的芯片过剩现象China’s Weird Chip Surplus, Explained
 
 <https://www.chinatalk.media/p/chinas-weird-chip-surplus-explained>
+
+# 11. AI晶圆需求
+
+这是 摩根士丹利 关于 2025 年 AI 晶圆预期出货量的惊人数据表。首先，我们可以惊讶地发现 英伟达 将获得 77% 的收入份额，但有趣的是，中国和 Tesla 都使用旧的 7 nm 节点技术，而 微软 已完全过渡到 3 nm。通俗地说，这是 iPhone 11 与 iPhone 16 - 相隔 6 代。特斯拉的 7 纳米晶圆成本为 15,400 美元，中国为 18,700 美元。7 nm 存在不同的口味，表格没有说明特斯拉是否使用 EUV 版本，但我们可以假设国内中国 7 nm 节点没有，因此由于体积小和依赖复杂的低良率图案化技术，价格会受到不利影响。更令人惊讶的是，我们刚刚在 AlixLabs年展示了 APS（TM） 的 3 nm 图形化能力
+
+![](/picture/AI_wafer_demand.jpg)
+
+<https://www.linkedin.com/posts/jsundqvist_china-usa-semiconductor-activity-7294258569393111040-e6F7?utm_source=share&utm_medium=member_desktop>
+
+
+
 
 
 
