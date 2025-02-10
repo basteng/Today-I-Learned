@@ -12,6 +12,9 @@
 - [9. Bi-directional 400 Mbit/s LED-based optical wireless communication for non-directed line-of-sight transmission](#9-bi-directional-400-mbits-led-based-optical-wireless-communication-for-non-directed-line-of-sight-transmission)
 - [10. OWC Using a Fully Integrated Optical Receiver With Large-Diameter APD](#10-owc-using-a-fully-integrated-optical-receiver-with-large-diameter-apd)
 - [11. Building Many-Core Processor-to-DRAM Networks with Monolithic CMOS Silicon Photonics](#11-building-many-core-processor-to-dram-networks-with-monolithic-cmos-silicon-photonics)
+- [12. Memory disaggregation: why now and what are the challenges](#12-memory-disaggregation-why-now-and-what-are-the-challenges)
+- [13. Scaling and Performance Challenges of Future DRAM](#13-scaling-and-performance-challenges-of-future-dram)
+- [14. Memory Disaggregation: Research Problems and Opportunities](#14-memory-disaggregation-research-problems-and-opportunities)
 
 20241204以后 （未下载）
 
@@ -83,4 +86,18 @@ https://ieeexplore.ieee.org/document/6994819
 # 11. Building Many-Core Processor-to-DRAM Networks with Monolithic CMOS Silicon Photonics
 
 https://ieeexplore.ieee.org/abstract/document/5209931
+
+# 12. Memory disaggregation: why now and what are the challenges
+
+https://dl.acm.org/doi/10.1145/3606557.3606563
+
+# 13. Scaling and Performance Challenges of Future DRAM
+
+https://ieeexplore.ieee.org/document/9108122
+
+# 14. Memory Disaggregation: Research Problems and Opportunities
+
+https://ieeexplore.ieee.org/document/8885074
+
+
 

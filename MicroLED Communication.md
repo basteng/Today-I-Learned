@@ -28,6 +28,8 @@
   - [4.20 OCP24：AI时代需要光学技术同行](#420-ocp24ai时代需要光学技术同行)
   - [4.21 Nvidia、AMD 和 Intel 助力 Ayar Labs 实现盈利](#421-nvidiaamd-和-intel-助力-ayar-labs-实现盈利)
   - [4.22 光学IO与CPO概念不同](#422-光学io与cpo概念不同)
+  - [4.23 Ayar Labs的最新动态与进展 - 光学小豆芽](#423-ayar-labs的最新动态与进展---光学小豆芽)
+  - [4.24 Ayar产品用于内存分解 memory disaggregation](#424-ayar产品用于内存分解-memory-disaggregation)
 - [5. Avicena](#5-avicena)
   - [5.1《High Bandwidth GaN-based Micro-LEDs at Temperatures up to 400°C》](#51high-bandwidth-gan-based-micro-leds-at-temperatures-up-to-400c)
   - [5.2 硅光子学联合封装。 凉！ 但它实用吗？Bardia Pezeshki post at Linkedin](#52-硅光子学联合封装-凉-但它实用吗bardia-pezeshki-post-at-linkedin)
@@ -1062,6 +1064,67 @@ Ayar Labs 的工作重点是光学 I/O 互连，它使用“小芯片”或微�
 Ayar Labs 成立于 2015 年，声称已经开发出业界首个基于标准的、可用于商业用途且针对 AI 训练和推理进行了优化的封装内光学 I/O 解决方案，以取代电气 I/O。
 
 <https://www.optica-opn.org/home/industry/2024/december/ayar_labs_gets_key_funds_from_chip_giants/?utm_campaign=&utm_content=https://www.optica-opn.or&utm_medium=social&utm_source=facebook,linkedin,twitter>
+
+## 4.23 Ayar Labs的最新动态与进展 - 光学小豆芽
+
+小豆芽几年前曾整理介绍过Ayar Labs的技术方案(Ayar Labs公司的硅光子互联技术)。四年多来，Ayar Labs一直在打磨优化其产品，解决量产过程中遇到的工程问题，另一方面，伴随着AIGC领域与chiplet技术的兴起，Optical IO技术扮演了愈加重要的角色，得到了更广泛的关注。这篇笔记，小豆芽整理下Ayar Labs最新的动态与进展，方便大家参考。
+
+2024年12月份，Ayar Labs完成了1.55亿美金的D轮融资，其融资总金额达到了3.7亿美金。本轮的投资方集齐了Nvidia、AMD与Intel在内的三大芯片巨头，充分证明了芯片巨头们对Optical IO技术方案的认可。Ayar Labs在其官网上给出了Optical IO技术的两个典型应用场景，如下图所示，即AI集群中的scale-up互联和内存扩展。
+
+![](/picture/Ayar1.png)
+
+(图片来自https://ayarlabs.com/blog/the-future-of-ai-infrastructure-a-path-to-profitability-with-optical-i-o/)
+
+所谓Scale-up互联，也称为vertical scaling或者backend network, 是指在单个计算节点内将多个GPU、CPU等互联起来，从而提升单节点的计算能力。在AIGC领域，大模型的参数比较多，而单颗GPU的计算与存储能力有限，需要将多颗GPU组成一个计算能力更强的计算单元来完成计算任务。大家所熟知的NVLink和AMD的inifity fabric都属于scale-up互联范畴。Scale-up网络对带宽和延迟要求较高。对于Ayar Labs来说，optical IO技术可以将不同机架上的GPU、GPU与交换机芯片互联起来，摆脱铜缆传输距离的限制，提供更高带宽、更低延迟、更低功耗的互联方案。
+
+针对单颗GPU来说，其内存容量是有限的，以Nvidia最新的B100芯片为例，其HBM芯片放置在GPU芯片附近，总容量为192GB。而通过内存扩展(extended memory,也称为memory disaggregation)的方式，可有效地增大单颗GPU的内存，更加高效地分配使用存储资源。通过Optical IO技术，可以将GPU芯片与存储芯片低延迟地连接起来，摆脱HBM芯片必须放置在GPU附近的物理空间限制，从而解决内存墙(memory wall)的难题。
+
+在AI芯片架构中，GPU芯片与HBM芯片都可以通过Optical IO芯片进行扩展互联。不同电芯片的电接口需要统一标准，否则不同厂家的电芯片适配会存在问题。此前，Ayar Labs与Intel合作，采用的是Intel的AIB接口，受到了一定的限制。由于UCIe协议的发展与推广，有望在chiplet领域得到应用，Ayar Labs在后续的产品roadmap中将电接口都转换为UCIe，如下图所示。其中Gen2为Ayar Labs当前产品的指标，仍然采用的是AIB接口，单颗TeraPHY芯片含8个光学端口，每个通道中含有8个波长，每个波长的信号速率为32Gbps, 总的双向带宽为4Tbps。未来有望实现16个端口，16个波长，单波长速率64Gbps，单个Optical IO芯粒的带宽为32Tbps。
+
+![](/picture/640%20(4).png)
+
+(图片来自https://ayarlabs.com/resources/in-package-optical-i-o-for-generative-ai-architectures/)
+
+为了给TeraPHY芯片提供光源，Ayar Labs与Lumentum、Siver等激光器厂商合作开发了SuperNova激光器模块。单个模块中含有16个波长的DFB芯片阵列，波长间隔为400GHz, 满足CW-WDM的MSA规范。为了模块的可测试与维护性，Ayar Labs与Teramount公司合作开发可插拔光学连接器(detachable optical connector)。关于Teramount的技术介绍，可以参看这篇笔记: Photonic Bump简介，主要在PIC晶圆基础上加工出一些辅助的光学元件photonic plug与photonic bump，如下图所示，便于后续的耦合对准。
+
+![](/picture/640%20(5).png)
+
+(图片来自https://teramount.com/technology/)
+
+Ayar Labs与Corning合作，通过玻璃基板(glass substrate)互联不同的TeraPHY芯片。玻璃基板一方面可替代有机基板，在高速互联与散热方面有着比较好的性能，另一方面在玻璃基板中可以加工出光波导，实现optical fanout的功能，并且也可以实现可插拔光连接器，将光芯片与光纤解耦。
+
+![](/picture/640%20(6).png)
+
+（图片来自https://ayarlabs.com/supercomputing/?utm_campaign=241108-series-d&utm_source=press-rel&utm_term=sc24）
+
+以上是对Ayar Labs最新动态的简单整理，在AIGC的浪潮中，Optical IO技术在chiplet互联中将扮演非常重要的角色。Ayar Labs将其TeraPHY芯片与UCIe接口匹配，进而应用于scale-up互联和内存扩展这两种场景，提供高带宽、低延迟、低功耗的互联方案。此外，Ayar Labs也与多家公司合作开发了多波长激光器与可插拔光连接器，解决产品落地中的工程难题。Ayar Labs成立至今，十年磨一剑，聚焦于做好Optical IO一件事情，利用硅光技术实现芯片间的高速互联，积累好技术并攻克工程难题，这一点对于创业公司是一个很好的启示。
+
+<https://mp.weixin.qq.com/s/ijz0PoMqeeBKoMbBJ38VKg>
+
+## 4.24 Ayar产品用于内存分解 memory disaggregation 
+
+光学 I/O 还可用于 xPU 到内存的连接（也称为内存分解）。这样可以将内存与 GPU 分开放置，同时仍保持非常低的延迟。无需在物理上“靠近”GPU，即可添加更多内存。
+
+分解解决了“内存墙”问题，即整体系统性能受到内存带宽的限制。这可以增加每个 GPU 的可用内存，并提高整体系统性能。同样，UCIe 通过简化光学 I/O 的采用来促进这一转变。
+
+是什么导致了记忆分解？
+过去二十年，硬件 FLOPS 激增了 60,000 倍，而互连带宽仅增加了 30 倍。这意味着高性能系统的限制因素是将数据从内存传输到处理器的延迟。处理器速度和内存带宽之间的差距越来越大，造成了内存壁垒——整个系统性能的瓶颈——因为处理器花费更多时间等待来自内存的数据。
+
+为每个 GPU 添加更多内存可以消除这一瓶颈。但是，使用铜互连时，高带宽内存必须紧挨着 GPU，否则高速连接将丢失。没有足够的物理空间来容纳更多内存并保持连接。
+
+要求
+
+将内存从 GPU 移开需要未来系统中每个 GPU 具有几到几十兆兆位的超高带宽密度。在这里，光学 I/O 可以再次提供这一点。今天，数据速率超过 50 Gbps 的电气 I/O 需要前向纠错 (FEC) 编码，这会带来约 100 纳秒的额外延迟。
+
+工作原理
+
+![](/picture/ai-scale-up-and-memory-disaggregation-using-ucie-and-optical-io.webp)
+
+图 2：上图中标记为“2”的项目指的是分解内存场景。来源：光互联网络论坛 (OIF)，OFC 2024。
+
+在这种情况下，使用与 UCIe 兼容的光学 I/O 芯片，内存可以位于距离计算包最远 2 公里的地方，同时保持更高的带宽密度和 < 2 x 5ns + TOF 延迟。
+
+<https://ayarlabs.com/blog/ai-scale-up-and-memory-disaggregation-two-use-cases-enabled-by-ucie-and-optical-io/>
 
 # 5. Avicena
 
