@@ -15,6 +15,7 @@
 - [12. Memory disaggregation: why now and what are the challenges](#12-memory-disaggregation-why-now-and-what-are-the-challenges)
 - [13. Scaling and Performance Challenges of Future DRAM](#13-scaling-and-performance-challenges-of-future-dram)
 - [14. Memory Disaggregation: Research Problems and Opportunities](#14-memory-disaggregation-research-problems-and-opportunities)
+- [15. Atomistic Understanding of Dislocation Climb in Nitride Semiconductors: Role of Asymmetric Jogs](#15-atomistic-understanding-of-dislocation-climb-in-nitride-semiconductors-role-of-asymmetric-jogs)
 
 20241204以后 （未下载）
 
@@ -99,5 +100,7 @@ https://ieeexplore.ieee.org/document/9108122
 
 https://ieeexplore.ieee.org/document/8885074
 
+# 15. Atomistic Understanding of Dislocation Climb in Nitride Semiconductors: Role of Asymmetric Jogs
 
+https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.134.056102
 
