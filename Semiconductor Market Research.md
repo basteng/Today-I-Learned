@@ -144,6 +144,8 @@
       - [37.6.1.1 2025年展望——半导体材料有望实现增长](#37611-2025年展望半导体材料有望实现增长)
     - [37.6.2 硅片](#3762-硅片)
       - [37.6.2.1 SUMCO的预测](#37621-sumco的预测)
+    - [37.6.3 半导体制造流程各工艺使用的材料](#3763-半导体制造流程各工艺使用的材料)
+      - [37.6.3.1 信越化学使用的材料](#37631-信越化学使用的材料)
   - [37.7 EDA](#377-eda)
   - [37.8 Others](#378-others)
     - [37.8.1 PCB](#3781-pcb)
@@ -2631,6 +2633,14 @@ KLA 和 ASML 都是各自子行业的技术领导者。正如 KLA 段落中所�
 ![](/picture/sumco_wafer.jpg)
 
 <https://www.linkedin.com/posts/jett-c-17972258_sumco-wafer-ai-activity-7293801128939462656-t_zm?utm_source=share&utm_medium=member_desktop>
+
+### 37.6.3 半导体制造流程各工艺使用的材料
+
+#### 37.6.3.1 信越化学使用的材料
+
+![](/picture/material.jpg)
+
+<https://www.linkedin.com/posts/jett-c-17972258_shinetsu-semiconductor-activity-7294891085439320065-s51p?utm_source=share&utm_medium=member_desktop>
 
 ## 37.7 EDA
 
