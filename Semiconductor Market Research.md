@@ -123,6 +123,7 @@
     - [37.2.1 市场](#3721-市场)
       - [37.2.1.1 TrendForce](#37211-trendforce)
         - [37.2.1.1.1 2024年Q3市场排名](#372111-2024年q3市场排名)
+      - [37.2.1.2 2024年欧洲晶圆厂](#37212-2024年欧洲晶圆厂)
   - [37.2.1.2 MEMS Foundry](#37212-mems-foundry)
     - [37.2.1.2.1 TechoVedas关于MEMS Foundry的科普](#372121-techovedas关于mems-foundry的科普)
   - [37.3 IDM](#373-idm)
@@ -2296,6 +2297,20 @@ gelgoog:
 使用最新工具的全新中国大陆晶圆厂（Nexchip 就是一个例子）将提供更好的经济效益和更低的每芯片边际价格。Nexchip 将在 12 英寸晶圆上生产 150-55nm 芯片，其晶圆面积是台积电在其旧晶圆厂中使用的 8 英寸晶圆的 2.25 倍。2.25 倍的晶圆面积，机器以相似或更高的 wpm 频率运行。全球空白 8 英寸晶圆的供应也存在问题，而空白 12 英寸晶圆似乎不存在这样的问题，因为全球产能仍在增加。8 英寸晶圆厂的成本进一步增加。
 
 台积电、联电和 GlobalFoundries 将不得不决定如何处理他们的 8 英寸晶圆厂。他们要么关闭这些设施，要么大幅降低产能来运营它们。
+
+#### 37.2.1.2 2024年欧洲晶圆厂
+
+2023 年，欧洲半导体公司的市场份额从 9% 降至 11%，这是 50 年历史上的首次。许多人嘲笑刚刚辞去专员职务的 Thierry Breton 设定的 20% 的市场份额目标。考虑到最近的这些数字，这毕竟不是遥不可及的。在这种情况下，有一点马克吐温的影子：“他们这样做是因为他们不知道这是不可能的”。
+
+虽然欧洲设备公司销售 chips 并且是 $530B 市场的一部分，但确保 supplychains 的关键问题已成为首要问题。在COVID19 semiconductor 短缺加上geopolitical 紧张局势之后，监管机构 话题标签#USA 和 话题标签#EU 签署了总计 $100B 的巨额 话题标签#CHIPSACT 补贴。其目标是通过大西洋两岸最先进的代工厂将半导体生产“回流”，而不是过分依赖亚洲供应。
+
+![](/picture/Eur_Foundry.jpg)
+
+再次感谢 Pierre Cambou 、Yole Group 和 Semiconductor Digest 通过下面的链接提供更多背景和见解的完整文章
+
+<https://www.semiconductor-digest.com/foundries-in-europe-2024/>
+
+<https://www.linkedin.com/posts/marcomezger_foundries-europe-chips-activity-7293527663808303105-_cHR?utm_source=share&utm_medium=member_desktop>
 
 ## 37.2.1.2 MEMS Foundry
 
