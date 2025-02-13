@@ -24,6 +24,7 @@
 - [13. 模拟电路设计 - JKU 举办的中级 MOSFET模拟电路设计课程](#13-模拟电路设计---jku-举办的中级-mosfet模拟电路设计课程)
 - [14. MOSbius 芯片 - 集成电路课程中为学生提供连接测量、仿真和分析的动手实验](#14-mosbius-芯片---集成电路课程中为学生提供连接测量仿真和分析的动手实验)
 - [15.  Jetson Orin Nano Super](#15--jetson-orin-nano-super)
+- [16. duino-coin - Arduino/Raspberry 可以挖矿](#16-duino-coin---arduinoraspberry-可以挖矿)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -615,3 +616,13 @@ NVIDIA 合作伙伴 Palit 借此机会展示了Pandora。该公司并未将其�
 <https://videocardz.com/pixel/palit-launches-pandora-nvidia-jetson-orin-nx-turned-mini-pc>
 
 <https://www.journaldugeek.com/2024/12/20/raspberry-de-lia-a-quoi-sert-le-mini-pc-ia-pas-cher-de-nvidia/>
+
+# 16. duino-coin - Arduino/Raspberry 可以挖矿
+
+Raspberry Pi（自动安装）
+
+wget https://raw.githubusercontent.com/revoxhere/duino-coin/master/Tools/duco-install-rpi.sh
+sudo chmod a+x duco-install-rpi.sh
+./duco-install-rpi.sh
+
+https://github.com/revoxhere/duino-coin
