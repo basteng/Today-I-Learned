@@ -58,6 +58,8 @@
     - [9.10.1 代表作 视频：与 Ayar Labs 合作推进光学 I/O 连接](#9101-代表作-视频与-ayar-labs-合作推进光学-io-连接)
   - [9.11 Electronicsforu](#911-electronicsforu)
     - [9.11.1 代表作：每通道 200Gbps 芯片组助力 AI 网络发展](#9111-代表作每通道-200gbps-芯片组助力-ai-网络发展)
+  - [9.12 EEjournal](#912-eejournal)
+    - [9.12.1 代表作：适用于 SoC 和多芯片系统的新型内存架构](#9121-代表作适用于-soc-和多芯片系统的新型内存架构)
 - [10. 化合物半导体](#10-化合物半导体)
   - [10.1 compoundsemiconductor](#101-compoundsemiconductor)
 - [11. Github](#11-github)
@@ -384,6 +386,14 @@ https://convergedigest.com/
 ### 9.11.1 代表作：每通道 200Gbps 芯片组助力 AI 网络发展
 
 <https://www.electronicsforu.com/news/ai-networks-get-a-boost-with-200gbps-per-lane-chipset>
+
+## 9.12 EEjournal
+
+<https://www.eejournal.com/>
+
+### 9.12.1 代表作：适用于 SoC 和多芯片系统的新型内存架构
+
+<https://www.eejournal.com/article/new-memory-architectures-for-socs-and-multi-die-systems/>
 
 # 10. 化合物半导体
 
