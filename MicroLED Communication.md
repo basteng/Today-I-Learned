@@ -182,6 +182,7 @@
   - [58.1 Shoreline Bandwidth Density 海岸线带宽密度](#581-shoreline-bandwidth-density-海岸线带宽密度)
   - [58.2 了解封装内光学 I/O 与共封装光学器件](#582-了解封装内光学-io-与共封装光学器件)
 - [59. 面向 SoC 和多晶粒系统的新内存架构](#59-面向-soc-和多晶粒系统的新内存架构)
+- [60. 金属有机框架中的高效色彩转换使光无线通信的数据速率超过 1 GB/s](#60-金属有机框架中的高效色彩转换使光无线通信的数据速率超过-1-gbs)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -4740,3 +4741,11 @@ Numem 的人们一开始是将他们的 MRAM IP 和 SmartMem IP 作为……好�
 啊啊啊。我刚刚意识到，当 Numem 的人们开始以封装芯片的形式提供他们的 NuRAM 技术时，我必须在更新的图表版本中反映这一点。幸运的是，我们可以把这件事推迟到另一天。
 
 <https://www.eejournal.com/article/new-memory-architectures-for-socs-and-multi-die-systems/>
+
+# 60. 金属有机框架中的高效色彩转换使光无线通信的数据速率超过 1 GB/s
+
+高效的色彩转换器对于实现光学无线通信 (OWC) 中的高 −3-dB 带宽和净数据速率至关重要。在此，我们强调了镧系元素基金属有机骨架 (MOF) 与有效能量传输策略相结合对于开发 OWC 系统中的高性能色彩转换器的重要性。在这种方法中，我们成功地将光致发光 (PL) 寿命从 MOF 的 1.3 毫秒缩短到 MOF-发色团复合材料的 4.6 纳秒，这是通过 MOF 腔体和表面中的高效能量传输过程实现的。PL 寿命的显著缩短导致 −3-dB 带宽急剧增加，从不到 0.1 增加到 65.7 MHz。最重要的是，实现了 1.076 GB/s 的净数据速率，标志着首次成功演示了镧系元素基 MOF 作为色彩转换器，可实现超过 1 GB/s 的数据传输速率。值得注意的是，−3 dB 带宽和净数据速率均超过了大多数已报道的有机和无机材料，凸显了镧系元素基 MOF 与高效能量传输策略相结合时的巨大潜力。我们相信这种结合为高速 OWC 技术的进一步创新铺平了道路。
+
+<https://pubs.acs.org/doi/full/10.1021/jacs.4c16906#>
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/zhu-et-al-2025-efficient-color-conversion-in-metal-organic-frameworks-boosts-optical-wireless-communications-beyond-1.pdf>
