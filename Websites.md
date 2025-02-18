@@ -27,10 +27,13 @@
 - [5. 黑客](#5-黑客)
   - [5.1 hackaday.com 来自互联网的新鲜技术，非常有意思的网站，很有技术大牛](#51-hackadaycom-来自互联网的新鲜技术非常有意思的网站很有技术大牛)
   - [5.2 hackster.io 和 hackaday.com 是姊妹网站，主要介绍一些具体的项目](#52-hacksterio-和-hackadaycom-是姊妹网站主要介绍一些具体的项目)
+  - [5.3 Hacker News](#53-hacker-news)
 - [6. 技术大牛博客](#6-技术大牛博客)
   - [6.1 Dmitry Grinberg - 在英特尔 4004 上缓慢启动完整的 Linux](#61-dmitry-grinberg---在英特尔-4004-上缓慢启动完整的-linux)
   - [6.2 Dario Amodei - Anthropic CEO, 代表作品Claude](#62-dario-amodei---anthropic-ceo-代表作品claude)
   - [6.3 英国程序员西蒙·威利森（Simon Willison）](#63-英国程序员西蒙威利森simon-willison)
+  - [6.4 澳大利亚Geoff's Projects - 代表作：适用于 Raspberry Pi Pico 和 Pico 2 的 BASIC](#64-澳大利亚geoffs-projects---代表作适用于-raspberry-pi-pico-和-pico-2-的-basic)
+  - [6.5 Mark Moxon 的主页 - 软件考古学](#65-mark-moxon-的主页---软件考古学)
 - [7. 国外知名大学研究机构网站](#7-国外知名大学研究机构网站)
   - [7.1 GaN相关](#71-gan相关)
     - [7.1.1 HRL Laboratories - 前休斯研究实验室](#711-hrl-laboratories---前休斯研究实验室)
@@ -182,6 +185,10 @@ https://hackaday.com/
 
 https://www.hackster.io/
 
+## 5.3 Hacker News
+
+https://news.ycombinator.com/news
+
 # 6. 技术大牛博客
 
 ## 6.1 Dmitry Grinberg - 在英特尔 4004 上缓慢启动完整的 Linux
@@ -208,6 +215,20 @@ https://dmitry.gr/?
 网站链接：
 
 <https://simonwillison.net/>
+
+## 6.4 澳大利亚Geoff's Projects - 代表作：适用于 Raspberry Pi Pico 和 Pico 2 的 BASIC
+
+各种DIY项目
+
+<https://geoffg.net/>
+
+## 6.5 Mark Moxon 的主页 - 软件考古学
+
+Mark Moxon 的《软件考古》包含我的项目、谈话和演示文稿的详细信息，以及有关我如何创建软件考古存储库和网站的信息。
+
+6502 上的 Elite包含 1984 年这款开创性太空模拟游戏的完整源代码，包括超过 125 次深入代码挖掘和大量有趣的 Elite 黑客攻击。涵盖 BBC Micro、Acorn Electron、Commodore 64 和 NES 版本。
+
+<https://www.markmoxon.com/>
 
 # 7. 国外知名大学研究机构网站
 

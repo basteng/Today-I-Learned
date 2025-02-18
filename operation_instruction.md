@@ -25,6 +25,7 @@
 - [14. MOSbius 芯片 - 集成电路课程中为学生提供连接测量、仿真和分析的动手实验](#14-mosbius-芯片---集成电路课程中为学生提供连接测量仿真和分析的动手实验)
 - [15.  Jetson Orin Nano Super](#15--jetson-orin-nano-super)
 - [16. duino-coin - Arduino/Raspberry 可以挖矿](#16-duino-coin---arduinoraspberry-可以挖矿)
+- [17. 8bit复古计算机](#17-8bit复古计算机)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -626,3 +627,16 @@ sudo chmod a+x duco-install-rpi.sh
 ./duco-install-rpi.sh
 
 https://github.com/revoxhere/duino-coin
+
+# 17. 8bit复古计算机
+
+有几台最新的（最近发布或将来发布的） 8 位计算机保留了旧计算机的乐趣，同时为它们提供了一些现代便利设施，如 SD 卡，有些甚至还有以太网。
+
+ZX spectrum Next 看起来很棒。然后是 8 位人的 Commander X-16，由他和许多其他志愿者建造，应该很快就会准备好在 Kickstarter 上启动。此外还有 Mega65 项目，这是一个与 Commander X16 非常相似的项目。还有 Color Maximite 2，它似乎是一台速度超快的 BASIC 计算机，并不意味着与我所知道的任何机器完全兼容。其中一些是在 FPGA 上实现的，另一些是在实际芯片上实现的，有些集成了键盘/计算机，而有些则没有。无论如何，我真的很高兴终于能够购买其中一台有趣的旧机器，您可以在其中完全了解整个系统并轻松制作简单的游戏。
+
+- ZX spectrum Next
+- Commander X-16
+- Color Maximite 2
+- Mega65
+
+<https://news.ycombinator.com/item?id=24611341>
