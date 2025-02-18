@@ -30,6 +30,7 @@
     - [FinFET CMOS 缩放趋势](#finfet-cmos-缩放趋势)
     - [复习题及解答思路](#复习题及解答思路)
 - [17. SADP和LELE的区别](#17-sadp和lele的区别)
+- [18. EUV 光刻技术：逻辑、DRAM 和 NAND 如何以不同方式使用](#18-euv-光刻技术逻辑dram-和-nand-如何以不同方式使用)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -714,4 +715,100 @@ SADP形成一个基本图案，然后多次蚀刻以细化图案。由于模式�
 据ASML介绍，在引入EUV时，图案化过程只需要10个步骤。业界计划从系统半导体开始引入 EUV。三星电子的目标是明年上半年，台积电的目标是明年下半年，格罗方德的目标是明年量产7纳米EUV。
 
 <https://www.kipost.net/news/articleView.html?idxno=4633>
+
+# 18. EUV 光刻技术：逻辑、DRAM 和 NAND 如何以不同方式使用
+
+极紫外 (EUV) 光刻技术是半导体制造领域最重大的进步之一。然而，该技术在逻辑芯片、DRAM 和 NAND 闪存中的应用存在很大差异，每种技术都有各自的技术和经济考虑因素。  
+
+
+
+逻辑芯片：EUV 先驱
+逻辑芯片制造商（台积电、三星和英特尔）是最早采用 EUV 的公司，主要用于先进节点（7nm、5nm、3nm 及以后）。为什么呢？ 
+
+
+
+对于特征缩放至关重要：逻辑芯片依赖于越来越小的晶体管（FinFET，GAAFET）和超密集互连，需要精确的图案化。
+
+https://www.linkedin.com/posts/tim-ramler_optics-semiconductor-manufacturing-activity-7261680719029006336-FK-7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4nxZ0B3GLBAG9V38HXfHx9f6C_KAc8RdQ
+
+
+
+减少多重图案化：在 EUV 出现之前，需要复杂的掩模（7nm 需要四重图案化）。EUV 简化了这一过程，提高了产量并降低了成本。
+
+https://www.linkedin.com/posts/tim-rammler_duvlithography-euvlithography-doublepatterning-activity-7262381833089159168-RAXD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4nxZ0B3GLBAG9V38HXfHx9f6C_KAc8RdQ
+
+
+
+竞争压力：高性能计算 (HPC)、AI 和移动芯片需要尖端节点。台积电和三星已经在 5nm+ 上广泛使用 EUV，而英特尔正在加速英特尔 4 和 20A 的开发。  
+
+https://www.linkedin.com/posts/tim-rammler_artificialintelligence-machinelearning-deeplearning-activity-7269638748970143744-kgO7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4nxZ0B3GLBAG9V38HXfHx9f6C_KAc8RdQ
+
+
+
+🔹当前用途：前端层（特别是 Metal-1 和关键门层）  
+
+🔹挑战：掩模缺陷、随机效应和高昂的 EUV 工具成本  
+
+
+
+DRAM：勉强采用，但正在迎头赶上
+DRAM 采用 EUV 的速度较慢，但​​现在所有主要的 DRAM 制造商（三星、SK 海力士、美光）都在加大 EUV 层数，从1α（1-alpha）和 1γ（1-gamma）节点开始。  
+
+
+
+DRAM 为何晚于 EUV 出现？
+
+间距不太激进：DRAM 特征比逻辑芯片更密集但更均匀，因此 ArFi DUV（具有多重图案化）长期保持成本效益。
+
+位单元一致性更为重要：DRAM 单元性能取决于电容器一致性，这使得新的光刻方法存在风险。
+
+
+
+为什么 DRAM 现在要转向 EUV？
+
+成本和产量改进：1α/1β 的多重图案化 (SAQP) 变得过于复杂。EUV 减少了掩模和工艺步骤的数量。
+
+三星一路领先：在1α DRAM（2020 年）中引入 EUV ，并扩大在1β 和 1γ DRAM中的使用。   
+
+美光最初持谨慎态度：但最近宣布在 1γ DRAM 中采用 EUV，理由是具有成本优势。 
+
+SK Hynix 正在加大 EUV 在 1β 及更高版本的研发力度。
+
+
+
+🔹目前用途：主要是光刻密集层，如位线和互连   
+
+🔹挑战： EUV 缺陷影响电容器阵列和位线完整性   
+
+
+
+NAND 闪存：对 EUV 最不感兴趣
+与逻辑和 DRAM 不同，3D NAND 制造商（三星、Kioxia、美光、SK Hynix）基本上忽略了 EUV。为什么？ 
+
+
+
+不需要超小型特征：NAND 缩放来自垂直堆叠层（3D NAND），而不是来自缩小横向特征。
+
+成本与收益不符：多重图案化（基于 DUV 的自对准工艺）对于 NAND相对较大的水平特征非常有效。 
+
+重点是垂直扩展：NAND 中的挑战是增加层数（200 层以上），而不是水平缩小特征。
+
+
+
+🔹目前使用情况：无（DUV 仍然占主导地位）  
+
+🔹挑战：目前尚无强有力的 EUV 在 NAND 中采用的商业案例  
+
+
+
+EUV 在内存和逻辑领域的未来
+📌 Logic 将继续推动 EUV 的发展，预计高 NA EUV 将达到2nm 及以上。  
+
+📌 DRAM EUV 的采用将会增长，使用 1γ 和 1δ（1-delta）的 EUV 曝光的层会更多。  
+
+📌除非出现革命性的变化，否则NAND 可能会继续留在 DUV 上。 
+
+半导体行业正在不断发展——EUV 的采用只会增加，但每种芯片类型都有自己独特的路线图。
+
+<https://www.linkedin.com/pulse/euv-lithography-how-logic-dram-nand-use-differently-dr-tim-rammler-xfdqf/?trackingId=aLWNNl1IbZnTdC16enrfRA%3D%3D>
 
