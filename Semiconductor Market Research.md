@@ -192,6 +192,9 @@
     - [40.5.1 BIS](#4051-bis)
       - [3B001 半导体器件、材料或相关设备的制造设备](#3b001-半导体器件材料或相关设备的制造设备)
   - [40.6 全球 IC 晶圆厂和设施报告：2024 年 - Semiengineering](#406-全球-ic-晶圆厂和设施报告2024-年---semiengineering)
+  - [40.7 芯片价格](#407-芯片价格)
+    - [哪些芯片在 2024 年最受欢迎？价格增长最高](#哪些芯片在-2024-年最受欢迎价格增长最高)
+    - [哪些芯片在 2024 年降价幅度最大？](#哪些芯片在-2024-年降价幅度最大)
 - [41. 机构观点](#41-机构观点)
   - [CSIS](#csis)
     - [1. 中国成熟的半导体产能过剩：存在吗？重要吗？](#1-中国成熟的半导体产能过剩存在吗重要吗)
@@ -3190,12 +3193,38 @@ https://www.gartner.com/en/newsroom/press-releases/2024-10-28-gartner-forecasts-
 
 <https://www.bis.gov/ear/title-15/subtitle-b/chapter-vii/subchapter-c/part-774/supplement-no-1-part-774-commerce-control#category3>
 
+
 ## 40.6 全球 IC 晶圆厂和设施报告：2024 年 - Semiengineering
 
 2024 年投资表
 下表列出了自我们上一份报告 发布以来，2024 年宣布的重大新设施/晶圆厂投资，但除了这份名单之外，还有更多。有些项目包含对先前宣布的计划的更改。有些也出现在我们关于政府资助的系列文章中。该表目前按公司或组织的字母顺序排列，但也可以按国家或其他特征排序。
 
 <https://semiengineering.com/chip-industry-investments-kept-flowing-in-2024-even-as-some-projects-stalled/>
+
+## 40.7 芯片价格
+
+### 哪些芯片在 2024 年最受欢迎？价格增长最高
+
+根据类别，“2024 年前 15 名半导体涨价”中的芯片包括 2 个存储器件、3 个可编程逻辑器件、3 个功率器件、4 个模拟器件、2 个微控制器和 1 个射频器件。
+
+- 存储设备：受益于高性能计算，价格飙升。-功率半导体：受益于汽车和工业市场。Micron MTFDKBZ3T8TFR-1BC1ZABYY 是一款支持 PCIe 4.0 的高性能内存模块。随着数据中心继续推动对高级计算内存的需求，这些高性能模块的价格也在不断上涨。同样，Micron MT40A1G16TB-062EIT：FTR 是一款高性能 DRAM，专为需要快速、高密度内存的数据中心工作负载而设计。随着对此类内存的需求随着市场趋势而上升，Micron MT40A1G16TB-062EIT：FTR 的价格自然也随之而来。
+- 可编程逻辑器件（CPLD、FPGA 等）需求量很大，主要是由于新兴技术的蓬勃发展以及市场对高性能、灵活的可编程解决方案的迫切需求。在 5G 通信、工业自动化、人工智能等领域快速发展的背景下，对芯片灵活性和可定制性的要求不断提高。
+- 微控制器和模拟设备：STM32F103CBT6 和 STM32F103C8T6TR 微控制器广泛用于物联网设备的数据采集和传输、智能家居的设备控制以及工业自动化的小型控制系统。Analog Devices AD536AJQ 是一款精密的真有效值转换芯片，在通信和电源监控领域不可或缺。K7805-500R3 是一款小型、高效率的 DC-DC 电源模块，可用于为新能源汽车的车载电子设备供电。在工业自动化领域，各种传感器、控制器、执行器等设备的稳定运行离不开可靠的电源。LM358DR 是一款通用型双通道运算放大器，广泛应用于工业控制和消费电子等基础应用场景。TI UC2901MDREP 是一款高性能的电源管理芯片，可用于工业自动化中的各种电机驱动、电源转换等环节。
+
+![](/picture/1739843632912.jpg)
+
+<https://www.linkedin.com/posts/semiconductordistributor_scm-supplychain-costdown-activity-7297433112471379969-rE3Q?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+### 哪些芯片在 2024 年降价幅度最大？
+
+2024 年，多个半导体类别的价格大幅下跌，其中前 15 名半导体价格下降涵盖模拟设备、传感器、功率器件、可编程逻辑器件、通信 IC、数字信号控制器和微控制器。其中值得注意的是：
+例如，电源管理 IC：话题标签#PMIC 
+TI 的O3853AQDCARQ1从年初的 350.5 元人民币下降到年底的 31.7 元人民币，降幅高达 94.6%。
+意法半导体的 VNH3SP30TR-E 从 373.2 元降至 42.6 元，跌幅为 92.56%。
+
+![](/picture/1739844065101.jpg)
+
+<https://www.linkedin.com/posts/semiconductordistributor_pmic-ti-infineon-activity-7297434927388598272-xtjX?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
 # 41. 机构观点
 
