@@ -4,6 +4,7 @@
 - [3.硅光子模块的内部](#3硅光子模块的内部)
 - [4. 1.6 Tbps FOWLP-Based Silicon Photonic Engine for Co-Packaged Optics](#4-16-tbps-fowlp-based-silicon-photonic-engine-for-co-packaged-optics)
 - [5. 下一代硅光子学路线图](#5-下一代硅光子学路线图)
+- [6. 硅光供应链](#6-硅光供应链)
 
 
 # 1. “信息光子器件与集成”专题概述
@@ -447,3 +448,9 @@ Marvell 执行副总裁兼云光学总经理 Loi Nguyen 表示：“光学基本
 在光通信技术进步的推动下，硅光子学已发展成为主流技术。当前这一代集成光子器件的数量已从数千个增加到数百万个，主要以数据中心通信收发器的形式出现。传感和计算等许多激动人心的应用产品即将问世。如何才能将硅光子学的出货量从数百万增加到数十亿个？下一代硅光子学将会是什么样子？硅光子应用面临的集成和制造瓶颈有哪些共同点？哪些新兴技术可以解决这些问题？这篇观点文章试图回答这些问题。我们绘制了硅光子技术的代际趋势，并与 CMOS 技术的代际定义进行了比较。我们确定了在 CMOS 代工厂兼容器件、电路、集成和封装方面取得巨大进步必须解决的关键挑战。我们确定了下一代系统和应用面临的关键挑战——通信、信号处理和传感。通过识别和总结这些挑战和机遇，我们的目标是促进对硅光子生态系统的设备、电路和系统的进一步研究。
 
 <https://www.nature.com/articles/s41467-024-44750-0>
+
+# 6. 硅光供应链
+
+![](/picture/1739885684178.jpg)
+
+<https://www.linkedin.com/posts/jett-c-17972258_semivision-activity-7297609491196362752-j505?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
