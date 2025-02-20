@@ -509,5 +509,7 @@ InnoLight Technology 宣布意法半导体的PIC100是他们的首选技术，�
 
 有关详细信息，请访问：https://lnkd.in/eRpNUP3D
 
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/03-%20Microcontrollers%2C%20Digital%20ICs%20and%20RF%20products%20Group%20-%20Remi%20El-Ouazzane.pdf>
+
 <https://www.linkedin.com/posts/abdulrahim-1_siliconphotonics-siliconphotonics-europe-activity-7290098885845237760-B4ol?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
