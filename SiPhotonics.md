@@ -7,6 +7,8 @@
 - [6. 硅光供应链](#6-硅光供应链)
 - [7. TSMC](#7-tsmc)
   - [7.1 2025年1月进展](#71-2025年1月进展)
+- [8. ST](#8-st)
+  - [8.1 2025年2月意法半导体硅光相关信息](#81-2025年2月意法半导体硅光相关信息)
 
 
 # 1. “信息光子器件与集成”专题概述
@@ -484,3 +486,28 @@ Marvell 执行副总裁兼云光学总经理 Loi Nguyen 表示：“光学基本
 
 在 300mm SOI 晶圆和 65 nm CMOS 工艺上。使用离子注入和选择性 Ge 外延制造的 PIN 光电二极管和调制器。6 金属层 BEOL 工艺连接这些设备。如果您正在为您的光子学寻找封装合作伙伴，请查看 Izmo Micro。
 IzmoMicro.com
+
+# 8. ST
+
+## 8.1 2025年2月意法半导体硅光相关信息
+
+意法半导体 与 siliconphotonics 有着长期的合作关系，可以追溯到与 Luxtera, Inc. 的合作， 是该领域的早期先驱，后来 思科 收购了该领域。STMicroelectronics 以拥有 话题标签#Europe 最好的 300 毫米工业规模 #s话题标签#liconphotonics 工艺之一而闻名。
+此前，ST 推迟了这项技术的商业部署。现在，该公司计划在 2025 年下半年加快商业化!!
+
+它现在估计，到 2030 年，BiCMOS 和硅光子代工服务市场将达到 $20 亿。该公司旨在通过其 Silicon Photonics 和 BiCMOS 产品解决可插拔收发器市场的需求，其中 BiCMOS 工艺中的高F_max对于 话题标签#AI 基础设施和光纤部署中的高吞吐量收发器至关重要。
+
+意法半导体声称，他们的 SiPho PIC100 是一种纯硅 300mm 技术，具有 90% 的良率，支持每通道 200 Gbps （100 GBaud PAM4）。该图突出显示了其 PIC 技术的主要特性。
+
+Amazon Web Services (AWS) 宣布与意法半导体合作，通过 PIC100 技术实现任何工作负载之间的互连，包括人工智能 （AI）。 
+
+InnoLight Technology 宣布意法半导体的PIC100是他们的首选技术，因为它的高性能调制器和光电二极管，以及符合旭创可插拔收发器路线图需求的低损耗波导。
+
+意法半导体还计划与其他 30+ 合作伙伴合作，在名为 StarLight 的 Chips JU 项目中将其 SiPh 技术整合到 PIC200 中。
+
+未来，STMicro.可能通过技术经纪人向第三方提供对其 SiPh 技术的访问权限。
+让我们祝贺 ST 已经取得的成就，并祝愿他们在未来🤞🎉取得更大的成功
+
+有关详细信息，请访问：https://lnkd.in/eRpNUP3D
+
+<https://www.linkedin.com/posts/abdulrahim-1_siliconphotonics-siliconphotonics-europe-activity-7290098885845237760-B4ol?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
