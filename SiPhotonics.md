@@ -5,6 +5,8 @@
 - [4. 1.6 Tbps FOWLP-Based Silicon Photonic Engine for Co-Packaged Optics](#4-16-tbps-fowlp-based-silicon-photonic-engine-for-co-packaged-optics)
 - [5. 下一代硅光子学路线图](#5-下一代硅光子学路线图)
 - [6. 硅光供应链](#6-硅光供应链)
+- [7. TSMC](#7-tsmc)
+  - [7.1 2025年1月进展](#71-2025年1月进展)
 
 
 # 1. “信息光子器件与集成”专题概述
@@ -454,3 +456,31 @@ Marvell 执行副总裁兼云光学总经理 Loi Nguyen 表示：“光学基本
 ![](/picture/1739885684178.jpg)
 
 <https://www.linkedin.com/posts/jett-c-17972258_semivision-activity-7297609491196362752-j505?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+# 7. TSMC
+
+## 7.1 2025年1月进展
+
+最近，台积公司 展示了其 话题标签#siliconphotonic 技术。集成光子学 🚀🚀🚀
+以下是其主要功能的摘要：
+
+台积电的硅光子学 （SiPh） 平台采用 300mm 绝缘体上硅晶圆制造，并将 65nm CMOS 技术与先进的光刻和蚀刻技术相结合。光学接近校正可确保小于 2nm 的临界尺寸 （CD） 变化。PIN 光电二极管和调制器等有源器件是使用离子注入和选择性锗外延制造的。带有钨触点的六金属层后端 （BEOL） 工艺连接这些器件。
+
+关于 PDK：具有 s 参数的 O 波段 P 电池和 25-105°C 范围内的 RC 特性模型，包括电压/频率、依赖性、高光功率作、FCA 和 TPA 的自热行为、光电流对 RC 和调制响应的影响、布局设计规则检查
+
+主要器件性能：
+- 无源元件：
+- 单模 Si WG 损耗 = 0.67 dB/cm
+- SiN WG 损耗 = 0.21 dB/cm
+- GC 20nm 1dB 带宽，1.3 dB IL
+- 极分气相色谱 25nm 1 dB B.W，2 dB I.L
+
+玩偶：
+- 环形调制器：VpiL = 0.35V.cm，S21 = 76 GHz
+- Ge PD：响应度 = 1A/W，暗电流 < 20nA, BW = 110GHz
+
+𝐂𝐨𝐦𝐩𝐨𝐬𝐢𝐭𝐞 𝐁𝐁: 
+- 16 channel DWDM: 2.5dB I.L, channel spacing =1.11nm +/- 0.26nm w/o heater
+
+在 300mm SOI 晶圆和 65 nm CMOS 工艺上。使用离子注入和选择性 Ge 外延制造的 PIN 光电二极管和调制器。6 金属层 BEOL 工艺连接这些设备。如果您正在为您的光子学寻找封装合作伙伴，请查看 Izmo Micro。
+IzmoMicro.com
