@@ -18,6 +18,7 @@
 - [15. Atomistic Understanding of Dislocation Climb in Nitride Semiconductors: Role of Asymmetric Jogs](#15-atomistic-understanding-of-dislocation-climb-in-nitride-semiconductors-role-of-asymmetric-jogs)
 - [16. What are the best AI tools for research? Nature’s guide](#16-what-are-the-best-ai-tools-for-research-natures-guide)
 - [17. Optically Connected Multi-Stack HBM Modules for Large Language Model Training and Inference](#17-optically-connected-multi-stack-hbm-modules-for-large-language-model-training-and-inference)
+- [18. Investigation on large modulation bandwidth InGaN-based blue laser diodes](#18-investigation-on-large-modulation-bandwidth-ingan-based-blue-laser-diodes)
 
 20241204以后 （未下载）
 
@@ -113,3 +114,7 @@ https://www.nature.com/articles/d41586-025-00437-0
 # 17. Optically Connected Multi-Stack HBM Modules for Large Language Model Training and Inference
 
 https://ieeexplore.ieee.org/abstract/document/10892009
+
+# 18. Investigation on large modulation bandwidth InGaN-based blue laser diodes
+
+https://doi.org/10.1016/j.optlastec.2025.112601
