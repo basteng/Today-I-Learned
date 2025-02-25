@@ -9,6 +9,9 @@
   - [7.1 2025年1月进展](#71-2025年1月进展)
 - [8. ST](#8-st)
   - [8.1 2025年2月意法半导体硅光相关信息](#81-2025年2月意法半导体硅光相关信息)
+- [9. SEMI VISION](#9-semi-vision)
+  - [9.1 全球参与硅光子芯片制造的晶圆厂及研究机构名单](#91-全球参与硅光子芯片制造的晶圆厂及研究机构名单)
+  - [9.2 台积电与 NVIDIA 携手硅光技术开创 AI 未来](#92-台积电与-nvidia-携手硅光技术开创-ai-未来)
 
 
 # 1. “信息光子器件与集成”专题概述
@@ -512,4 +515,84 @@ InnoLight Technology 宣布意法半导体的PIC100是他们的首选技术，�
 <https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/03-%20Microcontrollers%2C%20Digital%20ICs%20and%20RF%20products%20Group%20-%20Remi%20El-Ouazzane.pdf>
 
 <https://www.linkedin.com/posts/abdulrahim-1_siliconphotonics-siliconphotonics-europe-activity-7290098885845237760-B4ol?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+# 9. SEMI VISION
+
+## 9.1 全球参与硅光子芯片制造的晶圆厂及研究机构名单
+
+硅光子是推动AI芯片发展的关键，目前硅光子主要依赖晶圆厂生产，Semivision团队整理了全球参与硅光子芯片制造的晶圆厂及研究机构名单。
+
+显然，包括台积电和联电在内的台湾都具备这种能力。值得注意的是，台积电不仅拥有硅光子平台COUPE，还拥有将光学引擎（OE）与先进封装相结合的能力。因此，台湾在推动硅光子产业发展方面发挥着至关重要的作用。
+
+![](/picture/Foundry%20in%20Silicon%20Photonic.jpg)
+
+## 9.2 台积电与 NVIDIA 携手硅光技术开创 AI 未来
+
+解决 PIC 和 EIC 集成、光学封装以及台积电高带宽解决方案中的关键技术挑战和进步
+
+NVIDIA 在美国 IEDM 2024 全球半导体领袖大会上展示了其 AI GPU 技术，并强调从中长期来看，硅光技术将显著有利于 AI 数据中心的芯片间连接。这一表态在半导体行业引起了广泛关注，凸显了硅光技术在推动 AI 技术进步方面的潜力。
+
+![](/picture/photonic%20connected%20GPU%20NVSWITCH.jpg)
+
+由于互联网流量的爆炸式增长以及数据中心对更高速度和更低功耗的需求不断增长，硅光子学 (SiPh) 变得越来越重要。以下是需要 SiPh 的原因：
+
+1. 高速数据传输：传统的铜基系统在速度和覆盖范围方面存在局限性。SiPh 可实现高速光通信，支持日益增长的数据需求，尤其是在数据中心。
+
+![](/picture/Silicon%20Photonics%20is%20Best%20Option%20for%20Co-Packaged%20Optics.jpg)
+
+2. 低功耗：与传统电互连相比，SiPh 更节能，解决了人们对大型数据中心能源使用日益增长的担忧。
+
+![](/picture/Electrical%20Interface%20-%20Power%20Consumption.jpg)
+
+3. 可扩展性：台积电提出的紧凑型通用光子引擎（COUPE）实现了可扩展的解决方案，可在性能、功率和成本方面满足广泛的应用。
+
+4. 克服距离限制：光学技术在覆盖范围和带宽方面明显优于铜线。SiPh 是弥补短距离互连（例如片上和板载）和长距离应用（例如数据中心到数据中心）之间差距的理想选择。
+
+5. 满足未来带宽需求：由于带宽需求每两年翻一番，SiPh 对于跟上这种指数增长至关重要，可实现 400G、800G、1.6T 等技术。
+
+![](/picture/The%20Need%20for%20SiPh.jpg)
+
+硅光子学（SiPh）是将光子学（PIC）与CMOS电子技术（EIC）相结合的先进技术，其核心概念是利用硅作为光信号传输和处理的平台，实现高速、低功耗的光通信和信号处理。
+
+硅光是专门为需要高速传输和高带宽条件的应用而设计的，在传统光模块领域，400G、800G等技术目前还没有采用硅光，但在1.6T级别，硅光的使用成为必然。目前能够生产PIC芯片的厂商，按地域划分，美国以Intel和GlobalFoundries为主，台湾以台积电和联电为主。
+
+![](/picture/Foundry%20in%20Silicon%20Photonic.jpg)
+
+我们对台积电的硅光路线图了解得最清楚，这张图清楚的显示出台积电目前将其光学引擎平台称为COUPE（Compact Universal Photonic Engine，紧凑型通用光子引擎）。这个平台的首要目的是将半导体代工厂生产的PIC（光子集成电路）芯片和EIC（电子集成电路）芯片，通过混合键合等先进封装技术进行整合，将PIC和EIC堆叠在一起，形成一个光学引擎。
+
+![](/picture/Enabling%20Tomorrow%20AI%20with%20Technology%20Platform.jpg)
+
+光学引擎的应用非常广泛。台积电目前的路线图设想将其用于可插拔光学模块，带宽为 1.6 Tbps。这个 1.6T 光学引擎 (OE) 由 PIC 和 EIC 组件组成。展望未来，台积电还计划推出带宽为 6.4 Tbps 和 12.8 Tbps 的 OE 解决方案。
+
+![](/picture/3D%20Optical%20Engine%20OE%20for%20Next-Gen%20Communication.jpg)
+
+在光通讯行业，带宽一般每两年翻一番，比如400G升级到800G，800G升级到1.6T，1.6T升级到3.2T，最后3.2T升级到6.4T。值得注意的是，台积电跳过了3.2T OE设计阶段，计划直接从1.6T升级到6.4T。这次升级的具体细节，后面可以详细讨论。
+
+![](/picture/Photonics%20Engine%20for%20Next%20Gen%20AI%20Network.jpg)
+
+我们列出了硅光子学发展所面临的挑战：
+
+1. PIC 芯片设计（例如，1 个分割 4 通道或 1 个分割 8 通道）
+
+2. CWDFB 光源的激光强度
+
+3. EIC芯片设计（如CMOS、SiGe CMOS、7nm等先进逻辑器件）
+
+4. PIC 与 EIC 的集成（先进封装）
+
+5. 微透镜和镜腔设计
+
+6. 耦合技术（例如光栅耦合器或边缘耦合器）
+
+7. FAU（光纤阵列单元）设计
+
+8. PIC + EIC （光和电信号）的测量
+
+9. 光纤阵列面临的挑战
+
+10. 光学胶粘剂的稳定性和可靠性
+
+![](/picture/Future%20work%20in%20Semi%20Vision.png)
+
+<https://tspasemiconductor.substack.com/p/tsmc-and-nvidia-pioneering-the-future>
 
