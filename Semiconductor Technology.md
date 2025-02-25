@@ -31,6 +31,7 @@
     - [复习题及解答思路](#复习题及解答思路)
 - [17. SADP和LELE的区别](#17-sadp和lele的区别)
 - [18. EUV 光刻技术：逻辑、DRAM 和 NAND 如何以不同方式使用](#18-euv-光刻技术逻辑dram-和-nand-如何以不同方式使用)
+- [19. ALD](#19-ald)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -812,3 +813,10 @@ EUV 在内存和逻辑领域的未来
 
 <https://www.linkedin.com/pulse/euv-lithography-how-logic-dram-nand-use-differently-dr-tim-rammler-xfdqf/?trackingId=aLWNNl1IbZnTdC16enrfRA%3D%3D>
 
+# 19. ALD
+
+Atomic_Layer_Deposition 和设备
+
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/Atomic%20Layer%20Deposition.ppt>
+
+<https://www.linkedin.com/posts/garal-das-aa895417a_atomic-layer-deposition-and-equipments-activity-7299783473542701058-zp9F?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
