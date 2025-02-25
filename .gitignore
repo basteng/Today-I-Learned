@@ -1,3 +1,2 @@
 # 忽略大于 100MB 的 PDF 文件
-echo "paper/Future Integrated Silicon Photonic System-on-Chip for High Performance Computing.pdf" >> .gitignore
-
+paper/Future Integrated Silicon Photonic System-on-Chip for High Performance Computing.pdf
