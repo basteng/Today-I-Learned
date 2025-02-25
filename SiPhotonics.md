@@ -12,6 +12,7 @@
 - [9. SEMI VISION](#9-semi-vision)
   - [9.1 全球参与硅光子芯片制造的晶圆厂及研究机构名单](#91-全球参与硅光子芯片制造的晶圆厂及研究机构名单)
   - [9.2 台积电与 NVIDIA 携手硅光技术开创 AI 未来](#92-台积电与-nvidia-携手硅光技术开创-ai-未来)
+- [10. AI的三个主要光学平台](#10-ai的三个主要光学平台)
 
 
 # 1. “信息光子器件与集成”专题概述
@@ -596,3 +597,13 @@ NVIDIA 在美国 IEDM 2024 全球半导体领袖大会上展示了其 AI GPU 技
 
 <https://tspasemiconductor.substack.com/p/tsmc-and-nvidia-pioneering-the-future>
 
+# 10. AI的三个主要光学平台
+
+为了在 AI 中创造机会，该行业依赖于三个主要的光学平台：平面光波电路、氮化硅和硅光子学。
+- 平面光波电路 （PLC）：一种成熟且具有成本效益的技术，在功率处理和能源效率方面具有显著优势。
+- 氮化硅 （SiN）：一种成本中等到高的开发中技术。
+- 硅光子学 （SiPH）：一种新兴平台，特别适合高速和低延迟应用，但成本较高。
+
+![](/picture/threeKeyOpticsPlatforms.jpg)
+
+<https://www.laserfocusworld.com/optics/article/55247068/ai-needs-optical-chips>
