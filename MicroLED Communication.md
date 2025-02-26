@@ -171,6 +171,7 @@
 - [53. 香港科技大学工程系研究人员研发出全球首款用于无掩模光刻的深紫外 MicroLED 显示芯片](#53-香港科技大学工程系研究人员研发出全球首款用于无掩模光刻的深紫外-microled-显示芯片)
 - [54. Marvell](#54-marvell)
   - [54.1 今日宣布推出采用共封装光学器件 （CPO） 技术的定制 XPU 架构](#541-今日宣布推出采用共封装光学器件-cpo-技术的定制-xpu-架构)
+  - [54.2 Marvell COLORZ 800 可在 1000 公里的距离内实现 800Gbps 的速度](#542-marvell-colorz-800-可在-1000-公里的距离内实现-800gbps-的速度)
 - [55. Recent Advances of High-Speed Short-Reach Optical Interconnects for Data Centers](#55-recent-advances-of-high-speed-short-reach-optical-interconnects-for-data-centers)
 - [56. VCSEL](#56-vcsel)
   - [56.1 New Prospects of Optical Wireless Communication Systems Exploiting VCSEL-based Transmitters](#561-new-prospects-of-optical-wireless-communication-systems-exploiting-vcsel-based-transmitters)
@@ -4396,6 +4397,192 @@ Marvell 光学平台高级副总裁兼首席技术官 Radha Nagarajan 表示：�
 LightCounting 创始人兼首席执行官 Vlad Kozlov 表示：“云超大规模企业将把 CPO 技术集成到其下一代定制 XPU 和扩展服务器中，以满足 AI 不断增长的性能需求。我们预测，到 2029 年，CPO 端口出货量将从目前的不到 5 万个增长到超过 1800 万个，其中大多数端口将用于服务器内的连接。”“凭借其在光学技术和定制 XPU 方面的经验，Marvell 处于理想位置，可以帮助超大规模企业释放 CPO 的潜力，并使其成为其基础设施不可或缺的一部分。”
 
 <https://www.marvell.com/company/newsroom/marvell-co-packaged-optics-architecture-custom-ai-accelerators.html?utm_source=li&utm_medium=pr&utm_campaign=cpo>
+
+## 54.2 Marvell COLORZ 800 可在 1000 公里的距离内实现 800Gbps 的速度
+
+![](/picture/Marvell-Development-Board-COLORZ-III-Tabletop-Setup-Optical-Side-Angle-800x534.jpg)
+Marvell 开发板 COLORZ III 桌面设置光学侧角
+
+今天，我们有一个非常有趣的东西：看看 Marvell COLORZ 800。这是一款长距离 800G ZR+ 光学模块，采用标准 OSFP 可插拔外形尺寸，但可以在 800Gbps 的速度下达到 500 公里或 1000 公里以上。它甚至可以调整为允许在高达 2500 公里的距离上进行 400Gbps 通信。我们在 Marvell 实验室幕后了解了这种相干光学技术的工作原理，并想向您展示他们如何实现这一点。
+
+对于这一点，我们有一个视频，您可以在这里找到：
+
+<https://youtu.be/liWmx5fxjkg>
+
+与往常一样，我们建议在自己的选项卡、浏览器或应用程序中打开它，以获得最佳观看体验。我们还必须说，Marvell 赞助了这次活动，因为乔治和我必须乘飞机才能进入实验室，而实验室并不是人们通常能看到的地方。既然如此，让我们开始吧。
+
+Marvell COLORZ 800 可在 1000 公里的距离内实现 800Gbps 的速度
+
+由于我们将在这里详细介绍，因此让我们先快速概述一下。如今，数据中心的规则基本上是：尽可能使用铜线，当距离太远时，就使用光纤。如果您看一下NVIDIA GB200 NVL72之类的产品，就会发现其最大的创新是能够使用后端的铜线将 72 个 GPU 和交换机互连。
+
+![](/picture/NVIDIA-DGX-GB200-NVL72-Rear-800x626.jpg)
+NVIDIA DGX GB200 NVL72 后置
+
+电缆长度约为 3 米后，由于信号完整性，高速线和铜线根本无法混合。
+
+![](/picture/100G-3M-DAC-QSFP28-Teardown-3-800x450.jpg)
+100G 3M DAC QSFP28 拆解 3
+
+虽然铜线通常可以到达机架内和相邻机架，但光学模块可用于跨越更长的距离。然而，有一个问题。光学模块使用不同的技术以不同的速度跨越不同的距离。
+
+![](/picture/100G-SR4-QSFP28-Optical-Module-Teardown-3-800x449.jpg)
+100G SR4 QSFP28 光模块拆解3
+
+运行速度为 10Gbps 或 100Gbps 的短距离光模块的制造成本比运行速度为 400Gbps 或 800Gbps 的长距离光模块低很多，这在很大程度上是因为技术的复杂性在不断提高。
+
+![](/picture/CFP-Form-Factor-Optic-800x533.jpg)
+CFP 外形尺寸光学元件
+
+另一个方面是光学模块的外形尺寸。CFP 样式的外形尺寸模块在电信应用中更常见。在数据中心，我们倾向于看到用于低端应用的小型 SFP 模块和用于高速应用的大型 QSFP 模块和 OSFP 模块。即使是常见的 AI 基础设施 NIC（如NVIDIA ConnectX-7 400GbE适配器）也使用 OSFP。今天我们讨论的是 Marvell COLORZ III 800G ZR+ OSFP 模块。OSFP 提供了更大的模块标准，具有电源、冷却功能，更重要的是，提供了处理所有组件所需的空间。它看起来像这样：
+
+![](/picture/Marvell-COLORZ-III-Module-in-Lab-2-800x533.jpg)
+实验室 2 中的 Marvell COLORZ 800 模块
+
+简单来说，一方面，模块从设备获取电信号。
+
+![](/picture/Marvell-COLORZ-III-Module-in-Lab-3-800x533.jpg)
+实验室 3 中的 Marvell COLORZ 800 模块
+
+在另一端，我们有光纤电缆插入的光发送和接收端。
+
+![](/picture/Marvell-COLORZ-III-Module-in-Lab-4-800x533.jpg)
+实验室 4 中的 Marvell COLORZ 800 模块
+
+虽然这听起来很简单，但金属外壳内部却发生了神奇的事情。电信号变成光信号，而光信号又转换回电信号。我们将在相当高的层次上讨论内部发生的事情，以便许多人能够跟上。
+
+接下来，让我们向您展示 OSFP 外壳内部的情况以及其工作原理。
+
+Marvell 光学实验室内部配备 COLORZ 800 ZR+ 光学模块
+
+事实证明，光学模块内的组件放置非常重要。一个组件的放置位置哪怕相差一毫米，都会对其运行产生很大影响。通常，对于这些高端模块，公司都不喜欢我们拆开它们。相反，我们看到了 Marvell 的实验室演示，它就像是那个小型金属 OSFP 外壳中的东西的放大版。
+
+![](/picture/Marvell-Development-Board-COLORZ-III-Tabletop-Setup-Optical-Side-Angle-800x534.jpg)
+Marvell 开发板 COLORZ 800 桌面安装角度 无散热器 侧面
+
+当然，像这样布局的大电路板不适合放入联网设备中，所以这个很酷的另一个部分不仅仅是能够制作 400Gbps 2500km 或 800Gbps 1000km 通信模块，还能够将其封装成标准可插拔外形模块。
+
+看一下这个平台，你首先会注意到的是短 DAC。这是 800Gbps 电信号端。
+
+![](/picture/Marvell-Development-Board-COLORZ-III-Electrical-DAC-Connection-800x534.jpg)
+Marvell 开发板 COLORZ 800 电气 DAC 连接
+
+这是从另一侧看到的开发板的视图。
+
+![](/picture/Marvell-Development-Board-COLORZ-III-Tabletop-Setup-Electrical-Side-View-800x533.jpg)
+Marvell 开发板 COLORZ 800 桌面设置电气侧视图
+
+您可以将其想象为您在此处看到的模块的电气方面：
+
+![](/picture/Marvell-COLORZ-III-Module-in-Lab-3-800x533%20(1).jpg)
+实验室 3 中的 Marvell COLORZ 800 模块
+
+第一站是经过 Marvell Orion DSP。这是电气端和光学端之间的组件，用于清理信号。
+
+![](/picture/Marvell-Orion-DSP-in-Test-Fixture-800x534.jpg)
+Marvell Orion DSP 测试夹具
+
+为了让您了解一下，这里是 Marvell Orion DSP 及其所处的 COLORZ III 800G ZR+ 模块。该 OSFP 模块位于老一代 COLORZ II (400G) 和 COLORZ I (100G) 可插拔模块之上。
+
+![](/picture/Marvell-COLORZ-III-COLORZ-II-COLORZ-I-800x534.jpg)
+Marvell COLORZ 800 (III) COLORZ II COLORZ I
+
+这些 DSP 非常出色，因为它们需要在空间和功率非常受限的环境中完成大量工作。虽然普通的 10Gbps 或 25Gbps NIC 芯片是采用明显更老的工艺技术制造的，但这些 DSP 是采用 5nm 工艺制造的，以便在 OSFP 模块占用空间的功率和空间限制下进行处理。
+
+从 DSP 开始，发送信号到达 CDM 或相干驱动器模块，它是下方两个金色/黄铜色盒子中较小的一个，其中连接了单根光纤。
+
+![](/picture/Marvell-Development-Board-COLORZ-III-Tabletop-Setup-Optical-Side-Angle-800x534.jpg)
+
+作为示例，我们不会深入介绍 PIC 的工作原理，但在那个小盒子里，我们拥有使用激光光源、调制器和其他组件将电信号转换为光信号所需的组件。在盒子的一端，我们输入电信号，在另一端，我们将光输出到光纤束上。这就是此演示板上的传输端。
+
+此时，您可能会猜到左侧稍大一点的盒子是接收端，称为 ICR，即集成相干接收器。如果您经常使用单模LC电缆和光学器件，您会立即注意到：接收端有两根光纤电缆。这就是这项技术比仅进行直接检测（“有光还是没有光”类型的分析）的低成本和低速光学器件稍微复杂一些的地方。
+
+![](/picture/Marvell-Development-Board-COLORZ-III-Tabletop-Setup-Optical-Side-800x534.jpg)
+Marvell 开发板 COLORZ 800 桌面设置 光学面
+
+电路板上不仅有一条接收端光纤，还有一个本地振荡器，可将第二个信号馈入 ICR。可将其视为参考信号。ICR 内部是一个 90 度混合器，这是一种无源元件，有助于保持相位和幅度信息等。ICR 还装有光电探测器，用于接收光信号，然后在另一端产生电输出。电信号通常很弱，因此我们有一个 TIA 或跨阻放大器，用于从光电探测器接收微弱电流并添加可测量的电压。可将其视为电气侧的放大器。
+
+![](/picture/Marvell-Development-Board-COLORZ-III-Tabletop-Setup-Reference-Side-800x533.jpg)
+Marvell 开发板 COLORZ 800 桌面设置参考面
+
+通常，这些组件也需要冷却，因此参考板看起来更像这样：
+
+![](/picture/Marvell-Development-Board-COLORZ-III-Tabletop-Setup-with-Heatsink-800x533.jpg)
+Marvell 开发板 COLORZ 800 桌面设置，带散热器
+
+即使是参考激光源也需要散热器。当我说我们设法进入实验室时，你也可以看出，这确实是一个实验室环境。
+
+![](/picture/Marvell-Development-Board-COLORZ-III-Local-Oscillator-Profile-800x534.jpg)
+Marvell 开发板 COLORZ 800 本振简介
+
+然后，来自 ICR 的电信号可以被输入到电气侧的 Orion DSP 中。
+
+![](/picture/Marvell-Development-Board-COLORZ-III-Without-Heatsinks-800x534.jpg)
+Marvell 开发板 COLORZ 800（无散热器）
+
+这样我们就完成了电气方面和光学方面的全面循环。
+
+![](/picture/Marvell-Development-Board-COLORZ-III-Tabletop-Setup-800x533.jpg)
+Marvell 开发板 COLORZ 800 桌面设置
+
+这里不必低估，但这个开发平台的每一侧最终都在 OSFP 外形尺寸内进行封装和冷却。
+
+![](/picture/Marvell-COLORZ-III-Module-in-Lab-1-800x534.jpg)
+实验室 1 中的 Marvell COLORZ 800 模块
+
+除了硬件之外，我想快速了解一下我们为什么需要参考激光信号以及直接检测和相干检测之间的区别。
+
+直接检测与相干检测
+
+作为视频的一部分，我的一个想法是探讨低端低成本光学器件中常用的直接检测与相干检测之间的区别。这是我们录制视频的开头部分。
+
+![](/picture/Direct-versus-Coherent-Detection-800x475.jpeg)
+直接检测与相干检测
+
+然后我意识到那些需要深入研究数学和物理的人可能已经知道了。许多信号检测都围绕着相当简单的信号是否存在。我们可以在一个非常简单的 10Gbps 模块中将其视为“有光还是没有光？”这有许多相当简单的 2D 表示，以及一些更复杂的编码方案，我们经常在实验室中看到如下所示的眼图（来自我们2019 年英特尔硅光子学部分，该公司出售了这项业务。）
+
+![](/picture/Intel-Silicon-Photonics-Transceiver-Eyes-800x520.jpg)
+英特尔硅光子收发器之眼
+
+相干检测要复杂得多，因为你可以用光做很多更奇特的技术。相反，我们可以看到信号的“星座”。这两张图表都显示了 X 和 Y 偏振，所以我们有 16 个星座。
+
+![](/picture/Marvell-COLORZ-III-Constellations-2-800x534.jpg)
+Marvell COLORZ 800 星座 2
+
+这就是为什么拥有本地振荡器参考很重要。对于更复杂的编码，我们需要该参考提供的附加信息。
+
+如果您对直接检测与相干检测感兴趣，那么有很多论文对此进行了详细介绍。对于 STH 观众来说，我认为最重要的一点是，尽管 800G ZR+ OSFP 模块看起来就像一个稍大一点的 100G SR4 QSFP28 模块，但内部情况却大不相同。
+
+为什么这很重要
+
+因此，这里最大的问题是：“为什么这一切都很重要？”一个简单的原因是，有时，仅出于成本和弹性目的，跨地域部署数据中心是有利的。能够直接从交换机连接到 1000 公里或更远的另一个数据中心，使组织能够在成本更低、更稳定的托管站点上容纳更多基础设施。此外，如果您只有两个地理位置相距遥远的校园，那么以 400Gbps 到 800Gbps 的带宽跨越这两个校园可能会改变游戏规则。
+
+![](/picture/Marvell-Development-Board-COLORZ-III-Tabletop-Setup-Optical-Cables-800x533.jpg)
+Marvell 开发板 COLORZ 800 桌面设置 光缆
+
+但实际上，当今可插拔光学器件的最大驱动因素之一是 AI 数据中心的建设。该建设受到电力限制，因此我们看到数据中心运营商专注于获取电力。计划在现有发电厂旁边建立大型数据中心，为数据中心提供新的电源等等。最大限度地减少传输损耗有助于最大限度地提高可用于计算的功率。挑战在于集群需要如此多的电力，以至于答案可能不再是单个站点。
+
+![](/picture/Marvell-COLORZ-III-COLORZ-II-COLORZ-I-Angle-800x534.jpg)
+Marvell COLORZ 800 (III) COLORZ II COLORZ I 角度
+
+我们经常听到的想法是，将多个数据中心设在电力旁边，而不是将计算集中到一个园区。有趣的是，这也是 2010 年代中后期许多加密货币矿工正在研究的。不同之处在于，矿场不需要高带宽和低延迟的相互访问。人工智能集群需要。
+
+这个想法是，在可用电源附近的多个站点上构建大规模集群可以节省电力传输损耗和成本，但也可能更简单。人们不必许可和建造大型电源，而是可以点燃暗光纤或铺设额外光纤以在几个较小的电源处桥接集群。
+
+![](/picture/Marvell-Traditional-400G-Optics-800x534.jpg)
+Marvell 传统 400G 光学器件
+
+因此，简单的答案是，这些模块允许组织使用通用的可插拔光学模块（而不是专用的 DCI 盒）以相对便宜且轻松的方式点燃跨越长距离的快速链路。也许更令人兴奋的是能够实现 AI 资源的大规模地理分布的想法。
+
+最后的话
+
+希望你喜欢这个很酷的技术。我们经常看到可插拔模块，它们看起来像金属外壳。从这个角度看，很难说出为什么一个比另一个更复杂。
+
+![](/picture/Marvell-COLORZ-III-Module-in-Lab-1-800x534.jpg)
+实验室 1 中的 Marvell COLORZ 800 模块
+
+希望通过观察高端模块内部的情况，可以了解这些可插拔光学器件内部的复杂程度。我们研究了一个简单的低成本 100G SR4 光学模块，它与 800G ZR+ 光学模块有很大不同。原因是，尽管它们看起来相似，但 COLORZ III 模块在 10,000 倍的距离上传输 8 倍的数据速率。也许这就是为什么我第一次看到它时认为这是一个很酷的演示。
+
+<https://www.servethehome.com/going-800gbps-at-up-to-1000km-with-the-marvell-colorz-iii-800g-zr-osfp/3/>
 
 # 55. Recent Advances of High-Speed Short-Reach Optical Interconnects for Data Centers
 
