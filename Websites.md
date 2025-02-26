@@ -63,6 +63,8 @@
     - [9.11.1 代表作：每通道 200Gbps 芯片组助力 AI 网络发展](#9111-代表作每通道-200gbps-芯片组助力-ai-网络发展)
   - [9.12 EEjournal](#912-eejournal)
     - [9.12.1 代表作：适用于 SoC 和多芯片系统的新型内存架构](#9121-代表作适用于-soc-和多芯片系统的新型内存架构)
+  - [9.13 ServeTheHome](#913-servethehome)
+    - [9.13.1 代表作：Marvell COLORZ 800 可在 1000 公里的距离内实现 800Gbps 的速度](#9131-代表作marvell-colorz-800-可在-1000-公里的距离内实现-800gbps-的速度)
 - [10. 化合物半导体](#10-化合物半导体)
   - [10.1 compoundsemiconductor](#101-compoundsemiconductor)
 - [11. Github](#11-github)
@@ -415,6 +417,16 @@ https://convergedigest.com/
 ### 9.12.1 代表作：适用于 SoC 和多芯片系统的新型内存架构
 
 <https://www.eejournal.com/article/new-memory-architectures-for-socs-and-multi-die-systems/>
+
+## 9.13 ServeTheHome
+
+ServeTheHome 是 IT 专业人士的服务器、存储、网络和高端工作站硬件指南，以及出色的开源项目
+
+<https://www.servethehome.com/>
+
+### 9.13.1 代表作：Marvell COLORZ 800 可在 1000 公里的距离内实现 800Gbps 的速度
+
+<https://www.servethehome.com/going-800gbps-at-up-to-1000km-with-the-marvell-colorz-iii-800g-zr-osfp/>
 
 # 10. 化合物半导体
 
