@@ -124,6 +124,8 @@
       - [37.2.1.1 TrendForce](#37211-trendforce)
         - [37.2.1.1.1 2024年Q3市场排名](#372111-2024年q3市场排名)
       - [37.2.1.2 2024年欧洲晶圆厂](#37212-2024年欧洲晶圆厂)
+      - [37.2.1.2 成熟制程](#37212-成熟制程)
+        - [2025年中国成熟制程产能占全球28%](#2025年中国成熟制程产能占全球28)
   - [37.2.1.2 MEMS Foundry](#37212-mems-foundry)
     - [37.2.1.2.1 TechoVedas关于MEMS Foundry的科普](#372121-techovedas关于mems-foundry的科普)
   - [37.3 IDM](#373-idm)
@@ -2327,6 +2329,22 @@ gelgoog:
 <https://www.semiconductor-digest.com/foundries-in-europe-2024/>
 
 <https://www.linkedin.com/posts/marcomezger_foundries-europe-chips-activity-7293527663808303105-_cHR?utm_source=share&utm_medium=member_desktop>
+
+#### 37.2.1.2 成熟制程
+
+##### 2025年中国成熟制程产能占全球28%
+
+全球tech行业为成熟chips的“中国冲击”做好准备，美国在旧半导体领域的快速扩张正在压低价格
+
+芯片行业即将迎来“中国冲击”，因为该国在旧semiconductors和小众基板方面的积极扩张将价格推低至以前无法想象的水平。
+
+根据 国际数据公司IDC估计，到2025年，中国的成熟chip产能将占全球市场的28%左右，行业协会SEMI表示，到2027年，这一数字可能会增长到39%。
+
+成熟chips也已成为一个政治问题。在乔·拜登政府执政的最后几天，美国首次对中国不太先进的芯片和化合物semiconductors发起调查。然而，华盛顿承认，它对此类芯片的流向以及在美国销售的设备中有多少使用中国制造的成熟芯片知之甚少。尽管如此，它的目标是到 2027 年逐步淘汰政府项目中的所有中国半导体。
+
+再次非常感谢 Cheng Ting-Fang 、Lauly Li 和 Nikkei Asia 通过下面的链接提供更多背景和见解的完整文章
+
+<https://asia.nikkei.com/Business/Technology/Tech-Asia/Global-tech-industry-braces-for-China-shock-in-mature-chips>
 
 ## 37.2.1.2 MEMS Foundry
 
