@@ -9,6 +9,7 @@
   - [7.2 Raspberry Pi 3B 构建集群教程](#72-raspberry-pi-3b-构建集群教程)
   - [7.3 ClusterHat 教程 Pi Zero W](#73-clusterhat-教程-pi-zero-w)
 - [8. Raspberry Pi Pico 2 构筑自己的音序器](#8-raspberry-pi-pico-2-构筑自己的音序器)
+- [9. Raspberry运行Deepseek 200 token/s](#9-raspberry运行deepseek-200-tokens)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -571,3 +572,17 @@ ClusterHat 淘宝链接
 控制一切的主板是最新的 Raspberry Pi Pico 2。它连接到一个定制的 PCB，该 PCB 为以 5 x 5 网格模式布局的所有按钮留出了空间。选择的音频放大模块是一种PAM8403，它使 Pico 能够通过连接的扬声器输出音乐。该项目的源代码已在 Hackster 上提供，供任何人探索。在其中，我们很好地了解了 Sharma 编程到这个特定音序器中的一些工具，其中包括录制音频序列、添加延迟甚至从 Pico 生成音调的能力
 
 <https://www.hackster.io/Arnov_Sharma_makes/pico-sequencer-173a5f>
+
+# 9. Raspberry运行Deepseek 200 token/s
+
+<https://itsfoss.com/deepseek-r1-raspberry-pi-5/#performance-stats>
+
+<https://mp.weixin.qq.com/s/DKayTUXhsR_eJ7jnqzi7jg>
+
+推特原文，但是没给设备清单
+
+<https://x.com/BrianRoemmele/status/1882436734774043055>
+
+可以设置集群
+
+<https://turingpi.com/>
