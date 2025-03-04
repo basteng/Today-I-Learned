@@ -32,6 +32,7 @@
 - [17. SADP和LELE的区别](#17-sadp和lele的区别)
 - [18. EUV 光刻技术：逻辑、DRAM 和 NAND 如何以不同方式使用](#18-euv-光刻技术逻辑dram-和-nand-如何以不同方式使用)
 - [19. ALD](#19-ald)
+- [20. 先进封装](#20-先进封装)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -820,3 +821,22 @@ Atomic_Layer_Deposition 和设备
 <https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/Atomic%20Layer%20Deposition.ppt>
 
 <https://www.linkedin.com/posts/garal-das-aa895417a_atomic-layer-deposition-and-equipments-activity-7299783473542701058-zp9F?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+# 20. 先进封装
+
+半导体行业正在见证一个前所未有的 IC 封装创新时代。随着 HPC、AI 和数据中心产品的兴起，对更大封装尺寸、小芯片设计、高密度互连以及解决高速、高功率和散热挑战的解决方案的需求将传统的 2D 封装设计和单片方法推向了极限。良率、翘曲和装配复杂性等挑战推动了对高级解决方案的需求。
+
+进入 2.5D 封装设计 - 一种在封装基板和裸片之间使用中介层（有机、硅或混合）的游戏规则改变者。据我所知，EMIB、CoWoS 和 I/H/X-Cube 等技术是帮助满足这些需求的少数技术之一，而且可能还有更多。
+
+但这里有一个问题：谁来设计这些中介层？
+目前，晶圆代工厂和 OSAT 具有一些功能，但它们能否应对日益增长的复杂性和需求？这些设计的工具和工作流程是独一无二的，位于 SOC 和封装设计的交叉点。
+
+这就提出了一个关键问题：
+SOC 工程师是否应该辞职并承担这一责任？
+还是 IC 封装设计工程师应该站出来填补这一空白？
+
+在我看来，这是 IC 封装设计工程师带头的绝佳机会。中介层设计所需的技能和专业知识与封装设计原则密切相关，进入这一领域可以为创新和职业发展开辟新的途径。
+
+![](/picture/advanced_pack6.jpg)
+
+<https://www.linkedin.com/posts/yogasundaram-c-34565477_semiconductor-icpackagedesign-hpc-activity-7302232541938298880-__uG?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
