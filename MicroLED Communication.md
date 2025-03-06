@@ -188,6 +188,9 @@
 - [70. 直接驱动电光接口如何改变 800G 及更高时代的游戏规则](#70-直接驱动电光接口如何改变-800g-及更高时代的游戏规则)
 - [71. 未来用于高性能计算的集成硅光子片上系统](#71-未来用于高性能计算的集成硅光子片上系统)
 - [72. 光互连终于在硅光子学中看到了光明：超越炒作](#72-光互连终于在硅光子学中看到了光明超越炒作)
+- [73. 专家观点](#73-专家观点)
+  - [73.1 Mark Lutkowitz](#731-mark-lutkowitz)
+    - [73.1.1 空芯纤维](#7311-空芯纤维)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -5104,3 +5107,13 @@ Synopsys 与 Juniper Networks 成立的光子学合资公司 OpenLight 合作，
 <https://mp.weixin.qq.com/s/pLTi97nj-bybdeIgtCQvLQ>
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Optical%20Interconnects%20Finally%20Seeing%20the%20Light%20in%20Silicon%20Photonics.pdf>
+
+# 73. 专家观点
+
+## 73.1 Mark Lutkowitz
+
+### 73.1.1 空芯纤维
+
+fibeReality 很少看好新的光学解决方案（请参阅：https://lnkd.in/e8bFiXC2）。然而，我们对空芯纤维的未来机会感到乐观。除了 Microsoft 在 2022 年底收购 Lumenisity 的明显支持，以及 2024 年底 （https://lnkd.in/eSkpaCJM） 宣布的 HCF 部署计划之外，超大规模激光器的光学技术领导者谷歌一直在悄悄规划其未来的使用。最重要的是，fibeReality 预计这些云服务提供商的运营领导者 Amazon 能够超越最近提出的开发 HCF 的意图（第 51 分钟：https://lnkd.in/eUzf25Fb）。鉴于 AI 的数据中心覆盖范围和规模的预期增长，我们预计 AWS 将成为这些纤维克服其生存能力的关键障碍的关键推动者。
+
+<https://www.linkedin.com/posts/mark-lutkowitz-b22abb2_it-has-been-rare-when-fibereality-is-bullish-activity-7302705469297487873-V00e?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
