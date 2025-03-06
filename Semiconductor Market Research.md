@@ -128,6 +128,8 @@
         - [2025年中国成熟制程产能占全球28%](#2025年中国成熟制程产能占全球28)
   - [37.2.1.2 MEMS Foundry](#37212-mems-foundry)
     - [37.2.1.2.1 TechoVedas关于MEMS Foundry的科普](#372121-techovedas关于mems-foundry的科普)
+    - [37.2.2 节点](#3722-节点)
+      - [37.2.2.1 Semi Vision 的“2025 年主要代工技术节点摘要](#37221-semi-vision-的2025-年主要代工技术节点摘要)
   - [37.3 IDM](#373-idm)
     - [混合半导体制造商 - Hybrid Semiconductor Manufacturing Companies](#混合半导体制造商---hybrid-semiconductor-manufacturing-companies)
       - [半导体浪潮并非让所有企业都受益 - 混合半导体制造公司的低迷状况](#半导体浪潮并非让所有企业都受益---混合半导体制造公司的低迷状况)
@@ -2375,6 +2377,21 @@ MEMS 工厂是生产微机电系统 （MEMS） 器件的专用制造设施。MEM
 ![](/picture/MEMS_Foundry.jpg)
 
 <https://www.linkedin.com/posts/kumar-priyadarshi-b0a2a7a2_what-is-a-mems-fab-from-potential-investment-activity-7279338142707437568-PW7Z?utm_source=share&utm_medium=member_desktop>
+
+### 37.2.2 节点
+
+#### 37.2.2.1 Semi Vision 的“2025 年主要代工技术节点摘要
+
+Semi Vision 的“2025 年主要代工技术节点摘要”强调了行业的发展方向：
+🔹 节点缩小和GAA采用 - 转向亚3纳米节点（N2、2纳米、1.4纳米）和全环绕栅极（GAA）晶体管，以提高性能和效率。
+🔹 台积电领先，三星和英特尔竞争 - 预计到2025年，台积电将占据46%的市场份额（产能，和61%的收入份额，继续主导人工智能、数据中心和ADAS等高端应用。三星和英特尔正在向 2 纳米和 1.4 纳米进军，但台积电在先进节点方面的领导地位目前仍然无与伦比。
+🔹 高端 （N2， 2nm， 1.4nm） vs. 主流细分市场 （14nm–5nm） – TSMC、Samsung、Intel 和 Rapidus 推动了高端市场（AI、数据中心和高端设备），而 UMC、GlobalFoundries 和 SMIC 则专注于为汽车、物联网和消费电子产品提供经济高效的解决方案。
+🔹 挑战与机遇 – 与 AI、5G 和量子计算增长相比，成本上升、地缘政治风险和扩展限制。
+🔹 通往 1nm 之路 – 到 2028 年，1nm 节点（Intel A10、TSMC A10）可能会重塑行业，需要 2D 材料、碳纳米管或新晶体管设计方面的创新。台积电的主导地位将受到考验，因为三星、英特尔和 Rapidus 等新来者都旨在颠覆这一格局。
+
+![](/picture/2025%20Major%20Foundry%20Technology%20Node%20Summary.jpg)
+
+<https://www.linkedin.com/posts/anny-y-5a40a8175_semiconductors-ai-tsmc-activity-7303281957205852161-b6U2?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
 ## 37.3 IDM
 
