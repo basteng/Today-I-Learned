@@ -108,6 +108,8 @@
   - [36.2 Foundry](#362-foundry)
     - [36.2.1 SMIC](#3621-smic)
       - [36.2.1.1 2024Q3财报会议笔记 - TPHuang](#36211-2024q3财报会议笔记---tphuang)
+    - [36.2.2 TSMC](#3622-tsmc)
+      - [36.2.2.1 台积电全球版图](#36221-台积电全球版图)
   - [36.2 IDM](#362-idm)
   - [36.3 OSAT](#363-osat)
   - [36.4 Equipment](#364-equipment)
@@ -171,6 +173,7 @@
         - [38.2.1.1.1 市场](#382111-市场)
           - [38.2.1.1.1.1 和谐共存：硅 IGBT 和 SiC MOSFET](#3821111-和谐共存硅-igbt-和-sic-mosfet)
         - [38.2.1.1.1.2 2025 年功率半导体的五大关键趋势 - Techinsights](#3821112-2025-年功率半导体的五大关键趋势---techinsights)
+      - [38.2.1.2 Yole Group Press - 塑造功率模块封装的未来](#38212-yole-group-press---塑造功率模块封装的未来)
   - [38.3 Optoelectronics](#383-optoelectronics)
   - [38.4 Sensors \& Actuators](#384-sensors--actuators)
 - [39. 应用领域](#39-应用领域)
@@ -2234,6 +2237,23 @@ AI数据中心有季节，智能手机有季节，PC和电视有季节，汽车�
 
 <https://edge.media-server.com/mmc/p/2axei2ms/>
 
+### 36.2.2 TSMC
+
+#### 36.2.2.1 台积电全球版图
+
+2025年3月
+
+台积公司 全球布局  图片由 Focus Taiwan （中央通讯社或 CNA）2025 年 3 月版提供。（与 2024 年 4 月版相比：https://lnkd.in/gyUF7Q_k）
+ 
+除了 TSMC 最近承诺在 Arizona 年建立 3 个新晶圆厂、2 个先进封装设施和 1 个研发中心的 $100B 投资外，该公司还从 25 年上半年到 24 年第四季度在当地 21 号晶圆厂制定了其 4nm 硅节点的生产启动计划。
+
+![](/picture/1741304038167.jpg)
+
+![](/picture/1741304039640.jpg)
+
+![](/picture/1741304033149.jpg)
+
+
 ## 36.2 IDM
 
 ## 36.3 OSAT
@@ -2979,6 +2999,22 @@ AMD 今年安装的 HBM 芯片数量也将比去年多得多，但根据名单�
 为了保持领先地位，企业必须投资研发以推动技术进步并提高制造效率。此外，战略合作伙伴关系和收购可以带来竞争优势并扩大市场覆盖范围。
 
 <https://library.techinsights.com/hg-asset/47c573b7-1bb5-4643-a667-19d2e26be1d9#moduleName=Search&reportCode=PWS-2412-804&subscriptionId=null&channelId=null&reportName=Analysis+%25E2%2580%2593+Five+Key+Trends+for+Power+Semiconductors+in+2025>
+
+#### 38.2.1.2 Yole Group Press - 塑造功率模块封装的未来
+
+powermodule 封装 supplychain 正在不断重塑，Yole Group 在其新的电力电子报告《功率模块封装行业现状》中指出。新公司开始生产功率模块，老牌功率模块企业正在扩大其产品组合，并建立新的合作伙伴关系和并购。
+
+如今，领先的功率模块供应商主要位于欧洲和日本。传统市场领导者正日益面临来自中国公司的激烈竞争......
+
+Shalu Agarwal 评论：在 Yole Group ，我们看到越来越多的亚洲封装材料参与者逐步进入电力电子封装行业。这极大地迫使欧洲参与者减少 costs 。
+
+https://lnkd.in/eZncS2pF 新闻稿
+
+![](/picture/1741257748893.jpg)
+
+![](/picture/1741257749135.jpg)
+
+<https://www.linkedin.com/posts/yole-group_powermodule-supplychain-costs-activity-7303364348486270977-CQzc?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
 ## 38.3 Optoelectronics
 
