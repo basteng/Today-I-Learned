@@ -30,6 +30,8 @@
   - [4.22 光学IO与CPO概念不同](#422-光学io与cpo概念不同)
   - [4.23 Ayar Labs的最新动态与进展 - 光学小豆芽](#423-ayar-labs的最新动态与进展---光学小豆芽)
   - [4.24 Ayar产品用于内存分解 memory disaggregation](#424-ayar产品用于内存分解-memory-disaggregation)
+  - [4.25 A Hybrid Machine Learning and Numeric Optimization Approach to Analog Circuit Deobfuscation](#425-a-hybrid-machine-learning-and-numeric-optimization-approach-to-analog-circuit-deobfuscation)
+  - [4.26 Modeling and Simulation of Silicon Photonics Systems in SystemVerilog/XMODEL](#426-modeling-and-simulation-of-silicon-photonics-systems-in-systemverilogxmodel)
 - [5. Avicena](#5-avicena)
   - [5.1《High Bandwidth GaN-based Micro-LEDs at Temperatures up to 400°C》](#51high-bandwidth-gan-based-micro-leds-at-temperatures-up-to-400c)
   - [5.2 硅光子学联合封装。 凉！ 但它实用吗？Bardia Pezeshki post at Linkedin](#52-硅光子学联合封装-凉-但它实用吗bardia-pezeshki-post-at-linkedin)
@@ -78,6 +80,7 @@
   - [5.38 专利：适用于交换机应用的光互连](#538-专利适用于交换机应用的光互连)
   - [5.39 专利：适用于交换机应用的光互连](#539-专利适用于交换机应用的光互连)
   - [5.40 用于并行光互连的光纤束](#540-用于并行光互连的光纤束)
+  - [5.41 Interconnect networks using microled-based optical links](#541-interconnect-networks-using-microled-based-optical-links)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -1135,6 +1138,16 @@ Ayar Labs与Corning合作，通过玻璃基板(glass substrate)互联不同的Te
 在这种情况下，使用与 UCIe 兼容的光学 I/O 芯片，内存可以位于距离计算包最远 2 公里的地方，同时保持更高的带宽密度和 < 2 x 5ns + TOF 延迟。
 
 <https://ayarlabs.com/blog/ai-scale-up-and-memory-disaggregation-two-use-cases-enabled-by-ucie-and-optical-io/>
+
+## 4.25 A Hybrid Machine Learning and Numeric Optimization Approach to Analog Circuit Deobfuscation
+
+DD Jain, G Zhao, RK Datta, K Shamsi - Proceedings of the 30th Asia and South …, 2025
+
+<https://dl.acm.org/doi/pdf/10.1145/3658617.3697772>
+
+## 4.26 Modeling and Simulation of Silicon Photonics Systems in SystemVerilog/XMODEL
+
+<https://dl.acm.org/doi/pdf/10.1145/3658617.3703934>
 
 # 5. Avicena
 
@@ -2217,6 +2230,42 @@ LED 的效率取决于辐射复合率与俄歇复合率和陷阱复合率之比�
 在一些实施例中，光学发射器是由直接间隙半导体（例如 InGaN、InGaAlAs、InGaP 或 InGaAsP）制成的微型 LED。在一些实施例中，每个通道的光传输介质包括光波导，例如光纤或平面光波导。
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/US20250060544A1.pdf>
+
+## 5.41 Interconnect networks using microled-based optical links
+
+本申请要求于 2020 年 4 月 13 日提交的美国临时专利申请第 63/009,199 号的申请日的权益，该申请的公开内容通过引用并入本文中。
+发明背景
+
+对提高计算和网络性能的需求似乎无处不在且永无止境。突出的应用包括数据中心服务器、高性能计算集群、人工神经网络和网络交换机。
+
+几十年来，晶体管尺寸的缩小和芯片尺寸的增大推动了集成电路 (IC) 性能和成本的大幅改善，这可以概括为著名的摩尔定律。数十亿个晶体管的数量使得之前分散在多个 IC 上的功能可以整合到单个片上系统 (SoC) 上。
+
+然而，随着边际性能优势的下降、产量的下降和每个晶体管成本的增加，进一步缩小晶体管尺寸所带来的好处正在急剧减少。除了这些限制之外，单个 IC 只能包含这么多功能，而这些功能受到限制，因为 IC 的工艺无法同时针对不同的功能（例如逻辑、DRAM 和 I/O）进行优化。
+
+事实上，将 SoC“去集成”为更小的“芯片”有显著的好处，包括：
+
+每个芯片的工艺可以根据其功能进行优化，例如逻辑、DRAM、高速 I/O 等。
+
+芯片非常适合在多种设计中重复使用。
+
+芯片的设计成本较低。
+
+由于芯片尺寸更小且设备数量更少，因此产量更高。
+
+然而，与 SoC 相比，Chiplet 有一个主要缺点：使用 Chiplet 通常需要更多的芯片间连接。与 SoC 中功能块之间的片上连接相比，芯片间连接通常密度低得多，需要的功率也高得多（例如以每比特能量为单位）。
+
+发明内容
+
+一些实施例提供以微型 LED 作为光源的光学芯片到芯片互连。在一些实施例中，互连具有 >10 Tbps/mm 的线性连接密度。在一些实施例中，互连具有 >1 Pbps/cm2 的面积互连密度。在一些实施例中，互连具有 <1000/bit 的功耗。在一些实施例中，互连具有 >10 cm 的互连长度，没有额外的功耗。在一些实施例中，互连具有接近光速限制的延迟。
+
+在一些实施例中，microLED 的调制速率大于 1 Gbps。在一些实施例中，并行光链路 (POL) 包括 microLED 作为光源。在一些实施例中，并行光链路为高性能处理和网络应用提供互连网络。
+
+一些实施例提供了用于集成电路芯片的光学互连，包括：多个基板；多个基板上的多个集成电路芯片；光学互连至少一些集成电路芯片的多个垂直发射平行光学链路（VLPOL）；以及光学互连至少一些集成电路芯片的多个平面发射平行光学链路（PLPOL）。
+
+通过阅读本公开内容，可以更全面地理解本发明的这些方面和其他方面。
+附图简要说明
+
+<https://patents.google.com/patent/US20240235697A9/en>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
