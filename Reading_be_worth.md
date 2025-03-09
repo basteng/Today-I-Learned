@@ -55,6 +55,7 @@
 - [47. 信息论创始人香农在贝尔实验室的内部演讲 | Creative Thinking-创造性思维](#47-信息论创始人香农在贝尔实验室的内部演讲--creative-thinking-创造性思维)
 - [48. 中产阶级的“非塔尖优势”：小而美的自在人生](#48-中产阶级的非塔尖优势小而美的自在人生)
 - [49. 水在大部分电磁波谱中是不透明的，除了可见光](#49-水在大部分电磁波谱中是不透明的除了可见光)
+- [50. 麻省理工的一门新的公开课：《如何用AI（几乎）做任何事》](#50-麻省理工的一门新的公开课如何用ai几乎做任何事)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2232,5 +2233,12 @@ Now I think the same thing can happen in design work. Sometimes I have had the e
 <http://hyperphysics.phy-astr.gsu.edu/hbase/Chemical/watabs.html#:~:text=It%20doesn't%20absorb%20in,needed%20to%20cause%20electronic%20transitions.>
 
 <https://www.reddit.com/r/todayilearned/comments/1j2gi4q/til_water_is_opaque_in_most_of_the/>
+
+# 50. 麻省理工的一门新的公开课：《如何用AI（几乎）做任何事》
+
+mit-mi.github.io/how2ai-course/spring2025/
+
+要充分发挥 AI 的作用，AI 系统需要扎根于现实世界的数据模态，从仅限语言的系统扩展到视觉、音频、传感器、医疗数据、音乐、艺术、嗅觉、味觉等。本课程将介绍 AI 的基本原理（重点关注现代深度学习和基础模型），以及如何将 AI 应用于各种新型的现实世界数据模态。此外，还将介绍多模态 AI 的原理，它能同时处理多种模态，例如将语言与多媒体、音乐与艺术、感知与执行等结合起来。
+目前课程还未结束，课程主页右上角Schedule链接那里可以下载部分课件和参考资料
 
 
