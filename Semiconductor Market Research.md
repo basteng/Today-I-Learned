@@ -139,6 +139,7 @@
     - [37.4.1 先进封装](#3741-先进封装)
       - [37.4.1.1 玻璃基板](#37411-玻璃基板)
       - [37.4.1.2 混合键合：半导体互连的下一个前沿](#37412-混合键合半导体互连的下一个前沿)
+    - [37.4.2 IEEE HIR（异构集成路线图）“WLP 扇入和扇出”](#3742-ieee-hir异构集成路线图wlp-扇入和扇出)
   - [37.5 Equipment](#375-equipment)
     - [37.5.1 市场](#3751-市场)
       - [37.5.1.1 SEMI预测](#37511-semi预测)
@@ -2651,6 +2652,12 @@ Foveros Direct 3D 是一项英特尔技术，可将一个或多个芯片直接�
 但芯片性能提升已从单纯依赖工艺进步转向先进封装发挥关键作用已成为业界共识，越来越多的供应商投入混合键合技术的研发，无疑将加速该技术的进展，推动芯片性能的快速提升。
 
 <https://tspasemiconductor.substack.com/p/hybrid-bonding-the-next-frontier>
+
+### 37.4.2 IEEE HIR（异构集成路线图）“WLP 扇入和扇出”
+
+![](/picture/WLCSP-IEEE.jpg)
+
+<https://www.linkedin.com/posts/simon-chung-44a33743_ieee-hir-heterogeneous-integration-roadmap-activity-7302909479858130944-vDI6?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
 ## 37.5 Equipment
 
