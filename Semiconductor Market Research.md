@@ -3586,7 +3586,7 @@ CSIS 估算了美国三大半导体设备公司在中国的半导体设备收入
 
 <https://www.csis.org/analysis/deepseek-huawei-export-controls-and-future-us-china-ai-race>
 
-
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/250307_Allen_AI_Race.pdf>
 
 ## SEMI
 
