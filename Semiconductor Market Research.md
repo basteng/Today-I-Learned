@@ -208,6 +208,7 @@
   - [CSIS](#csis)
     - [1. 中国成熟的半导体产能过剩：存在吗？重要吗？](#1-中国成熟的半导体产能过剩存在吗重要吗)
     - [2. 盟国出口管制对美国和中国半导体制造设备行业的真正影响](#2-盟国出口管制对美国和中国半导体制造设备行业的真正影响)
+    - [3. DeepSeek、华为、出口管制以及中美人工智能竞赛的未来](#3-deepseek华为出口管制以及中美人工智能竞赛的未来)
   - [SEMI](#semi)
     - [1.设备/制造/材料市场数据](#1设备制造材料市场数据)
   - [SEMI VISION](#semi-vision)
@@ -3580,6 +3581,11 @@ CSIS 估算了美国三大半导体设备公司在中国的半导体设备收入
 <https://www.csis.org/analysis/true-impact-allied-export-controls-us-and-chinese-semiconductor-manufacturing-equipment>
 
 <https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/241126_Allen_True_Impact.pdf>
+
+### 3. DeepSeek、华为、出口管制以及中美人工智能竞赛的未来
+
+<https://www.csis.org/analysis/deepseek-huawei-export-controls-and-future-us-china-ai-race>
+
 
 
 ## SEMI
