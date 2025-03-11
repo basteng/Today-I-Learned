@@ -74,6 +74,7 @@
   - [13.1 Thefly 美股网站](#131-thefly-美股网站)
 - [14. Linkedin 知名人物](#14-linkedin-知名人物)
   - [14.1 植茶雅史](#141-植茶雅史)
+  - [14.2 Garal Das 半导体技术类书籍](#142-garal-das-半导体技术类书籍)
 - [15. 智库](#15-智库)
   - [15.1 FDD: Foundation for Defense of Democracies](#151-fdd-foundation-for-defense-of-democracies)
 
@@ -457,6 +458,10 @@ https://compoundsemiconductor.net/home
 很多有趣的图片
 
 <https://www.linkedin.com/in/%E9%9B%85%E5%8F%B2-%E6%A4%8D%E8%8C%B6-4897062a0/recent-activity/all/>
+
+## 14.2 Garal Das 半导体技术类书籍
+
+<https://www.linkedin.com/in/garal-das-aa895417a/>
 
 # 15. 智库
 
