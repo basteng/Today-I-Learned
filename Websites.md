@@ -77,6 +77,9 @@
   - [14.2 Garal Das 半导体技术类书籍](#142-garal-das-半导体技术类书籍)
 - [15. 智库](#15-智库)
   - [15.1 FDD: Foundation for Defense of Democracies](#151-fdd-foundation-for-defense-of-democracies)
+- [16. 个人博客](#16-个人博客)
+  - [16.1 Stratechery.com](#161-stratecherycom)
+  - [16.2 Roving Dynamics Ltd](#162-roving-dynamics-ltd)
 
 
 # 1. 存储
@@ -473,3 +476,24 @@ https://www.fdd.org/
 
 <https://www.fdd.org/analysis/2025/02/06/made-in-china-2025-who-is-winning/>
 
+# 16. 个人博客
+
+## 16.1 Stratechery.com
+
+https://stratechery.com/
+
+代表文章
+
+越来越多的应用程序转移到互联网上，操作系统的软件差异变得越来越不重要。这就是为什么 M1 芯片对 Mac 的未来如此重要。苹果应当利用这一波 AI，发挥其硬件优势，鼓励开发者在本地运行 AI 模型。
+
+-- 《苹果 AI 的潜力》<https://stratechery.com/2025/apple-ais-platform-pivot-potential/>，本文指出苹果芯片可以本地运行 AI 模型，不需要 Nvidia 显卡，苹果应该利用这一点，扩大销售
+
+## 16.2 Roving Dynamics Ltd
+
+https://rodyne.com/
+
+代表文章
+
+自从有了 AI，我发现自己不再担心项目对我来说太大、太复杂，或者项目使用了我不了解的技术或编程语言，一切都变得容易得多。我正在重新审视一些我曾认为太复杂或超出我能力范围的业余项目，只要有时间，我就会去尝试。这是一个令人兴奋的时代。
+
+-- 《有了 AI，你需要想得更大》<https://rodyne.com/?p=1828>
