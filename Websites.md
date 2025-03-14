@@ -80,6 +80,10 @@
 - [16. 个人博客](#16-个人博客)
   - [16.1 Stratechery.com](#161-stratecherycom)
   - [16.2 Roving Dynamics Ltd](#162-roving-dynamics-ltd)
+- [17. 学位论文](#17-学位论文)
+  - [17.1 加州大学戴维斯分校电子学位论文](#171-加州大学戴维斯分校电子学位论文)
+  - [17.2 加州大学圣巴巴拉分校电子学位论文](#172-加州大学圣巴巴拉分校电子学位论文)
+  - [17.3 加州大学的开放获取出版物](#173-加州大学的开放获取出版物)
 
 
 # 1. 存储
@@ -497,3 +501,35 @@ https://rodyne.com/
 自从有了 AI，我发现自己不再担心项目对我来说太大、太复杂，或者项目使用了我不了解的技术或编程语言，一切都变得容易得多。我正在重新审视一些我曾认为太复杂或超出我能力范围的业余项目，只要有时间，我就会去尝试。这是一个令人兴奋的时代。
 
 -- 《有了 AI，你需要想得更大》<https://rodyne.com/?p=1828>
+
+# 17. 学位论文
+
+## 17.1 加州大学戴维斯分校电子学位论文
+
+<https://escholarship.org/uc/ucd_etd>
+
+UCDAVIS
+
+示例
+
+Future Integrated Silicon Photonic System-on-Chip for High Performance Computing
+
+<https://escholarship.org/uc/item/09z900sn>
+
+## 17.2 加州大学圣巴巴拉分校电子学位论文
+
+<https://escholarship.org/uc/ucsb_etd>
+
+UC SANTA BARBARA
+
+示例
+
+Epitaxy and Device Design for High Efficiency Blue LEDs and Laser Diodes
+
+<https://escholarship.org/uc/item/51d0763h>
+
+## 17.3 加州大学的开放获取出版物
+
+<https://escholarship.org/>
+
+
