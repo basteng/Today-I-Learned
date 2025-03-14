@@ -17,6 +17,8 @@
 - [12. 光学计算：它是什么？以及它为何重要](#12-光学计算它是什么以及它为何重要)
 - [13. 硅光子学带来新的测试挑战 Teradyne](#13-硅光子学带来新的测试挑战-teradyne)
 - [14. 先进封装演进：小芯片和硅光子学-CPO ASE](#14-先进封装演进小芯片和硅光子学-cpo-ase)
+- [15. 1.6T](#15-16t)
+  - [15.1 ATOP](#151-atop)
 
 
 # 1. “信息光子器件与集成”专题概述
@@ -824,3 +826,18 @@ CPO 中 EIC/PIC 集成的先进封装
 在我们探索 AI 硬件开发这一复杂领域时，在系统集成商、设计公司、代工厂和 OSAT（外包半导体组装和测试）提供商之间建立协同生态系统至关重要。成功的关键在于明确定义规范并开发可简化整个供应链的已知良好光学引擎 (OE) 解决方案。AI 硬件的未来充满希望，令人兴奋的进步即将到来。通过优先考虑性能、能源效率和创新的封装解决方案，我们可以释放 AI 技术的全部潜力，为更智能、更高效的世界铺平道路。
 
 <https://ase.aseglobal.com/blog/technology/advanced-packaging-for-ai-chiplet-and-cpo/>
+
+
+# 15. 1.6T 
+
+## 15.1 ATOP 
+
+在 ATOP，我们正在推动光连接的下一次发展。我们的 1.6T DR8 硅光子学 （SiPh） 模块是满足 AI 基础设施和下一代数据中心需求向前迈出的一步。
+
+该模块具有 8×200G PAM4 性能，利用硅光子集成来提高电源效率、降低成本并增强高带宽互连的可扩展性。随着 AI 工作负载的持续增长，功耗和散热限制正在成为关键挑战，而这正是 SiPh 发挥作用的地方。
+
+我们邀请行业领导者、合作伙伴和客户参观 OFC 2025 的 #5451 展位，亲身体验我们的 1.6T DR8 SiPh 模块。这不仅仅是关于更高的速度，而是关于通过更高效、可扩展的光学解决方案实现 AI 和数据中心网络的未来。
+
+![](/picture/ATOP.jpg)
+
+<https://www.linkedin.com/posts/jack-fan-124bb2b5_atop-siliconphotonics-ai-activity-7306085157440995330-Htz4?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
