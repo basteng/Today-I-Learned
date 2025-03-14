@@ -39,6 +39,7 @@
     - [7.1.1 HRL Laboratories - 前休斯研究实验室](#711-hrl-laboratories---前休斯研究实验室)
     - [7.1.2 Teledyne Scientific and Imaging - Teledyne中央研究实验室](#712-teledyne-scientific-and-imaging---teledyne中央研究实验室)
     - [7.1.3 北卡罗来纳大学电子工程系](#713-北卡罗来纳大学电子工程系)
+    - [7.1.4 Afshari, Ehsan - 密歇根大学电子工程系](#714-afshari-ehsan---密歇根大学电子工程系)
 - [8. 技术网站](#8-技术网站)
   - [8.1 GaN newsletter monthly - 领英上Rémi Comyn整理的GaN新闻和最新进展，做得很好，很有启发](#81-gan-newsletter-monthly---领英上rémi-comyn整理的gan新闻和最新进展做得很好很有启发)
   - [8.2 brilliant.org 互动教学，动画演示](#82-brilliantorg-互动教学动画演示)
@@ -299,6 +300,13 @@ Avicena合作伙伴
 
 <https://ece.ncsu.edu/>
 
+### 7.1.4 Afshari, Ehsan - 密歇根大学电子工程系
+
+<https://eecs.engin.umich.edu/people/afshari-ehsan/>
+
+系主页
+
+<https://eecs.engin.umich.edu/>
 
 # 8. 技术网站
 
