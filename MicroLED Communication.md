@@ -123,6 +123,15 @@
   - [27.2 基于单个磷光白色 LED 的自适应比特分配 OFDM 的 2.0-Gb/s 可见光链路](#272-基于单个磷光白色-led-的自适应比特分配-ofdm-的-20-gbs-可见光链路)
   - [27.3 采用硬件预均衡电路的 Gb/s VLC 传输](#273-采用硬件预均衡电路的-gbs-vlc-传输)
   - [27.4 利用 GaN 激光器实​​现无处不在的通信 - Compound Semiconductor](#274-利用-gan-激光器实现无处不在的通信---compound-semiconductor)
+  - [27.5 复旦大学团队成功研制硅光集成高阶模式复用器芯片](#275-复旦大学团队成功研制硅光集成高阶模式复用器芯片)
+    - [27.5.1 \[48\] 用于计算结构连接的高度集成的 4 Tbps 硅光子 IC](#2751-48-用于计算结构连接的高度集成的-4-tbps-硅光子-ic)
+    - [27.5.2 \[1\] 数据中心光学技术的最新进展：综述](#2752-1-数据中心光学技术的最新进展综述)
+    - [27.5.2 \[2\] 数据中心的光互连网络：最新趋势和未来挑战](#2752-2-数据中心的光互连网络最新趋势和未来挑战)
+    - [27.5.3 \[7\] 扩展超大规模数据中心网络的光互连](#2753-7-扩展超大规模数据中心网络的光互连)
+    - [27.5.4 \[8\] 深度分布式计算重建极大谱系树](#2754-8-深度分布式计算重建极大谱系树)
+    - [27.5.5 相关 用于计算系统中数据通信的芯片级频率梳](#2755-相关-用于计算系统中数据通信的芯片级频率梳)
+    - [27.5.6 相关 数据中心和计算系统的光子交换和光网络架构的新趋势](#2756-相关-数据中心和计算系统的光子交换和光网络架构的新趋势)
+    - [27.5.7 相关 计算/内存动态分组/电路交换机在光学分解数据中心的布局](#2757-相关-计算内存动态分组电路交换机在光学分解数据中心的布局)
 - [28. Nvidia](#28-nvidia)
   - [28.1 Nvidia 展示了光学连接的 GPU 系统可能是什么样子](#281-nvidia-展示了光学连接的-gpu-系统可能是什么样子)
 - [29. OELab动态](#29-oelab动态)
@@ -3442,6 +3451,57 @@ FURTHER READING / REFERENCE
 ➤ C. Guan et al. "High-speed InGaN/GaN Green Laser Diode for 17.73 Gbps Visible Light Communication," 2024 30th International Semiconductor Laser Conference (ISLC), IEEE. (accepted) 2024.
 
 <https://compoundsemiconductor.net/article/120606/Targeting_ubiquitous_communication_with_GaN_lasers>
+
+## 27.5 复旦大学团队成功研制硅光集成高阶模式复用器芯片
+
+据科技日报消息，日前，复旦大学信息科学与工程学院张俊文研究员、迟楠教授与相关研究团队开展合作，通过精确设计和优化，将多维复用技术引入片上光互连架构，不仅显著提升了数据传输吞吐量，同时在功耗和延迟方面表现卓越，具备极强的扩展性和兼容性，适用于多种高性能计算场景。
+
+据悉，在此基础上，团队设计并研制了一款硅光集成高阶模式复用器芯片，实现了超大容量的片上光数据传输。实验结果表明，该芯片可支持每秒38Tb的数据传输速度，意味着未来1秒可完成大模型4.75万亿的参数传递，这显著提升了大模型训练与计算集群间的通信性能和可靠性，为人工智能、大模型训练及GPU加速计算等应用提供了强有力的支持。
+
+这一技术突破不仅为数据中心和高性能计算服务器的光互连系统提供了新的解决方案，也为人工智能、大规模并行计算及大模型训练奠定了坚实的技术基础。相关研究成果发表在国际期刊《自然·通讯》上。
+
+![](/picture/41467_2025_57689_Fig1_HTML.webp)
+
+<https://www.semi.org.cn/site/semi/article/b7993eeeb11d43369f0f71424fd46ea1.html>
+
+论文链接
+
+<https://www.nature.com/articles/s41467-025-57689-7#Bib1>
+
+### 27.5.1 [48] 用于计算结构连接的高度集成的 4 Tbps 硅光子 IC
+
+<https://ieeexplore.ieee.org/document/9912565>
+
+### 27.5.2 [1] 数据中心光学技术的最新进展：综述
+
+<https://opg.optica.org/optica/fulltext.cfm?uri=optica-5-11-1354&id=399361>
+
+### 27.5.2 [2] 数据中心的光互连网络：最新趋势和未来挑战
+
+<https://ieeexplore.ieee.org/document/6588648>
+
+
+### 27.5.3 [7] 扩展超大规模数据中心网络的光互连
+
+<https://ieeexplore.ieee.org/document/9793366>
+
+### 27.5.4 [8] 深度分布式计算重建极大谱系树
+
+<https://www.nature.com/articles/s41587-021-01111-2>
+
+### 27.5.5 相关 用于计算系统中数据通信的芯片级频率梳
+
+![](/picture/Performance%20of%20Select%20EO%20Modulators%20and%20Comb%20Sources.png)
+
+<https://opg.optica.org/optica/fulltext.cfm?uri=optica-10-8-977&id=535469>
+
+### 27.5.6 相关 数据中心和计算系统的光子交换和光网络架构的新趋势
+
+<https://opg.optica.org/jocn/abstract.cfm?uri=jocn-15-8-C288>
+
+### 27.5.7 相关 计算/内存动态分组/电路交换机在光学分解数据中心的布局
+
+<https://opg.optica.org/jocn/abstract.cfm?uri=jocn-10-7-B164>
 
 # 28. Nvidia
 

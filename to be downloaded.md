@@ -19,6 +19,14 @@
 - [16. What are the best AI tools for research? Nature’s guide](#16-what-are-the-best-ai-tools-for-research-natures-guide)
 - [17. Optically Connected Multi-Stack HBM Modules for Large Language Model Training and Inference](#17-optically-connected-multi-stack-hbm-modules-for-large-language-model-training-and-inference)
 - [18. Investigation on large modulation bandwidth InGaN-based blue laser diodes](#18-investigation-on-large-modulation-bandwidth-ingan-based-blue-laser-diodes)
+- [19. Highly Integrated 4 Tbps Silicon Photonic IC for Compute Fabric Connectivity](#19-highly-integrated-4-tbps-silicon-photonic-ic-for-compute-fabric-connectivity)
+- [20. Optical interconnection networks in data centers: recent trends and future challenges](#20-optical-interconnection-networks-in-data-centers-recent-trends-and-future-challenges)
+- [21. Scaling Optical Interconnects for Hyperscale Data Center Networks](#21-scaling-optical-interconnects-for-hyperscale-data-center-networks)
+- [22. Optically Disaggregated Data Centers With Minimal Remote Memory Latency: Technologies, Architectures, and Resource Allocation \[Invited\]](#22-optically-disaggregated-data-centers-with-minimal-remote-memory-latency-technologies-architectures-and-resource-allocation-invited)
+- [23. In Compute/Memory Dynamic Packet/Circuit Switch Placement for Optically Disaggregated Data Centers](#23-in-computememory-dynamic-packetcircuit-switch-placement-for-optically-disaggregated-data-centers)
+- [24. Deep distributed computing to reconstruct extremely large lineage trees](#24-deep-distributed-computing-to-reconstruct-extremely-large-lineage-trees)
+- [25. New trends in photonic switching and optical networking architectures for data centers and computing systems \[Invited\]](#25-new-trends-in-photonic-switching-and-optical-networking-architectures-for-data-centers-and-computing-systems-invited)
+- [26. In Compute/Memory Dynamic Packet/Circuit Switch Placement for Optically Disaggregated Data Centers](#26-in-computememory-dynamic-packetcircuit-switch-placement-for-optically-disaggregated-data-centers)
 
 20241204以后 （未下载）
 
@@ -118,3 +126,40 @@ https://ieeexplore.ieee.org/abstract/document/10892009
 # 18. Investigation on large modulation bandwidth InGaN-based blue laser diodes
 
 https://doi.org/10.1016/j.optlastec.2025.112601
+
+# 19. Highly Integrated 4 Tbps Silicon Photonic IC for Compute Fabric Connectivity
+
+https://ieeexplore.ieee.org/document/9912565
+
+# 20. Optical interconnection networks in data centers: recent trends and future challenges
+
+https://ieeexplore.ieee.org/document/6588648
+
+# 21. Scaling Optical Interconnects for Hyperscale Data Center Networks
+
+https://ieeexplore.ieee.org/document/9793366
+
+# 22. Optically Disaggregated Data Centers With Minimal Remote Memory Latency: Technologies, Architectures, and Resource Allocation [Invited]
+
+https://opg.optica.org/jocn/abstract.cfm?uri=jocn-10-2-A270
+
+# 23. In Compute/Memory Dynamic Packet/Circuit Switch Placement for Optically Disaggregated Data Centers
+
+https://opg.optica.org/jocn/abstract.cfm?uri=jocn-10-7-B164
+
+# 24. Deep distributed computing to reconstruct extremely large lineage trees
+
+https://www.nature.com/articles/s41587-021-01111-2
+
+# 25. New trends in photonic switching and optical networking architectures for data centers and computing systems [Invited]
+
+https://opg.optica.org/jocn/abstract.cfm?uri=jocn-15-8-C288
+
+# 26. In Compute/Memory Dynamic Packet/Circuit Switch Placement for Optically Disaggregated Data Centers
+
+https://opg.optica.org/jocn/abstract.cfm?uri=jocn-10-7-B164
+
+
+
+
+
