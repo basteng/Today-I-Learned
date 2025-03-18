@@ -29,6 +29,10 @@
   - [**Silicon-on-Insulator (SOI) Platform**](#silicon-on-insulator-soi-platform)
   - [**Comparison of SiN vs. SOI**](#comparison-of-sin-vs-soi)
   - [**Synergy and Co-Integration**](#synergy-and-co-integration)
+- [18. epitaxial structures of InP, SOI, and SiN platforms](#18-epitaxial-structures-of-inp-soi-and-sin-platforms)
+    - [1. InP (Indium Phosphide) Platform](#1-inp-indium-phosphide-platform)
+    - [2. SOI (Silicon-on-Insulator) Platform](#2-soi-silicon-on-insulator-platform)
+    - [3. SiN (Silicon Nitride) Platform](#3-sin-silicon-nitride-platform)
 
 
 # 1. “信息光子器件与集成”专题概述
@@ -1166,3 +1170,58 @@ Citations:
 [30] https://pmc.ncbi.nlm.nih.gov/articles/PMC9534754/
 [31] https://www.ltphotonics.co.uk/news/an-intro-to-integrated-photonic-material-platforms
 [32] https://www.photondelta.com/news/integrated-photonics-platforms-compared-silicon-nitride-indium-phosphide-silicon-photonics/
+
+
+# 18. epitaxial structures of InP, SOI, and SiN platforms
+
+I'll explain the epitaxial structures of InP, SOI, and SiN platforms and create a schematic diagram to help visualize them.
+
+![](/picture/epitaxial-structures.svg)
+
+Here's a detailed explanation of the epitaxial structures of the three platforms:
+
+### 1. InP (Indium Phosphide) Platform
+
+InP is typically used for active photonic components (lasers, modulators, detectors) due to its direct bandgap:
+
+- **Base**: InP substrate
+- **Epitaxial layers**:
+  - n-doped InP buffer layer
+  - n-doped InGaAsP layer
+  - InGaAsP Multiple Quantum Wells (MQW) - active region
+  - p-doped InGaAsP layer
+  - p-doped InP cladding
+  - Highly p-doped InGaAs contact layer
+
+The epitaxial growth in InP platforms typically uses techniques like Metal-Organic Chemical Vapor Deposition (MOCVD) or Molecular Beam Epitaxy (MBE) to create precisely controlled layer thicknesses.
+
+### 2. SOI (Silicon-on-Insulator) Platform
+
+SOI is widely used for passive photonic components and CMOS integration:
+
+- **Base**: Silicon substrate
+- **Epitaxial structure**:
+  - SiO₂ Buried Oxide (BOX) layer
+  - Crystalline silicon waveguide layer
+  - SiO₂ upper cladding (typically deposited, not epitaxially grown)
+
+The SOI platform typically starts with a wafer bonding process rather than traditional epitaxial growth, where a silicon wafer is bonded to an oxidized silicon wafer, followed by thinning one side to create the desired silicon device layer thickness.
+
+### 3. SiN (Silicon Nitride) Platform
+
+SiN is used for low-loss passive photonic components, especially in visible to near-IR wavelengths:
+
+- **Base**: Silicon substrate
+- **Structure**:
+  - SiO₂ lower cladding layer
+  - Si₃N₄ core layer (deposited, not epitaxially grown)
+  - SiO₂ upper cladding layer
+
+The SiN platform typically uses deposition methods like Plasma-Enhanced Chemical Vapor Deposition (PECVD) or Low-Pressure Chemical Vapor Deposition (LPCVD) rather than true epitaxial growth.
+
+Key differences between these platforms include:
+- InP allows direct integration of active components
+- SOI offers CMOS compatibility and good optical confinement
+- SiN provides very low optical losses and broader wavelength operation
+
+The schematic diagram above shows the typical layer structures for each platform, though specific implementations may vary depending on the application and manufacturing process.
