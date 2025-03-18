@@ -29,6 +29,7 @@
 - [18. github不能上传大文件 - 大于100M不可以](#18-github不能上传大文件---大于100m不可以)
 - [19. iPad 连接Raspberry Pi低延迟编程](#19-ipad-连接raspberry-pi低延迟编程)
 - [20. N26开卡](#20-n26开卡)
+- [21. Deepseek + Kimi 生成ppt](#21-deepseek--kimi-生成ppt)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -659,3 +660,10 @@ ZX spectrum Next 看起来很棒。然后是 8 位人的 Commander X-16，由他
 <https://zhuanlan.zhihu.com/p/578071431>
 
 <https://www.eluyee.com/n26/>
+
+# 21. Deepseek + Kimi 生成ppt
+
+1. Deepseek 深度思考 生成ppt大纲
+2. Kimi ppt助手，生成ppt内容，一键生成，选择模版
+
+<https://weibo.com/1842136381/PfVieEyAt>
