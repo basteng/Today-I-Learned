@@ -24,6 +24,11 @@
     - [16.1.1 氮化硅基光子学](#1611-氮化硅基光子学)
       - [主要应用](#主要应用)
       - [技术介绍](#技术介绍)
+- [17. SiN vs SOI](#17-sin-vs-soi)
+  - [**Silicon Nitride (SiN) Platform**](#silicon-nitride-sin-platform)
+  - [**Silicon-on-Insulator (SOI) Platform**](#silicon-on-insulator-soi-platform)
+  - [**Comparison of SiN vs. SOI**](#comparison-of-sin-vs-soi)
+  - [**Synergy and Co-Integration**](#synergy-and-co-integration)
 
 
 # 1. “信息光子器件与集成”专题概述
@@ -1069,3 +1074,95 @@ Imec 可协助您完成硅光子组件的专用开发流程。根据您的要求
 没有任何延误或风险，您就可以将创新、可靠的光子核心作为未来产品的上市产品。
 
 <https://www.imec-int.com/en/what-we-offer/development/silicon-nitride>
+
+# 17. SiN vs SOI
+
+Silicon photonics relies on two primary platforms—Silicon Nitride (SiN) and Silicon-on-Insulator (SOI)—each with distinct material properties and application strengths. Below is a detailed comparison of their characteristics, performance, and use cases.
+
+---
+
+## **Silicon Nitride (SiN) Platform**
+**Material Properties**:  
+- **Low Propagation Loss**: Achieves losses as low as **0.1 dB/cm** (LPCVD method) down to **2 dB/m** in ultra-low-loss configurations, critical for long-distance signal integrity[1][2][5].  
+- **Broad Transparency**: Operates from **405 nm (visible)** to **2500 nm (near-infrared)**, enabling applications like biosensing, quantum photonics, and LiDAR[1][3].  
+- **High Power Handling**: Minimal two-photon absorption allows watt-range power handling, ideal for supercontinuum lasers and nonlinear optics[1][3].  
+- **CMOS Compatibility**: Supports wafer-scale manufacturing and integration with active components (e.g., InP lasers, Ge detectors)[1][4].  
+
+**Key Technologies**:  
+- **LPCVD SiN**: Optimized for ultra-low-loss applications (e.g., quantum computing, telecommunications)[1].  
+- **PECVD SiN**: Suited for integration with CMOS imagers and flat optics, offering low auto-fluorescence[1].  
+
+**Applications**:  
+- Quantum key distribution (QKD), optical beamforming, spectrometers[1][3].  
+- High-performance analog photonics and hybrid integration with SOI[2][5].  
+
+---
+
+## **Silicon-on-Insulator (SOI) Platform**
+**Material Properties**:  
+- **High Index Contrast**: Enables compact photonic components but introduces **1–2 dB/cm propagation losses** due to sidewall roughness[4][5].  
+- **Wavelength Range**: Effective from **1.1 µm (near-infrared)** to **3.7 µm (mid-infrared)**, optimized for telecom and datacom[4][5].  
+- **Mature Manufacturing**: Leverages high-volume CMOS processes for cost-effective transceivers and optical interconnects[4].  
+
+**Key Features**:  
+- **Smart Cut™ Technology**: Provides uniform silicon layers (220 nm top Si on 2 µm buried oxide) for low-loss waveguides and RF immunity[4].  
+- **High-Speed Modulation**: Uses free-carrier plasma dispersion for modulators, though with larger footprints and higher power consumption[5].  
+
+**Applications**:  
+- High-speed optical transceivers, 3D sensing, and chip-to-chip interconnects[4].  
+- Lidar and quantum applications when combined with SiN[4].  
+
+---
+
+## **Comparison of SiN vs. SOI**  
+| **Feature**               | **Silicon Nitride (SiN)**                          | **Silicon-on-Insulator (SOI)**               |  
+|---------------------------|---------------------------------------------------|----------------------------------------------|  
+| **Propagation Loss**       | 0.1 dB/cm to 2 dB/m[1][2][5]                      | 1–2 dB/cm[4][5]                              |  
+| **Wavelength Range**       | 405 nm – 2500 nm[1][3]                            | 1.1 µm – 3.7 µm[4][5]                        |  
+| **Nonlinear Effects**      | Low two-photon absorption[1][3]                   | Significant two-photon absorption[5]         |  
+| **Power Handling**         | Watt-range[1][3]                                  | Limited by nonlinear effects[5]              |  
+| **Integration Flexibility**| Compatible with CMOS, InP, and custom layers[1][2]| Optimized for monolithic Si photonics[4][5]  |  
+| **Commercial Maturity**    | Emerging in quantum and sensing[1][3]             | Established in datacom and telecom[4][5]     |  
+
+---
+
+## **Synergy and Co-Integration**  
+Recent advancements enable **monolithic integration** of SiN and SOI, combining low-loss SiN waveguides (1.6 dB/m) with high-speed Si modulators. This hybrid approach supports applications like **true-time-delay networks** and **finite impulse response (FIR) filters**, bridging gaps in analog photonics[2][5].  
+
+---
+
+In summary, SOI excels in high-speed, compact photonics for telecom, while SiN dominates in low-loss, broad-spectrum applications. Co-integration unlocks new possibilities for advanced photonic circuits requiring both materials’ strengths.
+
+Citations:
+[1] https://www.imec-int.com/en/what-we-offer/development/silicon-nitride
+[2] https://gxc.io/monolithic-ultra-low-loss-si%E2%82%83n%E2%82%84-si-photonic-platform-for-high-delay-density/
+[3] https://www.linkedin.com/pulse/silicon-nitride-integrated-photonics-supercontinuum-lasers-two-cutting-s5mtf
+[4] https://www.soitec.com/en/products/smart-photonics-soi
+[5] https://www.photonics.intec.ugent.be/download/pub_3692.pdf
+[6] https://www.nature.com/articles/s41467-023-39047-7
+[7] https://www.imec-int.com/en/what-we-offer/development/silicon-nitride-based-photonics/silicon-nitride-applications
+[8] https://www.nature.com/articles/s41467-024-44750-0
+[9] https://www.synopsys.com/blogs/chip-design/what-is-silicon-photonics.html
+[10] https://www.mdpi.com/2304-6732/11/6/494
+[11] https://www.universitywafer.com/soi-fabcricate-photonic-devices.html
+[12] https://www.photondelta.com/news/what-is-silicon-photonics-siph-piggybacking-on-decades-of-semiconductor-chip-manufacturing-experience/
+[13] https://www.mdpi.com/2304-6732/9/5/331
+[14] https://www.eetimes.eu/the-evolution-of-photonic-integrated-circuits-and-silicon-photonics/
+[15] https://www.mdpi.com/2304-6732/10/11/1233
+[16] https://www.samaterials.com/comparing-soi-vs-silicon-wafers.html
+[17] https://pmc.ncbi.nlm.nih.gov/articles/PMC5620990/
+[18] https://www.ansys.com/simulation-topics/what-is-silicon-photonics
+[19] https://www.photondelta.com/news/why-can-silicon-nitride-sin-be-ideal-platform-for-photonic-integrated-circuits/
+[20] https://www.nature.com/articles/s41467-021-26804-9
+[21] https://www.researching.cn/articles/OJ5089f4cbe2da977e
+[22] https://www.advmf.com/platform/
+[23] https://www.sandia.gov/mesa/silicon-photonics/
+[24] https://www.photonics.com/Articles/SOI_Technology_Lights_Up_the_Next_Wave_of/a66648
+[25] https://www.synopsys.com/glossary/what-is-silicon-photonics.html
+[26] https://epic-photonics.com/wp-content/uploads/2021/12/SOITEC-1-slide.pdf
+[27] https://www.photonics.com/Articles/Silicon-on-Insulator_Substrates_The_Basis_of/a63021
+[28] https://en.wikipedia.org/wiki/Silicon_on_insulator
+[29] https://pcphotonics.intec.ugent.be/download/pub_3813.pdf
+[30] https://pmc.ncbi.nlm.nih.gov/articles/PMC9534754/
+[31] https://www.ltphotonics.co.uk/news/an-intro-to-integrated-photonic-material-platforms
+[32] https://www.photondelta.com/news/integrated-photonics-platforms-compared-silicon-nitride-indium-phosphide-silicon-photonics/
