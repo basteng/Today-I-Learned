@@ -206,6 +206,7 @@
   - [40.7 芯片价格](#407-芯片价格)
     - [哪些芯片在 2024 年最受欢迎？价格增长最高](#哪些芯片在-2024-年最受欢迎价格增长最高)
     - [哪些芯片在 2024 年降价幅度最大？](#哪些芯片在-2024-年降价幅度最大)
+  - [40.8 半导体供应链](#408-半导体供应链)
 - [41. 机构观点](#41-机构观点)
   - [CSIS](#csis)
     - [1. 中国成熟的半导体产能过剩：存在吗？重要吗？](#1-中国成熟的半导体产能过剩存在吗重要吗)
@@ -3447,6 +3448,12 @@ TI 的O3853AQDCARQ1从年初的 350.5 元人民币下降到年底的 31.7 元人
 ![](/picture/1739844065101.jpg)
 
 <https://www.linkedin.com/posts/semiconductordistributor_pmic-ti-infineon-activity-7297434927388598272-xtjX?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+## 40.8 半导体供应链
+
+![](/picture/1740111442101.jpg)
+
+![](/picture/1741496496996.jpg)
 
 # 41. 机构观点
 
