@@ -33,6 +33,30 @@
     - [1. InP (Indium Phosphide) Platform](#1-inp-indium-phosphide-platform)
     - [2. SOI (Silicon-on-Insulator) Platform](#2-soi-silicon-on-insulator-platform)
     - [3. SiN (Silicon Nitride) Platform](#3-sin-silicon-nitride-platform)
+- [19. 微环硅光调制器](#19-微环硅光调制器)
+  - [微环硅光调制器](#微环硅光调制器)
+    - [工作原理](#工作原理)
+    - [特点](#特点)
+  - [硅光光学I/O方案](#硅光光学io方案)
+    - [Ayar Labs的创新](#ayar-labs的创新)
+    - [特点与应用](#特点与应用)
+  - [总结](#总结)
+  - [Silicon Microring Modulators](#silicon-microring-modulators)
+    - [Key Innovations](#key-innovations)
+    - [Working Principles](#working-principles)
+  - [Silicon Photonics I/O Solutions](#silicon-photonics-io-solutions)
+    - [Integrated Optical I/O Chiplets](#integrated-optical-io-chiplets)
+    - [Advantages Over Traditional Interconnects](#advantages-over-traditional-interconnects)
+- [20. Ayar Labs](#20-ayar-labs)
+  - [20.1 微环+激光器+波分复用 整体结构](#201-微环激光器波分复用-整体结构)
+    - [Components and Structure](#components-and-structure)
+    - [Connection and Modulation Process](#connection-and-modulation-process)
+    - [Key Technologies](#key-technologies)
+  - [20.2 EMIB](#202-emib)
+    - [Chips Connected](#chips-connected)
+    - [Connection Process](#connection-process)
+    - [Specific Process](#specific-process)
+    - [Benefits](#benefits)
 
 
 # 1. “信息光子器件与集成”专题概述
@@ -1225,3 +1249,275 @@ Key differences between these platforms include:
 - SiN provides very low optical losses and broader wavelength operation
 
 The schematic diagram above shows the typical layer structures for each platform, though specific implementations may vary depending on the application and manufacturing process.
+
+# 19. 微环硅光调制器
+
+## 微环硅光调制器
+
+微环硅光调制器是一种基于硅基光子集成技术的关键器件，广泛应用于光通信领域。它利用微环谐振腔结构来实现光信号的调制。
+
+### 工作原理
+
+微环调制器的工作原理主要基于谐振腔的折射率变化。通过在微环波导上嵌入PN结，利用载流子耗尽效应，可以实现高速调制。外加电压会导致微环谐振峰的红移，从而调制光信号[1][2]。
+
+### 特点
+
+- **高速调制能力**：上海交通大学成功研制的微环电光调制器最高调制速率可达30Gbps[1]。
+- **低功耗**：该调制器的交流功耗约为100fJ/bit，远低于传统的pJ/bit水平[1]。
+- **紧凑集成**：硅基光电子器件与传统CMOS工艺兼容，实现低成本大规模集成[1][5]。
+
+## 硅光光学I/O方案
+
+硅光光学I/O方案旨在利用光学技术取代传统的铜线连接，实现更快的数据传输。
+
+### Ayar Labs的创新
+
+Ayar Labs是一家硅光子初创公司，致力于将光学I/O技术融入芯片架构。他们的技术可以取代芯片内部的铜线，实现更快的通信能力[6]。
+
+### 特点与应用
+
+- **高速通信**：Ayar Labs的光学I/O技术可以提供前所未有的通信带宽和低延迟能力，适用于AI系统等高性能应用[6]。
+- **市场前景**：预计在2026-2028年间，光学I/O技术将步入成熟期，并在未来几年内广泛应用于各行业[6]。
+
+## 总结
+
+微环硅光调制器和硅光光学I/O方案代表了光通信领域的两项重要技术进展。前者提供了高速、低功耗的光信号调制能力，而后者则有望彻底改变芯片内部的数据传输方式，推动未来高性能计算和通信的发展。
+
+Citations:
+[1] https://www.seiee.sjtu.edu.cn/index_news/2434.html
+[2] https://www.nature.com/articles/s41598-017-04851-x
+[3] https://patents.google.com/patent/CN104280899A/zh
+[4] https://paper.sciencenet.cn/htmlpaper/2024/3/202431110134440197133.shtm
+[5] https://www.synopsys.com/glossary/what-is-silicon-photonics.html
+[6] https://www.siscmag.com/news/show-8399.html
+[7] https://www.researching.cn/ArticlePdf/m00001/2009/36/s2/060.pdf
+[8] http://tera.yonsei.ac.kr/publication/pdf/Master_2015_YBan.pdf
+[9] https://www.nature.com/articles/s41467-024-45301-3
+
+---
+Answer from Perplexity: pplx.ai/share
+
+Silicon microring modulators (Si-MRMs) are critical components in energy-efficient optical interconnects and computing systems due to their ultra-compact footprint and capability for on-chip wavelength-division multiplexing. These devices play increasingly important roles in optical communication, interconnects, computing, and biomedical sensing applications[1][2].
+
+## Silicon Microring Modulators
+
+Silicon microring resonators function as optical waveguides looped back on themselves, creating resonance when the optical path length equals an integral multiple of the wavelength. Due to the high refractive index contrast between silicon and its oxide, these resonators can be fabricated with very small bend radii (around 5 μm)[7].
+
+硅微环调制器
+硅微环谐振器可用作光波导，当光路长度等于波长的整数倍时，会产生谐振。由于硅和其氧化物之间的折射率差异很大，因此可以制造出弯曲半径非常小（约 5 微米）的谐振器
+
+### Key Innovations
+
+A significant challenge with traditional Si-MRMs is their high driving voltage requirements, typically exceeding 2V. Recent innovations have addressed this limitation:
+传统 Si-MRM 面临的一个重大挑战是其驱动电压要求高，通常超过 2V。最近的创新已经解决了这一限制：
+
+- **MOSCAP Microring Modulator**: A metal-oxide-semiconductor capacitor microring modulator using titanium-doped indium oxide (ITiO) achieves:
+  - High modulation efficiency of 117 pm/V
+  - Low driving voltage of 0.8V
+  - 11 GHz modulation bandwidth
+  - 25 Gb/s data transmission with energy efficiency of 53 fJ/bit[1][2]
+
+- **Two-Segment Z-Shape Design**: Another approach uses two individual p-n junctions with an optimized Z-shape doping profile to mitigate the inherent trade-off between bandwidth and modulation efficiency, enabling:
+  - 200 Gbps per channel
+  - Sub-10 fJ/bit energy consumption
+  - 1 Tb/s total data rate from a 5-channel array[6]
+
+### Working Principles
+
+Microring modulators operate by shifting the resonance wavelength through manipulation of carrier concentration in the ring cavity. This can be achieved through:
+
+1. **Carrier injection**: Using a p-i-n diode integrated into the ring (strong effect but limited by carrier recombination speed)
+2. **Reverse-biased p-n junctions**: Faster operation but with weaker refractive index effects[7]
+
+## Silicon Photonics I/O Solutions
+
+Silicon photonics (SiPh) is revolutionizing data transmission by replacing traditional copper wires with optical interconnects that provide greater bandwidth, longer transmission distances, and better energy efficiency[10].
+
+### Integrated Optical I/O Chiplets
+
+Intel has demonstrated an integrated optical compute interconnect (OCI) chiplet that represents a significant advancement in high-bandwidth interconnect technology:
+
+- Integrates a silicon photonics integrated circuit (PIC) with on-chip lasers and optical amplifiers
+- Can be co-packaged with CPUs, GPUs, and other system-on-chips
+- Supports 64 channels of 32 Gbps data transmission in each direction
+- Enables connectivity up to 100 meters over fiber optics
+- Addresses AI infrastructure demands for higher bandwidth, lower power consumption, and longer reach[4][11]
+
+### Advantages Over Traditional Interconnects
+
+Embedded silicon photonics offers several advantages over traditional electrical interconnects:
+
+- **Higher Bandwidth Density**: Micro-ring resonators enable wavelength division multiplexing (WDM), allowing multiple data channels on a single fiber
+- **Energy Efficiency**: Reduces the need for electrical signals to travel over centimeters of copper wires
+- **Compact Integration**: Micro-rings are up to 1000× smaller than optical devices in traditional Ethernet transceivers[8][9]
+
+The evolution of silicon photonics is moving from pluggable optical transceivers to on-board optics (OBO) and co-packaged optics, with each step shortening electrical paths and improving energy efficiency[10].
+
+As data volume in computing systems continues to surge exponentially, particularly driven by AI applications, silicon photonics technology will be crucial for enabling the petascale connectivity required for next-generation computing systems[9].
+
+Citations:
+[1] https://pmc.ncbi.nlm.nih.gov/articles/PMC10821938/
+[2] https://www.nature.com/articles/s41467-024-45130-4
+[3] https://semiwiki.com/forum/index.php?threads%2Fintel-demonstrates-first-fully-integrated-optical-i-o-chiplet.20532%2F
+[4] https://www.intel.com/content/www/us/en/newsroom/news/intel-unveils-first-integrated-optical-io-chiplet.html
+[5] https://www.synopsys.com/glossary/what-is-silicon-photonics.html
+[6] https://www.nature.com/articles/s41467-024-45301-3
+[7] https://www.latitudeds.com/post/a-tutorial-on-silicon-microring-resonators-and-their-applications
+[8] https://www.photonics.com/Articles/Understanding_In-Package_Optical_I_O_Versus/a69701
+[9] https://lightwave.ee.columbia.edu/sites/default/files/content/docs/Papers/2024/Co-Designed_Silicon_Photonics_Chip_I_O_for_Energy-Efficient_Petascale_Connectivity.pdf
+[10] https://ase.aseglobal.com/silicon-photonics/
+[11] https://insidehpc.com/2024/06/intel-demonstrates-integrated-optical-i-o-chiplet/
+[12] https://www.nature.com/articles/s44172-023-00115-x
+[13] https://www.mdpi.com/2079-9292/13/15/2890
+[14] https://www.synopsys.com/blogs/chip-design/what-is-silicon-photonics.html
+
+---
+Answer from Perplexity: pplx.ai/share
+
+# 20. Ayar Labs
+
+## 20.1 微环+激光器+波分复用 整体结构
+
+Ayar Labs' product structure involves several key components to achieve high-speed optical interconnects using micro-ring resonators. Here's a detailed explanation of how these components work together:
+
+### Components and Structure
+
+1. **Micro-Ring Modulators**
+   - **Function**: These are tiny optical structures fabricated on silicon chips, used for modulating light signals. They convert electrical data into optical signals.
+   - **Size and Efficiency**: Micro-ring modulators are significantly smaller and more efficient than traditional Mach-Zehnder modulators, allowing for higher bandwidth density and lower power consumption[6][7].
+   - **Challenges**: They are sensitive to temperature and manufacturing variations, requiring precise control circuits to ensure stability[2][7].
+
+2. **SuperNova Laser**
+   - **Function**: This is an external, multi-wavelength light source that provides the light needed for modulation. It is not integrated into the chip to simplify packaging and allow for independent evolution of the laser and transceiver technologies[6].
+   - 功能：这是一个外部多波长光源，可提供调制所需的光。它未集成到芯片中，以简化封装并允许激光器和收发器技术独立发
+  
+   - **Connection**: The laser light is coupled into the TeraPHY chiplet via a vertical grating coupler, which acts as a phased-array antenna to efficiently transfer light onto the chip[6].
+   - 连接：激光通过垂直光栅耦合器耦合到 TeraPHY 芯片中，该耦合器充当相控阵天线，将光有效地传输到芯片上
+
+3. **TeraPHY Chiplet**
+   - **Function**: This is the core component that integrates micro-ring modulators and other optical functions. It converts electrical signals into optical signals and vice versa.
+   - 功能：这是集成微环调制器和其他光学功能的核心部件。它将电信号转换为光信号，反之亦然。
+   - **Integration**: The chiplet is designed to be co-packaged with other semiconductor components using standard manufacturing processes, allowing for compact and efficient optical I/O solutions[1][8].
+   - 集成：芯片设计采用标准制造工艺与其他半导体元件共同封装，从而实现紧凑高效的光学 I/O 解决方案。
+
+4. **Wavelength Division Multiplexing (WDM)**
+   - **Function**: This technology allows multiple wavelengths of light to be transmitted over a single optical fiber, significantly increasing data transfer capacity.
+   - 功能：该技术允许通过单根光纤传输多种波长的光，显著提高数据传输容量。
+   - **Implementation**: Ayar Labs uses multiple micro-ring resonators tuned to different wavelengths to achieve WDM. Each resonator can modulate a specific wavelength, enabling the transmission of multiple data streams simultaneously[2][8].
+   - 实现方式：Ayar Labs 使用多个调谐至不同波长的微环谐振器来实现 WDM。每个谐振器可以调制特定波长，从而实现同时传输多个数据流。
+
+### Connection and Modulation Process
+
+1. **Light Emission and Coupling**
+   - The SuperNova laser emits light, which is then coupled into the TeraPHY chiplet using a vertical grating coupler.
+   - The light travels through optical waveguides on the chip.
+   - SuperNova 激光器发射光，然后使用垂直光栅耦合器将其耦合到 TeraPHY 芯片中。
+   - 光通过芯片上的光波导传播。
+
+2. **Modulation**
+   - Electrical data is converted into optical signals by the micro-ring modulators. These modulators change the phase or amplitude of the light to encode the data.
+   - The modulated light is then directed into optical fibers for transmission.
+   - 微环调制器将电数据转换成光信号。这些调制器通过改变光的相位或振幅来对数据进行编码。
+   - 然后将调制后的光导入光纤进行传输。
+
+3. **Detection**
+   - At the receiving end, micro-ring detectors convert the optical signals back into electrical signals.
+   - These detectors also function as wavelength-division demultiplexers, selecting the appropriate wavelength for each receiver[8].
+   - 在接收端，微环探测器将光信号转换回电信号。
+   - 这些探测器还可用作波分解复用器，为每个接收器选择适当的波长。
+
+### Key Technologies
+
+- **3D Packaging and EMIB**: Ayar Labs uses Intel's Embedded Multi-Interconnect Bridge (EMIB) technology for 3D packaging. This allows for short, high-speed interconnects between the silicon photonic chip and the main integrated circuit, reducing signal loss and improving performance[3].
+- 3D 封装和 EMIB：Ayar Labs 使用英特尔的嵌入式多互连桥 (EMIB) 技术进行 3D 封装。这允许硅光子芯片和主集成电路之间实现短距离、高速互连，从而减少信号损失并提高性能
+
+- **Temperature Control**: To address the temperature sensitivity of micro-ring modulators, Ayar Labs likely employs temperature control mechanisms, such as heaters, to stabilize the modulators and ensure accurate wavelength output[3][7].
+
+This architecture enables Ayar Labs to achieve high-bandwidth, low-latency optical interconnects that are crucial for advanced computing applications.
+
+Citations:
+[1] https://www.lightwaveonline.com/optical-tech/transmission/article/14188415/ayar-labs-partners-with-globalfoundries-for-optical-i-o-demo-expanded-sampling-for-co-packaged-optics
+[2] https://www.gazettabyte.com/home/2018/1/28/ayar-labs-advances-io-and-pens-globalfoundries-deal.html
+[3] https://www.fibermall.com/news/ayarlabs-nvidia.htm
+[4] https://picmagazine.net/article/118169/Corrugated_micro-ring_generates_specific_wavelengths_of_light
+[5] https://optics.org/news/11/12/10
+[6] https://www.nextplatform.com/2019/09/11/on-chip-optical-links-are-one-step-closer-to-reality/
+[7] https://semianalysis.com/2022/04/30/ayar-labs-co-packaged-optics-revolution/
+[8] https://compoundsemiconductor.net/article/112506/Super-fast_optical_interconnects
+[9] https://www.photonics.com/Articles/Understanding_In-Package_Optical_I_O_Versus/a69701
+[10] https://picmagazine.net/article/114590/Super-fast_optical_interconnects
+[11] https://www.gazettabyte.com/home/2019/9/11/ayar-labs-and-intel-add-optical-input-output-to-an-fpga.html
+[12] https://par.nsf.gov/servlets/purl/10354876
+[13] https://sclaser.mit.edu/wp-content/uploads/2022/03/1.oe-27-17-24274.pdf
+[14] https://www.mdpi.com/2079-9292/13/15/2890
+[15] https://picmagazine.net/article/112426/Ayar_Labs_Demos_Ultra-Dense_Optical_Interconnect
+[16] https://www.optica-opn.org/home/industry/2022/may/ayar_labs_bets_on_optical_i_o_for_next-gen_computi/
+[17] https://weiya711.github.io/publications/cleo2021.pdf
+[18] https://www.hpcwire.com/off-the-wire/ayar-labs-demonstrates-optical-interconnect-on-globalfoundries-photonics-manufacturing-process/
+
+---
+Answer from Perplexity: pplx.ai/share
+
+## 20.2 EMIB
+
+Ayar Labs applies Intel's Embedded Multi-Die Interconnect Bridge (EMIB) technology to connect their TeraPHY optical chiplets with Intel's Stratix 10 FPGA. Here's a detailed explanation of how this connection is made and the process involved:
+
+### Chips Connected
+
+1. **TeraPHY Chiplet**: This is Ayar Labs' optical transceiver chiplet, designed to provide high-bandwidth optical I/O for various computing components.
+   TeraPHY Chiplet：这是 Ayar Labs 的光收发器芯片，旨在为各种计算组件提供高带宽光学 I/O
+2. **Intel Stratix 10 FPGA**: A high-performance field-programmable gate array used in applications requiring programmable logic.
+   Intel Stratix 10 FPGA：一种高性能现场可编程门阵列，用于需要可编程逻辑的应用
+
+### Connection Process
+
+1. **EMIB Technology**: EMIB is a 2.5D packaging technology that embeds a sliver of silicon (the EMIB bridge) in an organic substrate where the dies sit. This bridge supports dense I/O connections between different chiplets and the main chip.
+
+2. **Interface**: The connection between the TeraPHY chiplet and the Stratix 10 FPGA is facilitated by the Advanced Interface Bus (AIB), an open-source interface standard developed by Intel. The AIB provides a wide, parallel electrical interface that is efficient for chiplet-to-chiplet communication.
+
+3. **Packaging**: The EMIB technology enables multiple chiplets to be packaged together with the FPGA on a common substrate. This enhances the overall system's performance and reduces the complexity of interconnects.
+
+### Specific Process
+
+1. **Fabrication**: The TeraPHY chiplet is fabricated using GlobalFoundries' 45nm RF SOI process, allowing for the integration of both optical and electrical components on a single chip[4][5].
+   制造：TeraPHY 芯片采用 GlobalFoundries 的 45nm RF SOI 工艺制造，允许在单个芯片上集成光学和电气元件
+
+2. **Assembly**: The TeraPHY chiplet is assembled with the Intel Stratix 10 FPGA using EMIB technology. This involves embedding the EMIB bridges in an organic substrate to connect the chiplets[1][3].
+   组装：TeraPHY 芯片组使用 EMIB 技术与英特尔 Stratix 10 FPGA 组装。这涉及将 EMIB 桥嵌入有机基板中以连接芯片组
+
+3. **Interface Configuration**: The AIB interface is configured to support 24 channels, each operating at up to 2 Gbps, resulting in a total electrical bandwidth of 960 Gbps[1][4].
+   接口配置：AIB 接口配置为支持 24 个通道，每个通道的运行速度高达 2 Gbps，总电气带宽为 960 Gbps
+
+4. **Optical I/O Operation**: The TeraPHY chiplet converts electrical signals from the FPGA into optical signals using micro-ring modulators and transmits them over optical fibers. The optical signals are modulated and demodulated using silicon photonics technology[4][5].
+   光学 I/O 操作：TeraPHY 芯片组使用微环调制器将来自 FPGA 的电信号转换为光信号，并通过光纤传输。光信号使用硅光子技术进行调制和解调
+
+### Benefits
+
+- **High Bandwidth**: The combination of EMIB and AIB allows for high-bandwidth data transfer between the TeraPHY chiplet and the FPGA.
+- **Low Latency**: The close proximity of the chiplets and the use of EMIB reduce signal latency.
+- **Scalability**: This modular approach enables easy integration of different chiplets, facilitating the development of complex systems with diverse functionalities[2][3].
+
+Citations:
+[1] https://www.gazettabyte.com/home/2019/9/11/ayar-labs-and-intel-add-optical-input-output-to-an-fpga.html
+[2] https://semianalysis.com/2022/04/30/ayar-labs-co-packaged-optics-revolution/
+[3] https://www.nextplatform.com/2019/09/11/on-chip-optical-links-are-one-step-closer-to-reality/
+[4] https://fuse.wikichip.org/news/3233/ayar-labs-realizes-co-packaged-silicon-
+[5] https://optics.org/news/10/11/28
+[6] https://community.intel.com/t5/Blogs/Products-and-Solutions/FPGA/Ayar-Labs-and-Intel-demo-FPGA-with-optical-transceivers-in-DARPA/post/1332623
+[7] https://www.aiwire.net/2019/08/20/photonics-chiplet-startup-touts-terabit-second-i-o-bandwidth-10x-lower-power/
+[8] https://insidehpc.com/2019/11/ayar-labs-joins-darpa-pipes-project-as-intel-optical-io-provider/
+[9] https://www.biospace.com/ayar-labs-selected-as-optical-solution-partner-for-intel-s-darpa-pipes-project-and-announces-customer-sampling-program
+[10] https://www.fibermall.com/news/ayarlabs-nvidia.htm
+[11] https://www.opencompute.org/chiplets/46/ayar-labs-in-package-optical-io-solution
+[12] https://quantumzeitgeist.com/ayar-labs-optical-io-solution-ai-systems/
+[13] https://www.intel.com/content/www/us/en/products/details/fpga/stratix/10.html
+[14] https://packetpushers.net/blog/chiplets-the-first-step-to-integrated-silicon-photonics-for-faster-interconnects-at-lower-cost/
+
+---
+Answer from Perplexity: pplx.ai/share
+
+视频链接
+
+<https://youtu.be/6LYx4lSpL0c>
+
+
