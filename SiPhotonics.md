@@ -57,6 +57,9 @@
     - [Connection Process](#connection-process)
     - [Specific Process](#specific-process)
     - [Benefits](#benefits)
+- [21. Nvidia](#21-nvidia)
+  - [21.1 Nvidia 推出硅光子开关，为 GPU 提供数据 20250320](#211-nvidia-推出硅光子开关为-gpu-提供数据-20250320)
+  - [21.2 GTC25 CPO Michael Liu](#212-gtc25-cpo-michael-liu)
 
 
 # 1. “信息光子器件与集成”专题概述
@@ -1519,5 +1522,111 @@ Answer from Perplexity: pplx.ai/share
 视频链接
 
 <https://youtu.be/6LYx4lSpL0c>
+
+# 21. Nvidia
+
+## 21.1 Nvidia 推出硅光子开关，为 GPU 提供数据 20250320
+
+GTC Nvidia 计划推出采用硅光子学和共封装光学器件的以太网和 InfiniBand 交换机，以推进其拥有“数百万 GPU”的数据中心的愿景，并声称这些设备可以降低功耗。
+
+这家 GPU 加速计算公司今天在加利福尼亚州圣何塞举行的GTC大会上推出了新的 Spectrum-X 和 Quantum-X 交换机，声称这些交换机将支持现场连接数百万个 GPU 的“AI 工厂”，同时大幅降低运营商的能源消耗和运营成本。
+
+其中一个关键部分来自共封装光学元件——将光学元件和硅元件集成到单个封装基板上。在网络交换机中，这通常意味着取消容纳光学元件和数字信号处理器 (DSP) 的可插拔收发器模块，而是将它们与交换机 ASIC 集成在一起。
+
+我们听说你喜欢 HBM – Nvidia 的 Blackwell Ultra GPU 拥有 288 GB 的 HBM
+更多GTC
+CPO 的优点被认为在于大大降低功耗、提高带宽和降低延迟，这主要是因为 DSP 更少并且取消了较长的铜电路轨道。
+
+Omdia 数据中心计算和网络专家 Manoj Sukumaran 对此举充满热情，称其为“真正的大事”。他告诉我们，共封装光学器件是一项“酝酿已久”的技术。该技术、供应商和标准分散在各个小公司及其定制解决方案中。
+
+“这项技术没有标准化，因此即使在超大规模 CSP 中也没有得到广泛采用。
+
+“现在，随着 Nvidia 推出 CPO，这一切都将发生巨大变化，”他表示。Sukumaran 表示，网络能源成本始终是一个大问题，对于像 Meta 这样的公司，Omdia 估计它“约占其数据中心能源费用的 30%，主要由部署的数百万个可插拔光学模块消耗。”因此，他表示 CPO“确实是一个引人注目的技术解决方案”。
+
+“从时机上讲，我相信 2026 年将是 CPO 转换成为主流的一年。”
+
+IDC EMEA 高级研究总监 Andy Buss 向The Reg表示，硅光子交换机“有可能大幅降低数据中心和大型 AI 集群及解决方案内的功耗”。
+
+Buss 补充道：“即便是今天，10G 以太网对于铜 RJ45 连接来说，每个端口的功耗仍然很高，而当我们以高数据速率使用当前的光收发器和可插拔模块时，每个模块的功耗是显而易见的——而且随着所需的网络连接数量的增加，每个模块的功耗会迅速增加，成为一个重要的耗电设备。每个收发器的功耗可能在 20W 到 40W 之间，所以这不是微不足道的——而且这不仅需要供电，还需要冷却。
+
+“随着人工智能连接能力的提升，这种情况只会随着时间的推移而变得更糟，因此需要一种新的解决方案。英特尔和其他公司长期以来一直在谈论将硅光子集成到 CPU 封装中，但这并没有从封装概​​念转化为生产产品，因此对于 NVIDIA 来说，宣布这一消息并在不久的将来上市是一件大事。”
+
+去年，光网络专家Ayar Labs向The Register表示，其认为集成光学是解决带宽瓶颈的唯一途径，能够超越单个 GPU 服务器机架进行扩展，以支持越来越大的 AI 模型。
+
+Quantum-X Photonics InfiniBand 产品将于今年晚些时候上市。这些产品将提供 144 个基于 200 Gbps SerDes 的 800 Gbps InfiniBand 端口，并采用液冷设计以带走板载硅光子器件的热量。
+
+Nvidia 声称，与上一代相比，这些交换机将为 AI 计算结构提供两倍的速度和 5 倍的可扩展性。
+
+同时，Spectrum-X Photonics 以太网产品将于 2026 年上市，并提供多种配置。其中包括 128 个 800 Gbps 端口或 512 个 200 Gbps 端口，总带宽为 100 Tbps，以及 512 个 800 Gbps 端口或 2,048 个 200 Gbps 端口，总吞吐量为 400 Tbps。
+
+据 Nvidia 披露，其硅光子功能是与多家公司合作开发的，其中最著名的是台湾半导体巨头台积电。
+
+Nvidia 甚至引用了台积电董事长兼首席执行官魏哲家的一份声明，他兴奋地表示：“台积电的硅光子解决方案结合了我们在尖端芯片制造和 TSMC-SoIC 3D 芯片堆叠方面的优势，帮助 Nvidia 释放 AI 工厂扩展到百万个 GPU 甚至更多 GPU 的能力，突破 AI 的界限。”
+
+除了自主 AI之外，“AI 工厂”也是 Nvidia 首席执行官黄仁勋最喜欢谈论的话题，他创造了这个术语来指代专门为处理计算最密集的 AI 处理任务而构建的数据中心，例如xAI 的 Colossus。期待在 GTC 期间听到更多关于这些主题的内容。
+
+黄仁勋表示：“人工智能工厂是一种规模极其庞大的新型数据中心，必须重新设计网络基础设施才能跟上步伐。”
+
+“通过将硅光子学直接集成到交换机中，Nvidia 打破了超大规模和企业网络的旧限制，并打开了百万 GPU AI 工厂的大门。”
+
+Nvidia 并不是唯一一家推出采用同封装光学器件的网络交换机的公司。Micas Networks本周宣布推出 51.2T 产品，该产品基于 Broadcom 的 51.2 Tbps Bailly CPO 交换机平台，提供 128 个 400G 以太网端口。
+
+该产品的特点是后者的 Tomahawk 5 交换机芯片直接与 8 x 6.4 Tbps 硅光子芯片级封装 (SCIP) 光学引擎耦合并共封装。Micas 表示，现在正在接受订单，并按照先到先得的原则进行交付。
+
+<https://www.theregister.com/2025/03/18/nvidia_punts_silicon_photonic_switches>
+
+## 21.2 GTC25 CPO Michael Liu
+
+📋共封装光学器件 （CPO） 幻灯片摘自 Jensen Huang 在 GTC25 上的主题演讲
+ 
+来源： 英伟达 
+ 
+📝要点：
+💬在横向扩展（使用光纤）之前，请先纵向扩展（使用铜缆;尽可能多地扩展）！
+💬更重要的是，Nvidia 是唯一一家可以帮助您（快速）启动两者的公司！
+💬TSMC 的“COUPE”包括 200Gbps/λ MRM、表面/光栅耦合 FAU、PIC 上的 3D 堆叠 EIC、ELS 和 SMF 电缆组件。
+💬这需要一个村庄！Nvidia 的 CPO 技术合作伙伴包括：Browave Corporation 、Coherent Corp. 、康宁公司 、Fabrinet 、富士康 、Lumentum 、Senko Advanced Components 、Siliconware Precision Industries （SPIL）、Sumitomo Electric 、TFC COMMUNICATION USA INC 和 台积公司 。
+💬Jensen 可以轻松解决明显的“30W/$1k//TXVR”数据移动损失，同时在舞台上稳步解开两条光缆！ 🤘
+ 
+其他资源：
+🏷️GTC2025 主题演讲：https://lnkd.in/ghhniM_f
+🏷️Nvidia Silicon Photonics：https://lnkd.in/gpzQPm6w
+🏷️在 GTC2024 上（GPU 结构：从铜缆到光纤）：https://lnkd.in/g6b5zGN3
+🏷️数据中心内链接：https://lnkd.in/gnwKyAFs
+🏷️≥800Gbps 以太网端口的爆炸式增长：https://lnkd.in/gfMFNaQw
+🏷️LPO vs. LRO vs. CPO：https://lnkd.in/gEFhycaB
+🏷️迁移到 200Gbps 通道需要 CPO：https://lnkd.in/gA_bYewj
+🏷️CPO 示例 （VI）：https://lnkd.in/gbajACdV
+🏷️CPO 示例 （VII）：https://lnkd.in/gTNtKVYe
+🏷️CPO 包装选项：https://lnkd.in/g9v53iXM
+🏷️51.2Tbps CPO 交换机：https://lnkd.in/gMP_CMAA
+🏷️两个 ULTRA 的故事：https://lnkd.in/g7AhfABb
+🏷️ IEEE 802.3df & dj： https://lnkd.in/g4uURgs6
+🏷️2026 年看起来是 Pinnacle（？）： https://lnkd.in/g_gVGJRZ
+ 
+📒缩写：
+MRM ： Micro-Ring Modulator 微环调制器
+FAU ：Fiber Array Unit（光纤阵列单元）
+EIC ：电子集成电路
+PIC ：光子集成电路
+ELS ：外部激光源
+SMF ：单模光纤
+TXVR ： 收发器
+LPO ：线性（驱动器/驱动器）可插拔光学元件
+LRO ：线性接收器/Retime（可插拔）光学器件
+ 
+👍Jensen 击中了我预期的所有（关键）笔记（除了“Kubernetes”或简称为“K8s”;我可能错了）：https://lnkd.in/ghC-EWxd
+
+![](/picture/1742435362689.jpg)
+
+![](/picture/1742435362196.jpg)
+
+<https://www.linkedin.com/feed/update/urn:li:activity:7308303617197776896/>
+
+
+
+
+
+
 
 

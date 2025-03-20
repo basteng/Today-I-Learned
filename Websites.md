@@ -77,6 +77,7 @@
 - [14. Linkedin 知名人物](#14-linkedin-知名人物)
   - [14.1 植茶雅史](#141-植茶雅史)
   - [14.2 Garal Das 半导体技术类书籍](#142-garal-das-半导体技术类书籍)
+  - [14.3 Michael Liu 半导体洞察](#143-michael-liu-半导体洞察)
 - [15. 智库](#15-智库)
   - [15.1 FDD: Foundation for Defense of Democracies](#151-fdd-foundation-for-defense-of-democracies)
 - [16. 个人博客](#16-个人博客)
@@ -485,6 +486,10 @@ https://compoundsemiconductor.net/home
 ## 14.2 Garal Das 半导体技术类书籍
 
 <https://www.linkedin.com/in/garal-das-aa895417a/>
+
+## 14.3 Michael Liu 半导体洞察
+
+<https://www.linkedin.com/in/mingliangliu/>
 
 # 15. 智库
 

@@ -27,6 +27,7 @@
 - [24. Deep distributed computing to reconstruct extremely large lineage trees](#24-deep-distributed-computing-to-reconstruct-extremely-large-lineage-trees)
 - [25. New trends in photonic switching and optical networking architectures for data centers and computing systems \[Invited\]](#25-new-trends-in-photonic-switching-and-optical-networking-architectures-for-data-centers-and-computing-systems-invited)
 - [26. In Compute/Memory Dynamic Packet/Circuit Switch Placement for Optically Disaggregated Data Centers](#26-in-computememory-dynamic-packetcircuit-switch-placement-for-optically-disaggregated-data-centers)
+- [27. Accelerated response speed of quantum-dot light-emitting diodes by hole-trap-induced excitation memory](#27-accelerated-response-speed-of-quantum-dot-light-emitting-diodes-by-hole-trap-induced-excitation-memory)
 
 20241204以后 （未下载）
 
@@ -159,6 +160,9 @@ https://opg.optica.org/jocn/abstract.cfm?uri=jocn-15-8-C288
 
 https://opg.optica.org/jocn/abstract.cfm?uri=jocn-10-7-B164
 
+# 27. Accelerated response speed of quantum-dot light-emitting diodes by hole-trap-induced excitation memory
+
+https://www.nature.com/articles/s41928-025-01350-0
 
 
 
