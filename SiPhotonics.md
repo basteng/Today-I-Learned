@@ -60,6 +60,7 @@
 - [21. Nvidia](#21-nvidia)
   - [21.1 Nvidia 推出硅光子开关，为 GPU 提供数据 20250320](#211-nvidia-推出硅光子开关为-gpu-提供数据-20250320)
   - [21.2 GTC25 CPO Michael Liu](#212-gtc25-cpo-michael-liu)
+  - [21.3 AI 的瓶颈不再是计算](#213-ai-的瓶颈不再是计算)
 
 
 # 1. “信息光子器件与集成”专题概述
@@ -1622,6 +1623,46 @@ LRO ：线性接收器/Retime（可插拔）光学器件
 ![](/picture/1742435362196.jpg)
 
 <https://www.linkedin.com/feed/update/urn:li:activity:7308303617197776896/>
+
+## 21.3 AI 的瓶颈不再是计算
+
+芯片不再是问题。
+
+在芯片之间移动数据是。
+
+这就是为什么 台积公司 和 英伟达 都在硅光子学上押下重注，硅光子学是一种直接在硅上用光速光互连取代铜线的技术。
+
+💥 为什么这很重要：
+
+→ 传统的电气互连已达到最大值。
+
+→ 光纤 I/O = Tbps 速度、更低的能量和更长的覆盖范围。
+
+→ 这就是 AI 工厂将建立的技术。
+
+➡️ TSMC 正在为这一转变构建代工骨干：
+
+→ 全硅光子学工艺 + 封装流程
+
+→ 具有 2.5D/3D 集成的共封装光学元件
+
+→ 专用的 Photonics PDK 和生态系统
+
+💥 与此同时，在 话题标签#GTC25 上，NVIDIA 刚刚大声疾呼：
+
+🌐 Quantum-X = InfiniBand 交换机，用于超高速 GPU 到 GPU 通信。
+
+🌐 Spectrum-X = 用于 AI 数据中心的以太网交换机。
+
+🔌 光学 I/O = 用光而不是电移动数据。
+
+→ 使用 200 Gb/s SerDes，NVIDIA 的目标是在未来系统中每个端口达到 1.6 Tb/s。
+
+🔋 使用共封装光学器件时，功率效率提高 3.5 倍。
+
+🚨 随着我们构建下一代 AI 工厂（训练万亿参数模型的大型 GPU 集群），光子学将成为基础设施的支柱。
+
+<https://www.linkedin.com/posts/anastasiintech_gtc25-semiconductors-nvidia-ugcPost-7309874899190255617--_4B?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
 
 
