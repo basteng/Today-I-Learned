@@ -1,6 +1,6 @@
-- [I.Introduction to the Light-Emitting Diode - 未下载](#iintroduction-to-the-light-emitting-diode---未下载)
+- [I.Introduction to the Light-Emitting Diode - 已下载](#iintroduction-to-the-light-emitting-diode---已下载)
 - [II.王磊博士论文](#ii王磊博士论文)
-- [III.李振浩博士论文](#iii李振浩博士论文)
+- [III.李振浩博士论文 - 已打印](#iii李振浩博士论文---已打印)
 - [1. Co-Designed Silicon Photonics Chip I/O for Energy-Efficient Petascale Connectivity](#1-co-designed-silicon-photonics-chip-io-for-energy-efficient-petascale-connectivity)
 - [2. AlN/GaN/AlGaN-on-Si HEMT Achieving 1.3 W/mm at 5 V for 5G FR2 Handsets](#2-alnganalgan-on-si-hemt-achieving-13-wmm-at-5-v-for-5g-fr2-handsets)
 - [3. A 0.297-pJ/Bit 50.4-Gb/s/Wire Inverter-Based Short-Reach Simultaneous Bi-Directional Transceiver for Die-to-Die Interface in 5-nm CMOS](#3-a-0297-pjbit-504-gbswire-inverter-based-short-reach-simultaneous-bi-directional-transceiver-for-die-to-die-interface-in-5-nm-cmos)
@@ -28,6 +28,9 @@
 - [25. New trends in photonic switching and optical networking architectures for data centers and computing systems \[Invited\]](#25-new-trends-in-photonic-switching-and-optical-networking-architectures-for-data-centers-and-computing-systems-invited)
 - [26. In Compute/Memory Dynamic Packet/Circuit Switch Placement for Optically Disaggregated Data Centers](#26-in-computememory-dynamic-packetcircuit-switch-placement-for-optically-disaggregated-data-centers)
 - [27. Accelerated response speed of quantum-dot light-emitting diodes by hole-trap-induced excitation memory](#27-accelerated-response-speed-of-quantum-dot-light-emitting-diodes-by-hole-trap-induced-excitation-memory)
+- [28. 10Gbps NRZ per lane data links with transferred Micro-LEDs with record BER and energy efficiency](#28-10gbps-nrz-per-lane-data-links-with-transferred-micro-leds-with-record-ber-and-energy-efficiency)
+- [29. InGaN-based micro-LEDs for display and chip-to-chip optical interconnections](#29-ingan-based-micro-leds-for-display-and-chip-to-chip-optical-interconnections)
+- [30. Heterogeneous integration of 20x10μm blue micro-LEDs/pixels on GaN HEMTs for visible light communication](#30-heterogeneous-integration-of-20x10μm-blue-micro-ledspixels-on-gan-hemts-for-visible-light-communication)
 
 20241204以后 （未下载）
 
@@ -39,7 +42,7 @@
 
 https://
 
-# I.Introduction to the Light-Emitting Diode - 未下载
+# I.Introduction to the Light-Emitting Diode - 已下载
 https://link.springer.com/book/10.1007/978-3-031-59971-2
 
 # II.王磊博士论文
@@ -48,7 +51,7 @@ https://newetds.lib.tsinghua.edu.cn/home/qh/index
 
 下拉菜单：作者 - 王磊
 
-# III.李振浩博士论文
+# III.李振浩博士论文 - 已打印
 
 https://newetds.lib.tsinghua.edu.cn/home/qh/index
 
@@ -163,6 +166,19 @@ https://opg.optica.org/jocn/abstract.cfm?uri=jocn-10-7-B164
 # 27. Accelerated response speed of quantum-dot light-emitting diodes by hole-trap-induced excitation memory
 
 https://www.nature.com/articles/s41928-025-01350-0
+
+# 28. 10Gbps NRZ per lane data links with transferred Micro-LEDs with record BER and energy efficiency
+
+https://ieeexplore.ieee.org/abstract/document/10930898
+
+# 29. InGaN-based micro-LEDs for display and chip-to-chip optical interconnections
+
+https://www.spiedigitallibrary.org/conference-proceedings-of-spie/PC13386/3035741/InGaN-based-micro-LEDs-for-display-and-chip-to-chip/10.1117/12.3035741.short?continueFlag=76c2ecbc7d5324af31a6ee9dbfafa660
+
+# 30. Heterogeneous integration of 20x10μm blue micro-LEDs/pixels on GaN HEMTs for visible light communication
+
+https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13366/133660E/Heterogeneous-integration-of-20x10-%c2%b5m-blue-micro-LEDs-pixels-on/10.1117/12.3044048.short
+
 
 
 
