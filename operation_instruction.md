@@ -30,6 +30,7 @@
 - [19. iPad 连接Raspberry Pi低延迟编程](#19-ipad-连接raspberry-pi低延迟编程)
 - [20. N26开卡](#20-n26开卡)
 - [21. Deepseek + Kimi 生成ppt](#21-deepseek--kimi-生成ppt)
+- [22. 视频转gif](#22-视频转gif)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -667,3 +668,7 @@ ZX spectrum Next 看起来很棒。然后是 8 位人的 Commander X-16，由他
 2. Kimi ppt助手，生成ppt内容，一键生成，选择模版
 
 <https://weibo.com/1842136381/PfVieEyAt>
+
+# 22. 视频转gif
+
+<https://www.aconvert.com/video/>
