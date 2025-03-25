@@ -140,6 +140,7 @@
       - [37.4.1.1 玻璃基板](#37411-玻璃基板)
       - [37.4.1.2 混合键合：半导体互连的下一个前沿](#37412-混合键合半导体互连的下一个前沿)
       - [37.4.1.3 CoWoS](#37413-cowos)
+      - [37.4.1.4 CoWoS家族介紹](#37414-cowos家族介紹)
     - [37.4.2 IEEE HIR（异构集成路线图）“WLP 扇入和扇出”](#3742-ieee-hir异构集成路线图wlp-扇入和扇出)
     - [37.4.3 台积电CoWos客户分布](#3743-台积电cowos客户分布)
   - [37.5 Equipment](#375-equipment)
@@ -2724,6 +2725,36 @@ AI/ML 加速器
 ![](/picture/1742798662339.jpg)
 
 <https://www.linkedin.com/posts/abhishek-singh-47a153176_tsmc-cowos-semiconductorpackaging-activity-7309827404229746688-0lt7?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+#### 37.4.1.4 CoWoS家族介紹
+
+<先進封裝> CoWoS家族介紹
+內容稍深，可能要業內稍微接觸過的人才看得懂。
+
+这个技术正在改变超高性能计算的未来!
+https://lnkd.in/gjiSa2jc
+第五代CoWoS®-S的晶圆级系统集成
+https://lnkd.in/gGztfhtd
+CoWoS-L Architecture
+https://lnkd.in/gzR8HsMQ
+CoWoS-R（plus)
+https://lnkd.in/gfv-3zSa
+突破电源瓶颈：CoWoS异构集成中的高可靠硅中介层深沟槽电容器技术
+https://lnkd.in/g2EyreAP
+DTC的电气性能(一)
+https://lnkd.in/gDqWhDUB
+DTC的电气性能(二)
+https://lnkd.in/gYNku_UE
+DTC的工艺流程与关键参数
+https://lnkd.in/g5MVJ-Ph
+Silicon interposer工艺流程简介
+https://lnkd.in/gvneqRyJ
+2.5D Silicon interposer的四种封装方法（一）
+https://lnkd.in/gimMgfVK
+2.5D Silicon interposer的四种封装方法（二）
+https://lnkd.in/gYbBre9W
+
+<https://www.linkedin.com/posts/activity-7309994491627651073-qO0H?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
 ### 37.4.2 IEEE HIR（异构集成路线图）“WLP 扇入和扇出”
 
