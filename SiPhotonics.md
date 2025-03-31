@@ -61,6 +61,8 @@
   - [21.1 Nvidia 推出硅光子开关，为 GPU 提供数据 20250320](#211-nvidia-推出硅光子开关为-gpu-提供数据-20250320)
   - [21.2 GTC25 CPO Michael Liu](#212-gtc25-cpo-michael-liu)
   - [21.3 AI 的瓶颈不再是计算](#213-ai-的瓶颈不再是计算)
+- [22. RANOVUS](#22-ranovus)
+  - [22.1 OFC 2025](#221-ofc-2025)
 
 
 # 1. “信息光子器件与集成”专题概述
@@ -1664,6 +1666,20 @@ LRO ：线性接收器/Retime（可插拔）光学器件
 
 <https://www.linkedin.com/posts/anastasiintech_gtc25-semiconductors-nvidia-ugcPost-7309874899190255617--_4B?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
+# 22. RANOVUS
+
+## 22.1 OFC 2025
+
+共封装光学器件 （CPO） 现已被确认为扩展 AI 计算集群的首选技术 - RANOVUS Inc. XPU CPO、博通 和 英伟达 以太网/InfiniBand 交换机 CPO。 RANOVUS Inc. 一直专注于用 ODIN CPO 取代铜，以扩展 GPU 互连，而 博通 和 英伟达 正在解决用 CPO 替换光模块的问题，以高效扩展 AI 网络。
+
+这次 OFC Conference 将是非凡的。下周来旧金山与我们会面，讨论您的需求，并了解 RANOVUS Inc. 如何帮助您进入 AI 平台的 CPO。
+ 
+📍 欢迎莅临 #6273 展位
+📅 2025 年 3 月 31 日至 4 月 3 日
+
+![](/picture/1743171093196.jpg)
+
+<https://www.linkedin.com/posts/hamidarabzadeh_ofc-industrytrend-ai-activity-7311399421412290560-d8VN?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
 
 
