@@ -63,6 +63,9 @@
   - [21.3 AI 的瓶颈不再是计算](#213-ai-的瓶颈不再是计算)
 - [22. RANOVUS](#22-ranovus)
   - [22.1 OFC 2025](#221-ofc-2025)
+- [23. OFC2025](#23-ofc2025)
+  - [23.1 Optica Executive Forum 的亮点：](#231-optica-executive-forum-的亮点)
+  - [23.2 Marvell 展示用于 AI 网络中低功耗、机架级互连的硅光子光引擎](#232-marvell-展示用于-ai-网络中低功耗机架级互连的硅光子光引擎)
 
 
 # 1. “信息光子器件与集成”专题概述
@@ -1681,6 +1684,40 @@ LRO ：线性接收器/Retime（可插拔）光学器件
 
 <https://www.linkedin.com/posts/hamidarabzadeh_ofc-industrytrend-ai-activity-7311399421412290560-d8VN?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
+# 23. OFC2025
+
+## 23.1 Optica Executive Forum 的亮点：
+
+--两年后，数据中心光学器件的行业标准仍将是每通道 3.2T/400G 的可插拔模块。届时，铜仍将是固定装置。但是，迈威迩 Loi Nguyen, PhD 表示，在未来几年内，“您将看到 1MW 机架中的光学扩展”服务器。
+
+--博通 Manish Mehta 表示，该公司在其 CPO 开关上增加了一个防尘器，以减少停机时间。
+
+--LightCounting Market Research Vladimir Kozlov 祝贺他有足够的田间时间来积累一层灰尘。
+
+-- Mark Lutkowitz 预测 CPO 与 VCSEL 结合使用时会起飞，从而获得了最多的掌声。
+
+--与此同时，Astera Labs 的 Adithyaram (Adit) Narasimha 为观众提供了一张方便的幻灯片，概述了光学何时取代铜。（见下文）。简而言之，当距离和性能需要时。
+
+![](/picture/1743458382222.jpg)
+
+<https://www.linkedin.com/posts/michael-kanellos-20b803_highlights-from-the-optica-executive-forum-ugcPost-7312594474281357312-FFWE?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+## 23.2 Marvell 展示用于 AI 网络中低功耗、机架级互连的硅光子光引擎
+
+高度集成的光学引擎可降低高带宽 LPO 和板载光学器件的功率并减少延迟
+1.6T 光引擎包含线性驱动器、TIA 和支持每通道 200 Gbps 的硅光子芯片，并在单个封装中集成嵌入式微控制器和固件
+1.6T 光引擎在 OFC 2025 上以 1.6T OSFP LPO 模块进行了演示，可简化系统集成并加快机架式 AI 服务器部署的上市时间
+加州圣克拉拉，2025 年 3 月 31 日 —  数据基础设施半导体解决方案领导厂商Marvell Technology, Inc. ( NASDAQ: MRVL) 将在 OFC 2025 上展示其集成到线性驱动可插拔光学器件 (LPO) 模块中的 1.6T 硅光子光引擎。新产品是 Marvell® 光引擎系列中的第二款产品，该系列还包括在 OFC 2024 上展示的用于共封装光学器件 (CPO) 的 6.4T 光引擎。1.6T 光引擎专为满足下一代 AI 扩展网络要求而设计，支持八通道 200 Gbps PAM4 光互连和基于标准的信令 (1.6T DR8)。该引擎功耗低且集成度高，可用于 LPO 模块或直接集成到系统中，以帮助克服无源铜互连的覆盖范围限制，实现中等密度机架规模连接。通过提供单一封装引擎和经过验证的参考设计，Marvell 为其生态系统合作伙伴提供了一条快速实现 LPO 模块商业化的途径。1.6T 光引擎进一步为超大规模客户开发 CPO 系统奠定了基础。
+
+对于 1.6T 可插拔应用，光引擎为生态系统模块供应商和超大规模企业提供了灵活性和加速上市时间。随着 AI 扩展域从机架规模扩大到行规模，扩展结构将从无源铜互连过渡到定制和优化的光学器件。即使在机架规模下，对于中等计算密度的机架，每通道 200G 的 LPO 也可以作为无源铜的替代品，提供比铜更低的功耗、更低的延迟和更长的覆盖范围。在引入集成 CPO 的 XPU 之前，LPO 模块和板载光学器件可以满足每通道 200 Gbps 速率的行规模覆盖范围要求。
+
+新的光引擎是 6.4T 光引擎的四分之一规模实现。与其前代产品一样，1.6T 光引擎是一款高度集成的设备，具有 200G 电气和光学接口。在典型工作条件下测量，其每比特功耗（包括激光功率）不到 5 皮焦耳 (pJ/bit)。1.6T 光引擎将数百个组件（如调制器、光电探测器、调制器驱动器、跨阻放大器 (TIA)、微控制器和大量其他无源组件）整合在一个封装中，并针对 LPO 模块、发射器重定时光学器件和完全重定时光学模块等可插拔器件进行了优化。
+
+Marvell 云平台营销副总裁 Josef Berger 表示：“Marvell 正利用其 1.6T 光引擎推动节能型 AI 规模化发展，为模块供应商和超大规模企业提供可部署的解决方案。随着规模化领域从铜缆到光纤的长期过渡，Marvell 已做好准备，共同开发高密度、行级规模化领域所需的定制 CPO 系统。”
+
+LightCounting 首席执行官兼首席分析师 Vlad Kozlov 表示：“1.6T 光学器件需求强劲，但功耗仍然是一个挑战。线性驱动可插拔器件为客户提供了更低功耗的选择，并完善了 Marvell 的 1.6T 互连产品组合。”
+
+<https://www.marvell.com/company/newsroom/marvell-demonstrates-silicon-photonics-light-engine-for-low-power-rack-scale-interconnect-in-ai-networks.html?utm_source=li&utm_medium=pr&utm_campaign=lpo-demo>
 
 
 
