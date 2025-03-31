@@ -57,6 +57,7 @@
 - [49. 水在大部分电磁波谱中是不透明的，除了可见光](#49-水在大部分电磁波谱中是不透明的除了可见光)
 - [50. 麻省理工的一门新的公开课：《如何用AI（几乎）做任何事》](#50-麻省理工的一门新的公开课如何用ai几乎做任何事)
 - [51. "普通 "工程师才是打造优秀团队的关键](#51-普通-工程师才是打造优秀团队的关键)
+- [52. 去做那件让你充满生命力的事](#52-去做那件让你充满生命力的事)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2323,5 +2324,30 @@ mit-mi.github.io/how2ai-course/spring2025/
 这样的团队，才真正值得每一位工程师向往。
 
 <https://refactoring.fm/p/in-praise-of-normal-engineers?continueFlag=8757b25c52b8d990845a1b45fc74c2c2>
+
+# 52. 去做那件让你充满生命力的事
+
+[Do What Makes You Come Alive]
+
+In mid-March, I finally submitted the complete manuscript of my very first book to the publisher. For the past three months, I spent every morning facing the vast, quiet mountains — brewing a cup of green tea, diving into research, reflecting deeply, and then writing one to two thousand words.
+
+There were moments, especially when writing something that truly resonated with me, when I felt a spark ignite within — a surge of energy rising from deep inside, almost beyond words. For me, whether it’s writing or public speaking, it feels like a natural release of vitality — a way for life itself to express through me.
+
+As humanistic psychologist Carl Rogers once said, every person is born with an innate tendency toward growth, goodness, and wholeness. This force isn’t driven by external rewards or imposed by others — it emerges from within, as naturally as a tree grows toward sunlight, a kitten explores the world by instinct, or a baby learns to crawl, stand, and speak without being told. Within each of us lies that same inner vitality — a life force that longs to unfold and evolve.
+
+So how can you tell if something truly awakens your inner vitality? When an activity gives you a sustained sense of flow and energizes you mentally and emotionally, chances are it’s powered by intrinsic motivation. As writer Howard Thurman famously said:
+“Don’t ask what the world needs. Ask what makes you come alive, and go do it. Because what the world needs is people who have come alive.”
+
+【去做那件让你充满生命力的事】
+
+✍️3月中旬，我终于把人生第一本书的稿件交给了出版社。在过去的三个月里，每天上午对着空旷的大山，泡一杯茶，查资料、沉思，然后敲下一两千字。
+
+✨当写到共鸣强烈的段落时，常常有种内在火花被点燃的感觉——那是一种很难用语言形容的、从心底涌出的能量。对我而言，无论是写作还是公开演讲，都是一种生命力的自主释放。
+
+🍃正如人本主义心理学家卡尔·罗杰斯所言，每个人天生都拥有一种向善、向上、向完整发展的力量。这不是外部奖赏驱动，也不是他人指令强加的，而是一种从生命深处自然涌现的内在动力。就像一棵树向阳而生，一只小猫本能地探索世界，一个婴儿无需催促便会学会爬行、站立、说话——我们人类的内在，也同样有这种持续生长、自我展开的内在生命力。
+
+🌟那么，怎么判断一件事是否唤醒了你的生命力？当你做一件事情能持续获得全情投入感、精神高能量，大概率是内在动机。正如作家霍华德·瑟曼所说的一句经典名言：“Don’t ask what the world needs. Ask what makes you come alive, and go do it. Because what the world needs is people who have come alive. 不要问世界需要什么。问你自己：什么让你充满生命力，然后去做。因为这个世界真正需要的，是那些真正充满生命力的人。”
+
+<https://www.linkedin.com/posts/xiaxue1995_writer-book-chinese-activity-7312295986398171137-b1L4?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
 
