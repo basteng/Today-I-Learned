@@ -31,6 +31,7 @@
 - [28. 10Gbps NRZ per lane data links with transferred Micro-LEDs with record BER and energy efficiency](#28-10gbps-nrz-per-lane-data-links-with-transferred-micro-leds-with-record-ber-and-energy-efficiency)
 - [29. InGaN-based micro-LEDs for display and chip-to-chip optical interconnections](#29-ingan-based-micro-leds-for-display-and-chip-to-chip-optical-interconnections)
 - [30. Heterogeneous integration of 20x10μm blue micro-LEDs/pixels on GaN HEMTs for visible light communication](#30-heterogeneous-integration-of-20x10μm-blue-micro-ledspixels-on-gan-hemts-for-visible-light-communication)
+- [31. An Ultra-Compact CPO Transceiver based on 1060-nm Single-Mode VCSEL Array and Multi-Core Fibre](#31-an-ultra-compact-cpo-transceiver-based-on-1060-nm-single-mode-vcsel-array-and-multi-core-fibre)
 
 20241204以后 （未下载）
 
@@ -178,6 +179,10 @@ https://www.spiedigitallibrary.org/conference-proceedings-of-spie/PC13386/303574
 # 30. Heterogeneous integration of 20x10μm blue micro-LEDs/pixels on GaN HEMTs for visible light communication
 
 https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13366/133660E/Heterogeneous-integration-of-20x10-%c2%b5m-blue-micro-LEDs-pixels-on/10.1117/12.3044048.short
+
+# 31. An Ultra-Compact CPO Transceiver based on 1060-nm Single-Mode VCSEL Array and Multi-Core Fibre
+
+https://www.vde-verlag.de/proceedings-de/456426481.html
 
 
 
