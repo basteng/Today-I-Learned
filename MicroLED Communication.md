@@ -190,6 +190,7 @@
   - [56.1 New Prospects of Optical Wireless Communication Systems Exploiting VCSEL-based Transmitters](#561-new-prospects-of-optical-wireless-communication-systems-exploiting-vcsel-based-transmitters)
     - [56.1.2 参考文献10 - Demonstrating Intra-Spacecraft Optical Wireless Links](#5612-参考文献10---demonstrating-intra-spacecraft-optical-wireless-links)
   - [56.2 Multi-Gbit/s LiFi Experiments with a VCSEL TX and an Enhanced Pulsed Modulation PHY](#562-multi-gbits-lifi-experiments-with-a-vcsel-tx-and-an-enhanced-pulsed-modulation-phy)
+  - [56.3 面向下一代数据中心网络的 VCSEL 技术最新进展](#563-面向下一代数据中心网络的-vcsel-技术最新进展)
 - [57. SERDES](#57-serdes)
   - [57.1 开发 SERDES 类似于 mini-SOC](#571-开发-serdes-类似于-mini-soc)
   - [57.2 基于 PAM4 的设计中的误码率 （BER）](#572-基于-pam4-的设计中的误码率-ber)
@@ -4881,6 +4882,23 @@ https://www.santannapisa.it/it/giulio-cossu?f%5B0%5D=pubblicazioni_persona_con_f
     - **基于LED的实验**：8b10b在低符号率且无FDE时性能较好，但使用FDE后，所有编码技术性能提升，可省略8b10b以降低开销。CP长度对FDE性能影响与符号率相关，$N_{CP}=\frac{1}{8} N_{B}$是较优选择。简化的FDE插值在高符号率下可行。
     - **基于VCSEL的实验**：覆盖测量显示，发射机在2.5m距离处可覆盖$4.32m^{2}$区域。线路编码和均衡器实验表明，均衡器对性能影响大于线路编码，64b66b和TDE组合可实现4Gbit/s净数据速率。带宽评估发现，使用高带宽接收机可提升数据速率，显示出开发高带宽、高灵敏度接收机的重要性。
 6. **研究结论**：64b66b和64b67b线路码可降低PM-PHY开销且对性能影响小。基于LED的实验表明8b10b可被有效均衡器替代，同时需要更多CP长度选项；基于VCSEL的实验实现了高达4.25Gbit/s的数据速率和大区域覆盖，为LiFi实际部署提供了可能。未来需开发高性能接收机推动LiFi发展。 
+
+## 56.3 面向下一代数据中心网络的 VCSEL 技术最新进展
+
+![](/picture/Modulation%20Bandwidths%20and%20Bit%20Rates%20of%20VCSELs.png)
+
+<https://www.opticsjournal.net/Articles/OJff0183d301780311/FullText#Tab_1>
+
+[9] VCSEL: born small and grown big
+
+<https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11263/2554953/VCSEL-born-small-and-grown-big/10.1117/12.2554953.full>
+
+[10]High Speed VCSEL Technology and Applications
+
+摘要：
+历史上，距离可达 100-300 米的光纤链路由光谱范围为 850 nm 的发光器件与多模玻璃光纤 (MMF) 组合而成。随着硅片的不断缩小，单通道数据速率每 24 个月翻一番。发光二极管必须被垂直腔面发射激光器 (VCSEL) 取代，数据速率从 100 Mb/s 提高到 10 Gb/s。在更高的数据速率下，进一步缩小会出现问题。为了避免崩溃，发明并应用了一种反波导 VCSEL 腔体设计，目前它为每通道高达 50-100 Gb/s 的数据链路提供服务。数据通信的另一个要求是带宽密度扩展，每条链路的通道数每 10 年增加约 5 倍，同时保持相似的连接器空间。引入了一种粗短波分复用，允许在单个 MMF 中使用 850 nm、880 nm、910 nm 和 940 nm 波长。通过使用耦合到片上 VCSEL 阵列的多芯光纤 (MCF) 也可以增加带宽密度。850nm VCSEL 已经达到了高达 224 Gb/s 的数据速率。在这样的数据速率下，只有通过应用超窄谱 VCSEL 来最大限度地减少色散效应，才有可能在 MMF 上实现显著的传输距离。片上氧化物限制 VCSEL 微型阵列可以实现与 MMF 的高耦合效率、窄光谱、高功率以及高数据速率下的显著传输距离。这种阵列中的相干激光允许光子-光子共振工程，旨在实现调制带宽 ∼50-100 GHz。
+
+<https://ieeexplore.ieee.org/document/9707862>
 
 # 57. SERDES
 
