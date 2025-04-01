@@ -81,6 +81,7 @@
   - [5.39 专利：适用于交换机应用的光互连](#539-专利适用于交换机应用的光互连)
   - [5.40 用于并行光互连的光纤束](#540-用于并行光互连的光纤束)
   - [5.41 Interconnect networks using microled-based optical links](#541-interconnect-networks-using-microled-based-optical-links)
+  - [5.42 OFC 2025](#542-ofc-2025)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -2280,6 +2281,32 @@ LED 的效率取决于辐射复合率与俄歇复合率和陷阱复合率之比�
 附图简要说明
 
 <https://patents.google.com/patent/US20240235697A9/en>
+
+## 5.42 OFC 2025
+
+2025 年 3 月 31 日 2025 年新闻稿精选新闻稿新闻稿
+
+Avicena 宣布推出模块化 LightBundle™ 光学互连平台，I/O 密度 > 1Tbps/mm，功耗 < 1pJ/bit
+
+Avicena 推出其模块化 LightBundle 互连平台，该平台基于 microLED，具有业界领先的功率效率和密度，旨在打造 AI 扩展网络
+
+加利福尼亚州旧金山 — 2025 年 3 月 31 日 —总部位于加利福尼亚州桑尼维尔的 Avicena 将在加利福尼亚州旧金山举行的 OFC 2025 上宣布推出其新的可扩展 LightBundle TM互连平台 ( https://www.ofcconference.org/en-us/home/)。LightBundle支持 > 1Tbps/mm 的海岸线密度，并将超高密度芯片到芯片 (D2D) 连接扩展到 > 10 米，同时实现一流的亚 pJ/bit 能效。这将使 AI 扩展网络能够支持跨多个机架的大型 GPU 集群，消除当前铜互连的覆盖范围限制，同时大幅降低功耗。
+
+日益复杂的人工智能模型正在推动对计算和内存性能的需求空前激增，需要更高密度、更低功耗和更长距离的互连，以实现处理器到处理器 (P2P) 和处理器到内存 (P2M) 的连接。
+
+“在 Avicena，我们很高兴宣布基于 LightBundle 技术的模块化、超低功耗、可扩展的芯片互连。通过与超大规模数据中心合作伙伴的合作，我们优化了平台，以满足未来 Scale Up 网络中大型 GPU 集群的特定需求。我们支持大于 1Tbps/mm 的海岸线密度，功率效率至少比竞争解决方案高出 5 倍。”
+
+— Avicena 创始人兼首席执行官 Bardia Pezeshki
+
+在 AI 数据中心的扩展领域，计算集群中的 GPU 密集互连，这是需求最高的领域。目前，典型的扩展互连是无源铜缆，其覆盖范围限制在约 1 米，将 GPU 集群限制在单个机架中。LightBundle 互连将覆盖范围扩展到 10 米以上，使单个集群能够扩展到多个机架上的数百甚至数千个 GPU。同时，LightBundle 大大降低了这些互连的功耗，大大减轻了电力输送和冷却负担。
+
+LightBundle 互连是一种基于模块化收发器芯片组的架构。收发器芯片组包含集成的 microLED 和 PD 阵列，这些阵列通过多核光纤束连接到其他 LightBundle 收发器芯片组。它们支持密集、低功耗 D2D 接口，例如 UCIe 或 BOW。LightBundle 芯片组收发器非常适合各种封装架构，包括共封装光学器件 (CPO)、板载光学器件 (OBO) 和可插拔光学模块以及有源光缆 (AOC)。与硅光子学不同，LightBundle 接口可以集成到来自各种代工厂的几乎任何 IC 工艺上。
+
+Avicena 联合创始人兼首席执行官 Bardia Pezeshki 表示：“在 Avicena，我们很高兴宣布基于 LightBundle 技术的模块化、超低功耗、可扩展的芯片互连。通过与超大规模数据中心合作伙伴合作，我们优化了平台，以满足未来 Scale Up 网络中大型 GPU 集群的特定需求。我们支持大于 1Tbps/mm 的海岸线密度，功率效率至少比竞争解决方案高出 5 倍。”
+
+InflectionPoint Research 创始人兼执行合伙人 Michael Fox 表示：“随着生成式 AI 的不断发展，高带宽密度、低功耗和低延迟互连在扩展网络中的作用不容小觑。Avicena 基于 microLED 的互连技术有可能在超大规模 AI 扩展网络领域带来范式转变。”
+
+<https://avicena.tech/avicena-announces-modular-lightbundle-optical-interconnect-platform-with-1tbps-mm-i-o-density-and-1pj-bit/>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
