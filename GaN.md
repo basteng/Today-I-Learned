@@ -117,6 +117,7 @@
 - [36. GaN 互补逻辑电路构建块 - 类似CMOS？](#36-gan-互补逻辑电路构建块---类似cmos)
 - [37. 专利](#37-专利)
   - [37.1 KnowMade](#371-knowmade)
+- [38. 英飞凌与英诺赛科之间 GaN 专利战的突发新闻](#38-英飞凌与英诺赛科之间-gan-专利战的突发新闻)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -2182,3 +2183,16 @@ GaN 技术最近的专利活动凸显了其在半导体创新中的关键作用�
 这正是我们的GaN 专利监控服务为 GaN 公司展现其全部潜力的地方。我们的专家重点介绍关键进展，揭示通过专利情况产生影响的公司，以便您随时了解技术生态系统。
 
 <https://www.knowmade.com/technology-news/press-release/gan-companies-consolidate-their-patent-portfolios-in-q4-2024-through-patent-filing-surge-and-recent-acquisitions/>
+
+# 38. 英飞凌与英诺赛科之间 GaN 专利战的突发新闻
+
+Infineon v.Innoscience：美国国际贸易委员会调查
+
+英飞凌与英诺赛科之间 GaN 专利战的突发新闻
+
+1 项专利到期，3 项专利到期：昨天，英飞凌提交了一项动议，要求撤回其针对 Innosciene 的美国国际贸易委员会案件中对美国专利号 8,264,003 的所有主张权利要求，只剩下 3 项专利正在调查中。 
+
+'003 专利针对合并的“级联晶体管电路”，需要一对 e 型和 d 型 FET。正如去年夏天在我们的网络研讨会上所讨论的那样，Infineon 正在阅读 Innoscience 使用一对 e-mode FET 的产品的专利。毫不奇怪，该专利在浪费了大量精力后最终被撤回诉讼。请参阅我们随附的 2024 年网络研讨会幻灯片。
+
+
+<https://www.linkedin.com/posts/davidradulescu_radip-gan-patent-war-webinar-re-infineons-ugcPost-7313181021561106432-zyVi?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
