@@ -5502,3 +5502,4 @@ FP 激光器是短距离、低带宽系统的低成本解决方案。同时，MZ
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/High-Speed%20Serial%20IO%20Made%20Simple.pdf>
 
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/High%20Speed%20Serial%20IOs.pdf>
