@@ -2194,5 +2194,6 @@ Infineon v.Innoscience：美国国际贸易委员会调查
 
 '003 专利针对合并的“级联晶体管电路”，需要一对 e 型和 d 型 FET。正如去年夏天在我们的网络研讨会上所讨论的那样，Infineon 正在阅读 Innoscience 使用一对 e-mode FET 的产品的专利。毫不奇怪，该专利在浪费了大量精力后最终被撤回诉讼。请参阅我们随附的 2024 年网络研讨会幻灯片。
 
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/GaN%20patent%20war.pdf>
 
 <https://www.linkedin.com/posts/davidradulescu_radip-gan-patent-war-webinar-re-infineons-ugcPost-7313181021561106432-zyVi?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>

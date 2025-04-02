@@ -32,6 +32,7 @@
   - [4.24 Ayar产品用于内存分解 memory disaggregation](#424-ayar产品用于内存分解-memory-disaggregation)
   - [4.25 A Hybrid Machine Learning and Numeric Optimization Approach to Analog Circuit Deobfuscation](#425-a-hybrid-machine-learning-and-numeric-optimization-approach-to-analog-circuit-deobfuscation)
   - [4.26 Modeling and Simulation of Silicon Photonics Systems in SystemVerilog/XMODEL](#426-modeling-and-simulation-of-silicon-photonics-systems-in-systemverilogxmodel)
+  - [4.27 光纤网络中的 UCIe](#427-光纤网络中的-ucie)
 - [5. Avicena](#5-avicena)
   - [5.1《High Bandwidth GaN-based Micro-LEDs at Temperatures up to 400°C》](#51high-bandwidth-gan-based-micro-leds-at-temperatures-up-to-400c)
   - [5.2 硅光子学联合封装。 凉！ 但它实用吗？Bardia Pezeshki post at Linkedin](#52-硅光子学联合封装-凉-但它实用吗bardia-pezeshki-post-at-linkedin)
@@ -1164,6 +1165,48 @@ DD Jain, G Zhao, RK Datta, K Shamsi - Proceedings of the 30th Asia and South …
 ## 4.26 Modeling and Simulation of Silicon Photonics Systems in SystemVerilog/XMODEL
 
 <https://dl.acm.org/doi/pdf/10.1145/3658617.3703934>
+
+## 4.27 光纤网络中的 UCIe
+
+随着人工智能的快速发展，半导体行业正在经历新的机遇，对有效且可互操作的芯片解决方案的需求不断增长。就在光纤通信会议和展览会 (OFC) 2025 会议召开前夕，通用芯片互连快线™ ( UCIe ™)Ayar Labs是德科技网络和数据中心解决方案高级总监 Brig Asay和Alphawave Semi产品营销和管理副总裁 Letizia Giuliano讨论了 UCIe 技术的优势、Chiplet 技术在光网络和数据中心互连中的应用等。联盟成员Ayar Labs商业运营副总裁 Terry Thorn、是德科技网络和数据中心解决方案高级总监 Brig Asay和Alphawave Semi产品营销和管理副总裁 Letizia Giuliano讨论了 UCIe 技术的优势、小芯片技术在光网络和数据中心互连中的应用等。
+
+
+除了互操作性之外，使用 UCIe 还能带来哪些优势？
+
+
+Terry Thorn，Ayar Labs： 随着半导体行业越来越多地使用芯片，UCIe 对于确保我们拥有一致的芯片间互连标准至关重要。这种基于标准的方法支持硅片前互操作性测试套件，并确保工程资源的努力能够扩展到更广泛的市场，因为他们将设计工作重点放在广泛的行业采用上，而不是定制工作上。 
+
+ 
+
+是德科技的 Brig Asay： 随着人工智能和其他计算密集型工作负载的不断增加，人们在不牺牲性能的情况下也同样需要提高能源效率。UCIe 非常适合高 Tbps/mm 性能，同时以亚 pJ/bit 效率为目标。UCIe 引入了 3D 集成规范，这将进一步提高效率。无论是延长移动设备的电池寿命还是降低数据中心的功耗，半导体行业都必须采取更多措施来提高效率，而 UCIe 完全有能力满足这些需求。
+
+ 
+
+可扩展性可能是最重要的优势之一，它可以适应不同的工艺节点、架构、用例和性能指标。事实上，芯片内的功能以不同的方式扩展，并针对某些工艺节点进行了优化。数字逻辑倾向于使用较小的节点尺寸，以节省功耗并实现高密度集成。相比之下，模拟模块通常不会从迁移到最新节点尺寸中受益。这种混合架构可以通过 UCIe 等标准更快地实现，因为有灵活的封装类型可以为设计人员提供灵活性。这种灵活性扩展到从开放生态系统中整合第三方 IP，如果双方遵循相同的 UCIe 标准，交钥匙解决方案可以加快上市时间。
+
+ 
+
+您如何看待 UCIe 满足光纤网络和数据中心互连的未来需求？
+
+
+Terry Thorn，Ayar Labs： 大规模人工智能推动了数据中心服务器机架间连接数百和数千个计算芯片的需求。Ayar Labs TeraPHY™ 光学芯片组采用符合 UCIe 标准的电气接口构建，可用于延长封装之间的距离，并将充当与协议无关的重定时器，使用光学技术消除距离障碍，同时使用 UCIe 作为芯片组之间的 PHY 层。
+
+ 
+
+是德科技的 Brig Asay： 数据中心面临的挑战之一是高计算密度和总带宽要求。UCIe 和其他芯片到芯片互连以及设备集成度的不断扩展，使设备性能得到了显着提升。但是，这种芯片到芯片通信仅在单个设备封装内进行。芯片到芯片、芯片到模块和机架到机架通信的延迟和带宽扩展程度不如芯片技术。最近发布的共封装光学器件 (CPO) 和其他基于硅光子学 (SiPh) 的解决方案为最终更广泛地采用电气和光学 UCIe 链路铺平了道路。这种计算分解需要芯片内和芯片间互连性能的均衡。
+
+ 
+
+Letizia Giuliano，Alphawave Semi：UCIe 提供了一种极其节能的接口，用于将计算、内存等卸载到 I/O，它可以与硅光子学或其他光电设备耦合，以扩展端点的覆盖范围。当我们期待 448G SerDes I/O 来实现下一代 AI 架构时，我们不知道该架构会是什么样子，但通过在计算或高基数交换机上使用 UCIe，人们可以轻松地在用于短距离的电气共封装铜 I/O 解决方案或用于较长距离的共封装光学 I/O 芯片（如横向扩展网络）之间切换。
+
+ 
+
+UCIe 如何支持您扩展光学 I/O 解决方案的努力？
+
+
+Letizia Giuliano，Alphawave Semi： 铜基电气连接在连接芯片时具有固有的距离限制。UCIe 兼容性使 PHY 能够优化为光学应用的重定时器。通过利用可插拔光学器件，连接可以扩展到数百米，而不会出现铜互连常见的信号损失。这种方法支持沿同一物理海岸线进行高带宽、低延迟和节能的光学数据传输。
+
+<https://www.uciexpress.org/post/ucie-in-optical-networking>
 
 # 5. Avicena
 
