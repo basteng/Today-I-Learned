@@ -5496,3 +5496,5 @@ FP 激光器是短距离、低带宽系统的低成本解决方案。同时，MZ
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Modelling%2Band%2BDesign%2Bof%2BHigh-Speed%2BWireline%2BTransceivers%2Bwith%2BFully-Adaptive%2BEqualization.pdf>
 
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/lecture8_ee720_rxeq.pdf>
+
