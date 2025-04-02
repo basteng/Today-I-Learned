@@ -211,6 +211,8 @@
 - [75. LPO](#75-lpo)
   - [75.1 线性可插拔光学器件可节省数据中心的能源](#751-线性可插拔光学器件可节省数据中心的能源)
 - [76. 了解收发器中不同类型的发射器：EML、VCSEL、DFB、FP 和 MZM](#76-了解收发器中不同类型的发射器emlvcseldfbfp-和-mzm)
+- [77. 光学IO](#77-光学io)
+  - [77.1 High-Speed Links Circuits and Systems Spring 2023](#771-high-speed-links-circuits-and-systems-spring-2023)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -5485,3 +5487,10 @@ FP 激光器是最简单的半导体激光器，以法布里-珀罗谐振腔命�
 FP 激光器是短距离、低带宽系统的低成本解决方案。同时，MZM 则用于需要精确调制和长距离高数据速率的先进高性能系统。
 
 通过了解每种发射器类型的优势和局限性及其相应的光纤兼容性，网络设计人员可以为其特定应用选择最佳解决方案，确保高效可靠的光通信系统。
+
+# 77. 光学IO
+
+## 77.1 High-Speed Links Circuits and Systems Spring 2023
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/lecture15_ee720_optical_io.pdf>
+
