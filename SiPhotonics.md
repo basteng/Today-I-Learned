@@ -66,6 +66,8 @@
 - [23. OFC2025](#23-ofc2025)
   - [23.1 Optica Executive Forum 的亮点：](#231-optica-executive-forum-的亮点)
   - [23.2 Marvell 展示用于 AI 网络中低功耗、机架级互连的硅光子光引擎](#232-marvell-展示用于-ai-网络中低功耗机架级互连的硅光子光引擎)
+- [24. CPO](#24-cpo)
+  - [24.1 共封装光学器件 （话题标签#CPO ） 幻灯片摘自 Jensen Huang 在 话题标签#GTC25 上的主题演讲](#241-共封装光学器件-话题标签cpo--幻灯片摘自-jensen-huang-在-话题标签gtc25-上的主题演讲)
 
 
 # 1. “信息光子器件与集成”专题概述
@@ -1718,6 +1720,52 @@ Marvell 云平台营销副总裁 Josef Berger 表示：“Marvell 正利用其 1
 LightCounting 首席执行官兼首席分析师 Vlad Kozlov 表示：“1.6T 光学器件需求强劲，但功耗仍然是一个挑战。线性驱动可插拔器件为客户提供了更低功耗的选择，并完善了 Marvell 的 1.6T 互连产品组合。”
 
 <https://www.marvell.com/company/newsroom/marvell-demonstrates-silicon-photonics-light-engine-for-low-power-rack-scale-interconnect-in-ai-networks.html?utm_source=li&utm_medium=pr&utm_campaign=lpo-demo>
+
+# 24. CPO
+
+## 24.1 共封装光学器件 （话题标签#CPO ） 幻灯片摘自 Jensen Huang 在 话题标签#GTC25 上的主题演讲
+
+📋共封装光学器件 （话题标签#CPO ） 幻灯片摘自 Jensen Huang 在 话题标签#GTC25 上的主题演讲
+ 
+来源： 英伟达 
+ 
+📝要点：
+💬在横向扩展（使用光纤）之前，请先纵向扩展（使用铜缆;尽可能多地扩展）！
+💬更重要的是，Nvidia 是唯一一家可以帮助您（快速）启动两者的公司！
+💬TSMC 的“COUPE”包括 200Gbps/λ MRM、表面/光栅耦合 FAU、PIC 上的 3D 堆叠 EIC、ELS 和 SMF 电缆组件。
+💬这需要一个村庄！Nvidia 的 CPO 技术合作伙伴包括：Browave Corporation 、Coherent Corp. 、康宁公司 、Fabrinet 、富士康 、Lumentum 、SENKO Advanced Components 、Siliconware Precision Industries （SPIL）、Sumitomo Electric 、TFC COMMUNICATION USA INC 和 台积公司 。
+💬Jensen 可以轻松解决明显的“30W/$1k//TXVR”数据移动损失，同时在舞台上稳步解开两条光缆！ 🤘
+ 
+其他资源：
+🏷️话题标签#GTC2025 主题演讲：https://lnkd.in/ghhniM_f
+🏷️Nvidia Silicon Photonics（登录页面）：https://lnkd.in/gpzQPm6w
+🏷️在 话题标签#GTC2024 上（GPU 结构：从铜缆到光纤）：https://lnkd.in/g6b5zGN3
+🏷️数据中心内链接：https://lnkd.in/gnwKyAFs
+🏷️≥800Gbps 以太网端口的爆炸式增长：https://lnkd.in/gfMFNaQw
+🏷️LPO vs. LRO vs. CPO：https://lnkd.in/gEFhycaB
+🏷️迁移到 200Gbps 通道需要 CPO：https://lnkd.in/gA_bYewj
+🏷️CPO 示例 （VI）：https://lnkd.in/gbajACdV
+🏷️CPO 示例 （VII）：https://lnkd.in/gTNtKVYe
+🏷️CPO 包装选项：https://lnkd.in/g9v53iXM
+🏷️51.2Tbps CPO 交换机：https://lnkd.in/gMP_CMAA
+🏷️两个 ULTRA 的故事：https://lnkd.in/g7AhfABb
+🏷️ IEEE 802.3df & dj： https://lnkd.in/g4uURgs6
+🏷️2026 年看起来是 Pinnacle（？）： https://lnkd.in/g_gVGJRZ
+ 
+📒缩写：
+话题标签#MRM ： Micro-Ring Modulator 微环调制器
+话题标签#FAU ：Fiber Array Unit（光纤阵列单元）
+话题标签#EIC ：电子集成电路
+话题标签#PIC ：光子集成电路
+话题标签#ELS ：外部激光源
+话题标签#SMF ：单模光纤
+话题标签#TXVR ： 收发器
+话题标签#LPO ：线性（驱动器/驱动器）可插拔光学元件
+话题标签#LRO ：线性接收器/Retime（可插拔）光学器件
+ 
+👍Jensen 击中了我预期的所有（关键）笔记（除了“Kubernetes”或简称为“K8s”;我可能错了）：https://lnkd.in/ghC-EWxd
+
+<https://www.linkedin.com/posts/mingliangliu_cpo-gtc25-gtc2025-activity-7308303617197776896-wDpy?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
 
 

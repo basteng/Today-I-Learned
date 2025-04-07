@@ -143,6 +143,7 @@
       - [37.4.1.4 CoWoS家族介紹](#37414-cowos家族介紹)
     - [37.4.2 IEEE HIR（异构集成路线图）“WLP 扇入和扇出”](#3742-ieee-hir异构集成路线图wlp-扇入和扇出)
     - [37.4.3 台积电CoWos客户分布](#3743-台积电cowos客户分布)
+    - [37.4.4 FOWLP vs FOPLP vs CoWoS – 哪一个将引领先进封装的未来？](#3744-fowlp-vs-foplp-vs-cowos--哪一个将引领先进封装的未来)
   - [37.5 Equipment](#375-equipment)
     - [37.5.1 市场](#3751-市场)
       - [37.5.1.1 SEMI预测](#37511-semi预测)
@@ -204,6 +205,8 @@
   - [40.5 美国制裁](#405-美国制裁)
     - [40.5.1 BIS](#4051-bis)
       - [3B001 半导体器件、材料或相关设备的制造设备](#3b001-半导体器件材料或相关设备的制造设备)
+    - [40.5.2 关税](#4052-关税)
+      - [我们如何确定芯片的来源以及 话题标签#Tariff 对 话题标签#Chips 的影响。](#我们如何确定芯片的来源以及-话题标签tariff-对-话题标签chips-的影响)
   - [40.6 全球 IC 晶圆厂和设施报告：2024 年 - Semiengineering](#406-全球-ic-晶圆厂和设施报告2024-年---semiengineering)
   - [40.7 芯片价格](#407-芯片价格)
     - [哪些芯片在 2024 年最受欢迎？价格增长最高](#哪些芯片在-2024-年最受欢迎价格增长最高)
@@ -2768,6 +2771,44 @@ https://lnkd.in/gYbBre9W
 
 <https://www.linkedin.com/posts/subhash-km-6b5443123_rumor-a-major-tsmc-customer-expressed-its-activity-7304825869775093761-qvdy?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
+### 37.4.4 FOWLP vs FOPLP vs CoWoS – 哪一个将引领先进封装的未来？
+
+随着半导体规模的放缓，封装正在成为焦点。从移动芯片到 AI 超级计算机，问题不再仅仅在于性能，而在于我们如何构建它。
+
+FOWLP – 扇出晶圆级封装
+✅ 无基材、薄、低 z 高度
+✅ 非常适合 RF、PMIC、移动 SoC
+工艺流程：
+• 模具分离 → 模具放置在载体上 → 成型 → RDL 堆积 → 落球 → 最终分离
+ 挑战：晶粒移位、成型过程中的翘曲、薄重构晶圆所需的精确剥离
+
+FOPLP – 扇出面板级封装
+✅ 更大的格式（例如，500x500毫米）=更高的吞吐量和更好的每个模具成本
+✅ 虽然日趋成熟，但对 AIoT 和中端 HPC 前景广阔
+工艺流程：
+ • 面板模具放置 → 面板成型 → 面板 RDL → 落球 → 分离
+挑战：面板翘曲、不均匀电镀、光刻错位和工具可用性仍然是主要障碍
+由于应力和热均匀性，面板级的 TBDB 集成尤其具有挑战性
+
+CoWoS – 晶圆基板上芯片 （2.5D）
+✅ 用于 AI/HPC 的高带宽、高密度（想想 GPU + HBM）
+✅ 硅中介层可实现数千个微凸块
+工艺流程：
+ • 使用 TSV → Logic 芯片贴装→ HBM 堆叠→ TCB/Hybrid 键合→ RDL → 安装在有机衬底上进行中介层准备
+挑战： 成本高，对良率敏感。湿法过程的清洁度（TSV和Cu的揭示）和剥离精度至关重要。
+
+从工艺工程师的角度来看：
+FOWLP已经成熟，但需要严格控制芯片放置和热应力，FOPLP可以降低成本，但过程稳定性必须赶上
+CoWoS 可提供无与伦比的性能，前提是您能提供洁净室、键合精度和良率挑战
+
+我的看法：
+FOWLP 对于移动设备是稳定的。一旦模具和翘曲得到控制，FOPLP 将成为每平方毫米成本的颠覆者。然而，对于尖端的 AI，CoWoS（以及最终基于混合键合的 3DIC）仍然是王者。
+
+![](/picture/1743992232054.jpg)
+
+<https://www.linkedin.com/posts/abhishek-singh-47a153176_advancedpackaging-fowlp-foplp-activity-7314833600292499456-Nhl2?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+
 ## 37.5 Equipment
 
 ### 37.5.1 市场
@@ -3496,6 +3537,54 @@ https://www.gartner.com/en/newsroom/press-releases/2024-10-28-gartner-forecasts-
 
 <https://www.bis.gov/ear/title-15/subtitle-b/chapter-vii/subchapter-c/part-774/supplement-no-1-part-774-commerce-control#category3>
 
+### 40.5.2 关税
+
+#### 我们如何确定芯片的来源以及 话题标签#Tariff 对 话题标签#Chips 的影响。
+
+有两种方法可以确定任何产品的原产地：
+
+💥 1 完全采购或生产 ： 从原材料到最终产品的所有生产步骤都在一个国家完成。
+
+2. 💥 💥 重大变更标准：如果生产涉及多个国家，则产品发生“重大变更”的国家应为原产国。
+
+可以想象，以 Chips 为例，99.99% 的时间我们使用第二个标准来确定来源。🤪 
+目前，大多数材料、晶圆制造、封装、测试和电子制造都位于美国和亚洲以外，尤其是台湾。
+
+台积公司 、和联 、纬创资通 和 富士康 是芯片和电子制造供应链中的一些巨头，他们都位于台湾。🏭 
+
+因此，就芯片而言，即使将 话题标签#manufacturing 转移到美国也不会有太大作用;美国仍然需要依赖全球供应链，尤其是先进节点（7nm 及以下）。
+即使你把制造、包装和测试转移到美国（只有在特朗普的梦想😂中才有可能），你仍然需要依赖日本和中国的原材料。🙄
+
+查看 Claus Aasholm 最近的文章和随附的图片，了解台湾关税将如何造成最大的伤害：
+ 
+https://lnkd.in/gqQvhzSK
+
+我无法分析所有依赖台湾的美国主要公司，但我们只分析几个：
+
+1. 英伟达 ：英伟达的高端 GPU 由台积电在台湾生产。也许在未来，亚利桑那州的晶圆厂会接手一些订单，但不是全部;大多数苹果和AMD会继续使用那个工厂。
+
+2、高通 ：主要在台湾、韩国、马来西亚等地。
+
+3. 博通 ：大多数 5nm 及以下的先进芯片都来自台湾、韩国和马来西亚。只有少数芯片（射频和汽车）来自美国（全球代工厂）
+
+4. 美光科技 ：大部分DRAM，3D NAND和SSD芯片在美国以外的地方生产。只有 NAND 闪存和少数 DRAM 芯片由美国生产。
+
+AMD & 亚德诺半导体 是另外两家将成为台湾或其他亚洲国家关税的主要受害者之一。
+Qorvo, Inc. 、德州仪器 和 安森美半导体 的影响较小，但肯定会因为这些关税而失去在中国大陆和台湾的市场份额。
+
+![](/picture/1744015803622.jpg)
+
+<https://www.linkedin.com/posts/ammar-khalil-61101_tariff-chips-manufacturing-activity-7314932467621056512-Fj8G?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+如果你认为有贸易顺差的国家在利用你，我会让你有这种信念。这对半导体和电子制造来说无关紧要。
+
+虽然大多数半导体都是在台湾制造的，但从关税的角度来看，将制造转移到美国不会有太大区别。半导体必须运回台湾进行测试和包装。
+即使您移动了测试和组装，您也必须将打包好的半导体寄回给台湾分包商来制造电话、PC 和服务器。 
+即使你搬迁了它，制造半导体、封装和组件的大部分材料仍然在美国以外。
+在目前的关税下，制造任何东西最明智的地方是美国以外的地方，那里的供应链仍然在某种程度上是可预测的。
+在所有关税中，台湾关税对美国公司的伤害最大，因为它们主导着半导体设计、个人电脑、服务器和手机市场。
+
+<https://www.linkedin.com/posts/clausaasholm_if-you-believe-countries-with-a-trade-surplus-activity-7313607267541516289-7puA?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
 ## 40.6 全球 IC 晶圆厂和设施报告：2024 年 - Semiengineering
 
