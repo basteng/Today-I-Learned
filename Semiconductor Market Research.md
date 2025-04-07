@@ -172,6 +172,7 @@
       - [HBM](#hbm)
         - [HBM供求关系](#hbm供求关系)
         - [HBM 买家： Nvidia Leads， Google Follows](#hbm-买家-nvidia-leads-google-follows)
+    - [38.1.3 FPGA](#3813-fpga)
   - [38.2 Discrets](#382-discrets)
     - [38.2.1 Power](#3821-power)
       - [38.2.1.1 SiC](#38211-sic)
@@ -3066,6 +3067,49 @@ AMD 今年安装的 HBM 芯片数量也将比去年多得多，但根据名单�
 概述还表明英特尔在 Gaudi 3 上毫无机会。今年购买的 HBM 数量将比 2024 年少，明年该产品将几乎成为历史。考虑到缺乏竞争力，这种说法可能是相当准确的。Falcon Shores 最近已不再作为市场产品推出，目前仅为内部测试平台。 Jaguar Shores 在 2026 年以后能够做什么和取得什么成就仍然未知。这个解决方案可能还会依赖于 HBM——众所周知，没有真正的替代方案。那么 Jaguar Shores 就必须直接依赖 HBM4+ 才能在市场上占有一席之地。毕竟，其他人也不会停滞不前。
 
 <https://www.computerbase.de/news/arbeitsspeicher/hbm-absatzzahlen-nvidia-vor-google-und-amazon-amd-klein-intel-irrelevant.91319/>
+
+### 38.1.3 FPGA
+
+如果芯片不必是最终的呢？
+
+这是 Ross Freeman 在 1984 年提出的问题，当时 ASIC 统治着硅世界。那时，硬件是刚性的。更改逻辑意味着重新设计整个芯片，等待数周的制造，并耗尽预算。
+
+但罗斯有一个激进的想法：
+如果我们能制造出一个功能在制造后也可以重新编程的芯片，那会怎样呢？
+
+结果如何？他与他人共同创立了 Xilinx，并创建了世界上第一个现场可编程门阵列 （FPGA）。
+第一款芯片 XC2064 只有 64 个可配置逻辑块 （CLB）。它不快，也不便宜，当然也不是主流。
+
+但它奏效了。
+
+工程师现在可以在硬件中实现、测试和修改逻辑，而无需返回晶圆厂。硬件第一次具有类似软件的灵活性。
+
+在一个由固定功能芯片主导的时代，这是异端邪说。
+
+FPGA 慢慢在不断变化的应用中找到了归宿：◦ 电信，协议发展迅速
+◦ 航空航天，任务中期的可重构性至关重要
+◦ 原型设计，可显著缩短上市时间
+
+随着时间的推移，Xilinx 扩展了其产品线：
+□ Spartan 适用于成本敏感型市场
+□ Virtex 用于高性能应用
+□ Zynq 用于集成 CPU 和逻辑架构
+
+但罗斯·弗里曼 （Ross Freeman） 并没有活着看到这种影响。他于 1989 年去世，此时距离 Xilinx 成立仅 5 年。
+
+他的发明继续掌权：
+◦ 电信骨干设备
+◦ 卫星和航天器
+◦ 工业和汽车控制器
+◦ 为地球上几乎所有的 ASIC 和 SoC 团队提供快速原型设计
+
+2022 年，Xilinx 被 AMD 以 490 亿美元的价格收购，这是半导体历史上最大的交易之一。对于一个大家都认为太慢、太昂贵、太复杂的想法来说，这还不错。
+
+有时，真正的创新不是更快或更小，而是更灵活。
+
+有时，最冒险的想法会成为我们所有人的基础。
+
+<https://www.linkedin.com/posts/kailash-prasad_semiconductors-xilinx-fpga-activity-7314861986167541760-OfOd?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
 ## 38.2 Discrets
 
