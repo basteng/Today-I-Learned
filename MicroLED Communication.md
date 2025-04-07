@@ -213,6 +213,8 @@
 - [76. 了解收发器中不同类型的发射器：EML、VCSEL、DFB、FP 和 MZM](#76-了解收发器中不同类型的发射器emlvcseldfbfp-和-mzm)
 - [77. 光学IO](#77-光学io)
   - [77.1 High-Speed Links Circuits and Systems Spring 2023](#771-high-speed-links-circuits-and-systems-spring-2023)
+- [78. Micro LED](#78-micro-led)
+  - [78.1 红色 μLED 是 AR 显示器的最大瓶颈之一](#781-红色-μled-是-ar-显示器的最大瓶颈之一)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -5503,3 +5505,15 @@ FP 激光器是短距离、低带宽系统的低成本解决方案。同时，MZ
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/High-Speed%20Serial%20IO%20Made%20Simple.pdf>
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/High%20Speed%20Serial%20IOs.pdf>
+
+# 78. Micro LED
+
+## 78.1 红色 μLED 是 AR 显示器的最大瓶颈之一
+
+红色 μLED 是 AR 显示器的最大瓶颈之一 - 大量的模糊和技术宣传四处飞来飞去。以下是我对竞争者的看法。目前还没有灵丹妙药，但前两个已经很接近了。GaN 是短期的 - 更容易* 的斜坡路径。一旦供应和晶圆厂兼容性赶上来，AlInGaP 可能会以更强劲的性能紧随其后。
+
+*就像在 μLED😅 中一样简单
+
+![](/picture/1744032161898.jpg)
+
+<https://www.linkedin.com/posts/mityashin_red-%C2%B5led-is-one-of-the-top-bottlenecks-for-activity-7315001076812857344-JgZU?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
