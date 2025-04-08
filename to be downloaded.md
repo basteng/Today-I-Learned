@@ -32,6 +32,8 @@
 - [29. InGaN-based micro-LEDs for display and chip-to-chip optical interconnections](#29-ingan-based-micro-leds-for-display-and-chip-to-chip-optical-interconnections)
 - [30. Heterogeneous integration of 20x10μm blue micro-LEDs/pixels on GaN HEMTs for visible light communication](#30-heterogeneous-integration-of-20x10μm-blue-micro-ledspixels-on-gan-hemts-for-visible-light-communication)
 - [31. An Ultra-Compact CPO Transceiver based on 1060-nm Single-Mode VCSEL Array and Multi-Core Fibre](#31-an-ultra-compact-cpo-transceiver-based-on-1060-nm-single-mode-vcsel-array-and-multi-core-fibre)
+- [32. GaN Subwavelength Gratings by Machine Learning Design](#32-gan-subwavelength-gratings-by-machine-learning-design)
+- [33. Modeling of III-N heterostructures for GaN light-emitting diodes based on effective bond-orbital model](#33-modeling-of-iii-n-heterostructures-for-gan-light-emitting-diodes-based-on-effective-bond-orbital-model)
 
 20241204以后 （未下载）
 
@@ -183,6 +185,14 @@ https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13366/133660E/
 # 31. An Ultra-Compact CPO Transceiver based on 1060-nm Single-Mode VCSEL Array and Multi-Core Fibre
 
 https://www.vde-verlag.de/proceedings-de/456426481.html
+
+# 32. GaN Subwavelength Gratings by Machine Learning Design
+
+https://ieeexplore.ieee.org/abstract/document/9252349
+
+# 33. Modeling of III-N heterostructures for GaN light-emitting diodes based on effective bond-orbital model
+
+https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13386/133860B/Modeling-of-III-N-heterostructures-for-GaN-light-emitting-diodes/10.1117/12.3043526.short
 
 
 

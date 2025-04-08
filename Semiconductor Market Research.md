@@ -231,6 +231,8 @@
       - [1.1 2025 年半导体年度展望](#11-2025-年半导体年度展望)
     - [2. Chip Observer](#2-chip-observer)
       - [2.1 Chip Observer 2025 年 2 月](#21-chip-observer-2025-年-2-月)
+  - [Bank for International Settlements](#bank-for-international-settlements)
+    - [BIS Working Papers No 684: Triffin: dilemma or myth?](#bis-working-papers-no-684-triffin-dilemma-or-myth)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -4526,3 +4528,10 @@ The Chip Insider®– The Chip Insider 的 2025 年战略预测
 <https://library.techinsights.com/hg-asset/8d485574-b4ed-48bd-9645-02f9a164d177?utm_source=blog&utm_medium=website&utm_campaign=chip_observer#moduleName=Executive+Insights&reportCode=COB-2502-801&subscriptionId=null&channelId=null&reportName=Chip+Observer+February+2025>
 
 
+## Bank for International Settlements
+
+https://www.bis.org/
+
+### BIS Working Papers No 684: Triffin: dilemma or myth?
+
+<https://www.bis.org/publ/work684.pdf>
