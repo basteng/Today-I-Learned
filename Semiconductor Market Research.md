@@ -4535,3 +4535,5 @@ https://www.bis.org/
 ### BIS Working Papers No 684: Triffin: dilemma or myth?
 
 <https://www.bis.org/publ/work684.pdf>
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/BIS%20Working%20Papers%20No%20684%20Triffin%20dilemma%20or%20myth.pdf>
