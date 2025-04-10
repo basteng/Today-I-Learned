@@ -43,6 +43,7 @@
 - [8. 技术网站](#8-技术网站)
   - [8.1 GaN newsletter monthly - 领英上Rémi Comyn整理的GaN新闻和最新进展，做得很好，很有启发](#81-gan-newsletter-monthly---领英上rémi-comyn整理的gan新闻和最新进展做得很好很有启发)
   - [8.2 brilliant.org 互动教学，动画演示](#82-brilliantorg-互动教学动画演示)
+  - [8.3 msscorps](#83-msscorps)
 - [9. 科学读物、媒体报道](#9-科学读物媒体报道)
   - [9.1 Gazettabyte - 关于电信、硅光领域的网站](#91-gazettabyte---关于电信硅光领域的网站)
   - [9.2 Quanta Magazine - 西蒙斯基金会 科学新闻在线刊物](#92-quanta-magazine---西蒙斯基金会-科学新闻在线刊物)
@@ -324,6 +325,18 @@ brilliant.org 这个网站的互动教学做的特别好，比如它用网页交
 <http://t.cn/A6ncwVwz>
 
 <https://brilliant.org/courses/intro-neural-networks/introduction-65/?from_llp=computer-science&continueFlag=eb45ced267fd33d3d83806bbce451b38>
+
+## 8.3 msscorps
+
+拆解网站
+
+<https://en.msscorps.com/>
+
+代表作
+
+三星 5 纳米技术节点的 TEM 分析
+
+<https://en.msscorps.com/ec99/rwd1772/news.asp?newsno=5>
 
 # 9. 科学读物、媒体报道
 

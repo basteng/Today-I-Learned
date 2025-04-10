@@ -34,6 +34,7 @@
 - [19. ALD](#19-ald)
 - [20. 先进封装](#20-先进封装)
 - [21. 为什么现代半导体技术优先选择P型衬底？](#21-为什么现代半导体技术优先选择p型衬底)
+- [22. 环栅技术 (GAA)：减少泄漏的终极解决方案](#22-环栅技术-gaa减少泄漏的终极解决方案)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -935,3 +936,100 @@ p 型衬底是一种掺杂了三价杂质（最常见的是硼）的硅晶片，
 尽管半导体器件架构不断进步——从平面器件到 FinFET，再到现在的环绕栅极纳米片——p 型衬底仍然是大多数主流 CMOS 工艺广泛使用的基础。它结合了电气性能、闩锁缓解、设计简单、工艺成熟和广泛的行业支持，使其成为一种实用而有效的选择。虽然替代衬底在特定应用中越来越受欢迎，但 p 型衬底仍然是大规模半导体制造的可靠且经济高效的选择。  
 
 <https://www.linkedin.com/pulse/why-p-type-substrate-preferred-modern-semiconductor-kailash-prasad-dsb7c/>
+
+# 22. 环栅技术 (GAA)：减少泄漏的终极解决方案
+
+近年来，随着环境、社会及公司治理（ESG）意识的兴起，许多企业都尽力规划自身的ESG步骤和时间表，以追求可持续运营。  
+
+在半导体行业中，降低芯片内晶体管的漏电，降低能耗是践行环境可持续性的具体途径。多年来，降低漏电也成为晶体管架构革命性演进的主要驱动力。 
+
+在平面晶体管架构中，随着制程技术的不断发展，沟道长度也越来越短，但当沟道长度小于几十纳米时，短沟道效应所导致的漏电问题就变得十分严重。  
+
+因此，在2000年，3D鳍式晶体管（FinFET）架构的原型被提出1，并于2011-2012年左右开始商业化量产。鳍式晶体管架构将原本平面的源极和漏极改造成3D结构，使得沟道三面都被栅极覆盖，增大了栅极与沟道之间的接触面积。 
+
+这样的设计提升了栅极控制电子的能力，从而减少了漏电。然而，随着工艺技术的不断进步，沟道长度的不断缩短，研发工程师很快意识到，当栅极与沟道的接触面积缩小到一定程度时，漏电又会再次成为问题。 
+
+路线图 
+因此，在鳍式晶体管商业化量产几年后，各大科研机构以及电气电子工程师协会（IEEE）开始探讨新一代晶体管架构的研发技术路线图。虽然最终各家公司对新一代晶体管架构的称呼各有不同，但核心理念依然是增加栅极与沟道之间的接触面积，以进一步增强后者对电子的控制能力。  
+
+随后出现了新一代晶体管，称为环栅 (GAA) 晶体管，它通过减少沟道长度来提高栅极控制电子的能力，因为栅极完全覆盖了沟道的四面（“环栅”）。  
+
+全球各大先进制程代工厂均已公布采用 GAA 架构的时间表2，其中三星最为积极，率先在 3nm 工艺节点采用 GAA 架构，并于 2022 年3正式发布投产。 
+
+首款采用三星GAA架构工艺的产品是专门用于挖矿的ASIC芯片Whatsminer M565++（MicroBT）。Whatsminer M565++芯片只有逻辑单元，没有内存，这意味着工艺良率仍是一个挑战。尽管如此，三星还是赢得了全球首家量产GAA代工厂的青睐。  
+
+经过一年多的技术改进和优化，三星首款采用GAA架构的通用消费产品终于在2024年发布——三星Galaxy Watch 7的处理器——Exynos W1000，采用三星去年发布的第二代3nm GAA技术制造。 
+
+与已经成熟的鳍式晶体管工艺相比，GAA晶体管工艺更加复杂，并面临诸多技术挑战。为了优化工艺和晶体管性能，工艺研发中引入了创新。此次，MSS将利用高空间分辨率透射电子显微镜（TEM）和能量色散X射线能谱（EDS）来揭开三星GAA晶体管的工艺细节。 
+
+我们此次研究的产品是三星 Galaxy Watch 7 的处理器——Exynos W1000。其采用的制程工艺是三星第二代 GAA 架构 3nm 工艺节点4 。根据三星官方信息，全新的 3nm 工艺 GAA 架构相比上一代（仍为鳍式晶体管架构） 5， 单核性能提升 3.4 倍，多核性能提升 3.7 倍。
+
+图1a和b分别是我们从市场上购买的三星Galaxy Watch 7的正反面照片。拆开手表后可以看到主PCB板（图1c），板上黄色虚线框标注的就是本次分析的对象；图1d中可以清晰地看到Exynos W1000芯片及其表面的激光打标。拆除封装后，我们可以看到整个芯片的外观和打标编号。 
+
+![](/picture/MSSCorps_Figure1.webp)
+图1：a & b三星Galaxy Watch 7正面和背面照片，c主PCB的光学显微镜图像，其中Exynos W1000以黄色虚线框标记，d Exynos W1000的特写光学显微镜图像，e去除封装后的Exynos W1000的光学显微镜图像，芯片标记编号为S5E5535。
+
+了解 Exynos W1000 芯片的第一步，我们可以从聚焦离子束横截面（FIB CS）分析开始。图 2 左侧的大图是芯片的横截面图，我们可以清楚地看到 Exynos W1000 有一层钝化层加上 15 层金属层。最上面的金属层（M15）是重分布层（RDL）。除了通过横截面分析了解 Exynos W1000 的初步工艺信息外，我们还可以逐层并行绘制了解各金属层的布局。研磨。图2右侧三幅图是Exynos W1000从M15到M13采用全平面平行研磨技术的光学显微镜图像。据三星5介绍，Exynos W1000拥有一个高性能大核CPU Arm Cortex-A78，以及4个小核CPU Arm Cortex-A55。GPU部分则为2核Arm Mali-G68 GPU。这些CPU和GPU在图3中以虚线框标注。 
+
+![](/picture/MSSCorps_Figure2.webp)
+图 2：
+左侧大图为Exynos W1000的横截面聚焦离子束分析图像，右侧分别为M15、M14、M13的光学显微镜图像。
+
+![](/picture/MSSCorps_Figure3-600x340-1.webp)
+图 3：M13 的光学显微镜图像。CPU 和 GPU 用虚线框标记。A78 为 Cortex-A78，A55 为 Arm Cortex-A55，GPU 为 Arm Mali-G68 GPU。
+
+Exynos W1000 是全球首款采用 GAA 架构面向普通消费级产品的微处理器。这款新架构与目前主流的鳍片架构有何区别？让我们借助最先进的透射电子显微镜 (TEM) 和精湛的分析技术，来揭秘它的工艺细节。 
+
+我们感兴趣的目标是 6T-SRAM（静态随机存取存储器）。图 4 左侧的大图是 6T-SRAM 的平面透射电子显微镜 (PVTEM) 照片。6T-SRAM 由六个晶体管组成，包括两个 PMOS 和四个 NMOS。其基本单元 (cell) 用绿色虚线框标记。通过 EDS mapping（图 4 右侧的小图），我们可以获得元素分布。通过对比三星 FinFET 4nm 之前的 EDS 结果，在三星最新一代 GAA 架构中未发现任何新元素。 
+
+![](/picture/MSSCorps_Figure4.webp)
+图4：左侧大图为6T-SRAM的平面STEM照片，单位晶胞用绿色虚线框标记。I、II、III、IV分别为XTEM的分析方向。I方向为Along Gate，II方向为Along S/D，III方向为Along N-GAA，IV方向为Along P-GAA。右侧小图为左侧大图的EDS Mapping分析结果。
+
+由于GAA结构相对复杂，只有平面和横截面观察才能完整揭示其三维结构。因此，我们进行了四个方向（图4左侧大图中标记为I、II、III、IV）的横截面TEM（XTEM），以清晰地分析GAA架构的细节。  
+
+图5展示了这四个方向的XTEM照片。从图5I可以清晰地看到P-Fin和N-Fin上方有三个沟道。在图5III和IV中可以观察到沟道的侧面。因此，沟道周围是栅极，这与我们之前发布的三星鳍片结构的TEM照片有很大不同。沟道的数量和横截面积是决定晶体管工作时能承载多少电流的关键参数。从高分辨率TEM照片（图6）中，我们可以观察到GAA架构的更多细节。  
+
+![](/picture/MSSCorps_Figure5.webp)
+图5：沿图4左侧标记的四个方向的XTEM照片。黄色箭头标记了P-Fin的位置。
+
+图6a和c清晰地表明，在I方向（沿栅极）上，P-Fin和N-Fin的沟道截面积存在明显差异。N-Fin的沟道截面积明显大于P-Fin。从III方向（沿N-GAA，图6b）和IV方向（沿P-GAA，图6d）的TEM结果显示，P-Fin和N-Fin上沟道边面积尺寸没有明显差异。与沟道相关的临界尺寸（CD）总结在表1中。 
+
+![](/picture/MSSCorps_Figure6.webp)
+图6：a、c分别为PMOS和NMOS在沟道位置沿I方向（沿栅极）的放大TEM照片。W和H定义为沟道宽度和高度的临界尺寸。b为PMOS沟道侧壁沿IV方向（沿P-GAA）的​​放大TEM照片，d为NMOS沟道侧壁沿III方向（沿N-GAA）的​​放大TEM照片。
+
+![](/picture/MSSCorps_table1.webp)
+表1：通道关键尺寸表。测量位置在图6a中标记。
+
+从PVTEM和XTEM照片中我们可以清楚的看到，相比鳍片结构，GAA结构的制作工艺要复杂和困难得多，目前已经引入了多种新工艺，包括外延生长，如SiGe/Si外延、S/D外延，以及刻蚀，如鳍片露出、腔体刻蚀、NW释放等等6。由于工艺节点已经达到了纳米级，为了获得更好的晶体管性能，工艺规范已经达到了原子级别，多一行或少一行原子最终都会对晶体管性能产生很大的影响。以阈值电压（Vth）为例，它是晶体管最重要的参数之一，它是栅极控制电流导通（“1”）或关闭（“0”）的关键，实际应​​用中，阈值电压越小越好。  
+
+阈值电压的大小与栅极/沟道之间的功函数差值成正相关，而功函数差值与材料的特性以及薄膜堆叠的质量有关7。为了精确控制功函数差值，栅极/介质层/沟道堆叠结构的界面平坦度起着非常重要的作用。从图7左侧的大图中，我们可以清晰地观察到GAA堆叠和界面平坦度，右侧的小图为高介电材料和栅极中部分元素的EDS映射。从图4至图7中，我们也清楚地了解到，要分析先进晶体管架构的工艺细节，一台具有高空间分辨率的TEM将是一个独特且不可或缺的工具8。 
+
+![](/picture/MSSCorps_Figure7-1.webp)
+图7：左侧大图为NMOS在沟道侧壁沿III方向（Along N-GAA）的​​高分辨率TEM照片。右侧放大倍数较小的小图为四种元素（N、Hf、Ti、Al）的EDS Mapping分析结果。
+
+基于以上结果和解释，我们可以清楚地认识到，工艺技术的创新是推动晶体管架构不断演进的关键，也是芯片整体性能不断提升的重要驱动力。  
+
+GAA 不会是最后一种晶体管架构。为了应对日益复杂的工艺架构、多样化的材料以及原子级的结构尺寸，材料分析也必须与时俱进才能获得精准的结果。MSS 的材料分析不仅拥有最经验丰富的工程师和数量最多的高端分析设备；最重要的是，我们有能力研发新的材料分析技术。，及先进工艺的样品制备方法，成为半导体高端工艺的领航者。我们将继续以专业的材料分析视角，向公众呈现最先进芯片的工艺细节。 
+
+访问我们的网站：https://en.msscorps.com/
+
+Reference 
+[1] D. Hisamoto, W.-C. Lee, J. Kedzierski, H. Takeuchi, K. Asano, C. Kuo, E. Anderson, T.-J. King, J. Bokor, and C. Hu, IEEE Transactions on Electron Devices, 2320-2325, 2000. 
+
+[2] https://www.intel.com.tw/content/www/tw/zh/foundry/process.html; https://www.anandtech.com/show/18832/tsmc-outlines-2nm-plans-n2p-brings-backside-power-delivery-in-2026-n2x-added-to-roadmap); https://news.samsung.com/tw/三星投產gaa架構3奈米製程晶片 
+
+[3] https://news.samsung.com/tw/三星投產gaa架構3奈米製程晶片 
+
+[4] https://www.techinsights.com/zh-tw/node/58215 
+
+[5] https://semiconductor.samsung.com/processor/wearable-processor/exynos-w1000/ 
+
+[6] P. Eyben et al., “3D-carrier Profiling and Parasitic Resistance Analysis in Vertically Stacked Gate-All-Around Si Nanowire CMOS Transistors”, DOI: 10.1109/IEDM19573.2019.8993636; N. Loubet et al., “A Novel Dry Selective Etch of SiGe for the Enablement of High Performance Logic Stacked Gate-All-Around NanoSheet Devices”, DOI: 10.1109/IEDM19573.2019.8993615. 
+
+[7] https://www.intechopen.com/chapters/61888 
+
+[8] Due to the limited space of the article, we still have many TEM results that have not been presented. Please feel free to contact us if you are interested. 
+
+
+
+

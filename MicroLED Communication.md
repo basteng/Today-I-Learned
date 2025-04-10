@@ -5506,6 +5506,20 @@ FP 激光器是短距离、低带宽系统的低成本解决方案。同时，MZ
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/High%20Speed%20Serial%20IOs.pdf>
 
+## 77.2 对于喜欢双击与 AI/HPC 基础设施相关的主题的精通技术的人，请提出一个问题：除了带宽（密度）、功耗（效率）和（系统）延迟之外，我们还可以在下面的比较矩阵中添加什么来使其（甚至）更具指导性和帮助性？
+ 
+🍒用例（例如，Die-to-Die、Scale-Up、Scale-Out、Memory Fabric 或 Ethernet）？确定。
+🍒互连标准（例如 CXL 3.0、PCIe6/7、UCIe 2.0、UALink 1.0 或 UEC）？为什么不呢！
+🍒互连介质（例如 NVLink DAC、AOC 或 WDM）？我们应该这样做。
+🍒动态范围可扩展性（例如，与不同的序列长度和/或批次大小无关等）？或。。。
+🍒将 FLOPs 利用率 （MFU） 建模为 %？嗯，差不多吧！
+ 
+感谢开放计算项目 （OCP） 基金会和 Meta 举办了一场关于可组合内存系统 （CMS） 和相关开源工作的信息量很大的技术日活动;我学到了很多东西！
+
+![](/picture/1744246896958.jpg)
+
+<https://www.linkedin.com/posts/mingliangliu_semiconductorindustry-semiconductor-semiconductors-activity-7315901764925288448-ZJdM?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
 # 78. Micro LED
 
 ## 78.1 红色 μLED 是 AR 显示器的最大瓶颈之一
