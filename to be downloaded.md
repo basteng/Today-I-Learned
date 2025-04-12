@@ -34,6 +34,7 @@
 - [31. An Ultra-Compact CPO Transceiver based on 1060-nm Single-Mode VCSEL Array and Multi-Core Fibre](#31-an-ultra-compact-cpo-transceiver-based-on-1060-nm-single-mode-vcsel-array-and-multi-core-fibre)
 - [32. GaN Subwavelength Gratings by Machine Learning Design](#32-gan-subwavelength-gratings-by-machine-learning-design)
 - [33. Modeling of III-N heterostructures for GaN light-emitting diodes based on effective bond-orbital model](#33-modeling-of-iii-n-heterostructures-for-gan-light-emitting-diodes-based-on-effective-bond-orbital-model)
+- [34. GaN-Based Laser Diode with a Trapezoidal EBL and an Unintentionally Doped Layer Reaching 7.8 GHz Modulation Bandwidth](#34-gan-based-laser-diode-with-a-trapezoidal-ebl-and-an-unintentionally-doped-layer-reaching-78-ghz-modulation-bandwidth)
 
 20241204以后 （未下载）
 
@@ -193,6 +194,11 @@ https://ieeexplore.ieee.org/abstract/document/9252349
 # 33. Modeling of III-N heterostructures for GaN light-emitting diodes based on effective bond-orbital model
 
 https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13386/133860B/Modeling-of-III-N-heterostructures-for-GaN-light-emitting-diodes/10.1117/12.3043526.short
+
+# 34. GaN-Based Laser Diode with a Trapezoidal EBL and an Unintentionally Doped Layer Reaching 7.8 GHz Modulation Bandwidth
+
+https://pubs.acs.org/doi/full/10.1021/acsphotonics.4c02606
+
 
 
 
