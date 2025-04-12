@@ -213,8 +213,10 @@
 - [76. 了解收发器中不同类型的发射器：EML、VCSEL、DFB、FP 和 MZM](#76-了解收发器中不同类型的发射器emlvcseldfbfp-和-mzm)
 - [77. 光学IO](#77-光学io)
   - [77.1 High-Speed Links Circuits and Systems Spring 2023](#771-high-speed-links-circuits-and-systems-spring-2023)
+  - [77.2 对于喜欢双击与 AI/HPC 基础设施相关的主题的精通技术的人，请提出一个问题：除了带宽（密度）、功耗（效率）和（系统）延迟之外，我们还可以在下面的比较矩阵中添加什么来使其（甚至）更具指导性和帮助性？](#772-对于喜欢双击与-aihpc-基础设施相关的主题的精通技术的人请提出一个问题除了带宽密度功耗效率和系统延迟之外我们还可以在下面的比较矩阵中添加什么来使其甚至更具指导性和帮助性)
 - [78. Micro LED](#78-micro-led)
   - [78.1 红色 μLED 是 AR 显示器的最大瓶颈之一](#781-红色-μled-是-ar-显示器的最大瓶颈之一)
+- [79. 在 GaN HEMT 上异质集成 20x10 µm 蓝色微型 LED/像素，用于可见光通信](#79-在-gan-hemt-上异质集成-20x10-µm-蓝色微型-led像素用于可见光通信)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -5531,3 +5533,6 @@ FP 激光器是短距离、低带宽系统的低成本解决方案。同时，MZ
 ![](/picture/1744032161898.jpg)
 
 <https://www.linkedin.com/posts/mityashin_red-%C2%B5led-is-one-of-the-top-bottlenecks-for-activity-7315001076812857344-JgZU?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+# 79. 在 GaN HEMT 上异质集成 20x10 µm 蓝色微型 LED/像素，用于可见光通信
+
