@@ -130,6 +130,7 @@
         - [2025年中国成熟制程产能占全球28%](#2025年中国成熟制程产能占全球28)
   - [37.2.1.2 MEMS Foundry](#37212-mems-foundry)
     - [37.2.1.2.1 TechoVedas关于MEMS Foundry的科普](#372121-techovedas关于mems-foundry的科普)
+    - [MEMS 晶圆厂 产能](#mems-晶圆厂-产能)
     - [37.2.2 节点](#3722-节点)
       - [37.2.2.1 Semi Vision 的“2025 年主要代工技术节点摘要](#37221-semi-vision-的2025-年主要代工技术节点摘要)
   - [37.3 IDM](#373-idm)
@@ -207,7 +208,8 @@
     - [40.5.1 BIS](#4051-bis)
       - [3B001 半导体器件、材料或相关设备的制造设备](#3b001-半导体器件材料或相关设备的制造设备)
     - [40.5.2 关税](#4052-关税)
-      - [我们如何确定芯片的来源以及 话题标签#Tariff 对 话题标签#Chips 的影响。](#我们如何确定芯片的来源以及-话题标签tariff-对-话题标签chips-的影响)
+      - [我们如何确定芯片的来源以及 Tariff 对 Chips 的影响。](#我们如何确定芯片的来源以及-tariff-对-chips-的影响)
+      - [20250411 关税部分豁免的影响](#20250411-关税部分豁免的影响)
   - [40.6 全球 IC 晶圆厂和设施报告：2024 年 - Semiengineering](#406-全球-ic-晶圆厂和设施报告2024-年---semiengineering)
   - [40.7 芯片价格](#407-芯片价格)
     - [哪些芯片在 2024 年最受欢迎？价格增长最高](#哪些芯片在-2024-年最受欢迎价格增长最高)
@@ -2430,6 +2432,34 @@ MEMS 工厂是生产微机电系统 （MEMS） 器件的专用制造设施。MEM
 
 <https://www.linkedin.com/posts/kumar-priyadarshi-b0a2a7a2_what-is-a-mems-fab-from-potential-investment-activity-7279338142707437568-PW7Z?utm_source=share&utm_medium=member_desktop>
 
+### MEMS 晶圆厂 产能
+
+从潜在投资的角度来看，什么是 MEMS 晶圆厂？
+
+MEMS 工厂是生产微机电系统 （MEMS） 器件的专用制造设施。MEMS 在微观尺度上集成了机械和电气组件，使传感器、执行器和其他系统中的应用成为可能。
+
+示例包括加速度计、陀螺仪、压力传感器、麦克风和光学 MEMS。
+
+主要公司包括 STMicro、Analog devices、Texas Instruments 等。
+
+🚀 CAPEX 概述
+
+初始投资：与先进半导体晶圆厂相比，MEMS 晶圆厂通常需要较低的资本支出 （CAPEX）。
+估计成本： 中小型晶圆厂的 $100M–$500M。
+高级晶圆厂（例如，用于汽车或工业应用的 MEMS）：$500M–$1B。
+
+🚀 为什么投资 MEMS 晶圆厂
+
+应用多样化：MEMS 用于汽车、医疗保健、消费电子和工业物联网，确保需求稳定。
+更低的资本支出：与领先的半导体晶圆厂相比，入门成本更低。
+高利润率： MEMS 器件由于其专业性，通常具有更高的利润率。
+不断增长的市场：在物联网、自动驾驶汽车和可穿戴设备的推动下，MEMS 市场预计将显着增长。
+定制机会：MEMS 器件可以针对利基市场进行定制，从而减少与大批量制造商的竞争。
+
+![](/picture/1744340924339.jpg)
+
+<https://www.linkedin.com/posts/kumar-priyadarshi-b0a2a7a2_what-is-a-mems-fab-from-potential-investment-activity-7316296123147550721-jqI5?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
 ### 37.2.2 节点
 
 #### 37.2.2.1 Semi Vision 的“2025 年主要代工技术节点摘要
@@ -3585,7 +3615,7 @@ https://www.gartner.com/en/newsroom/press-releases/2024-10-28-gartner-forecasts-
 
 ### 40.5.2 关税
 
-#### 我们如何确定芯片的来源以及 话题标签#Tariff 对 话题标签#Chips 的影响。
+#### 我们如何确定芯片的来源以及 Tariff 对 Chips 的影响。
 
 有两种方法可以确定任何产品的原产地：
 
@@ -3631,6 +3661,15 @@ Qorvo, Inc. 、德州仪器 和 安森美半导体 的影响较小，但肯定�
 在所有关税中，台湾关税对美国公司的伤害最大，因为它们主导着半导体设计、个人电脑、服务器和手机市场。
 
 <https://www.linkedin.com/posts/clausaasholm_if-you-believe-countries-with-a-trade-surplus-activity-7313607267541516289-7puA?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+#### 20250411 关税部分豁免的影响
+
+4 月 11 日，美国宣布排除其“互惠关税”。我会将这些排除排除解释为主要是为了减少对电子产品、半导体和消费者（电子产品）的影响，而不是白宫希望与中国达成协议的信号。按价值计算，豁免类别约占美国从中国进口的 22%。然而，大多数从中国进口的美国商品仍然面临高得令人望而却步的关税。
+
+![](/picture/1744469914512.jpg)
+
+<https://www.linkedin.com/posts/gerard-dipippo-b76565230_on-april-11-the-us-announced-exclusions-activity-7316837143782318083-ZMQd?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
 
 ## 40.6 全球 IC 晶圆厂和设施报告：2024 年 - Semiengineering
 
