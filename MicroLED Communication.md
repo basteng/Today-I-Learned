@@ -5557,3 +5557,4 @@ FP 激光器是短距离、低带宽系统的低成本解决方案。同时，MZ
 
 <https://arxiv.org/html/2504.01463v1>
 
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Versatile%20silicon%20integrated%20photonic%20processor%20a%20reconfigurable%20solution%20for%20next%20generation%20AI.pdf>

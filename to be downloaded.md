@@ -35,6 +35,8 @@
 - [32. GaN Subwavelength Gratings by Machine Learning Design](#32-gan-subwavelength-gratings-by-machine-learning-design)
 - [33. Modeling of III-N heterostructures for GaN light-emitting diodes based on effective bond-orbital model](#33-modeling-of-iii-n-heterostructures-for-gan-light-emitting-diodes-based-on-effective-bond-orbital-model)
 - [34. GaN-Based Laser Diode with a Trapezoidal EBL and an Unintentionally Doped Layer Reaching 7.8 GHz Modulation Bandwidth](#34-gan-based-laser-diode-with-a-trapezoidal-ebl-and-an-unintentionally-doped-layer-reaching-78-ghz-modulation-bandwidth)
+- [35. III-nitride-based monolithic integration: From electronics to photonics](#35-iii-nitride-based-monolithic-integration-from-electronics-to-photonics)
+- [36. TeraPHY: A Chiplet Technology for Low-Power, High-Bandwidth In-Package Optical I/O](#36-teraphy-a-chiplet-technology-for-low-power-high-bandwidth-in-package-optical-io)
 
 20241204以后 （未下载）
 
@@ -198,6 +200,14 @@ https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13386/133860B/
 # 34. GaN-Based Laser Diode with a Trapezoidal EBL and an Unintentionally Doped Layer Reaching 7.8 GHz Modulation Bandwidth
 
 https://pubs.acs.org/doi/full/10.1021/acsphotonics.4c02606
+
+# 35. III-nitride-based monolithic integration: From electronics to photonics
+
+https://pubs.aip.org/aip/apr/article-abstract/12/2/021301/3341811/III-nitride-based-monolithic-integration-From?redirectedFrom=fulltext
+
+# 36. TeraPHY: A Chiplet Technology for Low-Power, High-Bandwidth In-Package Optical I/O
+
+https://ieeexplore.ieee.org/document/9007742
 
 
 
