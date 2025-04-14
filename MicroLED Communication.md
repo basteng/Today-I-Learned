@@ -2409,7 +2409,11 @@ microLED 互连通常使用多芯光纤或相干光纤束，而不是为每个�
 
 ## 5.44.3 Progress toward an Open & Sustainable, Energy Centric Computing Architecture for today’s AI & HPC Applications
 
+![](/picture/OCP%20universal%20topology%20Interconnect.png)
 
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/OCP%20Regional%20Summit%202024%20-%20Open%20%26%20Sustainable%2C%20Energy%20Centric%20Computing%20Architecture%20-%20Final.pdf>
+
+<https://drive.google.com/file/d/1uGpIX8gpTl9essRi0-8MmnnDuOZpXwy_/view>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
