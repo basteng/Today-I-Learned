@@ -83,6 +83,11 @@
   - [5.40 用于并行光互连的光纤束](#540-用于并行光互连的光纤束)
   - [5.41 Interconnect networks using microled-based optical links](#541-interconnect-networks-using-microled-based-optical-links)
   - [5.42 OFC 2025](#542-ofc-2025)
+  - [5.43 今年和近年来 OFC25 的一个关键主题是优化短距离 DC 内部 interconnects 的功率、带宽和覆盖范围。这一趋势正在推动多个领域的创新！](#543-今年和近年来-ofc25-的一个关键主题是优化短距离-dc-内部-interconnects-的功率带宽和覆盖范围这一趋势正在推动多个领域的创新)
+  - [5.44 一个有趣的评论 LightbundleTM LED 应用于 OCP HPC HPCM](#544-一个有趣的评论-lightbundletm-led-应用于-ocp-hpc-hpcm)
+  - [5.44.1 代表人物 Allan Cantle](#5441-代表人物-allan-cantle)
+  - [5.44.2 网站](#5442-网站)
+  - [5.44.3 Progress toward an Open \& Sustainable, Energy Centric Computing Architecture for today’s AI \& HPC Applications](#5443-progress-toward-an-open--sustainable-energy-centric-computing-architecture-for-todays-ai--hpc-applications)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -2359,6 +2364,52 @@ Avicena 联合创始人兼首席执行官 Bardia Pezeshki 表示：“在 Avicen
 InflectionPoint Research 创始人兼执行合伙人 Michael Fox 表示：“随着生成式 AI 的不断发展，高带宽密度、低功耗和低延迟互连在扩展网络中的作用不容小觑。Avicena 基于 microLED 的互连技术有可能在超大规模 AI 扩展网络领域带来范式转变。”
 
 <https://avicena.tech/avicena-announces-modular-lightbundle-optical-interconnect-platform-with-1tbps-mm-i-o-density-and-1pj-bit/>
+
+## 5.43 今年和近年来 OFC25 的一个关键主题是优化短距离 DC 内部 interconnects 的功率、带宽和覆盖范围。这一趋势正在推动多个领域的创新！
+
+在这方面，基于 MicroLED 的光学互连值得一提。
+
+微型发光二极管 （话题标签#microLEDs ） 通常由 GaN 材料制成，是微型（微米级）二极管，在用电流驱动时会发射光子。
+
+基于 MicroLED 的互连通常涉及一对收发器小芯片，它们通过一束光纤进行通信。每个小芯片都包含一个 microLED 发射器阵列和一个光电二极管检测器 （PD） 阵列，以及必要的驱动和接收电路。来自每个microLED的光通过专用光纤链路传输到接收器处相应的光电二极管。链路高度并行：每个 LED/光电二极管对构成一个光通道。
+
+microLED 互连通常使用多芯光纤或相干光纤束，而不是为每个通道使用单独的单芯光纤。
+
+当 microLED 阵列照射到该光纤束的一端时，每个纤芯都会捕获来自一个 LED“像素”的光并将其引导到另一端，从而保持空间排序。发光/不发光的 LED 图案在远端以光学方式复制到光电二极管阵列上。
+
+由于通道并行运行，因此整个数据流被分成许多较慢的通道，而不是一个串行流。例如，microLED 互连可能使用 8 个 8 Gbps 的通道，而不是一个 64 Gbps 的通道。
+
+并行架构与已经使用并行通道（UCIe、BoW）的 chiplet D2D 接口标准很好地配合。如果集成在 ASIC 封装中，这些小芯片基本上会在机架之间扩展片上并行总线，从而减少延迟和功耗（无需高速 serdes）。
+
+今天的原型 microLED 链路（来自初创公司/研究）以每通道 ~10 Gbps 的速度运行。凭借 128 个通道，它们可以将聚合带宽推高到 ~1 Tbps。未来版本的目标是每通道 20-25 Gbps。这些是简单的 NRZ 链接 - 没有花哨的 PAM4 调制。
+
+与依赖光子 PIC 的 CPO 光学引擎不同，microLED 互连小芯片主要停留在 CMOS 领域。没有特殊材料或外部激光器，小芯片可在标准流程中制造。
+
+与铜缆相比，该技术提供了更好的范围 （~30 m） 和更高的带宽密度。与 VCSEL 光学器件相比，它通过避免使用激光器和复杂的光学引擎，提供了低得多的功率密度 （~2 pJ/bit）。
+
+当然，更广泛地采用也存在挑战。与 CPO 一样，microLED 互连也引发了对封装复杂性、可维护性、可靠性和精确集成需求的担忧。此外，目前还没有互作性标准。
+
+尽管如此，简单性还是令人信服的！随着 LED 显示屏行业的规模经济，随着时间的推移，每比特成本可能会下降到光学成本以下。
+
+<https://www.linkedin.com/posts/sharada-yeluri_ofc25-interconnects-microleds-activity-7317312867592982529-7T-x?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+## 5.44 一个有趣的评论 LightbundleTM LED 应用于 OCP HPC HPCM
+
+几年来，我一直在关注 Avicena，并将他们的 LightbundleTM LED 收发器集成到我们的 OCP HPC HPCM 概念中。正如您所说，美妙之处在于简单性，尤其是相对于当今 SiPh 技术的低能耗！也就是说，将其从实验室投入生产似乎仍然存在挑战！我一直在祈祷
+
+<https://www.linkedin.com/feed/update/urn:li:activity:7317312867592982529?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7317312867592982529%2C7317330081486422017%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287317330081486422017%2Curn%3Ali%3Aactivity%3A7317312867592982529%29>
+
+## 5.44.1 代表人物 Allan Cantle
+
+<https://www.linkedin.com/in/allan-cantle-666405/>
+
+## 5.44.2 网站
+
+<https://www.opencompute.org/wiki/HPC>
+
+## 5.44.3 Progress toward an Open & Sustainable, Energy Centric Computing Architecture for today’s AI & HPC Applications
+
+
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
