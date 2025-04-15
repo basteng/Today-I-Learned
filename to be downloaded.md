@@ -38,6 +38,9 @@
 - [35. III-nitride-based monolithic integration: From electronics to photonics](#35-iii-nitride-based-monolithic-integration-from-electronics-to-photonics)
 - [36. TeraPHY: A Chiplet Technology for Low-Power, High-Bandwidth In-Package Optical I/O](#36-teraphy-a-chiplet-technology-for-low-power-high-bandwidth-in-package-optical-io)
 - [37. Small Cell Lung Cancer A Review](#37-small-cell-lung-cancer-a-review)
+- [38. Serplulimab With Chemotherapy in Extensive-Stage SCLC](#38-serplulimab-with-chemotherapy-in-extensive-stage-sclc)
+- [39. Toripalimab for Extensive-Stage Small Cell Lung Cancer](#39-toripalimab-for-extensive-stage-small-cell-lung-cancer)
+- [40. Toripalimab Plus Chemotherapy as a First-Line Therapy for Extensive-Stage Small Cell Lung Cancer](#40-toripalimab-plus-chemotherapy-as-a-first-line-therapy-for-extensive-stage-small-cell-lung-cancer)
 
 20241204以后 （未下载）
 
@@ -213,6 +216,18 @@ https://ieeexplore.ieee.org/document/9007742
 # 37. Small Cell Lung Cancer A Review
 
 https://jamanetwork.com/journals/jama/article-abstract/2832148
+
+# 38. Serplulimab With Chemotherapy in Extensive-Stage SCLC
+
+https://jamanetwork.com/journals/jama/article-abstract/2796715?widget=personalizedcontent&previousarticle=2832148
+
+# 39. Toripalimab for Extensive-Stage Small Cell Lung Cancer
+
+https://jamanetwork.com/journals/jamaoncology/article-abstract/2826185?widget=personalizedcontent&previousarticle=2832148
+
+# 40. Toripalimab Plus Chemotherapy as a First-Line Therapy for Extensive-Stage Small Cell Lung Cancer
+
+https://jamanetwork.com/journals/jamaoncology/article-abstract/2826181?widget=personalizedcontent&previousarticle=2832148
 
 
 
