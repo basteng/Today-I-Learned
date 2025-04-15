@@ -87,7 +87,8 @@
   - [5.44 一个有趣的评论 LightbundleTM LED 应用于 OCP HPC HPCM](#544-一个有趣的评论-lightbundletm-led-应用于-ocp-hpc-hpcm)
     - [5.44.1 代表人物 Allan Cantle](#5441-代表人物-allan-cantle)
     - [5.44.2 网站](#5442-网站)
-    - [5.44.3 Progress toward an Open \& Sustainable, Energy Centric Computing Architecture for today’s AI \& HPC Applications](#5443-progress-toward-an-open--sustainable-energy-centric-computing-architecture-for-todays-ai--hpc-applications)
+    - [5.44.3 文件位置](#5443-文件位置)
+    - [5.44.4 Progress toward an Open \& Sustainable, Energy Centric Computing Architecture for today’s AI \& HPC Applications](#5444-progress-toward-an-open--sustainable-energy-centric-computing-architecture-for-todays-ai--hpc-applications)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -2410,7 +2411,11 @@ microLED 互连通常使用多芯光纤或相干光纤束，而不是为每个�
 
 <https://www.opencompute.org/wiki/HPC>
 
-### 5.44.3 Progress toward an Open & Sustainable, Energy Centric Computing Architecture for today’s AI & HPC Applications
+### 5.44.3 文件位置
+
+<https://drive.google.com/drive/folders/1Rjor_7HKKcKn32gCm18r6KoXAnzu-34A?usp=share_link>
+
+### 5.44.4 Progress toward an Open & Sustainable, Energy Centric Computing Architecture for today’s AI & HPC Applications
 
 ![](/picture/OCP%20universal%20topology%20Interconnect.png)
 
