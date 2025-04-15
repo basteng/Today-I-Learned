@@ -228,6 +228,12 @@
 - [82. OFC 2025](#82-ofc-2025)
   - [82.1 太赫兹 （THz） 波导](#821-太赫兹-thz-波导)
   - [82.2 硅光子学和共封装光学器件在 OFC 2025 上大放异彩](#822-硅光子学和共封装光学器件在-ofc-2025-上大放异彩)
+- [83. AEC](#83-aec)
+  - [83.1 200G/通道转接驱动器：铜缆卷土重来？](#831-200g通道转接驱动器铜缆卷土重来)
+- [84. 光进铜退的思考](#84-光进铜退的思考)
+  - [84.1 AEC](#841-aec)
+  - [84.2 Thz波导](#842-thz波导)
+  - [84.3 MicroLED](#843-microled)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -5701,3 +5707,46 @@ Ayar Labs 首席执行官兼联合创始人 Mark Wade 在公司新闻稿中表�
 
 <https://www.eetimes.com/silicon-photonics-and-co-packaged-optics-shine-a-light-at-ofc-2025/?utm_campaign=9270332-250303-ofc&utm_content=330342178&utm_medium=social&utm_source=linkedin&hss_channel=lcp-6627049>
 
+# 83. AEC
+
+## 83.1 200G/通道转接驱动器：铜缆卷土重来？
+
+我之前讨论了 THz 和 microLED 互连等创新，作为直连铜 （话题标签#DAC ） 电缆的未来替代品，以实现更好的覆盖范围......在这里，我将讨论使用线性转接驱动器改善铜缆范围的最新努力...... 
+
+有源电缆 （话题标签#AEC ） 通常用于扩展铜缆范围。AEC 是铜质电缆组件，每个连接器模块中都嵌入了重定时器。它们会主动重新生成（重定时）信号，以提高高数据速率下的覆盖范围和信号质量。通常，AEC 模块包含高速 SerDes、DSP 重定时器（具有时钟/数据恢复和均衡）、FEC 和协议协商逻辑 — 这些组件消耗高功率。在 200G 时，AEC 可实现约 5-7+ 米的覆盖范围，大大超过无源铜缆 （1-2m）。
+ 
+如果您还记得，话题标签#LPOs 消除了 DSP，完全依赖线性驱动器/放大器进行信号调节。线性转接驱动器将这种范式扩展到铜。 💡
+
+线性转接驱动器（均衡器）通常位于接收器侧或链路的中间点，放大衰减较大的高频信号分量。他们通常使用连续时间线性均衡 （CTLE） 来重塑频率响应并部分恢复输入的眼图。它们不执行 retiming，因此不需要高速 serdes 或 clock/data recovery logic。它们以模拟形式透明地传递信号，保留调制和定时特性。
+
+话题标签#OFC25 年，几家公司宣布推出 200 Gbps 通道的转接驱动器。例如，Nubis 推出了他们的 Nitro 转接驱动器，每个 IC 具有 4-8 个 200G 通道，可实现 4m 的传输距离。Spectra7、Semtech 和 Macom 等其他供应商也为 100-200G 通道提供转接驱动器 IC。
+ 
+这些转接驱动器比重定时器更便宜，延迟低得多（亚纳秒），功耗低 ~10 倍，并且更容易集成到现有连接器中。它们有助于将多个机架与铜缆连接起来。由于没有重定时器，它们不需要复杂的编程和链路初始化，从而可以无缝扩展 Copper 的范围......
+ 
+转接驱动器芯片也可用于机架内背板连接，但前提是整体通道损伤在模拟均衡可以处理的范围内。对于 200G PAM4 背板通道（在 PCB 和连接器上承受高插入损耗），纯转接驱动器方法往往达不到要求;它们无法完全补偿 ~40 dB 的损耗 - 它们不仅传递数据，还传递任何噪声、串扰和抖动。然而，在 PCB 走线最小化的有线背板中，战略性地放置在中板或连接器附近的转接驱动器也可以增加这些互连的覆盖范围......
+ 
+线性转接驱动器解决方案的美妙之处在于，与许多新兴技术不同，它可以无缝集成到现有的硬件架构中，而无需进行重大的重新设计......
+
+<https://www.linkedin.com/posts/sharada-yeluri_dac-aec-lpos-activity-7317735931342475265-18e3?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+
+Allan Cantle:
+
+这就是您进入模拟电子黑魔法世界的地方！😀 多年来，我个人对高速通道进行了很多思考，从发射器的芯片凸块到接收器的芯片凸块，令我印象深刻的是，除了历史上的 IEEE 等预算分配和测试方法之外，还有很大的改进空间！
+我们正在进入一个 Chiplets 的世界，在这里，我们可以通过精心挑选的重定时器和转接驱动器系列来处理不同的用例，从而重新发明高速通道。参数可以从速度、pJ/bit、通道预算、到达到通道中等等进行调整。
+当封装尺寸达到模块尺寸时，为什么不将模块作为封装，并将芯片凸块直接布线到高速连接器上。从本质上讲，我们将我们在包中看到的致密化带到了可插拔系统级别。
+这里有很多值得探索和讨论的地方，但我们需要再次抛弃旧事物，重新构想我们能从零开始做些什么！
+
+# 84. 光进铜退的思考
+
+## 84.1 AEC
+
+<https://www.linkedin.com/posts/sharada-yeluri_dac-aec-lpos-activity-7317735931342475265-18e3?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+## 84.2 Thz波导
+
+<https://www.linkedin.com/posts/sharada-yeluri_ofc25-ofc50-datacenters-activity-7313960524344434688-jLfe?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+## 84.3 MicroLED
+
+<https://www.linkedin.com/posts/sharada-yeluri_ofc25-interconnects-microleds-activity-7317312867592982529-7T-x?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
