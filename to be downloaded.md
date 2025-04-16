@@ -41,6 +41,7 @@
 - [38. Serplulimab With Chemotherapy in Extensive-Stage SCLC](#38-serplulimab-with-chemotherapy-in-extensive-stage-sclc)
 - [39. Toripalimab for Extensive-Stage Small Cell Lung Cancer](#39-toripalimab-for-extensive-stage-small-cell-lung-cancer)
 - [40. Toripalimab Plus Chemotherapy as a First-Line Therapy for Extensive-Stage Small Cell Lung Cancer](#40-toripalimab-plus-chemotherapy-as-a-first-line-therapy-for-extensive-stage-small-cell-lung-cancer)
+- [41. 170 Gbps PDM underwater visible light communication utilizing a compact 5-λ laser transmitter and a reciprocal differential receiver](#41-170-gbps-pdm-underwater-visible-light-communication-utilizing-a-compact-5-λ-laser-transmitter-and-a-reciprocal-differential-receiver)
 
 20241204以后 （未下载）
 
@@ -228,6 +229,10 @@ https://jamanetwork.com/journals/jamaoncology/article-abstract/2826185?widget=pe
 # 40. Toripalimab Plus Chemotherapy as a First-Line Therapy for Extensive-Stage Small Cell Lung Cancer
 
 https://jamanetwork.com/journals/jamaoncology/article-abstract/2826181?widget=personalizedcontent&previousarticle=2832148
+
+# 41. 170 Gbps PDM underwater visible light communication utilizing a compact 5-λ laser transmitter and a reciprocal differential receiver
+
+https://opg.optica.org/prj/abstract.cfm?doi=10.1364/PRJ.551924
 
 
 
