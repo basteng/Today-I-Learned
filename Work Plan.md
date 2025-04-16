@@ -9,6 +9,9 @@
   - [2.2 参考硅调制](#22-参考硅调制)
     - [2.2.1 参考论文Limits to Silicon Modulator Bandwidth and Power Consumption](#221-参考论文limits-to-silicon-modulator-bandwidth-and-power-consumption)
       - [该调制器可以实现1fj/bit，Avicena的功耗是1pj/bit？Avicena的功耗更大？](#该调制器可以实现1fjbitavicena的功耗是1pjbitavicena的功耗更大)
+      - [\[5\] Micrometre-scale silicon electro-optic modulator](#5-micrometre-scale-silicon-electro-optic-modulator)
+      - [\[4\] A high-speed silicon optical modulator based on a metal–oxide–semiconductor capacitor](#4-a-high-speed-silicon-optical-modulator-based-on-a-metaloxidesemiconductor-capacitor)
+      - [\[3\] Ultra-compact, low RF power, 10 Gb/s silicon Mach-Zehnder modulator](#3-ultra-compact-low-rf-power-10-gbs-silicon-mach-zehnder-modulator)
 
 
 # 1.目标
@@ -182,3 +185,16 @@
 3. **应用前景**：微盘调制器与高速、低功耗带通开关结合，为构建高度互联的短距离光网络提供了可能。例如在连接高性能超级计算机的三维网状网络中，这些组件可以实现高效的数据传输和路由，满足超级计算机对数据处理和通信速度的严格要求，推动光通信技术在高性能计算领域的应用和发展。 
 
 #### 该调制器可以实现1fj/bit，Avicena的功耗是1pj/bit？Avicena的功耗更大？
+
+#### [5] Micrometre-scale silicon electro-optic modulator
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Micrometre-scale%20silicon%20electro-optic%20modulator.pdf>
+
+#### [4] A high-speed silicon optical modulator based on a metal–oxide–semiconductor capacitor
+
+<https://www.nature.com/articles/nature02310>
+
+#### [3] Ultra-compact, low RF power, 10 Gb/s silicon Mach-Zehnder modulator
+
+<https://opg.optica.org/oe/fulltext.cfm?uri=oe-15-25-17106&id=148351>
+
