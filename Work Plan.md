@@ -12,6 +12,7 @@
       - [\[5\] Micrometre-scale silicon electro-optic modulator](#5-micrometre-scale-silicon-electro-optic-modulator)
       - [\[4\] A high-speed silicon optical modulator based on a metal–oxide–semiconductor capacitor](#4-a-high-speed-silicon-optical-modulator-based-on-a-metaloxidesemiconductor-capacitor)
       - [\[3\] Ultra-compact, low RF power, 10 Gb/s silicon Mach-Zehnder modulator](#3-ultra-compact-low-rf-power-10-gbs-silicon-mach-zehnder-modulator)
+      - [\[2\] Polarization-transparent microphotonic devices in the strong confinement limit](#2-polarization-transparent-microphotonic-devices-in-the-strong-confinement-limit)
 
 
 # 1.目标
@@ -197,4 +198,10 @@
 #### [3] Ultra-compact, low RF power, 10 Gb/s silicon Mach-Zehnder modulator
 
 <https://opg.optica.org/oe/fulltext.cfm?uri=oe-15-25-17106&id=148351>
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Ultra-compact%2C%20low%20RF%20power%2C%2010%20Gbs%20silicon%20Mach-Zehnder%20modulator.pdf>
+
+#### [2] Polarization-transparent microphotonic devices in the strong confinement limit
+
+
 
