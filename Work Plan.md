@@ -208,3 +208,4 @@
 
 #### [1] Optics for low-energy communication inside digital processors, quantum detectors, sources, modulators as efficient impedance converters
 
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Optics%20for%20low-energy%20communication%20inside%20digital%20processors%2C%20quantum%20detectors%2C%20sources%2C%20modulators%20as%20efficient%20impedance%20converters.pdf>
