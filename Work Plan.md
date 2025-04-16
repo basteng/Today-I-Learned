@@ -6,6 +6,7 @@
     - [2.1.1 电注入 III 族氮化物发光二极管中的差异载流子寿命和传输效应](#211-电注入-iii-族氮化物发光二极管中的差异载流子寿命和传输效应)
     - [2.1.2 LiZhenhao paper - Bandwidth Analysis of High-Speed InGaN Micro-LEDs by an Equivalent Circuit Model](#212-lizhenhao-paper---bandwidth-analysis-of-high-speed-ingan-micro-leds-by-an-equivalent-circuit-model)
     - [2.1.3 Avicena paper - High Bandwidth GaN-Based Micro-LEDs at Temperatures up to 400 ◦C](#213-avicena-paper---high-bandwidth-gan-based-micro-leds-at-temperatures-up-to-400-c)
+  - [2.2 参考硅调制](#22-参考硅调制)
 
 
 # 1.目标
@@ -25,3 +26,8 @@
 ### 2.1.2 LiZhenhao paper - Bandwidth Analysis of High-Speed InGaN Micro-LEDs by an Equivalent Circuit Model
 
 ### 2.1.3 Avicena paper - High Bandwidth GaN-Based Micro-LEDs at Temperatures up to 400 ◦C
+
+## 2.2 参考硅调制
+
+Limits to Silicon Modulator Bandwidth and Power Consumption
+
