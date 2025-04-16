@@ -13,6 +13,7 @@
       - [\[4\] A high-speed silicon optical modulator based on a metal–oxide–semiconductor capacitor](#4-a-high-speed-silicon-optical-modulator-based-on-a-metaloxidesemiconductor-capacitor)
       - [\[3\] Ultra-compact, low RF power, 10 Gb/s silicon Mach-Zehnder modulator](#3-ultra-compact-low-rf-power-10-gbs-silicon-mach-zehnder-modulator)
       - [\[2\] Polarization-transparent microphotonic devices in the strong confinement limit](#2-polarization-transparent-microphotonic-devices-in-the-strong-confinement-limit)
+      - [\[1\] Optics for low-energy communication inside digital processors, quantum detectors, sources, modulators as efficient impedance converters](#1-optics-for-low-energy-communication-inside-digital-processors-quantum-detectors-sources-modulators-as-efficient-impedance-converters)
 
 
 # 1.目标
@@ -203,5 +204,7 @@
 
 #### [2] Polarization-transparent microphotonic devices in the strong confinement limit
 
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Polarization-transparent%20microphotonic%20devices%20in%20the%20strong%20confinement%20limit.pdf>
 
+#### [1] Optics for low-energy communication inside digital processors, quantum detectors, sources, modulators as efficient impedance converters
 
