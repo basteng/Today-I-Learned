@@ -33,6 +33,7 @@
   - [4.25 A Hybrid Machine Learning and Numeric Optimization Approach to Analog Circuit Deobfuscation](#425-a-hybrid-machine-learning-and-numeric-optimization-approach-to-analog-circuit-deobfuscation)
   - [4.26 Modeling and Simulation of Silicon Photonics Systems in SystemVerilog/XMODEL](#426-modeling-and-simulation-of-silicon-photonics-systems-in-systemverilogxmodel)
   - [4.27 光纤网络中的 UCIe](#427-光纤网络中的-ucie)
+  - [4.28 OFC2025：Ayarlab：UCIe光IO接口及MOLA连接器](#428-ofc2025ayarlabucie光io接口及mola连接器)
 - [5. Avicena](#5-avicena)
   - [5.1《High Bandwidth GaN-based Micro-LEDs at Temperatures up to 400°C》](#51high-bandwidth-gan-based-micro-leds-at-temperatures-up-to-400c)
   - [5.2 硅光子学联合封装。 凉！ 但它实用吗？Bardia Pezeshki post at Linkedin](#52-硅光子学联合封装-凉-但它实用吗bardia-pezeshki-post-at-linkedin)
@@ -1230,6 +1231,78 @@ UCIe 如何支持您扩展光学 I/O 解决方案的努力？
 Letizia Giuliano，Alphawave Semi： 铜基电气连接在连接芯片时具有固有的距离限制。UCIe 兼容性使 PHY 能够优化为光学应用的重定时器。通过利用可插拔光学器件，连接可以扩展到数百米，而不会出现铜互连常见的信号损失。这种方法支持沿同一物理海岸线进行高带宽、低延迟和节能的光学数据传输。
 
 <https://www.uciexpress.org/post/ucie-in-optical-networking>
+
+## 4.28 OFC2025：Ayarlab：UCIe光IO接口及MOLA连接器
+
+传统的可插拔互连无法满足高带宽领域所需的带宽密度、能效、成本和可靠性指标。光互联技术提供卓越、突破性性能，提供更长覆盖范围、更高带宽密度和更低延迟，各方面性能全面超过电互联。
+
+这次Ayarlab进一步展示一种UCIe光I/O Retimer，一种新的I/O技术，通过结合UCIe电接口和波分复用实现包对包、多机架系统连接，降低能效和提高高带宽密度，用于扩展AI结构。其关键创新在于首次实现光学重定时器，支持高达8.192 TB的双向带宽，首次演示16波长微环链路，架构遵循UCIe Retimer规范：
+
+![](/picture/Ayar-OFC2025-1.png)
+
+该芯片集成UCIe定时器协议逻辑，并将UCIe映射到光端口。协议逻辑实现信道偏置、UCIe多模块物理逻辑（MMPL）、时钟PPM补偿和固件定义管理。协议逻辑与UCIe retimer规范一致，对流量不可知，兼容端到端纠错（如CRC/retry或FEC）。从UCIe Link 0到UCIe Link 1的单向端到端时延约为25ns。
+
+![](/picture/Ayar-OFC2025-2.png)
+
+UCIe Retimer光I/O芯片由8个光I/O端口组成（每个端口收发各一）， 16个×16 UCIe标准封装（UCIe- s）模块，每个模块速率为512Gbps，每通道16 Gbps。    
+外部多波长、多端口WDM激光源（ELS）为所有光端口提供所需光功率。    
+光芯片采用GlobalFoundries Fotonix™工艺制造，与UCIe-S PHY键合铜柱间距为123μm，在芯片其他地方间距为128μm。  
+UCIe Link测试结果如下，眼图0.59UI裕度，所有模块5天测试没有出现误码。
+
+![](/picture/Ayar-OFC2025-3.png)
+
+光口架构和之前光互连一样，采用200GHz通道间隔，增加一倍通道数。16个TX和16个RX通道@32Gbps NRZ/通道，双向带宽1024Gbps ，所有通道共享PLL和时钟，片上MCU支持初始化和管理的固件控制。
+
+![](/picture/Ayar-OFC2025-4.png)
+
+在发端，片上采用MRM，32Gbps NRZ调制ER达到9dB以上，集成热调器使HW和FW环和波长对齐，TDEC、消光比和调制器损耗在光端口的所有通道上是一致的。    
+
+在收端，所有16通道端口的测量光学接收灵敏度<40μA。链路测试通过VOA在回接中连接TX和RX，所有16λ同时工作。链路衰减小于4dB时，BER低于1e-12。当偏振加扰达到2000转/秒时，仍保持误码率性能。
+
+![](/picture/Ayar-OFC2025-5.png)
+
+激光器为一个16λ DFB激光阵列和一个无源平面光波电路（PLC），实现多路复用和分光到一个8光纤输出阵列，使每个输出光纤包含所有16λ。
+
+![](/picture/Ayar-OFC2025-6.png)
+
+进行功耗分析包括所有模拟、数字、光学控制系统在内的光Tx/Rx总能效为4.5pJ/bit，其中UCIe接口为2.4pJ/b高于16Gbps UCle-S 规定的<1 pJ/bit目标，这是因为设计的电源为1V，而实现UCle-S的典型0.7V。在平均输出功率为3dBm/lambda时，工作速度为32Gbps/lambda，能效为1pJ/bit。    
+
+分解来看，optical serdes部分能效为3.4pJ/bit，其中时钟占了43.2%，收端占30.3%。UCIe部分能效为1.83pJ/bit，其中发端占了49.7%，收端占9.1%。数字电源能效为3.26pJ/bit，其中retimer占了41.7%.
+
+![](/picture/Ayar-OFC2025-7.png)
+
+下图显示端到端全双工UCIe流量在原始流模式下的光学演示。在UCIe retimer die上启用retimer协议，以便跨两个包执行时钟PPM补偿。在本演示中，一个光端口和两个UCIe模块在每个UCIe Retimer芯片上同时以全双工方式运行，实现1.024Tbps的双向带宽。在超过10小时的每个测试点观察到全双工无差错误码率。
+
+![](/picture/Ayar-OFC2025-8.png)
+
+在这次大会上，Ayarlab的另一项很重要工作是提供光电芯片与行业标准光接口（基于光纤）之间的光连接。光互连接口具有以下几个关键功能：提供PIC与外部光纤系统之间的光连接；起到应力缓冲作用，减轻由外力（如光纤组件插拔或外部光纤系统传递的力）对PIC造成的机械应力。
+
+![](/picture/Ayar-OFC2025-9.png)
+![](/picture/Ayar-OFC2025-10.png)
+
+Ayarlab针对光I/O芯片提出封装解决方案MOLA:多通道透镜阵列光连接器，采用V型槽技术连接光I/O芯片，支持无源光纤连接，使其可扩展到大批量生产（HVM）。MOLA是专门为TeraPHY光学芯片设计优化。可支持GC耦合器。
+
+![](/picture/Ayar-OFC2025-11.png)
+
+其最大优势是通过扩展光束尺寸58um，以实现连接器偏移和倾斜在0.2dB下降的对齐公差：X/Y方向为±6um、距离方向为±600um以及角度0.2deg。连接器的损耗为0.5dB，插拔重复性为0.1dB，回损大于20dB，PER大于18dB。允许MOLA连接器轻松实现即插即用功能。
+
+![](/picture/Ayar-OFC2025-12.png)
+
+在装配过程中使用硅胶盖保护MOLA免受灰尘和热影响，安装防尘密封件以在操作过程中封闭透镜。
+
+![](/picture/Ayar-OFC2025-13.png)
+
+提供经过充分测试的已知良好连接芯片的工艺流程，提高封装安装过程的良率。
+
+![](/picture/Ayar-OFC2025-14.png)
+
+KGCC工艺流程对基板切割，不再需要通过基板来连接光纤，确保光纤连接两者不会相互干扰，开盖孔集成散热片实现更好热管理。
+
+![](/picture/Ayar-OFC2025-15.png)
+
+总之，这次Ayarlab的主要亮点有很多。首先，针对TeraPHY芯片封装提出带MOLA连接器的KGCC作为光IO芯片的解决方案，MOLA连接器在平移位移和可插拔性方面表现出宽松容忍度，KGCC工艺流程可以帮助减轻光纤粘合良率风险。其次，通过光学传输的8 Tbps的UCle光I/O Retimer，能够桥接UCle接口，任何符合UCle标准的芯片都可以通过光l/O进行加速。这是首次演示完全集成的光学重定时器芯片实现与所有计算硬件的联合封装，打破大规模互连瓶颈，以满足人工智能扩展应用的需求。
+
+<https://mp.weixin.qq.com/s/m85VJLALTKX7E5bWCxVrdQ>
 
 # 5. Avicena
 
