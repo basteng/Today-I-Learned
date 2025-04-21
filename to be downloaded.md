@@ -43,6 +43,7 @@
 - [40. Toripalimab Plus Chemotherapy as a First-Line Therapy for Extensive-Stage Small Cell Lung Cancer](#40-toripalimab-plus-chemotherapy-as-a-first-line-therapy-for-extensive-stage-small-cell-lung-cancer)
 - [41. 170 Gbps PDM underwater visible light communication utilizing a compact 5-λ laser transmitter and a reciprocal differential receiver](#41-170-gbps-pdm-underwater-visible-light-communication-utilizing-a-compact-5-λ-laser-transmitter-and-a-reciprocal-differential-receiver)
 - [42. A high-speed silicon optical modulator based on a metal–oxide–semiconductor capacitor](#42-a-high-speed-silicon-optical-modulator-based-on-a-metaloxidesemiconductor-capacitor)
+- [43. High Responsivity and Wide Bandwidth SiGe/Si Phototransistor for Optical Interconnection](#43-high-responsivity-and-wide-bandwidth-sigesi-phototransistor-for-optical-interconnection)
 
 20241204以后 （未下载）
 
@@ -238,6 +239,10 @@ https://opg.optica.org/prj/abstract.cfm?doi=10.1364/PRJ.551924
 # 42. A high-speed silicon optical modulator based on a metal–oxide–semiconductor capacitor
 
 https://www.nature.com/articles/nature02310
+
+# 43. High Responsivity and Wide Bandwidth SiGe/Si Phototransistor for Optical Interconnection
+
+https://ieeexplore.ieee.org/abstract/document/10945814
 
 
 
