@@ -31,6 +31,7 @@
 - [20. N26开卡](#20-n26开卡)
 - [21. Deepseek + Kimi 生成ppt](#21-deepseek--kimi-生成ppt)
 - [22. 视频转gif](#22-视频转gif)
+- [23. 订阅ChatGPT Plus](#23-订阅chatgpt-plus)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -672,3 +673,16 @@ ZX spectrum Next 看起来很棒。然后是 8 位人的 Commander X-16，由他
 # 22. 视频转gif
 
 <https://www.aconvert.com/video/>
+
+# 23. 订阅ChatGPT Plus
+
+1. 参考这个链接，美区ID，购买gift卡。时常会出现登陆不上的情况，反复多刷几次，或者苹果ID登出再登陆即可
+
+<https://github.com/farion1231/Way-to-ChatGPT-Plus/blob/main/%E4%BD%BF%E7%94%A8%E9%93%B6%E8%81%94%E8%B4%A6%E6%88%B7%E9%80%9A%E8%BF%87IOS%E8%AE%A2%E9%98%85ChatGPT%20Plus.md>
+
+credit card接收邮件，可以随意，不用非得美区ID的注册邮箱
+
+2. 上述链接有个错误，订阅 是在 设置 -> 最顶端的Apple账户 -> 订阅
+
+- 取消也是在这里取消
+- 第一次注册时，在App store里看不到“订阅” 
