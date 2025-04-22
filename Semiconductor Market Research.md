@@ -233,6 +233,8 @@
   - [Techinsights](#techinsights)
     - [1. 年度展望](#1-年度展望)
       - [1.1 2025 年半导体年度展望](#11-2025-年半导体年度展望)
+      - [1.2 关税对2025年和2026年半导体销售的潜在影响](#12-关税对2025年和2026年半导体销售的潜在影响)
+      - [1.3 半导体分析 - 2025 年 4 月 15 日](#13-半导体分析---2025-年-4-月-15-日)
     - [2. Chip Observer](#2-chip-observer)
       - [2.1 Chip Observer 2025 年 2 月](#21-chip-observer-2025-年-2-月)
   - [Bank for International Settlements](#bank-for-international-settlements)
@@ -4393,6 +4395,85 @@ Switch 2 可能会彻底摆脱传统控制器的桎梏，转向语音命令、�
 全文链接
 
 <https://library.techinsights.com/hg-asset/071b4e87-981f-4846-852e-5e067aba19ef?utm_source=blog&utm_medium=website&utm_campaign=Webinar%20-%202025%20Semiconductor%20Year%20in%20Preview#moduleName=Reverse+Engineering&reportCode=SAS-2502-801&subscriptionId=null&channelId=null&reportName=2025+Semiconductor+Year+in+Preview+>
+
+#### 1.2 关税对2025年和2026年半导体销售的潜在影响
+
+美国新政府的关税政策带来了诸多不确定性，而关税是关键的政策领域，将对半导体行业产生重大影响。尽管半导体（迄今为止）仍享有豁免权，但材料、资本设备，当然还有终端市场都受到了影响。频繁的关税政策变动使得业务规划变得困难。了解最新动态的最佳方式是通过 TechInsights 的“关税观察”。为了进一步帮助客户规划，我们的专家团队预测了未来一年的三种不同情景。
+
+![](/picture/tarriff_semi_techinsights.png)
+
+![](/picture/tarriff_semi_growth_techinsights.png)
+
+半导体预测情景的关键假设
+
+四月预测（基准情景）：
+- 世界GDP增长3.2%，关税增长10%
+- 半导体预测已从 3 月份的更新版本向下修正，特别是针对 2025 年下半年和 2026 年
+- - 2025 年第二季度的需求强于预期，受关税担忧推动，将引发许多领域（汽车、移动、个人电脑、数据中心等）的提前购买
+- - Windows 10 生命周期结束推动 PC 需求略有上升
+
+中等影响：
+- 世界GDP增长2.2%，关税增长20-40%
+- - 假设中国关税从当前（2025年4月16日）水平降至30-40%区间（往返中国）
+- - 对半导体和电子产品实行重大关税豁免
+- 2025年上半年
+- - 为应对即将到来的美国关税，已下达大量订单
+- - - 智能手机、个人电脑、半导体、设备等。
+- - - 赋予部分供应商临时定价权
+- - - 由于这种拉动，库存可能会增加
+- - - - 特别是在电子原始设备制造商和分销商
+- - - - - 当前库存仍然很高，但已趋向于历史正常水平；此次关税需求将使库存回升至高位
+- - - - - 与新冠疫情期间类似，企业可能会调整为以防万一的库存模式
+- - 预计半导体供应商将从现有库存中发货，同时保持有限的生产水平
+- - - 供应商库存仍然很高，他们可能会利用这个机会在未来两个季度减少库存
+- 2025年下半年
+- - 电子产品出货量放缓（个人电脑、智能手机、平板电脑、消费电子产品）
+- - 数据中心需求保持强劲，GPU 和 HBM 销售保持强劲
+
+严重影响：
+- 世界GDP 1.2%，关税>40%
+未对中国实施关税减免；双向关税仍维持在 100% 以上
+互惠关税全面生效
+超大规模数据中心的收入面临压力，导致数据中心资本支出放缓
+- 2025年上半年
+与中等影响情景类似，预计 2025 年第二季度会出现订单增长
+- 2025年下半年
+- - 美国和欧盟经济衰退
+- - - 消费者需求骤降
+- - - - 第四季度电子产品销售暴跌
+- - - - - 无节假日旺季
+- - 经济衰退将导致公司削减广告支出，给超大规模企业的利润率带来压力
+- - - 第四季度人工智能需求下降
+- - - - 减少对 HBM 和 GPU 的需求
+- - 由于电子产品需求下降速度超过供应链调整能力，导致整个供应链库存高企
+- - 定价压力增加
+
+关税情景——半导体总销售额
+![](/picture/tarriff_semi_techinsights1.png)
+
+关税情景——按主要细分市场
+![](/picture/tarriff_semi_techinsights2.png)
+
+![](/picture/tarriff_semi_techinsights3.png)
+
+![](/picture/tarriff_semi_techinsights4.png)
+
+![](/picture/tarriff_semi_techinsights5.png)
+
+<https://library.techinsights.com/hg-asset/6924cee7-9ce8-4963-84bc-1381b3be6c84#moduleName=Analysis+View&reportCode=FSF-2504-801&subscriptionId=null&channelId=null&reportName=Tariff+Scenarios%253A+Semiconductor+Sales+2025+and+2026>
+
+#### 1.3 半导体分析 - 2025 年 4 月 15 日
+
+上周半导体销售额下降了 5%，但比去年同期增长了 29%。
+
+针对特定国家的互惠关税原定于 4 月 9 日生效，但当天暂停，这给整个供应链带来了不确定性，导致订单延迟，上周半导体销售略有回落。
+
+聚焦DRAM IC，上周13周移动平均线同比增长55%。TechInsights预测，到2025年，DRAM IC销售额将增长32%，达到1310亿美元。
+
+上周电子产品零售价格上涨，主要原因是平板电脑和消费电子产品价格上涨。
+
+<https://library.techinsights.com/hg-asset/32f14642-37dc-4a27-8be3-b91913344d1b#moduleName=Analysis+View&reportCode=SAS-2504-804&subscriptionId=null&channelId=null&reportName=Semiconductor+Analytics+%25E2%2580%2593+April+15%252C+2025>
+
 
 ### 2. Chip Observer
 
