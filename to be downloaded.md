@@ -47,6 +47,7 @@
 - [44. A 15-Gb/s PAM-3 Transceiver With Hybrid Equalization and Time-Domain Decoder for High-Bandwidth-Memory Interfaces](#44-a-15-gbs-pam-3-transceiver-with-hybrid-equalization-and-time-domain-decoder-for-high-bandwidth-memory-interfaces)
 - [45. High Modulation Efficiency Micro-Ring Modulator with Low Driving Voltage for High Speed Optical Interconnection](#45-high-modulation-efficiency-micro-ring-modulator-with-low-driving-voltage-for-high-speed-optical-interconnection)
 - [46. Heterogeneous integration of 20x10 µm blue micro-LEDs/pixels on GaN HEMTs for visible light communication](#46-heterogeneous-integration-of-20x10-µm-blue-micro-ledspixels-on-gan-hemts-for-visible-light-communication)
+- [47. Disrupting the DRAM roadmap with capacitor-less IGZO-DRAM technology](#47-disrupting-the-dram-roadmap-with-capacitor-less-igzo-dram-technology)
 
 20241204以后 （未下载）
 
@@ -259,7 +260,9 @@ https://doi.org/10.1364/OE.560256
 
 http://dx.doi.org/10.1117/12.3044048
 
+# 47. Disrupting the DRAM roadmap with capacitor-less IGZO-DRAM technology
 
+https://www.nature.com/articles/s44287-025-00162-w#Bib1
 
 
 
