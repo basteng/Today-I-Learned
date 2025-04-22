@@ -44,6 +44,9 @@
 - [41. 170 Gbps PDM underwater visible light communication utilizing a compact 5-λ laser transmitter and a reciprocal differential receiver](#41-170-gbps-pdm-underwater-visible-light-communication-utilizing-a-compact-5-λ-laser-transmitter-and-a-reciprocal-differential-receiver)
 - [42. A high-speed silicon optical modulator based on a metal–oxide–semiconductor capacitor](#42-a-high-speed-silicon-optical-modulator-based-on-a-metaloxidesemiconductor-capacitor)
 - [43. High Responsivity and Wide Bandwidth SiGe/Si Phototransistor for Optical Interconnection](#43-high-responsivity-and-wide-bandwidth-sigesi-phototransistor-for-optical-interconnection)
+- [44. A 15-Gb/s PAM-3 Transceiver With Hybrid Equalization and Time-Domain Decoder for High-Bandwidth-Memory Interfaces](#44-a-15-gbs-pam-3-transceiver-with-hybrid-equalization-and-time-domain-decoder-for-high-bandwidth-memory-interfaces)
+- [45. High Modulation Efficiency Micro-Ring Modulator with Low Driving Voltage for High Speed Optical Interconnection](#45-high-modulation-efficiency-micro-ring-modulator-with-low-driving-voltage-for-high-speed-optical-interconnection)
+- [46. Heterogeneous integration of 20x10 µm blue micro-LEDs/pixels on GaN HEMTs for visible light communication](#46-heterogeneous-integration-of-20x10-µm-blue-micro-ledspixels-on-gan-hemts-for-visible-light-communication)
 
 20241204以后 （未下载）
 
@@ -243,6 +246,20 @@ https://www.nature.com/articles/nature02310
 # 43. High Responsivity and Wide Bandwidth SiGe/Si Phototransistor for Optical Interconnection
 
 https://ieeexplore.ieee.org/abstract/document/10945814
+
+# 44. A 15-Gb/s PAM-3 Transceiver With Hybrid Equalization and Time-Domain Decoder for High-Bandwidth-Memory Interfaces
+
+https://ieeexplore.ieee.org/document/10966012
+
+# 45. High Modulation Efficiency Micro-Ring Modulator with Low Driving Voltage for High Speed Optical Interconnection
+
+https://doi.org/10.1364/OE.560256
+
+# 46. Heterogeneous integration of 20x10 µm blue micro-LEDs/pixels on GaN HEMTs for visible light communication
+
+http://dx.doi.org/10.1117/12.3044048
+
+
 
 
 
