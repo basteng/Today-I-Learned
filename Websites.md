@@ -7,7 +7,8 @@
   - [1.6 RRAM-Info](#16-rram-info)
 - [2.半导体综合网站](#2半导体综合网站)
   - [2.1 techovedas 印度人写的网站](#21-techovedas-印度人写的网站)
-  - [2.1 semiconportal 日本人的半导体网站](#21-semiconportal-日本人的半导体网站)
+  - [2.2 semiconportal 日本人的半导体网站](#22-semiconportal-日本人的半导体网站)
+  - [Techinsights](#techinsights)
 - [3.综合类网站](#3综合类网站)
   - [3.1 经济学人 技术季刊](#31-经济学人-技术季刊)
   - [3.2 荷兰 金融时报](#32-荷兰-金融时报)
@@ -123,9 +124,13 @@ https://www.rram-info.com/
 
 https://techovedas.com/
 
-## 2.1 semiconportal 日本人的半导体网站
+## 2.2 semiconportal 日本人的半导体网站
 
 https://www.semiconportal.com/
+
+## Techinsights
+
+http://library.techinsights.com/
 
 # 3.综合类网站
 
