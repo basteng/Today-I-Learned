@@ -2503,7 +2503,7 @@ microLED 互连通常使用多芯光纤或相干光纤束，而不是为每个�
 
 <https://drive.google.com/file/d/1uGpIX8gpTl9essRi0-8MmnnDuOZpXwy_/view>
 
-### 5.45 专利：CHIP-SCALE OPTICAL INTERCONNECT USING MICROLEDS
+## 5.45 专利：CHIP-SCALE OPTICAL INTERCONNECT USING MICROLEDS
 
 发明背景
 
@@ -2532,6 +2532,24 @@ HBM 模块可以在内存堆栈121中实现为 DRAM 堆栈，安装在控制器�
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/US20250126947A1.pdf>
 
 <https://www.freepatentsonline.com/y2025/0126947.html>
+
+# 5.46 Avicena 与台积电合作，为 LightBundle™ MicroLED 互连提供 PD 阵列
+
+Avicena 正在与台积电合作，优化 Avicena LightBundle microLED 互连的硅光电探测器 (PD) 阵列，旨在实现 I/O 密度 > 1Tbps/mm 和效率 < 1pJ/bit 的 AI 扩展网络。
+
+总部位于加州桑尼维尔的Avicena公司今日宣​​布，公司将与台积电合作，优化其革命性LightBundle MicroLED互连技术的光电探测器(PD)阵列。LightBundle支持> 1Tbps/mm的海岸线密度，并将超高密度芯片间(D2D)连接延伸至> 10米，同时实现业界领先的亚皮焦/比特(sub-pJ/bit)能效。这将使AI扩展网络能够支持跨多个机架的大型GPU集群，消除当前铜互连技术的覆盖范围限制，同时大幅降低功耗。
+
+日益复杂的人工智能模型正在推动对计算和内存性能的需求空前激增，需要更高密度、更低功耗和更长距离的处理器到处理器 (P2P) 和处理器到内存 (P2M) 连接互连。
+
+LightBundle 技术专为满足极高海岸线密度和超低功耗的人工智能集群的极端 I/O 需求而开发。LightBundle 发射器采用针对密集高速互连优化的 MicroLED 阵列，可实现低于 1pJ/bit 的能效。LightBundle 光接收器采用针对 MicroLED 发射的可见光波长优化的硅基 PD 阵列。LightBundle 芯片收发器适用于各种封装架构，包括共封装光学器件 (CPO)、板载光学器件 (OBO) 和可插拔光学模块。LED 和 PD 阵列均直接键合到 CMOS 集成电路表面，适用于各种工艺节点。这项工作充分利用了台积电在图像和光学传感器技术方面的领先地位，生产用于可见光的高性能 PD 阵列，同时也受益于台积电卓越的制造工艺。
+
+Avicena 联合创始人兼首席执行官 Bardia Pezeshki 表示：“Avicena 自成立伊始就一直与台积电合作。台积电在硅光学传感器领域的世界级制造能力和丰富经验，对于我们 LightBundle 互连关键组件的开发和生产至关重要。”
+
+台积电北美业务管理副总裁蔡崇信表示：“我们很高兴能与Avicena这样的创新者合作，共同推进人工智能基础设施建设，并通过高效的连接满足日益增长的计算可扩展性需求。台积电提供代工厂最全面的CMOS图像传感器(CIS)技术组合，我们很高兴能以我们领先的工艺和制造专业知识为Avicena提供支持。”
+
+Avicena 将在加利福尼亚州圣克拉拉举行的台积电 2025 北美技术研讨会的创新区展出，并在 IZ09 展位展示其 LightBundle 互连平台，联合创始人兼首席执行官 Bardia Pezeshki 将出席“与台积电一起创新！”论坛。
+
+<https://www.businesswire.com/news/home/20250422988144/en/Avicena-Works-with-TSMC-to-Enable-PD-Arrays-for-LightBundle-MicroLED-Based-Interconnects>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 

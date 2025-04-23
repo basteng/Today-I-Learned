@@ -262,7 +262,7 @@ http://dx.doi.org/10.1117/12.3044048
 
 # 47. Disrupting the DRAM roadmap with capacitor-less IGZO-DRAM technology
 
-https://www.nature.com/articles/s44287-025-00162-w#Bib1
+https://www.nature.com/articles/s44287-025-00162-w
 
 
 
