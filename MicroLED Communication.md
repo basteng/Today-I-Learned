@@ -34,6 +34,7 @@
   - [4.26 Modeling and Simulation of Silicon Photonics Systems in SystemVerilog/XMODEL](#426-modeling-and-simulation-of-silicon-photonics-systems-in-systemverilogxmodel)
   - [4.27 光纤网络中的 UCIe](#427-光纤网络中的-ucie)
   - [4.28 OFC2025：Ayarlab：UCIe光IO接口及MOLA连接器](#428-ofc2025ayarlabucie光io接口及mola连接器)
+  - [4.29 Ayar Labs 推出全球首款用于 AI 扩展架构的 UCIe 光学芯片](#429-ayar-labs-推出全球首款用于-ai-扩展架构的-ucie-光学芯片)
 - [5. Avicena](#5-avicena)
   - [5.1《High Bandwidth GaN-based Micro-LEDs at Temperatures up to 400°C》](#51high-bandwidth-gan-based-micro-leds-at-temperatures-up-to-400c)
   - [5.2 硅光子学联合封装。 凉！ 但它实用吗？Bardia Pezeshki post at Linkedin](#52-硅光子学联合封装-凉-但它实用吗bardia-pezeshki-post-at-linkedin)
@@ -90,7 +91,8 @@
     - [5.44.2 网站](#5442-网站)
     - [5.44.3 文件位置](#5443-文件位置)
     - [5.44.4 Progress toward an Open \& Sustainable, Energy Centric Computing Architecture for today’s AI \& HPC Applications](#5444-progress-toward-an-open--sustainable-energy-centric-computing-architecture-for-todays-ai--hpc-applications)
-    - [5.45 专利：CHIP-SCALE OPTICAL INTERCONNECT USING MICROLEDS](#545-专利chip-scale-optical-interconnect-using-microleds)
+  - [5.45 专利：CHIP-SCALE OPTICAL INTERCONNECT USING MICROLEDS](#545-专利chip-scale-optical-interconnect-using-microleds)
+- [5.46 Avicena 与台积电合作，为 LightBundle™ MicroLED 互连提供 PD 阵列](#546-avicena-与台积电合作为-lightbundle-microled-互连提供-pd-阵列)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -1304,6 +1306,37 @@ KGCC工艺流程对基板切割，不再需要通过基板来连接光纤，确�
 总之，这次Ayarlab的主要亮点有很多。首先，针对TeraPHY芯片封装提出带MOLA连接器的KGCC作为光IO芯片的解决方案，MOLA连接器在平移位移和可插拔性方面表现出宽松容忍度，KGCC工艺流程可以帮助减轻光纤粘合良率风险。其次，通过光学传输的8 Tbps的UCle光I/O Retimer，能够桥接UCle接口，任何符合UCle标准的芯片都可以通过光l/O进行加速。这是首次演示完全集成的光学重定时器芯片实现与所有计算硬件的联合封装，打破大规模互连瓶颈，以满足人工智能扩展应用的需求。
 
 <https://mp.weixin.qq.com/s/m85VJLALTKX7E5bWCxVrdQ>
+
+## 4.29 Ayar Labs 推出全球首款用于 AI 扩展架构的 UCIe 光学芯片
+
+加州圣何塞——2025 年 3 月 31 日——大规模 AI 工作负载光互连解决方案领导者Ayar Labs今日宣布推出业界首款通用芯片互连高速™ (UCIe™) 光互连芯片，旨在最大限度地提升 AI 基础设施的性能和效率，同时降低延迟和功耗。通过集成 UCIe 电接口，该解决方案旨在消除数据瓶颈，并轻松集成到客户的芯片设计中。
+
+TeraPHY™ 光学 I/O 芯片组能够实现 8 Tbps 带宽，并由 Ayar Labs 的 16 波长 SuperNova™ 光源驱动。UCIe 接口的集成意味着该解决方案不仅能够提供高性能和高效率，还能实现不同供应商芯片组之间的互操作性。这种与 UCIe 标准的兼容性，创造了一个更易于访问且经济高效的生态系统，从而简化了扩展 AI 工作负载和克服传统铜互连局限性所需的先进光学技术的采用。
+
+Ayar Labs 首席执行官兼联合创始人 Mark Wade 表示：“光学互连技术对于解决规模化 AI 架构中的功率密度挑战至关重要。我们很早就意识到了共封装光学器件的潜力，这使我们能够推动光学解决方案在 AI 应用中的普及。随着我们不断突破光学技术的界限，我们也正在整合客户所需的供应链、制造以及测试和验证流程，以便他们能够大规模部署这些解决方案。”
+
+Ayar Labs 将硅光子学与 CMOS 制造工艺相结合，实现了在多芯片封装中使用 chiplet 尺寸的光互连。这使得 GPU 和其他加速器能够跨越从毫米到公里的广泛距离进行通信，同时又能像单个巨型 GPU 一样高效运行。
+
+欢迎莅临2025年3月30日至4月3日在旧金山举行的光纤通信大会 (OFC) 2958号展位，Ayar Labs 将展示其面向人工智能的光互连解决方案，以及这些解决方案将如何改变人工智能扩展架构的系统级实现。
+
+敬请莅临OFC的Jabil展位（#5845），探索Ayar Labs的光学I/O如何革新AI系统架构。敬请观看Jabil用于CPO（共封装光学器件）的外部激光源阵列模型，该阵列包含64个Ayar Labs SuperNova光源，可提供高达每秒1PB的双向带宽。这种创新设计可提高每个机架的计算密度，增强冷却效率，并支持热插拔功能，从而减少服务器停机时间。
+
+UCIe 联盟成员的支持声明：
+
+AMD 首席技术官兼执行副总裁 Mark Papermaster 表示：“作为 Chiplet 技术的领导者，我们很荣幸能够延续长期以来对行业标准的支持，这些标准推动创新，并创造满足客户和行业需求的解决方案。UCIe 提供的强大、开放且与供应商无关的 Chiplet 生态系统对于应对扩展网络解决方案以充分发挥 AI 潜力的挑战至关重要。我们很高兴 Ayar Labs 成为首批充分利用 UCIe 平台的部署项目之一。”
+
+日月光半导体工程公司 (ASE)研发副总裁 CP Hung 博士表示：“我们的生态系统正深入致力于开发可互操作的 chiplet 解决方案，以支持未来 AI 基础设施的快速发展和日益增长的计算需求。UCIe 发挥着重要作用，通过促进互操作性和协作，它正在推动标准制定，从而提高效率和性能。ASE 高度赞扬 Ayar Labs 凭借全球首款 UCIe 光学 I/O chiplet 为 CPO 发展做出的贡献。”
+
+Alphawave Semi： “Alphawave Semi 很荣幸能与 Ayar Labs 携手，成为推动 AI 基础设施未来发展的新型光互连解决方案的领导者。这项突破性的成果将是首个面向光连接的多供应商、多代工厂 UCIe 子系统芯片互操作性的实例，旨在在 AI 扩展架构中实现无与伦比的性能。与我们的 1.6Tb 电气 I/O 芯片 AlphaCHIP1600-IO 的无缝集成，将消除数据瓶颈，并基于我们一流的低延迟和高能效 UCIe IP 提升系统效率。” 产品营销和管理副总裁 Letizia Giuliano
+d-Matrix创始人兼首席执行官 Sid Sheth 表示：“d-Matrix 正在利用 2D/3D 小芯片技术为数据中心市场构建推理 AI 加速器，该技术可显著提高交互性和吞吐量。在我们扩展计算加速器时，光纤连接对于解决网络瓶颈至关重要。小芯片生态系统依赖于开放标准和易于获取的产品，我们很高兴看到 Ayar Labs 将首款 UCIe 光学小芯片推向市场。”
+
+GlobalFoundries硅光子产品线高级副总裁 Kevin Soukup 表示：“随着行业向基于 chiplet 的系统分区方法转型，用于 chiplet 间通信的 UCIe 接口正在迅速成为事实上的标准。我们很高兴看到 Ayar Labs 演示了基于光学接口的 UCIe 标准，这是扩展网络的关键技术。这项成果由我们独特的单片 GF Fotonix™ 平台提供支持，凸显了硅光子技术在驱动高能效长距离高速数据传输方面的关键作用，同时保持与 chiplet 标准的兼容性。”
+
+台积电： “共封装光学芯片 (CPO) 将彻底改变我们解决大规模人工智能计算中数据瓶颈的方式。UCIe 光学芯片的推出将催生一个强大的生态系统，最终推动整个行业的更广泛应用和持续创新。” 台积电北美业务管理副总裁蔡崇信表示，“台积电将继续与 Ayar Labs 等创新企业合作，利用我们的硅光技术——紧凑型通用光子引擎 (COUPE™)——提供 CPO 解决方案，支持人工智能蓬勃发展带来的数据传输的爆炸式增长。”
+
+UCIe 联盟主席 Debendra Das Sharma 博士表示：“UCIe 标准的进步标志着在构建更集成、更高效的 AI 基础设施方面取得了重大进展，这得益于可互操作芯片生态系统的构建。通过促进供应商之间的互操作性和协作，UCIe 为满足日益增长的更高带宽和能效需求奠定了基础。看到 Ayar Labs 凭借这款 UCIe 光学 I/O 芯片为这一发展势头做出贡献，我们倍感鼓舞。”
+
+<https://ayarlabs.com/news/ayar-labs-unveils-worlds-first-ucie-optical-chiplet-for-ai-scale-up-architectures/?utm_content=331069458&utm_medium=social&utm_source=linkedin&hss_channel=lcp-6627049>
 
 # 5. Avicena
 
