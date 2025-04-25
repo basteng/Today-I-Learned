@@ -58,6 +58,7 @@
 - [50. 麻省理工的一门新的公开课：《如何用AI（几乎）做任何事》](#50-麻省理工的一门新的公开课如何用ai几乎做任何事)
 - [51. "普通 "工程师才是打造优秀团队的关键](#51-普通-工程师才是打造优秀团队的关键)
 - [52. 去做那件让你充满生命力的事](#52-去做那件让你充满生命力的事)
+- [53. 你是创造者还是消费者？](#53-你是创造者还是消费者)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2350,4 +2351,27 @@ So how can you tell if something truly awakens your inner vitality? When an acti
 
 <https://www.linkedin.com/posts/xiaxue1995_writer-book-chinese-activity-7312295986398171137-b1L4?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
+# 53. 你是创造者还是消费者？
+
+我是一个信息瘾君子，对各种信息上瘾。
+
+当我想学习一项新技能，或者有了一种新爱好，我就立即前往亚马逊网上书店，购买3～4本该主题的书籍。
+
+现在我的书柜里面、有关于 HTML 基础知识、纸牌魔术、高尔夫、编剧、赛车、冥想、举重以及大约10个其他主题的书籍。
+
+我也会订阅一些博客和播客，阅读所有最受欢迎的帖子，聆听了各种专家访谈。有时候，我甚至会在 Evernote 做一些笔记，或者在浏览器为某些页面添加书签。
+
+然而，我总是缺少一件事：实际成果。
+
+我对那么多东西感兴趣，也学了很多，但是没有做出什么成果。
+
+我只是查找和使用信息，这很容易，对于像我这样好奇的人来说，这通常也非常有趣。
+
+但它实际上并没有完成任何事情，这是伪工作，一种自我安慰。
+
+创造才是更有效的方式，你开始制作东西——网站、成功的高尔夫击球、剧本等等，不管是什么——然后，无非就是两种结果。一种结果是你意识到自己对它不那么感兴趣，另一种结果是你真的喜欢它，开始深入研究。无论哪一种结果，都是值得的，而盲目消费信息，则是一种无效的表面行为。
+
+<https://mp.weixin.qq.com/s/cIc-22_xeBYgOwVK0wp2Ng>
+
+<https://www.andrewlynch.net/blog/are-your-a-creator-or-a-consumer>
 
