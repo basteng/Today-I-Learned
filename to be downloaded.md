@@ -48,6 +48,9 @@
 - [45. High Modulation Efficiency Micro-Ring Modulator with Low Driving Voltage for High Speed Optical Interconnection](#45-high-modulation-efficiency-micro-ring-modulator-with-low-driving-voltage-for-high-speed-optical-interconnection)
 - [46. Heterogeneous integration of 20x10 µm blue micro-LEDs/pixels on GaN HEMTs for visible light communication](#46-heterogeneous-integration-of-20x10-µm-blue-micro-ledspixels-on-gan-hemts-for-visible-light-communication)
 - [47. Disrupting the DRAM roadmap with capacitor-less IGZO-DRAM technology](#47-disrupting-the-dram-roadmap-with-capacitor-less-igzo-dram-technology)
+- [48. Alleviating high PAPR and noise issues for optimized performance in ACO-OFDM-Based VLC systems](#48-alleviating-high-papr-and-noise-issues-for-optimized-performance-in-aco-ofdm-based-vlc-systems)
+- [49. High-Speed InGaP/AlGaAs Avalanche Photodiodes for LED-Based Visible Light Communication](#49-high-speed-ingapalgaas-avalanche-photodiodes-for-led-based-visible-light-communication)
+- [50. InGaN-based light-emitting diodes with thyristor characteristic](#50-ingan-based-light-emitting-diodes-with-thyristor-characteristic)
 
 20241204以后 （未下载）
 
@@ -263,6 +266,18 @@ http://dx.doi.org/10.1117/12.3044048
 # 47. Disrupting the DRAM roadmap with capacitor-less IGZO-DRAM technology
 
 https://www.nature.com/articles/s44287-025-00162-w
+
+# 48. Alleviating high PAPR and noise issues for optimized performance in ACO-OFDM-Based VLC systems
+
+https://www.sciencedirect.com/science/article/abs/pii/S0030399225005419#preview-section-references
+
+# 49. High-Speed InGaP/AlGaAs Avalanche Photodiodes for LED-Based Visible Light Communication
+
+https://ieeexplore.ieee.org/document/10970750/
+
+# 50. InGaN-based light-emitting diodes with thyristor characteristic
+
+https://iopscience.iop.org/article/10.1088/1361-6463/adc8b4/meta
 
 
 
