@@ -86,13 +86,15 @@
   - [5.41 Interconnect networks using microled-based optical links](#541-interconnect-networks-using-microled-based-optical-links)
   - [5.42 OFC 2025](#542-ofc-2025)
   - [5.43 今年和近年来 OFC25 的一个关键主题是优化短距离 DC 内部 interconnects 的功率、带宽和覆盖范围。这一趋势正在推动多个领域的创新！](#543-今年和近年来-ofc25-的一个关键主题是优化短距离-dc-内部-interconnects-的功率带宽和覆盖范围这一趋势正在推动多个领域的创新)
+    - [5.43.1 有趣的评论](#5431-有趣的评论)
   - [5.44 一个有趣的评论 LightbundleTM LED 应用于 OCP HPC HPCM](#544-一个有趣的评论-lightbundletm-led-应用于-ocp-hpc-hpcm)
     - [5.44.1 代表人物 Allan Cantle](#5441-代表人物-allan-cantle)
     - [5.44.2 网站](#5442-网站)
     - [5.44.3 文件位置](#5443-文件位置)
     - [5.44.4 Progress toward an Open \& Sustainable, Energy Centric Computing Architecture for today’s AI \& HPC Applications](#5444-progress-toward-an-open--sustainable-energy-centric-computing-architecture-for-todays-ai--hpc-applications)
   - [5.45 专利：CHIP-SCALE OPTICAL INTERCONNECT USING MICROLEDS](#545-专利chip-scale-optical-interconnect-using-microleds)
-- [5.46 Avicena 与台积电合作，为 LightBundle™ MicroLED 互连提供 PD 阵列](#546-avicena-与台积电合作为-lightbundle-microled-互连提供-pd-阵列)
+  - [5.46 Avicena 与台积电合作，为 LightBundle™ MicroLED 互连提供 PD 阵列](#546-avicena-与台积电合作为-lightbundle-microled-互连提供-pd-阵列)
+  - [5.47 初创公司将光学技术引入 GPU 新型光互连技术可为人工智能数据中心提供所需的带宽](#547-初创公司将光学技术引入-gpu-新型光互连技术可为人工智能数据中心提供所需的带宽)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -2510,6 +2512,76 @@ microLED 互连通常使用多芯光纤或相干光纤束，而不是为每个�
 
 <https://www.linkedin.com/posts/sharada-yeluri_ofc25-interconnects-microleds-activity-7317312867592982529-7T-x?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
+### 5.43.1 有趣的评论
+
+艾伦·坎特尔
+开放计算项目基金会 OCP HPC 子项目负责人
+
+我关注 Avicena 好几年了，已经把他们的 LightbundleTM LED 收发器集成到我们的 OCP HPC HPCM 概念中了。正如你所说，它的美妙之处在于简单，尤其是相对于如今的 SiPh 技术来说，它的功耗更低！话虽如此，但从实验室到量产似乎仍然存在挑战！我只能祈祷一切顺利。🤞
+
+Bardia Pezeshki
+CEO at Avicena Tech
+
+Allan Cantle 我们在自己的洁净室中自己制造接收器。 既然 TSMC 正在这样做，（请参阅我们与 TSMC 的最新新闻稿），我认为生产速度将比您预期的要快。
+
+泰德·韦瑟福德
+战略营销、业务发展和市场领先。
+
+嘿，你看，电视屏幕LED比数据中心和AI工厂的有源电缆（铜缆和DSP）更划算，真的吗？嗯……哇！如果未来真的有基于LED的光源，没有热量（或者每比特只有极少焦耳）会怎么样？LED作为大规模并行芯片间连接，很有意思。但带宽每年都在快速增长……LED单位面积数量增长的速度，或者它们调制速度越来越快的速度，能跟上AI巨无霸的需求吗？我迫不及待地想看看！我们这边时间不多了。最好集中注意力。
+
+
+罗伯特·利普
+普通合伙人集群系统
+
+它仍然是 2 个差分对/通道，或 512 引脚/Tbps。对于当前的 51Tb 开关芯片来说，这是 >25k 信号引脚。看不到这有什么未来。
+It’s still 2 differential pairs/lane, or 512 pins/Tbps. That’s >25k signal pins for a current 51Tb switch chip. Don’t see how this has any future.
+
+巴迪亚·佩泽什基
+Avicena Tech首席执行官
+
+Robert Lipp  LED 直接安装在芯片组或 ASIC 上。无需引脚连接 LED。它就像一个显示器。芯片和 GaN LED 之间采用垂直连接。而且，无需差分连接。如果您想了解更多信息，请给我留。
+Robert Lipp The LEDs are mounted directly on the chiplet or ASIC. No pins to the LEDs. It is like a display. Vertical connection between the chip and the GaN LEDs. Also, not differential. Message me if you want to know more.
+
+
+大卫·埃斯坎登
+MACOM Technolgies 区域销售经理，致力于推动业务增长和工程解决方案，使客户能够部署专注于前沿技术和应用的差异化产品和服务
+
+您能解释一下 GaN 和 CMOS 如何实现规模化生产吗？这是您认为的主要挑战之一吗？两种不同材料化合物的大规模生产？
+
+巴迪亚·佩泽什基
+Avicena Tech首席执行官
+
+David Escandon 它搭载了 MicroLED 显示技术。GaN 成本极低，现在几乎每个灯泡都采用这种技术。目前已经有大规模技术将 GaN LED 封装在硅或玻璃上。MicroLED 显示器正在应用于眼镜、手表，如果你驾驶的是新款汽车，你的车头灯可能已经集成了 MicroLED 显示器。MicroLED 显示器的使用方式更加便捷——只需数百个 LED 而不是数百万个，而且颜色单一。如果您想了解更多信息，请给我留言。
+
+迈克·弗兰克尔
+Ciena 研究员及创新领袖 | 数据中心及光纤网络架构 | 子系统设计 | 软件算法 | 120+ 项专利
+
+该解决方案仍然会受到多模光纤色散的影响。因此，实际上无法同时实现>10GHz的速率和30米的长度。速率×距离乘积较小。
+
+巴迪亚·佩泽什基
+Avicena Tech首席执行官
+
+Mike Frankel 你说得对！但重要的是带宽密度，而不是单条线路的速度。所以我们可以做到4Gb/s和30米，就像我们去年在ECOC上用现有的光纤和LED展示的那样。但我们正在继续优化这两者。我认为我们目前的数据已经非常有吸引力，可以进行规模扩展。从可靠性、成本、密度和能效方面来看，这对于短距离网络来说是理想的选择。
+
+
+西塔拉迈亚·阿拉穆里
+实践总监 - 网络基础设施设计与工程服务 - 数据中心和智能园区。业务发展总监 - 业务咨询服务
+
+感谢分享，Sharada！这篇文章读起来很有意思。多芯光纤是如何连接的？这方面有什么进展吗？
+
+Bardia Pezeshki
+CEO at Avicena Tech
+
+Sitaramaiah Alamuri 纤维类型有很多选择。 我们通常使用低成本照明光纤（硼硅酸盐玻璃）束。 这些类型的光纤用于照明应用，例如显微镜灯或花哨的灯。 对准公差相当宽松，因为我们每根光纤中都有一个 50um 的纤芯。 所以 +/- 大约 5 微米。 易于安装。 在一次会议上，为了展示纤维对位的便利性，我们用乐高积木做到了！ 如果您想了解更多，请给我留言。
+
+
+布莱克·W.
+互联网与电信架构、互连与技术
+
+很有意思，谢谢Sharada！如果这能避免使用SerDes（或者至少能大幅降低功耗，因为它们不需要在极高的频率下运行），那么从功耗和散热的角度来看，它确实是一个不错的选择。如果最终能达到每通道32GHz，这样就能在其上运行PCIe5（以及所有以PCIe5为底层的新东西:-)。我想说，目前的一个限制因素是高芯数多芯光纤的可用性，但至少在极短的距离内，它是必需的（我习惯在海底电缆中看到它……）。
+
+
+
 ## 5.44 一个有趣的评论 LightbundleTM LED 应用于 OCP HPC HPCM
 
 几年来，我一直在关注 Avicena，并将他们的 LightbundleTM LED 收发器集成到我们的 OCP HPC HPCM 概念中。正如您所说，美妙之处在于简单性，尤其是相对于当今 SiPh 技术的低能耗！也就是说，将其从实验室投入生产似乎仍然存在挑战！我一直在祈祷
@@ -2566,7 +2638,7 @@ HBM 模块可以在内存堆栈121中实现为 DRAM 堆栈，安装在控制器�
 
 <https://www.freepatentsonline.com/y2025/0126947.html>
 
-# 5.46 Avicena 与台积电合作，为 LightBundle™ MicroLED 互连提供 PD 阵列
+## 5.46 Avicena 与台积电合作，为 LightBundle™ MicroLED 互连提供 PD 阵列
 
 Avicena 正在与台积电合作，优化 Avicena LightBundle microLED 互连的硅光电探测器 (PD) 阵列，旨在实现 I/O 密度 > 1Tbps/mm 和效率 < 1pJ/bit 的 AI 扩展网络。
 
@@ -2583,6 +2655,38 @@ Avicena 联合创始人兼首席执行官 Bardia Pezeshki 表示：“Avicena �
 Avicena 将在加利福尼亚州圣克拉拉举行的台积电 2025 北美技术研讨会的创新区展出，并在 IZ09 展位展示其 LightBundle 互连平台，联合创始人兼首席执行官 Bardia Pezeshki 将出席“与台积电一起创新！”论坛。
 
 <https://www.businesswire.com/news/home/20250422988144/en/Avicena-Works-with-TSMC-to-Enable-PD-Arrays-for-LightBundle-MicroLED-Based-Interconnects>
+
+## 5.47 初创公司将光学技术引入 GPU 新型光互连技术可为人工智能数据中心提供所需的带宽
+
+如果将过多的铜线捆扎在一起，最终会耗尽空间——前提是它们不会先熔合在一起。人工智能数据中心在GPU和内存之间传输数据的电子互连方面也面临着类似的限制。为了满足人工智能的海量数据需求，业界正在转向更大尺寸、更多处理器的芯片，这意味着在机架内实现更密集、更长距离的连接。初创公司正在展示 GPU 如何摆脱铜互连，用光纤链路取而代之。
+
+光纤链路对数据中心来说并不陌生。它们使用可插拔收发器在机架之间传输数据，将电信号转换为光信号。为了提高能源效率，“将光学元件集成到芯片封装中一直是一个梦想，”加州大学圣巴巴拉分校电气工程教授克林特·肖( Clint Schow)表示。这就是共封装光学器件（CPO），科技巨头们正在全力支持它。英伟达 (Nvidia) 最近宣布量产一款网络交换机，该交换机使用嵌入在与交换机同一基板上的光子调制器。“这震惊了整个行业，”加州桑尼维尔初创公司Avicena的首席执行官巴迪亚·佩泽什基 (Bardia Pezeshki) 表示。
+
+哥伦比亚大学电气工程教授、Xscape Photonics联合创始人Keren Bergman解释说， Nvidia 的声明令人兴奋，因为它将光子技术引入了机架内部。但Nvidia目前只计划将光子技术引入网络交换机。Avicena和其他初创公司正在挑战“光学技术在成本、可靠性和功率效率方面不足以取代机架内铜缆”这一观点。他们将光学互连直接连接到 GPU 和内存封装上。Bergman 表示，即使是这些最终长达一米的链路，也需要比铜缆所能提供的更大的带宽。同样的基础技术“可以直接连接到 GPU”，使光学器件更靠近数据源，并允许它们从芯片封装本身传输带宽。
+
+初创公司创新光互连
+
+多家初创公司一直在致力于替换 GPU 旁边的铜互连线路。其中几家公司已经着手研发使用名为微环谐振器的波导芯片，将数据通道编码到来自外部激光器的光波上，并在接收端口过滤合适的波长。这与英伟达在其 CPO 交换机上采用的基本光子技术相同——哥伦比亚大学的伯格曼表示，这“意义重大”。但不仅仅是一个 r谐振器，很多初创公司都在使用。
+
+上个月，Ayar Labs宣布推出 GPU 之间的光学互连，其中采用了标准开源UCIe电气接口。“这是业界首创，”首席技术官兼联合创始人 Vladimir Stojanovic 表示。UCIe 构成 GPU 和TeraPhys 光学芯片之间的封装电气链路。芯片将数字信号的副本传输到单模光纤中，将通信距离延长至 2 公里。“一个 GPU 与另一个 GPU 通信时甚至不知道它正在离开封装，”Stojanovic 说道。Ayar Labs 的SuperNova 光源将 16 种波长馈送到每根光纤上。谐振器对 8 个输入和 8 个输出光纤端口中的每一个执行波分复用，在 GPU 之间形成 256 个数据通道，总计 8 Tbps。使用 UCIe 协议可实现完全模块化设计。“任何芯片制造商都可以将其安装上去并拥有一个光学转换器，”Schow 解释道。
+
+总部位于加州山景城的初创公司LightMatter宣布了类似的 GPU 间光学链路产品：Passage L200。它使用Alphawave Semi 的芯片来实现 UCIe 接口——但不是将它们并排构建，而是使用标准的晶圆上芯片技术将它们堆叠在光学电路的顶部。Lightmatter 副总裁 Steve Klinger 表示：“采用 3D 意味着你不必尝试将电信号路由到芯片边缘之外。”该公司展示了Passage M1000的完全集成版本，这是一种由 8 个这样的构建块组成的光学中介层。每个部分都位于 GPU 或内存块下方——通过极短的 UCIe 连接直接安装在顶部。光纤将光信号从中介层路由出去。
+
+Schow解释说：“L200采用模块化方式集成光学元件，而M1000则更具进取精神。” 后者利用电子器件局部解决带宽问题，并通过光学器件解决封装间问题。但Stojanovic观察到，“他们尚未进行演示。”
+
+伯格曼的公司Xscape Photonics位于加州圣克拉拉，该公司更进一步，无需外部光源，将频率梳激光器直接集成到芯片上。“我们可以将激光器和链路集成到一起，”伯格曼说道。去年 10 月，该公司获得了 4400 万美元的融资，用于扩大ChromX 平台的产量。ChromX 平台是一个多色平台，可以最大限度地解决高带宽数据从芯片中传输出去所固有的“逃逸带宽”问题。
+
+数据传输革命
+
+Juniper Networks和Fungible的联合创始人（现就职于微软）的Pradeep Sindhu对此持怀疑态度。在集群中，如果需要在大量 GPU 之间建立灵活的点对点链接，那么每个可切换数据通道的粒度就很重要。点对之间的一条粗管道是不够的。相反，您需要许多更小的管道，而每根光纤的带宽太多会降低灵活性。例如，连接 512 个 GPU（每个 GPU 通过 200 Gbps 通道链接到 64 个交换机）的宏伟目标需要超过 30,000 个连接。Sindhu 说：“如果将 16 个波长塞进一根光纤，如何将这么多 GPU 连接到这么多交换机？” 答案之一是使用数量更少、功能更强大的电子解析粗管道的交换机，但这会将冗余换成单点故障。此外，多波长激光器还引发了成本、能源效率和可靠性方面的担忧。
+
+另一种方法则避开了这两个问题。Avicena 使用数百个通过成像光纤连接的蓝色 MicroLED来传输数据。Pezeshki 解释说：“如果你用摄像头看电视，你就拥有了一种无需激光器的光学连接。” Avicena 的光学芯片集成了一个小型 MicroLED 显示屏和一个微型摄像头，其帧速率令人难以置信，该技术已在基于 10 Gbps/通道帧速率的模块化 LightBundle 平台中发布。每个包含 300 个MicroLED的显示屏累计传输速率达 3 Tbps，但粒度却非常高。Pezeshki 表示，消除激光器可以降低可靠性风险、成本和复杂性，并将能耗提升五倍。Sindhu 表示：“我乐观地认为 MicroLED 将成为未来的领先技术。”
+
+光通信市场研究公司LightCounting的首席执行官Vladimir Koslov对这些初创公司的演示表示赞赏。“有些公司会成功，”他说道。但通往市场的道路“不是短跑，而是一场马拉松”。此外，铜缆仍然有效。他认为，在未来几年内，CPO将仅限于交换机，因为这是行业的目标。“我认为，直到下一个十年初，我们才能在GPU上看到它（CPO），”他说道。
+
+Sindhu 表示，以廉价、低功耗且可靠的方式连接足够多的 GPU 是“这个时代最重要的封装难题”。无论谁解决了这个问题，人们都会回顾。“胜者为王，”他说道。
+
+<https://spectrum.ieee.org/optics-gpu>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
