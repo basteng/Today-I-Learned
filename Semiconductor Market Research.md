@@ -173,6 +173,7 @@
       - [HBM](#hbm)
         - [HBM供求关系](#hbm供求关系)
         - [HBM 买家： Nvidia Leads， Google Follows](#hbm-买家-nvidia-leads-google-follows)
+        - [TC 键合之争：16Hi HBM 的混合键合是韩美-SK 海力士裂痕背后的火花吗？](#tc-键合之争16hi-hbm-的混合键合是韩美-sk-海力士裂痕背后的火花吗)
     - [38.1.3 FPGA](#3813-fpga)
   - [38.2 Discrets](#382-discrets)
     - [38.2.1 Power](#3821-power)
@@ -3105,6 +3106,42 @@ AMD 今年安装的 HBM 芯片数量也将比去年多得多，但根据名单�
 概述还表明英特尔在 Gaudi 3 上毫无机会。今年购买的 HBM 数量将比 2024 年少，明年该产品将几乎成为历史。考虑到缺乏竞争力，这种说法可能是相当准确的。Falcon Shores 最近已不再作为市场产品推出，目前仅为内部测试平台。 Jaguar Shores 在 2026 年以后能够做什么和取得什么成就仍然未知。这个解决方案可能还会依赖于 HBM——众所周知，没有真正的替代方案。那么 Jaguar Shores 就必须直接依赖 HBM4+ 才能在市场上占有一席之地。毕竟，其他人也不会停滞不前。
 
 <https://www.computerbase.de/news/arbeitsspeicher/hbm-absatzzahlen-nvidia-vor-google-und-amazon-amd-klein-intel-irrelevant.91319/>
+
+##### TC 键合之争：16Hi HBM 的混合键合是韩美-SK 海力士裂痕背后的火花吗？
+
+据报道，在与长期合作的 TC 键合机供应商 Hanmi Semiconductor 的紧张关系日益加剧的情况下，SK hynix 正在更进一步。据财经新闻报道，HBM 领导者已经开始审查 Hanmi 提供的所有设备的全面多样化，而不仅仅是 TC 键合机。
+
+虽然有传言称韩美的涨价和工程师撤离可能引发了SK海力士的回应，但报告中援引的行业消息人士指出了更深层次的原因：16-Hi 话题标签#HBM 产品及其他产品向混合键合的转变。据《朝鲜日报》报道，TC 键合机在 8-Hi 和 12-Hi HBM 生产中起着关键作用，设备施加热量和压力将各层熔合成一个单元。然而，财经新闻的报道表明，从 16 高点开始，传统方法与收益率作斗争。
+
+这就是混合粘合发挥作用的地方。财经新闻表明，与 TC 键合不同，混合键合直接连接芯片而不会产生凸起，从而实现更薄的堆栈、更高的层数、更少的信号损失和更高的良率——这是 SK 海力士作为 HBM 领导者的关键优势。
+
+<https://www.linkedin.com/posts/marcomezger_hbm-semiconductorindustry-semiconductormanufacturing-activity-7322577128594563072-UX_o?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+TC Bonder之争：16Hi HBM混合键合是韩美与SK海力士裂痕的导火索吗？
+
+据报道，随着与长期TC键合机供应商韩美半导体的关系日益紧张，SK海力士正在采取进一步行动。据《金融时报》报道，这家HBM领导者已开始评估韩美半导体所有供应设备的全面多元化，而不仅仅是TC键合机。
+
+尽管有传言称韩美的涨价和工程师撤离可能是促使SK海力士做出反应的原因，但报告中引用的业内人士指出了一个更深层次的原因：16层及以上HBM产品正在向混合键合技术转变。据《朝鲜日报》报道，TC键合机在8层和12层HBM生产中发挥着关键作用，该设备通过施加热量和压力将各层融合成一个单元。然而，《金融时报》的报道指出，从16层及以上开始，传统方法在良率方面存在困难。
+
+这正是混合键合发挥作用的地方。《金融时报》指出，与热键合不同，混合键合无需凸块即可直接连接芯片，从而实现更薄的堆叠、更高的层数、更低的信号损耗和更高的良率——这正是 SK 海力士作为 HBM 领导者的关键优势。
+
+三星：混合键合技术或将应用于 12 层 HBM4
+
+据Sedaily报道，另一家内存巨头三星正在研究在年底前生产 12 层 HBM4 的方法。值得注意的是，该公司计划引入混合键合技术，并据称正在与其设备子公司 SEMES 合作。
+
+这使得SK海力士的举动更加合理，因为《金融时报》的报道暗示，SK海力士正在努力寻找韩美设备的替代品。据称，韩美向SK海力士供应了包括TC Bonder在内的10多种不同类型的设备。
+
+ASMPT 有望受益
+
+值得注意的是，据《金融时报》报道，ASML母公司ASMI的子公司ASMPT在混合键合领域处于领先地位。与此同时，韩美也在致力于开发混合键合机，但业内人士指出，该公司仍然缺乏量产经验。
+
+据《金融时报》报道，SK海力士此前完全依赖韩美（Hanmi）进行HBM3E 12层制造。然而，据报道，自2024年以来，SK海力士一直向ASMPT订购设备，并于最近同意向韩华光辉（Hanwha Semitek）购买价值420亿韩元的12台TC键合机。
+
+据TrendForce称，DRAM 行业对 HBM 产品的关注度正日益转向混合键合等先进封装技术。各大 HBM 制造商正在考虑是否在 HBM4 16hi 堆栈产品中采用混合键合技术，但已确认计划在 HBM5 20hi 堆栈产品中采用该技术。
+
+![](/picture/Hybrid-bonding-roadmap-V1.jpg)
+
+<https://www.trendforce.com/news/2025/04/28/news-the-tc-bonder-dispute-is-hybrid-bonding-for-16hi-hbm-the-spark-behind-the-hanmi-sk-hynix-rift/>
 
 ### 38.1.3 FPGA
 
