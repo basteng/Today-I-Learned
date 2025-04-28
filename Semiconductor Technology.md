@@ -35,6 +35,7 @@
 - [20. 先进封装](#20-先进封装)
 - [21. 为什么现代半导体技术优先选择P型衬底？](#21-为什么现代半导体技术优先选择p型衬底)
 - [22. 环栅技术 (GAA)：减少泄漏的终极解决方案](#22-环栅技术-gaa减少泄漏的终极解决方案)
+- [23. Analog / Mixed-Signal](#23-analog--mixed-signal)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1029,6 +1030,12 @@ Reference
 [7] https://www.intechopen.com/chapters/61888 
 
 [8] Due to the limited space of the article, we still have many TEM results that have not been presented. Please feel free to contact us if you are interested. 
+
+# 23. Analog / Mixed-Signal
+
+Analog Mixed_Signal Design in FinFET Technologies.pdf
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Analog%20Mixed_Signal%20Design%20in%20FinFET%20Technologies.pdf>
 
 
 
