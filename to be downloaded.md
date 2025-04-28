@@ -51,6 +51,7 @@
 - [48. Alleviating high PAPR and noise issues for optimized performance in ACO-OFDM-Based VLC systems](#48-alleviating-high-papr-and-noise-issues-for-optimized-performance-in-aco-ofdm-based-vlc-systems)
 - [49. High-Speed InGaP/AlGaAs Avalanche Photodiodes for LED-Based Visible Light Communication](#49-high-speed-ingapalgaas-avalanche-photodiodes-for-led-based-visible-light-communication)
 - [50. InGaN-based light-emitting diodes with thyristor characteristic](#50-ingan-based-light-emitting-diodes-with-thyristor-characteristic)
+- [51. Europe’s pilot line to enable future compute systems](#51-europes-pilot-line-to-enable-future-compute-systems)
 
 20241204以后 （未下载）
 
@@ -278,6 +279,10 @@ https://ieeexplore.ieee.org/document/10970750/
 # 50. InGaN-based light-emitting diodes with thyristor characteristic
 
 https://iopscience.iop.org/article/10.1088/1361-6463/adc8b4/meta
+
+# 51. Europe’s pilot line to enable future compute systems
+
+https://www.nature.com/articles/s44287-024-00114-w
 
 
 
