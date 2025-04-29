@@ -36,6 +36,7 @@
 - [21. 为什么现代半导体技术优先选择P型衬底？](#21-为什么现代半导体技术优先选择p型衬底)
 - [22. 环栅技术 (GAA)：减少泄漏的终极解决方案](#22-环栅技术-gaa减少泄漏的终极解决方案)
 - [23. Analog / Mixed-Signal](#23-analog--mixed-signal)
+- [24. 晶体管进化的 4 个阶段 平面、FinFET、GAA、CFET 示意图](#24-晶体管进化的-4-个阶段-平面finfetgaacfet-示意图)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1036,6 +1037,38 @@ Reference
 Analog Mixed_Signal Design in FinFET Technologies.pdf
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Analog%20Mixed_Signal%20Design%20in%20FinFET%20Technologies.pdf>
+
+# 24. 晶体管进化的 4 个阶段 平面、FinFET、GAA、CFET 示意图
+
+![](/picture/CFET-GAA.jpg)
+
+1. 平面 FET：1960 年代至 2000 年代初。
+
+平面晶体管是 FET 的初始形式，具有扁平或平面结构。
+
+随着晶体管尺寸的缩小以实现更高的封装密度和性能，平面 FET 面临着诸如漏电流增加和通道控制减少等挑战。
+
+2. FinFET（鳍式场效应晶体管）：2010 年代初，至今仍被广泛使用
+
+FinFET 的引入是为了克服平面晶体管的一些限制。
+
+FinFET 没有平面通道，而是具有三维结构，其中通道是衬底上方的凸起鳍片。
+
+FinFET 可以更好地控制通道并减少泄漏电流，从而提高性能和能效。这种架构在先进的半导体工艺中变得突出。
+
+3. GAAFET（全环绕栅极 FET）：预计未来将变得更加普遍
+
+GAAFET 是超越 FinFET 的演变，涉及从各个侧面将栅极包裹在通道周围，从而提供更精确的电流控制。
+
+这种架构旨在解决与缩小晶体管尺寸、增强静电控制和进一步降低泄漏电流相关的挑战。
+
+4. CFET（互补 FET）：到 2032 年
+
+CFET 代表一种晶体管设计，它在同一芯片上包括 n 型 （电子导电） 和 p 型 （空穴导电） 晶体管，形成互补对。
+
+CFET 旨在以互补的方式协同工作，其中一种类型的晶体管关闭，而另一种类型的晶体管打开，从而最大限度地减少逻辑作期间的功耗。
+
+<https://www.linkedin.com/posts/kumar-priyadarshi-b0a2a7a2_what-are-4-stages-of-evolution-of-transistors-activity-7307701603518550016-tJN9?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
 
 
