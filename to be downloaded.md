@@ -55,6 +55,7 @@
 - [52. A 318–342-GHz Microbump-Antenna-Integrated CMOS Transmitter With Spatial Multiplexing for Short-Range OOK Communication](#52-a-318342-ghz-microbump-antenna-integrated-cmos-transmitter-with-spatial-multiplexing-for-short-range-ook-communication)
 - [53. Gallium Nitride and Related Materials: Device Processing and Materials](#53-gallium-nitride-and-related-materials-device-processing-and-materials)
 - [54. 集成电路发展与光电融合探讨](#54-集成电路发展与光电融合探讨)
+- [55. Programmable Nano-Photonics With Electrically Controlled Phase-Change Materials](#55-programmable-nano-photonics-with-electrically-controlled-phase-change-materials)
 
 20241204以后 （未下载）
 
@@ -302,6 +303,11 @@ https://books.google.fr/books?hl=en&lr=lang_en&id=F5ZYEQAAQBAJ&oi=fnd&pg=PA419&o
 Doi: 10.13756/j.gtxyj.2025.240056
 
 https://openurl.ebsco.com/EPDB%3Agcd%3A10%3A35863242/detailv2?sid=ebsco%3Aplink%3Ascholar&id=ebsco%3Agcd%3A184610143&crl=c&link_origin=scholar.google.com
+
+# 55. Programmable Nano-Photonics With Electrically Controlled Phase-Change Materials
+
+https://www.proquest.com/openview/f1a6e6f6be942d6d5acdea768b74edf8/1?cbl=18750&diss=y&pq-origsite=gscholar
+
 
 
 
