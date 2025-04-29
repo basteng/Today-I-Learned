@@ -114,6 +114,7 @@
 - [35. 市场](#35-市场)
   - [35.1 onsemi 是否会稳步重返 GaN 市场？](#351-onsemi-是否会稳步重返-gan-市场)
   - [35.2 GaN 半导体器件图](#352-gan-半导体器件图)
+  - [35.3 GaN 功率器件](#353-gan-功率器件)
 - [36. GaN 互补逻辑电路构建块 - 类似CMOS？](#36-gan-互补逻辑电路构建块---类似cmos)
 - [37. 专利](#37-专利)
   - [37.1 KnowMade](#371-knowmade)
@@ -2096,6 +2097,75 @@ LiDAR 系统：GaN 激光器用于自动驾驶汽车和其他需要精确距离�
 
 <https://www.linkedin.com/feed/update/urn:li:activity:7298299177669652480?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
+## 35.3 GaN 功率器件
+
+![](/picture/GaN%20power%20device.png)
+
+2025年4月29日
+市场增长、组件演进和瓶颈
+
+氮化镓 (GaN) 功率器件迅速崛起，以满足日益增长的高频、高功率密度应用需求。未来的市场增长和技术发展将围绕以下关键领域展开：
+
+1. 市场增长动力
+
+1.1 应用扩展
+
+ 一、消费电子：快速充电（65W-240W）已成为主要的市场驱动力，渗透率持续上升（2025年复合年增长率预测为25%）。
+
+ II. 数据中心：对 48V DC/DC 转换器的需求推动了 GaN 在服务器电源中的应用，从而降低了能耗和散热成本。
+
+ 三、电动汽车（EV）：GaN逐渐被应用于车载充电器（OBC）和DC-DC转换器，尤其是随着800V高压平台的兴起，推动了对1200V组件的需求。
+
+ 四、可再生能源：GaN-on-substructure解决方案正逐渐进入光伏逆变器和储能系统的中高功率市场，寻求更高的转换效率。
+
+1.2 市场规模预测
+
+2023年全球GaN功率器件市场价值约为15亿美元，预计到2030年将超过60亿美元，复合年增长率（CAGR）超过20%。
+
+2. 组件结构演化
+
+2.1 外延（Epittical）技术突破
+
+ 一、GaN-on-Si主流应用：成本优势显著，8英寸硅基外延技术成熟（如台积电、英飞凌方案），缺陷密度降低至10⁶ cm⁻²以下。
+
+ II. 适用于高压应用的GaN-on-substructure：GaN-on-substructure解决方案针对1200V及更高电压的应用，利用基板的高热导率，使其适用于电动汽车和大功率工业应用。
+
+ III. 新的缓冲层设计：例如，AlGaN过渡层优化以减少电流崩塌和动态导通电阻（Rₒₙ）。
+
+2.2 电压限制突破
+
+ 一、横向HEMT结构：目前的技术集中在650V以下，但随着超薄势垒层和场板设计等的进步，电压正在逐步上升到900V。
+
+ 二、垂直GaN结构：通过利用衬底通孔（TSV）降低电阻，重点是实现电网逆变器等高压市场（1200V-3.3kV）。然而，良率和成本仍然是挑战。
+
+2.3 封装技术集成
+
+ I.嵌入式芯片封装：将GaN芯片与驱动IC集成，以减少寄生电感（例如，TI的GaN FET +驱动模块）。
+
+ II. 双面冷却：适用于汽车级应用，提高功率密度和热管理能力。
+
+3. 技术瓶颈与挑战
+
+3.1 材料和工艺限制
+
+ 一、缺陷密度控制：外延层中的位错会导致长期可靠性问题。需要原子层沉积（ALD）技术取得突破。
+
+ II. 高压动态特性：高压下栅极漏电和动态导通电阻恶化需要新的钝化层（例如，SiN/Al₂O₃ 堆栈）。
+
+3.2 系统集成挑战
+
+ 一、驱动电路匹配：GaN开关速度达到MHz级，需要低寄生电感布局和高速驱动IC设计。
+
+ II. 热管理限制：高功率密度带来巨大的散热挑战，尤其是在垂直 GaN 结构中，热阻（Rth）需要进一步优化。
+
+3.3 市场竞争与成本
+
+ 一、SiC 竞争：在 1200V 及更高电压市场，SiC MOSFET 目前占据主导地位。GaN 必须证明其高频优势大于成本劣势。
+
+ 二、8英寸晶圆生产：目前市场以6英寸晶圆为主，8英寸晶圆产能扩张速度将决定成本下降曲线。
+
+ <https://www.linkedin.com/pulse/gan-power-devices-peter-chiu-xqrzc/?trackingId=KHYkdW0ug994ntqKgJ%2BMiA%3D%3D>
+
 # 36. GaN 互补逻辑电路构建块 - 类似CMOS？
 
 中国研究人员在 2024 年 12 月举行的国际电子器件会议上展示了基于氮化镓场效应晶体管 (FET) 的互补逻辑 (CL) 电路的“突破性”性能[Teng Li 等，IEDM session 16-1, 2024 ]。
@@ -2197,3 +2267,4 @@ Infineon v.Innoscience：美国国际贸易委员会调查
 <https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/GaN%20patent%20war.pdf>
 
 <https://www.linkedin.com/posts/davidradulescu_radip-gan-patent-war-webinar-re-infineons-ugcPost-7313181021561106432-zyVi?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
