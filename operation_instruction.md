@@ -32,6 +32,8 @@
 - [21. Deepseek + Kimi 生成ppt](#21-deepseek--kimi-生成ppt)
 - [22. 视频转gif](#22-视频转gif)
 - [23. 订阅ChatGPT Plus](#23-订阅chatgpt-plus)
+- [24. 树莓派修改](#24-树莓派修改)
+- [24.1 树莓派5更改设置](#241-树莓派5更改设置)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -686,3 +688,13 @@ credit card接收邮件，可以随意，不用非得美区ID的注册邮箱
 
 - 取消也是在这里取消
 - 第一次注册时，在App store里看不到“订阅” 
+
+# 24. 树莓派修改
+
+# 24.1 树莓派5更改设置
+
+![](/picture/rpi5__20250503_change2.png)
+
+参考操作
+
+<https://www.licc.tech/article?id=79>
