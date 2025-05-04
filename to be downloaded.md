@@ -308,6 +308,14 @@ https://openurl.ebsco.com/EPDB%3Agcd%3A10%3A35863242/detailv2?sid=ebsco%3Aplink%
 
 https://www.proquest.com/openview/f1a6e6f6be942d6d5acdea768b74edf8/1?cbl=18750&diss=y&pq-origsite=gscholar
 
+# 56. A 11-pA/Hz 5-Gb/s Inductorless Optical Receiver for High-Density Parallel Interface Application
+
+https://ieeexplore.ieee.org/abstract/document/10978883
+
+# 57. A Gate-Assisted Dual-Functional GaN p-n Diode for High-Speed Visible Light Communication
+
+https://ieeexplore.ieee.org/abstract/document/10979317
+
 
 
 
