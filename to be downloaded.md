@@ -56,6 +56,10 @@
 - [53. Gallium Nitride and Related Materials: Device Processing and Materials](#53-gallium-nitride-and-related-materials-device-processing-and-materials)
 - [54. 集成电路发展与光电融合探讨](#54-集成电路发展与光电融合探讨)
 - [55. Programmable Nano-Photonics With Electrically Controlled Phase-Change Materials](#55-programmable-nano-photonics-with-electrically-controlled-phase-change-materials)
+- [56. A 11-pA/Hz 5-Gb/s Inductorless Optical Receiver for High-Density Parallel Interface Application](#56-a-11-pahz-5-gbs-inductorless-optical-receiver-for-high-density-parallel-interface-application)
+- [57. A Gate-Assisted Dual-Functional GaN p-n Diode for High-Speed Visible Light Communication](#57-a-gate-assisted-dual-functional-gan-p-n-diode-for-high-speed-visible-light-communication)
+- [58. Automatic Waveguide Routing with Optimized Loss for Silicon Photonics Interconnect](#58-automatic-waveguide-routing-with-optimized-loss-for-silicon-photonics-interconnect)
+- [59. An Approach of ISI Elimination and High-Speed Data Reconstruction in Lossy On-Chip Serial Link](#59-an-approach-of-isi-elimination-and-high-speed-data-reconstruction-in-lossy-on-chip-serial-link)
 
 20241204以后 （未下载）
 
@@ -315,6 +319,14 @@ https://ieeexplore.ieee.org/abstract/document/10978883
 # 57. A Gate-Assisted Dual-Functional GaN p-n Diode for High-Speed Visible Light Communication
 
 https://ieeexplore.ieee.org/abstract/document/10979317
+
+# 58. Automatic Waveguide Routing with Optimized Loss for Silicon Photonics Interconnect
+
+https://ieeexplore.ieee.org/abstract/document/10982414
+
+# 59. An Approach of ISI Elimination and High-Speed Data Reconstruction in Lossy On-Chip Serial Link
+
+https://link.springer.com/article/10.1007/s00034-025-03117-6
 
 
 
