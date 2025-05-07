@@ -119,6 +119,7 @@
 - [37. 专利](#37-专利)
   - [37.1 KnowMade](#371-knowmade)
 - [38. 英飞凌与英诺赛科之间 GaN 专利战的突发新闻](#38-英飞凌与英诺赛科之间-gan-专利战的突发新闻)
+- [39. Compound semiconductors: developing the hardware to unlock the UK’s AI action plan 化合物半导体对英国至关重要](#39-compound-semiconductors-developing-the-hardware-to-unlock-the-uks-ai-action-plan-化合物半导体对英国至关重要)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -2267,4 +2268,36 @@ Infineon v.Innoscience：美国国际贸易委员会调查
 <https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/GaN%20patent%20war.pdf>
 
 <https://www.linkedin.com/posts/davidradulescu_radip-gan-patent-war-webinar-re-infineons-ugcPost-7313181021561106432-zyVi?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+# 39. Compound semiconductors: developing the hardware to unlock the UK’s AI action plan 化合物半导体对英国至关重要
+
+复合半导体对于帮助英国实现其人工智能行动计划、推动经济增长和为社会带来重大利益至关重要。
+
+这是根据英国复合半导体应用 (CSA) Catapult 发布的一份新报告得出的结论。
+
+到 2030 年，全球人工智能市场规模将增长至 1.5 万亿美元以上，报告概述了为满足人工智能技术日益增长的计算和能源需求，硬件能力需要显著提升。
+
+报告指出，英国通过最近发布的《人工智能机遇行动计划》已做好准备引领人工智能转型。
+
+ 但为了实现这一愿景，英国必须利用其在复合半导体方面的专业知识。
+
+复合半导体具有更高的能源效率、更快的数据处理速度和更好的可靠性。
+
+它们在电力电子、光子学和射频（RF）通信等领域优于传统的硅半导体——这对于支撑人工智能革命的数据中心等基础设施至关重要。
+
+随着人工智能模型的不断发展和复杂化，其功耗也显著增加。为人工智能提供支持的数据中心目前消耗了全球1%的电力，预计到2030年这一比例将增长到8%。
+
+因此，转向更快、更高效的硬件的必要性显而易见。
+
+基于复合半导体的光子器件还将大幅提高计算机处理和传输数据的速度，从而显著降低人工智能应用的延迟。
+
+同时，利用化合物半导体的射频技术将提高人工智能应用、边缘计算和物联网 (IoT) 中数据传输的速度和效率，预计到 2030 年将连接全球超过 320 亿台设备。
+
+CSA Catapult 首席技术官 Nick Singh 表示：“硅基技术在能源效率和性能方面已达到极限。复合半导体能够实现更快的数据处理速度、更高的能源效率和更强的性能，使其成为下一代人工智能应用的关键。”
+
+“通过利用复合半导体的独特能力，英国可以构建一个人工智能不仅能推动经济增长，还能为社会带来变革性利益的未来。”
+
+<https://compoundsemiconductor.net/article/121683/Compound_semis_essential_to_UK_says_report>
+
+
 
