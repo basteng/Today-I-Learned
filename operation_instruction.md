@@ -34,6 +34,7 @@
 - [23. 订阅ChatGPT Plus](#23-订阅chatgpt-plus)
 - [24. 树莓派修改](#24-树莓派修改)
   - [24.1 树莓派5更改设置](#241-树莓派5更改设置)
+- [25. Google Colab 集成了 Data Science Agent](#25-google-colab-集成了-data-science-agent)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -733,3 +734,41 @@ credit card接收邮件，可以随意，不用非得美区ID的注册邮箱
 参考操作
 
 <https://www.licc.tech/article?id=79>
+
+# 25. Google Colab 集成了 Data Science Agent
+
+Google Colab 是一个免费、云端托管的 Jupyter Notebook 环境，您可以直接在浏览器中编写并运行 Python 代码。它免费提供对 Google Cloud GPU 和 TPU 的访问权限，这对运行 AI 模型来说是一个革命性的改变，也让项目协作变得更加简化。
+
+去年 12 月，Google 分享了 Colab 中的 Data Science Agent 如何借助 Gemini 为受信任的测试者自动创建笔记本，省去了导入库、加载数据以及编写模板代码等繁琐操作。受信任的测试者对 Data Science Agent 反响热烈，认为它让工作流程更流畅，并能比以往更快地发现洞察。
+
+如今，Google 宣布将 Data Science Agent 推广至年满 18 岁的 Colab 用户以及部分国家和语言地区。Google 也在扩展与大学的合作，希望通过将简单的自然语言描述转换成完整且可运行的 Colab 笔记本，帮助研究实验室在数据处理和分析方面节省时间。
+
+Data Science Agent 的工作原理如下：
+1. 从空白开始： 打开一个空白的 Colab 笔记本。
+2. 添加数据： 上传您的数据文件。
+3. 描述目标： 在 Gemini 侧边栏中描述您想进行的分析或需要的原型（例如，“可视化趋势”、“构建并优化预测模型”、“填充缺失值”、“选择最佳统计方法”）。
+4. 见证 Data Science Agent 的自动化过程： 静待生成必要的代码、导入库以及可在 Colab 中执行的分析结果。
+视频演示示例：Data Science Agent 从理解数据到在 Colab 笔记本中呈现洞察的自动化分析过程（序列已简化，仅作演示之用。Data Science Agent 可能会出现错误。）
+
+Data Science Agent 带来的益处
+• 完整的可运行 Colab 笔记本： 不仅仅是代码片段，而是可以直接执行的完整笔记本。
+• 可修改的解决方案： 轻松定制和扩展生成的代码，以满足您的特定需求。
+• 可共享的结果： 借助 Colab 标准分享功能，与团队成员进行协作。
+• 节省时间： 将更多精力集中在从数据中获取洞察，而不是在环境设置和模板代码上浪费时间。
+
+同时，Google 的 Data Science Agent 在 HuggingFace 的 DABStep 基准测试（DABStep: Data Agent Benchmark for Multi-step Reasoning） 中取得了第 4 名，表现优于基于 GPT 4.0 的 ReAct agents、Deepseek、Claude 3.5 Haiku 和 Llama 3.3 70B 等模型。
+
+立即开始体验 Data Science Agent
+只需上传一些数据，然后在 Gemini 侧边栏中概述您的数据分析目标即可轻松上手。您可以在 Kaggle 或 Data Commons 上探索数据集，以下是一些示例数据和提示供您参考：
+
+• Stack Overflow 年度开发者调查：可以尝试询问“可视化最受欢迎的编程语言”
+• Iris 鲜花数据集：可以尝试询问“计算并可视化数据集中 Pearson、Spearman 和 Kendall 的相关性”
+• Glass Classification：可以尝试询问“在此数据集上训练一个随机森林分类器”
+
+Google 希望这能彻底改变您的数据分析工作流程。
+
+<https://weibo.com/1727858283/PgVSP0KrA>
+
+官方链接
+
+<https://developers.googleblog.com/en/data-science-agent-in-colab-with-gemini/?linkId=13237992&continueFlag=4b7ee00dfb52f7b3f6f63d1958338a4b>
