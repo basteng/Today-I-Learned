@@ -69,6 +69,8 @@
     - [9.12.1 代表作：适用于 SoC 和多芯片系统的新型内存架构](#9121-代表作适用于-soc-和多芯片系统的新型内存架构)
   - [9.13 ServeTheHome](#913-servethehome)
     - [9.13.1 代表作：Marvell COLORZ 800 可在 1000 公里的距离内实现 800Gbps 的速度](#9131-代表作marvell-colorz-800-可在-1000-公里的距离内实现-800gbps-的速度)
+  - [9.14 Asianometry](#914-asianometry)
+    - [代表作 半导体产量如何大幅提高](#代表作-半导体产量如何大幅提高)
 - [10. 化合物半导体](#10-化合物半导体)
   - [10.1 compoundsemiconductor](#101-compoundsemiconductor)
 - [11. Github](#11-github)
@@ -471,6 +473,14 @@ ServeTheHome 是 IT 专业人士的服务器、存储、网络和高端工作站
 ### 9.13.1 代表作：Marvell COLORZ 800 可在 1000 公里的距离内实现 800Gbps 的速度
 
 <https://www.servethehome.com/going-800gbps-at-up-to-1000km-with-the-marvell-colorz-iii-800g-zr-osfp/>
+
+## 9.14 Asianometry
+
+<https://asianometry.passport.online/member/>
+
+### 代表作 半导体产量如何大幅提高
+
+<https://asianometry.passport.online/member/episode/how-semiconductor-yields-vastly-improved?code=U686jYsYbeethXbTMfy2KZ>
 
 # 10. 化合物半导体
 
