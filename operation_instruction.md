@@ -680,13 +680,15 @@ ZX spectrum Next 看起来很棒。然后是 8 位人的 Commander X-16，由他
 
 1. 参考这个链接，美区ID，购买gift卡。时常会出现登陆不上的情况，反复多刷几次，或者苹果ID登出再登陆即可
 
-<https://github.com/farion1231/Way-to-ChatGPT-Plus/blob/main/%E4%BD%BF%E7%94%A8%E9%93%B6%E8%81%94%E8%B4%A6%E6%88%B7%E9%80%9A%E8%BF%87IOS%E8%AE%A2%E9%98%85ChatGPT%20Plus.md>
+<https://github.com/farion1231/Way-to-ChatGPT-Plus/blob/main/%E4%BD%BF%E7%94%A8%E7%BE%8E%E5%9B%BD%E5%8C%BAApple%20ID%E8%AE%A2%E9%98%85.md>
 
 credit card接收邮件，可以随意，不用非得美区ID的注册邮箱
 
 购买礼品卡
 
 第一步，前往苹果官网购买礼品卡。
+
+<https://www.apple.com/shop/buy-giftcard/giftcard>
 
 ![](/picture/card1.png)
 ![](/picture/card2.png)
