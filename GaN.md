@@ -2299,5 +2299,9 @@ CSA Catapult 首席技术官 Nick Singh 表示：“硅基技术在能源效率�
 
 <https://compoundsemiconductor.net/article/121683/Compound_semis_essential_to_UK_says_report>
 
+报告链接
+
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/Compound%20semiconductors%20developing%20the%20hardware%20to%20unlock%20the%20UK%E2%80%99s%20AI%20action%20plan.pdf>
+
 
 
