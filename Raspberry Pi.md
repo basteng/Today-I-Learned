@@ -10,6 +10,7 @@
   - [7.3 ClusterHat 教程 Pi Zero W](#73-clusterhat-教程-pi-zero-w)
 - [8. Raspberry Pi Pico 2 构筑自己的音序器](#8-raspberry-pi-pico-2-构筑自己的音序器)
 - [9. Raspberry运行Deepseek 200 token/s](#9-raspberry运行deepseek-200-tokens)
+- [9. FPGA](#9-fpga)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -586,3 +587,16 @@ ClusterHat 淘宝链接
 可以设置集群
 
 <https://turingpi.com/>
+
+# 9. FPGA
+
+人们通常使用两大 FPGA 供应商 Alter（现为 Intel）和 Xilinx。这两家供应商都提供应用程序，允许用户使用 Verilog 和 VHDL 为其 FPGA 编写 HDL。他们会将代码编译成 FPGA 所需的逻辑连接，并允许将配置下载到 FPGA。
+
+但这两家供应商都不适用于树莓派。Alter 和 Xilinx 提供适用于 Windows 和 Linux 的工具，但不适用于树莓派的 ARM 处理器。
+
+不过好消息是，您可以使用 Lattice Inc 提供的免费开源工具对 FPGA 进行编程，该工具可以编译 Verilog 并下载到 FPGA。Yosys
+信息：http://www.clifford.at/yosys/
+
+这里有一个关于如何安装 Yosys 工具的详细说明：http://chiphack.org/chiphack-2017-install-linux.html
+
+<https://forums.raspberrypi.com/viewtopic.php?t=262231>
