@@ -30,7 +30,9 @@
 - [25. 内容行业的内幕 - 行业研究类似](#25-内容行业的内幕---行业研究类似)
 - [26. 6G的命运是否会重复5G无线的失败？](#26-6g的命运是否会重复5g无线的失败)
 - [27. 谷歌首席执行官桑达尔·皮查伊接受大卫·鲁宾斯坦秀采访 20241030](#27-谷歌首席执行官桑达尔皮查伊接受大卫鲁宾斯坦秀采访-20241030)
-- [28. Groq 首席执行官乔纳森·罗斯：人工智能语言模型是思维的望远镜，它们将帮助我们看到智能比我们想象的更广阔](#28-groq-首席执行官乔纳森罗斯人工智能语言模型是思维的望远镜它们将帮助我们看到智能比我们想象的更广阔)
+- [28. Groq 首席执行官乔纳森·罗斯：](#28-groq-首席执行官乔纳森罗斯)
+  - [28.1 人工智能语言模型是思维的望远镜，它们将帮助我们看到智能比我们想象的更广阔](#281-人工智能语言模型是思维的望远镜它们将帮助我们看到智能比我们想象的更广阔)
+  - [28.2 AI幻觉](#282-ai幻觉)
 - [29. 你知道什么是反科学吗？](#29-你知道什么是反科学吗)
 - [30. 你所不知道的 Dijkstra](#30-你所不知道的-dijkstra)
 - [31. 谷歌学术搜索 (Google Scholar) 能否在人工智能革命中幸存下来？](#31-谷歌学术搜索-google-scholar-能否在人工智能革命中幸存下来)
@@ -60,6 +62,7 @@
 - [52. 去做那件让你充满生命力的事](#52-去做那件让你充满生命力的事)
 - [53. 你是创造者还是消费者？](#53-你是创造者还是消费者)
 - [54. 未来的冲击](#54-未来的冲击)
+  - [55.](#55)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1194,13 +1197,47 @@ Webb 表示：“他们需要从网络中删除身份验证和本地语音配置
 
 <https://weibo.com/tv/show/1034:5094216515387410?from=old_pc_videoshow>
 
-# 28. Groq 首席执行官乔纳森·罗斯：人工智能语言模型是思维的望远镜，它们将帮助我们看到智能比我们想象的更广阔
+# 28. Groq 首席执行官乔纳森·罗斯：
+
+## 28.1 人工智能语言模型是思维的望远镜，它们将帮助我们看到智能比我们想象的更广阔
 
 回想一下伽利略——一个陷入很多麻烦的人。他陷入麻烦的原因是他发明了望远镜，并推广了它，并声称我们比每个人都想相信的要小得多。我们本应是宇宙的中心，但事实证明我们不是。望远镜越好，我们的渺小就越明显。大型语言模型是思维的望远镜。很明显，智力比我们更大，它让我们感到非常非常渺小，这很可怕。但随着时间的推移，我们意识到宇宙比我们想象的要大，并且我们已经习惯了这一点，我们开始意识到它是多么美丽，以及我们在宇宙中的位置。我认为这就是即将发生的事情。我们将意识到智力比我们想象的要广阔，我们将了解我们在其中的位置，我们不会害怕它。
 
 ‘Think back to Galileo—someone who got in a lot of trouble. The reason he got in trouble was he invented the telescope, popularized it, and made some claims that we were much smaller than everyone wanted to believe. We were supposed to be the center of the universe, and it turns out we weren’t. And the better the telescope got, the more obvious it became that we were small. Large language models are the telescope for the mind. It’s become clear that intelligence is larger than we are, and it makes us feel really, really small, and it’s scary. But what happened over time was as we realized the universe was larger than we thought and we got used to that, we started to realize how beautiful it was, and our place in the universe. I think that's what’s going to happen. We’re going to realize intelligence is more vast than we ever imagined, and we're going to understand our place in it, and we're not going to be afraid of it.’
 
 <https://www.youtube.com/watch?v=UneoszmxRGg&t=2014s>
+
+## 28.2 AI幻觉
+
+Q： “什么是 AI 幻觉？”
+
+有时，由于问题的提出方式，问题很难回答。让我们换个方式来问这个问题。
+
+问：“AI 为什么会出错？
+
+这仍然是一个很难回答的问题，但现在更容易理解了。AI 会犯错误，因为它不是万能的，但随着它变得更好，它犯的错误会更少。
+
+问：“为什么 AI 的错误如此令人信服且难以注意到？
+
+因为如果他们没有说服力或难以注意到，AI 就不会说服自己，并且会发现很容易注意到，也不会犯错误。AI 越聪明，它犯的明显错误就越少。
+
+问：“AI 会停止犯错吗？
+
+想象一下，如果我们使用幻觉这个词，这个问题会多么难以回答。现在，考虑一下用 error 这个词来回答是多么容易。
+
+从不。AI 永远不会停止犯错。随着时间的推移，它会犯更少的错误，它会犯不太严重的错误，但它总是会犯错误。经济问题是它何时在给定的任务上犯足够少的错误才值得依赖。
+
+Q： “AI 会犯什么样的错误？”
+
+AI 犯的错误类型与人类完全相同。在 Don Norman 的书 The Design of Everyday Things 中，他引入了错误的二分法：失误和错误。错误是缺乏知识或理解，例如，认为门会自行锁上，但实际上门不是这样设计的。滑倒是健忘，例如知道门不会自己锁上，但还是忘记锁上门。
+
+还有更多类型的错误，例如，我认为未能为可以解决的问题发明解决方案是一个错误，但大多数人不会。我会认为停滞不前和没有进步是一个错误，但大多数人不会。因此，我发现 AI 非常有限（目前），而许多其他人则认为它不那么有限。
+
+某件事是否是错误部分基于预期。
+
+重新训练你的大脑来换词是很困难的，但至少对你自己来说，当别人在谈论幻觉时，我建议你在心里把这个词翻译成错误，你会发现更容易理解为什么它们会以这种方式发生。
+
+<https://www.linkedin.com/posts/ross-jonathan_q-what-are-ai-hallucinations-sometimes-activity-7325307581936140289-D3YI?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
 # 29. 你知道什么是反科学吗？
 
@@ -2405,4 +2442,6 @@ So how can you tell if something truly awakens your inner vitality? When an acti
 总之，未来的根本特征，就是永恒感的丧失，取而代之的是短暂感。
 
 <https://mp.weixin.qq.com/s/cIc-22_xeBYgOwVK0wp2Ng>
+
+## 55. 
 
