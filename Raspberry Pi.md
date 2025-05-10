@@ -11,6 +11,31 @@
 - [8. Raspberry Pi Pico 2 构筑自己的音序器](#8-raspberry-pi-pico-2-构筑自己的音序器)
 - [9. Raspberry运行Deepseek 200 token/s](#9-raspberry运行deepseek-200-tokens)
 - [9. FPGA](#9-fpga)
+  - [❌ 报错信息分析](#-报错信息分析)
+  - [✅ 解决方法（3 步）](#-解决方法3-步)
+    - [**① 初始化 Git 子模块**](#-初始化-git-子模块)
+    - [**② 然后重新编译**](#-然后重新编译)
+    - [**③ 安装 Yosys（可选）**](#-安装-yosys可选)
+  - [🧪 验证是否成功](#-验证是否成功)
+  - [✅ 总结](#-总结)
+    - [✅ 解释：](#-解释)
+  - [✅ 解决方法：](#-解决方法)
+    - [**方法 1：重试几次**](#方法-1重试几次)
+    - [**方法 2：切换使用 SSH 拉取**](#方法-2切换使用-ssh-拉取)
+    - [**方法 3：使用代理或 VPN**](#方法-3使用代理或-vpn)
+    - [**方法 4：手动克隆子模块**](#方法-4手动克隆子模块)
+  - [✅ 总结](#-总结-1)
+  - [🔍 根本原因](#-根本原因)
+  - [✅ 解决步骤](#-解决步骤)
+    - [🔁 **步骤 1：确认子模块状态**](#-步骤-1确认子模块状态)
+    - [🔧 **步骤 2：重新拉取子模块（推荐使用手动克隆）**](#-步骤-2重新拉取子模块推荐使用手动克隆)
+      - [✅ 方法 1：逐个手动克隆](#-方法-1逐个手动克隆)
+      - [✅ 方法 2：如果网络稳定了，也可以重新尝试自动拉取](#-方法-2如果网络稳定了也可以重新尝试自动拉取)
+    - [✅ 步骤 3：编译验证](#-步骤-3编译验证)
+    - [🔚 总结](#-总结-2)
+    - [✅ 解决方案：单独拉取 `libs/cxxopts` 子模块](#-解决方案单独拉取-libscxxopts-子模块)
+    - [💡 如果仍失败（网络不稳），可以手动拉取](#-如果仍失败网络不稳可以手动拉取)
+    - [✅ 然后重新编译](#-然后重新编译-1)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -600,3 +625,403 @@ ClusterHat 淘宝链接
 这里有一个关于如何安装 Yosys 工具的详细说明：http://chiphack.org/chiphack-2017-install-linux.html
 
 <https://forums.raspberrypi.com/viewtopic.php?t=262231>
+
+Yosys安装需要修改
+
+http://chiphack.org/chiphack-2017-install-linux.html
+
+Downloading and installing pre-requisites
+These are needed for compiling and installing the icestorm, Arachne-PNR and yosys tools later.
+
+For Debian-based distributions, use the following command:
+
+~~~
+sudo apt-get install build-essential clang bison flex libreadline-dev \
+gawk tcl-dev libffi-dev git mercurial graphviz xdot pkg-config python \
+	  python3 libftdi-dev vim htop screen iverilog
+~~~
+
+需要修改成以下命令
+
+sudo apt-get install build-essential clang bison flex libreadline-dev \
+gawk tcl-dev libffi-dev git mercurial graphviz xdot pkg-config \
+python3 python-is-python3 libftdi-dev vim htop screen iverilog
+
+加上 python-is-python3，让 python 命令自动等于 python3。
+
+避免了废弃的 python 包引发错误。
+
+| 包名                      | 用途说明                                     |
+| ----------------------- | ---------------------------------------- |
+| `build-essential`       | 安装 GCC 编译器及基本开发工具（make、g++ 等）            |
+| `clang`                 | LLVM 的 C/C++ 编译器，现代开发常用                  |
+| `bison`, `flex`         | 分别是语法分析器/词法分析器生成器，常用于编译器前端               |
+| `libreadline-dev`       | 用于命令行界面支持（如带箭头键历史的 CLI 工具）               |
+| `gawk`                  | GNU AWK，处理文本和脚本语言工具                      |
+| `tcl-dev`               | 支持 Tcl 脚本语言的开发库（例如 openROAD 工具依赖）        |
+| `libffi-dev`            | 支持 C 与其他语言交互的 Foreign Function Interface |
+| `git`, `mercurial`      | 两种主流版本控制系统，获取源代码常用                       |
+| `graphviz`, `xdot`      | 图可视化工具，例如显示电路图、状态机图                      |
+| `pkg-config`            | 协助编译器找到正确的头文件和库路径                        |
+| `python`, `python3`     | Python 2/3 运行环境，很多脚本依赖（见下文说明）            |
+| `libftdi-dev`           | 用于与 FTDI USB 转串口芯片通信，适用于 FPGA 开发板        |
+| `vim`, `htop`, `screen` | 常用编辑器/系统监控/多终端工具                         |
+| `iverilog`              | Verilog 模拟器，用于测试/验证数字逻辑设计                |
+
+
+
+ 执行到这里时出错了
+
+ Downloading and installing Yosys
+Starting in the same directory:
+
+git clone https://github.com/cliffordwolf/yosys.git yosys
+cd yosys
+make -j8
+sudo make install
+
+你的 Yosys 编译报错了，原因非常明确，是 **缺少子模块（submodule）和依赖的头文件**。下面详细说明并提供修复方法。
+
+---
+
+## ❌ 报错信息分析
+
+关键错误信息是：
+
+```
+fatal error: libs/cxxopts/include/cxxopts.hpp: No such file or directory
+```
+
+说明 Yosys 依赖的 **`cxxopts.hpp` 文件没下载到**，而这个文件本应该在 Git 的子模块中。
+
+同时还有：
+
+```
+make: *** [Makefile:794: check-git-abc] Error 1
+Initialize the submodule: Run 'git submodule update --init' to set up 'abc' as a submodule.
+```
+
+说明你**还没有初始化 Git 子模块**，包括 `abc` 这个用于逻辑优化的核心工具。
+
+---
+
+## ✅ 解决方法（3 步）
+
+### **① 初始化 Git 子模块**
+
+在 Yosys 项目目录下运行以下命令：
+
+```bash
+git submodule update --init --recursive
+```
+
+这将会拉取所有 Yosys 所需的子模块（包括 `abc`、`cxxopts` 等）。
+
+> 📌 **必须执行，否则 make 会找不到依赖项**
+
+---
+
+### **② 然后重新编译**
+
+子模块初始化完成后，重新执行：
+
+```bash
+make -j8
+```
+
+---
+
+### **③ 安装 Yosys（可选）**
+
+编译成功后，执行安装命令：
+
+```bash
+sudo make install
+```
+
+这会将 Yosys 安装到 `/usr/local/bin/yosys`，你就可以直接运行：
+
+```bash
+yosys
+```
+
+---
+
+## 🧪 验证是否成功
+
+```bash
+yosys -V
+```
+
+输出示例：
+
+```
+Yosys 0.26+123 (git sha1 abc123, clang 14.0.0 -fPIC -Os)
+```
+
+---
+
+## ✅ 总结
+
+| 问题                          | 原因              | 解决                                        |
+| --------------------------- | --------------- | ----------------------------------------- |
+| `cxxopts.hpp: No such file` | 缺少子模块 `cxxopts` | `git submodule update --init --recursive` |
+| `check-git-abc` 报错          | 缺少子模块 `abc`     | 同上                                        |
+| 编译失败                        | 缺文件、依赖未拉取       | 拉取子模块并重新 make                             |
+
+---
+
+如你后续还要编译 openFPGA、NextPNR 或 sky130 toolchain，也会遇到类似的 `submodule` 问题，通用命令是：
+
+```bash
+git clone --recursive <repo_url>
+```
+
+或者：
+
+```bash
+git submodule update --init --recursive
+```
+
+是的，这个报错确实是 **网络问题** 引起的，尤其是访问 GitHub 时 TLS 连接中断。错误信息：
+
+```
+GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+fatal: clone of 'https://github.com/YosysHQ/abc' into submodule path '/home/basteng/icestorm/yosys/abc' failed
+```
+
+### ✅ 解释：
+
+* 这是 `git` 在使用 HTTPS 协议连接 GitHub 拉取子模块时发生的 TLS 层连接超时或被中断。
+* 这类问题在 **国内网络环境** 或 **不稳定 WiFi/VPN** 下较常见。
+
+---
+
+## ✅ 解决方法：
+
+### **方法 1：重试几次**
+
+最简单直接的方法，有时候是 GitHub 一时不稳定或网络波动，重新执行：
+
+```bash
+git submodule update --init --recursive
+```
+
+---
+
+### **方法 2：切换使用 SSH 拉取**
+
+如果你配置了 GitHub 的 SSH key，可以使用 SSH 替代 HTTPS，避免 TLS 问题。
+
+1. 修改子模块地址：
+
+```bash
+git config --file .gitmodules submodule.abc.url git@github.com:YosysHQ/abc.git
+```
+
+2. 再运行子模块更新命令：
+
+```bash
+git submodule sync
+git submodule update --init --recursive
+```
+
+如果你还未配置 GitHub 的 SSH key，可参考 GitHub 指南：[https://docs.github.com/en/authentication/connecting-to-github-with-ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+
+---
+
+### **方法 3：使用代理或 VPN**
+
+如果你处于中国大陆或公司网络环境，访问 GitHub 被限，可以考虑：
+
+* 启用 VPN。
+* 配置 git 使用代理，例如：
+
+```bash
+git config --global http.proxy http://127.0.0.1:7890
+git config --global https.proxy http://127.0.0.1:7890
+```
+
+> 将 `7890` 替换为你本地代理工具的端口。
+
+---
+
+### **方法 4：手动克隆子模块**
+
+如果仍然失败，可以手动克隆子模块：
+
+```bash
+cd yosys
+git clone https://github.com/YosysHQ/abc.git abc
+```
+
+然后再继续编译。
+
+---
+
+## ✅ 总结
+
+| 方法     | 适用场景                    |
+| ------ | ----------------------- |
+| 重试命令   | 一般网络波动                  |
+| 切换 SSH | 已配置 SSH key，跳过 HTTPS 问题 |
+| 配置代理   | 境内访问 GitHub 不稳定         |
+| 手动克隆   | 临时解决子模块拉取失败问题           |
+
+
+**可以选择方法4**
+
+你现在这个错误：
+
+```
+fatal error: libs/cxxopts/include/cxxopts.hpp: No such file or directory
+```
+
+说明 Yosys 的依赖库 **`cxxopts` 子模块仍未成功拉取**，导致 `make` 编译失败。
+
+---
+
+## 🔍 根本原因
+
+你在上一步执行了：
+
+```bash
+git submodule update --init --recursive
+```
+
+但因为网络问题（`GnuTLS recv error`），子模块没有拉取成功，**`abc` 和 `cxxopts` 都缺失**。Yosys 使用 `libs/cxxopts` 提供命令行参数解析功能，编译 `driver.cc` 时必须用到。
+
+---
+
+## ✅ 解决步骤
+
+### 🔁 **步骤 1：确认子模块状态**
+
+在 Yosys 根目录下运行：
+
+```bash
+git submodule status
+```
+
+如果看到如下类似内容，表示子模块未初始化成功：
+
+```
+-<hash> abc
+-<hash> libs/cxxopts
+```
+
+说明你 **还需要重新拉取子模块**。
+
+---
+
+### 🔧 **步骤 2：重新拉取子模块（推荐使用手动克隆）**
+
+#### ✅ 方法 1：逐个手动克隆
+
+你可以手动拉取子模块，避免网络中断带来的问题。
+
+```bash
+cd yosys
+# 克隆 abc 子模块
+git clone https://github.com/YosysHQ/abc.git abc
+
+# 克隆 cxxopts 子模块
+git clone https://github.com/jarro2783/cxxopts.git libs/cxxopts
+```
+
+然后重新编译：
+
+```bash
+make -j8
+```
+
+---
+
+#### ✅ 方法 2：如果网络稳定了，也可以重新尝试自动拉取
+
+```bash
+git submodule update --init --recursive
+```
+
+如果还是失败，建议优先用方法 1。
+
+---
+
+### ✅ 步骤 3：编译验证
+
+执行：
+
+```bash
+make -j8
+```
+
+如无报错，再执行：
+
+```bash
+sudo make install
+```
+
+最后验证：
+
+```bash
+yosys -V
+```
+
+---
+
+### 🔚 总结
+
+| 问题               | 原因               | 解决方案                            |
+| ---------------- | ---------------- | ------------------------------- |
+| `cxxopts.hpp` 缺失 | 子模块没拉到           | 手动 `git clone` 到 `libs/cxxopts` |
+| `abc` 缺失也会报错     | 同上               | 手动 `git clone` 到 `abc/`         |
+| 网络 TLS 报错        | 境内访问 GitHub 慢或中断 | 使用 VPN 或代理，或改成 SSH 克隆           |
+
+是否还准备安装下一步的 `nextpnr`？我可以继续帮你配置完整 iCE40 工具链。
+
+
+你的输出说明：
+
+* ✅ `abc` 子模块已经成功拉取（前面没有 `-` 号）。
+* ❌ `libs/cxxopts` 子模块 **没有拉取成功**（前面有 `-` 号，表示未初始化）。
+
+---
+
+### ✅ 解决方案：单独拉取 `libs/cxxopts` 子模块
+
+在 `yosys` 根目录下执行以下命令：
+
+```bash
+git submodule update --init libs/cxxopts
+```
+
+这会只拉取缺失的 `cxxopts` 子模块，避免重新尝试拉全部（提高成功率）。
+
+---
+
+### 💡 如果仍失败（网络不稳），可以手动拉取
+
+```bash
+git clone https://github.com/jarro2783/cxxopts.git libs/cxxopts
+```
+
+---
+
+### ✅ 然后重新编译
+
+```bash
+make -j8
+sudo make install
+```
+
+完成后验证：
+
+```bash
+yosys -V
+```
+
+---
+
+是否还要继续搭建 `nextpnr`？它是和 `yosys + icestorm + arachne-pnr` 配套的 iCE40 P\&R 工具。需要我继续帮你安装下一步吗？
+
+
