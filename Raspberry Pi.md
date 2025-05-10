@@ -36,6 +36,15 @@
     - [✅ 解决方案：单独拉取 `libs/cxxopts` 子模块](#-解决方案单独拉取-libscxxopts-子模块)
     - [💡 如果仍失败（网络不稳），可以手动拉取](#-如果仍失败网络不稳可以手动拉取)
     - [✅ 然后重新编译](#-然后重新编译-1)
+  - [✅ 正确的构建方式如下（请严格照做）：](#-正确的构建方式如下请严格照做)
+    - [步骤 1：新建构建目录并进入](#步骤-1新建构建目录并进入)
+    - [步骤 2：配置 CMake（仍然在 `build` 目录中）](#步骤-2配置-cmake仍然在-build-目录中)
+    - [步骤 3：编译并安装](#步骤-3编译并安装)
+    - [✅ 正确做法是：**从 nextpnr 根目录外的 `build` 子目录中调用 `cmake` 并指定 `..` 为源码路径**](#-正确做法是从-nextpnr-根目录外的-build-子目录中调用-cmake-并指定--为源码路径)
+    - [总结](#总结)
+    - [✅ 解决方法如下：](#-解决方法如下)
+      - [第一步：**清除源码目录中的缓存文件**](#第一步清除源码目录中的缓存文件)
+      - [第二步：**重新创建 build 目录并配置编译**](#第二步重新创建-build-目录并配置编译)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1025,3 +1034,114 @@ yosys -V
 是否还要继续搭建 `nextpnr`？它是和 `yosys + icestorm + arachne-pnr` 配套的 iCE40 P\&R 工具。需要我继续帮你安装下一步吗？
 
 
+你的最后一步出现错误是因为 **你在源代码目录中尝试了“in-tree build”**，而 `nextpnr` 项目强制要求“out-of-tree build”（即构建目录和源码目录必须分离）。
+
+---
+
+## ✅ 正确的构建方式如下（请严格照做）：
+
+你当前目录应该是：
+
+```
+~/nextpnr
+```
+
+### 步骤 1：新建构建目录并进入
+
+```bash
+mkdir build
+cd build
+```
+
+### 步骤 2：配置 CMake（仍然在 `build` 目录中）
+
+```bash
+cmake -DARCH=ice40 -DCMAKE_INSTALL_PREFIX=/usr/local ..
+```
+
+注意：这里的 `..` 表示指向上级的源代码目录。
+
+### 步骤 3：编译并安装
+
+```bash
+make -j$(nproc)
+sudo make install
+```
+
+---
+
+执行以上三步后，`nextpnr` 就会被正确编译并安装到 `/usr/local/bin/nextpnr-ice40`。
+
+是否要我帮你检查后续如何与 `yosys` 一起使用编译 Verilog 程序？
+
+
+你还是在用**错误的方式**运行 `cmake`，报错提示也说得很清楚：
+
+> ❌ **“In-tree builds are not supported.”**
+
+---
+
+### ✅ 正确做法是：**从 nextpnr 根目录外的 `build` 子目录中调用 `cmake` 并指定 `..` 为源码路径**
+
+你现在已经在 `~/nextpnr/build` 目录下了，所以只需运行这条命令即可：
+
+```bash
+cmake .. -DARCH=ice40 -DCMAKE_INSTALL_PREFIX=/usr/local
+```
+
+接着继续执行：
+
+```bash
+make -j$(nproc)
+sudo make install
+```
+
+---
+
+### 总结
+
+你已经创建好了 `build/` 子目录，现在只要在里面执行 `cmake ..` 并加上选项即可。不需要像提示里的 `cmake . -B build`，因为你已经进入了 `build` 目录。
+
+你要不要我提供一个完整的一键构建脚本？
+
+
+你收到这个报错的原因是你之前可能在 `~/nextpnr` 目录下直接运行过 `cmake` 命令，结果污染了源码目录。虽然你后来新建了 `build/` 子目录，但源码目录中的缓存文件还在，导致 `cmake` 仍然报错。
+
+---
+
+### ✅ 解决方法如下：
+
+#### 第一步：**清除源码目录中的缓存文件**
+
+回到 `nextpnr` 根目录并删除缓存文件：
+
+```bash
+cd ~/nextpnr
+rm -rf CMakeCache.txt CMakeFiles
+```
+
+如果你不确定有哪些残留，可以更彻底地清除所有非源码文件（别担心，git 会保护源码）：
+
+```bash
+git clean -fdx
+```
+
+> 这会删除所有没有被 Git 跟踪的文件，包括你错误生成的 CMake 缓存。
+
+---
+
+#### 第二步：**重新创建 build 目录并配置编译**
+
+```bash
+mkdir -p ~/nextpnr/build
+cd ~/nextpnr/build
+cmake .. -DARCH=ice40 -DCMAKE_INSTALL_PREFIX=/usr/local
+make -j$(nproc)
+sudo make install
+```
+
+---
+
+这样就能正确完成 `nextpnr` 的构建了。
+
+你需要我帮你写一个自动构建的 shell 脚本吗？
