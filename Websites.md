@@ -92,6 +92,9 @@
   - [17.1 加州大学戴维斯分校电子学位论文](#171-加州大学戴维斯分校电子学位论文)
   - [17.2 加州大学圣巴巴拉分校电子学位论文](#172-加州大学圣巴巴拉分校电子学位论文)
   - [17.3 加州大学的开放获取出版物](#173-加州大学的开放获取出版物)
+- [18. 开发版](#18-开发版)
+  - [18.1 olimex all fun projects at Olimex Ltd](#181-olimex-all-fun-projects-at-olimex-ltd)
+    - [18.1.1 代表作](#1811-代表作)
 
 
 # 1. 存储
@@ -592,4 +595,13 @@ Epitaxy and Device Design for High Efficiency Blue LEDs and Laser Diodes
 
 <https://escholarship.org/>
 
+# 18. 开发版
+
+## 18.1 olimex all fun projects at Olimex Ltd
+
+<https://olimex.wordpress.com/>
+
+### 18.1.1 代表作
+
+<https://olimex.wordpress.com/2016/02/12/new-oshw-ice40-fpga-evaluation-board-project/>
 
