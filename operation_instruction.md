@@ -35,6 +35,7 @@
 - [24. 树莓派修改](#24-树莓派修改)
   - [24.1 树莓派5更改设置](#241-树莓派5更改设置)
 - [25. Google Colab 集成了 Data Science Agent](#25-google-colab-集成了-data-science-agent)
+- [26. Chrome网页保存为pdf](#26-chrome网页保存为pdf)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -772,3 +773,7 @@ Google 希望这能彻底改变您的数据分析工作流程。
 官方链接
 
 <https://developers.googleblog.com/en/data-science-agent-in-colab-with-gemini/?linkId=13237992&continueFlag=4b7ee00dfb52f7b3f6f63d1958338a4b>
+
+# 26. Chrome网页保存为pdf
+
+Chrome 右上角三个点，选 打印 -> 目标打印机选择 “另存为pdf”
