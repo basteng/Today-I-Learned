@@ -1,6 +1,7 @@
 - [1.目标](#1目标)
   - [1.1 LED究竟可以调制多大带宽 - 理论计算 - 发表论文](#11-led究竟可以调制多大带宽---理论计算---发表论文)
   - [1.2 Ayar Lab和Avicena两个方案比较 - 发表期刊文章](#12-ayar-lab和avicena两个方案比较---发表期刊文章)
+  - [1.3 机器学习计算InGaN/GaN能带分布](#13-机器学习计算ingangan能带分布)
 - [2.工作安排](#2工作安排)
   - [2.1 研究LED等效电路](#21-研究led等效电路)
     - [2.1.1 电注入 III 族氮化物发光二极管中的差异载流子寿命和传输效应](#211-电注入-iii-族氮化物发光二极管中的差异载流子寿命和传输效应)
@@ -14,6 +15,7 @@
       - [\[3\] Ultra-compact, low RF power, 10 Gb/s silicon Mach-Zehnder modulator](#3-ultra-compact-low-rf-power-10-gbs-silicon-mach-zehnder-modulator)
       - [\[2\] Polarization-transparent microphotonic devices in the strong confinement limit](#2-polarization-transparent-microphotonic-devices-in-the-strong-confinement-limit)
       - [\[1\] Optics for low-energy communication inside digital processors, quantum detectors, sources, modulators as efficient impedance converters](#1-optics-for-low-energy-communication-inside-digital-processors-quantum-detectors-sources-modulators-as-efficient-impedance-converters)
+  - [3.1](#31)
 
 
 # 1.目标
@@ -21,6 +23,8 @@
 ## 1.1 LED究竟可以调制多大带宽 - 理论计算 - 发表论文
 
 ## 1.2 Ayar Lab和Avicena两个方案比较 - 发表期刊文章
+
+## 1.3 机器学习计算InGaN/GaN能带分布
 
 # 2.工作安排
 
@@ -209,3 +213,5 @@
 #### [1] Optics for low-energy communication inside digital processors, quantum detectors, sources, modulators as efficient impedance converters
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Optics%20for%20low-energy%20communication%20inside%20digital%20processors%2C%20quantum%20detectors%2C%20sources%2C%20modulators%20as%20efficient%20impedance%20converters.pdf>
+
+## 3.1 
