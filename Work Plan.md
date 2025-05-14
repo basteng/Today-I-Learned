@@ -15,7 +15,7 @@
       - [\[3\] Ultra-compact, low RF power, 10 Gb/s silicon Mach-Zehnder modulator](#3-ultra-compact-low-rf-power-10-gbs-silicon-mach-zehnder-modulator)
       - [\[2\] Polarization-transparent microphotonic devices in the strong confinement limit](#2-polarization-transparent-microphotonic-devices-in-the-strong-confinement-limit)
       - [\[1\] Optics for low-energy communication inside digital processors, quantum detectors, sources, modulators as efficient impedance converters](#1-optics-for-low-energy-communication-inside-digital-processors-quantum-detectors-sources-modulators-as-efficient-impedance-converters)
-  - [3.1](#31)
+  - [3.1 Enhancing light emission with electric fields in polar nitride semiconductors](#31-enhancing-light-emission-with-electric-fields-in-polar-nitride-semiconductors)
 
 
 # 1.目标
@@ -214,4 +214,14 @@
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Optics%20for%20low-energy%20communication%20inside%20digital%20processors%2C%20quantum%20detectors%2C%20sources%2C%20modulators%20as%20efficient%20impedance%20converters.pdf>
 
-## 3.1 
+## 3.1 Enhancing light emission with electric fields in polar nitride semiconductors
+
+这篇文章用机器学习的方法设计了红光LED的最优结构，这里最有意思的是它的补充材料，有时间可以好好学一下
+
+所有论文和材料数据在如下文件夹内
+
+<https://github.com/basteng/Today-I-Learned/tree/main/paper/Machine%20Learning%20-%20InGaN%20GaN>
+
+核心的是这篇
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Machine%20Learning%20-%20InGaN%20GaN/ph5c00133_si_003.pdf>
