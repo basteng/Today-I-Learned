@@ -101,6 +101,7 @@
   - [5.49 富士康研究院：SiliconPhotonic Viewpoint\_MicroLED光互连(C2C)](#549-富士康研究院siliconphotonic-viewpoint_microled光互连c2c)
   - [5.50 OFC50-回顾过去，展望未来：结合2025年可制造性挑战重新审视2020年CPO愿景 SemiVision Research 的原创文章（Nvidia、Braodcom、Marvell、Intel、AyarLab、Avicena）](#550-ofc50-回顾过去展望未来结合2025年可制造性挑战重新审视2020年cpo愿景-semivision-research-的原创文章nvidiabraodcommarvellintelayarlabavicena)
   - [5.51 Avicena 与台积电合作生产其 microLED 链接](#551-avicena-与台积电合作生产其-microled-链接)
+  - [5.52 Avicena 在 B 轮融资中筹集了 6500 万美元](#552-avicena-在-b-轮融资中筹集了-6500-万美元)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -3056,6 +3057,22 @@ Avicena 首次将其 microLED 技术应用于光学引擎，以满足 1.6Tbps �
 代工厂台积电 (TSMC) 也活跃于硅光子学领域，并将该技术作为其先进系统级封装 (SIP) 技术路线图的一部分进行开发。尽管目前尚处于早期阶段，但 Avicena 的 MicroLED LightBundle 技术有望成为台积电光学产品的一部分，用于芯片到芯片 (Die-to-Die)、xPU 到内存 (xPU-to-memory) 以及封装内光学器件等应用。
 
 <https://www.gazettabyte.com/home/2025/5/11/avicena-partners-with-tsmc-to-make-its-microled-links.html>
+
+## 5.52 Avicena 在 B 轮融资中筹集了 6500 万美元
+
+Avicena 是一家总部位于加州桑尼维尔的超低功耗高密度 MicroLED 互连技术开发商，该公司宣布已完成 6500 万美元 B 轮融资，使公司总融资额达到 1.2 亿美元。本轮融资由 Tiger Global 领投，Maverick Silicon、Prosperity7 Ventures、Venture Tech Alliance、SK Hynix、Cerberus Capital Management、Hitachi Ventures 和 Lam Research 等新老投资者跟投。
+
+LightBundle 技术基于 GaN microLED 阵列，充分利用大型显示器生态系统，可直接集成到任何高性能 CMOS IC 上。Avicena 表示，microLED 发射阵列耦合到多芯光纤电缆中，这些光纤电缆连接到匹配的集成硅探测器阵列，从而实现性能优于基于激光的解决方案的光互连。
+
+Avicena 创始人兼首席执行官 Bardia Pezeshki 表示：“本轮融资超额认购表明 Avicena 在颠覆 AI 互连市场方面处于领先地位，也反映了我们面临的巨大商机。我们将利用这笔新资金进一步扩大团队规模，并加快首款产品的量产。我们基于 LightBundle microLED 的互连技术，相比所有其他光学互连技术，拥有卓越的带宽密度、能效、可靠性和成本优势。”
+
+老虎环球合伙人 Rohit Iragavarapu 表示：“Avicena 的技术在提升人工智能计算系统的带宽和降低功耗方面具有变革性的潜力。我们很高兴能够投资他们，并支持他们打造更佳人工智能互联的愿景。”
+
+SK海力士风险投资高级总监Rene Do表示：“由于高速电气互连具有根本的覆盖范围限制，而基于激光的光学链路功耗过大，因此像LightBundle这样的基于microLED的互连代表了未来内存结构中低功耗链路的一种有前途的解决方案。”
+
+Prosperity7 Ventures 董事总经理 Abhishek Shukla 补充道：“Avicena 拥有为人工智能超级计算机和数据中心提供卓越下一代互连的先决条件，这将有助于以可持续的方式开启人工智能大规模创新的新时代。我们很高兴能够支持 Avicena 团队开启新的征程。”
+
+<https://opticalconnectionsnews.com/2025/05/avicena-raises-us65-million-in-series-b-funding/>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
