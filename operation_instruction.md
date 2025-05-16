@@ -36,6 +36,24 @@
   - [24.1 树莓派5更改设置](#241-树莓派5更改设置)
 - [25. Google Colab 集成了 Data Science Agent](#25-google-colab-集成了-data-science-agent)
 - [26. Chrome网页保存为pdf](#26-chrome网页保存为pdf)
+- [27. 树莓派配置为独立AP+透明代理](#27-树莓派配置为独立ap透明代理)
+    - [**1. 配置无线AP（热点）**](#1-配置无线ap热点)
+    - [**2. 配置DHCP和DNS**](#2-配置dhcp和dns)
+    - [**3. 配置透明代理（以SSR为例）**](#3-配置透明代理以ssr为例)
+    - [**4. 配置DNS防污染**](#4-配置dns防污染)
+    - [**5. 手机连接测试**](#5-手机连接测试)
+    - [**效果说明**](#效果说明)
+    - [**常见问题**](#常见问题)
+- [28. 树莓派上配置 shadowsocks-libev 客户端并实现自动重启](#28-树莓派上配置-shadowsocks-libev-客户端并实现自动重启)
+  - [**1. 安装 shadowsocks-libev**](#1-安装-shadowsocks-libev)
+  - [**2. 配置 Shadowsocks 客户端参数**](#2-配置-shadowsocks-客户端参数)
+  - [**3. 启动并设置自动重启**](#3-启动并设置自动重启)
+    - [**启动 Shadowsocks 本地客户端**](#启动-shadowsocks-本地客户端)
+    - [**设置开机自启（自动重启）**](#设置开机自启自动重启)
+  - [**4. 检查运行状态**](#4-检查运行状态)
+  - [**5. （可选）重启服务以应用新配置**](#5-可选重启服务以应用新配置)
+  - [**6. 让设备使用代理**](#6-让设备使用代理)
+  - [**小结**](#小结)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -777,3 +795,271 @@ Google 希望这能彻底改变您的数据分析工作流程。
 # 26. Chrome网页保存为pdf
 
 Chrome 右上角三个点，选 打印 -> 目标打印机选择 “另存为pdf”
+
+# 27. 树莓派配置为独立AP+透明代理
+
+要让手机直接连接树莓派热点即可翻墙（无需手动设置网关/DNS），需将树莓派配置为**独立AP+透明代理**，具体步骤如下：
+
+---
+
+### **1. 配置无线AP（热点）**
+1. **安装工具**：
+   ```bash
+   sudo apt install hostapd dnsmasq
+   ```
+
+2. **设置无线网卡静态IP**：
+   ```bash
+   sudo nano /etc/network/interfaces
+   ```
+   添加：
+   ```bash
+   auto wlan0
+   iface wlan0 inet static
+      address 192.168.11.1
+      netmask 255.255.255.0
+   ```
+
+3. **配置hostapd（热点参数）**：
+   ```bash
+   sudo nano /etc/hostapd/hostapd.conf
+   ```
+   内容：
+   ```ini
+   interface=wlan0
+   driver=nl80211
+   ssid=RPi-FB  # 热点名称
+   hw_mode=g
+   channel=6
+   wpa=2
+   wpa_passphrase=your_password  # 密码
+   wpa_key_mgmt=WPA-PSK
+   ```
+
+4. **启动AP**：
+   ```bash
+   sudo systemctl enable hostapd
+   sudo systemctl start hostapd
+   ```
+
+---
+
+### **2. 配置DHCP和DNS**
+1. **dnsmasq配置**：
+   ```bash
+   sudo nano /etc/dnsmasq.conf
+   ```
+   添加：
+   ```ini
+   interface=wlan0
+   dhcp-range=192.168.11.100,192.168.11.200,24h
+   dhcp-option=3,192.168.11.1  # 网关指向树莓派
+   dhcp-option=6,192.168.11.1  # DNS指向树莓派
+   ```
+
+2. **重启服务**：
+   ```bash
+   sudo systemctl restart dnsmasq
+   ```
+
+---
+
+### **3. 配置透明代理（以SSR为例）**
+1. **安装SSR客户端**（Python版）：
+   ```bash
+   git clone https://github.com/shadowsocksrr/shadowsocksr
+   cd shadowsocksr && sudo python3 setup.py install
+   ```
+
+2. **启动SSR并监听本地端口**：
+   ```bash
+   sslocal -s 你的SSR服务器IP -p 端口 -k 密码 -m 加密方式 -t 超时 -d start
+   ```
+
+3. **设置iptables透明转发**：
+   ```bash
+   # 启用IP转发
+   sudo sysctl -w net.ipv4.ip_forward=1
+
+   # 流量重定向到SSR端口（假设SSR监听1080）
+   sudo iptables -t nat -A PREROUTING -i wlan0 -p tcp -j REDIRECT --to-port 1080
+
+   # NAT转发（树莓派通过有线网卡eth0连接主路由）
+   sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+   ```
+
+---
+
+### **4. 配置DNS防污染**
+1. **修改dnsmasq配置**：
+   ```bash
+   sudo nano /etc/dnsmasq.conf
+   ```
+   添加：
+   ```ini
+   server=8.8.8.8  # 国外DNS
+   server=114.114.114.114  # 国内DNS
+   ```
+
+2. **重启服务**：
+   ```bash
+   sudo systemctl restart dnsmasq
+   ```
+
+---
+
+### **5. 手机连接测试**
+1. **连接热点**：  
+   手机搜索WiFi `RPi-FB`，输入密码连接。
+2. **自动获取网络参数**：  
+   DHCP会自动分配IP（`192.168.11.x`），网关和DNS均为树莓派IP（`192.168.11.1`）。
+3. **验证翻墙**：  
+   直接访问 [facebook.com](https://facebook.com) 或 [Google](https://google.com)。
+
+---
+
+### **效果说明**
+- **无需手动设置**：手机连接热点后自动通过树莓派代理。
+- **主路由无影响**：家庭其他设备仍走原网络。
+- **流量全代理**：所有TCP流量经SSR转发，UDP需额外配置。
+
+---
+
+### **常见问题**
+- **性能瓶颈**：树莓派4B建议超频至2000MHz并加散热片。
+- **规则持久化**：  
+  ```bash
+  sudo apt install iptables-persistent
+  sudo netfilter-persistent save
+  ```
+- **SSR重启自启**：  
+  使用systemd服务或添加到`/etc/rc.local`。
+
+Citations:
+[1] https://fishedee.com/2016/11/30/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%81%9A%E9%80%8F%E6%98%8E%E4%BB%A3%E7%90%86/
+[2] https://gxuliang.wordpress.com/2017/05/14/%E5%88%A9%E7%94%A8%E6%A0%91%E8%8E%93%E6%B4%BE%E5%81%9A%E7%BF%BB%E5%A2%99%E8%B7%AF%E7%94%B1%E5%99%A8/
+[3] https://tuki.moe/use-raspberry-pi-as-gateway-for-global-internet-browsing/
+[4] https://www.chinagfw.org/2016/04/blog-post_6.html
+[5] https://blog.csdn.net/afeiqiang/article/details/107650981
+[6] https://blog.mmf.moe/post/project-glow-start/
+[7] https://www.cnblogs.com/haochuang/p/6215137.html
+[8] https://blog.csdn.net/weixin_44108897/article/details/115556097
+[9] https://lctt.x-cmd.com/201710/20170820%20Your%20Serverless%20Raspberry%20Pi%20cluster%20with%20Docker/
+[10] https://blog.bingliang.me/posts/2016-05-28-make-raspberry-pi-a-fqrouter/
+
+---
+Answer from Perplexity: pplx.ai/share
+
+# 28. 树莓派上配置 shadowsocks-libev 客户端并实现自动重启
+
+下面是**树莓派上配置 shadowsocks-libev 客户端并实现自动重启**的完整步骤，适用于科学上网（翻墙）需求：
+
+---
+
+## **1. 安装 shadowsocks-libev**
+
+在树莓派终端输入：
+
+```bash
+sudo apt update
+sudo apt install shadowsocks-libev
+```
+
+
+---
+
+## **2. 配置 Shadowsocks 客户端参数**
+
+编辑配置文件 `/etc/shadowsocks-libev/config.json`：
+
+```bash
+sudo nano /etc/shadowsocks-libev/config.json
+```
+
+示例内容（请用你的SSR节点信息替换）：
+
+```json
+{
+  "server":"你的服务器IP或域名",
+  "server_port":8388,
+  "local_address":"0.0.0.0",
+  "local_port":1080,
+  "password":"你的密码",
+  "timeout":300,
+  "method":"aes-256-cfb"
+}
+```
+
+
+---
+
+## **3. 启动并设置自动重启**
+
+### **启动 Shadowsocks 本地客户端**
+
+```bash
+sudo systemctl start shadowsocks-libev-local@config
+```
+这里的 `config` 指的是 `/etc/shadowsocks-libev/config.json`，如你用其他文件名需对应修改[5]。
+
+### **设置开机自启（自动重启）**
+
+```bash
+sudo systemctl enable shadowsocks-libev-local@config
+```
+这样每次开机或异常退出后都会自动重启[2][3][5]。
+
+---
+
+## **4. 检查运行状态**
+
+查看服务运行情况：
+
+```bash
+sudo systemctl status shadowsocks-libev-local@config
+```
+
+
+---
+
+## **5. （可选）重启服务以应用新配置**
+
+每次修改配置后，重启服务：
+
+```bash
+sudo systemctl restart shadowsocks-libev-local@config
+```
+
+
+---
+
+## **6. 让设备使用代理**
+
+- 树莓派本地监听端口（如1080）为SOCKS5代理端口。
+- 其他设备可将代理设置为树莓派IP:1080，或结合iptables等实现透明代理。
+
+---
+
+## **小结**
+
+1. 安装 shadowsocks-libev  
+2. 编辑 `/etc/shadowsocks-libev/config.json` 填写SSR节点信息  
+3. 启动并设置 `shadowsocks-libev-local@config` 服务自启  
+4. 检查和重启服务确保生效
+
+这样设置后，shadowsocks-libev 会随系统启动自动运行，异常退出也会自动重启，科学上网稳定可靠[2][3][5]。
+
+Citations:
+[1] https://blog.bingliang.me/posts/2016-05-28-make-raspberry-pi-a-fqrouter/
+[2] https://gfw.report/blog/ss_tutorial/en/
+[3] https://www.zhangminghao.com/2016/08/24/1472047768/
+[4] https://zlotus.github.io/2018/09/25/rbp3-aws-gateway/
+[5] https://www.zixi.org/archives/raspberrypi-proxy-shadowsocks.html
+[6] https://tuki.moe/use-raspberry-pi-as-gateway-for-global-internet-browsing/
+[7] https://upcloud.com/resources/tutorials/install-shadowsocks-libev-socks5-proxy
+[8] https://github.com/nvidhub/note/blob/master/%E6%A0%91%E8%8E%93%E6%B4%BE3B%E5%AE%89%E8%A3%85OpenWRT%E5%AE%9E%E7%8E%B0%E7%BF%BB%E5%A2%99.md
+[9] https://www.e2encrypted.com/howtos/install-shadowsocks-libev-with-simple-obfs/
+[10] https://www.reddit.com/r/MagicMirror/comments/vw7rfi/using_systemd_services_to_autostart_fails_rpi4/
+
+---
+Answer from Perplexity: pplx.ai/share
