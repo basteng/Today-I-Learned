@@ -54,6 +54,12 @@
   - [**5. （可选）重启服务以应用新配置**](#5-可选重启服务以应用新配置)
   - [**6. 让设备使用代理**](#6-让设备使用代理)
   - [**小结**](#小结)
+- [29. 树莓派浏览器设置](#29-树莓派浏览器设置)
+  - [1. 浏览器科学上网](#1-浏览器科学上网)
+  - [2. 终端命令行科学上网](#2-终端命令行科学上网)
+  - [3. 系统全局代理（仅部分桌面环境支持）](#3-系统全局代理仅部分桌面环境支持)
+  - [4. 直接测试](#4-直接测试)
+  - [5. 进阶：Privoxy 转 HTTP 代理（可选）](#5-进阶privoxy-转-http-代理可选)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1060,6 +1066,87 @@ Citations:
 [8] https://github.com/nvidhub/note/blob/master/%E6%A0%91%E8%8E%93%E6%B4%BE3B%E5%AE%89%E8%A3%85OpenWRT%E5%AE%9E%E7%8E%B0%E7%BF%BB%E5%A2%99.md
 [9] https://www.e2encrypted.com/howtos/install-shadowsocks-libev-with-simple-obfs/
 [10] https://www.reddit.com/r/MagicMirror/comments/vw7rfi/using_systemd_services_to_autostart_fails_rpi4/
+
+---
+Answer from Perplexity: pplx.ai/share
+
+# 29. 树莓派浏览器设置
+
+你已经在树莓派上成功启动了 shadowsocks-libev 的本地客户端（ss-local），现在只需让本地应用流量通过 SOCKS5 代理即可科学上网。常见方法如下：
+
+---
+
+## 1. 浏览器科学上网
+
+- **推荐方式**：在浏览器（如Firefox或Chrome）设置代理。
+- 代理类型选择 SOCKS5，服务器填写 `127.0.0.1`，端口填写 `1080`（与你 config.json 保持一致）。
+- 例如，Firefox 设置路径：设置 → 网络设置 → 手动代理配置 → SOCKS Host 填写 127.0.0.1，端口 1080，选择 SOCKS v5[14]。
+
+---
+
+## 2. 终端命令行科学上网
+
+- 使用 `proxychains` 工具让终端命令通过 SOCKS5 代理：
+  ```bash
+  sudo apt install proxychains4
+  ```
+- 编辑 `/etc/proxychains4.conf`，在末尾添加：
+  ```
+  socks5  127.0.0.1 1080
+  ```
+- 用法示例：
+  ```bash
+  proxychains4 curl https://www.google.com
+  ```
+  这样 curl 等命令就会通过 shadowsocks 科学上网[8][6]。
+
+---
+
+## 3. 系统全局代理（仅部分桌面环境支持）
+
+- 有些桌面环境（如GNOME）支持在“网络”设置中配置系统代理，填写 SOCKS5 代理为 127.0.0.1:1080。
+- 但部分命令行程序和系统服务不会自动走全局代理。
+
+---
+
+## 4. 直接测试
+
+- 你可以用 curl 测试代理是否生效：
+  ```bash
+  curl --socks5 127.0.0.1:1080 https://ipinfo.io
+  ```
+  返回的 IP 若为你的代理服务器出口 IP，说明已成功翻墙[6]。
+
+---
+
+## 5. 进阶：Privoxy 转 HTTP 代理（可选）
+
+- 如果有应用只支持 HTTP 代理，可用 privoxy 将 SOCKS5 转为 HTTP 代理[8]。
+
+---
+
+**总结**：  
+你只需在需要科学上网的应用中设置 SOCKS5 代理为 `127.0.0.1:1080`，即可让树莓派本地科学上网，无需额外配置网关或 DNS[6][14][8]。
+
+Citations:
+[1] https://blog.csdn.net/aaaaaaaa123345/article/details/131106506
+[2] https://haipeng.me/2017/12/12/raspberry-pi-vpn-remote-access/
+[3] https://github.com/nvidhub/note/blob/master/%E6%A0%91%E8%8E%93%E6%B4%BE3B%E5%AE%89%E8%A3%85OpenWRT%E5%AE%9E%E7%8E%B0%E7%BF%BB%E5%A2%99.md
+[4] https://www.cnblogs.com/jojodru/p/15789320.html
+[5] https://www.aihoom.com/1802.html
+[6] https://cloud.tencent.com/developer/article/2449948
+[7] https://zlotus.github.io/2018/09/25/rbp3-aws-gateway/
+[8] https://blog.biofan.org/2019/08/linux-proxy/
+[9] https://blog.csdn.net/Isaachim/article/details/110383558
+[10] https://zsummer.github.io/2020/05/09/2020-06-15-shadowsock-proxy/
+[11] https://www.liaol.net/posts/raspberry-as-gfw-fucker/
+[12] https://titaniumblog.site123.me/%E5%8D%9A%E5%AE%A2/shadowsocks
+[13] https://picockpit.com/raspberry-pi/zh/%E5%A6%82%E4%BD%95%E7%94%A8%E6%A0%91%E8%8E%93%E6%B4%BE%E8%AE%BE%E7%BD%AE%E8%BF%9C%E7%A8%8B%E5%B7%A5%E4%BD%9C%E7%9A%84vpn%EF%BC%9F/
+[14] https://cn.linux-terminal.com/?p=3467
+[15] https://sulian-blog.com/shadowsocks-v2ray-ws-proxy/
+[16] https://gfw.report/blog/ss_tutorial/zh/
+[17] https://libertyleadingnetwork.blogspot.com/2019/08/shadowsocksss-redirprivoxytpproxy.html
+[18] https://shiping.date/4.html
 
 ---
 Answer from Perplexity: pplx.ai/share
