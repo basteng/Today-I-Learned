@@ -61,6 +61,8 @@
 - [58. Automatic Waveguide Routing with Optimized Loss for Silicon Photonics Interconnect](#58-automatic-waveguide-routing-with-optimized-loss-for-silicon-photonics-interconnect)
 - [59. An Approach of ISI Elimination and High-Speed Data Reconstruction in Lossy On-Chip Serial Link](#59-an-approach-of-isi-elimination-and-high-speed-data-reconstruction-in-lossy-on-chip-serial-link)
 - [60. 15.64 Gbps high-speed visible light communication and multiple-user secure communication employing red GaN micro-LED based semi-transparent photodetector](#60-1564-gbps-high-speed-visible-light-communication-and-multiple-user-secure-communication-employing-red-gan-micro-led-based-semi-transparent-photodetector)
+- [61. Micro-LED for short distance optical links with low power consumption](#61-micro-led-for-short-distance-optical-links-with-low-power-consumption)
+- [62. Adaptive Time-Multiplexed Control of a Silicon Photonic Coherent Adder](#62-adaptive-time-multiplexed-control-of-a-silicon-photonic-coherent-adder)
 
 20241204以后 （未下载）
 
@@ -332,4 +334,13 @@ https://link.springer.com/article/10.1007/s00034-025-03117-6
 # 60. 15.64 Gbps high-speed visible light communication and multiple-user secure communication employing red GaN micro-LED based semi-transparent photodetector
 
 https://ieeexplore.ieee.org/document/10990292
+
+# 61. Micro-LED for short distance optical links with low power consumption
+
+https://opg.optica.org/ol/abstract.cfm?URI=ol-50-10-3453
+
+# 62. Adaptive Time-Multiplexed Control of a Silicon Photonic Coherent Adder
+
+https://ieeexplore.ieee.org/document/10985244
+
 
