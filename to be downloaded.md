@@ -22,10 +22,10 @@
 - [19. Highly Integrated 4 Tbps Silicon Photonic IC for Compute Fabric Connectivity](#19-highly-integrated-4-tbps-silicon-photonic-ic-for-compute-fabric-connectivity)
 - [20. Optical interconnection networks in data centers: recent trends and future challenges](#20-optical-interconnection-networks-in-data-centers-recent-trends-and-future-challenges)
 - [21. Scaling Optical Interconnects for Hyperscale Data Center Networks](#21-scaling-optical-interconnects-for-hyperscale-data-center-networks)
-- [22. Optically Disaggregated Data Centers With Minimal Remote Memory Latency: Technologies, Architectures, and Resource Allocation \[Invited\]](#22-optically-disaggregated-data-centers-with-minimal-remote-memory-latency-technologies-architectures-and-resource-allocation-invited)
+- [22. Optically Disaggregated Data Centers With Minimal Remote Memory Latency: Technologies, Architectures, and Resource Allocation - Invited](#22-optically-disaggregated-data-centers-with-minimal-remote-memory-latency-technologies-architectures-and-resource-allocation---invited)
 - [23. In Compute/Memory Dynamic Packet/Circuit Switch Placement for Optically Disaggregated Data Centers](#23-in-computememory-dynamic-packetcircuit-switch-placement-for-optically-disaggregated-data-centers)
 - [24. Deep distributed computing to reconstruct extremely large lineage trees](#24-deep-distributed-computing-to-reconstruct-extremely-large-lineage-trees)
-- [25. New trends in photonic switching and optical networking architectures for data centers and computing systems \[Invited\]](#25-new-trends-in-photonic-switching-and-optical-networking-architectures-for-data-centers-and-computing-systems-invited)
+- [25. New trends in photonic switching and optical networking architectures for data centers and computing systems - Invited](#25-new-trends-in-photonic-switching-and-optical-networking-architectures-for-data-centers-and-computing-systems---invited)
 - [26. In Compute/Memory Dynamic Packet/Circuit Switch Placement for Optically Disaggregated Data Centers](#26-in-computememory-dynamic-packetcircuit-switch-placement-for-optically-disaggregated-data-centers)
 - [27. Accelerated response speed of quantum-dot light-emitting diodes by hole-trap-induced excitation memory](#27-accelerated-response-speed-of-quantum-dot-light-emitting-diodes-by-hole-trap-induced-excitation-memory)
 - [28. 10Gbps NRZ per lane data links with transferred Micro-LEDs with record BER and energy efficiency](#28-10gbps-nrz-per-lane-data-links-with-transferred-micro-leds-with-record-ber-and-energy-efficiency)
@@ -63,6 +63,8 @@
 - [60. 15.64 Gbps high-speed visible light communication and multiple-user secure communication employing red GaN micro-LED based semi-transparent photodetector](#60-1564-gbps-high-speed-visible-light-communication-and-multiple-user-secure-communication-employing-red-gan-micro-led-based-semi-transparent-photodetector)
 - [61. Micro-LED for short distance optical links with low power consumption](#61-micro-led-for-short-distance-optical-links-with-low-power-consumption)
 - [62. Adaptive Time-Multiplexed Control of a Silicon Photonic Coherent Adder](#62-adaptive-time-multiplexed-control-of-a-silicon-photonic-coherent-adder)
+- [63. Enhancing optoelectronic and modulation performance at low injected current by removing the p-AlGaN electron blocking layer of μ-LEDs](#63-enhancing-optoelectronic-and-modulation-performance-at-low-injected-current-by-removing-the-p-algan-electron-blocking-layer-of-μ-leds)
+- [64. High-Speed Micro-LEDs Based on Nano-Engineered InGaN Active Region Towards Chip-to-Chip Interconnections](#64-high-speed-micro-leds-based-on-nano-engineered-ingan-active-region-towards-chip-to-chip-interconnections)
 
 20241204以后 （未下载）
 
@@ -175,7 +177,7 @@ https://ieeexplore.ieee.org/document/6588648
 
 https://ieeexplore.ieee.org/document/9793366
 
-# 22. Optically Disaggregated Data Centers With Minimal Remote Memory Latency: Technologies, Architectures, and Resource Allocation [Invited]
+# 22. Optically Disaggregated Data Centers With Minimal Remote Memory Latency: Technologies, Architectures, and Resource Allocation - Invited
 
 https://opg.optica.org/jocn/abstract.cfm?uri=jocn-10-2-A270
 
@@ -187,7 +189,7 @@ https://opg.optica.org/jocn/abstract.cfm?uri=jocn-10-7-B164
 
 https://www.nature.com/articles/s41587-021-01111-2
 
-# 25. New trends in photonic switching and optical networking architectures for data centers and computing systems [Invited]
+# 25. New trends in photonic switching and optical networking architectures for data centers and computing systems - Invited
 
 https://opg.optica.org/jocn/abstract.cfm?uri=jocn-15-8-C288
 
@@ -343,4 +345,10 @@ https://opg.optica.org/ol/abstract.cfm?URI=ol-50-10-3453
 
 https://ieeexplore.ieee.org/document/10985244
 
+# 63. Enhancing optoelectronic and modulation performance at low injected current by removing the p-AlGaN electron blocking layer of μ-LEDs
 
+https://opg.optica.org/ol/viewmedia.cfm?uri=ol-50-11-3521
+
+# 64. High-Speed Micro-LEDs Based on Nano-Engineered InGaN Active Region Towards Chip-to-Chip Interconnections
+
+https://ieeexplore.ieee.org/document/10637686
