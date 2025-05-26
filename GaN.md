@@ -107,6 +107,33 @@
   - [31.2 华为长期使用氮化镓作为 5G 功率放大器，从而领先于爱立信和诺基亚。](#312-华为长期使用氮化镓作为-5g-功率放大器从而领先于爱立信和诺基亚)
   - [31.3 EPC创始人：GaN临界点已到来](#313-epc创始人gan临界点已到来)
   - [31.4 到2030年取代手机中的GaAs](#314-到2030年取代手机中的gaas)
+  - [31.5  Yole GaN（氮化镓）报告核心内容](#315--yole-gan氮化镓报告核心内容)
+  - [总结](#总结-3)
+  - [31.6 GaN (Gallium Nitride) Research Report Summary](#316-gan-gallium-nitride-research-report-summary)
+  - [31.7 Gallium Nitride (GaN) Multi-Market Analysis: Power, Optoelectronics, and RF](#317-gallium-nitride-gan-multi-market-analysis-power-optoelectronics-and-rf)
+    - [Power Electronics Market](#power-electronics-market)
+    - [Optoelectronics Market](#optoelectronics-market)
+    - [RF (Radio Frequency) Market](#rf-radio-frequency-market)
+    - [Cross-Sector Advantages](#cross-sector-advantages)
+    - [Industry Outlook](#industry-outlook)
+  - [31.8 GaN市场分领域规模及代工需求分析](#318-gan市场分领域规模及代工需求分析)
+    - [功率电子市场](#功率电子市场)
+    - [射频（RF）市场](#射频rf市场)
+    - [光电子市场](#光电子市场)
+    - [GaN芯片代工需求](#gan芯片代工需求)
+  - [总结](#总结-4)
+  - [31.9 GaN芯片在功率、射频和光电子三类应用中的市场份额](#319-gan芯片在功率射频和光电子三类应用中的市场份额)
+    - [1. 功率电子（Power Electronics）](#1-功率电子power-electronics)
+    - [2. 射频（RF）](#2-射频rf)
+    - [3. 光电子（Optoelectronics）](#3-光电子optoelectronics)
+    - [主要应用领域GaN芯片市场份额对比（2024年估算）](#主要应用领域gan芯片市场份额对比2024年估算)
+    - [代工（Foundry）服务需求](#代工foundry服务需求)
+  - [结论](#结论)
+  - [31.10 Status of the Compound Semiconductor Industry Report — Yole Intelligence, 2025](#3110-status-of-the-compound-semiconductor-industry-report--yole-intelligence-2025)
+    - [Market Size and Growth](#market-size-and-growth)
+    - [Key Application Areas](#key-application-areas)
+    - [Industry Trends and Dynamics](#industry-trends-and-dynamics)
+    - [Technology and Competitive Landscape](#technology-and-competitive-landscape)
 - [32. 主要会议](#32-主要会议)
   - [32.1 IEEE Workshop on Wide Bandgap Power Devices \& Applications](#321-ieee-workshop-on-wide-bandgap-power-devices--applications)
 - [33.氮化硼 可以取代 氮化镓 吗？](#33氮化硼-可以取代-氮化镓-吗)
@@ -1947,6 +1974,373 @@ Lesaicherre 强调：“我们在低压和中压 GaN 技术方面取得了一些
 专注于射频应用，该领域的竞争对手远少于氮化镓功率电子器件，有望带来巨大的销售额。Lesaicherre 预计，2028 年至 2030 年期间，蜂窝基础设施放大器的潜在市场规模约为每年数十亿美元，而手机放大器的潜在市场规模则为每年 40 至 50 亿美元。鉴于这些数字，Finwave 在未来十年及以后都拥有巨大的增长潜力。
 
 <https://compoundsemiconductor.net/article/121104/Displacing_GaAs_in_handsets_by_2030>
+
+## 31.5  Yole GaN（氮化镓）报告核心内容
+
+**市场规模与增长预测**
+
+- Yole Group最新报告显示，GaN功率器件市场正处于高速增长阶段，预计2023至2029年复合年增长率（CAGR）将达到41%，市场规模有望在2029年突破22亿美元，实现2019年至2023年十倍增长[1][2][9]。
+- 具体到2027年，Yole预测GaN功率器件市场价值将达到20亿美元，2022至2028年CAGR高达49%[2][5][9]。
+- 2025年市场规模预计将从2020年的4580万美元增长到4.072亿美元，五年内增长近9倍[6]。
+
+**主要应用领域**
+
+- **消费电子**：GaN已成为快充市场的首选技术，尤其是在300W及以上的高功率快充领域。消费电源市场2027年价值预计将超过9.156亿美元，2021至2027年CAGR达52%[1][5][6]。
+- **数据通信/电信**：GaN在数据中心和5G基站的渗透率持续提升，2027年GaN在数据通信/电信领域市场CAGR预计为69%，市场规模将超6.178亿美元[5][6][7]。
+- **汽车与移动出行**：GaN已用于汽车激光雷达（LiDAR）等ADAS系统，预计2-3年内将在11kW以下的车载充电器（OBC）实现大规模应用，同时渗透高端电动自行车和电动滑板车市场[1][6]。
+- **工业与可再生能源**：GaN技术正逐步应用于住宅太阳能、储能系统（ESS）等领域，提升能效并降低物料成本[6]。
+
+**技术与产业链趋势**
+
+- GaN凭借高功率密度、高效率和小型化优势，推动电源系统向更高集成度和更紧凑设计发展[3][6]。
+- 市场正经历并购整合，2023年GaN领域并购总额达12亿美元，为未来市场扩张铺路[1][9]。
+- GaN-on-Si（硅基氮化镓）和GaN-on-SiC（碳化硅基氮化镓）两大技术路线并行发展，2028年预计GaN将在电信PA器件中占比超87%，其中77%为GaN-on-SiC[7]。
+- 生态系统建设成为关键，包括先进封装、多元化供应链和创新制造工艺[6]。
+
+**挑战与展望**
+
+- GaN在消费电子领域已达到成本拐点，但在工业和汽车领域的大规模应用仍需成本进一步下降，尤其是与传统硅材料的成本平价[6]。
+- 未来几年，随着AI数据中心、可再生能源和电动汽车等新兴应用需求爆发，GaN将在高密度、高效能电源解决方案中扮演核心角色[6]。
+
+## 总结
+
+Yole报告认为，GaN功率半导体正加速渗透消费电子、数据通信、汽车、工业和可再生能源等多个领域，市场规模将在未来五年持续高速增长。技术创新与产业协作将决定GaN能否全面释放其潜力，成为下一代高效能电子系统的基石[1][2][6][9]。
+
+Citations:
+[1] https://www.yolegroup.com/product/report/power-gan-2024/
+[2] http://www.360doc.com/content/24/0914/15/64549636_1134086809.shtml
+[3] https://www.sohu.com/a/869877575_121411662
+[4] https://www.yolegroup.com/product/report/power-gan-2025/
+[5] https://www.hangjianet.com/topic/1654739351422
+[6] https://pdf.dfcfw.com/pdf/H3_AP202503041644039391_1.pdf?1741108855000.pdf
+[7] https://www.hangyan.co/charts/3561915873990018456
+[8] http://www.iccsz.com/4g/news.Asp?ID=ac50a45476b3433492f38d98c5933249
+[9] http://www.casmita.com/news/202303/07/11263.html
+
+---
+Answer from Perplexity: pplx.ai/share
+
+## 31.6 GaN (Gallium Nitride) Research Report Summary
+
+**Market Growth and Forecasts**
+
+- The GaN power device market is experiencing rapid expansion, with Yole Group projecting it to surpass $2 billion by 2029, driven by a strong compound annual growth rate (CAGR) of approximately 41% from 2023 to 2029[6][7].
+- The overall compound semiconductor device market, which includes GaN and SiC, is expected to grow at nearly 13% CAGR, reaching about $25 billion by 2030, outpacing the broader semiconductor market[6].
+- GaN’s share of the global power device market is forecast to increase significantly, with wide bandgap materials (including GaN and SiC) expected to account for over 32% of the market by 2029, up from 16% in 2024[7].
+
+**Key Application Areas**
+
+- **Consumer Electronics**: GaN is widely adopted in high-efficiency, compact chargers (up to 300W), home appliance power supplies, and motor drives, offering better efficiency and miniaturization[4].
+- **Automotive**: GaN is gaining traction in electric vehicles (EVs), particularly for on-board chargers and power conversion systems, supported by the global shift to electrification and carbon reduction[7].
+- **Data Centers and Telecom**: GaN’s high-frequency and high-efficiency characteristics make it attractive for data center power supplies and 5G telecom infrastructure[4][5].
+- **RF (Radio Frequency) Applications**: GaN RF devices are growing at a 12% CAGR, expected to reach over $2 billion by 2025, with primary drivers being telecom (5G, satellite communications) and defense (radar, AESA systems)[8].
+
+**Industry Trends and Competitive Landscape**
+
+- Major players in the power GaN market as of 2025 include Innoscience, Power Integrations, and Navitas, with Infineon and Renesas expanding through acquisitions of GaN Systems and Transphorm, respectively[5][6].
+- There is increasing synergy between GaN power and RF applications, with companies leveraging existing production infrastructure for both segments[5][6].
+- The supply chain is evolving, with vertical integration and strategic collaborations to reduce dependencies and address geopolitical risks[5][6].
+
+**Technology and Market Drivers**
+
+- The rapid adoption of SiC in automotive has paved the way for GaN’s rise, especially as OEMs seek higher efficiency and power density in new applications[5][6].
+- Investments in wide bandgap technologies are substantial, with more than $30 billion announced globally for SiC, and similar momentum building for GaN[7].
+- GaN’s advantages include higher efficiency, smaller size, and the ability to operate at higher frequencies and voltages compared to traditional silicon devices[4][7].
+
+**Challenges and Outlook**
+
+- While GaN is well established in consumer and telecom sectors, broader adoption in automotive and industrial markets will depend on further cost reduction and supply chain maturity[4][7].
+- The market is expected to continue its strong growth trajectory, with new applications in AI-driven data centers, renewable energy, and high-performance automotive systems providing additional momentum[5][7].
+
+---
+
+In summary, GaN technology is at an inflection point, moving from niche to mainstream across multiple high-growth sectors. Its market is set for robust expansion through the end of the decade, underpinned by technological advantages, expanding applications, and strategic industry shifts[6][7][4].
+
+Citations:
+[1] https://www.yolegroup.com/product/report/power-gan-2025/
+[2] https://www.yolegroup.com/product/quarterly-monitor/power-sicgan-compound-semiconductor-market-monitor-q1-2025
+[3] https://www.yolegroup.com/product/report/status-of-the-compound-semiconductor-device-industry-2025/
+[4] https://www.yolegroup.com/product/quarterly-monitor/power-sicgan-compound-semiconductor-market-monitor/
+[5] https://www.yolegroup.com/press-release/compound-semiconductors-strategic-moves-collaborations-in-a-nutshell/
+[6] https://www.semiconductor-today.com/news_items/2025/mar/yole-050325.shtml
+[7] https://compoundsemiconductor.net/article/121330/The_growth_of_wide_bandgap_power_devices
+[8] https://www.semiconductor-today.com/features/PDF/semiconductor-today-may-june-2020-GaN-RF-market.pdf
+[9] https://www.yolegroup.com/product/report/overview-of-the-semiconductor-devices-industry-h1-2025/
+[10] https://www.everythingrf.com/news/details/19689-yole-group-predicts-semiconductor-devices-industry-to-reach-1-trillion-by-2030
+
+---
+Answer from Perplexity: pplx.ai/share
+
+## 31.7 Gallium Nitride (GaN) Multi-Market Analysis: Power, Optoelectronics, and RF  
+
+### Power Electronics Market  
+- **Market Growth**: GaN power devices are projected to grow from **USD 22.2B (2024)** to **USD 40.9B by 2034** (6.4% CAGR)[2], with broader GaN markets reaching **USD 7.95B by 2033** (15.7% CAGR)[13].  
+- **Key Drivers**:  
+  - **Consumer Electronics**: Dominates with GaN-based fast chargers (300W+) and compact power adapters, driven by demand for higher efficiency and miniaturization[2][6].  
+  - **Automotive**: Adoption in 11kW onboard chargers (OBCs) and EV powertrains, leveraging GaN’s high thermal stability and power density[10][13].  
+  - **Renewables**: Solar inverters and energy storage systems benefit from GaN’s reduced conduction losses and higher switching speeds[13].  
+
+---
+
+### Optoelectronics Market  
+- **Market Leadership**: Opto-semiconductors held **36.3% revenue share (2024)**, led by LEDs, LiDAR, and UV lasers[10].  
+- **Applications**:  
+  - **Solid-State Lighting**: GaN-based LEDs enable energy-efficient white lighting, with phosphor-converted designs reducing reliance on traditional bulbs[1][9].  
+  - **LiDAR**: Critical for autonomous vehicles, leveraging GaN’s high electron mobility for precise pulsed lasers[10].  
+  - **Displays**: Blue/green LEDs for micro-LED displays and large panels, addressing brightness and color accuracy challenges[1].  
+- **Innovations**: Projects like DENIS improved GaN substrate quality, enhancing LED luminous efficacy and device longevity[9].  
+
+---
+
+### RF (Radio Frequency) Market  
+- **Explosive Growth**: RF GaN market to expand from **USD 1.68B (2024)** to **USD 8.22B by 2033** (19.3% CAGR)[4], with defense and telecom as primary drivers.  
+- **Key Segments**:  
+  - **5G Infrastructure**: GaN-on-SiC dominates macro/microcell base stations, enabling massive MIMO and mmWave systems with >45% market share by 2028[7].  
+  - **Defense**: Radar, electronic warfare, and satellite communications rely on GaN’s high power density and radiation hardness[4][7].  
+  - **Satellite Comms**: GaN enhances signal strength and efficiency in transceivers, critical for LEO/geostationary networks[3][8].  
+- **Technology Shift**: GaN-on-Si gains traction in low-power telecom (e.g., small cells), reducing costs while maintaining performance[7].  
+
+---
+
+### Cross-Sector Advantages  
+| **Property**       | **Power**              | **Optoelectronics**    | **RF**                 |  
+|---------------------|------------------------|------------------------|------------------------|  
+| **Bandgap**         | 3.4 eV (high breakdown)| Enables UV/blue emission| High-frequency operation|  
+| **Thermal Conductivity** | Reduces cooling needs | Improves LED lifespan  | Enhances radar reliability |  
+| **Efficiency**      | >99% in converters     | 50% energy savings vs. bulbs| 30% higher PA efficiency vs. LDMOS |  
+
+---
+
+### Industry Outlook  
+- **Power**: Cost parity with silicon in consumer electronics achieved; industrial/auto adoption hinges on further cost reductions[13].  
+- **Opto**: Micro-LED and AR/VR displays to drive next growth phase, with LiDAR demand accelerating[10].  
+- **RF**: 6G R&D and satellite mega-constellations (e.g., Starlink) will sustain 20%+ CAGRs through 2030[4][8].  
+- **Key Players**: Wolfspeed, Qorvo, and Infineon lead in GaN power/RF[6][7], while Samsung and Apple push opto-innovation[9][10].  
+
+GaN’s versatility across power, opto, and RF sectors positions it as a cornerstone of next-gen electronics, driven by material advantages and synergistic industry investments.
+
+Citations:
+[1] https://www.theiet.org/publishing/inspec/researching-hot-topics/gallium-nitride-applications
+[2] https://www.insightaceanalytic.com/report/gan-semiconductor-device-market/2119
+[3] https://www.soitec.com/home/products/product-platforms/rf-gan
+[4] https://straitsresearch.com/report/rf-gan-market
+[5] https://www.globenewswire.com/news-release/2025/05/02/3073149/0/en/Gallium-Nitride-Device-Market-Forecast-Report-2025-2030-GaN-Device-Market-to-Surge-with-4-02-CAGR-from-2025-to-2030.html
+[6] https://www.openpr.com/news/3793437/gan-semiconductor-device-market-key-players-analysis
+[7] https://www.yolegroup.com/press-release/rf-gan-telecom-infrastructure-takes-the-lead/
+[8] https://www.factmr.com/report/383/gan-rf-devices-market
+[9] https://cordis.europa.eu/article/id/83642-optoelectronics-devices-on-gallium-nitride
+[10] https://www.grandviewresearch.com/industry-analysis/gan-gallium-nitride-semiconductor-devices-market
+[11] https://www.researchnester.com/reports/gallium-nitride-market/7542
+[12] https://www.photonics.com/EDU/gallium_nitride/d4332
+[13] https://straitsresearch.com/report/gallium-nitride-market
+[14] https://www.360iresearch.com/library/intelligence/gallium-nitride-semiconductor-devices
+[15] https://onlinelibrary.wiley.com/doi/10.1002/9781394188970.ch9
+[16] https://application.wiley-vch.de/books/sample/3527347100_c01.pdf
+[17] https://www.sciencedirect.com/science/article/abs/pii/S2214785320404456
+[18] https://www.marketreportanalytics.com/reports/gallium-nitride-opto-semiconductor-device-56219
+[19] https://www.globalgrowthinsights.com/market-reports/gan-semiconductor-device-market-111827
+
+---
+Answer from Perplexity: pplx.ai/share
+
+## 31.8 GaN市场分领域规模及代工需求分析  
+
+### 功率电子市场  
+- **整体市场规模**：2024年GaN功率器件市场规模预计为**4.51亿美元**（IMARC数据），2033年将达**47.06亿美元**（CAGR 28.28%）[13]。  
+- **细分应用**：  
+  - **消费电子**：占据主导地位，2024年贡献约30%市场份额，主要受快充（300W+）和家电电源驱动[11]。  
+  - **汽车**：2025-2029年CAGR预计达27%，车载充电器（OBC）和逆变器为核心增长点[11]。  
+  - **可再生能源**：太阳能逆变器和储能系统推动市场，2029年工业领域市场规模或超6亿美元（Yole预测）[10]。  
+
+---
+
+### 射频（RF）市场  
+- **整体市场规模**：  
+  - **保守预测**：2024年1.68亿美元 → 2033年8.22亿美元（CAGR 19.3%）[3]。  
+  - **乐观预测**：2025年1.22亿美元 → 2034年13.91亿美元（CAGR 31.06%）[4]。  
+- **驱动因素**：  
+  - **5G基站**：GaN-on-SiC器件在宏基站中占比超45%（2028年）[3]。  
+  - **国防与卫星通信**：雷达和低轨卫星网络需求推动，2025年国防领域贡献超40%营收[4]。  
+
+---
+
+### 光电子市场  
+- **数据限制**：当前搜索结果未提供光电子细分市场的独立规模，但早期分析显示：  
+  - 2024年光电子占GaN半导体总营收的36.3%，主导应用包括LED和LiDAR[早期回答]。  
+  - 微显示（Micro-LED）和UV激光器为新兴增长点，但具体市场规模需结合行业报告进一步验证。  
+
+---
+
+### GaN芯片代工需求  
+| **指标**               | **数据**                              | **来源** |  
+|-------------------------|---------------------------------------|----------|  
+| **GaN代工市场规模**    | 2024年12亿美元 → 2033年35亿美元（CAGR 12.9%） | [6]      |  
+| **关键技术趋势**        | 6英寸及以上GaN-on-SiC晶圆占比提升，成本下降30% | [6]      |  
+| **整体代工市场增长**    | 2025年1440亿美元 → 2032年2283亿美元（CAGR 6.8%），AI芯片需求贡献20%增速 | [7][12] |  
+
+**代工需求驱动因素**：  
+- **技术升级**：GaN-on-Si与硅基产线兼容性推动代工厂扩产（如台积电、英特尔）[7]。  
+- **地缘战略**：亚太地区（中国、日本）占据75%代工产能，美欧加大本土供应链投资[6][9]。  
+
+---
+
+## 总结  
+GaN三大应用领域呈现差异化增长：  
+1. **功率电子**：汽车与可再生能源驱动高速扩张，2033年规模或突破47亿美元[13]。  
+2. **射频**：5G与国防需求支撑双位数增长，2034年规模可能达14亿美元[4]。  
+3. **光电子**：当前数据有限，但Micro-LED和LiDAR潜力显著。  
+
+代工服务需求与GaN市场增长同步，2024-2033年GaN专属代工市场CAGR达12.9%，整体半导体代工市场受AI与先进封装技术推动持续扩容[6][12]。
+
+Citations:
+[1] https://www.globenewswire.com/news-release/2025/05/02/3073149/0/en/Gallium-Nitride-Device-Market-Forecast-Report-2025-2030-GaN-Device-Market-to-Surge-with-4-02-CAGR-from-2025-to-2030.html
+[2] https://www.kbvresearch.com/gallium-nitride-semiconductor-devices-market/
+[3] https://straitsresearch.com/report/rf-gan-market
+[4] https://www.precedenceresearch.com/rf-gan-market
+[5] https://www.gminsights.com/industry-analysis/gan-semiconductor-device-market
+[6] https://www.linkedin.com/pulse/gan-wafer-foundry-market-size-share-trends-growth-technology-dydvf
+[7] https://www.coherentmarketinsights.com/market-insight/foundry-service-market-5953
+[8] https://www.metastatinsight.com/report/gan-power-device-market
+[9] https://www.insightaceanalytic.com/report/gan-semiconductor-device-market/2119
+[10] https://www.yolegroup.com/strategy-insights/from-power-to-rf-gans-journey-to-a-us4-35b-market-by-2029/
+[11] https://www.mordorintelligence.com/industry-reports/gan-semiconductor-devices-market
+[12] https://www.counterpointresearch.com/insight/post-insight-research-notes-blogs-foundry-market-outlook-healthy-2025-with-20-revenue-growth
+[13] https://www.imarcgroup.com/gan-power-device-market
+[14] https://www.thebusinessresearchcompany.com/report/gan-and-sic-power-semiconductor-global-market-report
+[15] https://www.businessresearchinsights.com/market-reports/sic-gan-power-devices-market-121445
+[16] https://www.globalgrowthinsights.com/market-reports/gan-semiconductor-device-market-111827
+[17] https://www.lpinformationdata.com/reports/1432637/gan-rf-chip
+[18] https://www.qyresearch.com/reports/4637526/gan-foundry-service
+[19] https://www.powerelectronicsnews.com/the-great-debate-at-apec-2025-gan-vs-sic/
+[20] https://www.electronicspecifier.com/news/analysis/gan-and-sic-power-semiconductor-market-to-reach-3bn-by-2025
+[21] https://www.consegicbusinessintelligence.com/global-rf-gan-market
+[22] https://www.grandviewresearch.com/industry-analysis/gan-gallium-nitride-semiconductor-devices-market
+[23] https://www.researchnester.com/reports/gallium-nitride-market/7542
+[24] https://www.infineon.com/cms/en/about-infineon/press/market-news/2025/INFPSS202501-049.html
+[25] https://www.precedenceresearch.com/press-release/gan-semiconductor-devices-market
+[26] https://www.digitimes.com/reports/item.asp?id=20250402RS400
+[27] https://www.marketsandmarkets.com/Market-Reports/gallium-nitride-gan-semiconductor-materials-devices-market-698.html
+
+---
+Answer from Perplexity: pplx.ai/share
+
+## 31.9 GaN芯片在功率、射频和光电子三类应用中的市场份额
+
+### 1. 功率电子（Power Electronics）
+- **市场规模**：2024年全球GaN功率器件市场约为4.6-4.7亿美元，预计2026年达11亿美元，2027年达20亿美元[3][8]。
+- **GaN芯片市场份额**：功率电子是GaN芯片当前最大应用领域之一。2024年，GaN功率器件占GaN半导体总市场规模约20%（以GaN半导体2024年总规模约22.6亿美元计）[2]。
+- **渗透率趋势**：随着快充、数据中心、汽车OBC等应用爆发，GaN在功率市场的份额持续提升，预计2027年功率GaN将占GaN整体市场25%以上[8]。
+
+### 2. 射频（RF）
+- **市场规模**：2024年GaN射频市场约为1.7亿美元，预计2033年达8.2亿美元[5]。2021年中国5G基站用GaN射频市场为36.8亿元人民币（约合5.3亿美元）[3]。
+- **GaN芯片市场份额**：2024年GaN射频器件占GaN半导体市场约7.5%[2][5]。但在5G基站、卫星通信和国防等高端射频领域，GaN芯片渗透率远高于传统硅器件。
+- **增长趋势**：5G、毫米波基站和国防应用将推动射频GaN市场份额持续提升，预计未来几年射频GaN占GaN整体市场份额将上升至10-15%[5][3]。
+
+### 3. 光电子（Optoelectronics）
+- **市场规模**：2024年GaN光电子（主要为LED、Mini/Micro-LED、激光器等）约占GaN半导体总市场的36.3%[3]。
+- **GaN芯片市场份额**：光电子是GaN芯片历史最悠久、应用最广的领域，长期占据GaN半导体最大市场份额（约35-40%），但随着功率和射频应用爆发，份额相对有所下降[3][2][5]。
+- **细分应用**：LED照明、显示、LiDAR、激光雷达等均为GaN光电子芯片主战场。
+
+---
+
+### 主要应用领域GaN芯片市场份额对比（2024年估算）
+
+| 应用领域       | 市场规模（亿美元） | GaN芯片在该领域GaN市场份额（%） |
+|----------------|-------------------|-------------------------------|
+| 功率电子       | 4.6-4.7           | 约20-25%                      |
+| 射频           | 1.7               | 约7-10%                       |
+| 光电子         | 8.2                | 约35-40%                      |
+
+- 注：GaN半导体2024年总市场规模约22.6亿美元[2]。
+
+---
+
+### 代工（Foundry）服务需求
+
+- **GaN芯片三大应用均高度依赖外部代工**，尤其是射频和功率GaN芯片。全球主流GaN代工厂包括TSMC、稳懋、Cree、富士通、世界先进等[5]。
+- **代工市场规模**：2024年GaN专用代工市场约为12亿美元，预计2033年达35亿美元，CAGR约12.9%。
+- **需求驱动力**：
+  - 功率和射频GaN芯片对高端工艺、良率和可靠性的要求高，推动头部代工厂产能扩张。
+  - 光电子领域（LED、Micro-LED等）对大规模、低成本制造需求强烈，推动6英寸及以上GaN晶圆代工占比提升[5]。
+
+---
+
+## 结论
+
+- **光电子**（LED等）仍为GaN芯片最大应用市场，约占35-40%；**功率电子**快速增长，份额已达20-25%；**射频**应用份额7-10%，但增长潜力大。
+- 三大应用领域均高度依赖GaN芯片代工服务，未来GaN代工市场将持续扩容，尤其是在高端功率和射频芯片领域。
+
+Citations:
+[1] https://www.mordorintelligence.com/zh-CN/industry-reports/gan-semiconductor-devices-market
+[2] https://www.gminsights.com/zh/industry-analysis/gan-semiconductor-device-market
+[3] https://pdf.dfcfw.com/pdf/H3_AP202304171585489596_1.pdf
+[4] https://m.36kr.com/p/2600955799157376
+[5] https://www.eet-china.com/mp/a267135.html
+[6] http://www.21jingji.com/article/20220420/herald/0f94af404eb222a4fbd06ab0b57086c1.html
+[7] http://www.hziam.com/Public/uploads/Knowledge/2022-12-08/63914711470cc.pdf
+[8] https://epc-co.com/epc/cn/%E6%B0%AE%E5%8C%96%E9%95%93/%E6%B0%AE%E5%8C%96%E9%95%93-%E6%B0%AE%E5%8C%96%E9%95%93gan%E4%BD%95%E5%8E%BB%E4%BD%95%E4%BB%8E
+
+---
+Answer from Perplexity: pplx.ai/share
+
+## 31.10 Status of the Compound Semiconductor Industry Report — Yole Intelligence, 2025
+
+### Market Size and Growth
+
+- The compound semiconductor device market is projected to reach **$25 billion by 2030**, growing at a robust **CAGR of nearly 13%** from 2024, significantly outpacing the overall semiconductor market[1][2][3][5][6].
+- In 2024, the compound semiconductor market is a small but fast-growing segment within the broader $670 billion semiconductor device industry[1].
+- Growth is primarily driven by **automotive and mobility (especially EVs and ADAS)**, with strong momentum also from **telecom, infrastructure, and consumer electronics**[1][2][3][5][6].
+
+### Key Application Areas
+
+- **Power Electronics:**  
+  - SiC (Silicon Carbide) is widely adopted in electric vehicles (EVs) for power devices.
+  - GaN (Gallium Nitride) is gaining traction in power electronics, especially for DC/DC converters, onboard chargers (OBCs), and LiDAR in automotive applications[1][2][3][5].
+- **RF (Radio Frequency):**  
+  - RF GaAs remains dominant in consumer applications but faces geopolitical and supply chain challenges.
+  - RF GaN, initially developed for defense, is now critical in 5G and satellite communications[1][2][3][5].
+- **Photonics:**  
+  - Growth in photonics is fueled by AI and datacom, with InP and GaAs devices seeing increased collaboration and demand.
+  - Automotive LiDAR is accelerating adoption of compound semiconductor-based lasers[1][2].
+- **Displays & Lighting:**  
+  - The microLED display industry is growing, though still fragmented, with major display makers securing LED supply and startups driving innovation[1][5].
+
+### Industry Trends and Dynamics
+
+- **Strategic Moves:**  
+  - Major semiconductor players are increasing investments in compound technologies, with companies like Infineon, STMicroelectronics, onsemi, and Wolfspeed adopting vertically integrated models to secure supply and reduce geopolitical risks[2][5].
+  - The SiC boom has led to consolidation and specialization, while GaN is seen as the next major breakthrough, especially in power and RF applications[3][5].
+- **Synergies and Collaborations:**  
+  - Companies are leveraging synergies between GaN power and RF applications, optimizing production infrastructure and epitaxy equipment[3][5].
+  - The supply chain is evolving, with strategic collaborations and regional investments to address supply security and technological advancement[1][2][5].
+- **Geographical Trends:**  
+  - Asia-Pacific continues to lead in manufacturing and R&D, while Europe and the US are increasing local investments to mitigate supply chain risks[4].
+
+### Technology and Competitive Landscape
+
+- The report provides detailed forecasts for **device and bare die market values, shipments, and technology adoption** across power, RF, photonics, and display applications[5][6].
+- It also examines the competition between compound semiconductors and mature silicon technologies, highlighting manufacturing challenges and emerging innovations[5][6].
+- Key players include Wolfspeed, Infineon, STMicroelectronics, onsemi, and others, with new entrants and startups driving innovation in niche areas[2][5][6].
+
+---
+
+**Summary:**  
+The 2025 Yole Intelligence report highlights a dynamic and rapidly growing compound semiconductor industry, set to exceed $25B by 2030. Growth is fueled by automotive electrification, AI, 5G, and advanced photonics, with SiC and GaN leading technological advances in power and RF. Strategic investments, supply chain evolution, and cross-sector collaborations are shaping the industry's future[1][2][3][5][6].
+
+Citations:
+[1] https://www.yolegroup.com/product/report/status-of-the-compound-semiconductor-device-industry-2025/
+[2] https://www.semiconductor-today.com/features/PDF/semiconductor-today-mar-2025-Compound-semiconductor.pdf
+[3] https://www.semiconductor-today.com/news_items/2025/mar/yole-050325.shtml
+[4] https://www.globenewswire.com/news-release/2025/05/20/3085021/28124/en/Compound-Semiconductor-Market-Forecasts-Report-2025-2030-Telecom-Industry-Spurs-Demand-for-Compound-Semiconductors-Amid-LTE-and-5G-Growth.html
+[5] https://www.yolegroup.com/press-release/compound-semiconductors-strategic-moves-collaborations-in-a-nutshell/
+[6] https://www.linkedin.com/posts/jean-christophe-eloy-77ba7b47_status-of-the-cs-device-industry-2025-yole-activity-7302572519599804416-DMrL
+[7] https://www.yolegroup.com/yole-group-actuality/collection-of-status-of-reports-from-yole-intelligence/
+[8] https://www.yolegroup.com/product/report/status-of-the-processor-industry-2025
+[9] https://www.linkedin.com/posts/yole-intelligence_status-of-the-cs-device-industry-2025-yole-activity-7300862297357365249-VqJ9
+[10] https://www.yolegroup.com/product/quarterly-monitor/power-sicgan-compound-semiconductor-market-monitor/
+
+---
+Answer from Perplexity: pplx.ai/share
 
 # 32. 主要会议
 
