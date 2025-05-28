@@ -65,6 +65,7 @@
 - [62. Adaptive Time-Multiplexed Control of a Silicon Photonic Coherent Adder](#62-adaptive-time-multiplexed-control-of-a-silicon-photonic-coherent-adder)
 - [63. Enhancing optoelectronic and modulation performance at low injected current by removing the p-AlGaN electron blocking layer of μ-LEDs](#63-enhancing-optoelectronic-and-modulation-performance-at-low-injected-current-by-removing-the-p-algan-electron-blocking-layer-of-μ-leds)
 - [64. High-Speed Micro-LEDs Based on Nano-Engineered InGaN Active Region Towards Chip-to-Chip Interconnections](#64-high-speed-micro-leds-based-on-nano-engineered-ingan-active-region-towards-chip-to-chip-interconnections)
+- [65. 10-Gb/s NRZ Per Lane Data Links With Transferred Micro-LEDs With Record BER and Energy Efficiency](#65-10-gbs-nrz-per-lane-data-links-with-transferred-micro-leds-with-record-ber-and-energy-efficiency)
 
 20241204以后 （未下载）
 
@@ -352,3 +353,7 @@ https://opg.optica.org/ol/viewmedia.cfm?uri=ol-50-11-3521
 # 64. High-Speed Micro-LEDs Based on Nano-Engineered InGaN Active Region Towards Chip-to-Chip Interconnections
 
 https://ieeexplore.ieee.org/document/10637686
+
+# 65. 10-Gb/s NRZ Per Lane Data Links With Transferred Micro-LEDs With Record BER and Energy Efficiency
+
+https://ieeexplore.ieee.org/document/10930898
