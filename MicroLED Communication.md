@@ -106,6 +106,8 @@
   - [5.50 OFC50-回顾过去，展望未来：结合2025年可制造性挑战重新审视2020年CPO愿景 SemiVision Research 的原创文章（Nvidia、Braodcom、Marvell、Intel、AyarLab、Avicena）](#550-ofc50-回顾过去展望未来结合2025年可制造性挑战重新审视2020年cpo愿景-semivision-research-的原创文章nvidiabraodcommarvellintelayarlabavicena)
   - [5.51 Avicena 与台积电合作生产其 microLED 链接](#551-avicena-与台积电合作生产其-microled-链接)
   - [5.52 Avicena 在 B 轮融资中筹集了 6500 万美元](#552-avicena-在-b-轮融资中筹集了-6500-万美元)
+  - [5.53 台积电押注非传统光学技术 基于 MicroLED 的互连可为节能的 AI 数据中心提供动力](#553-台积电押注非传统光学技术-基于-microled-的互连可为节能的-ai-数据中心提供动力)
+  - [5.54  Avicena Tech 的 Eugene Ho 获得 CadenceLIVE Cloud 专题最佳演示奖](#554--avicena-tech-的-eugene-ho-获得-cadencelive-cloud-专题最佳演示奖)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -3174,6 +3176,45 @@ SK海力士风险投资高级总监Rene Do表示：“由于高速电气互连�
 Prosperity7 Ventures 董事总经理 Abhishek Shukla 补充道：“Avicena 拥有为人工智能超级计算机和数据中心提供卓越下一代互连的先决条件，这将有助于以可持续的方式开启人工智能大规模创新的新时代。我们很高兴能够支持 Avicena 团队开启新的征程。”
 
 <https://opticalconnectionsnews.com/2025/05/avicena-raises-us65-million-in-series-b-funding/>
+
+## 5.53 台积电押注非传统光学技术 基于 MicroLED 的互连可为节能的 AI 数据中心提供动力
+
+在全光AI数据中心的竞争中，一家巨头如今押注了另一匹马。半导体制造巨头台湾积体电路制造公司（TSMC）宣布，将与位于桑尼维尔的初创公司Avicena合作，生产基于MicroLED的互连产品。该技术是一种务实的尝试，旨在用光学连接取代电连接，以低成本、节能的方式满足日益增多的GPU之间通信的迫切需求。
+
+由于大型语言模型及其同类模型的计算需求，人工智能集群在数据量、带宽、延迟和速度方面面临着前所未有的要求。迟早，单个人工智能数据中心机架内连接处理器和内存的铜线必须被光纤取代。“目前，人们迫切希望将光纤连接尽可能地靠近电路板，”台积电副总裁蔡崇信表示。
+
+Avicena 提供了一种独特的方法，使用数百个通过成像型光纤连接的蓝色MicroLED来传输数据。该公司的模块化LightBundle 平台避免了激光器及其相关的复杂性问题，这些问题会威胁其他光学芯片的可靠性、成本和功耗。Tsai 表示：“这非常另类。” 但它非常适合这些短距离应用，而这正是它引人注目之处。
+
+无激光
+如今，光纤连接能够以极高的数据速率在数据中心之间传输数十到数百米的海量数据。传统上，可插拔模块将光纤连接到机架，并在机架上进行电信号和光信号的转换。各公司正在努力使用共封装光学器件(CPO) 来取代这些能效低下的可插拔收发器，CPO 在硅芯片附近执行电光转换。目前已有用于网络交换机的商用版本，而原型正在向 GPU迈进。最突出的光学小芯片设计使用激光器和调制器将电子比特编码到多种波长的光中。
+
+
+然而，基于激光的光互连面临的主要挑战在于激光器本身。激光器和光纤连接在可靠性、制造和成本方面造成了巨大的问题。此外，一根光纤承载着数十条以多种波长形式存在的 GPU 到交换机链路，计算开销巨大：将每条数据通道传输到单独的物理通道要比事后以电子方式解析一个大通道简单得多。
+
+这正是Avicena 的用武之地。LightBundle 互连技术并非将多波长激光通过光纤发送，然后将其解析到各个通道，而是通过多芯成像光纤（每条光纤对应 10 千兆位/秒的数据通道）将数百个蓝色 microLED 连接到光电探测器阵列。发射器就像一个微型显示屏，而探测器就像一个摄像头。Avicena 首席执行官 Bardia Pezeshki 表示：“我们实现的光互连没有激光器的复杂性。”
+
+一条简单的光纤链路，每通道仅需 300 个像素，以 10 Gb/s 的速率传输，即可延伸 10 米距离，净传输速率高达 3 Tbps。由于显示器和摄像头的分辨率可以达到数百万像素，因此该技术可以以比铜线更低的功耗和更高的密度扩展到更高的数据速率。
+
+成熟行业
+Avicena 吹捧的一大优势是，他们的技术能够驾驭LED、摄像头和显示器：所有这些领域都已成熟。“与开发新的模块相比，我们可以更快地根据所需的产量和成本调整方法，”Pezeshki 说道。尽管硅光子学在光互连方面领先 30 年，但他们仍需要开发新的组件，例如环形谐振器和梳状激光器。“这些东西需要很长时间才能成熟，”他说道。相比之下，LightBundle 互连设计只需对现有的摄像头和显示器技术进行微小修改。
+
+这是台积电签约为Avicena的光学芯片生产光电探测器阵列的主要原因之一。蔡崇信表示：“LED行业已经成熟，有很多消费产品。” 当然，LED的功率比激光器低——但对于机架内和机架外10米的距离来说，这已经足够了。蔡崇信说：“LED的成本可能会低得多，而且本质上有很多冗余。”
+
+Pezeshki 表示， Avicena 的成果已经“震撼”了硅光子学的潜力。LightBundle 原型已经演示了整个链路每比特亚皮焦耳的能耗，而其他光学方法“难以达到”每比特 5 皮焦耳的能耗。
+
+
+Pezeshki 承认，Avicena 在打造和扩大产品规模方面还有很长的路要走。但他表示：“出色的成果加上成熟的模块，正在赢得用户的青睐。”
+
+<https://spectrum.ieee.org/tsmc-microled-optical-interconnects>
+
+## 5.54  Avicena Tech 的 Eugene Ho 获得 CadenceLIVE Cloud 专题最佳演示奖
+
+![](/picture/1748533368234.jpg)
+
+祝贺 Avicena Tech 的 Eugene Ho 凭借“Avicena Tech 在 Cadence OnCloud 上的全流程之旅：通过托管云服务提高设计流程效率、生产力和创新”获得 CadenceLIVE Cloud 专题最佳演示奖
+
+<https://www.linkedin.com/posts/cadencelive_cadencelive-cadencelive-activity-7333880504393322497-1PN8?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
