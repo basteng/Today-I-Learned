@@ -45,6 +45,19 @@
     - [✅ 解决方法如下：](#-解决方法如下)
       - [第一步：**清除源码目录中的缓存文件**](#第一步清除源码目录中的缓存文件)
       - [第二步：**重新创建 build 目录并配置编译**](#第二步重新创建-build-目录并配置编译)
+- [10. 树莓派4B bookworm设置成热点](#10-树莓派4b-bookworm设置成热点)
+  - [📌 为何 `RPI4B-basteng` 没变成热点，反而被当作 Wi-Fi 去连接？](#-为何-rpi4b-basteng-没变成热点反而被当作-wi-fi-去连接)
+    - [🔍 原因可能有以下几种：](#-原因可能有以下几种)
+  - [✅ 解决方法：彻底清掉错误配置，重新用命令方式创建热点](#-解决方法彻底清掉错误配置重新用命令方式创建热点)
+    - [🧹 步骤 1：删除错误连接配置](#-步骤-1删除错误连接配置)
+    - [🚀 步骤 2：创建正确的热点（AP）连接](#-步骤-2创建正确的热点ap连接)
+    - [✅ 验证成功](#-验证成功)
+  - [💡 总结一句话：](#-总结一句话)
+- [11. 树莓派翻墙自动配置](#11-树莓派翻墙自动配置)
+  - [✅ 脚本用途说明](#-脚本用途说明)
+  - [📜 脚本内容（文件名建议为：`setup-hotspot-proxy.sh`）](#-脚本内容文件名建议为setup-hotspot-proxysh)
+  - [🔧 使用说明](#-使用说明)
+  - [📌 注意事项](#-注意事项)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1145,3 +1158,186 @@ sudo make install
 这样就能正确完成 `nextpnr` 的构建了。
 
 你需要我帮你写一个自动构建的 shell 脚本吗？
+
+# 10. 树莓派4B bookworm设置成热点
+
+你问得非常到位。这个问题的根源在于：**你创建热点失败后，系统误把你设置的热点名 `RPI4B-basteng` 当成了一个普通 Wi-Fi 网络（client 模式）来尝试连接**，而不是作为一个热点（Access Point）去广播它。
+
+---
+
+## 📌 为何 `RPI4B-basteng` 没变成热点，反而被当作 Wi-Fi 去连接？
+
+### 🔍 原因可能有以下几种：
+
+1. **图形界面创建热点失败时，NetworkManager 保存了一个“类型为 Wi-Fi”的连接配置，但默认是 `client` 模式（managed），不是 `ap` 模式。**
+
+   * 你设了 SSID 为 `RPI4B-basteng`，但 NetworkManager 只记录了名称，没能切换模式。
+   * 所以系统尝试“连接”这个 SSID，而不是“广播”它。
+
+2. **NetworkManager 没成功创建 `Hotspot` 类型的连接，而是保留了一个残缺配置，处于“connecting”状态。**
+
+3. **配置中“Wi-Fi 模式”选错了，默认是“客户端模式（managed）”而不是“热点模式（ap）”。**
+
+---
+
+## ✅ 解决方法：彻底清掉错误配置，重新用命令方式创建热点
+
+### 🧹 步骤 1：删除错误连接配置
+
+```bash
+nmcli connection delete "RPI4B-basteng"
+```
+
+你也可以同时删除其他不需要的 Wi-Fi 记录：
+
+```bash
+nmcli connection delete preconfigured
+```
+
+---
+
+### 🚀 步骤 2：创建正确的热点（AP）连接
+
+```bash
+nmcli dev wifi hotspot ifname wlan0 ssid RPI4B-basteng password 12345678
+```
+
+这条命令会：
+
+* 创建临时热点配置，名称默认叫 `Hotspot`，SSID 是你设置的 `RPI4B-basteng`
+* 将 wlan0 设置为 AP 模式
+* 分配静态 IP 地址（如 10.42.0.1）
+* 启动内置 DHCP 服务
+
+---
+
+### ✅ 验证成功
+
+运行：
+
+```bash
+nmcli device show wlan0
+```
+
+你应该看到：
+
+* `GENERAL.STATE: 100 (connected)`
+* `WI-FI.MODE: AP`
+* `WI-FI.SSID: RPI4B-basteng`
+
+用手机就能看到这个热点。
+
+---
+
+## 💡 总结一句话：
+
+你设置热点失败时，`RPI4B-basteng` 被 NetworkManager 错误地保存为“客户端连接配置”，所以系统试图去连它，而不是广播它。正确方法是删除旧配置，用 `nmcli` 重新创建一个**AP模式的热点**。
+
+是否需要我生成一个脚本文件，今后你一键执行就能创建热点？
+
+# 11. 树莓派翻墙自动配置
+
+太好了！下面是为你量身定制的脚本 ✅，用于：
+
+> 📦 一键配置树莓派热点 + 自动开机自启 + 设置 Shadowsocks 翻墙透明代理（含 iptables 规则）+ 自动保存规则。
+
+---
+
+## ✅ 脚本用途说明
+
+* 创建热点：`RPI4B-basteng`，密码 `12345678`
+* 设置 NetworkManager 热点自动连接
+* 设置 `ss-redir` 自启并监听 1081
+* 设置 iptables NAT 转发规则
+* 保存规则并确保开机加载
+
+---
+
+## 📜 脚本内容（文件名建议为：`setup-hotspot-proxy.sh`）
+
+```bash
+#!/bin/bash
+set -e
+
+echo "🚀 配置热点和翻墙代理环境..."
+
+### 1. 创建热点连接（如果不存在）
+if ! nmcli connection show | grep -q "RPI4B-basteng"; then
+    echo "📡 创建热点连接 RPI4B-basteng..."
+    nmcli dev wifi hotspot ifname wlan0 ssid RPI4B-basteng password 12345678
+fi
+
+### 2. 设置热点开机自启
+echo "🔧 设置热点开机自动连接..."
+sudo nmcli connection modify Hotspot connection.id RPI4B-basteng
+sudo nmcli connection modify RPI4B-basteng connection.autoconnect yes
+
+### 3. 禁用其他 Wi-Fi 自动连接
+for conn in $(nmcli -t -f NAME,TYPE connection show | grep wifi | cut -d':' -f1); do
+    if [[ "$conn" != "RPI4B-basteng" ]]; then
+        echo "⛔ 禁用自动连接：$conn"
+        sudo nmcli connection modify "$conn" connection.autoconnect no
+    fi
+done
+
+### 4. 启动 Shadowsocks-redir 服务
+echo "🛡️ 启动 Shadowsocks-redir..."
+sudo systemctl enable shadowsocks-libev-redir@redir
+sudo systemctl restart shadowsocks-libev-redir@redir
+
+### 5. 启用 IP 转发
+echo "🌐 启用 IP 转发..."
+sudo sysctl -w net.ipv4.ip_forward=1
+sudo sed -i 's/^#\?net.ipv4.ip_forward=.*/net.ipv4.ip_forward=1/' /etc/sysctl.conf
+
+### 6. 写入 iptables NAT 规则
+echo "📦 写入 iptables 规则..."
+sudo iptables -t nat -F
+sudo iptables -t nat -A PREROUTING -i wlan0 -d 192.168.0.0/16 -j RETURN
+sudo iptables -t nat -A PREROUTING -i wlan0 -d 10.0.0.0/8 -j RETURN
+sudo iptables -t nat -A PREROUTING -i wlan0 -d 127.0.0.0/8 -j RETURN
+sudo iptables -t nat -A PREROUTING -i wlan0 -p tcp -j REDIRECT --to-ports 1081
+sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+
+### 7. 安装并保存规则（如果未安装）
+if ! dpkg -s iptables-persistent &>/dev/null; then
+    echo "📦 安装 iptables-persistent..."
+    sudo DEBIAN_FRONTEND=noninteractive apt install -y iptables-persistent
+fi
+
+sudo iptables-save | sudo tee /etc/iptables/rules.v4 > /dev/null
+sudo chmod -x /usr/share/netfilter-persistent/plugins.d/25-ip6tables
+sudo systemctl enable netfilter-persistent
+sudo systemctl restart netfilter-persistent
+
+echo "✅ 完成！系统已配置为热点 + 翻墙网关模式。建议重启验证效果。"
+```
+
+---
+
+## 🔧 使用说明
+
+1. 将脚本保存为 `setup-hotspot-proxy.sh`
+2. 赋予执行权限：
+
+```bash
+chmod +x setup-hotspot-proxy.sh
+```
+
+3. 运行：
+
+```bash
+./setup-hotspot-proxy.sh
+```
+
+---
+
+## 📌 注意事项
+
+* 脚本假设你已设置好 `/etc/shadowsocks-libev/redir.json`
+* 如果你用的不是 `eth0` 作为出口，请将脚本中的 `-o eth0` 改为对应接口（如 `tun0`）
+* 脚本自动跳过旧 Wi-Fi 的自动连接，避免冲突
+
+---
+
+如你还想添加功能（如自动更新 DNS、测试连通性、日志记录等），我可以继续扩展脚本。是否需要？
