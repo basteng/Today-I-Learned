@@ -58,6 +58,7 @@
   - [📜 脚本内容（文件名建议为：`setup-hotspot-proxy.sh`）](#-脚本内容文件名建议为setup-hotspot-proxysh)
   - [🔧 使用说明](#-使用说明)
   - [📌 注意事项](#-注意事项)
+- [12. RPi USB Wi-Fi 适配器](#12-rpi-usb-wi-fi-适配器)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1341,3 +1342,7 @@ chmod +x setup-hotspot-proxy.sh
 ---
 
 如你还想添加功能（如自动更新 DNS、测试连通性、日志记录等），我可以继续扩展脚本。是否需要？
+
+# 12. RPi USB Wi-Fi 适配器
+
+<https://elinux.org/RPi_USB_Wi-Fi_Adapters#Working_USB_Wi-Fi_Adapters>
