@@ -52,6 +52,7 @@
   - [3. 系统全局代理（仅部分桌面环境支持）](#3-系统全局代理仅部分桌面环境支持)
   - [4. 直接测试](#4-直接测试)
   - [5. 进阶：Privoxy 转 HTTP 代理（可选）](#5-进阶privoxy-转-http-代理可选)
+- [30. WSL科学上网](#30-wsl科学上网)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -988,3 +989,29 @@ Citations:
 
 ---
 Answer from Perplexity: pplx.ai/share
+
+# 30. WSL科学上网
+
+在 Windows 上通过 Clash 可以科学上网，但 WSL 无法科学上网的原因，通常是因为 WSL 网络没有正确配置为使用 Windows 的代理。下面是解决方法，让你的 WSL 也能走 Clash 的代理。
+
+✅ 方法一：配置环境变量（适用于 HTTP/HTTPS 流量）
+假设你在 Clash 中配置的本地代理端口是：
+
+HTTP 代理端口：7890
+
+SOCKS5 代理端口：7891
+
+在 WSL 中编辑 ~/.bashrc 或 ~/.zshrc 文件（取决于你使用的 shell）：
+
+nano ~/.bashrc
+添加以下内容（以 Clash 默认端口为例）：
+
+export http_proxy="http://127.0.0.1:7890"
+export https_proxy="http://127.0.0.1:7890"
+export all_proxy="socks5://127.0.0.1:7891"
+保存并执行：
+
+source ~/.bashrc
+测试一下网络连通性：
+
+curl https://google.com
