@@ -66,6 +66,16 @@
 - [63. Enhancing optoelectronic and modulation performance at low injected current by removing the p-AlGaN electron blocking layer of μ-LEDs](#63-enhancing-optoelectronic-and-modulation-performance-at-low-injected-current-by-removing-the-p-algan-electron-blocking-layer-of-μ-leds)
 - [64. High-Speed Micro-LEDs Based on Nano-Engineered InGaN Active Region Towards Chip-to-Chip Interconnections](#64-high-speed-micro-leds-based-on-nano-engineered-ingan-active-region-towards-chip-to-chip-interconnections)
 - [65. 10-Gb/s NRZ Per Lane Data Links With Transferred Micro-LEDs With Record BER and Energy Efficiency](#65-10-gbs-nrz-per-lane-data-links-with-transferred-micro-leds-with-record-ber-and-energy-efficiency)
+- [66. Correct Implementation of Polarization Constants in Wurtzite Materials and Impact on III-Nitrides](#66-correct-implementation-of-polarization-constants-in-wurtzite-materials-and-impact-on-iii-nitrides)
+- [67. Accurate calculation of polarization-related quantities in semiconductors](#67-accurate-calculation-of-polarization-related-quantities-in-semiconductors)
+- [68. Spontaneous polarization and piezoelectric constants of III-V nitrides](#68-spontaneous-polarization-and-piezoelectric-constants-of-iii-v-nitrides)
+- [69. Hybrid functional investigations of band gaps and band alignments for AlN, GaN, InN, and InGaN](#69-hybrid-functional-investigations-of-band-gaps-and-band-alignments-for-aln-gan-inn-and-ingan)
+- [70. Effects of strain on the band structure of group-III nitrides](#70-effects-of-strain-on-the-band-structure-of-group-iii-nitrides)
+- [71. nextnano: General Purpose 3-D Simulations](#71-nextnano-general-purpose-3-d-simulations)
+- [72. Modeling of self‐electro‐optic‐effect devices](#72-modeling-of-selfelectroopticeffect-devices)
+- [73. Band bowing and band alignment in InGaN alloys](#73-band-bowing-and-band-alignment-in-ingan-alloys)
+- [74. Injection mechanisms in a III-nitride light-emitting diode as seen by self-emissive electron microscopy](#74-injection-mechanisms-in-a-iii-nitride-light-emitting-diode-as-seen-by-self-emissive-electron-microscopy)
+- [75. Yellow–red emission from (Ga,In)N heterostructures](#75-yellowred-emission-from-gainn-heterostructures)
 
 20241204以后 （未下载）
 
@@ -357,3 +367,43 @@ https://ieeexplore.ieee.org/document/10637686
 # 65. 10-Gb/s NRZ Per Lane Data Links With Transferred Micro-LEDs With Record BER and Energy Efficiency
 
 https://ieeexplore.ieee.org/document/10930898
+
+# 66. Correct Implementation of Polarization Constants in Wurtzite Materials and Impact on III-Nitrides
+
+https://journals.aps.org/prx/abstract/10.1103/PhysRevX.6.021038
+
+# 67. Accurate calculation of polarization-related quantities in semiconductors
+
+https://journals.aps.org/prb/abstract/10.1103/PhysRevB.63.193201
+
+# 68. Spontaneous polarization and piezoelectric constants of III-V nitrides
+
+https://journals.aps.org/prb/abstract/10.1103/PhysRevB.56.R10024
+
+# 69. Hybrid functional investigations of band gaps and band alignments for AlN, GaN, InN, and InGaN
+
+https://pubs.aip.org/aip/jcp/article-abstract/134/8/084703/960261/Hybrid-functional-investigations-of-band-gaps-and?redirectedFrom=fulltext
+
+# 70. Effects of strain on the band structure of group-III nitrides
+
+https://journals.aps.org/prb/abstract/10.1103/PhysRevB.90.125118
+
+# 71. nextnano: General Purpose 3-D Simulations
+
+https://ieeexplore.ieee.org/document/4294186
+
+# 72. Modeling of self‐electro‐optic‐effect devices
+
+https://pubs.aip.org/aip/jap/article-abstract/74/2/1388/494030/Modeling-of-self-electro-optic-effect-devices?redirectedFrom=fulltext
+
+# 73. Band bowing and band alignment in InGaN alloys
+
+https://pubs.aip.org/aip/apl/article-abstract/96/2/021908/119593/Band-bowing-and-band-alignment-in-InGaN-alloys?redirectedFrom=fulltext
+
+# 74. Injection mechanisms in a III-nitride light-emitting diode as seen by self-emissive electron microscopy
+
+https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.20.064045
+
+# 75. Yellow–red emission from (Ga,In)N heterostructures
+
+https://iopscience.iop.org/article/10.1088/0022-3727/48/40/403001

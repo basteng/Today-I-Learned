@@ -88,11 +88,12 @@
   - [16.1 Stratechery.com](#161-stratecherycom)
   - [16.2 Roving Dynamics Ltd](#162-roving-dynamics-ltd)
   - [16.3 Andrew](#163-andrew)
-- [17. 学位论文](#17-学位论文)
+- [17. 数字图书馆](#17-数字图书馆)
   - [17.1 加州大学戴维斯分校电子学位论文](#171-加州大学戴维斯分校电子学位论文)
   - [17.2 加州大学圣巴巴拉分校电子学位论文](#172-加州大学圣巴巴拉分校电子学位论文)
   - [17.3 加州大学的开放获取出版物](#173-加州大学的开放获取出版物)
-- [18. 开发版](#18-开发版)
+  - [17.4 哈佛大学面向天文学和物理学研究人员的数字图书馆门户](#174-哈佛大学面向天文学和物理学研究人员的数字图书馆门户)
+- [18. 开发板](#18-开发板)
   - [18.1 olimex all fun projects at Olimex Ltd](#181-olimex-all-fun-projects-at-olimex-ltd)
     - [18.1.1 代表作](#1811-代表作)
 
@@ -565,7 +566,7 @@ https://www.andrewlynch.net/
 
 <https://www.andrewlynch.net/blog/are-your-a-creator-or-a-consumer>
 
-# 17. 学位论文
+# 17. 数字图书馆
 
 ## 17.1 加州大学戴维斯分校电子学位论文
 
@@ -595,7 +596,11 @@ Epitaxy and Device Design for High Efficiency Blue LEDs and Laser Diodes
 
 <https://escholarship.org/>
 
-# 18. 开发版
+## 17.4 哈佛大学面向天文学和物理学研究人员的数字图书馆门户
+
+<https://ui.adsabs.harvard.edu/>
+
+# 18. 开发板
 
 ## 18.1 olimex all fun projects at Olimex Ltd
 
