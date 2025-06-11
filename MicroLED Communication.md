@@ -111,6 +111,8 @@
   - [5.54  Avicena Tech 的 Eugene Ho 获得 CadenceLIVE Cloud 专题最佳演示奖](#554--avicena-tech-的-eugene-ho-获得-cadencelive-cloud-专题最佳演示奖)
   - [5.55 台积电接受Micro LED光源接收器订单 加紧布局光电产业](#555-台积电接受micro-led光源接收器订单-加紧布局光电产业)
   - [5.56 Optica在线技术会议视频](#556-optica在线技术会议视频)
+    - [Summary of the Presentation](#summary-of-the-presentation)
+    - [Questions and Answers](#questions-and-answers)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -3458,6 +3460,108 @@ Quantifi Photonics 的测试能力
 时间范围：19:10~40:45
 
 <https://www.youtube.com/watch?v=3gqioLBi7dc>
+
+This video presents a new approach to data interconnects within AI clusters, proposed by Avicena in partnership with ams OSRAM. The technology, called "LightBundle," uses ultra-fast microLEDs (µLEDs) to address the performance bottlenecks of traditional copper-based "scale-up" networks inside datacenters.
+
+### Summary of the Presentation
+
+The presentation outlines the need for a new interconnect technology for short-reach, high-bandwidth communication within AI data centers. Avicena's solution, LightBundle, leverages microLEDs to offer significant improvements in energy efficiency, shoreline density, and cost over existing technologies for distances up to about 10 meters.
+
+**Key Points:**
+
+*   **The Problem:** Current "scale-up" interconnects in AI clusters rely on copper, which is becoming a bottleneck in terms of power consumption and density as data rates increase.
+*   **The Solution (LightBundle):** Avicena is developing a µLED-based optical interconnect technology that is highly parallel and power-efficient. It aims to achieve performance metrics outlined by industry leaders like NVIDIA, including:
+    *   **Energy Efficiency:** Targeting under 5 pJ/bit, with demonstrations at 1 pJ/bit.
+    *   **Shoreline Density:** Targeting over 1 Tbps/mm, achieved through a 2D array architecture.
+    *   **Reach:** Up to 10 meters, extendable to 20 meters.
+    *   **Reliability:** 10 FIT, leveraging the inherent robustness of GaN LEDs.
+*   **Manufacturing Partnership:** The technology is being brought to market through a collaboration with ams OSRAM, a global leader in LEDs. OSRAM provides the manufacturing expertise, leveraging its #1 ranked 8-inch micro-LED facility to produce the necessary discrete and monolithic µLED arrays.
+*   **Product Roadmap:** Avicena plans to release an 896G demo kit in 2025, followed by 1.6T On-Board Optics (OBO) and Active Optical Cable (AOC) products in 2026. The roadmap extends to multi-terabit pluggable modules around 2027-2028.
+
+---
+
+### Questions and Answers
+
+Here are the last three questions from the Q&A session and their answers:
+
+**1. Question from Chris Maloney (VPIphotonics):**
+*   **Question:** Are there advantages for different types of multiplexing solutions, like Wavelength Division Multiplexing (WDM), for your micro-LED solution, or is it primarily spatial multiplexing with multi-core fibers?
+
+*   **Answer (from Chris Pfistner, Avicena):** While it's theoretically possible to use WDM since LEDs come in fundamental RGB wavelengths, the initial approach is to keep it simple and cost-effective by focusing on a single wavelength with spatial multiplexing. This provides the most direct path to market. Future developments are not ruled out, but the current focus is on a simpler, spatially multiplexed architecture.
+
+**2. Question from Hamid Islam:**
+*   **Question:** Do the shoreline densities mentioned (e.g., >1 Tbps/mm) refer to the optical domain or the electrical domain?
+
+*   **Answer (from Chris Pfistner, Avicena):** The metric refers to the physical "beachfront density," which is the total bandwidth that can be moved off the edge of a chip (like an accelerator or switch) per millimeter of its shoreline. It encompasses the entire package, including the optical components and any other necessary packaging, not just the optical I/O itself.
+
+**3. Question from Ian McKenzie (European Space Agency):**
+*   **Question:** What is the bandwidth limit on a per-LED channel in your solution?
+
+*   **Answer (from Chris Pfistner, Avicena):** Avicena has already published research demonstrating 14 Gbps per individual LED. They see a clear path to 16 Gbps and potentially up to 32 Gbps. However, he noted that the first commercial product will launch at 4 Gbps per lane to ensure robustness, with a plan to double that to 8 Gbps in the near future. The key advantage isn't maximizing speed on a single channel (like lasers) but using massive parallelism with many smaller, more efficient channels.
+*   
+
+**Breaking Down Video Content**
+
+I'm currently digesting the presentation on the paradigm shift in AI clusters using microLED interconnects. My focus is on synthesizing the core arguments and identifying the key components of this proposed shift. I'm prioritizing the main concepts before delving into the Q&A segment.
+
+
+**Evaluating Avicena's LightBundle**
+
+I've finished analyzing the initial presentation segment. I'm noting the crucial specs for "Scale Up" networks in AI, as defined by NVIDIA, and contrasting them with Avicena's LightBundle technology. The presentation highlights their impressive energy efficiency, high shoreline density, and ability to meet the desired reach. I'm focusing on the technical comparisons and the potential benefits of microLED-based interconnects.
+
+
+**Pinpointing LightBundle's Advantages**
+
+I'm now focusing on LightBundle's modular architecture and its application in different module types, particularly the On-Board and Co-Packaged Optics. I'm noting the implications of the "on-board" gap that Avicena's technology addresses. I see its benefit of extending high efficiency to longer reaches than traditional electrical interconnects.
+
+
+**Expanding on LightBundle's Role**
+
+I'm now focusing on the practical application of LightBundle, specifically within NVIDIA's "Scale Up" specifications. My thoughts are centering on how Avicena's modular approach, incorporating optical chiplets and couplers, addresses the "on-board" gap. I'm also examining the projected roadmap, noting the planned 1.6T modules for 2026 and the 12.8T-14.4T designs in the pipeline.
+
+
+**Examining the Presentation Content**
+
+I've finished extracting the core information from the presentation. My focus is on the crucial specifications for NVIDIA's "Scale Up" AI network. I've noted Avicena's LightBundle technology, highlighting its potential in addressing the "on-board" gap. Key takeaways include its high density and impressive energy efficiency at extended reaches.
+
+**Analyzing Q&A Data**
+
+I have isolated the Q&A segment of the presentation, specifically the last three questions and corresponding answers. I'm focusing on dissecting the discussion regarding multiplexing solutions and their practical applications within LightBundle's framework. The conversation about WDM versus spatial multiplexing is interesting.
+
+**Delving into Multiplexing Strategy**
+
+The Q&A segment revealed Avicena's strategic decision on multiplexing. I now comprehend why they chose single-wavelength spatial multiplexing for their LightBundle. Although WDM is plausible, the presenters highlighted the complexity and cost implications, preferring a simpler approach for the initial market entry. This helps shape my understanding of the technology's evolution.
+
+
+**Synthesizing Q&A Insights**
+
+I've finished extracting the content. I'm focusing on the presenters' discussions about their multiplexing strategy within the framework of their LightBundle technology. The conversation revolved around the decision to employ single-wavelength spatial multiplexing, which simplifies design and reduces costs. The presenters also noted that while WDM is technically feasible, they chose a simpler approach for their initial launch.
+
+
+**Revisiting Avicena's LightBundle**
+
+I have thoroughly analyzed the presentation outlining Avicena's LightBundle technology for addressing the "on-board" gap in AI clusters. I find their modular design, incorporating microLEDs and optical chiplets, promising for efficient, high-density interconnects. The partnership with OSRAM, a leader in microLEDs, further strengthens their approach. The roadmaps point to a clear vision.
+
+
+**Examining the Technology's Framework**
+
+I've examined the presentation's core concepts. The "LightBundle" technology utilizes microLEDs in a modular architecture, targeting the "on-board" gap for AI clusters. I'm focusing on their key performance metrics and the proposed partnership with OSRAM to fully understand their approach to high-density, energy-efficient interconnects.
+
+
+**Examining Multiplexing Choices**
+
+I've explored the implications of Avicena's choice of single-wavelength spatial multiplexing. While WDM is feasible with microLEDs, the focus on simplicity for their initial product launch makes sense. This helps me understand the balance between technological potential and practical market entry. I'm focusing on the presenters' detailed explanation.
+
+
+**Synthesizing Key Presentation Content**
+
+I've digested the comprehensive presentation on Avicena's LightBundle technology. The modular architecture, coupled with ams OSRAM's microLED expertise, shows promise for AI cluster interconnects. Key NVIDIA "Scale Up" targets, like high density and low energy consumption, appear achievable. I'm focusing on the modular architecture and potential future multiplexing.
+
+\n\n**Extracting Q&A Insights**
+
+The Q&A segment unveiled Avicena's approach. I'm noting the strategic decision to prioritize single-wavelength spatial multiplexing for LightBundle's initial iteration, keeping the technology streamlined. The presentation explains the choice. I'm focusing on how their answers highlight their pragmatic market-entry strategy.
+
+
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
