@@ -110,6 +110,7 @@
   - [5.53 台积电押注非传统光学技术 基于 MicroLED 的互连可为节能的 AI 数据中心提供动力](#553-台积电押注非传统光学技术-基于-microled-的互连可为节能的-ai-数据中心提供动力)
   - [5.54  Avicena Tech 的 Eugene Ho 获得 CadenceLIVE Cloud 专题最佳演示奖](#554--avicena-tech-的-eugene-ho-获得-cadencelive-cloud-专题最佳演示奖)
   - [5.55 台积电接受Micro LED光源接收器订单 加紧布局光电产业](#555-台积电接受micro-led光源接收器订单-加紧布局光电产业)
+  - [5.56 Optica在线技术会议视频](#556-optica在线技术会议视频)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -3440,6 +3441,23 @@ Pezeshki 承认，Avicena 在打造和扩大产品规模方面还有很长的路
 业界预计，随着人工智能服务器对高带宽数据传输需求的增长，以及博通、英伟达等公司推出的共同封装光学元件交换器架构的发展，Micro LED在芯片间短距离传输领域有望获得更广泛的应用，这也将为台湾光电产业带来新的发展机遇。
 
 <https://www.jqman.com/chip/238893.html>
+
+## 5.56 Optica在线技术会议视频
+
+重播：Optica 在线技术会议 2025 年 6 月 10 日星期二 共封装和可插拔光学器件。这是今天会议录音的链接，以防您无法实时加入我们。https://lnkd.in/d-ew6eU2。如果您有任何反馈或问题，请与我的同事 Jon Pugh 联系，他整理了众多演讲者。在由 微软 和 艾迈斯欧司朗 主持的讨论中，寻求在其 CPO 路线图中寻找合作伙伴关系，我们的企业成员有机会展示他们可以做些什么来提供帮助：
+
+这包括：
+Avicena Tech 的 uLED 光源
+HETEROMERGE GmbH 的多材料纳米 3D 打印
+FEMTOPRINT SA 的微光学制造
+Ansys 和 Optiwave Systems Inc. 的设计支持
+Quantifi Photonics 的测试能力
+创纪录的 NewPhotonics 
+武汉光迅科技股份有限公司 的垂直整合
+
+时间范围：19:10~40:45
+
+<https://www.youtube.com/watch?v=3gqioLBi7dc>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
