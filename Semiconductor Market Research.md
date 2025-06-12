@@ -177,6 +177,8 @@
         - [HBM 买家： Nvidia Leads， Google Follows](#hbm-买家-nvidia-leads-google-follows)
         - [TC 键合之争：16Hi HBM 的混合键合是韩美-SK 海力士裂痕背后的火花吗？](#tc-键合之争16hi-hbm-的混合键合是韩美-sk-海力士裂痕背后的火花吗)
     - [38.1.3 FPGA](#3813-fpga)
+    - [38.1.4 DSP](#3814-dsp)
+      - [38.1.4.1  Coherent DSP 供应链](#38141--coherent-dsp-供应链)
   - [38.2 Discrets](#382-discrets)
     - [38.2.1 Power](#3821-power)
       - [38.2.1.1 SiC](#38211-sic)
@@ -3194,6 +3196,36 @@ FPGA 慢慢在不断变化的应用中找到了归宿：◦ 电信，协议发�
 有时，最冒险的想法会成为我们所有人的基础。
 
 <https://www.linkedin.com/posts/kailash-prasad_semiconductors-xilinx-fpga-activity-7314861986167541760-OfOd?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+### 38.1.4 DSP
+
+#### 38.1.4.1  Coherent DSP 供应链
+
+过去，当相干光器件仅用于长途路由和高容量城域网时，那些拥有自主DSP的垂直整合供应商（例如Ciena、华为、Infinera和诺基亚）在销售相干光端口方面最为成功。但随着相干光器件转向可插拔格式，以及400ZR型模块在数据中心互连中的迅猛发展，这一原则已不再适用。支持长距离网络的高性能光器件DSP的开发仍将由垂直整合的公司负责，但随着2024年800ZR和100ZR的推出以及预计2027年1600ZR的到来，可插拔器件中使用的DSP市场正在不断扩大。
+
+本报告是我们2023年6月首次发布的年度报告的更新。它考察了DSP的市场份额。有关每种相干解决方案的总出货量、模块类型细分以及未来增长预测的信息，请参阅Cignal AI最新的光学元件报告。
+
+背景
+Cignal AI 根据相干接口技术的波特率（符号传输速率）将其分为几代。在每一代中，技术又分为高性能 (P) 和紧凑型 (C)。高性能光学器件通常是用于长距离系统的嵌入式解决方案，而紧凑型解决方案则功耗更低且可插拔。
+
+Gen30 光学器件最高速度为 100-200Gbps
+Gen60 光学器件的最高速度为 400Gbps（可插拔）和 400-600Gbp（嵌入式）
+Gen90 光学器件最高速度可达 800Gbps
+Gen120 光学器件的最高速度为 1.2Tbps（嵌入式）和 800G（可插拔）
+Gen200 光纤最高速度为 1.6Tbps
+
+![](/picture/Generations-diagram-2025.webp)
+
+DSP（数字信号处理器）是相干传输的核心；它解码通过光纤发送的复杂信号，并补偿色散等信号损伤。随着波特率的提高，DSP 门数和功能复杂性也随之增加，这需要最新一代的工艺技术。
+
+设备原始设备制造商
+下表列出了 OEM 设备供应商及其所选的 DSP。突出显示的是采用内部开发的 DSP 的垂直整合供应商的解决方案。
+
+![](/picture/1747252631870.jpg)
+
+<https://www.linkedin.com/posts/cignal-ai_tracking-the-coherent-dsp-supply-chain-activity-7328508706520797185-s7JN?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+<https://cignal.ai/2025/05/tracking-the-coherent-dsp-supply-chain-2025/>
 
 ## 38.2 Discrets
 
