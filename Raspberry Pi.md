@@ -59,6 +59,13 @@
   - [🔧 使用说明](#-使用说明)
   - [📌 注意事项](#-注意事项)
 - [12. RPi USB Wi-Fi 适配器](#12-rpi-usb-wi-fi-适配器)
+- [13. 树莓派5运行claude，现在使用claude-start即可](#13-树莓派5运行claude现在使用claude-start即可)
+  - [正常情况下：](#正常情况下)
+  - [但可能需要的情况：](#但可能需要的情况)
+  - [我建议创建一个别名：](#我建议创建一个别名)
+  - [或者更简单，创建软链接：](#或者更简单创建软链接)
+- [14. 需要使用grafcp才能在树莓派上运行claude](#14-需要使用grafcp才能在树莓派上运行claude)
+  - [创建一个便捷的启动脚本：](#创建一个便捷的启动脚本)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1346,3 +1353,112 @@ chmod +x setup-hotspot-proxy.sh
 # 12. RPi USB Wi-Fi 适配器
 
 <https://elinux.org/RPi_USB_Wi-Fi_Adapters#Working_USB_Wi-Fi_Adapters>
+
+# 13. 树莓派5运行claude，现在使用claude-start即可
+
+基本上是的！但有几个细节需要注意：
+
+## 正常情况下：
+```bash
+~/claude-start.sh
+```
+就够了，会自动检查和启动所有必要的服务。
+
+## 但可能需要的情况：
+
+**1. 第一次重启后：**
+```bash
+# shadowsocks 可能需要手动启动一次
+sudo systemctl start shadowsocks-libev-local@config
+
+# 然后运行脚本
+~/claude-start.sh
+```
+
+**2. 如果想让 shadowsocks 开机自启：**
+```bash
+sudo systemctl enable shadowsocks-libev-local@config
+```
+
+**3. 更简单的日常使用：**
+一旦所有服务都稳定运行后，你甚至可以直接：
+```bash
+graftcp claude
+```
+
+## 我建议创建一个别名：
+```bash
+echo "alias claude-proxy='~/claude-start.sh'" >> ~/.bashrc
+source ~/.bashrc
+```
+
+然后就可以：
+```bash
+claude-proxy
+```
+
+## 或者更简单，创建软链接：
+```bash
+sudo ln -s ~/claude-start.sh /usr/local/bin/claude-start
+```
+
+然后在任何地方都可以：
+```bash
+claude-start
+```
+
+**总结：** 是的，基本上运行 `~/claude-start.sh` 就可以了，这个脚本会处理所有的启动和检查工作！🎯
+
+# 14. 需要使用grafcp才能在树莓派上运行claude
+
+哈哈，太好了！🎉
+
+原来是需要一点时间让代理连接稳定！这确实是常见的情况：
+
+1. **graftcp-local 需要时间建立连接**
+2. **Claude Code 启动时的网络检测需要通过代理完成**
+3. **第一次连接可能需要等待几秒钟**
+
+现在你的 Claude Code 应该可以正常使用了！
+
+## 创建一个便捷的启动脚本：
+
+```bash
+nano ~/claude-start.sh
+```
+
+内容：
+```bash
+#!/bin/bash
+echo "🚀 启动 Claude 代理环境..."
+
+# 检查 shadowsocks
+if ! pgrep ss-local > /dev/null; then
+    echo "启动 shadowsocks..."
+    sudo systemctl start shadowsocks-libev-local@config
+    sleep 2
+fi
+
+# 启动 graftcp-local
+if ! pgrep graftcp-local > /dev/null; then
+    echo "启动 graftcp-local..."
+    graftcp-local -socks5 127.0.0.1:1080 -listen 127.0.0.1:2233 &
+    sleep 3  # 给更多时间让代理稳定
+fi
+
+echo "✅ 代理就绪，启动 Claude Code..."
+echo "提示: 如果连接失败，请等待几秒钟再试"
+echo "----------------------------------------"
+
+graftcp claude
+```
+
+使用：
+```bash
+chmod +x ~/claude-start.sh
+~/claude-start.sh
+```
+
+这样以后就可以一键启动整个代理环境和 Claude Code 了！
+
+恭喜你成功在树莓派上运行 Claude Code！现在可以享受 AI 编程助手的强大功能了！ 🎊
