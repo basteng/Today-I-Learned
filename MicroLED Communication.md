@@ -114,6 +114,7 @@
     - [Summary of the Presentation](#summary-of-the-presentation)
     - [Questions and Answers](#questions-and-answers)
   - [5.57 日立风险投资文章](#557-日立风险投资文章)
+  - [5.58 TSMC在2025ECTC披露了有关其COUPE结构的更多数据](#558-tsmc在2025ectc披露了有关其coupe结构的更多数据)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -3643,6 +3644,14 @@ Avicena 在 0.01 至 10 米数据传输方面表现出色。图片来源：Avice
 Avicena 拥有一支集深厚技术专长、行业经验和卓越创新业绩于一身的团队，在引领光互连变革方面占据着有利地位。他们在 MicroLED 技术方面的开创性工作有望将高性能计算 (HPC) 和人工智能 (AI) 的性能提升到新的水平，并解决带宽、功耗和可扩展性等关键挑战。随着他们不断突破极限，Avicena 必将为整个价值链释放价值。
 
 此轮融资由 Tiger Global Management 领投，Prosperity 7、Maverick Ventures、Qualcomm Ventures、SK Hynix 和 Hitachi Ventures 以及现有投资者 Cerberus Capital Management、Micron Ventures 和 LAM Capital 参与投资。
+
+## 5.58 TSMC在2025ECTC披露了有关其COUPE结构的更多数据
+
+![](/picture/1748352772053.jpg)
+
+![](/picture/1748352772165.jpg)
+
+![](/picture/1748352772165.jpg)
 
 
 
