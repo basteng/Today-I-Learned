@@ -115,6 +115,7 @@
     - [Questions and Answers](#questions-and-answers)
   - [5.57 日立风险投资文章](#557-日立风险投资文章)
   - [5.58 TSMC在2025ECTC披露了有关其COUPE结构的更多数据](#558-tsmc在2025ectc披露了有关其coupe结构的更多数据)
+  - [5.59 打破AI互联壁垒：台积电×Avicena光学联盟的战略洞察](#559-打破ai互联壁垒台积电avicena光学联盟的战略洞察)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -3653,7 +3654,9 @@ Avicena 拥有一支集深厚技术专长、行业经验和卓越创新业绩于
 
 ![](/picture/1748352772165.jpg)
 
+## 5.59 打破AI互联壁垒：台积电×Avicena光学联盟的战略洞察
 
+<https://tspasemiconductor.substack.com/p/breaking-the-ai-interconnect-wall>
 
 
 # 6. 《廉价光源可使人工智能更节能》Nature
