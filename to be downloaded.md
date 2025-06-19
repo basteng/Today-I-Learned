@@ -76,6 +76,7 @@
 - [73. Band bowing and band alignment in InGaN alloys](#73-band-bowing-and-band-alignment-in-ingan-alloys)
 - [74. Injection mechanisms in a III-nitride light-emitting diode as seen by self-emissive electron microscopy](#74-injection-mechanisms-in-a-iii-nitride-light-emitting-diode-as-seen-by-self-emissive-electron-microscopy)
 - [75. Yellow–red emission from (Ga,In)N heterostructures](#75-yellowred-emission-from-gainn-heterostructures)
+- [76. Optimizing and Understanding amorphous SiN Thin Film Deposition for GaN-High-Electron-Mobility Transistors Using Machine Learning and Causal Discovery](#76-optimizing-and-understanding-amorphous-sin-thin-film-deposition-for-gan-high-electron-mobility-transistors-using-machine-learning-and-causal-discovery)
 
 20241204以后 （未下载）
 
@@ -407,3 +408,7 @@ https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.20.064045
 # 75. Yellow–red emission from (Ga,In)N heterostructures
 
 https://iopscience.iop.org/article/10.1088/0022-3727/48/40/403001
+
+# 76. Optimizing and Understanding amorphous SiN Thin Film Deposition for GaN-High-Electron-Mobility Transistors Using Machine Learning and Causal Discovery
+
+https://pubs.acs.org/doi/10.1021/acsaelm.5c00408?goto=supporting-info
