@@ -107,6 +107,7 @@
 - [4. Toripalimab for Extensive-Stage Small Cell Lung Cancer](#4-toripalimab-for-extensive-stage-small-cell-lung-cancer)
 - [5. Toripalimab Plus Chemotherapy as a First-Line Therapy for Extensive-Stage Small Cell Lung Cancer](#5-toripalimab-plus-chemotherapy-as-a-first-line-therapy-for-extensive-stage-small-cell-lung-cancer)
 - [6. Gallium Nitride and Related Materials: Device Processing and Materials](#6-gallium-nitride-and-related-materials-device-processing-and-materials)
+- [7. Inverted V-shaped size-dependent emission wavelength shift in InGaN micro-LEDs with size down to 1 μm](#7-inverted-v-shaped-size-dependent-emission-wavelength-shift-in-ingan-micro-leds-with-size-down-to-1μm)
 
 20241204以后 （未下载）
 
@@ -526,3 +527,6 @@ edited by Isik C. Kizilyalli, Jung Han, James S. Speck, Eric P. Carlson
 
 https://books.google.fr/books?hl=en&lr=lang_en&id=F5ZYEQAAQBAJ&oi=fnd&pg=PA419&ots=Pp1s3_op8H&sig=D4LHnn569vEI78mbr8d-7FT1EEs&redir_esc=y#v=onepage&q&f=false
 
+# 7. Inverted V-shaped size-dependent emission wavelength shift in InGaN micro-LEDs with size down to 1 μm
+
+https://pubs.aip.org/aip/apl/article-abstract/125/9/091103/3309917/Inverted-V-shaped-size-dependent-emission?redirectedFrom=fulltext
