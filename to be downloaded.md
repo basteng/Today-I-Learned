@@ -99,6 +99,14 @@
 - [8. Toripalimab for Extensive-Stage Small Cell Lung Cancer](#8-toripalimab-for-extensive-stage-small-cell-lung-cancer)
 - [9. Toripalimab Plus Chemotherapy as a First-Line Therapy for Extensive-Stage Small Cell Lung Cancer](#9-toripalimab-plus-chemotherapy-as-a-first-line-therapy-for-extensive-stage-small-cell-lung-cancer)
 - [10. Gallium Nitride and Related Materials: Device Processing and Materials](#10-gallium-nitride-and-related-materials-device-processing-and-materials)
+- [**From 20250625**](#from-20250625)
+- [1. InGaN-based micro-LEDs for display and chip-to-chip optical interconnections](#1-ingan-based-micro-leds-for-display-and-chip-to-chip-optical-interconnections)
+  - [视频未下载](#视频未下载)
+- [2. Small Cell Lung Cancer A Review](#2-small-cell-lung-cancer-a-review)
+- [3. Serplulimab With Chemotherapy in Extensive-Stage SCLC](#3-serplulimab-with-chemotherapy-in-extensive-stage-sclc)
+- [4. Toripalimab for Extensive-Stage Small Cell Lung Cancer](#4-toripalimab-for-extensive-stage-small-cell-lung-cancer)
+- [5. Toripalimab Plus Chemotherapy as a First-Line Therapy for Extensive-Stage Small Cell Lung Cancer](#5-toripalimab-plus-chemotherapy-as-a-first-line-therapy-for-extensive-stage-small-cell-lung-cancer)
+- [6. Gallium Nitride and Related Materials: Device Processing and Materials](#6-gallium-nitride-and-related-materials-device-processing-and-materials)
 
 20241204以后 （未下载）
 
@@ -488,3 +496,33 @@ https://jamanetwork.com/journals/jamaoncology/article-abstract/2826181?widget=pe
 edited by Isik C. Kizilyalli, Jung Han, James S. Speck, Eric P. Carlson
 
 https://books.google.fr/books?hl=en&lr=lang_en&id=F5ZYEQAAQBAJ&oi=fnd&pg=PA419&ots=Pp1s3_op8H&sig=D4LHnn569vEI78mbr8d-7FT1EEs&redir_esc=y#v=onepage&q&f=false
+
+# **From 20250625**
+
+# 1. InGaN-based micro-LEDs for display and chip-to-chip optical interconnections
+## 视频未下载
+
+https://www.spiedigitallibrary.org/conference-proceedings-of-spie/PC13386/3035741/InGaN-based-micro-LEDs-for-display-and-chip-to-chip/10.1117/12.3035741.short?continueFlag=76c2ecbc7d5324af31a6ee9dbfafa660
+
+# 2. Small Cell Lung Cancer A Review
+
+https://jamanetwork.com/journals/jama/article-abstract/2832148
+
+# 3. Serplulimab With Chemotherapy in Extensive-Stage SCLC
+
+https://jamanetwork.com/journals/jama/article-abstract/2796715?widget=personalizedcontent&previousarticle=2832148
+
+# 4. Toripalimab for Extensive-Stage Small Cell Lung Cancer
+
+https://jamanetwork.com/journals/jamaoncology/article-abstract/2826185?widget=personalizedcontent&previousarticle=2832148
+
+# 5. Toripalimab Plus Chemotherapy as a First-Line Therapy for Extensive-Stage Small Cell Lung Cancer
+
+https://jamanetwork.com/journals/jamaoncology/article-abstract/2826181?widget=personalizedcontent&previousarticle=2832148
+
+# 6. Gallium Nitride and Related Materials: Device Processing and Materials
+
+edited by Isik C. Kizilyalli, Jung Han, James S. Speck, Eric P. Carlson
+
+https://books.google.fr/books?hl=en&lr=lang_en&id=F5ZYEQAAQBAJ&oi=fnd&pg=PA419&ots=Pp1s3_op8H&sig=D4LHnn569vEI78mbr8d-7FT1EEs&redir_esc=y#v=onepage&q&f=false
+
