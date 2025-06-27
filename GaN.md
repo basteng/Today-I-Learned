@@ -134,6 +134,16 @@
     - [Key Application Areas](#key-application-areas)
     - [Industry Trends and Dynamics](#industry-trends-and-dynamics)
     - [Technology and Competitive Landscape](#technology-and-competitive-landscape)
+- [31.11 功率半导体251亿美元，Power GaN占2亿，RF GaN占25亿美元](#3111-功率半导体251亿美元power-gan占2亿rf-gan占25亿美元)
+  - [✅ 251 亿美元的组成](#-251-亿美元的组成)
+    - [1. Power IGBT 市场](#1-power-igbt-市场)
+    - [2. Power BJT 市场](#2-power-bjt-市场)
+    - [3. Power FET 市场](#3-power-fet-市场)
+    - [4. Power GaN 市场](#4-power-gan-市场)
+    - [5. Power SiC 市场](#5-power-sic-市场)
+  - [❗ 细节解释](#-细节解释)
+  - [✅ 最终细分汇总](#-最终细分汇总)
+  - [🚀 关键洞察](#-关键洞察)
 - [32. 主要会议](#32-主要会议)
   - [32.1 IEEE Workshop on Wide Bandgap Power Devices \& Applications](#321-ieee-workshop-on-wide-bandgap-power-devices--applications)
 - [33.氮化硼 可以取代 氮化镓 吗？](#33氮化硼-可以取代-氮化镓-吗)
@@ -2343,6 +2353,159 @@ Citations:
 
 ---
 Answer from Perplexity: pplx.ai/share
+
+# 31.11 功率半导体251亿美元，Power GaN占2亿，RF GaN占25亿美元
+
+是什么推动了 $25.1B 功率半导体市场？以下是细分
+
+2022 年，全球功率半导体市场达到 251 亿美元。在这个 $25.1B 的保护伞下，功率 IGBT 部分——包括 IGBT 功率器件（裸片）、分立器件和模块的全球销售——占 $8.2B。同年，功率 BJT 和 FET（MOSFET、JFET、IPM）等其他标准电源产品线分别带来了约 $1.1B 和 $14B。
+在这种情况下，“功率半导体”是指分立或模块化形式的中高压 （≥100V） 器件，包括 BJT、IGBT、FET、GaN、SiC 和 Si/SiC 二极管/模块。
+
+-> 功率 IGBT 市场（2022 年）：$8.2B
+ • 英飞凌：28.95%
+ • 三菱电机：16.69%
+ • 富士电机：12.58%
+
+-> 功率 SiC 市场（2022 年）：$1.6B
+ • 意法半导体：37.21%
+ • 英飞凌：20.46%
+ • Wolfspeed：13.29%
+ • 罗姆：9.49%
+ • 安森美：7.08%
+
+-> 整体功率半导体领导者
+ • 英飞凌：19.11%
+ • 安森美：8.35%
+ • 意法半导体：5.98%
+
+-> Power GaN 快照 （2022）：~$200M
+ 仍处于早期阶段，但增长迅速——同比增长 60%。按估计份额计算的主要参与者：
+ • 电力集成 （24.6%）
+ • 纳微半导体 （18.5%）
+ • 氮化镓系统 （15.8%）
+ • EPC （14.7%）
+ • 创新科技 （11.9%）
+ • Transphorm （5.3%）
+ • 英飞凌 （2.2%）
+ • 其他 （7%）：onsemi、ST、Nexperia、VisIC、NexGen 等
+
+注意：本文重点介绍功率 GaN，与为 5G、Wi-Fi 6/7 和卫星通信提供动力的射频 GaN 不同。RF GaN（目前是一个 ~$2.5B 的细分市场）将在以后的文章中介绍。
+
+关键要点：
+ 功率半导体正在被重新定义。SiC 和 GaN 不再是新兴的，而是具有战略意义的。随着汽车、可再生能源和能源系统不断提高效率，这些技术正在成为未来电力电子的核心。
+
+非常好！我们一起仔细梳理您提供的数据，搞清 **2022年全球功率半导体市场（总规模251亿美元）** 的 **详细拆分**。下面是对原文信息的严谨计算和解释：
+
+---
+
+## ✅ 251 亿美元的组成
+
+原文提到三大主要部分：
+
+### 1. Power IGBT 市场
+
+* 市场规模：**82 亿美元**
+* 包含：IGBT 功率器件裸片、分立器件、模块
+* 占整体市场：约 32.67% （\$8.2B / \$25.1B）
+
+---
+
+### 2. Power BJT 市场
+
+* 市场规模：**11 亿美元**
+* 占整体市场：约 4.38% （\$1.1B / \$25.1B）
+
+---
+
+### 3. Power FET 市场
+
+* 市场规模：**140 亿美元**
+* 占整体市场：约 55.78% （\$14.0B / \$25.1B）
+* 包含：
+
+  * MOSFET
+  * JFET
+  * IPM（智能功率模块）
+  * 以及部分 GaN 和 SiC 功率 FET （见下文）
+
+---
+
+### 4. Power GaN 市场
+
+* 单独提及：**约 2 亿美元**
+* 注意：这部分 **已经包含在 Power FET 的 140 亿美元之内**，不是额外叠加在 251 亿美元之上。
+* 占整体市场：约 0.80% （\$0.2B / \$25.1B）
+
+---
+
+### 5. Power SiC 市场
+
+* 单独提及：**16 亿美元**
+* 同样，这部分也被算在 Power FET 类别或模块类别里，并不是额外加到 251 亿美元之上。
+* 占整体市场：约 6.37% （\$1.6B / \$25.1B）
+
+---
+
+## ❗ 细节解释
+
+> 原文说：
+>
+> *In this context, “Power Semiconductor” refers to medium-to-high-voltage (≥100V) devices in discrete or modular form—covering BJT, IGBT, FET, GaN, SiC, and Si/SiC diodes/modules.*
+
+这句话的意思是，**整个 251 亿美元** 就包括：
+
+* BJT
+* IGBT
+* FET（包括 MOSFET、JFET、IPM 等）
+* GaN（算进 FET 里）
+* SiC（算进 FET 或模块里）
+* Si/SiC 的二极管、模块
+
+因此：
+
+* GaN 和 SiC **不是额外叠加**，而是 **FET 或模块市场里的组成部分**。
+* 所以 **251 亿美元已经包含 GaN 和 SiC**。
+
+---
+
+## ✅ 最终细分汇总
+
+综合上面信息，2022 年功率半导体市场拆分如下（四舍五入）：
+
+| 分类                       | 市场规模（亿美元） | 占比        |
+| ------------------------ | --------- | --------- |
+| Power IGBT               | 82        | 32.67%    |
+| Power BJT                | 11        | 4.38%     |
+| Power FET\*              | 140       | 55.78%    |
+| \*\*其中：\*\*GaN（含在 FET 中） | **2**     | **0.80%** |
+| \*\*其中：\*\*SiC（含在 FET 中） | **16**    | **6.37%** |
+| 其他（Si/SiC 二极管、模块等）       | 18        | 7.17%     |
+| **合计**                   | **251**   | 100%      |
+
+\*FET市场包括：
+
+* MOSFET
+* JFET
+* IPM
+* SiC FET
+* GaN FET 等
+
+---
+
+## 🚀 关键洞察
+
+* **GaN**：仍属小市场，仅 2 亿美元，但年增长率高达 60%。
+* **SiC**：市场规模已达 16 亿美元，是 GaN 的 8 倍以上，正在快速蚕食 IGBT 市场。
+* **功率 MOSFET**：目前依然占据功率半导体的大头。
+* **IGBT**：虽有 82 亿美元市场，但在部分高频、高压场合正在被 SiC 替代。
+
+---
+
+所以，**总额 251 亿美元** 并不是简单叠加 GaN、SiC，而是一个包含所有功率器件（≥100V）的整体市场，其中 GaN 和 SiC 是正在快速崛起的子集。
+
+![](/picture/1748780447008.jpg)
+
+<https://www.linkedin.com/posts/ali-kamaly_semiconductors-powerdevices-sic-activity-7334916827044544515-aMD0?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
 # 32. 主要会议
 
