@@ -160,6 +160,7 @@
 - [39. Compound semiconductors: developing the hardware to unlock the UK’s AI action plan 化合物半导体对英国至关重要](#39-compound-semiconductors-developing-the-hardware-to-unlock-the-uks-ai-action-plan-化合物半导体对英国至关重要)
 - [40. 为 AI 数据中心提供动力：瑞萨电子与 GaN 时代 EETimes 播客](#40-为-ai-数据中心提供动力瑞萨电子与-gan-时代-eetimes-播客)
 - [49. 下一场全球GaN专利战](#49-下一场全球gan专利战)
+- [50.CMOS 与化合物晶圆厂：比较概述](#50cmos-与化合物晶圆厂比较概述)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -3013,3 +3014,26 @@ GaN功率市场即将爆发式增长，规模突破10亿美元。随着市场规
 
 <https://www.linkedin.com/pulse/next-global-gan-patent-wars-ralf-higgelke-gvlrf/?trackingId=If%2Famc3o1S8%2BYJKHzm0AhA%3D%3D>
 
+# 50.CMOS 与化合物晶圆厂：比较概述
+
+CMOS（互补金属氧化物半导体）和化合物晶圆厂都是半导体制造设施的类型，但它们采用的材料和工艺存在显着差异。
+
+--> CMOS晶圆厂：
+
+材料：主要使用硅作为半导体材料。硅储量丰富，相对便宜，并且具有制造晶体管的优异性能。
+
+工艺：涉及一系列复杂的步骤，包括光刻、蚀刻、沉积和掺杂，以在硅晶片上创建复杂的集成电路。
+
+应用： CMOS 技术广泛用于各种电子设备，包括微处理器、存储芯片和数字逻辑电路。
+
+--> 化合物晶圆厂：
+
+材料：采用化合物半导体，如砷化镓 （GaAs）、磷化铟 （InP） 和碳化硅 （SiC）。这些材料具有独特的特性，如更高的电子迁移率、更宽的带隙和更好的导热性，使其适用于特定应用。
+
+工艺：可能涉及与 CMOS 晶圆厂类似的步骤，但通常需要专门的技术来处理化合物半导体的不同特性。
+
+应用： 复合晶圆厂主要用于高频器件、光电元件和电力电子。示例包括微波放大器、激光器、LED 和功率晶体管。
+
+P.S. 如果您正在寻找半导体见解和工程细分，请查看我们的博客 The Semiconductor World — 简单的芯片指南。
+
+<https://www.linkedin.com/posts/ali-kamaly_postsiliconvalidation-semiconductors-chiptesting-activity-7344333709958885376-G6zG?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
