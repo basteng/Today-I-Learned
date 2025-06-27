@@ -58,6 +58,7 @@
   - [📜 脚本内容（文件名建议为：`setup-hotspot-proxy.sh`）](#-脚本内容文件名建议为setup-hotspot-proxysh)
   - [🔧 使用说明](#-使用说明)
   - [📌 注意事项](#-注意事项)
+  - [如果原有服务器失效，操作如下](#如果原有服务器失效操作如下)
 - [12. RPi USB Wi-Fi 适配器](#12-rpi-usb-wi-fi-适配器)
 - [13. 树莓派5运行claude，现在使用claude-start即可](#13-树莓派5运行claude现在使用claude-start即可)
   - [正常情况下：](#正常情况下)
@@ -1349,6 +1350,11 @@ chmod +x setup-hotspot-proxy.sh
 ---
 
 如你还想添加功能（如自动更新 DNS、测试连通性、日志记录等），我可以继续扩展脚本。是否需要？
+
+## 如果原有服务器失效，操作如下
+
+* 重新设置脚本 `sudo nano /etc/shadowsocks-libev/redir.json` 改变IP等信息
+* 重启服务 `sudo systemctl restart shadowsocks-libev-redir@redir`
 
 # 12. RPi USB Wi-Fi 适配器
 
