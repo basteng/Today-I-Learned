@@ -269,6 +269,7 @@
   - [84.3 MicroLED](#843-microled)
 - [85. HBM 的未来：必要但昂贵](#85-hbm-的未来必要但昂贵)
 - [86. 人工智能的最佳 DRAM](#86-人工智能的最佳-dram)
+- [87. Multichannel on-chip data transmission with InGaN/GaN multiple quantum wells devices](#87-multichannel-on-chip-data-transmission-with-ingangan-multiple-quantum-wells-devices)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -7376,3 +7377,6 @@ HBM4 是备受期待的下一代高带宽内存版本。与 HBM3 相比，它的
 尽管趋势很明显，但系统设计师仍然需要做好功课，为特定系统找到最合适的特定内存，并确保系统能够跟上。
 
 — 埃德·斯珀林 (Ed Sperling) 对本报告做出了贡献。
+
+# 87. Multichannel on-chip data transmission with InGaN/GaN multiple quantum wells devices
+
