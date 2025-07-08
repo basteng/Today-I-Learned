@@ -7380,3 +7380,8 @@ HBM4 是备受期待的下一代高带宽内存版本。与 HBM3 相比，它的
 
 # 87. Multichannel on-chip data transmission with InGaN/GaN multiple quantum wells devices
 
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Multichannel%20on-chip%20data%20transmission%20with%20InGaN%20GaN%20multiple%20quantum%20wells%20devices.pdf>
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Multichannel%20on-chip%20data%20transmission%20with%20InGaN%20GaN%20multiple%20quantum%20wells%20devices%20-%20Supplementary%20Files.docx>
+
+<https://www.researchsquare.com/article/rs-6976552/v1>
