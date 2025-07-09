@@ -108,6 +108,7 @@
 - [5. Toripalimab Plus Chemotherapy as a First-Line Therapy for Extensive-Stage Small Cell Lung Cancer](#5-toripalimab-plus-chemotherapy-as-a-first-line-therapy-for-extensive-stage-small-cell-lung-cancer)
 - [6. Gallium Nitride and Related Materials: Device Processing and Materials](#6-gallium-nitride-and-related-materials-device-processing-and-materials)
 - [7. Inverted V-shaped size-dependent emission wavelength shift in InGaN micro-LEDs with size down to 1 μm](#7-inverted-v-shaped-size-dependent-emission-wavelength-shift-in-ingan-micro-leds-with-size-down-to-1μm)
+- [8. Optimizing and Understanding amorphous SiN Thin Film Deposition for GaN-High-Electron-Mobility Transistors Using Machine Learning and Causal Discovery](#8-optimizing-and-understanding-amorphous-sin-thin-film-deposition-for-gan-high-electron-mobility-transistors-using-machine-learning-and-causal-discovery)
 
 20241204以后 （未下载）
 
@@ -530,3 +531,7 @@ https://books.google.fr/books?hl=en&lr=lang_en&id=F5ZYEQAAQBAJ&oi=fnd&pg=PA419&o
 # 7. Inverted V-shaped size-dependent emission wavelength shift in InGaN micro-LEDs with size down to 1 μm
 
 https://pubs.aip.org/aip/apl/article-abstract/125/9/091103/3309917/Inverted-V-shaped-size-dependent-emission?redirectedFrom=fulltext
+
+# 8. Optimizing and Understanding amorphous SiN Thin Film Deposition for GaN-High-Electron-Mobility Transistors Using Machine Learning and Causal Discovery
+
+https://pubs.acs.org/doi/10.1021/acsaelm.5c00408

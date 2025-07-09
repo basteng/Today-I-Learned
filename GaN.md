@@ -3111,3 +3111,4 @@ P.S. 如果您正在寻找半导体见解和工程细分，请查看我们的博
 
 <https://ieeexplore.ieee.org/document/10980633>
 
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Predistortion_of_GaN_Power_Amplifier_Transient_Responses_in_Time-Division_Duplex_Using_Machine_Learning.pdf>
