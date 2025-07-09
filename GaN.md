@@ -164,6 +164,8 @@
 - [40. 为 AI 数据中心提供动力：瑞萨电子与 GaN 时代 EETimes 播客](#40-为-ai-数据中心提供动力瑞萨电子与-gan-时代-eetimes-播客)
 - [49. 下一场全球GaN专利战](#49-下一场全球gan专利战)
 - [50.CMOS 与化合物晶圆厂：比较概述](#50cmos-与化合物晶圆厂比较概述)
+- [51. 机器学习在GaN领域的应用](#51-机器学习在gan领域的应用)
+  - [51.1 利用机器学习实现时分双工中 GaN 功率放大器瞬态响应的预失真](#511-利用机器学习实现时分双工中-gan-功率放大器瞬态响应的预失真)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -3100,4 +3102,12 @@ CMOS（互补金属氧化物半导体）和化合物晶圆厂都是半导体制�
 P.S. 如果您正在寻找半导体见解和工程细分，请查看我们的博客 The Semiconductor World — 简单的芯片指南。
 
 <https://www.linkedin.com/posts/ali-kamaly_postsiliconvalidation-semiconductors-chiptesting-activity-7344333709958885376-G6zG?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+# 51. 机器学习在GaN领域的应用
+
+## 51.1 利用机器学习实现时分双工中 GaN 功率放大器瞬态响应的预失真
+
+5G 和 6G 中时分双工技术的广泛应用对无线基站功率放大器 (PA) 的线性工作提出了挑战。尤其对于采用氮化镓 (GaN) 技术的 PA，其从空闲状态恢复时会产生强烈的瞬态行为，从而降低最初几个传输符号的传输质量。本文提出了一种基于轻量级、低速率循环模型的新型机器学习技术，用于对 PA 增益瞬态进行建模和补偿。我们在 3.6 GHz 频率下的射频测量检验了瞬态补偿和短期效应预失真的联合应用，结果显示两种类型的失真均得到了有效缓解。
+
+<https://ieeexplore.ieee.org/document/10980633>
 
