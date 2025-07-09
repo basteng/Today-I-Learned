@@ -65,6 +65,7 @@
 - [55. 当碰上人生大事时如何做决定](#55-当碰上人生大事时如何做决定)
 - [56. 香农 - 创造性思维](#56-香农---创造性思维)
 - [57. 沟通中最重要的事情是听到没有说的话。](#57-沟通中最重要的事情是听到没有说的话)
+- [58. 创始人创业领导力与新创团队绩效：团队学习的视角 - SERI Jungwoo Park](#58-创始人创业领导力与新创团队绩效团队学习的视角---seri-jungwoo-park)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2553,3 +2554,9 @@ So how can you tell if something truly awakens your inner vitality? When an acti
  •在几秒钟内形成的印象很难捕捉到一个人的全部复杂性。
 
  <https://www.linkedin.com/posts/dr-schweizer_the-most-important-thing-in-communication-activity-7334435884559216640-Xw4B?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+ # 58. 创始人创业领导力与新创团队绩效：团队学习的视角 - SERI Jungwoo Park  
+
+
+
+ <https://journals.sagepub.com/doi/10.1177/10464964251343212>
