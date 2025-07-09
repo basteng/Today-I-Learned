@@ -65,7 +65,7 @@
 - [55. 当碰上人生大事时如何做决定](#55-当碰上人生大事时如何做决定)
 - [56. 香农 - 创造性思维](#56-香农---创造性思维)
 - [57. 沟通中最重要的事情是听到没有说的话。](#57-沟通中最重要的事情是听到没有说的话)
-- [58. 创始人创业领导力与新创团队绩效：团队学习的视角 - SERI Jungwoo Park](#58-创始人创业领导力与新创团队绩效团队学习的视角---seri-jungwoo-park)
+- [58. 创始人创业领导力与新创团队绩效：团队学习的视角 - SERI - Jungwoo Park](#58-创始人创业领导力与新创团队绩效团队学习的视角---seri---jungwoo-park)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2555,8 +2555,10 @@ So how can you tell if something truly awakens your inner vitality? When an acti
 
  <https://www.linkedin.com/posts/dr-schweizer_the-most-important-thing-in-communication-activity-7334435884559216640-Xw4B?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
- # 58. 创始人创业领导力与新创团队绩效：团队学习的视角 - SERI Jungwoo Park  
+ # 58. 创始人创业领导力与新创团队绩效：团队学习的视角 - SERI - Jungwoo Park  
 
+鉴于新创企业团队 (NVT) 的动态运营环境，NVT 的学习过程对团队成功至关重要。我们认为，内部和外部团队学习过程将创始人创业领导力的影响转化为 NVT 团队的成长和绩效（体现在效能和敏捷性方面）。以韩国 78 个 NVT 为样本，研究结果在很大程度上支持了我们提出的模型。具体而言，内部团队学习在创始人创业领导力对团队成长和团队效能的影响中起中介作用。另一方面，外部团队学习在创始人创业领导力对团队敏捷性的影响中起中介作用。
 
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/park-et-al-2025-founder-s-entrepreneurial-leadership-and-new-venture-team-performance-a-team-learning-perspective.pdf>
 
  <https://journals.sagepub.com/doi/10.1177/10464964251343212>
