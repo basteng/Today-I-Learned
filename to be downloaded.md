@@ -110,6 +110,7 @@
 - [7. Inverted V-shaped size-dependent emission wavelength shift in InGaN micro-LEDs with size down to 1 μm](#7-inverted-v-shaped-size-dependent-emission-wavelength-shift-in-ingan-micro-leds-with-size-down-to-1μm)
 - [8. Optimizing and Understanding amorphous SiN Thin Film Deposition for GaN-High-Electron-Mobility Transistors Using Machine Learning and Causal Discovery](#8-optimizing-and-understanding-amorphous-sin-thin-film-deposition-for-gan-high-electron-mobility-transistors-using-machine-learning-and-causal-discovery)
 - [9. Sub-terahertz AlN/GaN resonant tunneling diode oscillators using split-ring resonators integrated with bow-tie antennas](#9-sub-terahertz-alngan-resonant-tunneling-diode-oscillators-using-split-ring-resonators-integrated-with-bow-tie-antennas)
+- [10. Gallium nitride-based resonant tunneling diode oscillators](#10-gallium-nitride-based-resonant-tunneling-diode-oscillators)
 
 20241204以后 （未下载）
 
@@ -540,3 +541,7 @@ https://pubs.acs.org/doi/10.1021/acsaelm.5c00408
 # 9. Sub-terahertz AlN/GaN resonant tunneling diode oscillators using split-ring resonators integrated with bow-tie antennas
 
 https://pubs.aip.org/aip/apl/article-abstract/126/24/243502/3350002/Sub-terahertz-AlN-GaN-resonant-tunneling-diode?redirectedFrom=fulltext
+
+# 10. Gallium nitride-based resonant tunneling diode oscillators
+
+https://pubs.aip.org/aip/apl/article-abstract/125/11/113503/3312090/Gallium-nitride-based-resonant-tunneling-diode?redirectedFrom=fulltext
