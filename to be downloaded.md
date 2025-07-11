@@ -111,6 +111,7 @@
 - [8. Optimizing and Understanding amorphous SiN Thin Film Deposition for GaN-High-Electron-Mobility Transistors Using Machine Learning and Causal Discovery](#8-optimizing-and-understanding-amorphous-sin-thin-film-deposition-for-gan-high-electron-mobility-transistors-using-machine-learning-and-causal-discovery)
 - [9. Sub-terahertz AlN/GaN resonant tunneling diode oscillators using split-ring resonators integrated with bow-tie antennas](#9-sub-terahertz-alngan-resonant-tunneling-diode-oscillators-using-split-ring-resonators-integrated-with-bow-tie-antennas)
 - [10. Gallium nitride-based resonant tunneling diode oscillators](#10-gallium-nitride-based-resonant-tunneling-diode-oscillators)
+- [11. Superior growth, yield, repeatability, and switching performance in GaN-based resonant tunneling diodes](#11-superior-growth-yield-repeatability-and-switching-performance-in-gan-based-resonant-tunneling-diodes)
 
 20241204以后 （未下载）
 
@@ -545,3 +546,7 @@ https://pubs.aip.org/aip/apl/article-abstract/126/24/243502/3350002/Sub-terahert
 # 10. Gallium nitride-based resonant tunneling diode oscillators
 
 https://pubs.aip.org/aip/apl/article-abstract/125/11/113503/3312090/Gallium-nitride-based-resonant-tunneling-diode?redirectedFrom=fulltext
+
+# 11. Superior growth, yield, repeatability, and switching performance in GaN-based resonant tunneling diodes
+
+https://pubs.aip.org/aip/apl/article-abstract/116/11/113501/150453/Superior-growth-yield-repeatability-and-switching?redirectedFrom=fulltext
