@@ -1,3 +1,7 @@
+- [1. 基于NTT的PQC乘法器的硬件实现](#1-基于ntt的pqc乘法器的硬件实现)
+- [2. 推荐阅读](#2-推荐阅读)
+  - [2.1 TCFPGA](#21-tcfpga)
+
 
 # 1. 基于NTT的PQC乘法器的硬件实现
 
@@ -14,3 +18,10 @@ A Flexible NTT-Based Multiplier for Post-Quantum Cryptography
 
 <https://ieeexplore.ieee.org/document/10007837>
 
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/A_Flexible_NTT-Based_Multiplier_for_Post-Quantum_Cryptography.pdf>
+
+# 2. 推荐阅读
+
+## 2.1 TCFPGA
+
+<https://tcfpga.org/books/recommended-reading>
