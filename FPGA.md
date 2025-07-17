@@ -1,6 +1,8 @@
 - [1. 基于NTT的PQC乘法器的硬件实现](#1-基于ntt的pqc乘法器的硬件实现)
 - [2. 推荐阅读](#2-推荐阅读)
   - [2.1 TCFPGA](#21-tcfpga)
+- [3. 选型](#3-选型)
+  - [3.1 赛灵思选型网站](#31-赛灵思选型网站)
 
 
 # 1. 基于NTT的PQC乘法器的硬件实现
@@ -25,3 +27,9 @@ A Flexible NTT-Based Multiplier for Post-Quantum Cryptography
 ## 2.1 TCFPGA
 
 <https://tcfpga.org/books/recommended-reading>
+
+# 3. 选型
+
+## 3.1 赛灵思选型网站
+
+<https://docs.amd.com/v/u/en-US/ultrascale-plus-fpga-product-selection-guide>
