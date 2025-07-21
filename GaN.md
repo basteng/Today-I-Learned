@@ -168,6 +168,7 @@
 - [50.CMOS 与化合物晶圆厂：比较概述](#50cmos-与化合物晶圆厂比较概述)
 - [51. 机器学习在GaN领域的应用](#51-机器学习在gan领域的应用)
   - [51.1 利用机器学习实现时分双工中 GaN 功率放大器瞬态响应的预失真](#511-利用机器学习实现时分双工中-gan-功率放大器瞬态响应的预失真)
+- [52. Determination of deformation potentials in InGaN at visible light region](#52-determination-of-deformation-potentials-in-ingan-at-visible-light-region)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -3240,3 +3241,7 @@ P.S. 如果您正在寻找半导体见解和工程细分，请查看我们的博
 <https://ieeexplore.ieee.org/document/10980633>
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Predistortion_of_GaN_Power_Amplifier_Transient_Responses_in_Time-Division_Duplex_Using_Machine_Learning.pdf>
+
+# 52. Determination of deformation potentials in InGaN at visible light region
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Determination%20of%20deformation%20potentials%20in%20InGaN%20at%20visible%20light%20region.pdf>
