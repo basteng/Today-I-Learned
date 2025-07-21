@@ -67,6 +67,14 @@
   - [或者更简单，创建软链接：](#或者更简单创建软链接)
 - [14. 需要使用grafcp才能在树莓派上运行claude](#14-需要使用grafcp才能在树莓派上运行claude)
   - [创建一个便捷的启动脚本：](#创建一个便捷的启动脚本)
+- [15. 树莓派科学上网修改IP](#15-树莓派科学上网修改ip)
+    - [1. **编辑配置文件**](#1-编辑配置文件)
+    - [2. **修改服务器 IP 地址**](#2-修改服务器-ip-地址)
+    - [3. **保存并退出**](#3-保存并退出)
+    - [4. **重启 Shadowsocks 服务**](#4-重启-shadowsocks-服务)
+    - [5. **检查服务状态**](#5-检查服务状态)
+    - [6. **测试翻墙是否正常**](#6-测试翻墙是否正常)
+    - [总结：](#总结-1)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1468,3 +1476,105 @@ chmod +x ~/claude-start.sh
 这样以后就可以一键启动整个代理环境和 Claude Code 了！
 
 恭喜你成功在树莓派上运行 Claude Code！现在可以享受 AI 编程助手的强大功能了！ 🎊
+
+# 15. 树莓派科学上网修改IP
+
+要更改 **Shadowsocks-libev** 服务（`shadowsocks-libev-local@config`）的翻墙服务器 **IP 地址**，您需要修改配置文件 `/etc/shadowsocks-libev/config.json` 中的 **`server`** 字段。
+
+以下是修改步骤：
+
+### 1. **编辑配置文件**
+
+在树莓派上，打开 **Shadowsocks-libev** 配置文件 `/etc/shadowsocks-libev/config.json` ：
+
+```bash
+sudo nano /etc/shadowsocks-libev/config.json
+```
+
+### 2. **修改服务器 IP 地址**
+
+在配置文件中，找到 **`server`** 字段，这里存储的是翻墙服务器的 **IP 地址**。您只需要将 **`server`** 字段更新为新的翻墙服务器的 **IP 地址**。
+
+例如，修改前：
+
+```json
+{
+  "server": "old-server-ip",   // 之前的服务器 IP
+  "server_port": 8388,         // 服务器端口
+  "password": "your-password", // 密码
+  "method": "aes-256-gcm",     // 加密方式
+  "local_address": "127.0.0.1",
+  "local_port": 1080,
+  "timeout": 300
+}
+```
+
+修改后：
+
+```json
+{
+  "server": "new-server-ip",   // 新的服务器 IP
+  "server_port": 8388,         // 服务器端口
+  "password": "your-password", // 密码
+  "method": "aes-256-gcm",     // 加密方式
+  "local_address": "127.0.0.1",
+  "local_port": 1080,
+  "timeout": 300
+}
+```
+
+确保 **`server`** 字段更新为新的翻墙服务器的 **IP 地址**。
+
+### 3. **保存并退出**
+
+在编辑完成后，按 `Ctrl + X` 退出编辑器，然后按 `Y` 保存文件，再按 `Enter` 确认保存。
+
+### 4. **重启 Shadowsocks 服务**
+
+为了使配置生效，需要重启 **Shadowsocks** 服务：
+
+```bash
+sudo systemctl restart shadowsocks-libev-local@config
+```
+
+### 5. **检查服务状态**
+
+确认 **Shadowsocks** 服务已成功重启，并且没有错误：
+
+```bash
+sudo systemctl status shadowsocks-libev-local@config
+```
+
+您应该看到类似以下的输出，说明服务正在运行：
+
+```
+● shadowsocks-libev-local@config.service - Shadowsocks-Libev Custom Client Service for config
+     Loaded: loaded (/lib/systemd/system/shadowsocks-libev-local@.service; enabled; preset: enabled)
+     Active: active (running) since [timestamp]
+       Docs: man:ss-local(1)
+   Main PID: [PID]
+      Tasks: 1 (limit: 9568)
+     CPU: 10ms
+     CGroup: /system.slice/system-shadowsocks\x2dlibev\x2dlocal.slice/shadowsocks-libev-local@config.service
+             └─[PID] /usr/bin/ss-local -c /etc/shadowsocks-libev/config.json
+```
+
+### 6. **测试翻墙是否正常**
+
+使用以下命令测试翻墙是否正常工作：
+
+```bash
+curl --proxy socks5://127.0.0.1:1080 https://www.google.com
+```
+
+如果能够成功访问 Google，说明新的翻墙服务器已正确配置并工作正常。
+
+---
+
+### 总结：
+
+1. 编辑 `/etc/shadowsocks-libev/config.json` 配置文件，将 **`server`** 字段中的 IP 地址更新为新的翻墙服务器的 IP 地址。
+2. 重启 **Shadowsocks** 服务使配置生效。
+3. 使用 `curl` 测试翻墙是否正常。
+
+如果您遇到任何问题，或者服务无法启动，请提供更多的错误信息，我们可以进一步帮助您排查。
