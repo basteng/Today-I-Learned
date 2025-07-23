@@ -3860,6 +3860,10 @@ CMOS 值系统由七个关键元素组成，如附图所示（改编自 波士�
 
 <https://www.linkedin.com/posts/abdulrahim-1_the-cmos-value-system-is-composed-of-seven-activity-7320535509124993024-0ZEW?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
+### 40.9.2 按公司市值
+
+![](/picture/semiconductor_value_chain.jpg)
+
 # 41. 机构观点
 
 ## CSIS
