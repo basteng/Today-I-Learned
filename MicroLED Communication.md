@@ -271,6 +271,8 @@
 - [85. HBM 的未来：必要但昂贵](#85-hbm-的未来必要但昂贵)
 - [86. 人工智能的最佳 DRAM](#86-人工智能的最佳-dram)
 - [87. Multichannel on-chip data transmission with InGaN/GaN multiple quantum wells devices](#87-multichannel-on-chip-data-transmission-with-ingangan-multiple-quantum-wells-devices)
+- [88. 水下光通信](#88-水下光通信)
+  - [88.1 水下无线光通信关键技术与应用展望综述（特邀）](#881-水下无线光通信关键技术与应用展望综述特邀)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -7394,3 +7396,16 @@ HBM4 是备受期待的下一代高带宽内存版本。与 HBM3 相比，它的
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Multichannel%20on-chip%20data%20transmission%20with%20InGaN%20GaN%20multiple%20quantum%20wells%20devices%20-%20Supplementary%20Files.docx>
 
 <https://www.researchsquare.com/article/rs-6976552/v1>
+
+# 88. 水下光通信
+
+## 88.1 水下无线光通信关键技术与应用展望综述（特邀）
+
+<https://www.researching.cn/ArticlePdf/m00006/2025/45/13/1306018.pdf>
+
+第38篇参考文献是Wang Lai
+
+3.8 Gb/s PAM-4 UOWC System Over a 2-m Underwater Channel Enabled by a Single-Pixel 175-μm GaN-Based Mini-LED
+
+<https://ieeexplore.ieee.org/document/9697387>
+
