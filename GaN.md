@@ -3245,3 +3245,7 @@ P.S. 如果您正在寻找半导体见解和工程细分，请查看我们的博
 # 52. Determination of deformation potentials in InGaN at visible light region
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Determination%20of%20deformation%20potentials%20in%20InGaN%20at%20visible%20light%20region.pdf>
+
+# 53. GaN马拉松论文集
+
+<https://www.sciencedirect.com/special-issue/10QBRD86N17>
