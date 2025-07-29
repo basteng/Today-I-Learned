@@ -42,6 +42,8 @@
 - [26. DRAM](#26-dram)
   - [26.1 DRAM 制程发展方向：3D DRAM](#261-dram-制程发展方向3d-dram)
   - [26.2 DRAM 制程发展方向：DRAM结构在制程微缩中的挑战](#262-dram-制程发展方向dram结构在制程微缩中的挑战)
+- [27. 有价值的视频](#27-有价值的视频)
+  - [27.1 Sander Hofman 领英上的晶体管视频](#271-sander-hofman-领英上的晶体管视频)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1224,5 +1226,24 @@ DRAM近年应对这个问题的措施包含在电晶体结构的变更，包括�
 
 <https://www.digitimes.com.tw/col/article/?id=16220>
 
+# 27. 有价值的视频
+
+## 27.1 Sander Hofman 领英上的晶体管视频
+
+这是我见过的对纳米级芯片内部发生的事情的最容易理解的解释。🍿 评论中带有画外音的完整链接！🔗
+
+数十亿个晶体管必须像一个微小的硅大脑一样协同工作。🧠
+
+在他们最新的解释中，Branch Education 以雄辩的方式分解了这一切：一步一步，首先介绍基本概念，然后再在这些基础知识的基础上解释更复杂的东西：
+
+1️⃣ 单个晶体管如何工作
+2️⃣ 逻辑门的工作原理
+3️⃣ 这些组件如何组合以执行复杂的算术
+
+感谢 Theodore Tablante 在 Branch 的团队让每个人都能接触到先进的半导体概念。👏
+
+<https://www.linkedin.com/posts/sanderhofman_%F0%9D%90%93%F0%9D%90%A1%F0%9D%90%A2%F0%9D%90%AC-%F0%9D%90%A2%F0%9D%90%AC-%F0%9D%90%AD%F0%9D%90%A1%F0%9D%90%9E-%F0%9D%90%A6%F0%9D%90%A8%F0%9D%90%AC%F0%9D%90%AD-%F0%9D%90%9A%F0%9D%90%9C%F0%9D%90%9C%F0%9D%90%9E%F0%9D%90%AC%F0%9D%90%AC%F0%9D%90%A2%F0%9D%90%9B%F0%9D%90%A5%F0%9D%90%9E-ugcPost-7355584795550044163-YDIK?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+<https://www.youtube.com/watch?v=_Pqfjer8-O4>
 
 
