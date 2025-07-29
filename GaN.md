@@ -169,6 +169,9 @@
 - [51. 机器学习在GaN领域的应用](#51-机器学习在gan领域的应用)
   - [51.1 利用机器学习实现时分双工中 GaN 功率放大器瞬态响应的预失真](#511-利用机器学习实现时分双工中-gan-功率放大器瞬态响应的预失真)
 - [52. Determination of deformation potentials in InGaN at visible light region](#52-determination-of-deformation-potentials-in-ingan-at-visible-light-region)
+- [53. GaN马拉松论文集](#53-gan马拉松论文集)
+- [54. 研究团队](#54-研究团队)
+  - [54.1 普渡大学-Weinstein Research Group-HybridMEMS-](#541-普渡大学-weinstein-research-group-hybridmems-)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -3249,3 +3252,31 @@ P.S. 如果您正在寻找半导体见解和工程细分，请查看我们的博
 # 53. GaN马拉松论文集
 
 <https://www.sciencedirect.com/special-issue/10QBRD86N17>
+
+# 54. 研究团队
+
+## 54.1 普渡大学-Weinstein Research Group-HybridMEMS-
+
+<https://engineering.purdue.edu/hybridmems/>
+
+GaN MMIC-MEMS谐振器
+
+GaN作为一种具有较大击穿场和饱和速度的宽带隙半导体，在高功率、高频电子器件和单片微波集成电路（MMIC）中的应用日益广泛。同时，GaN还具有优异的机电性能，包括高声速、低弹性损耗和强大的压电效应。这些特性使其成为RF MEMS谐振器的理想选择，并为高性能RF MEMS谐振器与高功率、高频电子器件的无缝集成提供了平台。该技术的新颖性和巨大潜力源于其结构中固有的二维电子气（2DEG），这可以为MEMS谐振器带来新的声电功能。这些功能包括：能够将2DEG用作第一个可切换压电谐振器中的换能电极，以及作为嵌入声腔中的HEMT通道，作为机械振动的主动传感器。这些功能可以带来真正可重构的系统，实现宽带宽无线通信。
+
+利用GaN独特的压电半导体特性和AlGaN/GaN异质结构，我们实现了高性能压电GaN MEMS谐振器，并集成在标准GaN MMIC工艺中，仅对标准流程进行了两处修改。基于该平台，我们能够研究外延结构的传导能力，并在谐振机械品质因数方面展示了突破性的性能，实现了迄今为止在GaN中测得的最高fQ产品，这得益于无金工艺制造。此外，我们还展示了首个固态可切换压电谐振器，使用导电的二维电子作为传导电极。我们还展示了具有破纪录信噪比的器件，它们使用有源晶体管感测机械振动。这些MEMS谐振器已应用于单片振荡器和滤波器中。
+
+
+示例
+
+
+GaN兰姆模式谐振器
+
+GaN谐振体晶体管
+
+可切换压电换能
+
+单片振荡器和滤波器
+
+<https://engineering.purdue.edu/hybridmems/?page_id=240>
+
+
