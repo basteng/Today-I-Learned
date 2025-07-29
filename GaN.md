@@ -172,6 +172,8 @@
 - [53. GaN马拉松论文集](#53-gan马拉松论文集)
 - [54. 研究团队](#54-研究团队)
   - [54.1 普渡大学-Weinstein Research Group-HybridMEMS-](#541-普渡大学-weinstein-research-group-hybridmems-)
+- [55. 书](#55-书)
+  - [55.1 LED 照明：设备和比色法](#551-led-照明设备和比色法)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -3278,5 +3280,30 @@ GaN谐振体晶体管
 单片振荡器和滤波器
 
 <https://engineering.purdue.edu/hybridmems/?page_id=240>
+
+# 55. 书
+
+## 55.1 LED 照明：设备和比色法
+
+我很高兴地宣布我的最新教科书《LED 照明：设备和比色法》的出版，该书现已通过 SPIE（国际光学与光子学学会）提供。
+
+这本入门级书籍全面、独立地概述了 LED 照明研究和实施的核心基本原理和实际应用。本书以光学、光子学和视觉科学的概念为基础，面向为学术和应用环境寻求严格且易于访问的资源的学生、教育工作者和专业人士。
+
+本书长达 460 页，详细介绍了以下主题：
+ • 光和半导体基础（射线、波、光子、热光、半导体光子学）
+ • 发光技术（LED、MICROLED、QLED、OLED、PeLED）
+ • 色觉和比色法（CRI、CT、CCT、色度图）
+ • LED 组件、灯具和面板（PCLED、CMLED、COB、灯丝、OLED）
+ • 智能、互联和以人为本的照明，包括昼夜节律和 40 Hz 伽马节律夹带
+
+这本书补充了我早期的著作《光子学基础》（与 B. E. A. Saleh 合著），适合用于课堂教学和独立学习。
+
+LED 照明有多个版本：
+ • 📕 SPIE 的平装和电子 PDF：https://lnkd.in/e8TpZgSC
+ • 📘 亚马逊精装本：https://lnkd.in/eBMjZVYY
+ • 📗 亚马逊平装本：https://lnkd.in/e9YqZ34w
+ • 📱 Google Play 上的 ePDF：https://lnkd.in/eKpkBGAX
+
+<https://www.linkedin.com/feed/update/urn:li:activity:7345856412092129280?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
 
