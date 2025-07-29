@@ -63,6 +63,16 @@
     - [✅ 示例操作：编辑对应配置文件](#-示例操作编辑对应配置文件)
       - [如果你看到的是 `/bin/bash`：](#如果你看到的是-binbash)
       - [如果你看到的是 `/bin/zsh`：](#如果你看到的是-binzsh)
+- [31. 安装nodejs时设置环境变量](#31-安装nodejs时设置环境变量)
+    - [✅ 添加 `C:\Program Files\nodejs\` 到系统环境变量的方法](#-添加-cprogram-filesnodejs-到系统环境变量的方法)
+      - [① 打开环境变量设置](#-打开环境变量设置)
+      - [② 编辑系统变量 `Path`](#-编辑系统变量-path)
+      - [③ 测试是否成功](#-测试是否成功)
+- [32. windows原生安装claude code](#32-windows原生安装claude-code)
+  - [1. **Native Windows Installation (No WSL, as of July 2025)**](#1-native-windows-installation-no-wsl-as-of-july-2025)
+  - [2. **Installation Using WSL (Windows Subsystem for Linux)**](#2-installation-using-wsl-windows-subsystem-for-linux)
+  - [**Key Considerations and Limitations**](#key-considerations-and-limitations)
+  - [**Resources**](#resources)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1140,5 +1150,189 @@ nano ~/.bashrc
 ```bash
 nano ~/.zshrc
 ```
+
+# 31. 安装nodejs时设置环境变量
+
+你要添加的是 **系统变量中的 `Path` 项的值**，不是新建变量名。下面是详细步骤：
+
+---
+
+### ✅ 添加 `C:\Program Files\nodejs\` 到系统环境变量的方法
+
+#### ① 打开环境变量设置
+
+1. 在开始菜单搜索「环境变量」或「Edit the system environment variables」
+2. 点击【环境变量】按钮（右下角）
+
+---
+
+#### ② 编辑系统变量 `Path`
+
+1. 在下方“系统变量”区域找到并双击：**`Path`**
+2. 点击【新建】
+3. 输入：
+
+   ```
+   C:\Program Files\nodejs\
+   ```
+4. 确定保存所有窗口
+
+---
+
+#### ③ 测试是否成功
+
+重新打开 CMD 命令行窗口，输入：
+
+```bash
+node -v
+npm -v
+npx -v
+```
+
+如果这三个命令都能返回版本号，说明设置成功。
+
+---
+
+如你安装的 Node.js 不在这个路径，可以手动到你安装目录确认路径。例如可能是：
+
+* `C:\Program Files\nodejs\`
+* 或者 `C:\Users\<你的用户名>\AppData\Roaming\npm\`
+
+都可以加进 `Path` 变量中。
+
+需要帮你远程确认路径位置也可以告诉我。
+
+# 32. windows原生安装claude code
+
+Claude Code can now be installed on Windows in two main ways: using **WSL (Windows Subsystem for Linux)**, which has been the traditional and most reliable approach, and as of July 2025, also **natively using Windows terminal, Node.js, and Git Bash**. Here are both methods with step-by-step instructions, including important caveats.
+
+## 1. **Native Windows Installation (No WSL, as of July 2025)**
+
+**Requirements:**
+- Windows 10 (version 2004+) or Windows 11
+- Node.js (v18 or higher recommended)
+- Git for Windows (needed for bash commands)
+- NPM (Node.js package manager)
+- Anthropic subscription with Claude Code access
+
+**Steps:**
+
+1. **Install Node.js (LTS recommended):**
+   - Download from the Node.js official website and install. Confirm version:
+     ```
+     node -v
+     npm -v
+     ```
+2. **Install Git for Windows:**
+   - Download and install from the official Git website.
+   - Take note of the install path, e.g., `C:\Program Files\Git\bin\bash.exe`[7][1].
+
+3. **Set the `CLAUDE_CODE_GIT_BASH_PATH` environment variable:**
+   - Open a PowerShell window and run:
+     ```
+     $env:CLAUDE_CODE_GIT_BASH_PATH="C:\Program Files\Git\bin\bash.exe"
+     ```
+     Adjust path if you installed Git elsewhere[1][7].
+
+4. **Install Claude Code globally with npm:**
+   ```
+   npm install -g @anthropic-ai/claude-code
+   ```
+
+5. **Authenticate Claude Code:**
+   ```
+   claude auth login
+   ```
+   - Copy the browser URL from the terminal into your browser to complete authentication[8][7].
+
+6. **Run Claude Code:**
+   ```
+   claude
+   ```
+
+**Troubleshooting:**
+- If you encounter permission errors with npm, configure npm to use a user-writable directory:
+  ```
+  mkdir ~/.npm-global
+  npm config set prefix '~/.npm-global'
+  ```
+  Then re-run the install command[9][1].
+
+## 2. **Installation Using WSL (Windows Subsystem for Linux)**
+
+**WSL-based installs are still widely supported and work reliably.**
+
+**Requirements:**
+- Windows 10/11
+- WSL2 (with Ubuntu or Debian recommended)
+
+**Steps:**
+
+1. **Enable WSL and install Ubuntu:**
+   - In an **Administrator PowerShell**:
+     ```
+     wsl --install
+     wsl --install -d Ubuntu
+     ```
+
+2. **Open Ubuntu from Start Menu and update packages:**
+   ```
+   sudo apt update
+   sudo apt upgrade
+   ```
+
+3. **Install Node.js & npm:**
+   ```
+   curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+   sudo apt-get install -y nodejs
+   node -v
+   npm -v
+   ```
+  
+4. **Install Claude Code:**
+   ```
+   sudo npm install -g @anthropic-ai/claude-code
+   ```
+
+5. **Authenticate Claude Code:**
+   ```
+   claude auth login
+   ```
+   - Open the provided URL in your browser to complete authentication.
+
+6. **Usage:**
+   - You can now access your Windows files under `/mnt/c/` from within WSL and run Claude Code commands[5][3][10].
+
+## **Key Considerations and Limitations**
+
+- Only the **native Windows install** route (with Node.js, Git Bash, and correct environment variable) allows installation *without* WSL as of July 2025[7][1][8].
+- If you encounter issues with the native method, WSL remains the fallback and most robust solution.
+- Always authenticate via `claude auth login` after installation; you may need to manually copy the URL into your Windows browser for login[5][6].
+
+## **Resources**
+
+- Anthropic official docs: step-by-step setup and troubleshooting guide for both WSL and native[1].
+- Community guides with scripts and troubleshooting details[5][6].
+- Japanese-language step-by-step guides available for Pro/Max users[8].
+
+If you are unsure whether to use **WSL or Native**: for maximum compatibility, use WSL; for new installs and convenience, try Native first. If you encounter issues, consult the related troubleshooting sections in the official and community guides.
+
+[1] https://docs.anthropic.com/en/docs/claude-code/setup
+[2] https://www.youtube.com/watch?v=lQmsLSR13ac
+[3] https://claude.ai/public/artifacts/03a4aa0c-67b2-427f-838e-63770900bf1d
+[4] https://www.youtube.com/watch?v=hI6Wb4zWK3Q
+[5] https://github.com/VonHoltenCodes/CLAUDECODE_COMPLETE_WINDOWS_INSTALL_GUIDE
+[6] https://github.com/SankeerthBoddu/ClaudeCodeWindows
+[7] https://www.youtube.com/watch?v=jXhCXVY9WCU
+[8] https://note.com/ritsuto2525/n/n46c8757a21b1
+[9] https://www.geeky-gadgets.com/how-to-install-claude-code-on-windows/
+[10] https://www.reddit.com/r/ChatGPTCoding/comments/1iyxtay/how_to_install_and_use_claude_code_maybe_the_best/
+[11] https://www.youtube.com/watch?v=hI6Wb4zWK3Q&vl=en-US
+[12] https://www.youtube.com/watch?v=yw14MMPTaEg
+[13] https://www.youtube.com/watch?v=pClhzCbGE8M
+[14] https://www.youtube.com/watch?v=XMQTJf8Pszc
+[15] https://www.youtube.com/watch?v=VB68aY71bTI
+[16] https://www.youtube.com/watch?v=-sNLKVptR8U
+[17] https://www.youtube.com/watch?v=hpMrTabldEY&vl=en
 
 
