@@ -53,6 +53,16 @@
   - [4. 直接测试](#4-直接测试)
   - [5. 进阶：Privoxy 转 HTTP 代理（可选）](#5-进阶privoxy-转-http-代理可选)
 - [30. WSL科学上网](#30-wsl科学上网)
+  - [30.1 设置自动检测（但似乎不好用）](#301-设置自动检测但似乎不好用)
+  - [✅ 第一步：创建 `proxy-auto.sh` 脚本](#-第一步创建-proxy-autosh-脚本)
+  - [✅ 第二步：给脚本赋可执行权限](#-第二步给脚本赋可执行权限)
+  - [✅ 第三步：自动加载代理脚本（可选但推荐）](#-第三步自动加载代理脚本可选但推荐)
+  - [✅ 使用效果](#-使用效果)
+  - [30.1 如何确定是哪个shell](#301-如何确定是哪个shell)
+    - [✅ 一步步确认你当前用的是哪个 shell](#-一步步确认你当前用的是哪个-shell)
+    - [✅ 示例操作：编辑对应配置文件](#-示例操作编辑对应配置文件)
+      - [如果你看到的是 `/bin/bash`：](#如果你看到的是-binbash)
+      - [如果你看到的是 `/bin/zsh`：](#如果你看到的是-binzsh)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1015,3 +1025,120 @@ source ~/.bashrc
 测试一下网络连通性：
 
 curl https://google.com
+
+## 30.1 设置自动检测（但似乎不好用）
+
+好的，我们来写一个**自动检测 ClashVerge 是否正在运行的 WSL 脚本**。如果检测到 Clash 开启，就自动设置代理；否则跳过设置，并给出提示信息。
+
+---
+
+## ✅ 第一步：创建 `proxy-auto.sh` 脚本
+
+你可以在 WSL 中运行以下命令：
+
+```bash
+nano ~/proxy-auto.sh
+```
+
+复制粘贴下面这段内容进去（使用 7890 是最常见的 HTTP 代理端口，如果你配置不同请替换）：
+
+```bash
+#!/bin/bash
+
+# 设置代理端口
+PROXY_ADDR="127.0.0.1"
+PROXY_PORT="7890"
+
+# 检查端口是否被监听（ClashVerge 是否开启）
+if nc -z $PROXY_ADDR $PROXY_PORT; then
+  export http_proxy="http://$PROXY_ADDR:$PROXY_PORT"
+  export https_proxy="http://$PROXY_ADDR:$PROXY_PORT"
+  export all_proxy="socks5://$PROXY_ADDR:$PROXY_PORT"
+  echo "✅ Proxy is ON. Using $PROXY_ADDR:$PROXY_PORT"
+else
+  echo "⚠️ ClashVerge 未运行，未设置代理"
+fi
+```
+
+保存并退出（Ctrl + O → 回车 → Ctrl + X）
+
+---
+
+## ✅ 第二步：给脚本赋可执行权限
+
+```bash
+chmod +x ~/proxy-auto.sh
+```
+
+---
+
+## ✅ 第三步：自动加载代理脚本（可选但推荐）
+
+编辑你的 bash 启动文件：
+
+```bash
+nano ~/.bashrc
+```
+
+在文件末尾加一行：
+
+```bash
+source ~/proxy-auto.sh
+```
+
+然后运行一次让它立即生效：
+
+```bash
+source ~/.bashrc
+```
+
+---
+
+## ✅ 使用效果
+
+* 每次打开 WSL 终端，自动检测 Clash 是否运行；
+* 如果运行，就设置代理；
+* 如果未运行，就不设置，同时提示你。
+
+---
+
+如需开关控制，也可继续保留 `proxy-on.sh` 和 `proxy-off.sh` 搭配 `pon/poff` 命令使用。是否也需要我帮你加“关闭代理”和“强制开启代理”的脚本？
+
+## 30.1 如何确定是哪个shell
+在 WSL 中，你用的是哪个 shell（bash 还是 zsh），决定了你要配置的是 `~/.bashrc` 还是 `~/.zshrc`。下面教你**确认并修改正确的配置文件**：
+
+---
+
+### ✅ 一步步确认你当前用的是哪个 shell
+
+在 WSL 终端中运行：
+
+```bash
+echo $SHELL
+```
+
+常见输出及对应配置文件如下：
+
+| 输出              | 配置文件                         |
+| --------------- | ---------------------------- |
+| `/bin/bash`     | `~/.bashrc`                  |
+| `/bin/zsh`      | `~/.zshrc`                   |
+| `/usr/bin/fish` | `~/.config/fish/config.fish` |
+
+---
+
+### ✅ 示例操作：编辑对应配置文件
+
+#### 如果你看到的是 `/bin/bash`：
+
+```bash
+nano ~/.bashrc
+```
+
+#### 如果你看到的是 `/bin/zsh`：
+
+```bash
+nano ~/.zshrc
+```
+
+
