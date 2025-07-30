@@ -55,6 +55,11 @@
 - [30. WSL科学上网](#30-wsl科学上网)
 - [31. VSCode如何打开WSL路径](#31-vscode如何打开wsl路径)
 - [32. 输入命令：code .，打开的是cursor，怎么换成VS CODE](#32-输入命令code-打开的是cursor怎么换成vs-code)
+- [33. how to install claude code in windows](#33-how-to-install-claude-code-in-windows)
+  - [1. **Native Windows Installation (No WSL, as of July 2025)**](#1-native-windows-installation-no-wsl-as-of-july-2025)
+  - [2. **Installation Using WSL (Windows Subsystem for Linux)**](#2-installation-using-wsl-windows-subsystem-for-linux)
+  - [**Key Considerations and Limitations**](#key-considerations-and-limitations)
+  - [**Resources**](#resources)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1096,3 +1101,136 @@ curl https://google.com
 [7] https://cloud.tencent.com/developer/information/WSL2:%E4%BD%BF%E7%94%A8*..code%20workspace%E6%96%87%E4%BB%B6%E4%BB%8E%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%90%AF%E5%8A%A8VSCode
 [8] https://www.youtube.com/watch?v=8Q1bRZaHH24
 [9] https://developer.aliyun.com/article/1673794
+
+# 33. how to install claude code in windows
+
+Claude Code can now be installed on Windows in two main ways: using **WSL (Windows Subsystem for Linux)**, which has been the traditional and most reliable approach, and as of July 2025, also **natively using Windows terminal, Node.js, and Git Bash**. Here are both methods with step-by-step instructions, including important caveats.
+
+## 1. **Native Windows Installation (No WSL, as of July 2025)**
+
+**Requirements:**
+- Windows 10 (version 2004+) or Windows 11
+- Node.js (v18 or higher recommended)
+- Git for Windows (needed for bash commands)
+- NPM (Node.js package manager)
+- Anthropic subscription with Claude Code access
+
+**Steps:**
+
+1. **Install Node.js (LTS recommended):**
+   - Download from the Node.js official website and install. Confirm version:
+     ```
+     node -v
+     npm -v
+     ```
+2. **Install Git for Windows:**
+   - Download and install from the official Git website.
+   - Take note of the install path, e.g., `C:\Program Files\Git\bin\bash.exe`[7][1].
+
+3. **Set the `CLAUDE_CODE_GIT_BASH_PATH` environment variable:**
+   - Open a PowerShell window and run:
+     ```
+     $env:CLAUDE_CODE_GIT_BASH_PATH="C:\Program Files\Git\bin\bash.exe"
+     ```
+     Adjust path if you installed Git elsewhere[1][7].
+
+4. **Install Claude Code globally with npm:**
+   ```
+   npm install -g @anthropic-ai/claude-code
+   ```
+
+5. **Authenticate Claude Code:**
+   ```
+   claude auth login
+   ```
+   - Copy the browser URL from the terminal into your browser to complete authentication[8][7].
+
+6. **Run Claude Code:**
+   ```
+   claude
+   ```
+
+**Troubleshooting:**
+- If you encounter permission errors with npm, configure npm to use a user-writable directory:
+  ```
+  mkdir ~/.npm-global
+  npm config set prefix '~/.npm-global'
+  ```
+  Then re-run the install command[9][1].
+
+## 2. **Installation Using WSL (Windows Subsystem for Linux)**
+
+**WSL-based installs are still widely supported and work reliably.**
+
+**Requirements:**
+- Windows 10/11
+- WSL2 (with Ubuntu or Debian recommended)
+
+**Steps:**
+
+1. **Enable WSL and install Ubuntu:**
+   - In an **Administrator PowerShell**:
+     ```
+     wsl --install
+     wsl --install -d Ubuntu
+     ```
+
+2. **Open Ubuntu from Start Menu and update packages:**
+   ```
+   sudo apt update
+   sudo apt upgrade
+   ```
+
+3. **Install Node.js & npm:**
+   ```
+   curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+   sudo apt-get install -y nodejs
+   node -v
+   npm -v
+   ```
+  
+4. **Install Claude Code:**
+   ```
+   sudo npm install -g @anthropic-ai/claude-code
+   ```
+
+5. **Authenticate Claude Code:**
+   ```
+   claude auth login
+   ```
+   - Open the provided URL in your browser to complete authentication.
+
+6. **Usage:**
+   - You can now access your Windows files under `/mnt/c/` from within WSL and run Claude Code commands[5][3][10].
+
+## **Key Considerations and Limitations**
+
+- Only the **native Windows install** route (with Node.js, Git Bash, and correct environment variable) allows installation *without* WSL as of July 2025[7][1][8].
+- If you encounter issues with the native method, WSL remains the fallback and most robust solution.
+- Always authenticate via `claude auth login` after installation; you may need to manually copy the URL into your Windows browser for login[5][6].
+
+## **Resources**
+
+- Anthropic official docs: step-by-step setup and troubleshooting guide for both WSL and native[1].
+- Community guides with scripts and troubleshooting details[5][6].
+- Japanese-language step-by-step guides available for Pro/Max users[8].
+
+If you are unsure whether to use **WSL or Native**: for maximum compatibility, use WSL; for new installs and convenience, try Native first. If you encounter issues, consult the related troubleshooting sections in the official and community guides.
+
+[1] https://docs.anthropic.com/en/docs/claude-code/setup
+[2] https://www.youtube.com/watch?v=lQmsLSR13ac
+[3] https://claude.ai/public/artifacts/03a4aa0c-67b2-427f-838e-63770900bf1d
+[4] https://www.youtube.com/watch?v=hI6Wb4zWK3Q
+[5] https://github.com/VonHoltenCodes/CLAUDECODE_COMPLETE_WINDOWS_INSTALL_GUIDE
+[6] https://github.com/SankeerthBoddu/ClaudeCodeWindows
+[7] https://www.youtube.com/watch?v=jXhCXVY9WCU
+[8] https://note.com/ritsuto2525/n/n46c8757a21b1
+[9] https://www.geeky-gadgets.com/how-to-install-claude-code-on-windows/
+[10] https://www.reddit.com/r/ChatGPTCoding/comments/1iyxtay/how_to_install_and_use_claude_code_maybe_the_best/
+[11] https://www.youtube.com/watch?v=hI6Wb4zWK3Q&vl=en-US
+[12] https://www.youtube.com/watch?v=yw14MMPTaEg
+[13] https://www.youtube.com/watch?v=pClhzCbGE8M
+[14] https://www.youtube.com/watch?v=XMQTJf8Pszc
+[15] https://www.youtube.com/watch?v=VB68aY71bTI
+[16] https://www.youtube.com/watch?v=-sNLKVptR8U
+[17] https://www.youtube.com/watch?v=hpMrTabldEY&vl=en
