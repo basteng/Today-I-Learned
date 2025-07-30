@@ -1015,3 +1015,82 @@ source ~/.bashrc
 测试一下网络连通性：
 
 curl https://google.com
+
+# 31. VSCode如何打开WSL路径
+
+要在VSCode中打开WSL路径，可以采用以下常用方法：
+
+1. **在WSL终端中使用 code 命令**
+   - 打开你的WSL终端（如Ubuntu）。
+   - 进入你想用VSCode打开的目录，例如 `cd ~/myproject`。
+   - 输入命令：`code .`
+   - 这会直接以Remote WSL方式在VSCode中打开该文件夹。如果首次使用，会自动下载安装所需组件[9][7][11][13]。
+
+2. **从VSCode窗口中连接WSL**
+   - 在Windows上启动VSCode。
+   - 按下 `F1` 键，输入并选择 `WSL: Connect to WSL`（连接默认发行版），或 `WSL: Connect to WSL using Distro`（选择特定发行版）。
+   - 使用“文件”>“打开文件夹”选择你在WSL下的目标目录[10][9]。
+
+3. **从Windows命令行或PowerShell直接指定WSL路径**
+   - 使用命令格式：
+     ```
+     code --remote wsl+ 
+     ```
+     例如：`code --remote wsl+Ubuntu /home/username/project`[9][10]。
+
+4. **通过VSCode终端切换默认Shell为WSL**
+   - 在VSCode中按 `Ctrl+Shift+P`，输入 `Terminal: Select Default Shell`，然后选择你安装的WSL终端。
+   - 新终端即为WSL环境[5]。
+
+**注意事项：**
+- `code .`命令需要在VSCode安装时勾选“添加到PATH”，否则WSL终端中无法识别该命令[6][9]。
+- 若遇到`code`命令无效，可重启终端或重新安装VSCode并确保PATH设置[10]。
+
+以上方法均可高效地在VSCode中打开和管理WSL下的文件和项目目录。
+
+[1] https://www.youtube.com/watch?v=q74CP4fB7cY
+[2] https://www.youtube.com/watch?v=8Q1bRZaHH24
+[3] https://www.youtube.com/watch?v=FQNO8DsGnlQ
+[4] https://www.youtube.com/watch?v=Qcyycy4aYgY
+[5] https://worktile.com/kb/ask/553003.html
+[6] https://learn.microsoft.com/zh-cn/windows/wsl/tutorials/wsl-vscode
+[7] https://blog.csdn.net/Little_Shrimp/article/details/128106347
+[8] https://blog.csdn.net/qq_43152052/article/details/124640317
+[9] https://vscode.js.cn/docs/remote/wsl
+[10] https://vscode.github.net.cn/docs/remote/wsl
+[11] https://jingyan.baidu.com/article/9c69d48f6afb4a52c8024e2e.html
+[12] https://mission-young.github.io/2020/03/26/%E8%A7%A3%E5%86%B3vscode-%E6%89%93%E5%BC%80WSL-%E7%B3%BB%E7%BB%9F%E7%9B%AE%E5%BD%95%E5%87%BA%E9%94%99%E7%9A%84%E9%97%AE%E9%A2%98/
+[13] https://www.cnblogs.com/tianyamoon/p/14195169.html
+
+# 32. 输入命令：code .，打开的是cursor，怎么换成VS CODE
+
+出现你在WSL中输入`code .`却打开的是**Cursor**，不是**VS Code**，原因是Cursor安装时在PATH变量中优先于VS Code，导致code命令被Cursor覆盖了[5][6]。
+
+**解决办法：**
+
+1. **调整环境变量PATH顺序（推荐）**
+   - 打开Windows“系统属性”->“高级”->“环境变量”。
+   - 找到“系统变量”或“用户变量”里的`PATH`，把VS Code的路径（如 `C:\Users\\AppData\Local\Programs\Microsoft VS Code\bin`）移到Cursor路径（如 `C:\Users\\AppData\Local\Programs\cursor\resources\app\bin`）的前面[5][6]。
+   - 确保在PATH变量中，VS Code的bin路径排在Cursor前。
+
+2. **注销或重启生效**
+   - 修改PATH后，关闭所有终端窗口，并重新打开WSL终端再执行`code .`命令。
+
+3. **卸载或重命名Cursor命令（可选）**
+   - 不需要Cursor的“code”命令时，可以直接卸载Cursor，或手动重命名Cursor的`code`和`code.cmd`为其他名字（如`cursor`和`cursor.cmd`）[5]。
+
+这样设置好后，`code .`会在WSL中正确启动VS Code，而`cursor .`可以单独用来启动Cursor编辑器，实现两个命令分别调用不同的编辑器。
+
+**注意：**
+- 修改环境变量需要管理员权限，并注意不要删除其他系统路径，否则可能导致程序异常。
+- 这种现象是因为Cursor安装时把自己注册为`code`命令，很多用户反馈有同样困扰[5][6]。
+
+[1] https://blog.csdn.net/henryhu712/article/details/132812380
+[2] https://cloud.tencent.com/developer/information/VScode%E6%97%A0%E6%B3%95%E6%AD%A3%E7%A1%AE%E8%BF%9E%E6%8E%A5%E5%88%B0WSL
+[3] https://www.reddit.com/r/ClaudeAI/comments/1lantwy/complete_wsl_claude_code_cursor_setup_guide_for/?tl=zh-hans
+[4] https://blog.csdn.net/Flying_Motor/article/details/138114028
+[5] https://github.com/cursor/cursor/issues/1238
+[6] https://forum.cursor.com/t/cursor-install-broke-code-command-in-wsl2/712
+[7] https://cloud.tencent.com/developer/information/WSL2:%E4%BD%BF%E7%94%A8*..code%20workspace%E6%96%87%E4%BB%B6%E4%BB%8E%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%90%AF%E5%8A%A8VSCode
+[8] https://www.youtube.com/watch?v=8Q1bRZaHH24
+[9] https://developer.aliyun.com/article/1673794
