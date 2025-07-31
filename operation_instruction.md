@@ -60,6 +60,12 @@
   - [2. **Installation Using WSL (Windows Subsystem for Linux)**](#2-installation-using-wsl-windows-subsystem-for-linux)
   - [**Key Considerations and Limitations**](#key-considerations-and-limitations)
   - [**Resources**](#resources)
+- [34. cmd中可以运行gemini CLI，但是VS Code里不能运行gemini CLI 解决方法](#34-cmd中可以运行gemini-cli但是vs-code里不能运行gemini-cli-解决方法)
+  - [方案 A（最快）：把 VS Code 终端切换为 **Command Prompt (cmd)**](#方案-a最快把-vs-code-终端切换为-command-prompt-cmd)
+  - [方案 B（当前终端临时绕过）：在 PowerShell 中临时放开策略](#方案-b当前终端临时绕过在-powershell-中临时放开策略)
+  - [方案 C（对你账号永久生效）：把 PowerShell 策略改为 **RemoteSigned**](#方案-c对你账号永久生效把-powershell-策略改为-remotesigned)
+  - [方案 D（不改策略也能跑）：显式调用 `.cmd` 可执行](#方案-d不改策略也能跑显式调用-cmd-可执行)
+  - [额外检查（可选但有用）](#额外检查可选但有用)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1234,3 +1240,100 @@ If you are unsure whether to use **WSL or Native**: for maximum compatibility, u
 [15] https://www.youtube.com/watch?v=VB68aY71bTI
 [16] https://www.youtube.com/watch?v=-sNLKVptR8U
 [17] https://www.youtube.com/watch?v=hpMrTabldEY&vl=en
+
+# 34. cmd中可以运行gemini CLI，但是VS Code里不能运行gemini CLI 解决方法
+
+你这个现象是**VS Code 默认用 PowerShell** 作为集成终端，而 PowerShell 的 **ExecutionPolicy（脚本执行策略）被设置为“Restricted”**，所以像 `npm.ps1`、`gemini.ps1` 这类 shim 脚本会被拦截；在 **cmd** 里没问题，是因为它走的是 `npm.cmd` / `gemini.cmd`，不受 PowerShell 限制。
+
+给你几种等价解决方案，按偏好选择其一即可：
+
+---
+
+## 方案 A（最快）：把 VS Code 终端切换为 **Command Prompt (cmd)**
+
+1. VS Code 顶部菜单 **Terminal → New Terminal** 右侧的小箭头 → **Select Default Profile**
+2. 选 **Command Prompt**。
+3. 打开一个新终端，再运行：
+
+   ```cmd
+   gemini --help
+   npm -v
+   ```
+
+> 这和你在独立的 cmd 中运行一致，基本“一步到位”。
+
+---
+
+## 方案 B（当前终端临时绕过）：在 PowerShell 中临时放开策略
+
+在 VS Code 的 PowerShell 终端先执行（仅对**当前终端会话**有效）：
+
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force
+```
+
+然后再试：
+
+```powershell
+npm -v
+gemini --help
+```
+
+---
+
+## 方案 C（对你账号永久生效）：把 PowerShell 策略改为 **RemoteSigned**
+
+> 适用于个人电脑。公司域策略可能会覆盖，如果报错就用方案 A 或 B。
+
+在 PowerShell（普通权限即可）执行：
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+```
+
+验证：
+
+```powershell
+Get-ExecutionPolicy -List
+```
+
+重启 VS Code，再试：
+
+```powershell
+npm -v
+gemini --help
+```
+
+---
+
+## 方案 D（不改策略也能跑）：显式调用 `.cmd` 可执行
+
+在 PowerShell 中直接调用 `.cmd` 版本，绕过 `.ps1`：
+
+```powershell
+npm.cmd -v
+gemini.cmd --help
+npx.cmd gemini "hello"
+```
+
+---
+
+## 额外检查（可选但有用）
+
+1. **确保全局 npm bin 在 PATH 中**（通常是 `%APPDATA%\npm`）
+   在 PowerShell 中：
+
+   ```powershell
+   echo $env:PATH
+   where gemini
+   where npm
+   ```
+
+   如果 `where gemini` 指向 `…\AppData\Roaming\npm\gemini.cmd` / `gemini.ps1` 就对了。
+2. **修改后重启 VS Code**，让 PATH/策略生效。
+
+---
+
+如果你希望继续用 PowerShell，我建议用 **方案 C（RemoteSigned）**；如果想省事直接能跑，用 **方案 A（切到 cmd）**。
+你现在在 VS Code 里具体报的错误（比如运行 `gemini` 的提示信息）也可以贴出来，我再帮你对症处理。
+
