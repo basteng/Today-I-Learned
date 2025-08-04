@@ -66,6 +66,7 @@
   - [方案 C（对你账号永久生效）：把 PowerShell 策略改为 **RemoteSigned**](#方案-c对你账号永久生效把-powershell-策略改为-remotesigned)
   - [方案 D（不改策略也能跑）：显式调用 `.cmd` 可执行](#方案-d不改策略也能跑显式调用-cmd-可执行)
   - [额外检查（可选但有用）](#额外检查可选但有用)
+- [35. Kodi插件配置](#35-kodi插件配置)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1336,4 +1337,25 @@ npx.cmd gemini "hello"
 
 如果你希望继续用 PowerShell，我建议用 **方案 C（RemoteSigned）**；如果想省事直接能跑，用 **方案 A（切到 cmd）**。
 你现在在 VS Code 里具体报的错误（比如运行 `gemini` 的提示信息）也可以贴出来，我再帮你对症处理。
+
+# 35. Kodi插件配置
+
+1. 确定配置文件位置
+对于 Kodi 的 YouTube 插件，API 信息应该写在：
+
+text
+~/.kodi/userdata/addon_data/plugin.video.youtube/settings.xml
+
+修改配置
+
+<setting id="youtube.api.key" value="AIzaSyCs5XGxfQSve5sKNOBxmXplo_w6elfPq7g"/>
+<setting id="youtube.api.id" value="1092297830275-nb4cfqsan81eud3e6sd7vqfgamomaala.apps.googleusercontent.com"/>
+<setting id="youtube.api.secret" value="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"/>
+
+默认配置
+
+<setting id="youtube.api.key" default="true" />
+<setting id="youtube.api.id" default="true" />
+<setting id="youtube.api.secret" default="true" />
+
 
