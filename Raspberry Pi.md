@@ -75,6 +75,30 @@
     - [5. **检查服务状态**](#5-检查服务状态)
     - [6. **测试翻墙是否正常**](#6-测试翻墙是否正常)
     - [总结：](#总结-1)
+- [16. 树莓派透明代理设置](#16-树莓派透明代理设置)
+  - [解决方案](#解决方案)
+    - [1. 修正绑定参数](#1-修正绑定参数)
+    - [2. 检查配置文件](#2-检查配置文件)
+    - [3. 检查端口占用](#3-检查端口占用)
+    - [4. 测试网络连接](#4-测试网络连接)
+    - [5. 推荐的启动命令](#5-推荐的启动命令)
+    - [6. 更新加密方法](#6-更新加密方法)
+    - [2. 重启服务](#2-重启服务)
+    - [3. 验证监听地址](#3-验证监听地址)
+    - [4. 配置 iptables 透明代理规则](#4-配置-iptables-透明代理规则)
+    - [5. 启用 IP 转发](#5-启用-ip-转发)
+    - [6. 验证配置](#6-验证配置)
+  - [当前配置状态检查](#当前配置状态检查)
+    - [1. 检查 ss-redir 配置](#1-检查-ss-redir-配置)
+    - [2. 启用 IP 转发](#2-启用-ip-转发)
+    - [3. 测试透明代理](#3-测试透明代理)
+    - [4. 如果不工作，检查日志](#4-如果不工作检查日志)
+    - [5. 保存 iptables 规则（重要）](#5-保存-iptables-规则重要)
+  - [解决方法](#解决方法)
+    - [方法1: 使用 tee 命令](#方法1-使用-tee-命令)
+    - [方法2: 先创建目录](#方法2-先创建目录)
+    - [方法3: 使用 iptables-persistent 包](#方法3-使用-iptables-persistent-包)
+    - [方法4: 手动创建启动脚本](#方法4-手动创建启动脚本)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1578,3 +1602,300 @@ curl --proxy socks5://127.0.0.1:1080 https://www.google.com
 3. 使用 `curl` 测试翻墙是否正常。
 
 如果您遇到任何问题，或者服务无法启动，请提供更多的错误信息，我们可以进一步帮助您排查。
+
+# 16. 树莓派透明代理设置
+
+1.停掉ss-local
+
+要停止 `ss-local` 服务，您可以执行以下命令：
+
+1. **停止 `ss-local` 服务：**
+
+   ```bash
+   sudo systemctl stop shadowsocks-libev-local@config
+   ```
+
+   这将停止 `ss-local` 服务（假设它使用的是 `config` 配置）。
+
+2. **检查 `ss-local` 是否已停止：**
+   您可以使用以下命令确认 `ss-local` 是否已经停止：
+
+   ```bash
+   sudo systemctl status shadowsocks-libev-local@config
+   ```
+
+   如果显示为 `inactive (dead)`，则表示已成功停止。
+
+3. **禁用 `ss-local`（如果不打算再次启用）：**
+   如果您不打算重新启用 `ss-local`，可以禁用它：
+
+   ```bash
+   sudo systemctl disable shadowsocks-libev-local@config
+   ```
+
+通过这些步骤，您可以停掉 `ss-local` 服务，从而避免 `ss-local` 和 `ss-redir` 之间的端口冲突。
+
+
+2.设置ss-redir
+
+## 解决方案
+
+### 1. 修正绑定参数
+`-b wlan0` 参数有问题，应该使用具体 IP 地址：
+
+```bash
+# 查看 wlan0 的 IP 地址
+ifconfig wlan0
+
+# 假设 wlan0 IP 是 192.168.4.1，使用：
+ss-redir -c /etc/shadowsocks-libev/redir.json -b 192.168.4.1 -l 1081
+
+# 或者简单使用监听所有接口：
+ss-redir -c /etc/shadowsocks-libev/redir.json -l 1081
+```
+
+### 2. 检查配置文件
+确认 `/etc/shadowsocks-libev/redir.json` 的内容：
+
+```bash
+cat /etc/shadowsocks-libev/redir.json
+```
+
+配置应该类似：
+```json
+{
+    "server": "你的服务器域名或IP",
+    "server_port": 443,
+    "local_address": "0.0.0.0",
+    "local_port": 1081,
+    "password": "你的密码",
+    "method": "aes-256-gcm",
+    "timeout": 300
+}
+```
+
+### 3. 检查端口占用
+```bash
+# 检查 1081 端口是否被占用
+netstat -tlnp | grep 1081
+
+# 如果被占用，杀掉相关进程或换端口
+```
+
+### 4. 测试网络连接
+```bash
+# 测试能否连接到 SS 服务器
+ping 你的服务器IP
+
+# 测试服务器端口
+telnet 你的服务器IP 你的服务器端口
+```
+
+### 5. 推荐的启动命令
+```bash
+# 最简单的启动方式
+ss-redir -c /etc/shadowsocks-libev/redir.json -v
+
+# 如果需要后台运行
+ss-redir -c /etc/shadowsocks-libev/redir.json -f /var/run/ss-redir.pid
+```
+
+### 6. 更新加密方法
+将配置文件中的 `"method"` 从 `"aes-256-cfb"` 改为：
+- `"aes-256-gcm"` (推荐)
+- `"chacha20-ietf-poly1305"`
+- `"aes-128-gcm"`
+
+先试试不使用 `-b` 参数的简单启动方式，看能否正常运行。
+
+---------------------------------------------
+
+### 2. 重启服务
+```bash
+sudo systemctl restart shadowsocks-libev-redir@redir
+```
+
+### 3. 验证监听地址
+```bash
+sudo netstat -tlnp | grep 1081
+```
+应该看到 `0.0.0.0:1081` 而不是 `127.0.0.1:1081`
+
+### 4. 配置 iptables 透明代理规则
+```bash
+# 创建 SHADOWSOCKS 链
+sudo iptables -t nat -N SHADOWSOCKS 2>/dev/null
+
+# 清空可能存在的规则
+sudo iptables -t nat -F SHADOWSOCKS
+
+# 排除服务器和本地地址
+sudo iptables -t nat -A SHADOWSOCKS -d 149.28.79.242 -j RETURN
+sudo iptables -t nat -A SHADOWSOCKS -d 0.0.0.0/8 -j RETURN
+sudo iptables -t nat -A SHADOWSOCKS -d 127.0.0.0/8 -j RETURN
+sudo iptables -t nat -A SHADOWSOCKS -d 169.254.0.0/16 -j RETURN
+sudo iptables -t nat -A SHADOWSOCKS -d 192.168.0.0/16 -j RETURN
+sudo iptables -t nat -A SHADOWSOCKS -d 10.0.0.0/8 -j RETURN
+
+# 重定向其他流量到 ss-redir
+sudo iptables -t nat -A SHADOWSOCKS -p tcp -j REDIRECT --to-ports 1081
+
+# 应用到 hotspot 客户端流量（假设你的 AP 网段是 192.168.4.0/24）
+sudo iptables -t nat -A PREROUTING -s 192.168.4.0/24 -p tcp -j SHADOWSOCKS
+```
+
+### 5. 启用 IP 转发
+```bash
+echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
+echo 'net.ipv4.ip_forward=1' | sudo tee -a /etc/sysctl.conf
+```
+
+### 6. 验证配置
+```bash
+# 检查服务状态
+sudo systemctl status shadowsocks-libev-redir@redir
+
+# 检查 iptables 规则
+sudo iptables -t nat -L SHADOWSOCKS -n -v
+
+# 检查监听端口
+sudo netstat -tlnp | grep 1081
+```
+
+完成这些步骤后，手机连接到树莓派 hotspot 就能自动通过透明代理访问网络了。
+
+---------------------------------
+
+很好！iptables 规则已经正确配置了。我注意到你有两条 REDIRECT 规则（可能是重复添加了），但这不会影响功能。
+
+## 当前配置状态检查
+
+现在让我们确认所有组件都正常：
+
+### 1. 检查 ss-redir 配置
+确保 ss-redir 监听在 `0.0.0.0:1081`：
+```bash
+sudo netstat -tlnp | grep 1081
+```
+应该显示：`0.0.0.0:1081` 而不是 `127.0.0.1:1081`
+
+如果还是 `127.0.0.1`，需要修改配置：
+```bash
+sudo nano /etc/shadowsocks-libev/redir.json
+```
+确保 `local_address` 是 `"0.0.0.0"`，然后重启：
+```bash
+sudo systemctl restart shadowsocks-libev-redir@redir
+```
+
+### 2. 启用 IP 转发
+```bash
+echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
+```
+
+### 3. 测试透明代理
+
+**用手机测试**：
+1. 连接到树莓派 hotspot
+2. 访问 `whatismyipaddress.com` 或 `ipinfo.io`
+3. 看显示的 IP 是否为你的 SS 服务器 IP (`149.28.79.242`)
+
+**在树莓派上监控流量**：
+```bash
+# 实时查看 iptables 计数器变化
+watch -n 1 'sudo iptables -t nat -L SHADOWSOCKS -n -v'
+```
+当手机访问网站时，应该看到 pkts 和 bytes 数值在增加。
+
+### 4. 如果不工作，检查日志
+```bash
+# 查看 ss-redir 日志
+sudo journalctl -u shadowsocks-libev-redir@redir -f
+
+# 查看系统日志
+sudo dmesg | tail -20
+```
+
+### 5. 保存 iptables 规则（重要）
+配置工作后，保存规则以便重启后自动加载：
+```bash
+# 安装 iptables-persistent
+sudo apt install iptables-persistent
+
+# 保存当前规则
+sudo iptables-save > /etc/iptables/rules.v4
+```
+
+试试手机连接测试，如果还有问题，贴一下 `sudo netstat -tlnp | grep 1081` 的输出结果。
+
+------------------------------------
+
+权限问题，需要用 `tee` 命令或者先创建目录：
+
+## 解决方法
+
+### 方法1: 使用 tee 命令
+```bash
+sudo iptables-save | sudo tee /etc/iptables/rules.v4
+```
+
+### 方法2: 先创建目录
+```bash
+# 创建目录
+sudo mkdir -p /etc/iptables
+
+# 保存规则
+sudo iptables-save | sudo tee /etc/iptables/rules.v4
+```
+
+### 方法3: 使用 iptables-persistent 包
+```bash
+# 安装 iptables-persistent
+sudo apt update
+sudo apt install iptables-persistent
+
+# 在安装过程中会询问是否保存当前规则，选择 Yes
+
+# 或者安装后手动保存
+sudo netfilter-persistent save
+```
+
+### 方法4: 手动创建启动脚本
+如果上面方法不行，可以创建启动脚本：
+```bash
+# 创建脚本文件
+sudo nano /etc/init.d/iptables-restore
+
+# 添加以下内容：
+#!/bin/bash
+# 在启动时恢复 iptables 规则
+
+# 你的 iptables 规则
+iptables -t nat -N SHADOWSOCKS 2>/dev/null
+iptables -t nat -F SHADOWSOCKS
+iptables -t nat -A SHADOWSOCKS -d 149.28.79.242 -j RETURN
+iptables -t nat -A SHADOWSOCKS -d 0.0.0.0/8 -j RETURN
+iptables -t nat -A SHADOWSOCKS -d 127.0.0.0/8 -j RETURN
+iptables -t nat -A SHADOWSOCKS -d 169.254.0.0/16 -j RETURN
+iptables -t nat -A SHADOWSOCKS -d 192.168.0.0/16 -j RETURN
+iptables -t nat -A SHADOWSOCKS -d 10.0.0.0/8 -j RETURN
+iptables -t nat -A SHADOWSOCKS -p tcp -j REDIRECT --to-ports 1081
+iptables -t nat -A PREROUTING -s 10.42.0.0/24 -p tcp -j SHADOWSOCKS
+
+# 启用 IP 转发
+echo 1 > /proc/sys/net/ipv4/ip_forward
+```
+
+```bash
+# 设置执行权限
+sudo chmod +x /etc/init.d/iptables-restore
+
+# 添加到启动项
+sudo update-rc.d iptables-restore defaults
+```
+
+推荐使用**方法1**或**方法3**，它们是最标准的做法。
+
+-----------------------------------
+
+也就是说，每次服务器失效的时候改变/etc/shadowsocks-libev/redir.json就可以了
