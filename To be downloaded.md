@@ -114,6 +114,8 @@
 - [11. Superior growth, yield, repeatability, and switching performance in GaN-based resonant tunneling diodes](#11-superior-growth-yield-repeatability-and-switching-performance-in-gan-based-resonant-tunneling-diodes)
 - [12. A Monolithically Integrated DWDM Si-Photonics Transceiver for Chiplet Optical I/O](#12-a-monolithically-integrated-dwdm-si-photonics-transceiver-for-chiplet-optical-io)
 - [13. LED LIGHTING: DEVICES AND COLORIMETRY](#13-led-lighting-devices-and-colorimetry)
+- [14. Optoelectronic Devices For Manipulating Invisible Photons](#14-optoelectronic-devices-for-manipulating-invisible-photons)
+- [15. Advancing gallium nitride LED technology: principles, challenges, and future directions](#15-advancing-gallium-nitride-led-technology-principles-challenges-and-future-directions)
 
 20241204以后 （未下载）
 
@@ -560,3 +562,11 @@ https://ieeexplore.ieee.org/document/11080352
 # 13. LED LIGHTING: DEVICES AND COLORIMETRY
 
 https://spie.org/Publications/Book/100371
+
+# 14. Optoelectronic Devices For Manipulating Invisible Photons
+
+https://www.proquest.com/openview/a0c9aae98d72d5a8ddcf3b1a8232c4b4/1?pq-origsite=gscholar&cbl=18750&diss=y
+
+# 15. Advancing gallium nitride LED technology: principles, challenges, and future directions
+
+https://link.springer.com/article/10.1007/s10853-025-11216-7
