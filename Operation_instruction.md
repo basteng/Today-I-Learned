@@ -1348,9 +1348,9 @@ text
 
 修改配置
 
-<setting id="youtube.api.key" value="AIzaSyCs5XGxfQSve5sKNOBxmXplo_w6elfPq7g"/>
-<setting id="youtube.api.id" value="1092297830275-nb4cfqsan81eud3e6sd7vqfgamomaala.apps.googleusercontent.com"/>
-<setting id="youtube.api.secret" value="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"/>
+<setting id="youtube.api.key" value="XXXXXXXXXX"/>
+<setting id="youtube.api.id" value="YYYYYYYYYYYYYYYYY.apps.googleusercontent.com"/>
+<setting id="youtube.api.secret" value="ZZZZZZZZZZZZZZZZZZZZ"/>
 
 默认配置
 
