@@ -174,6 +174,8 @@
   - [54.1 普渡大学-Weinstein Research Group-HybridMEMS-](#541-普渡大学-weinstein-research-group-hybridmems-)
 - [55. 书](#55-书)
   - [55.1 LED 照明：设备和比色法](#551-led-照明设备和比色法)
+- [56. 中村修二](#56-中村修二)
+  - [56.1 BBC播客： 白色LED灯泡的发明](#561-bbc播客-白色led灯泡的发明)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -3305,5 +3307,13 @@ LED 照明有多个版本：
  • 📱 Google Play 上的 ePDF：https://lnkd.in/eKpkBGAX
 
 <https://www.linkedin.com/feed/update/urn:li:activity:7345856412092129280?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+# 56. 中村修二
+
+## 56.1 BBC播客： 白色LED灯泡的发明
+
+这位 UCSB College of Engineering 材料教授还在 BBC Witness History 播客中进行了介绍，强调了中村在 1993 年产生全球影响的灵光一现的时刻：https://ow.ly/h4cN50Wzuv5
+
+<https://www.bbc.com/audio/play/w3ct74mg>
 
 
