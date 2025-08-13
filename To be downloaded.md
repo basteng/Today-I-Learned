@@ -119,6 +119,7 @@
 - [16. 1200 V Fully-Vertical GaN-on-Si Power MOSFET](#16-1200-v-fully-vertical-gan-on-si-power-mosfet)
 - [17. Low-Noise and High-Survivability 55–65-GHz GaN MMIC LNA for Millimeter-Wave Communications](#17-low-noise-and-high-survivability-5565-ghz-gan-mmic-lna-for-millimeter-wave-communications)
 - [18. 4.2 W/mm at 10 GHz in silicon delta-doped AlN/GaN/AlN pseudomorphic HEMTs with PECVD SiN passivation](#18-42-wmm-at-10-ghz-in-silicon-delta-doped-alnganaln-pseudomorphic-hemts-with-pecvd-sin-passivation)
+- [19. Enhancing Light Emission with Electric Fields in Polar Nitride Semiconductors](#19-enhancing-light-emission-with-electric-fields-in-polar-nitride-semiconductors)
 
 20241204以后 （未下载）
 
@@ -585,3 +586,7 @@ https://ieeexplore.ieee.org/document/11099007
 # 18. 4.2 W/mm at 10 GHz in silicon delta-doped AlN/GaN/AlN pseudomorphic HEMTs with PECVD SiN passivation
 
 https://ieeexplore.ieee.org/document/11115098
+
+# 19. Enhancing Light Emission with Electric Fields in Polar Nitride Semiconductors
+
+https://pubs.acs.org/doi/10.1021/acsphotonics.5c00133
