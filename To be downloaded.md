@@ -116,6 +116,9 @@
 - [13. LED LIGHTING: DEVICES AND COLORIMETRY](#13-led-lighting-devices-and-colorimetry)
 - [14. Optoelectronic Devices For Manipulating Invisible Photons](#14-optoelectronic-devices-for-manipulating-invisible-photons)
 - [15. Advancing gallium nitride LED technology: principles, challenges, and future directions](#15-advancing-gallium-nitride-led-technology-principles-challenges-and-future-directions)
+- [16. 1200 V Fully-Vertical GaN-on-Si Power MOSFET](#16-1200-v-fully-vertical-gan-on-si-power-mosfet)
+- [17. Low-Noise and High-Survivability 55–65-GHz GaN MMIC LNA for Millimeter-Wave Communications](#17-low-noise-and-high-survivability-5565-ghz-gan-mmic-lna-for-millimeter-wave-communications)
+- [18. 4.2 W/mm at 10 GHz in silicon delta-doped AlN/GaN/AlN pseudomorphic HEMTs with PECVD SiN passivation](#18-42-wmm-at-10-ghz-in-silicon-delta-doped-alnganaln-pseudomorphic-hemts-with-pecvd-sin-passivation)
 
 20241204以后 （未下载）
 
@@ -570,3 +573,15 @@ https://www.proquest.com/openview/a0c9aae98d72d5a8ddcf3b1a8232c4b4/1?pq-origsite
 # 15. Advancing gallium nitride LED technology: principles, challenges, and future directions
 
 https://link.springer.com/article/10.1007/s10853-025-11216-7
+
+# 16. 1200 V Fully-Vertical GaN-on-Si Power MOSFET
+
+https://ieeexplore.ieee.org/document/11072711
+
+# 17. Low-Noise and High-Survivability 55–65-GHz GaN MMIC LNA for Millimeter-Wave Communications
+
+https://ieeexplore.ieee.org/document/11099007
+
+# 18. 4.2 W/mm at 10 GHz in silicon delta-doped AlN/GaN/AlN pseudomorphic HEMTs with PECVD SiN passivation
+
+https://ieeexplore.ieee.org/document/11115098
