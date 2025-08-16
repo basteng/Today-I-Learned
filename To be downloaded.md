@@ -1,6 +1,12 @@
 - [I.Introduction to the Light-Emitting Diode - 已下载](#iintroduction-to-the-light-emitting-diode---已下载)
-- [II.王磊博士论文](#ii王磊博士论文)
+- [II.王磊博士论文 - 已打印1~2章](#ii王磊博士论文---已打印12章)
 - [III.李振浩博士论文 - 已打印](#iii李振浩博士论文---已打印)
+- [1. Small Cell Lung Cancer A Review](#1-small-cell-lung-cancer-a-review)
+- [2. Serplulimab With Chemotherapy in Extensive-Stage SCLC](#2-serplulimab-with-chemotherapy-in-extensive-stage-sclc)
+- [3. Toripalimab for Extensive-Stage Small Cell Lung Cancer](#3-toripalimab-for-extensive-stage-small-cell-lung-cancer)
+- [4. Toripalimab Plus Chemotherapy as a First-Line Therapy for Extensive-Stage Small Cell Lung Cancer](#4-toripalimab-plus-chemotherapy-as-a-first-line-therapy-for-extensive-stage-small-cell-lung-cancer)
+- [5. Gallium Nitride and Related Materials: Device Processing and Materials](#5-gallium-nitride-and-related-materials-device-processing-and-materials)
+- [6. LED LIGHTING: DEVICES AND COLORIMETRY](#6-led-lighting-devices-and-colorimetry)
 - [**From 20241204**](#from-20241204)
 - [1. Co-Designed Silicon Photonics Chip I/O for Energy-Efficient Petascale Connectivity](#1-co-designed-silicon-photonics-chip-io-for-energy-efficient-petascale-connectivity)
 - [2. AlN/GaN/AlGaN-on-Si HEMT Achieving 1.3 W/mm at 5 V for 5G FR2 Handsets](#2-alnganalgan-on-si-hemt-achieving-13-wmm-at-5-v-for-5g-fr2-handsets)
@@ -120,6 +126,11 @@
 - [17. Low-Noise and High-Survivability 55–65-GHz GaN MMIC LNA for Millimeter-Wave Communications](#17-low-noise-and-high-survivability-5565-ghz-gan-mmic-lna-for-millimeter-wave-communications)
 - [18. 4.2 W/mm at 10 GHz in silicon delta-doped AlN/GaN/AlN pseudomorphic HEMTs with PECVD SiN passivation](#18-42-wmm-at-10-ghz-in-silicon-delta-doped-alnganaln-pseudomorphic-hemts-with-pecvd-sin-passivation)
 - [19. Enhancing Light Emission with Electric Fields in Polar Nitride Semiconductors](#19-enhancing-light-emission-with-electric-fields-in-polar-nitride-semiconductors)
+- [**From 20250816**](#from-20250816)
+- [1. A Monolithically Integrated DWDM Si-Photonics Transceiver for Chiplet Optical I/O](#1-a-monolithically-integrated-dwdm-si-photonics-transceiver-for-chiplet-optical-io)
+- [2. 1200 V Fully-Vertical GaN-on-Si Power MOSFET](#2-1200-v-fully-vertical-gan-on-si-power-mosfet)
+- [3. Low-Noise and High-Survivability 55–65-GHz GaN MMIC LNA for Millimeter-Wave Communications](#3-low-noise-and-high-survivability-5565-ghz-gan-mmic-lna-for-millimeter-wave-communications)
+- [4. 4.2 W/mm at 10 GHz in silicon delta-doped AlN/GaN/AlN pseudomorphic HEMTs with PECVD SiN passivation](#4-42-wmm-at-10-ghz-in-silicon-delta-doped-alnganaln-pseudomorphic-hemts-with-pecvd-sin-passivation)
 
 20241204以后 （未下载）
 
@@ -134,7 +145,7 @@ https://
 # I.Introduction to the Light-Emitting Diode - 已下载
 https://link.springer.com/book/10.1007/978-3-031-59971-2
 
-# II.王磊博士论文
+# II.王磊博士论文 - 已打印1~2章
 
 https://newetds.lib.tsinghua.edu.cn/home/qh/index
 
@@ -145,6 +156,32 @@ https://newetds.lib.tsinghua.edu.cn/home/qh/index
 https://newetds.lib.tsinghua.edu.cn/home/qh/index
 
 下拉菜单：作者 - 李振浩
+
+# 1. Small Cell Lung Cancer A Review
+
+https://jamanetwork.com/journals/jama/article-abstract/2832148
+
+# 2. Serplulimab With Chemotherapy in Extensive-Stage SCLC
+
+https://jamanetwork.com/journals/jama/article-abstract/2796715?widget=personalizedcontent&previousarticle=2832148
+
+# 3. Toripalimab for Extensive-Stage Small Cell Lung Cancer
+
+https://jamanetwork.com/journals/jamaoncology/article-abstract/2826185?widget=personalizedcontent&previousarticle=2832148
+
+# 4. Toripalimab Plus Chemotherapy as a First-Line Therapy for Extensive-Stage Small Cell Lung Cancer
+
+https://jamanetwork.com/journals/jamaoncology/article-abstract/2826181?widget=personalizedcontent&previousarticle=2832148
+
+# 5. Gallium Nitride and Related Materials: Device Processing and Materials
+
+edited by Isik C. Kizilyalli, Jung Han, James S. Speck, Eric P. Carlson
+
+https://books.google.fr/books?hl=en&lr=lang_en&id=F5ZYEQAAQBAJ&oi=fnd&pg=PA419&ots=Pp1s3_op8H&sig=D4LHnn569vEI78mbr8d-7FT1EEs&redir_esc=y#v=onepage&q&f=false
+
+# 6. LED LIGHTING: DEVICES AND COLORIMETRY
+
+https://spie.org/Publications/Book/100371
 
 # **From 20241204**
 
@@ -590,3 +627,23 @@ https://ieeexplore.ieee.org/document/11115098
 # 19. Enhancing Light Emission with Electric Fields in Polar Nitride Semiconductors
 
 https://pubs.acs.org/doi/10.1021/acsphotonics.5c00133
+
+# **From 20250816**
+
+# 1. A Monolithically Integrated DWDM Si-Photonics Transceiver for Chiplet Optical I/O
+
+https://ieeexplore.ieee.org/document/11080352
+
+# 2. 1200 V Fully-Vertical GaN-on-Si Power MOSFET
+
+https://ieeexplore.ieee.org/document/11072711
+
+# 3. Low-Noise and High-Survivability 55–65-GHz GaN MMIC LNA for Millimeter-Wave Communications
+
+https://ieeexplore.ieee.org/document/11099007
+
+# 4. 4.2 W/mm at 10 GHz in silicon delta-doped AlN/GaN/AlN pseudomorphic HEMTs with PECVD SiN passivation
+
+https://ieeexplore.ieee.org/document/11115098
+
+
