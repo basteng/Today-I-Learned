@@ -133,6 +133,7 @@
   - [2. 1200 V Fully-Vertical GaN-on-Si Power MOSFET](#2-1200-v-fully-vertical-gan-on-si-power-mosfet)
   - [3. Low-Noise and High-Survivability 55–65-GHz GaN MMIC LNA for Millimeter-Wave Communications](#3-low-noise-and-high-survivability-5565-ghz-gan-mmic-lna-for-millimeter-wave-communications)
   - [4. 4.2 W/mm at 10 GHz in silicon delta-doped AlN/GaN/AlN pseudomorphic HEMTs with PECVD SiN passivation](#4-42-wmm-at-10-ghz-in-silicon-delta-doped-alnganaln-pseudomorphic-hemts-with-pecvd-sin-passivation)
+  - [5. Single-chip microprocessor that communicates directly using light](#5-single-chip-microprocessor-that-communicates-directly-using-light)
 
 链接不需要加<>，直接copy https链接
 
@@ -649,5 +650,9 @@ https://ieeexplore.ieee.org/document/11099007
 ## 4. 4.2 W/mm at 10 GHz in silicon delta-doped AlN/GaN/AlN pseudomorphic HEMTs with PECVD SiN passivation
 
 https://ieeexplore.ieee.org/document/11115098
+
+## 5. Single-chip microprocessor that communicates directly using light
+
+https://www.nature.com/articles/nature16454
 
 
