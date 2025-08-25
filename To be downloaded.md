@@ -134,8 +134,6 @@
   - [3. Low-Noise and High-Survivability 55–65-GHz GaN MMIC LNA for Millimeter-Wave Communications](#3-low-noise-and-high-survivability-5565-ghz-gan-mmic-lna-for-millimeter-wave-communications)
   - [4. 4.2 W/mm at 10 GHz in silicon delta-doped AlN/GaN/AlN pseudomorphic HEMTs with PECVD SiN passivation](#4-42-wmm-at-10-ghz-in-silicon-delta-doped-alnganaln-pseudomorphic-hemts-with-pecvd-sin-passivation)
 
-20241204以后 （未下载）
-
 链接不需要加<>，直接copy https链接
 
 格式：
