@@ -176,6 +176,8 @@
   - [55.1 LED 照明：设备和比色法](#551-led-照明设备和比色法)
 - [56. 中村修二](#56-中村修二)
   - [56.1 BBC播客： 白色LED灯泡的发明](#561-bbc播客-白色led灯泡的发明)
+- [57. 仿真软件](#57-仿真软件)
+  - [57.1 SiLENSe—software tool for light emitting diode (LED) bandgap engineering](#571-silensesoftware-tool-for-light-emitting-diode-led-bandgap-engineering)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -3315,5 +3317,16 @@ LED 照明有多个版本：
 这位 UCSB College of Engineering 材料教授还在 BBC Witness History 播客中进行了介绍，强调了中村在 1993 年产生全球影响的灵光一现的时刻：https://ow.ly/h4cN50Wzuv5
 
 <https://www.bbc.com/audio/play/w3ct74mg>
+
+# 57. 仿真软件
+
+## 57.1 SiLENSe—software tool for light emitting diode (LED) bandgap engineering
+
+<https://str-soft.com/devices/silense/>
+
+<https://str-soft.com/>
+
+<https://www.suzhou-str.com/>
+
 
 
