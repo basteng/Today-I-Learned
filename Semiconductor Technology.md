@@ -45,6 +45,7 @@
 - [27. 有价值的视频](#27-有价值的视频)
   - [27.1 Sander Hofman 领英上的晶体管视频](#271-sander-hofman-领英上的晶体管视频)
 - [28. 3D DRAM应用中多达120个Si/SiGe双层的外延增长](#28-3d-dram应用中多达120个sisige双层的外延增长)
+- [29. 片上和封装内互连：面向工程师的基础知识 SemiEnigeering](#29-片上和封装内互连面向工程师的基础知识-semienigeering)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1250,3 +1251,11 @@ DRAM近年应对这个问题的措施包含在电晶体结构的变更，包括�
 # 28. 3D DRAM应用中多达120个Si/SiGe双层的外延增长
 
 <https://pubs.aip.org/aip/jap/article/138/5/055702/3357408/Epitaxial-growth-of-up-to-120-Si0-8Ge0-2-Si>
+
+# 29. 片上和封装内互连：面向工程师的基础知识 SemiEnigeering
+
+<https://semiengineering.msnd27.com/tracking/lc/1b39fa78-2242-7959-32d7-18b74ef2be94/6d7db2e5-58d2-409e-885c-d22fd336f251/b7fd02ab-6db9-f5da-19f1-54fbde49d209/>
+
+
+
+
