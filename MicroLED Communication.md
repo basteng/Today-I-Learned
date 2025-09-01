@@ -120,6 +120,7 @@
   - [5.61 引用了Bardia Pezeshki的专利：采用三维堆叠光电接口的光互连](#561-引用了bardia-pezeshki的专利采用三维堆叠光电接口的光互连)
   - [5.62 用于数据通信的高速多触点 LED](#562-用于数据通信的高速多触点-led)
   - [5.63 利用微发光二极管实现光通道的逐位逆复用](#563-利用微发光二极管实现光通道的逐位逆复用)
+- [5.64 2025年8月AMAT组织的MicroLED互连研讨会](#564-2025年8月amat组织的microled互连研讨会)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -3879,6 +3880,24 @@ microLED图4 还包括蚀刻通孔，例如蚀刻通孔421，从圆形顶部延�
 尽管已经针对各种实施例讨论了本发明，但应当认识到，本发明包括本公开内容所支持的新颖且非显而易见的权利要求。
 
 <https://patents.google.com/patent/US20250260493A1/en>
+
+# 5.64 2025年8月AMAT组织的MicroLED互连研讨会
+
+整个 150 人的 uLED 数据互连研讨会！
+
+很荣幸能在由 Nag Patibandla 组织的应用材料研讨会上发表演讲，并邀请这些杰出人物就 Avicena 的根本创新进行演讲和参与！
+
+https://lnkd.in/gFsHzk4k
+
+我们有其他公司，例如 LETI 的 Vygintas Jankus Hyperlume 的 Mohsen Asad 、Mark Rodwell 、steve denbaars Behzad Razavi、Doug Yoder 等著名学者，以及康宁的 Sergey Ten 和 AFL 的 Nikhil Angra 等供应商，都展示了这种新方法是如何结合在一起的。
+
+最令人兴奋的当然是赶上几十年前的斯坦福大学朋友，比如 Julie Eng 和 Zongjian Chen 。
+
+它确实发生了 - 我们的创新，使用 microLED 互连的并行性、低能耗、低延迟方法开始受到关注！
+
+<https://www.linkedin.com/posts/bardia-pezeshki-b75b2b6_an-entire-150-person-workshop-on-uled-data-activity-7367916951702032384--VC6?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
