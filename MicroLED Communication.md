@@ -3897,7 +3897,13 @@ https://lnkd.in/gFsHzk4k
 
 <https://www.linkedin.com/posts/bardia-pezeshki-b75b2b6_an-entire-150-person-workshop-on-uled-data-activity-7367916951702032384--VC6?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
+![image](/picture/1756648266161.jpg)
 
+![image](/picture/2025-09-01%20134803.png)
+
+![image](/picture/2025-09-01%20134843.png)
+
+![image](/picture/2025-09-01%20134915.png)
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
