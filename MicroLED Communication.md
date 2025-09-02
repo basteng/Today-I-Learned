@@ -7685,3 +7685,4 @@ K. Yoshida等人，Adv. Photon. 7(3), 036005 (2025)
 
 <https://sid.onlinelibrary.wiley.com/doi/10.1002/jsid.2012>
 
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/J%20Soc%20Info%20Display%20-%202024%20-%20Le%20Maitre%20-%20Short%20range%20optical%20communication%20with%20GaN%E2%80%90on%E2%80%90Si%20microLED%20and%20microPD%20matrices.pdf>
