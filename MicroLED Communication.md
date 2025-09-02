@@ -280,6 +280,8 @@
   - [88.1 水下无线光通信关键技术与应用展望综述（特邀）](#881-水下无线光通信关键技术与应用展望综述特邀)
 - [89. OLED光通信](#89-oled光通信)
   - [89.1 OLED 用于无线通信？](#891-oled-用于无线通信)
+- [90. LETI](#90-leti)
+  - [90.1 Short range optical communication with GaN-on-Si microLED and microPD matrices](#901-short-range-optical-communication-with-gan-on-si-microled-and-micropd-matrices)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -7676,4 +7678,10 @@ HBM4 是备受期待的下一代高带宽内存版本。与 HBM3 相比，它的
 K. Yoshida等人，Adv. Photon. 7(3), 036005 (2025)
 
 <https://compoundsemiconductor.net/article/122154/OLEDs_for_wireless_comms>
+
+# 90. LETI
+
+## 90.1 Short range optical communication with GaN-on-Si microLED and microPD matrices
+
+<https://sid.onlinelibrary.wiley.com/doi/10.1002/jsid.2012>
 
