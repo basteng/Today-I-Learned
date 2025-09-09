@@ -208,6 +208,7 @@
   - [44.2 信息光子技术发展与应用研究报告-2024 吴冰冰团队](#442-信息光子技术发展与应用研究报告-2024-吴冰冰团队)
 - [45. 微软：基于Micro-LED＋CIS的模拟光学计算实现加速计算](#45-微软基于micro-ledcis的模拟光学计算实现加速计算)
   - [45.1 arXiv上的论文](#451-arxiv上的论文)
+  - [45.2 Nature](#452-nature)
 - [46. 提高GaN基发光二极管调制带宽用于高速可见光通信的对策与挑战 - 郭浩中 李晋闽](#46-提高gan基发光二极管调制带宽用于高速可见光通信的对策与挑战---郭浩中-李晋闽)
 - [47. Micro-LED市场规模](#47-micro-led市场规模)
   - [47.1 TrendForce](#471-trendforce)
@@ -5811,6 +5812,12 @@ GaAs - AlGaAs高辐射LED用于光通信系统的功率和调制带宽研究
 Analog Iterative Machine (AIM): using light to solve quadratic optimization problems with mixed variables
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Analog%20Iterative%20Machine%20(AIM)%20using%20light%20to%20solve%20quadratic%20optimization%20problems%20with%20mixed%20variables.pdf>
+
+## 45.2 Nature
+
+Analog optical computer for AI inference and combinatorial optimization
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Analog%20optical%20computer%20for%20AI%20inference%20and%20combinatorial%20optimization.pdf>
 
 
 # 46. 提高GaN基发光二极管调制带宽用于高速可见光通信的对策与挑战 - 郭浩中 李晋闽
