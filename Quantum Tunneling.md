@@ -9,6 +9,8 @@
   - [三、量子器件与微纳电子器件](#三量子器件与微纳电子器件)
     - [6.《Quantum Wells, Wires and Dots: Theoretical and Computational Physics of Semiconductor Nanostructures》 – Paul Harrison](#6quantum-wells-wires-and-dots-theoretical-and-computational-physics-of-semiconductor-nanostructures-paul-harrison)
     - [7.《Nanoelectronics and Information Technology》– Rainer Waser (ed.)\[暂无电子版\]](#7nanoelectronics-and-information-technology-rainer-waser-ed暂无电子版)
+- [2. 仿真软件](#2-仿真软件)
+  - [2.1 模拟工具 QWWAD](#21-模拟工具-qwwad)
 
 # 1.量子隧穿经典书籍推荐
 
@@ -42,3 +44,11 @@
 讲述现代纳米器件（如隧穿场效应晶体管、ReRAM等）中的量子隧穿机制及工程控制策略。
 
 <https://mp.weixin.qq.com/s/NdWXfTLSLUydG_I4kpkc3w>
+
+# 2. 仿真软件
+
+## 2.1 模拟工具 QWWAD
+
+模拟工具 QWWAD：开源工具（launchpad.net/qwwad），含能级计算（qwwad_ef_square_well）、输运模拟（qwwad_tx_double_barrier_iv）等，支持非抛物性、应变等效应。
+
+<https://github.com/QWWAD/qwwad>
