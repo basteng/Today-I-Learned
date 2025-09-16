@@ -8004,3 +8004,5 @@ Dynamics of carrier injection through V-defects in long wavelength GaN LEDs
 
 <https://iopscience.iop.org/article/10.1088/2515-7647/acf972>
 
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/The%20micro-LED%20roadmap%20status%20quo%20and%20prospects.pdf>
+
