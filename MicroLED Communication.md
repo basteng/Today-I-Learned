@@ -322,7 +322,8 @@
   - [91.1 UCSB](#911-ucsb)
     - [91.1.1 Steven Denbaars](#9111-steven-denbaars)
       - [穿透位错对InGaN量子阱LED中V型缺陷辅助横向载流子注入与复合的影响](#穿透位错对ingan量子阱led中v型缺陷辅助横向载流子注入与复合的影响)
-      - [](#)
+      - [长波长 GaN LED 中 V 型缺陷载流子注入动力学](#长波长-gan-led-中-v-型缺陷载流子注入动力学)
+      - [Micro-LED 路线图：现状与前景](#micro-led-路线图现状与前景)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -7991,4 +7992,15 @@ Impact of threading dislocations on the V-defect assisted lateral carrier inject
 
 <https://pubs.aip.org/aip/apl/article/126/21/211104/3347966/Impact-of-threading-dislocations-on-the-V-defect>
 
-#### 
+#### 长波长 GaN LED 中 V 型缺陷载流子注入动力学
+
+Dynamics of carrier injection through V-defects in long wavelength GaN LEDs
+
+<https://pubs.aip.org/aip/apl/article/124/18/181108/3286958/Dynamics-of-carrier-injection-through-V-defects-in>
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Dynamics_of_carrier_injection_through_V-defects_in.pdf>
+
+#### Micro-LED 路线图：现状与前景
+
+<https://iopscience.iop.org/article/10.1088/2515-7647/acf972>
+
