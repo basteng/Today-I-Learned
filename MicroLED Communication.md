@@ -292,6 +292,8 @@
   - [77.2 对于喜欢双击与 AI/HPC 基础设施相关的主题的精通技术的人，请提出一个问题：除了带宽（密度）、功耗（效率）和（系统）延迟之外，我们还可以在下面的比较矩阵中添加什么来使其（甚至）更具指导性和帮助性？](#772-对于喜欢双击与-aihpc-基础设施相关的主题的精通技术的人请提出一个问题除了带宽密度功耗效率和系统延迟之外我们还可以在下面的比较矩阵中添加什么来使其甚至更具指导性和帮助性)
 - [78. Micro LED](#78-micro-led)
   - [78.1 红色 μLED 是 AR 显示器的最大瓶颈之一](#781-红色-μled-是-ar-显示器的最大瓶颈之一)
+  - [78.2 AR](#782-ar)
+    - [78.2.1 Advances in InGaN-based RGB micro-light-emitting diodes for AR applications:Status and perspective](#7821-advances-in-ingan-based-rgb-micro-light-emitting-diodes-for-ar-applicationsstatus-and-perspective)
 - [79. 在 GaN HEMT 上异质集成 20x10 µm 蓝色微型 LED/像素，用于可见光通信](#79-在-gan-hemt-上异质集成-20x10-µm-蓝色微型-led像素用于可见光通信)
 - [80. 超快白光系统将蓝色微型LED与有机混合物相结合，用于可见光通信和固态照明](#80-超快白光系统将蓝色微型led与有机混合物相结合用于可见光通信和固态照明)
 - [81. 多功能硅集成光子处理器：下一代人工智能集群的可重构解决方案](#81-多功能硅集成光子处理器下一代人工智能集群的可重构解决方案)
@@ -7418,6 +7420,12 @@ FP 激光器是短距离、低带宽系统的低成本解决方案。同时，MZ
 ![](/picture/1744032161898.jpg)
 
 <https://www.linkedin.com/posts/mityashin_red-%C2%B5led-is-one-of-the-top-bottlenecks-for-activity-7315001076812857344-JgZU?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+## 78.2 AR
+
+### 78.2.1 Advances in InGaN-based RGB micro-light-emitting diodes for AR applications:Status and perspective
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Advances_in_InGaN-based_RGB_micro-light-emitting_d.pdf>
 
 # 79. 在 GaN HEMT 上异质集成 20x10 µm 蓝色微型 LED/像素，用于可见光通信
 
