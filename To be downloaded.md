@@ -134,6 +134,7 @@
   - [3. Low-Noise and High-Survivability 55–65-GHz GaN MMIC LNA for Millimeter-Wave Communications](#3-low-noise-and-high-survivability-5565-ghz-gan-mmic-lna-for-millimeter-wave-communications)
   - [4. 4.2 W/mm at 10 GHz in silicon delta-doped AlN/GaN/AlN pseudomorphic HEMTs with PECVD SiN passivation](#4-42-wmm-at-10-ghz-in-silicon-delta-doped-alnganaln-pseudomorphic-hemts-with-pecvd-sin-passivation)
   - [5. Single-chip microprocessor that communicates directly using light](#5-single-chip-microprocessor-that-communicates-directly-using-light)
+  - [6. Quantitative analysis of leakage current in III-nitride micro-light-emitting diodes](#6-quantitative-analysis-of-leakage-current-in-iii-nitride-micro-light-emitting-diodes)
 
 链接不需要加<>，直接copy https链接
 
@@ -654,5 +655,9 @@ https://ieeexplore.ieee.org/document/11115098
 ## 5. Single-chip microprocessor that communicates directly using light
 
 https://www.nature.com/articles/nature16454
+
+## 6. Quantitative analysis of leakage current in III-nitride micro-light-emitting diodes
+
+<https://pubs.aip.org/aip/apl/article-abstract/126/4/043506/3332655/Quantitative-analysis-of-leakage-current-in-III?redirectedFrom=fulltext>
 
 

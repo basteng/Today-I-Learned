@@ -121,6 +121,36 @@
   - [5.62 用于数据通信的高速多触点 LED](#562-用于数据通信的高速多触点-led)
   - [5.63 利用微发光二极管实现光通道的逐位逆复用](#563-利用微发光二极管实现光通道的逐位逆复用)
   - [5.64 2025年8月AMAT组织的MicroLED互连研讨会](#564-2025年8月amat组织的microled互连研讨会)
+    - [欢迎— 行政开幕](#欢迎-行政开幕)
+      - [Om Nalamasu 博士，应用材料公司高级副总裁、首席技术官兼总裁，Applied Ventures, LLC](#om-nalamasu-博士应用材料公司高级副总裁首席技术官兼总裁applied-ventures-llc)
+      - [A.S.博士Nag Patibandla，应用材料公司首席技术官集团副总裁](#as博士nag-patibandla应用材料公司首席技术官集团副总裁)
+    - [MicroLED 链接](#microled-链接)
+      - [5.64.1 宽并行光互连的挑战与机遇| NVIDIA 网络总监 Ashkan Seyedi 博士](#5641-宽并行光互连的挑战与机遇-nvidia-网络总监-ashkan-seyedi-博士)
+      - [5.64.2 面向短距离并行光通信的 GaN-on-Si MicroLED 和 MicroPD 阵列 3D 集成 | LETI MicroLED 和 OLED 合作经理 Vygintas Jankus 博士](#5642-面向短距离并行光通信的-gan-on-si-microled-和-micropd-阵列-3d-集成--leti-microled-和-oled-合作经理-vygintas-jankus-博士)
+    - [数据链接：设计与建模](#数据链接设计与建模)
+      - [5.64.3 MicroLED 链路的链路预算、IC 要求、能量要求| 加州大学圣巴巴拉分校电气与计算机工程杰出教授 Mark Rodwell 博士](#5643-microled-链路的链路预算ic-要求能量要求-加州大学圣巴巴拉分校电气与计算机工程杰出教授-mark-rodwell-博士)
+      - [5.64.4 Micro-LED 互连的光检测| Douglas Yoder 博士，佐治亚理工学院电气与计算机工程学院副教授](#5644-micro-led-互连的光检测-douglas-yoder-博士佐治亚理工学院电气与计算机工程学院副教授)
+      - [5.64.5 串行链路的并行化：Micro-LED 驱动的范式转变| 加州大学洛杉矶分校教授 Behzad Razavi 博士](#5645-串行链路的并行化micro-led-驱动的范式转变-加州大学洛杉矶分校教授-behzad-razavi-博士)
+      - [5.64.6 MicroLED 链路预算：提升链路效率的可衡量途径| 英特尔系统架构与工程高级首席工程师 Khaled Ahmed 博士](#5646-microled-链路预算提升链路效率的可衡量途径-英特尔系统架构与工程高级首席工程师-khaled-ahmed-博士)
+    - [零部件和制造技术](#零部件和制造技术)
+      - [5.64.7 基于 GaN 的 MicroLED 在节能 AI 通信方面的进展| 加州大学圣巴巴拉分校材料与电气与计算机工程杰出教授 Steve DenBaars 博士](#5647-基于-gan-的-microled-在节能-ai-通信方面的进展-加州大学圣巴巴拉分校材料与电气与计算机工程杰出教授-steve-denbaars-博士)
+      - [5.64.8 实现高速 MicroLED 部署的制造路径和关键技术| Lumileds 显示技术高级总监 Brendan Moran 博士](#5648-实现高速-microled-部署的制造路径和关键技术-lumileds-显示技术高级总监-brendan-moran-博士)
+      - [5.64.9 从实验室到制造厂：微发射器是否已为光学数据通信做好准备？  | ams OSRAM 首席技术官 Ulrich Steegmueller 博士](#5649-从实验室到制造厂微发射器是否已为光学数据通信做好准备---ams-osram-首席技术官-ulrich-steegmueller-博士)
+      - [5.64.10 晶圆代工厂规模的光子互连和组件制造| Dave Howard 博士，Tower Jazz 执行董事兼研究员](#56410-晶圆代工厂规模的光子互连和组件制造-dave-howard-博士tower-jazz-执行董事兼研究员)
+    - [光互连：光子链路](#光互连光子链路)
+      - [5.64.11 用于基于 Micro LED 的互连的光纤| 康宁光通信公司商业技术总监 Sergey Ten 博士](#56411-用于基于-micro-led-的互连的光纤-康宁光通信公司商业技术总监-sergey-ten-博士)
+      - [5.64.12 高芯数光纤的进步和芯片间互连的用例| Nikhil Angra，AFL Hyperscale-Fujikura Ltd. 有源与解决方案工程全球产品负责人](#56412-高芯数光纤的进步和芯片间互连的用例-nikhil-angraafl-hyperscale-fujikura-ltd-有源与解决方案工程全球产品负责人)
+      - [5.64.13 材料创新推动下一代光互连| 杜邦公司全球技术总监 Jake Joo 博士](#56413-材料创新推动下一代光互连-杜邦公司全球技术总监-jake-joo-博士)
+    - [应用材料公司的 MicroLED 光子互连能力](#应用材料公司的-microled-光子互连能力)
+      - [5.64.14 Mingwei Zhu博士，应用材料公司高级总监兼首席技术人员](#56414-mingwei-zhu博士应用材料公司高级总监兼首席技术人员)
+      - [5.64.15 Dr. Hou T Ng, Director, Applied Materials, Inc.](#56415-dr-hou-t-ng-director-applied-materials-inc)
+      - [5.64.16 Dr. Shiva Rai, Director, Applied Materials, Inc.](#56416-dr-shiva-rai-director-applied-materials-inc)
+  - [5.65 顾问团队](#565-顾问团队)
+    - [5.65.1 Fritz Kruger - OpenAI](#5651-fritz-kruger---openai)
+      - [5.65.2 Pradeep Sindhu](#5652-pradeep-sindhu)
+      - [5.65.3 Joe Young - FINISAR](#5653-joe-young---finisar)
+      - [5.65.4 Jim Harris - 斯坦福](#5654-jim-harris---斯坦福)
+      - [5.65.5 Richard Craig](#5655-richard-craig)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -3912,6 +3942,183 @@ https://lnkd.in/gFsHzk4k
 ![image](/picture/2025-09-01%20134843.png)
 
 ![image](/picture/2025-09-01%20134915.png)
+
+**参会人信息**
+
+### 欢迎— 行政开幕
+
+#### Om Nalamasu 博士，应用材料公司高级副总裁、首席技术官兼总裁，Applied Ventures, LLC
+
+<https://www.linkedin.com/in/omkaram-nalamasu-9866225/>
+
+<https://www.appliedmaterials.com/us/en/about/leadership/executive-team/om-nalamasu.html>
+
+<https://roadtripnation.com/leader/omkaram-nalamasu>
+
+<https://www.cmu.edu/nanotechnology-forum/Forum_18/USA_Bio/US-Korea%20Forum_Om%20Nalamasu_Bio.pdf>
+
+#### A.S.博士Nag Patibandla，应用材料公司首席技术官集团副总裁
+
+<https://www.linkedin.com/in/nagpatibandla/>
+
+<https://display.counterpointresearch.com/speakers/nag-patibandla-ph-d>
+
+<https://rocketreach.co/nag-patibandla-email_2955902>
+
+<https://news.rpi.edu/luwakkey/1430>
+
+### MicroLED 链接
+
+#### 5.64.1 宽并行光互连的挑战与机遇| NVIDIA 网络总监 Ashkan Seyedi 博士
+
+<https://developer.nvidia.com/blog/author/ashkanseyedi/>
+
+<https://www.linkedin.com/in/m-ashkan-seyedi-2358b66/>
+
+#### 5.64.2 面向短距离并行光通信的 GaN-on-Si MicroLED 和 MicroPD 阵列 3D 集成 | LETI MicroLED 和 OLED 合作经理 Vygintas Jankus 博士
+
+<https://www.linkedin.com/in/vygintas-jankus/?locale=en_US>
+
+<https://leti-innovation-days.com/speaker/vygintas-jankus/>
+
+### 数据链接：设计与建模
+
+#### 5.64.3 MicroLED 链路的链路预算、IC 要求、能量要求| 加州大学圣巴巴拉分校电气与计算机工程杰出教授 Mark Rodwell 博士
+
+<https://web.ece.ucsb.edu/Faculty/rodwell/rodwell_info/rodwell.html>
+
+#### 5.64.4 Micro-LED 互连的光检测| Douglas Yoder 博士，佐治亚理工学院电气与计算机工程学院副教授
+
+<https://yoder.ece.gatech.edu/>
+
+#### 5.64.5 串行链路的并行化：Micro-LED 驱动的范式转变| 加州大学洛杉矶分校教授 Behzad Razavi 博士
+
+<https://www.ee.ucla.edu/behzad-razavi/>
+
+<https://avicena.tech/behzad-razavi/>
+
+<https://ieeexplore.ieee.org/author/37275476000>
+
+#### 5.64.6 MicroLED 链路预算：提升链路效率的可衡量途径| 英特尔系统架构与工程高级首席工程师 Khaled Ahmed 博士
+
+<https://www.linkedin.com/in/khaled-ahmed-5839906/>
+
+<https://www.amazon.com/Microleds-Devices-Systems-Khaled-Ahmed/dp/1685690491#detailBullets_feature_div>
+
+### 零部件和制造技术
+
+#### 5.64.7 基于 GaN 的 MicroLED 在节能 AI 通信方面的进展| 加州大学圣巴巴拉分校材料与电气与计算机工程杰出教授 Steve DenBaars 博士
+
+<https://www.materials.ucsb.edu/people/faculty/steven-p-denbaars>
+
+<https://www.linkedin.com/in/stevedenbaars/>
+
+<https://ieeexplore.ieee.org/author/37270266100>
+
+<https://www.researchgate.net/profile/Steven-Denbaars-2>
+
+<https://www.researchgate.net/profile/Steven-Denbaars-2/research>
+
+#### 5.64.8 实现高速 MicroLED 部署的制造路径和关键技术| Lumileds 显示技术高级总监 Brendan Moran 博士
+
+<https://www.linkedin.com/in/brendan-j-moran/>
+
+#### 5.64.9 从实验室到制造厂：微发射器是否已为光学数据通信做好准备？  | ams OSRAM 首席技术官 Ulrich Steegmueller 博士
+
+<https://www.researchgate.net/profile/Ulrich-Steegmueller/research>
+
+#### 5.64.10 晶圆代工厂规模的光子互连和组件制造| Dave Howard 博士，Tower Jazz 执行董事兼研究员
+
+<https://ieeexplore.ieee.org/author/37409659800>
+
+<https://www.linkedin.com/in/david-howard-0224051a/>
+
+<https://towersemi.com/2018/06/26/dr-david-howard/>
+
+###	光互连：光子链路
+
+#### 5.64.11 用于基于 Micro LED 的互连的光纤| 康宁光通信公司商业技术总监 Sergey Ten 博士
+
+<https://www.linkedin.com/in/sergeyten10/>
+
+<https://www.researchgate.net/profile/Sergey-Ten-2>
+
+<https://ieeexplore.ieee.org/author/37269234400>
+
+#### 5.64.12 高芯数光纤的进步和芯片间互连的用例| Nikhil Angra，AFL Hyperscale-Fujikura Ltd. 有源与解决方案工程全球产品负责人
+
+<https://www.linkedin.com/in/nikhilangra/>
+
+<https://ieeexplore.ieee.org/author/37089840032>
+
+#### 5.64.13 材料创新推动下一代光互连| 杜邦公司全球技术总监 Jake Joo 博士
+
+<https://www.linkedin.com/in/jakejoo/>
+
+<https://imid.or.kr/2019/download/t_w/IMID2019_T4_Jake_Joo_REV.pdf>
+
+### 应用材料公司的 MicroLED 光子互连能力
+
+#### 5.64.14 Mingwei Zhu博士，应用材料公司高级总监兼首席技术人员
+
+<https://www.linkedin.com/in/mingweizhu/>
+
+#### 5.64.15 Dr. Hou T Ng, Director, Applied Materials, Inc.
+
+<https://www.linkedin.com/in/hou-t-ng-31a89b9/>
+
+<https://www.researchgate.net/profile/Hou-Ng>
+
+#### 5.64.16 Dr. Shiva Rai, Director, Applied Materials, Inc.
+
+<https://www.linkedin.com/in/shivarai/>
+
+## 5.65 顾问团队
+
+### 5.65.1 Fritz Kruger - OpenAI
+
+Fritz Kruger目前是 OpenAI 的硬件系统架构师。在 30 年的职业生涯中，他多次将突破性的想法转化为大规模的现实，包括在 ATI/AMD 任职期间共同发明并推出 GDDR4、GDDR5 和 HBM DRAM；利用 SanDisk 的 Infiniflash 打造业界首款高容量 JBOF；领导谷歌 TPUv3 超级计算机的设计和全球部署；以及在 Nuvia 担任平台架构师期间塑造通用计算战略。
+
+Fritz 以打造世界一流的工程团队和创新产品而闻名，拥有 50 多项美国专利，涵盖内存、存储、互连和系统架构。他曾在哈维穆德学院学习神经生物学和电子工程，并在加州理工学院学习计算神经系统，并担任多家以人工智能为中心的初创公司的顾问委员会成员。
+
+<https://avicena.tech/fritz-kruger/>
+
+#### 5.65.2 Pradeep Sindhu 
+
+Pradeep的职业生涯包括创立瞻博网络 (Juniper Networks)，该公司因发明和工业化硅基路由器而广受认可 — — 这项发明在开启互联网时代方面发挥了核心作用。多年来，他在瞻博网络担任过多个关键职务，包括创始首席执行官兼董事长，后来担任副董事长兼首席技术官，现在是首席科学家。从 1996 年到 2015 年，Pradeep 参与了瞻博网络几乎所有产品的构思、设计和开发。创立瞻博网络之前，Pradeep 在施乐帕克研究中心 (Xerox PARC) 的计算机科学实验室工作了 11 年，开发设计工具和多处理器架构。在此期间，他发明了第一个用于分组交换总线的缓存一致性算法，并为 Sun Microsystem 的高性能多处理器服务器做出了基础性贡献。
+
+Pradeep 拥有印度理工学院坎普尔分校的电气工程学士学位，以及夏威夷大学的电气工程硕士学位。此外，Pradeep 还拥有卡内基梅隆大学的计算机科学硕士和博士学位。Pradeep 是美国国家工程院院士，拥有 200 多项专利。
+
+<https://avicena.tech/pradeep-sindhu/>
+
+#### 5.65.3 Joe Young - FINISAR
+
+Joe Young于 2019 年 8 月被任命为 Finisar Corporation 的联席首席执行官。在担任首席执行官之前，Joe 自 2008 年 1 月起担任 Finisar 的执行副总裁，负责全球运营。Joe 从 2005 年 6 月至 2008 年 8 月担任 Finisar 光学部门的高级副总裁兼总经理。Joe 于 2004 年 10 月加入 Finisar 担任运营高级副总裁。
+
+加入 Finisar 之前，Joe 曾于 2001 年 5 月至 2004 年 10 月担任英特尔公司光学平台部门企业产品高级总监。2000 年 9 月至 2001 年 5 月，Joe 担任 LightLogic, Inc. 的运营副总裁，之后 LightLogic 被英特尔收购。1999 年 12 月至 2000 年 9 月，Joe 担任 Lexar Media Inc. 的运营副总裁。Lexar 于 2000 年 8 月完成 IPO。1983 年至 1999 年 12 月，Joe 在 Raychem/TE 担任过多个职位，最后担任 Raychem Corporation 的 OEM 电子部门全球运营总监。
+
+Joe 拥有宾夕法尼亚大学沃顿商学院的工商管理硕士学位、纽黑文大学的运筹学硕士学位以及伦斯勒理工学院的工业工程学士学位。
+
+<https://avicena.tech/joe-young/>
+
+#### 5.65.4 Jim Harris - 斯坦福
+
+Jim Harris拥有斯坦福大学电气工程学士、硕士和博士学位。他目前是电气工程、应用物理和材料科学系 James and Ellenor Chesebrough 名誉教授。他和他的博士生在众多领域做出了开创性的工作，尤其是在 GaAs 材料及相关电气和光学器件的开发方面。他目前的研究兴趣包括用于控制光线的 3D 纳米结构材料、视网膜假体的开发、新型高效多结太阳能电池、激光驱动电子加速器（SLAC on a Chip），以及用于面部识别和激光雷达的 VCSEL 和 SPAD。
+
+他曾担任138名博士生的首席导师，其中25人成为教职员工，另有37人作为导师指导或合作创办了初创公司。他是IEEE、APS、OSA和MRS的院士。他在权威科学期刊上发表了1100多篇论文，撰写了14个书籍章节，主编了3本著作，并拥有31项已授权的美国专利。他曾获得众多重要奖项，并于2011年当选美国国家工程院院士。
+
+<https://avicena.tech/jim-harris/>
+
+#### 5.65.5 Richard Craig
+
+理查德·克雷格 (Richard Craig) 在科技公司担任高级管理职务三十年，目前从事早期创业公司的教学和咨询工作。此前，他曾担任四家风险投资支持的初创公司的首席执行官：Santur、Kaai、Picarro 和 Topanga Technologies。他还曾担任三家上市公司的总裁或副总裁：Oclaro、JDSU 和 SDL。他管理过半导体激光器制造中使用的三种主要材料体系的业务：砷化镓、磷化铟和氮化镓。所有这些职位的共同点是如何从光学器件的技术创新中驱动经济价值。在理查德的帮助下，这些公司得以将独特的技术转化为世界领先的商业产品。  
+
+在担任高级管理职位之前，他曾在 SDL 担任工程产品经理五年，并在休斯研究实验室担任研究科学家五年。  
+
+Rich 拥有加州大学洛杉矶分校的博士学位（论文主题为高功率半导体激光器）和加州大学伯克利分校的物理学学士学位。
+
+<https://avicena.tech/richard-craig/>
+
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
