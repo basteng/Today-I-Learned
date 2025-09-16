@@ -321,6 +321,8 @@
 - [91. 研究机构](#91-研究机构)
   - [91.1 UCSB](#911-ucsb)
     - [91.1.1 Steven Denbaars](#9111-steven-denbaars)
+      - [穿透位错对InGaN量子阱LED中V型缺陷辅助横向载流子注入与复合的影响](#穿透位错对ingan量子阱led中v型缺陷辅助横向载流子注入与复合的影响)
+      - [](#)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -7981,3 +7983,12 @@ K. Yoshida等人，Adv. Photon. 7(3), 036005 (2025)
 
 ### 91.1.1 Steven Denbaars
 
+#### 穿透位错对InGaN量子阱LED中V型缺陷辅助横向载流子注入与复合的影响
+
+Impact of threading dislocations on the V-defect assisted lateral carrier injection and recombination in InGaN quantum well LEDs
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Impact_of_threading_dislocations_on_the_V-defect_a.pdf>
+
+<https://pubs.aip.org/aip/apl/article/126/21/211104/3347966/Impact-of-threading-dislocations-on-the-V-defect>
+
+#### 
