@@ -206,9 +206,14 @@
 - [44. 信通院](#44-信通院)
   - [44.1 片间光互连发展态势分析 - 信通院 刘璐团队](#441-片间光互连发展态势分析---信通院-刘璐团队)
   - [44.2 信息光子技术发展与应用研究报告-2024 吴冰冰团队](#442-信息光子技术发展与应用研究报告-2024-吴冰冰团队)
-- [45. 微软：基于Micro-LED＋CIS的模拟光学计算实现加速计算](#45-微软基于micro-ledcis的模拟光学计算实现加速计算)
-  - [45.1 arXiv上的论文](#451-arxiv上的论文)
-  - [45.2 Nature](#452-nature)
+- [45. 微软](#45-微软)
+  - [45.1 基于Micro-LED＋CIS的模拟光学计算实现加速计算](#451-基于micro-ledcis的模拟光学计算实现加速计算)
+  - [45.2 arXiv上的论文](#452-arxiv上的论文)
+  - [45.3 Nature](#453-nature)
+  - [45.4 研究员](#454-研究员)
+    - [45.4.1 Paolo Costa - Mosaic作者之一](#4541-paolo-costa---mosaic作者之一)
+    - [45.4.2 Kai Shi - Mosaic作者之一](#4542-kai-shi---mosaic作者之一)
+    - [45.4.3 Ran Shu - 微软亚洲研究院](#4543-ran-shu---微软亚洲研究院)
 - [46. 提高GaN基发光二极管调制带宽用于高速可见光通信的对策与挑战 - 郭浩中 李晋闽](#46-提高gan基发光二极管调制带宽用于高速可见光通信的对策与挑战---郭浩中-李晋闽)
 - [47. Micro-LED市场规模](#47-micro-led市场规模)
   - [47.1 TrendForce](#471-trendforce)
@@ -5759,7 +5764,9 @@ GaAs - AlGaAs高辐射LED用于光通信系统的功率和调制带宽研究
 
 <https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/%E4%BF%A1%E6%81%AF%E5%85%89%E5%AD%90%E6%8A%80%E6%9C%AF%E5%8F%91%E5%B1%95%E4%B8%8E%E5%BA%94%E7%94%A8%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-2024.pdf>
 
-# 45. 微软：基于Micro-LED＋CIS的模拟光学计算实现加速计算
+# 45. 微软
+
+## 45.1 基于Micro-LED＋CIS的模拟光学计算实现加速计算
 
   微软剑桥研究院在今年8月底的一个视频及讲了他们新一代的模拟光学计算机，感觉还挺巧妙的，采用了MicroLED阵列＋投影芯片＋标准的CMOS图像传感器，实现了机器学习推理和复杂优化问题的加速计算(视频：https://youtu.be/gdJYMoZMKIY?si=Zil0EMYvVitWMTyw)。
 
@@ -5807,18 +5814,82 @@ GaAs - AlGaAs高辐射LED用于光通信系统的功率和调制带宽研究
 
 <https://mp.weixin.qq.com/s/ciTpYIaff8_LVrsLmzwruA>
 
-## 45.1 arXiv上的论文
+## 45.2 arXiv上的论文
 
 Analog Iterative Machine (AIM): using light to solve quadratic optimization problems with mixed variables
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Analog%20Iterative%20Machine%20(AIM)%20using%20light%20to%20solve%20quadratic%20optimization%20problems%20with%20mixed%20variables.pdf>
 
-## 45.2 Nature
+## 45.3 Nature
 
 Analog optical computer for AI inference and combinatorial optimization
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Analog%20optical%20computer%20for%20AI%20inference%20and%20combinatorial%20optimization.pdf>
 
+## 45.4 研究员
+
+### 45.4.1 Paolo Costa - Mosaic作者之一
+
+Partner Research Manager 
+
+利用 MicroLED 颠覆 AI 基础设施
+
+新闻与活动
+我一直在寻找充满活力、积极进取的学生。如果您对光学、网络、分布式系统和/或 FPGA 领域的实习感兴趣，请给我发送电子邮件。
+
+简历
+我是剑桥微软研究实验室云系统未来小组的合作研究经理，也是计算机系的荣誉讲师（在新标签页中打开）伦敦帝国理工学院（在新标签页中打开）。
+
+过去，我曾在伦敦帝国理工学院担任研究员（在新标签页中打开）在此之前，他是计算机系统博士后研究员（在新标签页中打开）阿姆斯特丹自由大学研究小组（在新标签页中打开）。我拥有米兰理工大学计算机工程硕士和博士学位（在新标签页中打开）。
+
+研究兴趣
+我是一名实验计算机科学家。我通过原型验证我的想法，以理解、建模和验证观察结果。我的研究兴趣在于分布式系统和网络的交叉领域，尤其侧重于数据中心的大规模光网络系统。
+
+过去，我参与了CamCube和Predictable Datacenters项目等工作，旨在实现数据中心应用程序与网络之间更好的集成和协同，从而提高性能并降低复杂性。更多详情请点击此处。
+
+我目前的研究汇集了硬件、光学、网络和应用级专业知识，以跨堆栈视角开发下一代数据中心网络的光学技术，利用新兴硬件和光学技术。
+
+<https://www.microsoft.com/en-us/research/people/pcosta/>
+
+paolo.costa@microsoft.com
+
+### 45.4.2 Kai Shi - Mosaic作者之一
+
+我是英国微软剑桥研究院云系统未来组 的研究员。我的研究重点是解决下一代数据中心的网络挑战。我热爱微软的多学科环境。一方面，我可以将我之前在光子器件和光通信系统方面的研究经验贡献给项目。另一方面，我可以从从事云网络和应用层研究的同事那里学到很多知识。
+
+教育
+都柏林城市大学（2008-2012），博士
+论文题目：用于相干光通信系统的波长可调激光器研究（ 摘要， PDF）
+
+华中科技大学（2002-2006，2006-2008），学士，工学硕士
+论文题目：单片集成DBR型可调谐半导体激光器的研究(Research on Monolithic DBR Tunable Semiconductor Lasers)（ 摘要， PDF ）
+
+项目
+Sirius：高速、低延迟数据中心内部网络
+Iris：数据中心间网络
+过去，我曾参与过以下项目：
+
+挖掘多模光纤的带宽潜力（COMIMO）
+加入微软研究院之前，我曾在英国伦敦大学学院的光网络组 担任研究助理，参与COMIMO 项目（2012 年至 2017 年）。在该项目中，我与南安普顿大学和中佛罗里达大学合作，在一条 24 公里长的环芯光纤上构建了一个 10×10 模分复用系统，并运用我开发的数字信号处理算法，实现了光多输入多输出 (MIMO) 系统的快速收敛和低复杂度。我们已成功在单根光纤上实现了 1.12 Tbps 的传输速率。
+
+电信价值链研究中心（CTVR）和从原子到系统的光子集成中心（PiFAS）
+在我攻读博士学位期间，以及之后在都柏林城市大学无线电与光通信实验室 的短暂博士后研究期间，我的研究重点是快速波长可调谐激光器的特性表征和应用。我开发了一种动态线宽表征方法，可以以1ns的时间步长精确测量两个波长切换事件后的瞬态激光相位噪声。当波长可调谐激光器用于采用高阶调制格式和相干检测的光突发交换系统时，这种表征至关重要。
+
+我还表征了一种新型三段式开槽法布里-珀罗激光器，它是由我们在廷德尔国家研究所的合作者开发的。表征揭示了该器件的基本调谐机制。
+
+<https://kaishi83.github.io/blog/>
+
+kaishi@microsoft.com
+
+### 45.4.3 Ran Shu - 微软亚洲研究院
+
+我是微软亚洲研究院的高级研究员。2018年，我在清华大学获得计算机科学与技术博士学位，导师是任逢源教授。在此之前，我于2011年在清华大学获得计算机科学与技术学士学位。
+
+我的研究兴趣包括数据中心网络和网络系统。近期我专注于资源分解。
+
+<https://www.microsoft.com/en-us/research/people/rashu/>
+
+ran.shu@microsoft.com
 
 # 46. 提高GaN基发光二极管调制带宽用于高速可见光通信的对策与挑战 - 郭浩中 李晋闽
 
