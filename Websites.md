@@ -96,6 +96,9 @@
 - [18. 开发板](#18-开发板)
   - [18.1 olimex all fun projects at Olimex Ltd](#181-olimex-all-fun-projects-at-olimex-ltd)
     - [18.1.1 代表作](#1811-代表作)
+- [19. 极客](#19-极客)
+  - [19.1 Geeky Gadgets](#191-geeky-gadgets)
+  - [19.2 软件无线电 rtl-sdr.com](#192-软件无线电-rtl-sdrcom)
 
 
 # 1. 存储
@@ -610,3 +613,28 @@ Epitaxy and Device Design for High Efficiency Blue LEDs and Laser Diodes
 
 <https://olimex.wordpress.com/2016/02/12/new-oshw-ice40-fpga-evaluation-board-project/>
 
+# 19. 极客
+
+## 19.1 Geeky Gadgets
+
+欢迎来到 Geeky Gadgets，您值得信赖的最新电子产品和科技资讯来源。16 年来，我们始终走在科技新闻的前沿，展示全球最优秀的软件、硬件和尖端电子产品。我们富有洞察力的报道不仅使我们成为科技领域的权威声音，更让我们成为数百万人信赖的创新鉴赏家。
+
+在 Geeky Gadgets，我们不会只停留在表面。我们的深度指南会深入剖析最新设备，并以批判的视角重点介绍其功能和细微之处。我们剖析新技术，为您提供未经筛选的视角，让您了解哪些产品真正值得您花时间，哪些只是炒作。
+
+我们的编辑团队不仅专注于报道，更致力于构想和创造突破性的概念，将创意转化为实用的原型。还记得那款引爆互联网的Pencil iPad支架吗？这只是我们巧妙地将日常用品转化为爆款的一个例子。
+
+我们的团队由一群科技爱好者组成，他们从最初尝试经典的 Sinclair 电脑，到如今精通尖端硬件。我们对所有科技产品都充满热情。您可以在下方找到关于我们编辑团队的详细信息以及联系方式。
+
+<https://www.geeky-gadgets.com/>
+
+## 19.2 软件无线电 rtl-sdr.com
+
+RTL-SDR 是一款价格低廉的USB 加密狗，售价约 30 美元，可用作基于计算机的无线电扫描仪，接收您所在地区的实时无线电信号（无需互联网）。根据具体型号，它可以接收从 500 kHz 到 1.75 GHz 的频率。RTL-SDR 的大多数软件也是社区开发的，并免费提供。请注意，RTL-SDR 无法传输数据。
+
+RTL-SDR 的起源源于基于 RTL2832U 芯片组的量产 DVB-T 电视调谐器。在 Antti Palosaari、Eric Fry 和 Osmocom  （尤其是 Steve Markgraf）的共同努力下，他们发现可以直接访问 RTL2832U 芯片组上的原始 I/Q 数据，从而可以通过 Steve Markgraf 开发的自定义软件驱动程序将 DVB-T 电视调谐器转换为宽带软件无线电。如果您喜欢 RTL-SDR 项目，请考虑通过 Open Collective向 Osmocom 捐款，因为他们是驱动程序的开发者，并让 RTL-SDR 得以实现。
+
+自 RTL-SDR 发明以来，它多年来一直广受欢迎，并实现了无线电频谱的普及。如今，包括预算有限的业余爱好者在内的任何人都可以访问无线电频谱。值得注意的是，就在几年前，这种 SDR 功能的价格甚至高达数百甚至数千美元。RTL-SDR 有时也被称为 RTL2832U、DVB-T SDR、DVB-T 加密狗、RTL 加密狗或“廉价软件定义无线电”。
+
+现在有很多比 RTL-SDR 更好的软件定义无线电，但它们的价格都更高。目前我们认为Airspy（169 美元）和SDRPlay（99 美元）SDR 是最好的低成本 RX SDR。此外，还有HackRF（300 美元），它既可以发送，也可以接收。
+
+<https://www.rtl-sdr.com/>
