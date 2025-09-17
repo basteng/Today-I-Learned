@@ -134,6 +134,11 @@
   - [3. Low-Noise and High-Survivability 55–65-GHz GaN MMIC LNA for Millimeter-Wave Communications](#3-low-noise-and-high-survivability-5565-ghz-gan-mmic-lna-for-millimeter-wave-communications)
   - [4. 4.2 W/mm at 10 GHz in silicon delta-doped AlN/GaN/AlN pseudomorphic HEMTs with PECVD SiN passivation](#4-42-wmm-at-10-ghz-in-silicon-delta-doped-alnganaln-pseudomorphic-hemts-with-pecvd-sin-passivation)
   - [5. Single-chip microprocessor that communicates directly using light](#5-single-chip-microprocessor-that-communicates-directly-using-light)
+  - [6. Quantitative analysis of leakage current in III-nitride micro-light-emitting diodes](#6-quantitative-analysis-of-leakage-current-in-iii-nitride-micro-light-emitting-diodes)
+  - [7. Developments toward monolithic III-N microLEDs: red InGaN active region and tunnel junctions grown by MOCVD](#7-developments-toward-monolithic-iii-n-microleds-red-ingan-active-region-and-tunnel-junctions-grown-by-mocvd)
+  - [8. Unexpected origin of the quantum efficiency reduction in long-wavelength (In,Ga)⁢N light-emitting diodes](#8-unexpected-origin-of-the-quantum-efficiency-reduction-in-long-wavelength-ingan-light-emitting-diodes)
+  - [9. Volumetric carrier injection in InGaN quantum well light emitting diodes](#9-volumetric-carrier-injection-in-ingan-quantum-well-light-emitting-diodes)
+  - [10. Recent advances in micron scale III-nitrides based RGB MicroLEDs](#10-recent-advances-in-micron-scale-iii-nitrides-based-rgb-microleds)
 
 链接不需要加<>，直接copy https链接
 
@@ -654,5 +659,25 @@ https://ieeexplore.ieee.org/document/11115098
 ## 5. Single-chip microprocessor that communicates directly using light
 
 https://www.nature.com/articles/nature16454
+
+## 6. Quantitative analysis of leakage current in III-nitride micro-light-emitting diodes
+
+<https://pubs.aip.org/aip/apl/article-abstract/126/4/043506/3332655/Quantitative-analysis-of-leakage-current-in-III?redirectedFrom=fulltext>
+
+## 7. Developments toward monolithic III-N microLEDs: red InGaN active region and tunnel junctions grown by MOCVD
+
+<https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13386/3038933/Developments-toward-monolithic-III-N-microLEDs--red-InGaN-active/10.1117/12.3038933.short>
+
+## 8. Unexpected origin of the quantum efficiency reduction in long-wavelength (In,Ga)⁢N light-emitting diodes
+
+<https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.23.034002>
+
+## 9. Volumetric carrier injection in InGaN quantum well light emitting diodes
+
+<https://www.researchgate.net/publication/387122860_Volumetric_carrier_injection_in_InGaN_quantum_well_light_emitting_diodes>
+
+## 10. Recent advances in micron scale III-nitrides based RGB MicroLEDs
+
+<https://www.researchgate.net/publication/378934633_Recent_advances_in_micron_scale_III-nitrides_based_RGB_MicroLEDs>
 
 

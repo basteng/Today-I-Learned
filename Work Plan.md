@@ -2,6 +2,7 @@
   - [1.1 LED究竟可以调制多大带宽 - 理论计算 - 发表论文](#11-led究竟可以调制多大带宽---理论计算---发表论文)
   - [1.2 Ayar Lab和Avicena两个方案比较 - 发表期刊文章](#12-ayar-lab和avicena两个方案比较---发表期刊文章)
   - [1.3 机器学习计算InGaN/GaN能带分布](#13-机器学习计算ingangan能带分布)
+  - [1.4 MicroLED Communication 相关机构](#14-microled-communication-相关机构)
 - [2.工作安排](#2工作安排)
   - [2.1 研究LED等效电路](#21-研究led等效电路)
     - [2.1.1 电注入 III 族氮化物发光二极管中的差异载流子寿命和传输效应](#211-电注入-iii-族氮化物发光二极管中的差异载流子寿命和传输效应)
@@ -16,6 +17,11 @@
       - [\[2\] Polarization-transparent microphotonic devices in the strong confinement limit](#2-polarization-transparent-microphotonic-devices-in-the-strong-confinement-limit)
       - [\[1\] Optics for low-energy communication inside digital processors, quantum detectors, sources, modulators as efficient impedance converters](#1-optics-for-low-energy-communication-inside-digital-processors-quantum-detectors-sources-modulators-as-efficient-impedance-converters)
   - [3.1 Enhancing light emission with electric fields in polar nitride semiconductors](#31-enhancing-light-emission-with-electric-fields-in-polar-nitride-semiconductors)
+  - [2.4](#24)
+    - [2.4.1 Micro-LED Photonic Interconnect Workshop 研究这里的相关机构](#241-micro-led-photonic-interconnect-workshop-研究这里的相关机构)
+      - [2.4.1.1 LETI在研究MicroLED通信](#2411-leti在研究microled通信)
+        - [2.4.1.1.1 Towards 3D Integration of GaN-on-Si MicroLED and MicroPD Arrays for Short-Range Parallel Optical Communication | Dr. Vygintas Jankus, MicroLED \& OLED Partnership Manager, LETI](#24111-towards-3d-integration-of-gan-on-si-microled-and-micropd-arrays-for-short-range-parallel-optical-communication--dr-vygintas-jankus-microled--oled-partnership-manager-leti)
+        - [2.4.1.1.2 Short range optical communication with GaN-on-Si microLED and microPD matrices](#24112-short-range-optical-communication-with-gan-on-si-microled-and-micropd-matrices)
 
 
 # 1.目标
@@ -25,6 +31,8 @@
 ## 1.2 Ayar Lab和Avicena两个方案比较 - 发表期刊文章
 
 ## 1.3 机器学习计算InGaN/GaN能带分布
+
+## 1.4 MicroLED Communication 相关机构
 
 # 2.工作安排
 
@@ -225,3 +233,26 @@
 核心的是这篇
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Machine%20Learning%20-%20InGaN%20GaN/ph5c00133_si_003.pdf>
+
+## 2.4 
+
+### 2.4.1 Micro-LED Photonic Interconnect Workshop 研究这里的相关机构
+
+![image](/picture/2025-09-01%20134803.png)
+
+![image](/picture/2025-09-01%20134843.png)
+
+![image](/picture/2025-09-01%20134915.png)
+
+
+#### 2.4.1.1 LETI在研究MicroLED通信
+
+##### 2.4.1.1.1 Towards 3D Integration of GaN-on-Si MicroLED and MicroPD Arrays for Short-Range Parallel Optical Communication | Dr. Vygintas Jankus, MicroLED & OLED Partnership Manager, LETI
+
+##### 2.4.1.1.2 Short range optical communication with GaN-on-Si microLED and microPD matrices
+
+<https://sid.onlinelibrary.wiley.com/doi/10.1002/jsid.2012>
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/J%20Soc%20Info%20Display%20-%202024%20-%20Le%20Maitre%20-%20Short%20range%20optical%20communication%20with%20GaN%E2%80%90on%E2%80%90Si%20microLED%20and%20microPD%20matrices.pdf>
+
+
