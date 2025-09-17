@@ -67,6 +67,7 @@
   - [方案 D（不改策略也能跑）：显式调用 `.cmd` 可执行](#方案-d不改策略也能跑显式调用-cmd-可执行)
   - [额外检查（可选但有用）](#额外检查可选但有用)
 - [35. Kodi插件配置](#35-kodi插件配置)
+- [36. 设置Gemini CLI API Key](#36-设置gemini-cli-api-key)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1358,4 +1359,129 @@ text
 <setting id="youtube.api.id" default="true" />
 <setting id="youtube.api.secret" default="true" />
 
+# 36. 设置Gemini CLI API Key
 
+访问
+ https://console.cloud.google.com/
+
+太好了！现在我来指导您在 Google Cloud Console 中创建 API Key：
+
+**步骤1：创建或选择项目**
+1. 在页面顶部，您会看到一个项目选择器（通常显示为项目名称或"选择项目"）
+2. 点击它，然后：
+   - 如果您已有项目，可以选择现有的
+   - 如果没有项目，点击"新建项目"
+   - 输入项目名称（比如"Gemini-CLI-Project"）
+   - 点击"创建"
+
+**步骤2：启用 Generative Language API**
+1. 在左侧菜单中，找到并点击"APIs和服务"→"库"
+2. 在搜索框中输入"Generative Language API"
+3. 点击搜索结果中的"Generative Language API"
+4. 点击"启用"按钮
+
+**步骤3：创建 API 密钥**
+1. 在左侧菜单中，点击"APIs和服务"→"凭据"
+2. 点击页面顶部的"+ 创建凭据"按钮
+3. 从下拉菜单中选择"API 密钥"
+4. 系统会生成一个 API 密钥，**立即复制并保存它**（格式类似：`AIzaSyD...`）
+
+**步骤4：限制 API 密钥（安全建议）**
+1. 点击刚创建的 API 密钥旁边的"编辑"按钮
+2. 在"API 限制"部分，选择"限制密钥"
+3. 勾选"Generative Language API"
+4. 点击"保存"
+
+请告诉我您现在看到了什么，或者您完成到了哪一步，我会继续指导您。
+
+如果在任何步骤中遇到问题，请截图或描述您看到的界面，我会帮您解决。
+
+非常好！您已经成功创建并限制了 API 密钥。现在让我们回到 Gemini CLI 中完成认证设置：
+
+**步骤5：在 Gemini CLI 中使用 API Key**
+
+1. **回到您的命令行终端**，应该还能看到 Gemini CLI 的认证选择界面
+
+2. **选择 API Key 选项**
+   ```
+   使用方向键 ↓ 移动到 "Gemini API Key (AI Studio)" 选项
+   按 Enter 确认选择
+   ```
+
+3. **输入 API Key**
+   ```
+   当提示输入 API Key 时，粘贴您刚才复制的 API Key
+   （格式类似：AIzaSyD...）
+   按 Enter 确认
+   ```
+
+4. **验证认证成功**
+   - CLI 应该会显示认证成功的消息
+   - 您应该能看到 Gemini CLI 的主界面或提示符
+
+**如果认证成功，您应该能够：**
+- 开始与 Gemini 对话
+- 运行各种 Gemini CLI 命令
+- 看到类似 `gemini>` 的提示符
+
+**测试一下**
+认证完成后，可以尝试发送一个简单的消息测试：
+```
+Hello, can you help me test this connection?
+```
+
+请告诉我：
+1. 您是否成功进入了 API Key 输入界面？
+2. 输入 API Key 后有什么反应？
+3. 是否看到了认证成功的提示？
+
+如果遇到任何错误信息，请告诉我具体的错误内容，我会帮您解决。
+
+看到了！Gemini CLI 需要您设置环境变量而不是直接输入 API Key。让我们来设置环境变量：
+
+**方法1：临时设置（推荐先试这个）**
+
+在当前命令行窗口中运行：
+```cmd
+set GEMINI_API_KEY=您的API密钥
+```
+
+**替换"您的API密钥"为您刚才复制的实际 API Key**，例如：
+```cmd
+set GEMINI_API_KEY=AIzaSyD1234567890abcdefghijklmnop
+```
+
+然后重新运行：
+```cmd
+gemini
+```
+
+**方法2：永久设置（如果方法1有效）**
+
+1. **通过系统设置**：
+   ```
+   1. 按 Win + R，输入 sysdm.cpl，按 Enter
+   2. 点击"高级"选项卡
+   3. 点击"环境变量"
+   4. 在"用户变量"部分点击"新建"
+   5. 变量名：GEMINI_API_KEY
+   6. 变量值：您的API密钥
+   7. 点击"确定"保存
+   ```
+
+2. **重新打开命令行窗口**测试
+
+**方法3：创建 .env 文件**
+
+在您当前的目录中创建一个名为 `.env` 的文件：
+```cmd
+echo GEMINI_API_KEY=您的API密钥 > .env
+```
+
+**现在请先尝试方法1**，在当前命令行中运行：
+```cmd
+set GEMINI_API_KEY=您的实际API密钥
+gemini
+```
+
+告诉我执行后看到了什么结果！
