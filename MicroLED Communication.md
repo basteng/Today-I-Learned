@@ -294,6 +294,7 @@
   - [78.1 红色 μLED 是 AR 显示器的最大瓶颈之一](#781-红色-μled-是-ar-显示器的最大瓶颈之一)
   - [78.2 AR](#782-ar)
     - [78.2.1 Advances in InGaN-based RGB micro-light-emitting diodes for AR applications:Status and perspective](#7821-advances-in-ingan-based-rgb-micro-light-emitting-diodes-for-ar-applicationsstatus-and-perspective)
+  - [78.3 Micro-LED 加速随机数生成](#783-micro-led-加速随机数生成)
 - [79. 在 GaN HEMT 上异质集成 20x10 µm 蓝色微型 LED/像素，用于可见光通信](#79-在-gan-hemt-上异质集成-20x10-µm-蓝色微型-led像素用于可见光通信)
 - [80. 超快白光系统将蓝色微型LED与有机混合物相结合，用于可见光通信和固态照明](#80-超快白光系统将蓝色微型led与有机混合物相结合用于可见光通信和固态照明)
 - [81. 多功能硅集成光子处理器：下一代人工智能集群的可重构解决方案](#81-多功能硅集成光子处理器下一代人工智能集群的可重构解决方案)
@@ -7426,6 +7427,39 @@ FP 激光器是短距离、低带宽系统的低成本解决方案。同时，MZ
 ### 78.2.1 Advances in InGaN-based RGB micro-light-emitting diodes for AR applications:Status and perspective
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/Advances_in_InGaN-based_RGB_micro-light-emitting_d.pdf>
+
+## 78.3 Micro-LED 加速随机数生成
+
+KAUST 研究人员开发的微型 LED 可用作量子随机数生成器，实现 9.375 Gbit/s 的超高生成速率。© 2025 KAUST。
+沙特阿拉伯和美国的一组研究人员已经证明，被称为微型 LED 的微型 LED 能够以每秒千兆位的速度生成随机数[1]。
+
+随机数的生成对于许多任务都至关重要，包括数据安全（用于创建加密密钥和密码）以及天气和金融市场等复杂系统的计算机模拟。
+
+因此，迫切需要开发具有成本效益的随机数发生器，这种发生器要足够小，可以实现芯片级集成，同时还要提供快速的生成速率。
+
+生成真随机数最稳健可靠的方法是对基于量子力学固有随机性的物理过程进行采样和数字化。例如，过去人们已经研究过电子和光电器件的热噪声、混沌和抖动。
+
+现在，Heming Lin、Boon Ooi 和来自 KAUST、阿卜杜勒阿齐兹国王科技城 (KACST) 以及加州大学圣巴巴拉分校的同事报告称，尺寸范围为 5-100 μm 的蓝色 GaN 微型 LED 自发辐射的强度波动可以用作量子随机数发生器 (QRNG)，具有 9.375 Gbit/s 的超高生成速率。
+
+Lin 和 Ooi 表示：“Micro-LED 结构紧凑、可靠且经济高效。与其他竞争技术相比，它们功耗更低，所需的电子和光子系统架构也更简单。”
+
+利用LED产生数字信号的想法并不新鲜。过去十年，研究团队一直在探索测量光子数量和到达时间。然而，这些先前方案的一个主要局限性在于，它们的生成速率要慢得多，通常不超过每秒几百兆比特。
+
+“依赖单光子检测的系统通常每个采样周期仅提取两位，而我们的系统通过利用强度波动实现了六位，”Lin 和 Ooi 解释道。
+
+重要的是，任何 QRNG 要想获得信任，其输出必须经过严格测试，以确保其足够随机。美国国家标准与技术研究院 (NIST) 制定的测试是黄金标准。KAUST 团队测试了各种不同尺寸的微型 LED——尺寸范围从 5 × 5 μm² 到 100 × 100 μm²——驱动电流范围从 0.5 mA 到 100 mA。所有产品均通过了 NIST 测试。
+
+该团队的未来工作将集中于通过创建能够并行生成随机数的微型 LED 二维阵列来提高生成率。
+
+研究人员还计划创建一个完全集成的系统，而不是使用分立元件。目前，KAUST 的系统包含一个 GaN 微型 LED，它使用热电冷却器进行温度稳定，并将其发射的光馈送到雪崩光电探测器。雪崩光电探测器又通过电子放大器连接到采样示波器。
+
+Lin 和 Ooi 补充道：“我们的下一步是将片上光电探测器与微型 LED 集成，然后整合所有必需的电子元件，以实现完全集成的 QRNG 芯片。”
+
+<https://discovery.kaust.edu.sa/en/article/25936/micro-leds-boost-random-number-generation/>
+
+<https://opg.optica.org/oe/fulltext.cfm?uri=oe-33-11-22154&id=571324>
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Micro-LED-based%20quantum%20random%20number%20generators.pdf>
 
 # 79. 在 GaN HEMT 上异质集成 20x10 µm 蓝色微型 LED/像素，用于可见光通信
 
