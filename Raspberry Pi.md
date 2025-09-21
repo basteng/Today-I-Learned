@@ -102,6 +102,13 @@
     - [方法2: 先创建目录](#方法2-先创建目录)
     - [方法3: 使用 iptables-persistent 包](#方法3-使用-iptables-persistent-包)
     - [方法4: 手动创建启动脚本](#方法4-手动创建启动脚本)
+  - [服务器失效的时候更换办法](#服务器失效的时候更换办法)
+    - [1. sudo nano /etc/shadowsocks-libev/redir.json](#1-sudo-nano-etcshadowsocks-libevredirjson)
+    - [2.  netstat -tlnp | grep 1081](#2--netstat--tlnp--grep-1081)
+    - [3. sudo systemctl restart shadowsocks-libev-redir@redir](#3-sudo-systemctl-restart-shadowsocks-libev-redirredir)
+    - [4. sudo systemctl status shadowsocks-libev-redir@redir](#4-sudo-systemctl-status-shadowsocks-libev-redirredir)
+    - [5. sudo iptables -t nat -L SHADOWSOCKS -n -v](#5-sudo-iptables--t-nat--l-shadowsocks--n--v)
+    - [6. sudo netstat -tlnp | grep 1081](#6-sudo-netstat--tlnp--grep-1081)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1912,3 +1919,57 @@ sudo update-rc.d iptables-restore defaults
 -----------------------------------
 
 也就是说，每次服务器失效的时候改变/etc/shadowsocks-libev/redir.json就可以了
+
+## 服务器失效的时候更换办法
+
+### 1. sudo nano /etc/shadowsocks-libev/redir.json
+
+修改IP或者端口
+
+### 2.  netstat -tlnp | grep 1081
+
+检查1081端口是否有占用，有占用则kill掉
+
+### 3. sudo systemctl restart shadowsocks-libev-redir@redir
+
+重启ss-redir服务
+
+### 4. sudo systemctl status shadowsocks-libev-redir@redir
+
+basteng@basteng:~ $ sudo systemctl status shadowsocks-libev-redir@redir
+● shadowsocks-libev-redir@redir.service - Shadowsocks-Libev Custom Client Service Redir Mode for redir
+     Loaded: loaded (/lib/systemd/system/shadowsocks-libev-redir@.service; enabled; preset: enabled)
+     Active: active (running) since Sun 2025-09-21 23:47:45 CST; 25s ago
+       Docs: man:ss-redir(1)
+   Main PID: 44720 (ss-redir)
+      Tasks: 1 (limit: 8735)
+        CPU: 23ms
+     CGroup: /system.slice/system-shadowsocks\x2dlibev\x2dredir.slice/shadowsocks-libev-redir@redir.service
+             └─44720 /usr/bin/ss-redir -c /etc/shadowsocks-libev/redir.json
+
+Sep 21 23:47:45 basteng systemd[1]: Started shadowsocks-libev-redir@redir.service - Shadowsocks-Libev Custom Client Service Redir Mode for redir.
+Sep 21 23:47:45 basteng ss-redir[44720]:  2025-09-21 23:47:45 INFO: initializing ciphers... aes-256-cfb
+Sep 21 23:47:45 basteng ss-redir[44720]:  2025-09-21 23:47:45 INFO: Stream ciphers are insecure, therefore deprecated, and should be almost always avoided.
+Sep 21 23:47:45 basteng ss-redir[44720]:  2025-09-21 23:47:45 INFO: listening at 0.0.0.0:1081
+Sep 21 23:47:45 basteng ss-redir[44720]:  2025-09-21 23:47:45 INFO: UDP relay enabled
+
+### 5. sudo iptables -t nat -L SHADOWSOCKS -n -v
+
+basteng@basteng:~ $ sudo iptables -t nat -L SHADOWSOCKS -n -v
+Chain SHADOWSOCKS (1 references)
+ pkts bytes target     prot opt in     out     source               destination
+    0     0 RETURN     0    --  *      *       0.0.0.0/0            149.28.79.242
+    0     0 RETURN     0    --  *      *       0.0.0.0/0            0.0.0.0/8
+    0     0 RETURN     0    --  *      *       0.0.0.0/0            127.0.0.0/8
+    0     0 RETURN     0    --  *      *       0.0.0.0/0            169.254.0.0/16
+    0     0 RETURN     0    --  *      *       0.0.0.0/0            192.168.0.0/16
+    0     0 RETURN     0    --  *      *       0.0.0.0/0            10.0.0.0/8
+    0     0 REDIRECT   6    --  *      *       0.0.0.0/0            0.0.0.0/0            redir ports 1081
+    0     0 REDIRECT   6    --  *      *       0.0.0.0/0            0.0.0.0/0            redir ports 1081
+
+### 6. sudo netstat -tlnp | grep 1081
+
+basteng@basteng:~ $ sudo netstat -tlnp | grep 1081
+tcp        0      0 0.0.0.0:1081            0.0.0.0:*               LISTEN      44720/ss-redir
+
+
