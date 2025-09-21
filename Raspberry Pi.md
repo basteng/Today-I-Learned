@@ -71,9 +71,12 @@
     - [1. **编辑配置文件**](#1-编辑配置文件)
     - [2. **修改服务器 IP 地址**](#2-修改服务器-ip-地址)
     - [3. **保存并退出**](#3-保存并退出)
-    - [4. **重启 Shadowsocks 服务**](#4-重启-shadowsocks-服务)
-    - [5. **检查服务状态**](#5-检查服务状态)
-    - [6. **测试翻墙是否正常**](#6-测试翻墙是否正常)
+    - [4.找出之前占用1080端口的PID，并且kill](#4找出之前占用1080端口的pid并且kill)
+- [找出占用1080端口的进程](#找出占用1080端口的进程)
+- [停止该进程（假设PID是12345）](#停止该进程假设pid是12345)
+    - [5. **重启 Shadowsocks 服务**](#5-重启-shadowsocks-服务)
+    - [6. **检查服务状态**](#6-检查服务状态)
+    - [7. **测试翻墙是否正常**](#7-测试翻墙是否正常)
     - [总结：](#总结-1)
 - [16. 树莓派透明代理设置](#16-树莓派透明代理设置)
   - [解决方案](#解决方案)
@@ -1553,7 +1556,17 @@ sudo nano /etc/shadowsocks-libev/config.json
 
 在编辑完成后，按 `Ctrl + X` 退出编辑器，然后按 `Y` 保存文件，再按 `Enter` 确认保存。
 
-### 4. **重启 Shadowsocks 服务**
+### 4.找出之前占用1080端口的PID，并且kill
+
+如果你想保持本地端口为1080，需要先找出并停止占用1080端口的进程：
+
+# 找出占用1080端口的进程
+sudo netstat -tlnp | grep 1080
+
+# 停止该进程（假设PID是12345）
+sudo kill 12345
+
+### 5. **重启 Shadowsocks 服务**
 
 为了使配置生效，需要重启 **Shadowsocks** 服务：
 
@@ -1561,7 +1574,7 @@ sudo nano /etc/shadowsocks-libev/config.json
 sudo systemctl restart shadowsocks-libev-local@config
 ```
 
-### 5. **检查服务状态**
+### 6. **检查服务状态**
 
 确认 **Shadowsocks** 服务已成功重启，并且没有错误：
 
@@ -1583,7 +1596,7 @@ sudo systemctl status shadowsocks-libev-local@config
              └─[PID] /usr/bin/ss-local -c /etc/shadowsocks-libev/config.json
 ```
 
-### 6. **测试翻墙是否正常**
+### 7. **测试翻墙是否正常**
 
 使用以下命令测试翻墙是否正常工作：
 
