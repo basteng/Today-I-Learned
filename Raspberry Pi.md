@@ -1937,6 +1937,7 @@ sudo update-rc.d iptables-restore defaults
 ### 4. sudo systemctl status shadowsocks-libev-redir@redir
 
 basteng@basteng:~ $ sudo systemctl status shadowsocks-libev-redir@redir
+
 ● shadowsocks-libev-redir@redir.service - Shadowsocks-Libev Custom Client Service Redir Mode for redir
      Loaded: loaded (/lib/systemd/system/shadowsocks-libev-redir@.service; enabled; preset: enabled)
      Active: active (running) since Sun 2025-09-21 23:47:45 CST; 25s ago
@@ -1956,6 +1957,7 @@ Sep 21 23:47:45 basteng ss-redir[44720]:  2025-09-21 23:47:45 INFO: UDP relay en
 ### 5. sudo iptables -t nat -L SHADOWSOCKS -n -v
 
 basteng@basteng:~ $ sudo iptables -t nat -L SHADOWSOCKS -n -v
+
 Chain SHADOWSOCKS (1 references)
  pkts bytes target     prot opt in     out     source               destination
     0     0 RETURN     0    --  *      *       0.0.0.0/0            149.28.79.242
@@ -1970,6 +1972,7 @@ Chain SHADOWSOCKS (1 references)
 ### 6. sudo netstat -tlnp | grep 1081
 
 basteng@basteng:~ $ sudo netstat -tlnp | grep 1081
+
 tcp        0      0 0.0.0.0:1081            0.0.0.0:*               LISTEN      44720/ss-redir
 
 
