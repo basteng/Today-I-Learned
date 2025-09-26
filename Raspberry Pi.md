@@ -109,6 +109,18 @@
     - [4. sudo systemctl status shadowsocks-libev-redir@redir](#4-sudo-systemctl-status-shadowsocks-libev-redirredir)
     - [5. sudo iptables -t nat -L SHADOWSOCKS -n -v](#5-sudo-iptables--t-nat--l-shadowsocks--n--v)
     - [6. sudo netstat -tlnp | grep 1081](#6-sudo-netstat--tlnp--grep-1081)
+- [17. Gridcoin](#17-gridcoin)
+  - [17.1 添加自启动服务](#171-添加自启动服务)
+  - [方法1：使用 systemd 服务（推荐）](#方法1使用-systemd-服务推荐)
+    - [1. 创建 systemd 服务文件](#1-创建-systemd-服务文件)
+    - [2. 添加以下内容：](#2-添加以下内容)
+    - [3. 启用和启动服务](#3-启用和启动服务)
+    - [4. 管理服务的常用命令](#4-管理服务的常用命令)
+  - [方法2：添加到 crontab](#方法2添加到-crontab)
+  - [方法3：添加到 ~/.bashrc（简单方法）](#方法3添加到-bashrc简单方法)
+  - [确保配置文件正确](#确保配置文件正确)
+  - [验证自动启动](#验证自动启动)
+  - [推荐使用方法1（systemd）](#推荐使用方法1systemd)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1975,4 +1987,141 @@ basteng@basteng:~ $ sudo netstat -tlnp | grep 1081
 
 tcp        0      0 0.0.0.0:1081            0.0.0.0:*               LISTEN      44720/ss-redir
 
+# 17. Gridcoin
+
+## 17.1 添加自启动服务
+
+有几种方法让 gridcoinresearchd 开机自动启动：
+
+## 方法1：使用 systemd 服务（推荐）
+
+### 1. 创建 systemd 服务文件
+```bash
+sudo nano /etc/systemd/system/gridcoinresearchd.service
+```
+
+### 2. 添加以下内容：
+```ini
+[Unit]
+Description=Gridcoin Research Daemon
+After=network.target
+
+[Service]
+Type=forking
+User=basteng
+Group=basteng
+ExecStart=/usr/bin/gridcoinresearchd -daemon -conf=/home/basteng/.GridcoinResearch/gridcoinresearch.conf -datadir=/home/basteng/.GridcoinResearch
+ExecStop=/usr/bin/gridcoinresearchd -conf=/home/basteng/.GridcoinResearch/gridcoinresearch.conf -datadir=/home/basteng/.GridcoinResearch stop
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=60
+KillMode=process
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
+```
+
+### 3. 启用和启动服务
+```bash
+# 重新加载systemd配置
+sudo systemctl daemon-reload
+
+# 启用开机自启
+sudo systemctl enable gridcoinresearchd.service
+
+# 立即启动服务
+sudo systemctl start gridcoinresearchd.service
+
+# 检查服务状态
+sudo systemctl status gridcoinresearchd.service
+```
+
+### 4. 管理服务的常用命令
+```bash
+# 启动服务
+sudo systemctl start gridcoinresearchd
+
+# 停止服务
+sudo systemctl stop gridcoinresearchd
+
+# 重启服务
+sudo systemctl restart gridcoinresearchd
+
+# 查看服务日志
+sudo journalctl -u gridcoinresearchd -f
+```
+
+## 方法2：添加到 crontab
+
+```bash
+# 编辑crontab
+crontab -e
+
+# 添加以下行（在文件末尾）
+@reboot sleep 30 && /usr/bin/gridcoinresearchd
+```
+
+## 方法3：添加到 ~/.bashrc（简单方法）
+
+```bash
+# 编辑bashrc文件
+nano ~/.bashrc
+
+# 在文件末尾添加
+# 自动启动gridcoin（仅在终端登录时）
+if ! pgrep -x "gridcoinresearchd" > /dev/null; then
+    gridcoinresearchd
+fi
+```
+
+## 确保配置文件正确
+
+在设置自动启动之前，确保配置文件存在并正确：
+
+```bash
+# 确保配置文件存在
+mkdir -p ~/.GridcoinResearch
+
+# 创建或编辑配置文件
+nano ~/.GridcoinResearch/gridcoinresearch.conf
+```
+
+配置文件内容：
+```
+# RPC设置
+rpcuser=your_username
+rpcpassword=your_secure_password
+
+# 基本设置
+daemon=1
+server=1
+rpcallowip=127.0.0.1
+
+# 如果不使用BOINC，添加这行
+investor=1
+```
+
+## 验证自动启动
+
+```bash
+# 重启系统测试
+sudo reboot
+
+# 重启后检查gridcoin是否运行
+ps aux | grep gridcoin
+
+# 或使用systemctl检查（如果使用方法1）
+sudo systemctl status gridcoinresearchd
+```
+
+## 推荐使用方法1（systemd）
+
+systemd 方法的优点：
+- 更稳定可靠
+- 可以自动重启失败的服务
+- 更好的日志管理
+- 标准的Linux服务管理方式
+
+您想使用哪种方法？我推荐使用 systemd 服务的方法，它最为稳定和专业。
 

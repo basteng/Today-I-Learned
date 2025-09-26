@@ -139,6 +139,7 @@
   - [8. Unexpected origin of the quantum efficiency reduction in long-wavelength (In,Ga)⁢N light-emitting diodes](#8-unexpected-origin-of-the-quantum-efficiency-reduction-in-long-wavelength-ingan-light-emitting-diodes)
   - [9. Volumetric carrier injection in InGaN quantum well light emitting diodes](#9-volumetric-carrier-injection-in-ingan-quantum-well-light-emitting-diodes)
   - [10. Recent advances in micron scale III-nitrides based RGB MicroLEDs](#10-recent-advances-in-micron-scale-iii-nitrides-based-rgb-microleds)
+  - [11. High-resolution visualization of sidewall defects in gallium nitride micro light-emitting diode via multi-physical field luminescence imaging microscopy](#11-high-resolution-visualization-of-sidewall-defects-in-gallium-nitride-micro-light-emitting-diode-via-multi-physical-field-luminescence-imaging-microscopy)
 
 链接不需要加<>，直接copy https链接
 
@@ -680,4 +681,7 @@ https://www.nature.com/articles/nature16454
 
 <https://www.researchgate.net/publication/378934633_Recent_advances_in_micron_scale_III-nitrides_based_RGB_MicroLEDs>
 
+## 11. High-resolution visualization of sidewall defects in gallium nitride micro light-emitting diode via multi-physical field luminescence imaging microscopy
+
+<https://pubs.aip.org/aip/apl/article-abstract/127/12/123504/3364172/High-resolution-visualization-of-sidewall-defects?redirectedFrom=fulltext>
 
