@@ -178,6 +178,8 @@
   - [56.1 BBC播客： 白色LED灯泡的发明](#561-bbc播客-白色led灯泡的发明)
 - [57. 仿真软件](#57-仿真软件)
   - [57.1 SiLENSe—software tool for light emitting diode (LED) bandgap engineering](#571-silensesoftware-tool-for-light-emitting-diode-led-bandgap-engineering)
+- [58. 教职/研究机会](#58-教职研究机会)
+  - [58.1 德克萨斯大学奥斯汀分校的教职招聘](#581-德克萨斯大学奥斯汀分校的教职招聘)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -3328,5 +3330,10 @@ LED 照明有多个版本：
 
 <https://www.suzhou-str.com/>
 
+# 58. 教职/研究机会
+
+## 58.1 德克萨斯大学奥斯汀分校的教职招聘
+
+<https://www.ece.utexas.edu/people/faculty/openings/tenure-track-faculty-positions-electrical-and-computer-engineering-fall>
 
 
