@@ -113,7 +113,7 @@
   - [31.3 EPC创始人：GaN临界点已到来](#313-epc创始人gan临界点已到来)
   - [31.4 到2030年取代手机中的GaAs](#314-到2030年取代手机中的gaas)
   - [31.5  Yole GaN（氮化镓）报告核心内容](#315--yole-gan氮化镓报告核心内容)
-  - [总结](#总结-3)
+    - [总结](#总结-3)
   - [31.6 GaN (Gallium Nitride) Research Report Summary](#316-gan-gallium-nitride-research-report-summary)
   - [31.7 Gallium Nitride (GaN) Multi-Market Analysis: Power, Optoelectronics, and RF](#317-gallium-nitride-gan-multi-market-analysis-power-optoelectronics-and-rf)
     - [Power Electronics Market](#power-electronics-market)
@@ -2220,7 +2220,7 @@ Lesaicherre 强调：“我们在低压和中压 GaN 技术方面取得了一些
 - GaN在消费电子领域已达到成本拐点，但在工业和汽车领域的大规模应用仍需成本进一步下降，尤其是与传统硅材料的成本平价[6]。
 - 未来几年，随着AI数据中心、可再生能源和电动汽车等新兴应用需求爆发，GaN将在高密度、高效能电源解决方案中扮演核心角色[6]。
 
-## 总结
+### 总结
 
 Yole报告认为，GaN功率半导体正加速渗透消费电子、数据通信、汽车、工业和可再生能源等多个领域，市场规模将在未来五年持续高速增长。技术创新与产业协作将决定GaN能否全面释放其潜力，成为下一代高效能电子系统的基石[1][2][6][9]。
 
