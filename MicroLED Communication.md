@@ -147,10 +147,10 @@
       - [5.64.16 Dr. Shiva Rai, Director, Applied Materials, Inc.](#56416-dr-shiva-rai-director-applied-materials-inc)
   - [5.65 顾问团队](#565-顾问团队)
     - [5.65.1 Fritz Kruger - OpenAI](#5651-fritz-kruger---openai)
-      - [5.65.2 Pradeep Sindhu](#5652-pradeep-sindhu)
-      - [5.65.3 Joe Young - FINISAR](#5653-joe-young---finisar)
-      - [5.65.4 Jim Harris - 斯坦福](#5654-jim-harris---斯坦福)
-      - [5.65.5 Richard Craig](#5655-richard-craig)
+    - [5.65.2 Pradeep Sindhu](#5652-pradeep-sindhu)
+    - [5.65.3 Joe Young - FINISAR](#5653-joe-young---finisar)
+    - [5.65.4 Jim Harris - 斯坦福](#5654-jim-harris---斯坦福)
+    - [5.65.5 Richard Craig](#5655-richard-craig)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -4092,7 +4092,7 @@ Fritz 以打造世界一流的工程团队和创新产品而闻名，拥有 50 �
 
 <https://avicena.tech/fritz-kruger/>
 
-#### 5.65.2 Pradeep Sindhu 
+### 5.65.2 Pradeep Sindhu 
 
 Pradeep的职业生涯包括创立瞻博网络 (Juniper Networks)，该公司因发明和工业化硅基路由器而广受认可 — — 这项发明在开启互联网时代方面发挥了核心作用。多年来，他在瞻博网络担任过多个关键职务，包括创始首席执行官兼董事长，后来担任副董事长兼首席技术官，现在是首席科学家。从 1996 年到 2015 年，Pradeep 参与了瞻博网络几乎所有产品的构思、设计和开发。创立瞻博网络之前，Pradeep 在施乐帕克研究中心 (Xerox PARC) 的计算机科学实验室工作了 11 年，开发设计工具和多处理器架构。在此期间，他发明了第一个用于分组交换总线的缓存一致性算法，并为 Sun Microsystem 的高性能多处理器服务器做出了基础性贡献。
 
@@ -4100,7 +4100,7 @@ Pradeep 拥有印度理工学院坎普尔分校的电气工程学士学位，以
 
 <https://avicena.tech/pradeep-sindhu/>
 
-#### 5.65.3 Joe Young - FINISAR
+### 5.65.3 Joe Young - FINISAR
 
 Joe Young于 2019 年 8 月被任命为 Finisar Corporation 的联席首席执行官。在担任首席执行官之前，Joe 自 2008 年 1 月起担任 Finisar 的执行副总裁，负责全球运营。Joe 从 2005 年 6 月至 2008 年 8 月担任 Finisar 光学部门的高级副总裁兼总经理。Joe 于 2004 年 10 月加入 Finisar 担任运营高级副总裁。
 
@@ -4110,7 +4110,7 @@ Joe 拥有宾夕法尼亚大学沃顿商学院的工商管理硕士学位、纽�
 
 <https://avicena.tech/joe-young/>
 
-#### 5.65.4 Jim Harris - 斯坦福
+### 5.65.4 Jim Harris - 斯坦福
 
 Jim Harris拥有斯坦福大学电气工程学士、硕士和博士学位。他目前是电气工程、应用物理和材料科学系 James and Ellenor Chesebrough 名誉教授。他和他的博士生在众多领域做出了开创性的工作，尤其是在 GaAs 材料及相关电气和光学器件的开发方面。他目前的研究兴趣包括用于控制光线的 3D 纳米结构材料、视网膜假体的开发、新型高效多结太阳能电池、激光驱动电子加速器（SLAC on a Chip），以及用于面部识别和激光雷达的 VCSEL 和 SPAD。
 
@@ -4118,7 +4118,7 @@ Jim Harris拥有斯坦福大学电气工程学士、硕士和博士学位。他�
 
 <https://avicena.tech/jim-harris/>
 
-#### 5.65.5 Richard Craig
+### 5.65.5 Richard Craig
 
 理查德·克雷格 (Richard Craig) 在科技公司担任高级管理职务三十年，目前从事早期创业公司的教学和咨询工作。此前，他曾担任四家风险投资支持的初创公司的首席执行官：Santur、Kaai、Picarro 和 Topanga Technologies。他还曾担任三家上市公司的总裁或副总裁：Oclaro、JDSU 和 SDL。他管理过半导体激光器制造中使用的三种主要材料体系的业务：砷化镓、磷化铟和氮化镓。所有这些职位的共同点是如何从光学器件的技术创新中驱动经济价值。在理查德的帮助下，这些公司得以将独特的技术转化为世界领先的商业产品。  
 

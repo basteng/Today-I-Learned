@@ -126,14 +126,14 @@
     - [射频（RF）市场](#射频rf市场)
     - [光电子市场](#光电子市场)
     - [GaN芯片代工需求](#gan芯片代工需求)
-  - [总结](#总结-4)
+    - [总结](#总结-4)
   - [31.9 GaN芯片在功率、射频和光电子三类应用中的市场份额](#319-gan芯片在功率射频和光电子三类应用中的市场份额)
     - [1. 功率电子（Power Electronics）](#1-功率电子power-electronics)
     - [2. 射频（RF）](#2-射频rf)
     - [3. 光电子（Optoelectronics）](#3-光电子optoelectronics)
     - [主要应用领域GaN芯片市场份额对比（2024年估算）](#主要应用领域gan芯片市场份额对比2024年估算)
     - [代工（Foundry）服务需求](#代工foundry服务需求)
-  - [结论](#结论)
+    - [结论](#结论)
   - [31.10 Status of the Compound Semiconductor Industry Report — Yole Intelligence, 2025](#3110-status-of-the-compound-semiconductor-industry-report--yole-intelligence-2025)
     - [Market Size and Growth](#market-size-and-growth)
     - [Key Application Areas](#key-application-areas)
@@ -2402,7 +2402,7 @@ Answer from Perplexity: pplx.ai/share
 
 ---
 
-## 总结  
+### 总结  
 GaN三大应用领域呈现差异化增长：  
 1. **功率电子**：汽车与可再生能源驱动高速扩张，2033年规模或突破47亿美元[13]。  
 2. **射频**：5G与国防需求支撑双位数增长，2034年规模可能达14亿美元[4]。  
@@ -2483,7 +2483,7 @@ Answer from Perplexity: pplx.ai/share
 
 ---
 
-## 结论
+### 结论
 
 - **光电子**（LED等）仍为GaN芯片最大应用市场，约占35-40%；**功率电子**快速增长，份额已达20-25%；**射频**应用份额7-10%，但增长潜力大。
 - 三大应用领域均高度依赖GaN芯片代工服务，未来GaN代工市场将持续扩容，尤其是在高端功率和射频芯片领域。
