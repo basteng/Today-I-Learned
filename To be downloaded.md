@@ -143,6 +143,7 @@
   - [12. Color-Tunable 3D InGaN/GaN Multi-Quantum-Well Light-Emitting-Diode Based on Microfacet Emission and Programmable Driving Power Supply](#12-color-tunable-3d-ingangan-multi-quantum-well-light-emitting-diode-based-on-microfacet-emission-and-programmable-driving-power-supply)
   - [13. High-Speed Quantum Dots White Light-Emitting Diodes Based on Förster Resonance Energy Transfer Achieving 1.77 Gbps Rates](#13-high-speed-quantum-dots-white-light-emitting-diodes-based-on-förster-resonance-energy-transfer-achieving-177-gbps-rates)
   - [14. OFDM Four-Color Micro-LED Point-to-Point Data Link Beyond 17 Gbit/s](#14-ofdm-four-color-micro-led-point-to-point-data-link-beyond-17-gbits)
+  - [15. Advances in foundry SiGe HBT BiCMOS processes through modeling and device scaling for ultra-high speed applications](#15-advances-in-foundry-sige-hbt-bicmos-processes-through-modeling-and-device-scaling-for-ultra-high-speed-applications)
 
 链接不需要加<>，直接copy https链接
 
@@ -699,3 +700,7 @@ https://www.nature.com/articles/nature16454
 ## 14. OFDM Four-Color Micro-LED Point-to-Point Data Link Beyond 17 Gbit/s
 
 <https://ieeexplore.ieee.org/document/11194090>
+
+## 15. Advances in foundry SiGe HBT BiCMOS processes through modeling and device scaling for ultra-high speed applications
+
+<https://ieeexplore.ieee.org/document/9682485>
