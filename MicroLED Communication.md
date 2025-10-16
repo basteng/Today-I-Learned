@@ -328,6 +328,8 @@
       - [穿透位错对InGaN量子阱LED中V型缺陷辅助横向载流子注入与复合的影响](#穿透位错对ingan量子阱led中v型缺陷辅助横向载流子注入与复合的影响)
       - [长波长 GaN LED 中 V 型缺陷载流子注入动力学](#长波长-gan-led-中-v-型缺陷载流子注入动力学)
       - [Micro-LED 路线图：现状与前景](#micro-led-路线图现状与前景)
+- [92. CPO](#92-cpo)
+  - [92.1 CPO可靠性优于LPO的测试数据 - META](#921-cpo可靠性优于lpo的测试数据---meta)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -8080,3 +8082,14 @@ Dynamics of carrier injection through V-defects in long wavelength GaN LEDs
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/The%20micro-LED%20roadmap%20status%20quo%20and%20prospects.pdf>
 
+# 92. CPO
+
+## 92.1 CPO可靠性优于LPO的测试数据 - META
+
+围绕共封装光模块 (CPO) 的关键问题之一是其可靠性。尽管许多人声称其可靠性，但用于证实其可靠性并建立信心的实证测试结果有限。Meta 公司在最近于丹麦举行的 ECOC 会议上讨论了这一问题，并发布了基于 Tomahawk 5 的 Bailly CPO 交换机的测试数据，CPO 系统累计运行 1500 万端口小时，可插拔光模块（作为对照组）累计运行 200 万端口小时。
+
+数据显示，关键光学性能指标均具有强劲的裕度。值得注意的是，在最初的 100 万端口小时中，未观察到任何链路抖动。CPO 的年链路故障率 (ALFR) 为 0.34%，平均故障间隔时间 (MTBF) 为 260 万小时——两者均比可插拔对照组高出约 5 倍。重要的是，在整个 1500 万端口小时的测试期间，没有出现无法使用的 CPO 故障（这意味着无需更换整个系统）。
+
+![](/picture/1760571493126.jpg)
+
+<https://www.linkedin.com/posts/semianalysis_one-of-the-key-questions-surrounding-co-packaged-activity-7384372058643804160-djTQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
