@@ -145,6 +145,10 @@
   - [14. OFDM Four-Color Micro-LED Point-to-Point Data Link Beyond 17 Gbit/s](#14-ofdm-four-color-micro-led-point-to-point-data-link-beyond-17-gbits)
   - [15. Advances in foundry SiGe HBT BiCMOS processes through modeling and device scaling for ultra-high speed applications](#15-advances-in-foundry-sige-hbt-bicmos-processes-through-modeling-and-device-scaling-for-ultra-high-speed-applications)
   - [16. GaN Single Crystal Growth and Application](#16-gan-single-crystal-growth-and-application)
+  - [17. AlN-based polarization-doped field-effect transistors with downward-graded AlGaN underlayers](#17-aln-based-polarization-doped-field-effect-transistors-with-downward-graded-algan-underlayers)
+  - [18. Vertical GaN Junction Barrier Schottky Diodes Fabricated by Using Channeled Implantation of Mg Ions and Ultrahigh-Pressure Annealing](#18-vertical-gan-junction-barrier-schottky-diodes-fabricated-by-using-channeled-implantation-of-mg-ions-and-ultrahigh-pressure-annealing)
+  - [19. 1200 V Fully-Vertical GaN-on-Si Power MOSFETs](#19-1200-v-fully-vertical-gan-on-si-power-mosfets)
+  - [20. Low leakage fully-vertical GaN-on-Si power MOSFETs](#20-low-leakage-fully-vertical-gan-on-si-power-mosfets)
 
 链接不需要加<>，直接copy https链接
 
@@ -709,3 +713,19 @@ https://www.nature.com/articles/nature16454
 ## 16. GaN Single Crystal Growth and Application
 
 <https://link.springer.com/book/10.1007/978-981-96-7572-2>
+
+## 17. AlN-based polarization-doped field-effect transistors with downward-graded AlGaN underlayers
+
+<https://doi.org/10.1063/5.0268213>
+
+## 18. Vertical GaN Junction Barrier Schottky Diodes Fabricated by Using Channeled Implantation of Mg Ions and Ultrahigh-Pressure Annealing
+
+<https://ieeexplore.ieee.org/document/11045281>
+
+## 19. 1200 V Fully-Vertical GaN-on-Si Power MOSFETs
+
+<https://ieeexplore.ieee.org/document/11072711>
+
+## 20. Low leakage fully-vertical GaN-on-Si power MOSFETs
+
+<https://doi.org/10.1063/5.0253436>
