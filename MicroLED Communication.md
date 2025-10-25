@@ -331,6 +331,13 @@
       - [Micro-LED 路线图：现状与前景](#micro-led-路线图现状与前景)
 - [92. CPO](#92-cpo)
   - [92.1 CPO可靠性优于LPO的测试数据 - META](#921-cpo可靠性优于lpo的测试数据---meta)
+- [93. ToF](#93-tof)
+    - [Core Principles](#core-principles)
+    - [System Architecture](#system-architecture)
+    - [Key Advantages](#key-advantages)
+    - [Applications](#applications)
+    - [Technical Status (2025)](#technical-status-2025)
+- [d](#d)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -8220,3 +8227,119 @@ Dynamics of carrier injection through V-defects in long wavelength GaN LEDs
 ![](/picture/1760571493126.jpg)
 
 <https://www.linkedin.com/posts/semianalysis_one-of-the-key-questions-surrounding-co-packaged-activity-7384372058643804160-djTQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+# 93. ToF
+
+A **MicroLED-based time-of-flight (ToF) system** is an emerging optoelectronic sensing architecture that uses micro-light-emitting diodes (MicroLEDs) as ultrafast light sources for distance and depth measurement. These systems represent the next evolution in depth sensing, LiDAR, and 3D imaging, offering improvements in power efficiency, speed, and miniaturization over traditional laser-based systems.  
+
+### Core Principles
+MicroLED-based ToF systems operate by emitting short, precisely-timed optical pulses and measuring the time taken for reflected light to return to a photodetector. The distance $$ d $$ is determined using:
+$$
+d = \frac{c \times \Delta t}{2}
+$$
+where $$ c $$ is the speed of light and $$ \Delta t $$ is the measured time delay between emission and detection.[1][2]
+
+### System Architecture
+A typical MicroLED-ToF module includes the following components:
+- **MicroLED emitter array**: Capable of nanosecond or sub-nanosecond pulsing at several MHz, providing structured illumination for depth sensing.[3][2]
+- **Photodetector (SPAD or CMOS)**: Detects returned photons. These are often monolithically bonded with MicroLED emitters for compact form factors.[4][5][6]
+- **Readout and processing ASIC**: Measures phase or flight time and reconstructs 3D data.  
+
+Patent filings in 2025 describe **monolithic integration of MicroLEDs and photodetectors** onto a single CMOS substrate for applications in compact LiDAR, gesture recognition, and machine vision.[5][4]
+
+### Key Advantages
+- **Ultrafast modulation**: MicroLEDs can pulse at nanosecond speeds with <1 ns rise/fall times, enabling millimeter-level ToF resolution.[2][3]
+- **Low power**: LEDs lack lasing threshold requirements, consuming less power than VCSEL or laser projectors, critical for wearable and mobile devices.[7]
+- **Scalability and integration**: Arrays can be fabricated using standard CMOS processes, easing integration into AR/VR headsets and smartphones.[8][9][10]
+- **Compactness**: MicroLEDs can be integrated directly into display panels, allowing screens to double as both emitters and sensors (display-integrated ToF).[11][12][13]
+
+### Applications
+- **3D depth mapping and LiDAR** for robotics, drones, and autonomous vehicles.[14][1]
+- **AR/VR headsets** and **mobile devices** for spatial perception, gesture recognition, and eye‑tracking.[15][8]
+- **Optical communication links**, using MicroLED-ToF architectures as nanosecond pulse transmitters.[7]
+- **Biometric and industrial sensing**, including fingerprint and proximity detection.[16][14]
+
+### Technical Status (2025)
+Recent demonstrations report **128 × 128 GaN MicroLED arrays** achieving over **80 Mbps data transmission** while performing sub‑centimeter ToF imaging concurrently. Advances in **hybrid CMOS integration** by organizations like **CEA-Leti** have enabled multi-spectral MicroLED ToF sensors that operate in visible to near‑infrared ranges.[6][2]
+
+MicroLED-based ToF technology is still in early commercialization but is expected to emerge as a **low-power, solid-state alternative to laser-based LiDAR systems** by 2026.
+
+[1](https://www.st.com/en/imaging-and-photonics-solutions/time-of-flight-sensors.html)
+[2](https://ieeexplore.ieee.org/document/10799779/)
+[3](https://arxiv.org/pdf/2111.13586.pdf)
+[4](https://patents.justia.com/patent/20250321326)
+[5](http://patentscope.wipo.int/search/en/WO2022036206)
+[6](https://www.cea.fr/cea-tech/leti/english/Documents/Presentation%20%20PPt/PW24_presentation-workshop-complete-V3_no_video.pdf)
+[7](https://avicena.tech/avicena-demonstrates-breakthrough-ultra-low-power-microled-link-at-200fj-bit-tx-power/)
+[8](https://www.microledconnect.com/agenda2025)
+[9](https://www.nature.com/articles/s41377-025-02027-1)
+[10](https://www.microled-info.com/microled-s-technical-turning-point-why-2025-year-it-gets-real)
+[11](https://ams-osram.com/innovation/in-plane-sensing-in-microled-displays)
+[12](https://sid.onlinelibrary.wiley.com/doi/full/10.1002/msid.1406)
+[13](https://community.element14.com/products/manufacturers/ams_osram/b/blog/posts/in-plane-sensing-in-microled-displays---a-new-performance-and-manufacturing-paradigm-for-optical-sensing-in-consumer-and-automotive-electronic-devices)
+[14](https://luminitco.com/optical-diffusers/light-shaping-microoptics-for-lidar-biometrics-and-tof-systems/)
+[15](https://www.microledassociation.com/wp-content/uploads/2025/01/State-of-the-microLED-industry-and-roadmap-2025-MIA-non-members.pdf)
+[16](https://www.photonics.com/Articles/Photonics-Tech-Shines-at-CES-2024/a69634)
+[17](https://pmc.ncbi.nlm.nih.gov/articles/PMC10202190/)
+[18](https://www.microled-info.com)
+[19](https://www.techblick.com/post/microled-ar-vr-connect-full-program)
+[20](https://www.minimicroled.com/2025-a-key-year-for-micro-led-technologys-transition-from-concept-to-mass-production/)
+
+基于MicroLED的飞行时间 (ToF) 系统是一种新兴的光电传感架构，它使用微型发光二极管 (MicroLED) 作为超快光源来测量距离和深度。这些系统代表了深度传感、激光雷达 (LiDAR) 和 3D 成像的下一代技术，与传统的激光系统相比，在功率效率、速度和小型化方面均有提升。
+
+核心原则
+基于 MicroLED 的 ToF 系统通过发射短且时间精确的光脉冲并测量反射光返回光电探测器所需的时间来运行。距离
+d
+d使用以下方法确定：
+
+d
+=
+c
+×
+D
+吨
+2
+d= 
+2
+c×Δt​
+ 
+在哪里
+c
+c是光速，
+D
+吨
+Δt​是发射和检测之间测量的时间延迟。​
+
+系统架构
+典型的 MicroLED-ToF 模块包括以下组件：
+
+MicroLED 发射器阵列：能够以几兆赫兹的频率进行纳秒或亚纳秒脉冲，为深度感应提供结构化照明。​
+
+光电探测器（SPAD 或 CMOS）：检测返回的光子。它们通常与 MicroLED 发射器单片粘合，以实现紧凑的外形尺寸。​
+
+读出和处理 ASIC：测量相位或飞行时间并重建 3D 数据。
+
+2025 年的专利申请描述了将 MicroLED 和光电探测器单片集成到单个 CMOS 基板上，用于紧凑型 LiDAR、手势识别和机器视觉的应用。​
+
+主要优势
+超快调制：MicroLED 可以纳秒速度脉冲，上升/下降时间小于 1 ns，从而实现毫米级 ToF 分辨率。​
+
+低功耗：LED 缺乏激光阈值要求，比 VCSEL 或激光投影仪消耗的功率更少，这对于可穿戴和移动设备至关重要。​
+
+可扩展性和集成性：可以使用标准 CMOS 工艺制造阵列，从而轻松集成到 AR/VR 耳机和智能手机中。​
+
+紧凑性：MicroLED 可以直接集成到显示面板中，使屏幕既可以用作发射器，又可以用作传感器（显示器集成 ToF）。​
+
+应用
+用于机器人、无人机和自动驾驶汽车的3D 深度测绘和 LiDAR 。​
+
+用于空间感知、手势识别和眼动追踪的AR/VR 耳机和移动设备。​
+
+光通信链路，使用 MicroLED-ToF 架构作为纳秒脉冲发射器。​
+
+生物识别和工业传感，包括指纹和接近度检测。​
+
+技术现状（2025年）
+最近的演示报告显示，128 × 128 GaN MicroLED 阵列实现了超过80 Mbps 的数据传输速度，同时还能进行亚厘米级 ToF 成像。CEA -Leti等机构在混合 CMOS 集成方面的进展，使得在可见光至近红外范围内工作的多光谱 MicroLED ToF 传感器成为可能。​
+
+基于 MicroLED 的 ToF 技术仍处于早期商业化阶段，但预计到 2026 年将成为基于激光的 LiDAR 系统的低功耗、固态替代品。

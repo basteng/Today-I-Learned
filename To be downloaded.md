@@ -149,6 +149,7 @@
   - [18. Vertical GaN Junction Barrier Schottky Diodes Fabricated by Using Channeled Implantation of Mg Ions and Ultrahigh-Pressure Annealing](#18-vertical-gan-junction-barrier-schottky-diodes-fabricated-by-using-channeled-implantation-of-mg-ions-and-ultrahigh-pressure-annealing)
   - [19. 1200 V Fully-Vertical GaN-on-Si Power MOSFETs](#19-1200-v-fully-vertical-gan-on-si-power-mosfets)
   - [20. Low leakage fully-vertical GaN-on-Si power MOSFETs](#20-low-leakage-fully-vertical-gan-on-si-power-mosfets)
+  - [21. Simultaneous Data Display and Environment Sensing with a MicroLED Display](#21-simultaneous-data-display-and-environment-sensing-with-a-microled-display)
 
 链接不需要加<>，直接copy https链接
 
@@ -729,3 +730,7 @@ https://www.nature.com/articles/nature16454
 ## 20. Low leakage fully-vertical GaN-on-Si power MOSFETs
 
 <https://doi.org/10.1063/5.0253436>
+
+## 21. Simultaneous Data Display and Environment Sensing with a MicroLED Display
+
+<https://ieeexplore.ieee.org/document/10799779>
