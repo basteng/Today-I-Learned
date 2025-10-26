@@ -332,12 +332,15 @@
 - [92. CPO](#92-cpo)
   - [92.1 CPO可靠性优于LPO的测试数据 - META](#921-cpo可靠性优于lpo的测试数据---meta)
 - [93. ToF](#93-tof)
+  - [93.1 MicroLED-based time-of-flight (ToF) system](#931-microled-based-time-of-flight-tof-system)
     - [Core Principles](#core-principles)
     - [System Architecture](#system-architecture)
     - [Key Advantages](#key-advantages)
     - [Applications](#applications)
     - [Technical Status (2025)](#technical-status-2025)
 - [d](#d)
+  - [93.2 MicroLED 显示器中的平面传感 - 欧司朗](#932-microled-显示器中的平面传感---欧司朗)
+  - [93.3 CEA-Leti workshop](#933-cea-leti-workshop)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -8230,6 +8233,8 @@ Dynamics of carrier injection through V-defects in long wavelength GaN LEDs
 
 # 93. ToF
 
+## 93.1 MicroLED-based time-of-flight (ToF) system
+
 A **MicroLED-based time-of-flight (ToF) system** is an emerging optoelectronic sensing architecture that uses micro-light-emitting diodes (MicroLEDs) as ultrafast light sources for distance and depth measurement. These systems represent the next evolution in depth sensing, LiDAR, and 3D imaging, offering improvements in power efficiency, speed, and miniaturization over traditional laser-based systems.  
 
 ### Core Principles
@@ -8343,3 +8348,79 @@ MicroLED 发射器阵列：能够以几兆赫兹的频率进行纳秒或亚纳�
 最近的演示报告显示，128 × 128 GaN MicroLED 阵列实现了超过80 Mbps 的数据传输速度，同时还能进行亚厘米级 ToF 成像。CEA -Leti等机构在混合 CMOS 集成方面的进展，使得在可见光至近红外范围内工作的多光谱 MicroLED ToF 传感器成为可能。​
 
 基于 MicroLED 的 ToF 技术仍处于早期商业化阶段，但预计到 2026 年将成为基于激光的 LiDAR 系统的低功耗、固态替代品。
+
+## 93.2 MicroLED 显示器中的平面传感 - 欧司朗
+
+MicroLED 因其宝贵的光学特性，有望为消费电子和汽车电子行业显示器的特性带来重大变革：它们能够提供更明亮、更清晰的图像，色彩精度更高，并且在明亮的阳光下仍具有出色的可读性。MicroLED 还非常节能。 
+
+这些特性使其成为各种产品（从小型超高分辨率AR/VR 耳机到手表、手机、笔记本电脑、平板电脑和车载显示器）显示器的理想组件。MicroLED 甚至可以用于电视和显示器等大型显示器。MicroLED
+
+还有另一个方面，它有可能大幅提升显示性能并彻底改变整个显示功能：它们使传感器功能能够集成在与 RGB 发射器相同的像素平面中。这得益于 MicroLED 的微小尺寸，并具有以下宝贵优势：
+
+让传感器隐形
+提高他们的敏感度
+启用新功能
+ 
+那么，传感和光发射平面集成的潜在用途是什么？为了实现这些潜力，需要采取哪些步骤？ 
+
+ 
+
+现有 OLED 显示传感器实施的挑战
+传统上，移动设备中的前置传感器执行诸如显示亮度控制、白平衡和人脸识别等功能。这些传感器通常集成在显示屏的切口（边框）中。无边框显示屏的趋势意味着传感器制造商已经开发出可集成在显示屏后面的传感器。 
+
+在OLED 显示屏和“OLED 后置”传感领域（艾迈斯半导体是该领域的技术先驱），传感器必须放置在密集排列 OLED 的显示屏平面后面。这种 OLED 后置传感技术带来了一些实施挑战，因为需要显示系统和传感器系统之间紧密同步，以避免 OLED 和传感器之间的干扰。OLED 后置传感传感器必须具有极高的灵敏度，以便在透射率非常低（通常低于 10%）的 OLED 显示屏后面工作时提供足够的光信号强度。此外，将系统堆叠在单独的平面上（一个用于显示，另一个用于传感）会增加传感显示屏的整体高度。 
+
+超越小型化——在显示板上开辟空间，用于在飞机上集成传感器
+MicroLED 是下一代技术进步，它兼具极小尺寸和极高亮度，令人振奋。迄今为止，MicroLED 的机械特性尚无行业标准规范：虽然一些制造商将边长为 50µm 的设备归类为“MicroLED”，但 ams OSRAM 认为此类设备尺寸过大，无法产生颠覆性的市场效应。因此，该公司正利用其微型化专业知识，制造边长为 10µm 或更短的芯片。在这种尺寸下，MicroLED 非常小，肉眼无法看见。
+
+事实上，RGB MicroLED 非常小，可以在高电流下驱动，因此它们可以间隔很远，同时仍能保持非常高的分辨率输出和高亮度。显示器工程师将此称为低“填充因子”——MicroLED 总面积与像素总面积之比。低填充因子意味着 MicroLED 周围有空闲区域。虽然这些区域人眼无法察觉，但它们足够大，可以容纳微型光电二极管 (microPD) 和近红外 (NIR) microLED 等传感器组件（见图 1）。这些组件是光学传感器的关键组件，microPD 可以测量入射光，也可以测量由 NIR microLED 发射并被触摸显示器表面的物体（例如手指）反射的不可见光。
+
+左侧显示了一个 3x2 的彩色方块网格，包括绿色、红色、蓝色、标记为“PD”的黑色方块和标记为“NIR”的棕色方块。右侧显示了一个分层结构的侧视图，标记为“RGB μLED”、“传感器（+ 发射器）”和“高透射率”。
+图 1：microLED 的小尺寸为显示器发射板上的传感器腾出了空间
+
+ 
+
+新的和改进的传感器功能
+除了使传感器元件几乎隐形，并无需堆叠显示器和传感器之外，microLED 所支持的平面显示传感架构还有另一个强大的优势。通过将传感器组件与 RGB microLED 放置在同一平面上，它们可以通过盖板玻璃获得畅通无阻的视线。这可以简化 OLED 显示器中已有传感器的实现。此外 
+
+，microLED 显示器中光学传感器功能的像素化（见图 2）可实现新的用例和传感器。microLED 
+
+传感显示器可以实现新的和改进的传感器功能，例如：
+
+显示屏局部亮度控制，其中环境光感应分布在整个显示屏上
+相机和显示器白平衡
+接近感应
+生命体征监测
+指纹识别，省去了目前手机指纹识别所需的超声波感应等子系统。这可以增加指纹感应面积，并降低整个感应/显示堆栈的高度。
+触摸感应
+手势识别，通过为传感元件添加方向性并结合计算成像。
+左图显示了一个标记为“完全分布式中等密度”的网格，用于触摸感应。右图显示了一个具有不同密度的网格，标记为“低密度和高密度混合”，用于局部亮度调整和指纹识别。
+图 2：不同的传感器可以共享相同的 NIR microLED 和 microPD，并且组件的分布灵活，可以根据传感器要求实现高密度和低密度区域。 
+
+ 
+
+ams OSRAM 的 Rainer Minixhofer 和 Jean-Jacques Drolet 在为信息显示协会撰写的一篇论文中深入研究了microLED 在显示屏传感中的应用和技术。 
+
+ 
+
+显示器制造的新供应链
+通过 microLED 实现平面显示传感的愿景是简化系统架构，增强传感器功能，降低功耗和成本。  
+
+在这一愿景成为现实并在首批产品中实现平面显示传感之前，仍有许多必要的技术开发步骤需要完成。当将传感集成到显示器的平面内时，光信号链需要一组复杂的接口，以提供 RGB 和 NIR 微发射器、其 microIC 像素驱动器、microPD 及其读出电路、信号处理电路、其他显示元件以及设备 SoC 之间的连接（见图 3）。ams OSRAM 正致力于
+
+通过与技术供应商、显示器制造商、显示驱动器和片上系统 (SoC) 制造商、原始设备制造商 (OEM)、客户和其他利益相关者合作，应对平面传感带来的挑战。ams OSRAM 正在开发必要的联盟、标准和规范，以整合复杂的新供应链，从而将平面传感推向市场。
+
+该图展示了 μLED 显示器与传感器前端和发光组件的集成，并连接到云计算和各种传感器。它包含传感、处理和发光部分。
+图 3：MicroLED 显示器的平面传感功能涉及来自多个供应商的系统和组件的集成。生产这种新型显示器需要一种新的供应链。除了 μDiscretes 之外，还需要三个关键要素来实现传感：(1) 传感器 μDriver，(2) 显示器集成，以及 (3) SoC 支持。
+
+ 
+
+ams OSRAM 在新兴 microLED 市场占据领先地位
+MicroLED 能够呈现绚丽的色彩、高对比度和卓越的能效，使得这些器件在消费电子和汽车电子市场中具有极高的价值。与光学传感器被遮挡在显示平面后面的 OLED 显示器相比，将光学传感功能与 MicroLED 发射器集成在一起的可能性可以增强 MicroLED 的吸引力。 
+
+凭借其广泛的发射器 IP 产品组合以及在光电半导体和传感器制造和封装方面的深厚专业知识，ams OSRAM 在推动 MicroLED 技术的应用方面占据了有利地位。大批量供应 MicroLED 组件是公司业务和技术战略的核心。由于 MicroLED 技术带来的阶跃变化以及在 MicroLED 显示器中实现平面传感的难度，ams OSRAM 认识到创建支持系统和发展行业生态系统的必要性。 
+
+<https://ams-osram.com/innovation/in-plane-sensing-in-microled-displays>
+
+## 93.3 CEA-Leti workshop
+
