@@ -150,6 +150,10 @@
   - [19. 1200 V Fully-Vertical GaN-on-Si Power MOSFETs](#19-1200-v-fully-vertical-gan-on-si-power-mosfets)
   - [20. Low leakage fully-vertical GaN-on-Si power MOSFETs](#20-low-leakage-fully-vertical-gan-on-si-power-mosfets)
   - [21. Simultaneous Data Display and Environment Sensing with a MicroLED Display](#21-simultaneous-data-display-and-environment-sensing-with-a-microled-display)
+  - [22. Investigation of Luminescence Spectra for InGaN/GaN Rectangular, Trapezoidal, and Triangular MQW Light-Emitting Diodes](#22-investigation-of-luminescence-spectra-for-ingangan-rectangular-trapezoidal-and-triangular-mqw-light-emitting-diodes)
+  - [23.Design of AlInGaN electron blocking layer of micro-LED arrays grown on Si substrates for high-speed visible light communication](#23design-of-alingan-electron-blocking-layer-of-micro-led-arrays-grown-on-si-substrates-for-high-speed-visible-light-communication)
+  - [24. GaN SLCFET Technology for Next Generation mmW Systems, Demonstrating Pout of 10.87 W/mm With 43% PAE at 94 GHz](#24-gan-slcfet-technology-for-next-generation-mmw-systems-demonstrating-pout-of-1087-wmm-with-43-pae-at-94-ghz)
+  - [25. Overview of Wide/Ultrawide Bandgap Power Semiconductor Devices for Distributed Energy Resources](#25-overview-of-wideultrawide-bandgap-power-semiconductor-devices-for-distributed-energy-resources)
 
 链接不需要加<>，直接copy https链接
 
@@ -734,3 +738,20 @@ https://www.nature.com/articles/nature16454
 ## 21. Simultaneous Data Display and Environment Sensing with a MicroLED Display
 
 <https://ieeexplore.ieee.org/document/10799779>
+
+## 22. Investigation of Luminescence Spectra for InGaN/GaN Rectangular, Trapezoidal, and Triangular MQW Light-Emitting Diodes
+
+<https://link.springer.com/article/10.1134/S1063783425601328>
+
+## 23.Design of AlInGaN electron blocking layer of micro-LED arrays grown on Si substrates for high-speed visible light communication
+
+<https://ieeexplore.ieee.org/document/11207671>
+
+## 24. GaN SLCFET Technology for Next Generation mmW Systems, Demonstrating Pout of 10.87 W/mm With 43% PAE at 94 GHz
+
+<https://ieeexplore.ieee.org/document/10122235>
+
+## 25. Overview of Wide/Ultrawide Bandgap Power Semiconductor Devices for Distributed Energy Resources
+
+<https://ieeexplore.ieee.org/document/10129950>
+
