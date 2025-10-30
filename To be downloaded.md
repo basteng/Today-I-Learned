@@ -154,6 +154,7 @@
   - [23.Design of AlInGaN electron blocking layer of micro-LED arrays grown on Si substrates for high-speed visible light communication](#23design-of-alingan-electron-blocking-layer-of-micro-led-arrays-grown-on-si-substrates-for-high-speed-visible-light-communication)
   - [24. GaN SLCFET Technology for Next Generation mmW Systems, Demonstrating Pout of 10.87 W/mm With 43% PAE at 94 GHz](#24-gan-slcfet-technology-for-next-generation-mmw-systems-demonstrating-pout-of-1087-wmm-with-43-pae-at-94-ghz)
   - [25. Overview of Wide/Ultrawide Bandgap Power Semiconductor Devices for Distributed Energy Resources](#25-overview-of-wideultrawide-bandgap-power-semiconductor-devices-for-distributed-energy-resources)
+- [26. N-Polar GaN HEMTs in a High-Uniformity 100-mm Wafer Process With 43.6% Power-Added Efficiency and 2 W/mm at 94 GHz](#26-n-polar-gan-hemts-in-a-high-uniformity-100-mm-wafer-process-with-436-power-added-efficiency-and-2-wmm-at-94-ghz)
 
 链接不需要加<>，直接copy https链接
 
@@ -755,3 +756,6 @@ https://www.nature.com/articles/nature16454
 
 <https://ieeexplore.ieee.org/document/10129950>
 
+# 26. N-Polar GaN HEMTs in a High-Uniformity 100-mm Wafer Process With 43.6% Power-Added Efficiency and 2 W/mm at 94 GHz
+
+<https://ieeexplore.ieee.org/document/10098257>
