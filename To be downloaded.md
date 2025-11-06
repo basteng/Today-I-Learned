@@ -156,6 +156,7 @@
   - [25. Overview of Wide/Ultrawide Bandgap Power Semiconductor Devices for Distributed Energy Resources](#25-overview-of-wideultrawide-bandgap-power-semiconductor-devices-for-distributed-energy-resources)
 - [26. N-Polar GaN HEMTs in a High-Uniformity 100-mm Wafer Process With 43.6% Power-Added Efficiency and 2 W/mm at 94 GHz](#26-n-polar-gan-hemts-in-a-high-uniformity-100-mm-wafer-process-with-436-power-added-efficiency-and-2-wmm-at-94-ghz)
 - [27. Review on white-light-emitting diodes based on nanomaterials](#27-review-on-white-light-emitting-diodes-based-on-nanomaterials)
+- [28. On the Origin of Transition to Nonpolar a-Plane GaN Growth on c-Plane Sapphire](#28-on-the-origin-of-transition-to-nonpolar-a-plane-gan-growth-on-c-plane-sapphire)
 
 链接不需要加<>，直接copy https链接
 
@@ -764,3 +765,7 @@ https://www.nature.com/articles/nature16454
 # 27. Review on white-light-emitting diodes based on nanomaterials
 
 <https://www.tandfonline.com/doi/abs/10.1080/00084433.2025.2578081>
+
+# 28. On the Origin of Transition to Nonpolar a-Plane GaN Growth on c-Plane Sapphire
+
+<https://pubs.acs.org/doi/10.1021/acs.cgd.3c00180>
