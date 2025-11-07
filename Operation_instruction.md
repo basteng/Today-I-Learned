@@ -68,6 +68,7 @@
   - [额外检查（可选但有用）](#额外检查可选但有用)
 - [35. Kodi插件配置](#35-kodi插件配置)
 - [36. 设置Gemini CLI API Key](#36-设置gemini-cli-api-key)
+- [37. Foxmail 6.5导入邮件](#37-foxmail-65导入邮件)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1485,3 +1486,15 @@ gemini
 ```
 
 告诉我执行后看到了什么结果！
+
+# 37. Foxmail 6.5导入邮件
+
+首先在Foxmail中创建一个新账户 lvwb09@tsinghua.edu.cn 
+
+然后将移动硬盘 H:\03_THU\Mail\Thumail 
+
+下所有文件拷贝到
+
+D:\Program Files (x86)\Foxmail\mail\lvwb09@tsinghua.edu.cn
+
+
