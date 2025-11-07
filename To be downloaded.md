@@ -157,6 +157,8 @@
 - [26. N-Polar GaN HEMTs in a High-Uniformity 100-mm Wafer Process With 43.6% Power-Added Efficiency and 2 W/mm at 94 GHz](#26-n-polar-gan-hemts-in-a-high-uniformity-100-mm-wafer-process-with-436-power-added-efficiency-and-2-wmm-at-94-ghz)
 - [27. Review on white-light-emitting diodes based on nanomaterials](#27-review-on-white-light-emitting-diodes-based-on-nanomaterials)
 - [28. On the Origin of Transition to Nonpolar a-Plane GaN Growth on c-Plane Sapphire](#28-on-the-origin-of-transition-to-nonpolar-a-plane-gan-growth-on-c-plane-sapphire)
+- [29. Defects in epitaxial multilayers: I. Misfit dislocations](#29-defects-in-epitaxial-multilayers-i-misfit-dislocations)
+- [30. Analytical solution to Matthews’ and Blakeslee's critical dislocation formation thickness of epitaxially grown thin films](#30-analytical-solution-to-matthews-and-blakeslees-critical-dislocation-formation-thickness-of-epitaxially-grown-thin-films)
 
 链接不需要加<>，直接copy https链接
 
@@ -769,3 +771,11 @@ https://www.nature.com/articles/nature16454
 # 28. On the Origin of Transition to Nonpolar a-Plane GaN Growth on c-Plane Sapphire
 
 <https://pubs.acs.org/doi/10.1021/acs.cgd.3c00180>
+
+# 29. Defects in epitaxial multilayers: I. Misfit dislocations
+
+<https://www.sciencedirect.com/science/article/abs/pii/S0022024874800552>
+
+# 30. Analytical solution to Matthews’ and Blakeslee's critical dislocation formation thickness of epitaxially grown thin films
+
+<https://www.sciencedirect.com/science/article/abs/pii/S0022024802009417>
