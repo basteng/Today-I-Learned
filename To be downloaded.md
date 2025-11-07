@@ -159,6 +159,7 @@
 - [28. On the Origin of Transition to Nonpolar a-Plane GaN Growth on c-Plane Sapphire](#28-on-the-origin-of-transition-to-nonpolar-a-plane-gan-growth-on-c-plane-sapphire)
 - [29. Defects in epitaxial multilayers: I. Misfit dislocations](#29-defects-in-epitaxial-multilayers-i-misfit-dislocations)
 - [30. Analytical solution to Matthews’ and Blakeslee's critical dislocation formation thickness of epitaxially grown thin films](#30-analytical-solution-to-matthews-and-blakeslees-critical-dislocation-formation-thickness-of-epitaxially-grown-thin-films)
+- [31. Enhancing Bandwidth and Efficiency in GaN LEDs for VLC Systems](#31-enhancing-bandwidth-and-efficiency-in-gan-leds-for-vlc-systems)
 
 链接不需要加<>，直接copy https链接
 
@@ -779,3 +780,7 @@ https://www.nature.com/articles/nature16454
 # 30. Analytical solution to Matthews’ and Blakeslee's critical dislocation formation thickness of epitaxially grown thin films
 
 <https://www.sciencedirect.com/science/article/abs/pii/S0022024802009417>
+
+# 31. Enhancing Bandwidth and Efficiency in GaN LEDs for VLC Systems
+
+<https://doi.org/10.53655/joe.v3332m>
