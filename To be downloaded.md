@@ -160,6 +160,7 @@
 - [29. Defects in epitaxial multilayers: I. Misfit dislocations](#29-defects-in-epitaxial-multilayers-i-misfit-dislocations)
 - [30. Analytical solution to Matthews’ and Blakeslee's critical dislocation formation thickness of epitaxially grown thin films](#30-analytical-solution-to-matthews-and-blakeslees-critical-dislocation-formation-thickness-of-epitaxially-grown-thin-films)
 - [31. Enhancing Bandwidth and Efficiency in GaN LEDs for VLC Systems](#31-enhancing-bandwidth-and-efficiency-in-gan-leds-for-vlc-systems)
+- [32. Microwave and Millimeter-Wave Permittivities of Single-Crystal AlN, Including Thickness and Temperature Dependence](#32-microwave-and-millimeter-wave-permittivities-of-single-crystal-aln-including-thickness-and-temperature-dependence)
 
 链接不需要加<>，直接copy https链接
 
@@ -784,3 +785,7 @@ https://www.nature.com/articles/nature16454
 # 31. Enhancing Bandwidth and Efficiency in GaN LEDs for VLC Systems
 
 <https://doi.org/10.53655/joe.v3332m>
+
+# 32. Microwave and Millimeter-Wave Permittivities of Single-Crystal AlN, Including Thickness and Temperature Dependence
+
+<https://ieeexplore.ieee.org/document/11220929>
