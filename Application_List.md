@@ -2,6 +2,12 @@
   - [Institute Overview](#institute-overview)
   - [Research Focus](#research-focus)
   - [Organization and Impact](#organization-and-impact)
+- [2. Institut für Mikroelektronik Stuttgart 斯图加特微电子研究所](#2-institut-für-mikroelektronik-stuttgart-斯图加特微电子研究所)
+  - [Main Areas of Expertise](#main-areas-of-expertise)
+  - [Research Activities](#research-activities)
+  - [Production and Services](#production-and-services)
+  - [Notable Projects](#notable-projects)
+  - [Additional Information](#additional-information)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -68,3 +74,75 @@ INM 由科学总监和商业总监管理，旗下包括多个研究部门和跨�
 其研究成果有助于应对社会和技术挑战，尤其是在可持续发展和健康领域。
 
 INM 的独特优势在于其跨学科合作以及将基于新型材料的创新从实验室转移到现实世界应用的能力。
+
+# 2. Institut für Mikroelektronik Stuttgart 斯图加特微电子研究所
+
+IMS CHIPS (Institut für Mikroelektronik Stuttgart) is a research institute focused on microelectronics and nanotechnology, noted for its expertise in silicon technology, custom circuits (ASICs), CMOS image sensors, and MEMS (Micro-Electro-Mechanical Systems) technologies. The institute is located in Stuttgart, Germany, and operates as a member of the Innovation Alliance Baden-Württemberg to bridge university research and industrial application through technology transfer and small-series production.[1][2][4][5]
+
+## Main Areas of Expertise
+
+- Integrated circuits and systems (including ASICs).
+- Silicon photonics and optoelectronics.
+- MEMS and nanostructuring processes.
+- CMOS image sensor technology for industrial, medical, aerospace, and automotive applications.[4]
+
+## Research Activities
+
+IMS CHIPS is actively engaged in developing advanced lithography processes, medical technology solutions, optics and photonics, smart sensors, and innovations in artificial intelligence and Industry 4.0. Their involvement encompasses the design, prototyping, and small- to medium-scale manufacturing of microelectronic circuits for diverse applications.[2][1][4]
+
+## Production and Services
+
+- Fast and cost-efficient development of ASICs and sensor chips in custom quantities (as few as 100 chips).
+- Operation of a class 10–100 cleanroom for microchip fabrication and advanced mask production using electron beam lithography.
+- In-house packaging capability and partnerships for broader production needs.
+- Rigorous chip testing and certification according to ISO 9001 and international quality standards.[4]
+
+## Notable Projects
+
+IMS CHIPS has contributed significant innovations in the structuring and functionalization of GaN (Gallium Nitride) devices and substrates, including proprietary nanostructure processes ("nanoholes") which enable breakthroughs in device functionality. The institute also engages in collaborative research in areas like sensor characterization and advanced substrate handling.[5]
+
+## Additional Information
+
+- IMS CHIPS is recognized as a non-profit foundation and as an important collaborator for practical training and industrial innovation in microelectronics.
+- The institute offers opportunities for careers in cutting-edge research fields related to microelectronics and sensor technology.[7][1][2]
+
+[1](https://www.ims-chips.com)
+[2](https://www.ims-chips.de)
+[3](http://www.clustercollaboration.eu/content/institut-fur-mikroelektronik-stuttgart)
+[4](https://monitor-industrial-ecosystems.ec.europa.eu/technology-centre/institut-fur-mikroelektronik-stuttgart)
+[5](https://www.all2gan.eu/ims-chips)
+[6](https://mapy.com/en/?id=1048342845)
+[7](https://www.iis.uni-stuttgart.de/carreer-opportunities/ims-chips/)
+
+斯图加特微电子研究所 (IMS CHIPS) 是一家专注于微电子和纳米技术的研究机构，以其在硅技术、定制电路（ASIC）、CMOS图像传感器和MEMS（微机电系统）技术方面的专长而闻名。该研究所位于德国斯图加特，是巴登-符腾堡州创新联盟的成员，致力于通过技术转移和小批量生产，将大学研究与产业应用联系起来。​
+
+主要专业领域
+集成电路和系统（包括专用集成电路）。
+
+硅光子学和光电子学。
+
+微机电系统和纳米结构加工工艺。
+
+用于工业、医疗、航空航天和汽车应用的CMOS图像传感器技术。​
+
+研究活动
+IMS CHIPS 积极致力于开发先进的光刻工艺、医疗技术解决方案、光学和光子学、智能传感器以及人工智能和工业 4.0 领域的创新。他们的业务涵盖微电子电路的设计、原型制作以及中小规模制造，应用于各种领域。​
+
+生产和服务
+快速、经济高效地开发定制数量的ASIC和传感器芯片（最少100个芯片）。
+
+使用电子束光刻技术进行微芯片制造和先进掩模生产的 10-100 级洁净室操作。
+
+具备内部包装能力，并与合作伙伴共同满足更广泛的生产需求。
+
+严格按照 ISO 9001 和国际质量标准进行芯片测试和认证。​
+
+重要项目
+IMS CHIPS 在氮化镓 (GaN) 器件和衬底的结构化和功能化方面做出了重大创新，包括专有的纳米结构工艺（“纳米孔”），这些工艺实现了器件功能的突破。该研究所还积极参与传感器表征和先进衬底处理等领域的合作研究。​
+
+附加信息
+IMS CHIPS 被公认为非营利基金会，也是微电子领域实践培训和产业创新的重要合作者。
+
+该研究所为从事微电子和传感器技术等前沿研究领域的人士提供职业机会。
+
+<https://www.all2gan.eu/home>
