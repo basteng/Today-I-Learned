@@ -1,3 +1,8 @@
+- [1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所](#1-inm---leibniz-institut-für-neue-materialien-ggmbh-莱布尼茨新材料研究所)
+  - [Institute Overview](#institute-overview)
+  - [Research Focus](#research-focus)
+  - [Organization and Impact](#organization-and-impact)
+
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
 
