@@ -1848,7 +1848,6 @@ NTT基础研究实验室（BRL）衷心感谢您对我们研究活动的关注�
 
 <https://www.rd.ntt/e/brl/overview/>
 
-
 # 21. 富士通 - 高功率和效率 W 波段 InAlGaN/AlN/GaN 高电子迁移率晶体管，适用于未来高容量无线通信
 
 <https://iopscience.iop.org/article/10.35848/1882-0786/ad68c2>
