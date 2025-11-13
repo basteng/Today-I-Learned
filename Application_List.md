@@ -8,6 +8,15 @@
   - [Production and Services](#production-and-services)
   - [Notable Projects](#notable-projects)
   - [Additional Information](#additional-information)
+- [3. CEA-Leti](#3-cea-leti)
+  - [Overview](#overview)
+  - [Mission and Activities](#mission-and-activities)
+  - [Notable Achievements](#notable-achievements)
+  - [Reputation](#reputation)
+- [4. Aledia - MicroLED France Company](#4-aledia---microled-france-company)
+  - [Company Background](#company-background)
+  - [Technology and Products](#technology-and-products)
+  - [Industry Position and Achievements](#industry-position-and-achievements)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -146,3 +155,132 @@ IMS CHIPS 被公认为非营利基金会，也是微电子领域实践培训和�
 该研究所为从事微电子和传感器技术等前沿研究领域的人士提供职业机会。
 
 <https://www.all2gan.eu/home>
+
+# 3. CEA-Leti
+
+CEA-Leti is a leading French research institute focused on microelectronics and nanotechnology, playing a major role in applied research and innovation for the semiconductor industry and related fields.[1][3][5]
+
+## Overview
+
+- CEA-Leti, part of the French Alternative Energies and Atomic Energy Commission (CEA), was established in Grenoble in 1967.[3][1]
+- The institute is a central player in developing solutions for areas such as healthcare, energy, transport, digital industries, and security.[2][4][5]
+- It employs more than 2,000 specialists and boasts robust R&D infrastructure and pre-industrialization facilities.[7][3]
+
+## Mission and Activities
+
+- CEA-Leti’s mission is to bridge the gap between fundamental research and manufacturing, transferring technologies to industry and supporting the creation of start-ups.[1][3]
+- The institute focuses on smart, energy-efficient, and secure solutions, addressing societal challenges such as reducing electronics’ energy consumption and enabling new health technologies.[5][9][3]
+- It actively collaborates with global companies, SMEs, and start-ups, and maintains partnerships throughout Europe and beyond.[4][2]
+
+## Notable Achievements
+
+- CEA-Leti pioneered several spin-off companies and developed key technologies for fields like microdisplays, MEMS, and brain-computer interfaces.[3][7]
+- Its intellectual property portfolio includes over 4,000 patents, with flexible licensing models to support industrial partners.[3]
+- The institute leads Europe’s move toward pilot lines that accelerate the transition from breakthrough research to manufacturing, especially in semiconductors.[9][10]
+
+## Reputation
+
+- CEA-Leti is recognized as one of the world’s top semiconductor research organizations, widely respected for its innovation, industry engagement, and role in strengthening Europe’s technology independence.[10][3]
+- The “lab-to-fab” philosophy ensures research outcomes are rapidly converted into scalable products and competitive industrial solutions.[9][3]
+
+[1](https://en.wikipedia.org/wiki/CEA-Leti:_Laboratoire_d'%C3%A9lectronique_des_technologies_de_l'information)
+[2](https://www.leti-cea.com/cea-tech/leti/english/Pages/Leti/About-Leti/mission-organization.aspx)
+[3](https://www.csis.org/analysis/french-model-cooperative-semiconductor-research-lessons-cea-leti)
+[4](https://monitor-industrial-ecosystems.ec.europa.eu/technology-centre/laboratory-electronics-and-information-technologies-leti)
+[5](https://demosaxia-project.eu/cea-leti/)
+[6](https://www.hta-online.eu/en/Partners/cea-leti.html)
+[7](https://www.oled-info.com/cea-leti)
+[8](https://www.leti-cea.com/cea-tech/leti/english/Pages/Applied-Research/Technology-Fields/medical-devices.aspx)
+[9](https://www.leti-cea.com/cea-tech/leti/english/Pages/What's-On/News/CEA-Leti-2025-Scientific-Report.aspx)
+[10](https://www.computerweekly.com/feature/CEA-Leti-and-the-Silicon-Valleys-of-Grenoble-France)
+
+CEA-Leti 是法国领先的研究机构，专注于微电子和纳米技术，在半导体行业及相关领域的应用研究和创新方面发挥着重要作用。​
+
+概述
+CEA-Leti 是法国替代能源和原子能委员会 (CEA) 的一部分，于 1967 年在格勒诺布尔成立。​
+
+该研究所是医疗保健、能源、交通、数字产业和安全等领域解决方案开发的核心参与者。​
+
+该公司拥有 2000 多名专业人员，并拥有强大的研发基础设施和预工业化设施。​
+
+使命与活动
+CEA-Leti 的使命是弥合基础研究与制造之间的差距，将技术转移到工业界，并支持初创企业的创立。​
+
+该研究所专注于智能、节能和安全的解决方案，以应对降低电子产品能耗和推动新型健康技术等社会挑战。​
+
+它积极与全球公司、中小企业和初创企业合作，并在欧洲及其他地区保持合作伙伴关系。​
+
+主要成就
+CEA-Leti 开创了多家衍生公司，并为微显示器、MEMS 和脑机接口等领域开发了关键技术。​
+
+其知识产权组合包括 4,000 多项专利，并采用灵活的许可模式来支持产业合作伙伴。​
+
+该研究所引领欧洲向试点生产线转型，加速从突破性研究到制造的过渡，尤其是在半导体领域。​
+
+名声
+CEA-Leti 被公认为世界顶尖的半导体研究机构之一，因其创新、产业参与以及在增强欧洲技术独立性方面发挥的作用而广受尊敬。​
+
+“实验室到工厂”的理念确保研究成果能够快速转化为可扩展的产品和具有竞争力的工业解决方案。​
+
+# 4. Aledia - MicroLED France Company
+
+Aledia is a pioneering French company specializing in next-generation display technology, particularly microLEDs built with 3D nanowires on silicon wafers.[2][3][4]
+
+## Company Background
+
+- Founded in 2011 in Echirolles, France, Aledia originated as a spin-off from the research labs of CEA (Commissariat à l'énergie atomique et aux énergies alternatives).[3][4]
+- The company focuses on innovative microLED displays designed for applications in consumer electronics, wearables, augmented reality (AR), automotive, and large-area screens.[5][7][2]
+- Aledia is recognized for its deeptech credentials and holds over 250 patent families.[4]
+
+## Technology and Products
+
+- Aledia's core technology leverages 3D gallium nitride (GaN) nanowires grown on traditional 8-inch and 12-inch silicon wafers, using processes compatible with established semiconductor manufacturing.[6][8][4]
+- This approach enables scalable, energy-efficient displays with high brightness, color fidelity, and long battery life.[7][8][2]
+- A key technical advantage is the integration of red, green, and blue emitters on a single chip, allowing for ultra-thin, foldable, transparent, and interactive screens suited for demanding applications such as AR/VR and smartwatches.[5][7]
+- Aledia’s solutions are eco-responsible and aim to reduce the cost of microLED production, accelerating market adoption.[8][2]
+
+## Industry Position and Achievements
+
+- Aledia operates a $200 million pilot microLED production line in Europe’s “Display Valley,” supporting rapid iteration and volume manufacturing.[4][6]
+- The company is frequently cited as a leader in microLED technology and has received recognition from industry organizations and media, including a place in Fast Company's “Next Big Things in Tech” list for 2025.[9][7]
+- Beyond consumer electronics, its technology is being explored for optical interconnects in AI data centers, offering potential gains in power efficiency and scalability.[7]
+
+Aledia is driving forward the revolution in microLED displays, shaping the future of visual technologies across industries.[2][9][7]
+
+[1](https://eic.ec.europa.eu/eic-fund/eic-fund-portfolio/aledia_en)
+[2](https://www.aledia.com/en/)
+[3](https://www.aledia.com/en/qui-sommes-nous/)
+[4](https://www.microled-info.com/aledia)
+[5](https://www.cbinsights.com/company/aledia)
+[6](https://www.semiconductor-digest.com/aledia-unveils-breakthrough-microled-technology-at-ces-2025/)
+[7](https://compoundsemiconductor.net/article/122743/Aledia_named_winner_in_and_Next_Big_Things_in_Techand__list)
+[8](https://www.aledia.com/en/technologie/)
+[9](https://www.businesswire.com/news/home/20251014463656/en/MicroLED-Leader-Aledia-Named-Winner-in-Fast-Companys-Next-Big-Things-in-Tech-List)
+[10](https://compoundsemiconductor.net/video/577/Aledia_Driving_the_microLED_revolution)
+
+Aledia 是一家法国先锋企业，专注于下一代显示技术，特别是采用硅晶片上的 3D 纳米线制造的微型 LED。​
+
+公司背景
+Aledia 于 2011 年在法国 Echirolles 成立，最初是 CEA（Commissariat à l'énergieatomique et aux énergies Alternatives）研究实验室的衍生产品。​
+
+该公司专注于创新型微型LED显示屏，其应用领域包括消费电子产品、可穿戴设备、增强现实（AR）、汽车和大面积屏幕。​
+
+Aledia 因其深科技实力而闻名，拥有超过 250 项专利族。​
+
+技术与产品
+Aledia 的核心技术利用在传统的 8 英寸和 12 英寸硅晶片上生长的 3D 氮化镓 (GaN) 纳米线，采用与成熟的半导体制造工艺兼容的工艺。​
+
+这种方法可以实现可扩展、节能、高亮度、色彩保真度高、电池续航时间长的显示器。​
+
+关键的技术优势在于将红色、绿色和蓝色发光体集成在单个芯片上，从而可以制造出超薄、可折叠、透明和交互式屏幕，适用于 AR/VR 和智能手表等要求苛刻的应用。​
+
+Aledia 的解决方案注重环保，旨在降低微型 LED 的生产成本，从而加速市场普及。​
+
+行业地位和成就
+Aledia 在欧洲的“显示谷”运营着一条价值 2 亿美元的微型 LED 试点生产线，支持快速迭代和批量生产。​
+
+该公司经常被誉为微型LED技术的领导者，并获得了行业组织和媒体的认可，其中包括入选《快公司》杂志2025年“科技领域的下一个重大事件”榜单。​
+
+除了消费电子产品外，这项技术还被用于人工智能数据中心的光互连，有望提高电源效率和可扩展性。​
+
+Aledia 正在推动微型 LED 显示屏的革命，塑造各行业视觉技术的未来。​
