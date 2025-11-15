@@ -21,6 +21,10 @@
     - [Core Technologies and Products](#core-technologies-and-products)
     - [Company Highlights and Impact](#company-highlights-and-impact)
     - [Company Structure and Locations](#company-structure-and-locations)
+- [6. Philips Lumileds Lighting Company - San Jose, California](#6-philips-lumileds-lighting-company---san-jose-california)
+    - [Company Background- Lumileds originated as a joint venture between Philips Lighting and Agilent Technologies in 1999, later becoming a business unit within Philips after full acquisition in 2005. Since 2017, Lumileds has operated independently after Apollo Global Management acquired an 80.1% stake, with Philips retaining 19.9%, positioning it for innovation and growth in the lighting industry.\[1\]\[7\]\[8\]](#company-background--lumileds-originated-as-a-joint-venture-between-philips-lighting-and-agilent-technologies-in-1999-later-becoming-a-business-unit-within-philips-after-full-acquisition-in-2005-since-2017-lumileds-has-operated-independently-after-apollo-global-management-acquired-an-801-stake-with-philips-retaining-199-positioning-it-for-innovation-and-growth-in-the-lighting-industry178)
+    - [Focus Areas and Products- Lumileds is recognized for its LUXEON line, which includes high-power LED light sources known for combining exceptional brightness, compact size, long life, and energy efficiency.\[3\]\[6\]](#focus-areas-and-products--lumileds-is-recognized-for-its-luxeon-line-which-includes-high-power-led-light-sources-known-for-combining-exceptional-brightness-compact-size-long-life-and-energy-efficiency36)
+    - [Global Reach and Expertise- Lumileds employs over 9,000 people in more than 32 countries, reflecting its status as one of the world's top manufacturers of LED components and automotive headlights.\[6\]\[7\]](#global-reach-and-expertise--lumileds-employs-over-9000-people-in-more-than-32-countries-reflecting-its-status-as-one-of-the-worlds-top-manufacturers-of-led-components-and-automotive-headlights67)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -345,3 +349,56 @@ Soraa 的 LED 芯片制造和总部都设在加利福尼亚州弗里蒙特市。
 该公司是一家国际化企业，在日本和其他地区设有业务部门和合作伙伴关系，以提供其先进的照明解决方案。​
 
 总而言之，Soraa 公司凭借其突破性的 GaN on GaN 技术、高显色性产品以及由诺贝尔级专业知识驱动的技术领导者地位，在全球 LED 市场脱颖而出。​
+
+# 6. Philips Lumileds Lighting Company - San Jose, California
+
+Philips Lumileds Lighting Company, headquartered at 370 W. Trimble Rd., San Jose, California, is a global leader in LED and microLED technology, specializing in advanced lighting solutions for automotive, general illumination, mobile devices, display, and specialty lighting applications.[3][6][7]
+
+### Company Background- Lumileds originated as a joint venture between Philips Lighting and Agilent Technologies in 1999, later becoming a business unit within Philips after full acquisition in 2005. Since 2017, Lumileds has operated independently after Apollo Global Management acquired an 80.1% stake, with Philips retaining 19.9%, positioning it for innovation and growth in the lighting industry.[1][7][8]
+- The company has strong roots in LED innovation, pioneering high-power and efficient lighting products and introducing significant advances such as the Thin Film Flip Chip architecture.[2]
+
+### Focus Areas and Products- Lumileds is recognized for its LUXEON line, which includes high-power LED light sources known for combining exceptional brightness, compact size, long life, and energy efficiency.[3][6]
+- Their product portfolio serves multiple markets:
+  - Automotive lighting (over half of its sales)
+  - Architectural and display illumination, with notable installations like the Times Square Ball and Bridge of Peace[1]
+  - Mobile device camera flash and extended reality illumination[2][3]
+
+### Global Reach and Expertise- Lumileds employs over 9,000 people in more than 32 countries, reflecting its status as one of the world's top manufacturers of LED components and automotive headlights.[6][7]
+- The company's heritage links back to Hewlett-Packard’s semiconductor division and aligns more than a century of lighting innovation, reliability, and quality engineering.[3][4]
+
+Philips Lumileds Lighting Company stands at the forefront of lighting technology, supporting sustainable, high-performance solutions for diverse applications worldwide.[1][3][6]
+
+[1](https://en.wikipedia.org/wiki/Lumileds)
+[2](https://lumileds.com/timeline/)
+[3](https://lumileds.com/company/about-us/)
+[4](https://www.philips.com/a-w/about/our-history.html)
+[5](https://profilemagazine.com/2017/lumileds/)
+[6](https://www.assets.signify.com/is/content/PhilipsConsumer/PDFDownloads/Malaysia/CSLI20150609_001-UPD-en_MY-Philips-Lumileds-Malaysia.pdf)
+[7](https://lumileds.com/lumileds-officially-an-independent-company-as-funds-affiliated-with-apollo-global-management-and-philips-complete-transaction/)
+[8](https://www.buildings.com/architecture/interiors/article/55256854/philips-announces-100-ownership-of-lumileds)
+[9](https://www.bloomberg.com/profile/company/0128284D:US)
+
+飞利浦 Lumileds 照明公司总部位于加利福尼亚州圣何塞市西特林布尔路 370 号，是 LED 和微型 LED 技术的全球领导者，专门为汽车、通用照明、移动设备、显示器和特种照明应用提供先进的照明解决方案。​
+
+公司背景
+Lumileds 最初是飞利浦照明和安捷伦科技于 1999 年成立的合资企业，后于 2005 年被飞利浦完全收购，成为飞利浦旗下的一个业务部门。自 2017 年以来，Lumileds 在阿波罗全球管理公司收购了 80.1% 的股份后开始独立运营，飞利浦保留了 19.9% 的股份，使其在照明行业的创新和发展中占据了有利地位。​
+
+该公司在 LED 创新领域拥有深厚的根基，率先研发出高功率、高效率的照明产品，并推出了薄膜倒装芯片架构等重大技术进步。​
+
+重点领域和产品
+Lumileds 的 LUXEON 系列产品以其高功率 LED 光源而闻名，这些光源以卓越的亮度、紧凑的尺寸、长寿命和能源效率而著称。​
+
+他们的产品组合服务于多个市场：
+
+汽车照明（占其销售额的一半以上）
+
+建筑和展示照明，其中不乏像时代广场水晶球和和平桥这样的著名装置。​
+
+移动设备相机闪光灯和扩展现实照明​
+
+全球影响力和专业知识
+Lumileds 在 32 个国家/地区拥有 9000 多名员工，这反映了其作为世界顶级 LED 组件和汽车前灯制造商之一的地位。​
+
+该公司的历史可以追溯到惠普公司的半导体部门，并融合了一个多世纪以来在照明创新、可靠性和高质量工程方面的成就。​
+
+飞利浦 Lumileds 照明公司处于照明技术的前沿，为全球各种应用提供可持续的高性能解决方案。
