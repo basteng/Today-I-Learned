@@ -17,6 +17,10 @@
   - [Company Background](#company-background)
   - [Technology and Products](#technology-and-products)
   - [Industry Position and Achievements](#industry-position-and-achievements)
+- [5. Soraa - Shuji Nakamura Founded](#5-soraa---shuji-nakamura-founded)
+    - [Core Technologies and Products](#core-technologies-and-products)
+    - [Company Highlights and Impact](#company-highlights-and-impact)
+    - [Company Structure and Locations](#company-structure-and-locations)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -284,3 +288,60 @@ Aledia 在欧洲的“显示谷”运营着一条价值 2 亿美元的微型 LED
 除了消费电子产品外，这项技术还被用于人工智能数据中心的光互连，有望提高电源效率和可扩展性。​
 
 Aledia 正在推动微型 LED 显示屏的革命，塑造各行业视觉技术的未来。​
+
+# 5. Soraa - Shuji Nakamura Founded
+
+Soraa Inc. is a pioneering company in the LED lighting industry, known for its focus on advanced lighting solutions based on pure gallium nitride (GaN on GaN) substrates. Founded in 2008 in Silicon Valley by Professor Shuji Nakamura, a Nobel Prize laureate, along with other University of California, Santa Barbara professors, Soraa has developed breakthrough technology that produces natural white light and vibrant colors across the visible spectrum.[5][6]
+
+### Core Technologies and Products
+
+- Soraa’s signature innovation is its GaN on GaN LED technology, which enables brighter, more energy-efficient, and higher-quality light compared to standard LEDs made from sapphire or silicon carbide substrates.[6][8]
+- The company’s products include LED chips, lamps, and lighting fixtures designed to provide superior color performance, richer reds and truer whites, as well as advanced dimming capabilities.[4]
+- Soraa has also introduced customizable lighting solutions such as the Soraa Snap System, which allows tailored light distributions and effects for professional applications.[1]
+
+### Company Highlights and Impact
+
+- Soraa’s lights are widely used in demanding settings like museums, hotels, high-end retail stores, and luxury environments because of their unmatched color accuracy and ability to enhance atmosphere and emotions in spaces.[9]
+- The company’s technological leadership stems from the scientific achievements of its founders, particularly Professor Nakamura’s invention of the blue LED, which was crucial in the development of white LED lighting and earned him the Nobel Prize.[5]
+- Soraa’s commitment to innovation is evident in its constant pursuit of healthier and smarter lighting technology, as demonstrated by products that address issues like flicker reduction and light quality.[3][8]
+
+### Company Structure and Locations
+
+- Soraa maintains its LED chip manufacturing and headquarters in Fremont, California.[6]
+- The company operates internationally, including business arms and partnerships in Japan and elsewhere to supply its advanced lighting solutions.[5]
+
+In summary, Soraa Inc. stands out in the global LED market for its groundbreaking GaN on GaN technology, high color rendering products, and its role as a technology leader driven by Nobel-caliber expertise.[4][6][5]
+
+[1](https://www.youtube.com/watch?v=YSY4LoI-eHw)
+[2](https://www.youtube.com/channel/UCFfVwo5483dRqP6aLZdy7aA/videos)
+[3](https://www.soraa.com/news_releases/52.php)
+[4](https://www.ecosenselighting.com/products/soraa/)
+[5](https://www.ipros.com/en/company/detail/2074550/)
+[6](https://www.ngenpartners.com/portfolio-soraa/)
+[7](https://climatebase.org/company/6932/soraa)
+[8](https://www.healthcarefacilitiestoday.com/posts/Soraa-solves-compatibility-issues-by-launching-new-constant-current-LED-lamp--7281)
+[9](https://www.youtube.com/watch?v=g1L5A1oQJE4)
+[10](https://www.savemoneycutcarbon.com/learn-save/compelling-reasons-retail-business-choose-full-spectrum-led-light/)
+
+Soraa公司是LED照明行业的先驱企业，以专注于基于纯氮化镓（GaN on GaN）衬底的先进照明解决方案而闻名。该公司由诺贝尔奖得主中村修二教授于2008年在硅谷创立，并与加州大学圣巴巴拉分校的其他教授共同研发了突破性技术，能够产生自然白光和可见光谱范围内的鲜艳色彩。​
+
+核心技术和产品
+Soraa 的标志性创新是其 GaN on GaN LED 技术，与采用蓝宝石或碳化硅衬底制成的标准 LED 相比，该技术能够产生更亮、更节能、更高质量的光。​
+
+该公司的产品包括 LED 芯片、灯泡和照明设备，旨在提供卓越的色彩性能、更丰富的红色和更纯正的白色，以及先进的调光功能。​
+
+Soraa 还推出了可定制的照明解决方案，例如 Soraa Snap 系统，该系统可为专业应用提供定制的光线分布和效果。​
+
+公司亮点及影响
+Soraa 的灯具因其无与伦比的色彩精准度和增强空间氛围与情感的能力，被广泛应用于博物馆、酒店、高端零售店和奢侈品场所等要求苛刻的环境中。​
+
+该公司的技术领先地位源于其创始人的科学成就，特别是中村教授发明的蓝色 LED，这对于白色 LED 照明的发展至关重要，并为他赢得了诺贝尔奖。​
+
+Soraa 对创新的承诺在其不断追求更健康、更智能的照明技术中显而易见，其产品解决了诸如减少闪烁和提高光质量等问题。​
+
+公司结构及办公地点
+Soraa 的 LED 芯片制造和总部都设在加利福尼亚州弗里蒙特市。​
+
+该公司是一家国际化企业，在日本和其他地区设有业务部门和合作伙伴关系，以提供其先进的照明解决方案。​
+
+总而言之，Soraa 公司凭借其突破性的 GaN on GaN 技术、高显色性产品以及由诺贝尔级专业知识驱动的技术领导者地位，在全球 LED 市场脱颖而出。​
