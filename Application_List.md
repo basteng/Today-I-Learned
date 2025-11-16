@@ -25,6 +25,13 @@
     - [Company Background- Lumileds originated as a joint venture between Philips Lighting and Agilent Technologies in 1999, later becoming a business unit within Philips after full acquisition in 2005. Since 2017, Lumileds has operated independently after Apollo Global Management acquired an 80.1% stake, with Philips retaining 19.9%, positioning it for innovation and growth in the lighting industry.\[1\]\[7\]\[8\]](#company-background--lumileds-originated-as-a-joint-venture-between-philips-lighting-and-agilent-technologies-in-1999-later-becoming-a-business-unit-within-philips-after-full-acquisition-in-2005-since-2017-lumileds-has-operated-independently-after-apollo-global-management-acquired-an-801-stake-with-philips-retaining-199-positioning-it-for-innovation-and-growth-in-the-lighting-industry178)
     - [Focus Areas and Products- Lumileds is recognized for its LUXEON line, which includes high-power LED light sources known for combining exceptional brightness, compact size, long life, and energy efficiency.\[3\]\[6\]](#focus-areas-and-products--lumileds-is-recognized-for-its-luxeon-line-which-includes-high-power-led-light-sources-known-for-combining-exceptional-brightness-compact-size-long-life-and-energy-efficiency36)
     - [Global Reach and Expertise- Lumileds employs over 9,000 people in more than 32 countries, reflecting its status as one of the world's top manufacturers of LED components and automotive headlights.\[6\]\[7\]](#global-reach-and-expertise--lumileds-employs-over-9000-people-in-more-than-32-countries-reflecting-its-status-as-one-of-the-worlds-top-manufacturers-of-led-components-and-automotive-headlights67)
+- [7. Grenoble INP (Institut polytechnique de Grenoble) 格勒诺布尔理工学院](#7-grenoble-inp-institut-polytechnique-de-grenoble-格勒诺布尔理工学院)
+    - [Overview](#overview-1)
+    - [Research and Industry Links](#research-and-industry-links)
+    - [Student Life and Community](#student-life-and-community)
+- [8. Nexperia](#8-nexperia)
+    - [GaN Research and Technology at Nexperia](#gan-research-and-technology-at-nexperia)
+    - [Summary](#summary)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -402,3 +409,107 @@ Lumileds 在 32 个国家/地区拥有 9000 多名员工，这反映了其作为
 该公司的历史可以追溯到惠普公司的半导体部门，并融合了一个多世纪以来在照明创新、可靠性和高质量工程方面的成就。​
 
 飞利浦 Lumileds 照明公司处于照明技术的前沿，为全球各种应用提供可持续的高性能解决方案。
+
+# 7. Grenoble INP (Institut polytechnique de Grenoble) 格勒诺布尔理工学院
+
+Grenoble INP (Institut polytechnique de Grenoble), accessed via grenoble-inp.org, is a leading group of engineering and management schools based in Grenoble, France. It is recognized as one of the top French technological university systems and is part of Université Grenoble Alpes (UGA).[1][2][5]
+
+### Overview
+
+- Grenoble INP consists of eight specialized schools covering engineering, science, and management disciplines and supports extensive research activities through a network of 38 laboratories.[5][1]
+- The institution awards over 1,500 engineering degrees and 230 doctoral degrees each year, contributing to one of the largest networks of public engineering graduates in France.[5]
+
+### Research and Industry Links
+
+- Grenoble INP is known for cutting-edge research and innovation, with a high output of scientific publications and patents. Its research centers play key roles in areas such as micro- and nanotechnology (notably with the Minatec center), energy, digital technologies, and sustainable development.[5]
+- The school maintains strong partnerships with more than 580 companies, fostering close industry collaboration and hands-on experiences for students.[4][1]
+
+### Student Life and Community
+
+- The student body benefits from a vibrant association life and international outlook, with opportunities to engage in a variety of clubs, events, and international exchange programs.[6]
+- With more than 73,000 alumni, Grenoble INP offers an influential and supportive global network for graduates.[5]
+
+Grenoble INP stands out as a major hub for engineering education, research, and innovation in Europe, with a dynamic academic environment and strong ties to both industry and the global scientific community.[2][1][5]
+
+[1](https://www.grenoble-inp.fr/en)
+[2](https://en.wikipedia.org/wiki/Grenoble_Institute_of_Technology)
+[3](https://theorg.com/org/grenoble-inp/offices/hq)
+[4](https://www.grenoble-inp.fr/en/about)
+[5](https://www.grenoble-inp.fr/en/about/about-us-1)
+[6](https://www.grenoble-inp.fr/en/student-life/student-board)
+[7](https://2020.igem.org/Team:Grenoble_Alpes/Sponsors)
+[8](https://www.univ-grenoble-alpes.fr/english/home-628540.kjsp)
+[9](https://ca.linkedin.com/school/institut-polytechnique-de-grenoble/)
+
+格勒诺布尔理工学院（Grenoble INP，网址：grenoble-inp.org）是法国格勒诺布尔领先的工程和管理学院集团。它被公认为法国顶尖的理工大学系统之一，隶属于格勒诺布尔阿尔卑斯大学（Université Grenoble Alpes，UGA）。​
+
+概述
+格勒诺布尔理工学院由涵盖工程、科学和管理学科的八所专业学院组成，并通过由 38 个实验室组成的网络支持广泛的研究活动。​
+
+该机构每年授予 1500 多个工程学位和 230 个博士学位，是法国最大的公立工程毕业生网络之一。​
+
+研究与产业联系
+格勒诺布尔理工学院以其前沿研究和创新而闻名，拥有大量的科学出版物和专利。其研究中心在微纳米技术（尤其是Minatec中心）、能源、数字技术和可持续发展等领域发挥着关键作用。​
+
+学校与 580 多家公司保持着紧密的合作关系，促进了与行业的密切合作，并为学生提供了实践经验。​
+
+学生生活与社区
+学生群体受益于丰富多彩的社团生活和国际视野，有机会参与各种俱乐部、活动和国际交流项目。​
+
+格勒诺布尔理工学院拥有超过 73,000 名校友，为毕业生提供了一个具有影响力和支持性的全球网络。​
+
+格勒诺布尔理工学院是欧洲工程教育、研究和创新的重要中心，拥有充满活力的学术环境，并与工业界和全球科学界保持着紧密的联系。
+
+# 8. Nexperia
+
+Nexperia, headquartered in Nijmegen, Netherlands, is a major global semiconductor company specializing in the development and high-volume production of essential semiconductors—such as diodes, transistors, MOSFETs, and wide-bandgap devices—used in automotive, industrial, consumer, and communications applications. The company is a subsidiary of Wingtech Technology and employs around 12,500 people worldwide, shipping over 110 billion components each year.[1][2][3]
+
+### GaN Research and Technology at Nexperia
+
+Nexperia has become a prominent player in Gallium Nitride (GaN) technology, particularly for power electronics. Its recent research and product development focus on advancing both high- and low-voltage GaN FETs (field-effect transistors).[4][5]
+
+- **650 V GaN FETs:** Nexperia’s initial focus was the delivery of robust, high-voltage (650 V) solutions to meet the demands of automotive electrification, renewable energy, and infrastructure. Cascode topology, which pairs a GaN HEMT with a silicon MOSFET, improves switching performance and simplifies control, offering users benefits like faster transitions, higher efficiency, and easier integration with standard drivers.[6][7][4]
+- **E-mode GaN FETs:** Nexperia has recently launched enhancement-mode (e-mode) GaN FETs, expanding its portfolio for both low (100/150 V) and high (650 V) voltage applications. These e-mode devices boost power conversion efficiency in datacom, telecom, consumer charging, solar inverters, and industrial automation.[5]
+- **Proprietary Packaging:** Nexperia’s CCPAK packaging technology enhances thermal and electrical performance, leveraging copper-clip designs to reduce losses and parasitic effects. This is particularly significant for GaN devices, which benefit from low resistance, high-current handling, and efficient heat dissipation.[6]
+- **Efficiency and Application Range:** Nexperia’s GaN devices enable downsized, more efficient designs in servers, telecom, renewable energy, brushless DC motors, LiDAR transceivers, and fast chargers, cementing their relevance in mainstream and future power electronics.[3][4][5]
+
+### Summary
+
+Nexperia is advancing GaN research with a strong focus on practical, high-volume production and broad market application. Their portfolio includes both cascode-type and e-mode GaN FETs, with innovations in device structure and packaging that enable high efficiency, compactness, and reliability for NextGen power electronics.[4][5][3][6]
+
+[1](https://www.nexperia.com/about)
+[2](https://en.wikipedia.org/wiki/Nexperia)
+[3](https://www.nexperia.com/about/news-events/press-releases/Nexperia-s-expanded-GaN-FET-portfolio-now-supports-a-wider-range-of-power-requirements-in-low-and-high-voltage-applications)
+[4](https://efficiencywins.nexperia.com/efficient-products/gan-goes-mainstream-with-portfolio-enhancements)
+[5](https://www.nexperia.com/about/news-events/press-releases/Nexperia-launches-e-mode-GAN-FETs-for-low-and-high-voltage-applications)
+[6](https://www.tech-trek.com/nexperia-now-offers-gan-fets-in-compact-smd-packaging-ccpak-for-industrial-and-renewable-energy-applications)
+[7](https://www.nexperia.com/product/GAN041-650WSB)
+[8](https://www.nexperia.com)
+[9](https://www.nexperia.com/about/news-events/press-releases/nexperia-announces-next-generation-650v-gallium-nitride-gan-technology)
+[10](https://www.nexperia.com/about/news-events/press-releases/update-on-company-developments)
+[11](https://www.nexperia.com/products/gan-fets/bi-directional-gan-fets)
+[12](https://www.nexperia.com/products)
+[13](https://www.mouser.ca/new/nexperia/nexperia-gan-emode-fets/)
+[14](https://canada.newark.com/c/semiconductors-discretes/fets/gallium-nitride-gan-fets?continuous-drain-current-id=90A&brand=nexperia)
+[15](https://www.all2gan.eu/nexperia-bv)
+[16](https://www.digikey.ca/en/products/detail/nexperia-usa-inc/GAN3R2-100CBEAZ/19109836)
+[17](https://www.nexperia.com/products/gan-fets)
+[18](https://www.nexperia.com/products/gan-fets/family/to-247-gan-fets)
+[19](https://www.nexperia.cn/dam/jcr:9f665067-ea84-4745-95d9-e9eac4a3e1a9/nexperia_brochure_gan_202006.pdf)
+[20](https://www.youtube.com/watch?v=pjzFdC-4aC8)
+
+总部位于荷兰奈梅亨的Nexperia是一家全球领先的半导体公司，专注于开发和大规模生产用于汽车、工业、消费电子和通信等领域的关键半导体产品，例如二极管、晶体管、MOSFET和宽禁带器件。该公司是闻泰科技的子公司，在全球拥有约12,500名员工，每年出货量超过1100亿个元件。​
+
+Nexperia的GaN研究与技术
+Nexperia已成为氮化镓（GaN）技术领域，特别是电力电子领域的重要参与者。其近期的研究和产品开发重点在于推进高压和低压GaN场效应晶体管（FET）的发展。​
+
+650V GaN FET： Nexperia 最初专注于提供稳健的高压 (650V) 解决方案，以满足汽车电气化、可再生能源和基础设施的需求。级联拓扑结构将 GaN HEMT 与硅 MOSFET 相结合，提高了开关性能并简化了控制，为用户带来更快的转换速度、更高的效率以及更易于与标准驱动器集成等优势。​
+
+增强型氮化镓场效应晶体管： Nexperia 近期推出了增强型（e-mode）氮化镓场效应晶体管，进一步拓展了其在低压（100/150 V）和高压（650 V）应用领域的产品组合。这些增强型器件可显著提升数据通信、电信、消费电子充电、太阳能逆变器和工业自动化等领域的功率转换效率。​
+
+专有封装： Nexperia 的 CCPAK 封装技术利用铜夹设计，降低损耗和寄生效应，从而提升器件的热性能和电性能。这对于 GaN 器件尤为重要，因为它们受益于低电阻、高电流处理能力和高效散热。​
+
+效率和应用范围： Nexperia 的 GaN 器件可实现服务器、电信、可再生能源、无刷直流电机、激光雷达收发器和快速充电器等领域的小型化、更高效的设计，巩固了其在主流和未来电力电子产品中的地位。​
+
+概括
+Nexperia致力于推进氮化镓（GaN）研究，重点关注实用性强、量产迅速且市场应用广泛的领域。其产品组合包括级联型和增强型氮化镓场效应晶体管（e-mode GaN FET），并在器件结构和封装方面进行了创新，从而实现了下一代功率电子产品的高效率、紧凑性和高可靠性。
