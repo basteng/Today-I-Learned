@@ -36,6 +36,9 @@
     - [Company Overview](#company-overview)
     - [GaN Research Highlights](#gan-research-highlights)
     - [Key Applications](#key-applications)
+- [10. VI Systems GmbH (VIS)](#10-vi-systems-gmbh-vis)
+    - [Company Focus and Technology](#company-focus-and-technology)
+    - [Key Products and Applications](#key-products-and-applications)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -590,4 +593,50 @@ GaN HEMT创新：富士通是GaN HEMT技术的先驱，尤其专注于射频(RF)
 与 Transphorm 等合作伙伴合作，开发 GaN 模块，从而为汽车和工业产品提供更小、更高效的模块。​
 
 富士通持续投资于氮化镓研究，巩固了其在高性能、节能半导体技术领域的领先地位，并使公司处于下一代电子产品的最前沿，从而造福商业和社会。
+
+# 10. VI Systems GmbH (VIS)
+
+VI Systems GmbH (VIS) is a German technology company specializing in the development and manufacturing of ultrafast optoelectronic components and modules for optical communication and sensor applications. Founded in 2006, VIS is headquartered in Berlin and operates a cutting-edge research facility near the Technical University of Berlin in Charlottenburg.[1][2]
+
+### Company Focus and Technology
+
+VIS is known as a fabless developer, meaning it designs and characterizes its products—such as vertical cavity surface-emitting lasers (VCSELs), photodiodes, modulators, and transceivers—in-house but outsources actual manufacturing to leading foundries. Its product portfolio enables high-speed data transfer up to 400 Gbps per channel, targeting markets such as data center interconnects, optical networks, and advanced sensing applications in areas like aerospace and automotive.[2][4][5][6][1]
+
+VIS leverages advanced semiconductor technologies, including gallium arsenide (GaAs) and indium phosphide (InP), to deliver high-speed and energy-efficient optical solutions. Innovations include multi-channel VCSELs, high-speed photodetectors, and ultra-high-frequency integrated circuits for cutting-edge optical signal transmission. VIS's unique approach integrates micro-assembly, high-frequency packaging, and wafer-level testing.[5][2]
+
+### Key Products and Applications
+
+- VCSEL transmitter modules: Up to 112 Gbps (PAM-4 modulation), emission wavelengths at 880 nm and 1550 nm for various fiber types.[5]
+- Photodetector modules: Input wavelengths between 840 nm and 1650 nm, up to 112 Gbps data rates.[5]
+- VCSEL driver and amplifier ICs: Support up to 56 Gbps, used in short reach and data center applications.[5]
+- Licensed silicon photonics patents for next-generation optical communications, expanding capabilities through intellectual property acquisition.[7]
+
+VIS collaborates with leading companies and research institutions worldwide and is recognized for both design innovation and technical excellence, consistently pushing boundaries in ultrafast optical signal transmission and sensor technology.[8][1][2]
+
+[1](https://v-i-systems.com)
+[2](https://v-i-systems.com/about-us/)
+[3](https://www.cbinsights.com/company/vi-systems)
+[4](https://sg.linkedin.com/company/vi-systems-gmbh)
+[5](https://v-i-systems.com/wp-content/uploads/2020/12/Product-Catalog-2021.pdf)
+[6](https://optics.org/buyers/company/C000017436)
+[7](https://www.photonics.com/Articles/VI-Systems-Licenses-Silicon-Photonics-Patent/a54427)
+[8](https://www.lightreading.com/semiconductors/vi-berlin-try-25g-lasers)
+
+VI Systems GmbH (VIS) 是一家德国科技公司，专注于开发和制造用于光通信和传感器应用的超高速光电子元件和模块。VIS 成立于 2006 年，总部位于柏林，并在夏洛滕堡柏林工业大学附近设有一座尖端研发中心。​
+
+公司重点和技术
+VIS是一家无晶圆厂的开发商，这意味着它自行设计和测试其产品（例如垂直腔面发射激光器 (VCSEL)、光电二极管、调制器和收发器），但将实际生产外包给领先的代工厂。其产品组合支持高达每通道400 Gbps的高速数据传输，目标市场包括数据中心互连、光网络以及航空航天和汽车等领域的高级传感应用。​
+
+VIS 利用包括砷化镓 (GaAs) 和磷化铟 (InP) 在内的先进半导体技术，提供高速、高能效的光学解决方案。其创新产品包括多通道垂直腔面发射激光器 (VCSEL)、高速光电探测器以及用于尖端光信号传输的超高频集成电路。VIS 的独特方法整合了微组装、高频封装和晶圆级测试。​
+
+主要产品和应用
+VCSEL 发射器模块：最高可达 112 Gbps（PAM-4 调制），发射波长为 880 nm 和 1550 nm，适用于各种光纤类型。​
+
+光电探测器模块：输入波长介于 840 nm 和 1650 nm 之间，数据速率高达 112 Gbps。​
+
+VCSEL驱动器和放大器IC：支持高达56 Gbps的传输速率，适用于短距离传输和数据中心应用。​
+
+获得用于下一代光通信的硅光子学专利许可，通过知识产权收购扩展能力。​
+
+VIS 与全球领先的公司和研究机构合作，并因其设计创新和技术卓越性而获得认可，不断突破超快光信号传输和传感器技术的界限。​
 
