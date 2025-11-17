@@ -32,6 +32,10 @@
 - [8. Nexperia](#8-nexperia)
     - [GaN Research and Technology at Nexperia](#gan-research-and-technology-at-nexperia)
     - [Summary](#summary)
+- [9. Fujitsu](#9-fujitsu)
+    - [Company Overview](#company-overview)
+    - [GaN Research Highlights](#gan-research-highlights)
+    - [Key Applications](#key-applications)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -513,3 +517,77 @@ Nexperia已成为氮化镓（GaN）技术领域，特别是电力电子领域的
 
 概括
 Nexperia致力于推进氮化镓（GaN）研究，重点关注实用性强、量产迅速且市场应用广泛的领域。其产品组合包括级联型和增强型氮化镓场效应晶体管（e-mode GaN FET），并在器件结构和封装方面进行了创新，从而实现了下一代功率电子产品的高效率、紧凑性和高可靠性。
+
+# 9. Fujitsu
+
+Fujitsu Limited is a major Japanese multinational information technology and electronics company, recognized globally for its advanced R&D and sustained innovation in semiconductor technologies, including Gallium Nitride (GaN) devices and materials. The company has played a pioneering role in the development of GaN-based high-electron-mobility transistors (HEMTs), power devices, and integration techniques to drive both high-performance computing and energy-efficient solutions.[1][2]
+
+### Company Overview
+
+Fujitsu’s headquarters are in Kawasaki, Japan. As of March 31, 2025, it employs about 113,000 people worldwide and reported R&D expenditures exceeding 101 billion yen for the fiscal year, with significant business segments including Service Solutions, Hardware Solutions, and Ubiquitous Solutions. Fujitsu is respected for its commitment to technology-driven innovation, sustainable growth, and global impact, especially in areas combining digitalization and advanced electronics.[3][4][5]
+
+### GaN Research Highlights
+
+- **GaN HEMT Innovations**: Fujitsu is a pioneer in GaN HEMT technology, particularly focusing on radio-frequency (RF) and power applications. Recent advances include using N-polar GaN structures to enable superior electron confinement and reliability at high voltages.[1]
+- **Diamond Heat Spreaders**: To address thermal management challenges in GaN devices, Fujitsu has developed proprietary integration of diamond heat spreaders with GaN HEMTs, improving device cooling and allowing higher power densities.[6][7][1]
+- **Efficiency Records**: In 2025, Fujitsu reported GaN HEMTs achieving a record 85.2% power-added efficiency (PAE) and 89.0% drain efficiency (DE) at 2.45 GHz—an important milestone for industrial and wireless applications.[2][8]
+- **Cutting-Edge Device Architecture**: Their R&D roadmap includes reducing gate length below 50 nm for operating frequencies beyond 100 GHz, further pushing the limits of high-frequency and high-power electronics while maintaining robust breakdown voltages.[1]
+- **Green Energy and Sustainability**: By promoting next-generation devices like GaN and SiC, Fujitsu aims at substantial energy savings—GaN power electronics can halve power losses compared to conventional silicon devices, directly supporting environmental and resource conservation efforts.[9]
+- **Patents and Technology Leadership**: Fujitsu is an industry leader in GaN HEMT patents, with approximately 900 applications globally, and is well-known for developing scalable solutions and new materials, such as indium-aluminum-gallium nitride (InAlGaN) HEMTs and GaN-on-silicon chips for efficient power electronics.[10][11][12]
+
+### Key Applications
+
+- Industrial power supply units with high output, such as 2.5 kW server PSUs.[13]
+- Wireless infrastructure, including satellite transceivers and high-speed RF communications.[10]
+- GaN modules in collaboration with partners like Transphorm, enabling smaller, high-efficiency modules for automotive and industrial products.[9]
+
+Fujitsu’s continued investment in GaN research reinforces its leading position in high-performance, energy-saving semiconductor technologies and positions the company at the forefront of next-generation electronics for both commercial and societal benefit.[5][3][2][1]
+
+[1](https://eureka.patsnap.com/report-gan-hemt-roadmap-and-future-technology-trends)
+[2](https://www.semiconductor-today.com/news_items/2025/apr/fujitsu-100425.shtml)
+[3](https://global.fujitsu/en-global/about/integrated-report)
+[4](https://www.fujitsu.com/global/about/facts/)
+[5](https://global.fujitsu/en-global/about)
+[6](https://www.selectscience.net/article/fujitsu-successfully-grows-diamond-film-to-boost-heat-dissipation-efficiency-of-gan-hemt)
+[7](https://www.fujitsu.com/global/about/resources/news/press-releases/2019/1205-01.html)
+[8](https://www.linkedin.com/posts/soi-engineered-substrates_gan-semiconductor-research-activity-7319819658306473985-qdbD)
+[9](https://www.renesas.com/en/about/newsroom/fujitsu-general-electronics-develops-industry-first-small-gan-module)
+[10](https://www.fujitsu.com/global/about/resources/news/press-releases/2018/0810-01.html)
+[11](https://www.eletimes.ai/fujitsu-successfully-triples-the-output-power-of-gallium-nitride-transistors)
+[12](https://compoundsemiconductor.net/article/90984/Fujitsu_to_power_ahead_with_GaN-on-Si_chip_shipments)
+[13](https://www.semiconductor-today.com/news_items/2012/NOV/FUJITSU_081112.html)
+[14](https://www.fujitsu.com/global/about/ir/library/integratedrep/2025/)
+[15](https://finance.yahoo.com/quote/FJTSF/profile/)
+[16](https://global.fujitsu/-/media/Project/Fujitsu/Fujitsu-HQ/about/integrated-report/2025/integrated-report-2025-en.pdf)
+[17](https://www.fujitsu-general.com/global/ir/pdf/pdf-f000-ir-financial-results2024-pp-01.pdf)
+[18](https://eepower.com/news/fujitsu-develops-gallium-nitride-hemt-for-power-supply/)
+[19](https://www.eetimes.com/breakthrough-output-achieved-with-gallium-nitride-hemt-amplifier/)
+[20](https://www.fujitsu.com/global/about/resources/news/press-releases/2007/0622-01.html)
+
+富士通有限公司是一家日本大型跨国信息技术和电子公司，以其在半导体技术领域（包括氮化镓 (GaN) 器件和材料）的先进研发和持续创新而享誉全球。该公司在基于 GaN 的高电子迁移率晶体管 (HEMT)、功率器件和集成技术的开发方面发挥了先锋作用，推动了高性能计算和节能解决方案的发展。​
+
+公司概况
+富士通总部位于日本川崎市。截至2025年3月31日，富士通在全球拥有约11.3万名员工，上一财年研发支出超过1010亿日元，其主要业务板块包括服务解决方案、硬件解决方案和普适解决方案。富士通以其对技术驱动创新、可持续增长和全球影响力的承诺而备受推崇，尤其是在数字化和先进电子技术相结合的领域。​
+
+氮化镓研究亮点
+GaN HEMT创新：富士通是GaN HEMT技术的先驱，尤其专注于射频(RF)和功率应用。近期进展包括采用N极性GaN结构，从而在高电压下实现更优异的电子限制和可靠性。​
+
+金刚石散热器：为了解决 GaN 器件的热管理难题，富士通开发了将金刚石散热器与 GaN HEMT 集成的专有技术，从而改善了器件冷却并实现了更高的功率密度。​
+
+效率记录：2025 年，富士通报告称，GaN HEMT 在 2.45 GHz 频率下实现了创纪录的 85.2% 功率附加效率 (PAE) 和 89.0% 漏极效率 (DE)——这是工业和无线应用的一个重要里程碑。​
+
+尖端器件架构：他们的研发路线图包括将栅极长度缩短到 50 纳米以下，以实现 100 GHz 以上的工作频率，进一步突破高频和高功率电子器件的极限，同时保持强大的击穿电压。​
+
+绿色能源与可持续发展：富士通通过推广 GaN 和 SiC 等下一代器件，旨在大幅节省能源——与传统的硅器件相比，GaN 功率电子器件可将功率损耗减半，从而直接支持环境保护和资源保护工作。​
+
+专利和技术领先地位：富士通是 GaN HEMT 专利领域的行业领导者，在全球拥有约 900 项专利申请，并以开发可扩展的解决方案和新材料而闻名，例如用于高效电力电子的铟铝镓氮化物 (InAlGaN) HEMT 和硅基 GaN 芯片。​
+
+主要应用
+高输出功率的工业电源装置，例如 2.5 kW 服务器电源。​
+
+无线基础设施，包括卫星收发器和高速射频通信。​
+
+与 Transphorm 等合作伙伴合作，开发 GaN 模块，从而为汽车和工业产品提供更小、更高效的模块。​
+
+富士通持续投资于氮化镓研究，巩固了其在高性能、节能半导体技术领域的领先地位，并使公司处于下一代电子产品的最前沿，从而造福商业和社会。
+
