@@ -163,6 +163,7 @@
 - [32. Microwave and Millimeter-Wave Permittivities of Single-Crystal AlN, Including Thickness and Temperature Dependence](#32-microwave-and-millimeter-wave-permittivities-of-single-crystal-aln-including-thickness-and-temperature-dependence)
 - [33. Optoelectronic performance and modulation bandwidth of green µ-LEDs using AlON buffer layer](#33-optoelectronic-performance-and-modulation-bandwidth-of-green-µ-leds-using-alon-buffer-layer)
 - [34. Microwave Photonics Empowered Integrated Sensing and Communication for 6G](#34-microwave-photonics-empowered-integrated-sensing-and-communication-for-6g)
+- [35. How fast can a light-emitting diode be modulated?](#35-how-fast-can-a-light-emitting-diode-be-modulated)
 
 链接不需要加<>，直接copy https链接
 
@@ -799,3 +800,7 @@ https://www.nature.com/articles/nature16454
 # 34. Microwave Photonics Empowered Integrated Sensing and Communication for 6G
 
 <https://ieeexplore.ieee.org/document/10870472/authors#authors>
+
+# 35. How fast can a light-emitting diode be modulated?
+
+<https://opg.optica.org/prj/upcoming_pdf.cfm?id=571995#>
