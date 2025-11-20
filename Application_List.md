@@ -36,9 +36,24 @@
     - [Company Overview](#company-overview)
     - [GaN Research Highlights](#gan-research-highlights)
     - [Key Applications](#key-applications)
+  - [9.1 Fujitsu Optical Components Limited (FOC)](#91-fujitsu-optical-components-limited-foc)
+    - [Core Business and Technology](#core-business-and-technology)
+    - [Organizational Structure and Global Reach](#organizational-structure-and-global-reach)
 - [10. VI Systems GmbH (VIS)](#10-vi-systems-gmbh-vis)
     - [Company Focus and Technology](#company-focus-and-technology)
     - [Key Products and Applications](#key-products-and-applications)
+- [11. Furukawaelectric](#11-furukawaelectric)
+    - [Core Business Areas](#core-business-areas)
+    - [Global Presence and Recent Initiatives](#global-presence-and-recent-initiatives)
+    - [Technology and Sustainability](#technology-and-sustainability)
+    - [Financial and Social Impact](#financial-and-social-impact)
+  - [11.1 Photonics Laboratory at Furukawa Electric Co., Ltd](#111-photonics-laboratory-at-furukawa-electric-co-ltd)
+    - [Research Goals and Focus](#research-goals-and-focus)
+    - [Collaboration and Impact](#collaboration-and-impact)
+- [12. Institute of Science Tokyo](#12-institute-of-science-tokyo)
+  - [12.1 The Laboratory for Future Interdisciplinary Research of Science and Technology (FIRST)](#121-the-laboratory-for-future-interdisciplinary-research-of-science-and-technology-first)
+    - [Mission and Research Scope](#mission-and-research-scope)
+    - [Activities and Impact](#activities-and-impact)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -594,6 +609,47 @@ GaN HEMT创新：富士通是GaN HEMT技术的先驱，尤其专注于射频(RF)
 
 富士通持续投资于氮化镓研究，巩固了其在高性能、节能半导体技术领域的领先地位，并使公司处于下一代电子产品的最前沿，从而造福商业和社会。
 
+## 9.1 Fujitsu Optical Components Limited (FOC)
+
+Fujitsu Optical Components Limited (FOC), headquartered in Kawasaki, Kanagawa, Japan, is a specialist subsidiary of Fujitsu established on April 1, 2009. The company focuses on the development, manufacturing, and global sales of advanced optical components essential for high-speed, high-capacity optical communication networks.[3][4][5][6]
+
+### Core Business and Technology
+- FOC’s product portfolio includes coherent transceivers (CFP DCO, CFP2 ACO), client optical transceiver modules (CFP/CFP2, QSFP28), lithium niobate (LN) modulators, and integrated coherent receivers designed for 100G, 400G, and beyond in long-haul, metro, and data center interconnect applications.[1][4][5]
+- The company leverages decades of expertise inherited from Fujitsu’s optical component divisions, combining sophisticated design with advanced manufacturing to meet diverse market needs in fiber optics.[5][6]
+- Recent R&D advancements include on-board optics, thin-film device technologies, and next-generation products supporting data traffic growth and cloud adoption.[8]
+
+### Organizational Structure and Global Reach
+- As a wholly owned subsidiary, Fujitsu Optical Components Limited operates within the Kawasaki Research & Manufacturing Facilities of Fujitsu, integrating R&D, manufacturing, and sales under a unified structure to deliver rapid innovation and customer support.[6]
+- FOC maintains a global customer base, providing high-performance solutions for telecom carriers, data center operators, and equipment manufacturers worldwide.[2]
+
+FOC’s commitment to innovation, reliability, and quality has made it a major player in the optical communications industry, supporting the continuous evolution of networking infrastructure across metro, long-haul, and data center segments.[1][4][6]
+
+[1](https://www.fujitsu.com/jp/group/foc/en/)
+[2](https://global.fujitsu/en-us/subsidiaries/foc)
+[3](https://www.fujitsu.com/jp/group/foc/en/about/indexgig5.html)
+[4](https://www.photonics.com/Buyers-Guide/Fujitsu-Optical-Components-Ltd/c33092)
+[5](https://www.fujitsu.com/jp/group/foc/en/business/indexgig5.html)
+[6](https://subtelforum.com/55fujitsu-optical-components-established/)
+[7](https://en.wikipedia.org/wiki/Fujitsu)
+[8](https://www.ff-opticalcomponents.com/en/information/info_20250310.html)
+[9](https://www.volza.com/company-profile/fujitsu-optical-components-ltd-16773046/)
+
+富士通光学元件有限公司（FOC）总部位于日本神奈川县川崎市，是富士通公司于2009年4月1日成立的专业子公司。该公司专注于高速、高容量光通信网络所必需的先进光学元件的开发、制造和全球销售。​
+
+核心业务和技术
+FOC 的产品组合包括相干收发器（CFP DCO、CFP2 ACO）、客户端光收发器模块（CFP/CFP2、QSFP28）、铌酸锂 (LN) 调制器和集成相干接收器，专为长途、城域和数据中心互连应用中的 100G、400G 及更高速率而设计。​
+
+该公司利用从富士通光学元件部门继承的数十年专业知识，将精密的设计与先进的制造工艺相结合，以满足光纤领域多样化的市场需求。​
+
+近期研发进展包括板载光学器件、薄膜器件技术以及支持数据流量增长和云采用的下一代产品。​
+
+组织结构和全球影响力
+作为富士通的全资子公司，富士通光学元件有限公司在富士通川崎研发制造中心内运营，将研发、制造和销售整合在一个统一的架构下，以实现快速创新和客户支持。​
+
+FOC拥有全球客户群，为全球电信运营商、数据中心运营商和设备制造商提供高性能解决方案。​
+
+FOC 致力于创新、可靠性和质量，使其成为光通信行业的主要参与者，支持城域网、长途网和数据中心等领域网络基础设施的持续发展。​
+
 # 10. VI Systems GmbH (VIS)
 
 VI Systems GmbH (VIS) is a German technology company specializing in the development and manufacturing of ultrafast optoelectronic components and modules for optical communication and sensor applications. Founded in 2006, VIS is headquartered in Berlin and operates a cutting-edge research facility near the Technical University of Berlin in Charlottenburg.[1][2]
@@ -640,3 +696,174 @@ VCSEL驱动器和放大器IC：支持高达56 Gbps的传输速率，适用于短
 
 VIS 与全球领先的公司和研究机构合作，并因其设计创新和技术卓越性而获得认可，不断突破超快光信号传输和传感器技术的界限。​
 
+# 11. Furukawaelectric
+
+Furukawa Electric Co., Ltd. is a leading Japanese manufacturer specializing in electrical and electronic products, with a heritage dating back to 1884. The company operates globally and is recognized for its contributions to infrastructure, telecommunications, energy, automotive, electronics, and advanced materials.[1][2][3][4][5]
+
+### Core Business Areas
+
+Furukawa Electric's business spans six main sectors:
+- Communications Solutions: Focused on fiber optic cables and telecom networks, supporting modern connectivity and 5G infrastructure.[2][3]
+- Energy Infrastructure: Providing power cables and equipment for ultra-high, high, medium, and low voltage applications.[3][6]
+- Automotive Products & Batteries: Manufacturing wire harnesses, sensors, and battery components used by global auto makers.[4][3]
+- Electronics Component Materials: Magnet wires, copper products, and other components for electronics and automotive markets.[7][3]
+- Functional Products: Plastics, thermal management solutions, and copper foil for data centers and semiconductor use.[3]
+- Service and Developments: Logistics, real estate, hydroelectric power, and research & development.[3]
+
+### Global Presence and Recent Initiatives
+
+With more than 50,000 employees, Furukawa Electric has a significant footprint in Japan, China, Asia, North and Latin America, and Europe. Recently, it has expanded sustainable fiber optic production in Brazil and advanced high-temperature superconducting technologies for fusion energy in partnership with Tokamak Energy.[8][9][10][4]
+
+### Technology and Sustainability
+
+The company emphasizes innovation in metals, photonics, polymers, and high-frequency technologies, aiming for both economic growth and environmental responsibility. Furukawa Electric is actively promoting renewable energy use and participates in global initiatives for carbon neutrality.[11][1]
+
+### Financial and Social Impact
+
+As of 2024, Furukawa Electric reported revenues of approximately $7.9 billion USD, with a strong focus on value creation and technology-driven societal advancement. The company’s mission is to enable progress and contribute positively to global infrastructure and daily life through its products and solutions.[1][2][4]
+
+Furukawa Electric’s deep expertise in materials science and telecommunications, combined with its commitment to sustainability and innovation, makes it a major player in the global electrical and electronics industry.[8][4][1]
+
+[1](https://www.furukawaelectric.com/company/)
+[2](https://dcfmodeling.com/blogs/history/5801t-history-mission-ownership)
+[3](https://www.furukawa.co.jp/en/ir/individual/about/business.html)
+[4](https://www.bccresearch.com/company-index/profile/furukawa-electric-co-ltd)
+[5](https://finance.yahoo.com/quote/FKA.F/profile/)
+[6](https://www.furukawa.co.jp/en/company/business/)
+[7](https://en.wikipedia.org/wiki/Furukawa_Electric)
+[8](https://tokamakenergy.com/2025/06/19/tokamak-energy-and-furukawa-electric-group-advance-partnership-toward-limitless-fusion-energy/)
+[9](https://lightera.com/n/furukawa-electric-invests-r-30-million-to-produce-new-fiber-optic-technologies-in-brazil/)
+[10](https://www.furukawa.co.jp/en/release/)
+[11](https://furukawaelectric.disclosure.site/en/themes/197)
+[12](https://www.furukawa.co.jp/en/company/outline.html)
+[13](https://www.forbes.com/companies/furukawa-electric/)
+[14](https://www.bloomberg.com/profile/company/5801:JP)
+[15](https://www.furusan.co.jp/en/company/conglomerate.html)
+[16](https://www.cent.capital/finpedia/jp/economic-sectors/equities-furukawa-electric-5801-infrastructure)
+[17](https://www.marketscreener.com/quote/stock/FURUKAWA-ELECTRIC-CO-LTD-6492459/company/)
+[18](https://furukawaelectric.disclosure.site/pdf/library/175/en/FurukawaReport2024_en_A4.pdf)
+[19](https://www.furukawaelectric.com/news/)
+[20](https://www.furukawaas.co.jp/english/corporate/furukawa-electric-group/)
+
+古河电气株式会社是一家领先的日本制造商，专门生产电气和电子产品，其历史可以追溯到1884年。该公司在全球范围内开展业务，并因其在基础设施、电信、能源、汽车、电子和先进材料领域的贡献而闻名。​
+
+核心业务领域
+古河电气的业务涵盖六大主要领域：
+
+通信解决方案：专注于光纤电缆和电信网络，支持现代连接和 5G 基础设施。​
+
+能源基础设施：为超高压、高压、中压和低压应用提供电力电缆和设备。​
+
+汽车产品及电池：生产全球汽车制造商使用的线束、传感器和电池组件。​
+
+电子元件材料：用于电子和汽车市场的磁线、铜制品及其他元件。​
+
+功能性产品：用于数据中心和半导体的塑料、热管理解决方案和铜箔。​
+
+服务与发展：物流、房地产、水力发电以及研发。​
+
+全球布局及近期举措
+古河电气拥有超过5万名员工，业务遍及日本、中国、亚洲、北美、拉丁美洲和欧洲。近期，该公司在巴西扩大了可持续光纤的生产规模，并与托卡马克能源公司合作，推进用于聚变能源的高温超导技术的研发。​
+
+技术与可持续性
+公司致力于金属、光子学、聚合物和高频技术领域的创新，力求在经济增长和环境保护之间取得平衡。古河电气积极推动可再生能源的利用，并参与全球碳中和倡议。​
+
+财务和社会影响
+截至2024年，古河电气股份有限公司的营业收入约为79亿美元，公司高度重视价值创造和技术驱动的社会进步。公司的使命是通过其产品和解决方案，促进全球基础设施和日常生活的发展，并做出积极贡献。​
+
+古河电气在材料科学和电信领域的深厚专业知识，加上其对可持续发展和创新的承诺，使其成为全球电气和电子行业的主要参与者。
+
+## 11.1 Photonics Laboratory at Furukawa Electric Co., Ltd
+
+The Photonics Laboratory at Furukawa Electric Co., Ltd. serves as a hub for advanced research and development in photonics technologies, focusing particularly on next-generation optical networks, fiber optics, and laser systems. The laboratory’s mission is to create ultra-high-capacity, low-latency optical networks that underpin future society, especially for applications in 6G, AI, and digital twins.[1]
+
+### Research Goals and Focus
+
+- **Photonics for Communications:** The laboratory develops photonics-based solutions such as advanced optical fibers, lasers, and devices aimed at expanding data transmission capacity and speed in telecom networks and data centers.[8][1]
+- **Energy Efficiency:** Research also targets lowering the power consumption and environmental impact of optical transmission devices through innovative technology and packaging.[1]
+- **Electronic-Photonic Convergence:** Efforts are ongoing to integrate photonics with electronics for high-density, high-efficiency devices, which is critical for modern data infrastructure and mobility applications.[1]
+- **Advanced Applications:** The team explores photonics for high-power laser systems, satellite communications, wireless power transfer, and medical technology.[1]
+
+### Collaboration and Impact
+
+- Furukawa Electric’s Photonics Laboratory works with academic partners (such as the recent co-creation center with Tohoku University) to pioneer new photonics integration technologies and foster talent for society’s future needs.[3]
+- The laboratory’s innovations influence global communications infrastructure, manufacturing, and sustainable technologies across multiple sectors.[3][1]
+
+The Photonics Laboratory is a recognized driver of Furukawa Electric’s reputation in cutting-edge telecom, energy and mobility sectors, contributing to both industrial advancement and sustainability.[3][1]
+
+[1](https://www.furukawa.co.jp/en/rd/profile/photonics.html)
+[2](https://www.furukawa.co.jp/en/rd/profile/)
+[3](https://www.riec.tohoku.ac.jp/en/organization/cocreation_research_center/cocreation_research_center-fdk_tohoku_photonics_lab/)
+[4](https://furukawaelectric.disclosure.site/pdf/library/175/en/FurukawaReport2021_en_A3.pdf)
+[5](https://www.furukawa.co.jp/en/rd/profile/digital.html)
+[6](https://www.asminternational.org/furukuwa-opens-new-laser-processing-laboratory-in-aichi-prefecture-to-advance-industrial-solutions/)
+[7](https://www.ofsoptics.com/introducing-lightera/)
+[8](https://www.furukawaelectric.com/release/category.html/category.html?id=communication)
+[9](https://www.feti.hu/exciting-moments-at-laser-world-of-photonics-2025/)
+[10](https://www.rd.ntt/e/research/JN202405_26186.html)
+
+古河电气株式会社的光子学实验室是光子学技术领域先进研发的中心，尤其专注于下一代光网络、光纤和激光系统。该实验室的使命是打造支撑未来社会的超高容量、低延迟光网络，尤其适用于6G、人工智能和数字孪生等应用。​
+
+研究目标和重点
+通信光子学：该实验室开发基于光子学的解决方案，例如先进的光纤、激光器和器件，旨在扩展电信网络和数据中心的数据传输容量和速度。​
+
+能源效率：研究还致力于通过创新技术和封装来降低光传输设备的功耗和环境影响。​
+
+电子光子融合：目前正在努力将光子学与电子学相结合，以制造高密度、高效率的器件，这对于现代数据基础设施和移动应用至关重要。​
+
+先进应用：该团队探索光子学在高功率激光系统、卫星通信、无线电力传输和医疗技术中的应用。​
+
+协作与影响
+古河电气光子学实验室与学术伙伴（例如最近与东北大学合作成立的联合创新中心）合作，开拓新的光子集成技术，并为社会未来的需求培养人才。​
+
+该实验室的创新成果影响着全球通信基础设施、制造业以及多个领域的可持续技术。​
+
+光子学实验室是古河电气在尖端电信、能源和交通领域声誉的公认推动者，为产业进步和可持续发展做出了贡献。
+
+# 12. Institute of Science Tokyo
+
+## 12.1 The Laboratory for Future Interdisciplinary Research of Science and Technology (FIRST) 
+
+The Laboratory for Future Interdisciplinary Research of Science and Technology (FIRST) is a major research laboratory within the Institute of Innovative Research (IIR) at the Tokyo Institute of Technology (Tokyo Tech), located in Yokohama and Kanagawa. Established in April 2016, FIRST is one of Tokyo Tech’s largest research hubs, with around 90 faculty members and a strong emphasis on interdisciplinary innovation and real-world applications.[2][5][8]
+
+### Mission and Research Scope
+
+- FIRST’s mission is to advance academia and industry by creating new fields that blend mechanical engineering, electrical engineering, materials science, information technology, and biomedical engineering.[5]
+- The lab supports research groups in photonics, AI, disaster prevention, biomedical engineering, and urban resilience, among others, fostering collaboration across disciplines and with industry partners.[2][5]
+- Through four large-scale research clusters and multiple collaborative research centers, FIRST addresses challenges such as energy, climate, aging populations, infectious disease, and societal security.[3]
+
+### Activities and Impact
+
+- FIRST actively engages in partnerships with companies and other universities to drive social implementation of technologies and cultivate new talent for science and engineering.[3][5]
+- It hosts international seminars, awards programs, and supports young researchers, ensuring a dynamic, open academic environment.[1]
+- FIRST’s work includes pioneering photonics research, especially in optical communications and VCSEL lasers, fundamental research in biomedical and life sciences, and urban disaster mitigation.[5]
+
+FIRST at Tokyo Tech is a vibrant laboratory that accelerates future-facing science and technology by merging diverse fields, promoting innovation, and advancing societal needs through interdisciplinary collaboration.[2][3][5]
+
+[1](https://www.first.iir.isct.ac.jp/en/)
+[2](https://www.first.iir.titech.ac.jp/english/inside/)
+[3](https://www.isct.ac.jp/en/001/about/organizations/institute-of-integrated-research)
+[4](https://shirane-lab.ee.e.titech.ac.jp/index.php?page=contacts&lang=en)
+[5](https://www.youtube.com/watch?v=wHSc8yRh1BY)
+[6](https://computeroxy.com/associate-professor-laboratory-for-future-interdisciplinary-research-of-science-and-technology-first,i7169.html)
+[7](https://robogaku.jp/en/rij/univ/tokyo-institute-of-technology.html)
+[8](https://www.first.iir.titech.ac.jp/en/detail_91/)
+[9](https://titech.academia.edu/Departments/Laboratory_for_Future_Interdisciplinary_Research_of_Science_and_Technology)
+
+未来跨学科科学技术研究实验室（FIRST）是东京工业大学创新研究所（IIR）下属的主要研究实验室，位于横滨和神奈川两地。FIRST成立于2016年4月，是东京工业大学最大的研究中心之一，拥有约90名教职员工，并高度重视跨学科创新和实际应用。​​
+
+任务和研究范围
+FIRST 的使命是通过创造融合机械工程、电气工程、材料科学、信息技术和生物医学工程的新领域，来推动学术界和工业界的发展。​
+
+该实验室为光子学、人工智能、灾害预防、生物医学工程和城市韧性等领域的研究团队提供支持，促进跨学科合作以及与行业合作伙伴的合作。​​
+
+FIRST 通过四个大型研究集群和多个合作研究中心，应对能源、气候、人口老龄化、传染病和社会安全等挑战。​
+
+活动及影响
+FIRST 积极与企业和其他大学建立合作关系，以推动技术的社会应用，并培养科学和工程领域的新人才。​​
+
+它举办国际研讨会、奖励计划，并支持青年研究人员，从而确保充满活力、开放的学术环境。​
+
+FIRST 的工作包括开创性的光子学研究，尤其是在光通信和 VCSEL 激光器方面，生物医学和生命科学方面的基础研究，以及城市灾害缓解。​
+
+东京工业大学的 FIRST 实验室是一个充满活力的实验室，它通过跨学科合作，融合不同领域，促进创新，满足社会需求，从而加速面向未来的科学技术发展。​​
