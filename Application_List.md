@@ -54,6 +54,9 @@
   - [12.1 The Laboratory for Future Interdisciplinary Research of Science and Technology (FIRST)](#121-the-laboratory-for-future-interdisciplinary-research-of-science-and-technology-first)
     - [Mission and Research Scope](#mission-and-research-scope)
     - [Activities and Impact](#activities-and-impact)
+- [13. U.S. Naval Research Laboratory (NRL)](#13-us-naval-research-laboratory-nrl)
+    - [NRL Overview](#nrl-overview)
+    - [GaN-Related Research at NRL](#gan-related-research-at-nrl)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -867,3 +870,43 @@ FIRST 积极与企业和其他大学建立合作关系，以推动技术的社�
 FIRST 的工作包括开创性的光子学研究，尤其是在光通信和 VCSEL 激光器方面，生物医学和生命科学方面的基础研究，以及城市灾害缓解。​
 
 东京工业大学的 FIRST 实验室是一个充满活力的实验室，它通过跨学科合作，融合不同领域，促进创新，满足社会需求，从而加速面向未来的科学技术发展。​​
+
+# 13. U.S. Naval Research Laboratory (NRL)
+
+The U.S. Naval Research Laboratory (NRL) is the corporate research laboratory for the United States Navy and Marine Corps, founded in 1923 in Washington, D.C. It specializes in a wide range of scientific fields, including materials science, plasma physics, electronics, and advanced defense technologies, with a major mission to drive innovation supporting naval operations and national security.[1][2][5]
+
+### NRL Overview
+
+NRL is one of the first U.S. government R&D labs, established at the instigation of Thomas Edison. It conducts basic and applied research, technological development, and prototyping, covering topics from electronic warfare to undersea technologies. Its major directorates include divisions dedicated to radar, optical sciences, electronic warfare, and more. NRL scientists produce hundreds of published research papers annually and hold a leading position in nanotechnology and advanced materials patents.[2][5]
+
+### GaN-Related Research at NRL
+
+NRL has contributed extensively to semiconductor research, including Gallium Nitride (GaN). The laboratory has developed large-area engineered GaN wafers, enabling next-generation high-voltage power switches reaching 1200V and beyond, which are crucial for modern radar, communications, and advanced power electronics. NRL has also published material characterization studies about GaN HEMTs (High Electron Mobility Transistors), including work on GaN device layers grown on various substrates like silicon and silicon-on-insulator, supporting improved device performance for military and commercial applications.[6][10][12]
+
+These research efforts make NRL a leader in wide bandgap semiconductor development for both defense and civilian sectors, focusing on making electronics more efficient, robust, and capable under extreme operating conditions.[10][6]
+
+[1](https://www.nrl.navy.mil/About-Us/)
+[2](https://en.wikipedia.org/wiki/United_States_Naval_Research_Laboratory)
+[3](https://www.nrl.navy.mil)
+[4](https://fr.wikipedia.org/wiki/Naval_Research_Laboratory)
+[5](https://www.navalsteminterns.us/nreip/labs/nrl_dc.html)
+[6](https://www.nrl.navy.mil/Media/News/Article/2648514/gan-wide-bandgap-semiconductor-enabling-1200v-and-beyond-power-switches-now-com/)
+[7](https://www.youtube.com/watch?v=PfG5Y9M5eLo)
+[8](https://www.cfd-research.com/event/nrl-innovation-day-for-industry/)
+[9](https://www.ncpc.gov/files/NSF_Naval_Research_Laboratory_Final_Master_Plan_Master_Plan_MP47_Apr2015.pdf)
+[10](https://pmc.ncbi.nlm.nih.gov/articles/PMC8541231/)
+[11](https://www.dvidshub.net/unit/NRL)
+[12](https://onlinelibrary.wiley.com/doi/full/10.1002/pssa.202200828)
+[13](https://www.govinfo.gov/content/pkg/GOVPUB-D210-PURL-gpo126624/pdf/GOVPUB-D210-PURL-gpo126624.pdf)
+[14](https://phys.org/news/2011-10-navy-1000th-shot-laboratory-electromagnetic.html)
+[15](https://www.facebook.com/USNRL/posts/christmas-came-early-for-a-group-of-nrl-scientists-the-us-naval-research-laborat/1198953768935139/)
+
+美国海军研究实验室（NRL）是美国海军和海军陆战队的企业研究实验室，于 1923 年在华盛顿特区成立。它专注于广泛的科学领域，包括材料科学、等离子体物理、电子学和先进国防技术，其主要使命是推动创新，以支持海军行动和国家安全。​
+
+NRL概览
+美国海军研究实验室（NRL）是美国最早成立的政府研发实验室之一，由托马斯·爱迪生倡议建立。它开展基础研究和应用研究、技术开发和原型制作，涵盖从电子战到水下技术等诸多领域。其主要部门包括雷达、光学科学、电子战等多个研究分部。NRL的科学家每年发表数百篇研究论文，并在纳米技术和先进材料专利领域处于领先地位。​
+
+美国海军研究实验室的氮化镓相关研究
+美国海军研究实验室（NRL）在半导体研究领域做出了卓越贡献，其中包括氮化镓（GaN）的研究。该实验室开发了大面积工程化GaN晶圆，可用于制造电压高达1200V及以上的下一代高压功率开关，这些开关对于现代雷达、通信和先进电力电子设备至关重要。NRL还发表了关于GaN高电子迁移率晶体管（HEMT）的材料表征研究，包括在硅和绝缘体上硅等各种衬底上生长的GaN器件层的研究，从而提升了器件在军事和商业应用中的性能。​
+
+这些研究成果使美国海军研究实验室 (NRL) 成为国防和民用领域宽禁带半导体开发的领导者，致力于提高电子产品的效率、稳健性和在极端工作条件下的性能。​
