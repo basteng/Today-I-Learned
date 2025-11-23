@@ -57,6 +57,10 @@
 - [13. U.S. Naval Research Laboratory (NRL)](#13-us-naval-research-laboratory-nrl)
     - [NRL Overview](#nrl-overview)
     - [GaN-Related Research at NRL](#gan-related-research-at-nrl)
+- [14. IBM T. J. Watson Research Center](#14-ibm-t-j-watson-research-center)
+    - [Co-Packaged Optics (CPO) at Watson](#co-packaged-optics-cpo-at-watson)
+    - [Gallium Nitride (GaN) Research at Watson](#gallium-nitride-gan-research-at-watson)
+    - [Notable Points](#notable-points)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -910,3 +914,71 @@ NRL概览
 美国海军研究实验室（NRL）在半导体研究领域做出了卓越贡献，其中包括氮化镓（GaN）的研究。该实验室开发了大面积工程化GaN晶圆，可用于制造电压高达1200V及以上的下一代高压功率开关，这些开关对于现代雷达、通信和先进电力电子设备至关重要。NRL还发表了关于GaN高电子迁移率晶体管（HEMT）的材料表征研究，包括在硅和绝缘体上硅等各种衬底上生长的GaN器件层的研究，从而提升了器件在军事和商业应用中的性能。​
 
 这些研究成果使美国海军研究实验室 (NRL) 成为国防和民用领域宽禁带半导体开发的领导者，致力于提高电子产品的效率、稳健性和在极端工作条件下的性能。​
+
+# 14. IBM T. J. Watson Research Center
+
+The IBM T. J. Watson Research Center is the central hub for IBM Research, featuring major facilities in Yorktown Heights, New York, and additional locations in Cambridge, Massachusetts. Established in 1961, the Center has played a key role in IBM's scientific and technological advancements, including developing DRAM, relational databases, and copper interconnects. It is recognized globally for pioneering research in computing, physics, and semiconductor technology.[1][2][3][4]
+
+### Co-Packaged Optics (CPO) at Watson
+
+The IBM T. J. Watson Research Center is actively developing Co-Packaged Optics (CPO), with efforts led by senior research scientists such as Laurent Schares and packaging experts like Dr. Bill Schow. Their research focuses on improving data center network architecture by integrating optical interconnects directly with switch and accelerator chips, significantly boosting bandwidth, reducing power consumption, and simplifying topologies. Recent achievements include demonstrations of polymer optical waveguide devices and large-scale evaluations of CPO systems, enabling marked gains in data throughput for high-performance computing applications.[5][6][7][8]
+
+### Gallium Nitride (GaN) Research at Watson
+
+The Watson Research Center conducts world-class Gallium Nitride (GaN) research. Key breakthroughs include:
+- Controlled spalling methods for transferring thin GaN layers from bulk substrates, which is crucial for power electronics and cost reduction.[9]
+- Development of van der Waals epitaxy techniques to grow GaN on novel substrates for blue LEDs and high-performance photonic devices, directly relevant to CPO and optoelectronic integration.[10]
+- Early research into cubic GaN crystals grown on silicon, supporting advanced solid-state lighting and silicon photonics applications.[11]
+
+### Notable Points
+
+- IBM T. J. Watson Research Center is a leader in innovation, especially in semiconductor technology, optics, and quantum computing.[2][4][1]
+- The Center's Co-Packaged Optics research is helping shape the future of data center networks and high-bandwidth computation.[7][8]
+- Advanced GaN work at Watson supports both electronic and photonic device breakthroughs relevant to next-generation computing platforms and data infrastructure.[9][10][11]
+
+[1](https://en.wikipedia.org/wiki/Thomas_J._Watson_Research_Center)
+[2](https://www.hipeac.net/network/institutions/6886/ibm-tj-watson/)
+[3](https://www.idtechex.com/en/timeline/ibm-tj-watson-research-center/c85073)
+[4](https://www.aps.org/funding-recognition/historic-sites/ibm-research)
+[5](https://pmc.ncbi.nlm.nih.gov/articles/PMC11509299/)
+[6](https://research.ibm.com/people/laurent-schares)
+[7](https://research.ibm.com/blog/research-annual-letter-2024)
+[8](https://www.binghamton.edu/ieec/eps/infoforspeakersandsessionchairs.html)
+[9](https://www.semiconductor-today.com/news_items/2017/aug/ibm_140817.shtml)
+[10](https://www.semiconductor-today.com/news_items/2014/OCT/IBM_021014.shtml)
+[11](https://ece.illinois.edu/news/3591)
+[12](https://www.ibm.com/history/research-origins)
+[13](https://ethw.org/Milestones:IBM_Thomas_J._Watson_Research_Center,_1960_-_1984)
+[14](https://research.ibm.com/labs/yorktown-heights)
+[15](https://research.ibm.com/projects/quantum-transduction-research)
+[16](https://www.nexxworks.com/blog/inside-ibms-t-j-watson-center-the-next-generation-of-computing)
+[17](https://www.youtube.com/watch?v=8JaUYRZsHgI)
+[18](https://www.ecoc2022.org/10-programme-description/77-symposium-optical-interconnect-in-dcs)
+[19](https://pubmed.ncbi.nlm.nih.gov/26990711/)
+[20](https://fr.wikipedia.org/wiki/Thomas_J._Watson_Research_Center)
+
+IBM TJ Watson 研究中心是 IBM 的中心枢纽。
+
+该研究中心的主要设施位于纽约州约克镇高地，并在马萨诸塞州剑桥设有其他地点。中心成立于1961年，在IBM的科学和技术进步中发挥了关键作用，包括开发DRAM、关系数据库和铜互连技术。中心因其在计算机、物理和半导体技术领域的开创性研究而享誉全球。​
+
+沃森公司的共封装光学器件 (CPO)
+
+IBM TJ Watson 研究中心正积极开发共封装光学器件 (CPO) 技术，该领域的研究工作由 Laurent Schares 等资深研究科学家和 Bill Schow 博士等封装专家领导。他们的研究重点在于通过将光互连直接集成到交换机和加速器芯片中来改进数据中心网络架构，从而显著提升带宽、降低功耗并简化拓扑结构。近期成果包括聚合物光波导器件的演示以及 CPO 系统的大规模评估，这些成果显著提高了高性能计算应用的数据吞吐量。​
+
+沃森的氮化镓 (GaN) 研究
+
+沃森研究中心开展世界一流的氮化镓（GaN）研究。主要突破包括：
+
+可控剥离方法用于将薄GaN层从体衬底上转移，这对于电力电子器件和降低成本至关重要。​
+
+开发范德华外延技术，在新型衬底上生长GaN，用于制造蓝色LED和高性能光子器件，这与CPO和光电集成直接相关。​
+
+早期对在硅上生长的立方氮化镓晶体的研究，为先进的固态照明和硅光子学应用提供了支持。​
+
+要点
+
+IBM TJ Watson 研究中心是创新领域的领导者，尤其是在半导体技术、光学和量子计算领域。​
+
+该中心的共封装光学器件研究正在帮助塑造数据中心网络和高带宽计算的未来。​
+
+沃森研究所的先进氮化镓研究为与下一代计算平台和数据基础设施相关的电子和光子器件的突破提供了支持。​
