@@ -165,6 +165,7 @@
 - [34. Microwave Photonics Empowered Integrated Sensing and Communication for 6G](#34-microwave-photonics-empowered-integrated-sensing-and-communication-for-6g)
 - [35. How fast can a light-emitting diode be modulated?](#35-how-fast-can-a-light-emitting-diode-be-modulated)
 - [36. Time-resolved dynamics in single InGaN quantum dots](#36-time-resolved-dynamics-in-single-ingan-quantum-dots)
+- [37. Semiconductor quantum dots: Technological progress and future challenges](#37-semiconductor-quantum-dots-technological-progress-and-future-challenges)
 
 链接不需要加<>，直接copy https链接
 
@@ -809,3 +810,7 @@ https://www.nature.com/articles/nature16454
 # 36. Time-resolved dynamics in single InGaN quantum dots
 
 <https://doi.org/10.1063/1.1614831>
+
+# 37. Semiconductor quantum dots: Technological progress and future challenges
+
+<https://www.science.org/doi/epdf/10.1126/science.aaz8541>
