@@ -164,6 +164,7 @@
 - [33. Optoelectronic performance and modulation bandwidth of green µ-LEDs using AlON buffer layer](#33-optoelectronic-performance-and-modulation-bandwidth-of-green-µ-leds-using-alon-buffer-layer)
 - [34. Microwave Photonics Empowered Integrated Sensing and Communication for 6G](#34-microwave-photonics-empowered-integrated-sensing-and-communication-for-6g)
 - [35. How fast can a light-emitting diode be modulated?](#35-how-fast-can-a-light-emitting-diode-be-modulated)
+- [36. Time-resolved dynamics in single InGaN quantum dots](#36-time-resolved-dynamics-in-single-ingan-quantum-dots)
 
 链接不需要加<>，直接copy https链接
 
@@ -804,3 +805,7 @@ https://www.nature.com/articles/nature16454
 # 35. How fast can a light-emitting diode be modulated?
 
 <https://opg.optica.org/prj/upcoming_pdf.cfm?id=571995#>
+
+# 36. Time-resolved dynamics in single InGaN quantum dots
+
+<https://doi.org/10.1063/1.1614831>
