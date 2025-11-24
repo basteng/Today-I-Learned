@@ -61,6 +61,10 @@
     - [Co-Packaged Optics (CPO) at Watson](#co-packaged-optics-cpo-at-watson)
     - [Gallium Nitride (GaN) Research at Watson](#gallium-nitride-gan-research-at-watson)
     - [Notable Points](#notable-points)
+- [15. Xscape Photonics](#15-xscape-photonics)
+  - [Core Technology and Innovation](#core-technology-and-innovation)
+  - [Applications and Partnerships](#applications-and-partnerships)
+  - [Leadership and Funding](#leadership-and-funding)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -982,3 +986,67 @@ IBM TJ Watson 研究中心是创新领域的领导者，尤其是在半导体技
 该中心的共封装光学器件研究正在帮助塑造数据中心网络和高带宽计算的未来。​
 
 沃森研究所的先进氮化镓研究为与下一代计算平台和数据基础设施相关的电子和光子器件的突破提供了支持。​
+
+# 15. Xscape Photonics
+
+Xscape Photonics is a New York-based company founded in 2022 that develops photonic platform solutions, especially for accelerating ultra-high bandwidth connections in data centers and supporting advanced AI hardware and systems. The company is best known for its ChromX platform, a fully programmable, multi-wavelength silicon photonics solution designed to solve data transfer bottlenecks between GPUs and other components in AI clusters.[4][5][6]
+
+## Core Technology and Innovation
+
+- Xscape Photonics uses proprietary technology to enable hundreds of optical wavelengths, or "colors," from a single laser source, allowing much denser and more flexible data transmission than traditional approaches.[3][6]
+- Their solutions are built for seamless integration with existing photonic components, aiming to maximize “escape bandwidth” out of GPUs by 10 times and reduce power consumption by a similar factor compared to incumbent solutions.[5][6]
+- The company's technology traces back to research led by renowned Columbia University professors and is supported by a founding team with deep expertise in silicon photonics and high-performance computing.[3][5]
+
+## Applications and Partnerships
+
+- Xscape Photonics targets hyperscale data centers and AI clusters, where the need for rapid, efficient, and scalable data movement is most acute.[6][5]
+- The company recently partnered with Tower Semiconductor to launch what is described as the industry’s first monolithically integrated, optically pumped, multi-wavelength laser platform for AI datacenter fabrics.[5][6]
+- Their photonic platforms are designed to integrate easily with current silicon photonics ecosystems, helping customers upgrade high-performance computing and AI infrastructure.[6][5]
+
+## Leadership and Funding
+
+- The founding and executive team includes pioneers from Columbia University and veterans from top companies in the photonics and semiconductor industries.[5]
+- Xscape Photonics has attracted significant investment to support the production and commercialization of its technologies, with multiple funding rounds raised since its inception.[8][9]
+
+Xscape Photonics is considered a key emerging player in the race to build the next generation of scalable, power-efficient optical solutions for AI and data center applications.[6][5]
+
+[1](https://www.xscapephotonics.com)
+[2](https://www.xscapephotonics.com/join-us)
+[3](https://www.youtube.com/watch?v=NU8wh2cbfVk)
+[4](https://www.preqin.com/data/profile/asset/xscape-photonics-inc-/522995)
+[5](https://www.xscapephotonics.com/news)
+[6](https://picmagazine.net/article/122390/Xscape_Photonics_and_Tower_launch_on-chip_multi-wavelength_laser_platform)
+[7](https://www.linkedin.com/posts/xscape-photonics-inc_xscape-photonics-inc-has-appointed-vikram-activity-7317984022649810946-lJj4)
+[8](https://theaiinsider.tech/2024/10/16/xscape-photonics-announces-44m-series-a-to-reimagine-the-ai-data-center/)
+[9](https://www.theglobeandmail.com/investing/markets/stocks/ALTR/pressreleases/12655884/)
+
+Xscape Photonics 是一家总部位于纽约的公司，成立于 2022 年，致力于开发光子平台解决方案，尤其擅长加速数据中心中的超高带宽连接，并为先进的人工智能硬件和系统提供支持。该公司最知名的产品是 ChromX 平台，这是一款完全可编程的多波长硅光子解决方案，旨在解决人工智能集群中 GPU 与其他组件之间的数据传输瓶颈问题。​
+
+核心技术与创新
+
+Xscape Photonics 使用专有技术，从单个激光源产生数百种光波长或“颜色”，从而实现比传统方法更密集、更灵活的数据传输。​​
+
+他们的解决方案旨在与现有的光子组件无缝集成，目标是将 GPU 的“逃逸带宽”提高 10 倍，并将功耗降低到与现有解决方案类似的水平。​
+
+该公司的技术源于哥伦比亚大学著名教授领导的研究，并由一支在硅光子学和高性能计算领域拥有深厚专业知识的创始团队提供支持。​​
+
+应用与合作
+
+Xscape Photonics 的目标客户是超大规模数据中心和 AI 集群，这些场所对快速、高效和可扩展的数据传输的需求最为迫切。​
+
+该公司最近与 Tower Semiconductor 合作，推出了据称是业界首个用于 AI 数据中心架构的单片集成、光泵浦多波长激光平台。​
+
+他们的光子平台旨在轻松与当前的硅光子生态系统集成，帮助客户升级高性能计算和人工智能基础设施。​
+
+领导力和资金
+
+创始和管理团队包括来自哥伦比亚大学的先驱者以及来自光子学和半导体行业顶尖公司的资深人士。​
+
+Xscape Photonics 自成立以来已筹集多轮资金，吸引了大量投资以支持其技术的生产和商业化。​
+
+Xscape Photonics 被认为是下一代可扩展、节能型光学解决方案（用于人工智能和数据中心应用）竞赛中的关键新兴参与者。​
+
+
+
+
+
