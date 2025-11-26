@@ -65,6 +65,20 @@
   - [Core Technology and Innovation](#core-technology-and-innovation)
   - [Applications and Partnerships](#applications-and-partnerships)
   - [Leadership and Funding](#leadership-and-funding)
+- [16.  Integrated Compound Semiconductors (ICS) 高性能射频和光半导体器件](#16--integrated-compound-semiconductors-ics-高性能射频和光半导体器件)
+  - [Company overview](#company-overview-1)
+  - [Products and technologies](#products-and-technologies)
+  - [Markets and applications](#markets-and-applications)
+  - [Services and capabilities](#services-and-capabilities)
+- [17. Compound Semiconductor Centre Ltd (CSC)](#17-compound-semiconductor-centre-ltd-csc)
+  - [Basic profile](#basic-profile)
+  - [Mission and role](#mission-and-role)
+  - [Technologies and focus areas](#technologies-and-focus-areas)
+  - [Facilities and capabilities](#facilities-and-capabilities)
+  - [Services and collaborations](#services-and-collaborations)
+  - [GaN technology focus](#gan-technology-focus)
+  - [Epitaxy and process capability](#epitaxy-and-process-capability)
+  - [R\&D themes and collaborations](#rd-themes-and-collaborations)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -1045,6 +1059,190 @@ Xscape Photonics 的目标客户是超大规模数据中心和 AI 集群，这�
 Xscape Photonics 自成立以来已筹集多轮资金，吸引了大量投资以支持其技术的生产和商业化。​
 
 Xscape Photonics 被认为是下一代可扩展、节能型光学解决方案（用于人工智能和数据中心应用）竞赛中的关键新兴参与者。​
+
+# 16.  Integrated Compound Semiconductors (ICS) 高性能射频和光半导体器件
+
+icsld.com is the website of Integrated Compound Semiconductors (ICS) Ltd, a UK-based company that designs and manufactures high-performance RF and optical semiconductor devices.[1][2]
+
+## Company overview
+
+- ICS specialises in compound semiconductor technologies, focusing on devices such as PIN photodiodes, avalanche photodiodes (APDs), varactor diodes, and other RF/optical components.[3][1]
+- The company is headquartered in the Manchester/Stockport area in the UK, with its address listed at Broadoak Business Park in Stretford, Manchester.[2][4]
+
+## Products and technologies
+
+- ICS offers optical devices (including high-speed InGaAs/InAlAs PIN and APD detectors) targeting telecom and datacom applications at 10G, 25G, and 100G data rates.[5][3]
+- It also develops microwave and millimeter-wave devices and provides custom semiconductor solutions tailored to specific RF and optical performance requirements.[1][5]
+
+## Markets and applications
+
+- ICS devices are used in 5G wireless infrastructure, high-speed fiber-optic telecom/datacom links, and other systems requiring high-frequency or high-sensitivity optoelectronic components.[6][7]
+- The firm also develops VCSELs and related optical components for emerging quantum technology applications such as atomic clocks and magnetometers.[7][8]
+
+## Services and capabilities
+
+- Beyond selling standard products, ICS provides design, simulation, fabrication, and testing services for advanced RF and optical devices, allowing customers to obtain highly customised solutions.[6][7]
+- Its core expertise covers epitaxial structure design, RF and optical chip design, and supplying prototype and production devices built on scalable manufacturing processes.[9][7]
+
+[1](https://www.icsld.com)
+[2](https://sweden.dealroom.co/companies/integrated_compound_semiconductors)
+[3](https://compoundsemiconductor.net/article/103566/ICS_announces_high_speed_InGaAs-InAlAs_PIN_and_APD_detectors)
+[4](https://www.icsld.com/contact)
+[5](https://www.icsld.com/products)
+[6](https://www.icsld.com/services)
+[7](https://www.compoundsemiconductorcentre.com/uk-consortium-awarded-12m-to-develop-future-6g-network-solutions)
+[8](https://www.semiconductor-today.com/news_items/2022/feb/ics-080222.shtml)
+[9](https://www.ipcei-me.eu/integrated-compound-semiconductors/)
+[10](https://english.shanghai.gov.cn/en-KeyIndustries/20250711/94ebf2f1e9a540e68a4de6980127905e.html)
+[11](https://startup-map.cologne/companies/integrated_compound_semiconductors)
+[12](http://www.sicm.com.cn/?EnOverview%2F)
+[13](https://www.facebook.com/icsld/)
+[14](https://www.icsld.com/news)
+[15](https://www.s2cinc.com/customer-case/shanghai-huahong-integrated-circuit-co-ltd/)
+[16](https://www.icsld.com/single-post/2018/02/20/test)
+[17](https://www.aims-jingwei.com/key-information/7-big-things-a-start-up-must-have-to-succeed)
+[18](https://en.wikipedia.org/wiki/China_Integrated_Circuit_Industry_Investment_Fund)
+[19](https://ywtb.shmh.gov.cn/En/index/hyxhxx.html?id=12)
+[20](https://www.siproin-ic.com)
+
+icsld.com 是 Integrated Compound Semiconductors (ICS) Ltd 的网站，这是一家总部位于英国的公司，设计和制造高性能射频和光半导体器件。​
+
+公司概况
+
+ICS 专注于化合物半导体技术，重点研发 PIN 光电二极管、雪崩光电二极管 (APD)、变容二极管和其他射频/光学元件等器件。​
+
+该公司总部位于英国曼彻斯特/斯托克波特地区，地址为曼彻斯特斯特雷特福德的布罗德奥克商业园。​
+
+产品和技术
+
+ICS 提供面向电信和数据通信应用的 10G、25G 和 100G 数据速率的光器件（包括高速 InGaAs/InAlAs PIN 和 APD 探测器）。​
+
+该公司还开发微波和毫米波器件，并提供根据特定射频和光学性能要求量身定制的半导体解决方案。​
+
+市场与应用
+
+ICS 设备用于 5G 无线基础设施、高速光纤通信/数据通信链路以及其他需要高频或高灵敏度光电元件的系统中。​
+
+该公司还开发用于新兴量子技术应用（例如原子钟和磁力计）的垂直腔面发射激光器 (VCSEL) 及相关光学元件。​
+
+服务和能力
+除了销售标准产品外，ICS 还为先进的射频和光学器件提供设计、仿真、制造和测试服务，使客户能够获得高度定制化的解决方案。​
+
+其核心专长包括外延结构设计、射频和光芯片设计，以及提供基于可扩展制造工艺的原型和生产设备。​
+
+# 17. Compound Semiconductor Centre Ltd (CSC)
+
+Compound Semiconductor Centre Ltd (CSC) in Cardiff is a joint venture R&D and manufacturing organisation focused on compound semiconductor materials and devices, set up to bridge university research and industrial production.[1][2][4]
+
+## Basic profile
+
+- CSC is a private company based in St Mellons, Cardiff, Wales, registered in 2014 and operational since around 2015.[2][3][5]
+- It is a joint venture between IQE plc, a major global supplier of compound semiconductor wafers, and Cardiff University.[4][2]
+
+## Mission and role
+
+- The centre focuses on commercialising innovations in compound semiconductor materials and devices, providing a “lab-to-fab” path from research to volume manufacturing.[1][4]
+- CSC is positioned as a European hub for product, services, and skills development in compound semiconductor technologies, supporting the wider South Wales CSconnected cluster.[5][1]
+
+## Technologies and focus areas
+
+- Key technology areas include InP photonics for communications, GaN-based RF and power devices, and GaAs-based devices for 3D sensing and quantum technologies, as well as VCSEL epitaxy.[2]
+- The centre runs extensive MOCVD and related epitaxy capacity, enabling development and early-stage supply of GaAs, InP, and GaN epitaxial structures for optoelectronic, RF, power, imaging, and sensing applications.[4][2]
+
+## Facilities and capabilities
+
+- CSC is co-located with IQE in St Mellons and operates multiple compound semiconductor MOCVD reactors plus Si/Ge CVD tools representing tens of millions of pounds of investment.[2]
+- It offers a full chain from epitaxial growth, materials characterisation, and device prototyping (via Cardiff University’s Institute for Compound Semiconductors) through to scale-up in IQE’s global manufacturing facilities.[4][2]
+
+## Services and collaborations
+
+- CSC provides collaborative R&D services, early-stage commercial epitaxy supply, brokerage to chip fabrication and packaging, and support with manufacturability and market assessment.[2]
+- The centre has participated in numerous UK and EU-funded projects in telecoms, photonics, RF/power, infrared imaging, and quantum photonics, acting as a bridge between academic partners and industry.[5][1][2]
+
+[1](https://www.compoundsemiconductorcentre.com)
+[2](https://uktin.net/navigate-uk-telecoms/uktin-membership/profile/compound-semiconductor-centre-ltd)
+[3](https://find-and-update.company-information.service.gov.uk/company/09210371)
+[4](https://www.compoundsemiconductorcentre.com/about-us)
+[5](https://uk.linkedin.com/company/compound-semiconductor-centre)
+[6](https://www.bloomberg.com/profile/company/2339249D:LN)
+[7](https://www.zoominfo.com/c/compound-semiconductor-centre-ltd/425031024)
+
+位于卡迪夫的化合物半导体中心有限公司 (CSC) 是一家专注于化合物半导体材料和器件的合资研发和制造机构，旨在连接大学研究和工业生产。​
+
+基本资料
+
+CSC 是一家位于威尔士卡迪夫圣梅隆斯的私营公司，成立于 2014 年，并于 2015 年左右开始运营。​
+
+它是全球主要化合物半导体晶片供应商 IQE plc 与卡迪夫大学的合资企业。​
+
+使命与角色
+
+该中心致力于化合物半导体材料和器件创新成果的商业化，提供从研究到批量生产的“实验室到工厂”路径。​
+
+CSC 定位为欧洲化合物半导体技术产品、服务和技能开发中心，为更广泛的南威尔士 CSconnected 集群提供支持。​
+
+技术与重点领域
+
+关键技术领域包括用于通信的 InP 光子学、基于 GaN 的射频和功率器件、用于 3D 传感和量子技术的基于 GaAs 的器件以及 VCSEL 外延。​
+
+该中心拥有广泛的 MOCVD 和相关外延能力，能够开发和早期供应用于光电子、射频、功率、成像和传感应用的 GaAs、InP 和 GaN 外延结构。​
+
+设施和能力
+
+CSC 与 IQE 位于圣梅隆斯，运营着多个化合物半导体 MOCVD 反应器以及 Si/Ge CVD 设备，代表着数千万英镑的投资。​
+
+它提供从外延生长、材料表征和器件原型制作（通过卡迪夫大学化合物半导体研究所）到在 IQE 全球制造工厂进行规模化生产的完整产业链。​
+
+服务与合作
+
+CSC 提供合作研发服务、早期商业外延供应、芯片制造和封装经纪服务，以及可制造性和市场评估支持。​
+
+该中心参与了众多由英国和欧盟资助的电信、光子学、射频/功率、红外成像和量子光子学项目，充当了学术合作伙伴和产业界之间的桥梁。​
+
+The GaN activities at Compound Semiconductor Centre (CSC) focus on GaN epitaxy and device-enabling structures for RF, power electronics, and related applications.[1][2]
+
+## GaN technology focus
+
+- CSC works on GaN-based high-electron-mobility transistor (HEMT) and power device structures on substrates such as SiC and silicon, targeting high-frequency RF, power switching, and power amplification.[1]
+- Application areas include 5G/6G communications, high-efficiency power conversion, automotive and industrial power electronics, and radar and sensing systems.[2][1]
+
+## Epitaxy and process capability
+
+- The centre runs MOCVD reactors capable of growing GaN and related III-nitride heterostructures (for example AlGaN/GaN and GaN-on-Si) with industrially relevant wafer sizes, as part of its wider GaAs/InP/GaN epitaxy platform.[2][1]
+- CSC can provide custom GaN epi designs, optimisation of buffer and barrier layers, and material characterisation to tune performance parameters such as breakdown voltage, RF power density, and efficiency.[1]
+
+## R&D themes and collaborations
+
+- GaN work at CSC is integrated into collaborative UK and EU projects on RF front-ends, high-voltage power devices, and wide-bandgap electronics, often linking with IQE’s production lines and with Cardiff University’s device and circuit research.[3][1]
+- Typical project activity includes co-design of epi structures with foundries and system OEMs, reliability and manufacturability studies, and early pilot production to de-risk future volume manufacturing.[2][1]
+
+[1](https://uktin.net/navigate-uk-telecoms/uktin-membership/profile/compound-semiconductor-centre-ltd)
+[2](https://www.compoundsemiconductorcentre.com/about-us)
+[3](https://www.compoundsemiconductorcentre.com)
+
+化合物半导体中心 (CSC) 的 GaN 活动主要集中在 GaN 外延和用于射频、电力电子及相关应用的器件使能结构上。​
+
+氮化镓技术重点
+
+CSC致力于在SiC和硅等衬底上开发基于GaN的高电子迁移率晶体管（HEMT）和功率器件结构，目标是高频射频、功率开关和功率放大。​
+
+应用领域包括 5G/6G 通信、高效功率转换、汽车和工业电力电子以及雷达和传感系统。​
+
+外延和工艺能力
+
+该中心运行 MOCVD 反应器，能够生长具有工业相关晶圆尺寸的 GaN 和相关 III 族氮化物异质结构（例如 AlGaN/GaN 和 GaN-on-Si），这是其更广泛的 GaAs/InP/GaN 外延平台的一部分。​
+
+CSC 可提供定制的 GaN 外延设计、缓冲层和势垒层的优化以及材料表征，以调整击穿电压、射频功率密度和效率等性能参数。​
+
+研发主题与合作
+
+CSC 的 GaN 工作已融入英国和欧盟在射频前端、高压功率器件和宽禁带电子器件方面的合作项目中，并经常与 IQE 的生产线以及卡迪夫大学的器件和电路研究相结合。​
+
+典型的项目活动包括与代工厂和系统 OEM 共同设计外延结构、可靠性和可制造性研究，以及早期试点生产以降低未来批量生产的风险。​
+
+
+
+
 
 
 
