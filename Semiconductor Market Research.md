@@ -223,6 +223,8 @@
     - [哪些芯片在 2024 年最受欢迎？价格增长最高](#哪些芯片在-2024-年最受欢迎价格增长最高)
     - [哪些芯片在 2024 年降价幅度最大？](#哪些芯片在-2024-年降价幅度最大)
   - [40.8 半导体供应链](#408-半导体供应链)
+    - [40.8.1 Semiconductor Ecosystem](#4081-semiconductor-ecosystem)
+    - [40.8.2 The Companies Behind the Semiconductor Supply Chain](#4082-the-companies-behind-the-semiconductor-supply-chain)
   - [40.9 半导体价值链](#409-半导体价值链)
     - [40.9.1 CMOS 值系统由七个关键元素组成 BCG](#4091-cmos-值系统由七个关键元素组成-bcg)
     - [40.9.2 按公司市值](#4092-按公司市值)
@@ -3844,9 +3846,15 @@ TI 的O3853AQDCARQ1从年初的 350.5 元人民币下降到年底的 31.7 元人
 
 ## 40.8 半导体供应链
 
+### 40.8.1 Semiconductor Ecosystem
+
 ![](/picture/1740111442101.jpg)
 
 ![](/picture/1741496496996.jpg)
+
+### 40.8.2 The Companies Behind the Semiconductor Supply Chain
+
+
 
 ## 40.9 半导体价值链
 
