@@ -95,6 +95,9 @@
   - [20.3 复旦大学 迟楠课题组](#203-复旦大学-迟楠课题组)
     - [20.3.1 田鹏飞](#2031-田鹏飞)
   - [20.4 NTT基础研究实验室](#204-ntt基础研究实验室)
+  - [20.5 MERL](#205-merl)
+    - [Core GaN device and modeling experts](#core-gan-device-and-modeling-experts)
+    - [MERL–university GaN collaborators closely tied to MERL efforts](#merluniversity-gan-collaborators-closely-tied-to-merl-efforts)
 - [21. 富士通 - 高功率和效率 W 波段 InAlGaN/AlN/GaN 高电子迁移率晶体管，适用于未来高容量无线通信](#21-富士通---高功率和效率-w-波段-inalganalngan-高电子迁移率晶体管适用于未来高容量无线通信)
 - [22. 三星 - 宽带 Doherty 功率放大器的简化一体化负载网络](#22-三星---宽带-doherty-功率放大器的简化一体化负载网络)
 - [23.通过阴极发光强度图和电子显微镜的统计分析揭示 InGaN/GaN 纳米线中的非辐射复合中心 - 格勒诺布尔阿尔卑斯大学](#23通过阴极发光强度图和电子显微镜的统计分析揭示-ingangan-纳米线中的非辐射复合中心---格勒诺布尔阿尔卑斯大学)
@@ -1847,6 +1850,81 @@ NTT基础研究实验室（BRL）衷心感谢您对我们研究活动的关注�
 <https://www.rd.ntt/e/brl/>
 
 <https://www.rd.ntt/e/brl/overview/>
+
+## 20.5 MERL
+
+Key GaN experts at Mitsubishi Electric Research Laboratories (MERL) include:
+
+### Core GaN device and modeling experts
+
+- Koon Hoo Teo  
+  - Co-lead and corresponding author on MERL’s major GaN overview and device-technology papers, covering power, RF, digital, and quantum-computing-oriented GaN devices and modeling.[1][2][3]
+  - Focuses on GaN power and RF devices (2D and 3D structures, FinFETs, HEMTs), device physics, and advanced modeling and multi-physics analysis for power electronics and RF front ends.[2][1]
+
+- Rui Ma  
+  - MERL co-author on the “Emerging GaN technologies for power, RF, digital, and quantum computing applications” work, contributing to GaN device modeling, reliability, and technology–circuit co-design aspects.[1]
+  - Involved in analysis of GaN HEMTs, vertical devices, and data‑driven/compact modeling methods used to design power and RF circuits with GaN.[1]
+
+### MERL–university GaN collaborators closely tied to MERL efforts
+
+These are not all MERL staff, but they are central experts in MERL’s GaN program and frequently appear on MERL GaN publications:
+
+- Nadim Chowdhury  
+  - Co-author of MERL GaN technology papers and RF/IC-oriented GaN device work (including integrated GaN circuits and RF FinFETs).[4][1]
+  - Works on advanced GaN device architectures for RF and mixed-signal/logic applications.[1]
+
+- Yuhao Zhang  
+  - Specialist in GaN power devices and reliability, co-author of MERL’s GaN technology overview and vertical GaN FinFET work, with emphasis on high-voltage, high-efficiency switching and trapping physics.[1]
+  - Frequently collaborates with MERL on GaN power devices that target medium- and high-voltage applications.[1]
+
+- Tomas Palacios  
+  - Leading GaN device researcher who co-authors MERL-linked work on 2D/3D GaN devices, vertical GaN FinFETs, advanced HEMTs, and GaN integrated circuits.[1]
+  - His group’s work forms a core technical foundation for MERL’s GaN RF and power device research.[1]
+
+If you want a contact inside MERL specifically for GaN, Koon Hoo Teo is the primary GaN-focused staff member listed on major GaN publications and would be the best starting point.[2][1]
+
+[1](https://www.merl.com/research/downloads/MOST-GAN)
+[2](https://www.merl.com/publications/docs/TR2022-002.pdf)
+[3](https://www.merl.com/people/koike)
+[4](https://www.mitsubishielectric.com/en/pr/pdf/2020/0714.pdf)
+
+三菱电机研究实验室（MERL）的主要氮化镓（GaN）专家包括：
+
+核心氮化镓器件和建模专家
+张冠虎
+
+作为 MERL 的主要 GaN 概述和器件技术论文的共同负责人和通讯作者，论文涵盖面向功率、射频、数字和量子计算的 GaN 器件和建模。​
+
+专注于氮化镓功率和射频器件（二维和三维结构、FinFET、HEMT）、器件物理，以及用于功率电子和射频前端的高级建模和多物理场分析。​
+
+马瑞
+
+MERL 的合作作者，参与了“用于功率、射频、数字和量子计算应用的新兴 GaN 技术”的研究，对 GaN 器件建模、可靠性和技术-电路协同设计方面做出了贡献。​
+
+参与分析 GaN HEMT、垂直器件以及用于设计采用 GaN 的功率和射频电路的数据驱动/紧凑建模方法。​
+
+MERL 与大学氮化镓合作者密切相关，共同推进 MERL 的各项工作。
+这些人并非全是MERL的员工，但他们是MERL氮化镓项目的核心专家，经常出现在MERL氮化镓出版物中：
+
+纳迪姆·乔杜里
+
+MERL GaN 技术论文和面向 RF/IC 的 GaN 器件工作（包括集成电路和 RF FinFET）的合著者。​
+
+致力于用于射频和混合信号/逻辑应用的先进GaN器件架构的研究。​
+
+张宇豪
+
+GaN功率器件和可靠性专家，MERL GaN技术概述和垂直GaN FinFET著作的合著者，重点研究高压、高效率开关和陷阱物理。​
+
+经常与 MERL 合作开发面向中高压应用的 GaN 功率器件。​
+
+托马斯·帕拉西奥斯
+
+领先的 GaN 器件研究员，曾参与撰写与 MERL 相关的 2D/3D GaN 器件、垂直 GaN FinFET、先进 HEMT 和 GaN 集成电路方面的研究成果。​
+
+他的研究团队为MERL的GaN射频和功率器件研究奠定了核心技术基础。​
+
+如果你想联系 MERL 内部专门负责 GaN 的人员，Koon Hoo Teo 是主要 GaN 出版物上列出的专注于 GaN 的主要工作人员，也是最好的起点。​
 
 # 21. 富士通 - 高功率和效率 W 波段 InAlGaN/AlN/GaN 高电子迁移率晶体管，适用于未来高容量无线通信
 

@@ -3854,7 +3854,7 @@ TI 的O3853AQDCARQ1从年初的 350.5 元人民币下降到年底的 31.7 元人
 
 ### 40.8.2 The Companies Behind the Semiconductor Supply Chain
 
-
+<https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/The%20Companies%20Behind%20the%20Semiconductor%20Supply%20Chain.pdf>
 
 ## 40.9 半导体价值链
 
