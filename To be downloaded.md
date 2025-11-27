@@ -166,6 +166,7 @@
 - [35. How fast can a light-emitting diode be modulated?](#35-how-fast-can-a-light-emitting-diode-be-modulated)
 - [36. Time-resolved dynamics in single InGaN quantum dots](#36-time-resolved-dynamics-in-single-ingan-quantum-dots)
 - [37. Semiconductor quantum dots: Technological progress and future challenges](#37-semiconductor-quantum-dots-technological-progress-and-future-challenges)
+- [38. Machine Learning Potentials for Property Predictions of Two-Dimensional Group-III Nitrides](#38-machine-learning-potentials-for-property-predictions-of-two-dimensional-group-iii-nitrides)
 
 链接不需要加<>，直接copy https链接
 
@@ -814,3 +815,7 @@ https://www.nature.com/articles/nature16454
 # 37. Semiconductor quantum dots: Technological progress and future challenges
 
 <https://www.science.org/doi/epdf/10.1126/science.aaz8541>
+
+# 38. Machine Learning Potentials for Property Predictions of Two-Dimensional Group-III Nitrides
+
+<https://doi.org/10.1016/j.actphy.2025.100224>
