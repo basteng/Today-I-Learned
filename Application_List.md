@@ -79,6 +79,12 @@
   - [GaN technology focus](#gan-technology-focus)
   - [Epitaxy and process capability](#epitaxy-and-process-capability)
   - [R\&D themes and collaborations](#rd-themes-and-collaborations)
+- [18. MERL](#18-merl)
+  - [MERL overview](#merl-overview)
+  - [GaN research themes at MERL](#gan-research-themes-at-merl)
+  - [Device physics and transport studies](#device-physics-and-transport-studies)
+  - [Electro‑thermal and behavioral modeling](#electrothermal-and-behavioral-modeling)
+  - [AI‑assisted GaN device design](#aiassisted-gan-device-design)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -1239,6 +1245,88 @@ CSC 可提供定制的 GaN 外延设计、缓冲层和势垒层的优化以及�
 CSC 的 GaN 工作已融入英国和欧盟在射频前端、高压功率器件和宽禁带电子器件方面的合作项目中，并经常与 IQE 的生产线以及卡迪夫大学的器件和电路研究相结合。​
 
 典型的项目活动包括与代工厂和系统 OEM 共同设计外延结构、可靠性和可制造性研究，以及早期试点生产以降低未来批量生产的风险。​
+
+# 18. MERL
+
+Mitsubishi Electric Research Laboratories (MERL) is Mitsubishi Electric’s North American research lab in Cambridge, Massachusetts, and it has an active GaN program focused mainly on device physics, modeling, and AI‑assisted design for power and RF electronics.[1][2][3][4][5][6][7]
+
+## MERL overview
+
+- MERL is the North American research organization of Mitsubishi Electric Corporation and the US subsidiary of its corporate R&D arm, located at 201 Broadway in Cambridge, MA.[2][8][9][1]
+- The lab conducts application‑motivated basic research and advanced development in areas such as applied physics, physical modeling and simulation, control, optimization, signal processing, and artificial intelligence, with results published openly and transferred into Mitsubishi Electric businesses.[3][8][1]
+
+## GaN research themes at MERL
+
+- MERL works on GaN technologies across power, RF, and emerging digital/CMOS‑like applications, emphasizing how GaN can extend performance and reliability beyond what Si and SiC offer.[4][10][11]
+- Key topics include high‑voltage and ultra‑low‑voltage GaN power devices, RF GaN for high‑frequency power amplifiers, and the long‑term vision of full‑GaN platforms that integrate power, RF, and digital functions on the same technology.[10][11][4]
+
+## Device physics and transport studies
+
+- MERL investigates fundamental transport mechanisms in GaN heterostructures, for example hole transport at high temperatures in p‑GaN/AlGaN/GaN stacks, combining experiments and theory to understand conduction paths and activation processes relevant to gate and p‑layer design.[7]
+- These studies support more reliable and predictable p‑GaN gate and access structures in power HEMTs, which are critical for normally‑off operation and robustness in automotive and industrial power electronics.[4][7]
+
+## Electro‑thermal and behavioral modeling
+
+- MERL develops electro‑thermal co‑simulation frameworks for GaN on SiC HEMTs that link electrical and thermal behavior, allowing prediction of DC and pulsed I‑V characteristics up to high operating temperatures (around 448 K) and extraction of trapping parameters related to RF dispersion.[6]
+- The lab also contributes to accurate and efficient behavioral or large‑signal models for GaN HEMTs, aimed at capturing nonlinear RF power‑device behavior while being suitable for circuit‑level simulation of power amplifiers and converters.[12][13][10]
+
+## AI‑assisted GaN device design
+
+- MERL proposes AI‑assisted frameworks that couple TCAD simulations with machine learning and multi‑objective optimization to design and inverse‑design GaN HEMTs, especially complex field‑plate structures.[5]
+- In these methods, TCAD‑generated data are compressed into engineered features, a neural‑network surrogate predicts key metrics such as breakdown voltage, capacitances, and gate leakage, and evolutionary optimization (e.g., NSGA‑II) searches for device geometries that meet or exceed target performance, significantly reducing design turnaround versus traditional DOE or response‑surface approaches.[5]
+
+[1](https://www.merl.com)
+[2](https://en.wikipedia.org/wiki/Mitsubishi_Electric_Research_Laboratories)
+[3](https://www.merl.com/research/)
+[4](https://www.merl.com/publications/docs/TR2022-002.pdf)
+[5](https://www.merl.com/publications/docs/TR2024-152.pdf)
+[6](https://www.merl.com/publications/TR2025-041)
+[7](https://www.merl.com/publications/docs/TR2025-014.pdf)
+[8](https://www.merl.com/company/)
+[9](https://us.mitsubishielectric.com/en/about/local/locations/us009/)
+[10](https://www.merl.com/publications/docs/TR2020-162.pdf)
+[11](https://pubs.aip.org/aip/jap/article/130/16/160902/568201/Emerging-GaN-technologies-for-power-RF-digital-and)
+[12](https://advanced.onlinelibrary.wiley.com/doi/10.1002/adts.202401565)
+[13](https://www.sciencedirect.com/science/article/abs/pii/S0026269223003695)
+[14](https://www.builtinboston.com/company/mitsubishi-electric-research-labs)
+[15](https://www.linkedin.com/company/merl)
+[16](https://www.zoominfo.com/c/mitsubishi-electric-research-laboratories/41584091)
+[17](https://www.sciencedirect.com/science/article/pii/S0921509324002478)
+[18](https://www.uni-kassel.de/upress/online/frei/978-3-89958-258-1.volltext.frei.pdf)
+[19](https://www.linkedin.com/posts/micha%C3%ABl-merlin-9993793a_research-associate-in-power-electronics-for-activity-7088072101852520448-niNt)
+[20](https://www.semanticscholar.org/paper/A-new-small-signal-modeling-approach-applied-to-GaN-Jarndal-Kompa/bc0331ab2168a5933b3dd2df715a186faeebd791)
+
+三菱电机研究实验室（MERL）是三菱电机位于马萨诸塞州剑桥市的北美研究实验室，其活跃的氮化镓（GaN）项目主要专注于功率和射频电子器件的器件物理、建模和人工智能辅助设计。​
+
+MERL概述
+
+MERL 是三菱电机株式会社的北美研究机构，也是其企业研发部门的美国子公司，位于马萨诸塞州剑桥市百老汇大街 201 号。​
+
+该实验室开展以应用为导向的基础研究和先进开发，研究领域包括应用物理、物理建模与仿真、控制、优化、信号处理和人工智能，研究成果公开发表并应用于三菱电机业务。​
+
+MERL的GaN研究主题
+
+MERL 致力于 GaN 技术在功率、射频和新兴数字/CMOS 类应用领域的研究，重点关注 GaN 如何能够超越 Si 和 SiC 的性能和可靠性。​
+
+重点议题包括高压和超低压 GaN 功率器件、用于高频功率放大器的射频 GaN，以及将功率、射频和数字功能集成在同一技术上的全 GaN 平台的长期愿景。​
+
+器件物理和输运研究
+
+MERL 研究 GaN 异质结构中的基本传输机制，例如 p-GaN/AlGaN/GaN 堆叠结构中高温下的空穴传输，结合实验和理论来了解与栅极和 p 层设计相关的导电路径和激活过程。​
+
+这些研究支持在功率 HEMT 中采用更可靠、更可预测的 p-GaN 栅极和接入结构，这对于汽车和工业电力电子产品的常关操作和鲁棒性至关重要。​
+
+电热和行为建模
+
+MERL 开发了用于 SiC 上 GaN HEMT 的电热协同仿真框架，该框架将电学和热学行为联系起来，从而可以预测高达高工作温度（约 448 K）的直流和脉冲 I-V 特性，并提取与射频色散相关的陷阱参数。​
+
+该实验室还致力于开发精确高效的GaN HEMT行为或大信号模型，旨在捕捉非线性射频功率器件行为，同时适用于功率放大器和转换器的电路级仿真。​
+
+人工智能辅助的氮化镓器件设计
+
+MERL 提出了 AI 辅助框架，将 TCAD 仿真与机器学习和多目标优化相结合，用于设计和逆向设计 GaN HEMT，特别是复杂的场板结构。​
+
+在这些方法中，TCAD 生成的数据被压缩成工程特征，神经网络代理预测关键指标，例如击穿电压、电容和栅极泄漏，进化优化（例如 NSGA-II）搜索满足或超过目标性能的器件几何形状，与传统的 DOE 或响应面方法相比，显著缩短了设计周转时间。​
 
 
 
