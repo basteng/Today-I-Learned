@@ -154,20 +154,20 @@
   - [23.Design of AlInGaN electron blocking layer of micro-LED arrays grown on Si substrates for high-speed visible light communication](#23design-of-alingan-electron-blocking-layer-of-micro-led-arrays-grown-on-si-substrates-for-high-speed-visible-light-communication)
   - [24. GaN SLCFET Technology for Next Generation mmW Systems, Demonstrating Pout of 10.87 W/mm With 43% PAE at 94 GHz](#24-gan-slcfet-technology-for-next-generation-mmw-systems-demonstrating-pout-of-1087-wmm-with-43-pae-at-94-ghz)
   - [25. Overview of Wide/Ultrawide Bandgap Power Semiconductor Devices for Distributed Energy Resources](#25-overview-of-wideultrawide-bandgap-power-semiconductor-devices-for-distributed-energy-resources)
-- [26. N-Polar GaN HEMTs in a High-Uniformity 100-mm Wafer Process With 43.6% Power-Added Efficiency and 2 W/mm at 94 GHz](#26-n-polar-gan-hemts-in-a-high-uniformity-100-mm-wafer-process-with-436-power-added-efficiency-and-2-wmm-at-94-ghz)
-- [27. Review on white-light-emitting diodes based on nanomaterials](#27-review-on-white-light-emitting-diodes-based-on-nanomaterials)
-- [28. On the Origin of Transition to Nonpolar a-Plane GaN Growth on c-Plane Sapphire](#28-on-the-origin-of-transition-to-nonpolar-a-plane-gan-growth-on-c-plane-sapphire)
-- [29. Defects in epitaxial multilayers: I. Misfit dislocations](#29-defects-in-epitaxial-multilayers-i-misfit-dislocations)
-- [30. Analytical solution to Matthews’ and Blakeslee's critical dislocation formation thickness of epitaxially grown thin films](#30-analytical-solution-to-matthews-and-blakeslees-critical-dislocation-formation-thickness-of-epitaxially-grown-thin-films)
-- [31. Enhancing Bandwidth and Efficiency in GaN LEDs for VLC Systems](#31-enhancing-bandwidth-and-efficiency-in-gan-leds-for-vlc-systems)
-- [32. Microwave and Millimeter-Wave Permittivities of Single-Crystal AlN, Including Thickness and Temperature Dependence](#32-microwave-and-millimeter-wave-permittivities-of-single-crystal-aln-including-thickness-and-temperature-dependence)
-- [33. Optoelectronic performance and modulation bandwidth of green µ-LEDs using AlON buffer layer](#33-optoelectronic-performance-and-modulation-bandwidth-of-green-µ-leds-using-alon-buffer-layer)
-- [34. Microwave Photonics Empowered Integrated Sensing and Communication for 6G](#34-microwave-photonics-empowered-integrated-sensing-and-communication-for-6g)
-- [35. How fast can a light-emitting diode be modulated?](#35-how-fast-can-a-light-emitting-diode-be-modulated)
-- [36. Time-resolved dynamics in single InGaN quantum dots](#36-time-resolved-dynamics-in-single-ingan-quantum-dots)
-- [37. Semiconductor quantum dots: Technological progress and future challenges](#37-semiconductor-quantum-dots-technological-progress-and-future-challenges)
-- [38. Machine Learning Potentials for Property Predictions of Two-Dimensional Group-III Nitrides](#38-machine-learning-potentials-for-property-predictions-of-two-dimensional-group-iii-nitrides)
-- [39. Research progresses on epitaxy and sidewall treatment for micro-LEDs](#39-research-progresses-on-epitaxy-and-sidewall-treatment-for-micro-leds)
+  - [26. N-Polar GaN HEMTs in a High-Uniformity 100-mm Wafer Process With 43.6% Power-Added Efficiency and 2 W/mm at 94 GHz](#26-n-polar-gan-hemts-in-a-high-uniformity-100-mm-wafer-process-with-436-power-added-efficiency-and-2-wmm-at-94-ghz)
+  - [27. Review on white-light-emitting diodes based on nanomaterials](#27-review-on-white-light-emitting-diodes-based-on-nanomaterials)
+  - [28. On the Origin of Transition to Nonpolar a-Plane GaN Growth on c-Plane Sapphire](#28-on-the-origin-of-transition-to-nonpolar-a-plane-gan-growth-on-c-plane-sapphire)
+  - [29. Defects in epitaxial multilayers: I. Misfit dislocations](#29-defects-in-epitaxial-multilayers-i-misfit-dislocations)
+  - [30. Analytical solution to Matthews’ and Blakeslee's critical dislocation formation thickness of epitaxially grown thin films](#30-analytical-solution-to-matthews-and-blakeslees-critical-dislocation-formation-thickness-of-epitaxially-grown-thin-films)
+  - [31. Enhancing Bandwidth and Efficiency in GaN LEDs for VLC Systems](#31-enhancing-bandwidth-and-efficiency-in-gan-leds-for-vlc-systems)
+  - [32. Microwave and Millimeter-Wave Permittivities of Single-Crystal AlN, Including Thickness and Temperature Dependence](#32-microwave-and-millimeter-wave-permittivities-of-single-crystal-aln-including-thickness-and-temperature-dependence)
+  - [33. Optoelectronic performance and modulation bandwidth of green µ-LEDs using AlON buffer layer](#33-optoelectronic-performance-and-modulation-bandwidth-of-green-µ-leds-using-alon-buffer-layer)
+  - [34. Microwave Photonics Empowered Integrated Sensing and Communication for 6G](#34-microwave-photonics-empowered-integrated-sensing-and-communication-for-6g)
+  - [35. How fast can a light-emitting diode be modulated?](#35-how-fast-can-a-light-emitting-diode-be-modulated)
+  - [36. Time-resolved dynamics in single InGaN quantum dots](#36-time-resolved-dynamics-in-single-ingan-quantum-dots)
+  - [37. Semiconductor quantum dots: Technological progress and future challenges](#37-semiconductor-quantum-dots-technological-progress-and-future-challenges)
+  - [38. Machine Learning Potentials for Property Predictions of Two-Dimensional Group-III Nitrides](#38-machine-learning-potentials-for-property-predictions-of-two-dimensional-group-iii-nitrides)
+  - [39. Research progresses on epitaxy and sidewall treatment for micro-LEDs](#39-research-progresses-on-epitaxy-and-sidewall-treatment-for-micro-leds)
 
 链接不需要加<>，直接copy https链接
 
@@ -769,58 +769,58 @@ https://www.nature.com/articles/nature16454
 
 <https://ieeexplore.ieee.org/document/10129950>
 
-# 26. N-Polar GaN HEMTs in a High-Uniformity 100-mm Wafer Process With 43.6% Power-Added Efficiency and 2 W/mm at 94 GHz
+## 26. N-Polar GaN HEMTs in a High-Uniformity 100-mm Wafer Process With 43.6% Power-Added Efficiency and 2 W/mm at 94 GHz
 
 <https://ieeexplore.ieee.org/document/10098257>
 
-# 27. Review on white-light-emitting diodes based on nanomaterials
+## 27. Review on white-light-emitting diodes based on nanomaterials
 
 <https://www.tandfonline.com/doi/abs/10.1080/00084433.2025.2578081>
 
-# 28. On the Origin of Transition to Nonpolar a-Plane GaN Growth on c-Plane Sapphire
+## 28. On the Origin of Transition to Nonpolar a-Plane GaN Growth on c-Plane Sapphire
 
 <https://pubs.acs.org/doi/10.1021/acs.cgd.3c00180>
 
-# 29. Defects in epitaxial multilayers: I. Misfit dislocations
+## 29. Defects in epitaxial multilayers: I. Misfit dislocations
 
 <https://www.sciencedirect.com/science/article/abs/pii/S0022024874800552>
 
-# 30. Analytical solution to Matthews’ and Blakeslee's critical dislocation formation thickness of epitaxially grown thin films
+## 30. Analytical solution to Matthews’ and Blakeslee's critical dislocation formation thickness of epitaxially grown thin films
 
 <https://www.sciencedirect.com/science/article/abs/pii/S0022024802009417>
 
-# 31. Enhancing Bandwidth and Efficiency in GaN LEDs for VLC Systems
+## 31. Enhancing Bandwidth and Efficiency in GaN LEDs for VLC Systems
 
 <https://doi.org/10.53655/joe.v3332m>
 
-# 32. Microwave and Millimeter-Wave Permittivities of Single-Crystal AlN, Including Thickness and Temperature Dependence
+## 32. Microwave and Millimeter-Wave Permittivities of Single-Crystal AlN, Including Thickness and Temperature Dependence
 
 <https://ieeexplore.ieee.org/document/11220929>
 
-# 33. Optoelectronic performance and modulation bandwidth of green µ-LEDs using AlON buffer layer
+## 33. Optoelectronic performance and modulation bandwidth of green µ-LEDs using AlON buffer layer
 
 <https://doi.org/10.1364/OL.579281>
 
-# 34. Microwave Photonics Empowered Integrated Sensing and Communication for 6G
+## 34. Microwave Photonics Empowered Integrated Sensing and Communication for 6G
 
 <https://ieeexplore.ieee.org/document/10870472/authors#authors>
 
-# 35. How fast can a light-emitting diode be modulated?
+## 35. How fast can a light-emitting diode be modulated?
 
 <https://opg.optica.org/prj/upcoming_pdf.cfm?id=571995#>
 
-# 36. Time-resolved dynamics in single InGaN quantum dots
+## 36. Time-resolved dynamics in single InGaN quantum dots
 
 <https://doi.org/10.1063/1.1614831>
 
-# 37. Semiconductor quantum dots: Technological progress and future challenges
+## 37. Semiconductor quantum dots: Technological progress and future challenges
 
 <https://www.science.org/doi/epdf/10.1126/science.aaz8541>
 
-# 38. Machine Learning Potentials for Property Predictions of Two-Dimensional Group-III Nitrides
+## 38. Machine Learning Potentials for Property Predictions of Two-Dimensional Group-III Nitrides
 
 <https://doi.org/10.1016/j.actphy.2025.100224>
 
-# 39. Research progresses on epitaxy and sidewall treatment for micro-LEDs
+## 39. Research progresses on epitaxy and sidewall treatment for micro-LEDs
 
 <https://www.sciencedirect.com/science/article/abs/pii/S0079672725000461?via%3Dihub>
