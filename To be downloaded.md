@@ -167,6 +167,7 @@
 - [36. Time-resolved dynamics in single InGaN quantum dots](#36-time-resolved-dynamics-in-single-ingan-quantum-dots)
 - [37. Semiconductor quantum dots: Technological progress and future challenges](#37-semiconductor-quantum-dots-technological-progress-and-future-challenges)
 - [38. Machine Learning Potentials for Property Predictions of Two-Dimensional Group-III Nitrides](#38-machine-learning-potentials-for-property-predictions-of-two-dimensional-group-iii-nitrides)
+- [39. Research progresses on epitaxy and sidewall treatment for micro-LEDs](#39-research-progresses-on-epitaxy-and-sidewall-treatment-for-micro-leds)
 
 链接不需要加<>，直接copy https链接
 
@@ -819,3 +820,7 @@ https://www.nature.com/articles/nature16454
 # 38. Machine Learning Potentials for Property Predictions of Two-Dimensional Group-III Nitrides
 
 <https://doi.org/10.1016/j.actphy.2025.100224>
+
+# 39. Research progresses on epitaxy and sidewall treatment for micro-LEDs
+
+<https://www.sciencedirect.com/science/article/abs/pii/S0079672725000461?via%3Dihub>
