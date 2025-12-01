@@ -85,6 +85,10 @@
   - [Device physics and transport studies](#device-physics-and-transport-studies)
   - [Electro‑thermal and behavioral modeling](#electrothermal-and-behavioral-modeling)
   - [AI‑assisted GaN device design](#aiassisted-gan-device-design)
+- [19. pSemi](#19-psemi)
+  - [Company overview](#company-overview-2)
+  - [GaN-related activities](#gan-related-activities)
+  - [Main technical experts](#main-technical-experts)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -1328,7 +1332,83 @@ MERL 提出了 AI 辅助框架，将 TCAD 仿真与机器学习和多目标优�
 
 在这些方法中，TCAD 生成的数据被压缩成工程特征，神经网络代理预测关键指标，例如击穿电压、电容和栅极泄漏，进化优化（例如 NSGA-II）搜索满足或超过目标性能的器件几何形状，与传统的 DOE 或响应面方法相比，显著缩短了设计周转时间。​
 
+# 19. pSemi
 
+pSemi (formerly Peregrine Semiconductor) is a Murata-owned, fabless semiconductor company headquartered in San Diego that focuses on high‑performance RF, power management and sensor ICs for smartphones, infrastructure, automotive, industrial, and IoT applications. It is best known for its proprietary UltraCMOS/ RF‑SOI technology and increasingly participates in the GaN ecosystem through drivers and power device solutions.[1][2][3][4][5][6][7]
+
+## Company overview
+
+- pSemi is a Murata company that evolved from Peregrine Semiconductor, with a core strength in RF CMOS and UltraCMOS (SOI/SOS) technologies enabling highly integrated RF front‑ends, antenna tuning, and connectivity solutions.[2][4][5]
+- The firm operates as a fabless provider, targeting applications across mobile devices, 5G base stations, broadband, aerospace/defense, EVs, data centers, and other connected systems.[4][5][1]
+
+## GaN-related activities
+
+- pSemi offers high‑speed gate‑driver ICs specifically designed to drive external GaN FETs, such as the PE29101/PE29102, which provide sub‑nanosecond switching for high‑frequency power applications including LiDAR, wireless charging, and Class‑D audio.[8][6][7]
+- Industry reports and product positioning place pSemi among vendors participating in the GaN power device ecosystem (often in combination with Murata’s module expertise), focusing on extracting GaN’s high‑speed and efficiency advantages at the system level rather than only as a discrete device maker.[6][9][10][8]
+
+## Main technical experts
+
+Publicly visible experts linked to pSemi’s RF/mmWave and GaN‑related work include:  
+
+- **Dr. Rui Ma – Director of mmWave PA Systems**  
+  - Leads mmWave power‑amplifier systems at pSemi and is an IEEE MTT‑S Distinguished Microwave Lecturer, with a history of GaN HEMT and GaN PA development for RF applications.[11][12][13][14]
+  - Previously a Senior Principal Scientist and devices team leader at Mitsubishi Electric Research Laboratories, where he received corporate awards for GaN development and RF applications, now focusing on advanced RF/mmWave transmitters and 5G/6G front‑ends at pSemi.[13][15][14][16]
+
+- **Broader technical team (representative roles)**  
+  - Company materials emphasize a global RFIC design and systems engineering team specializing in RF‑SOI front‑ends, power management, connected sensors, and 5G/mmWave systems, which underpins both its UltraCMOS and GaN‑driver offerings.[3][5][1][4]
+  - pSemi’s leadership and principal engineers (not all named publicly) collaborate closely with Murata’s module business, combining RFIC, packaging, and power device expertise for next‑generation RF and power solutions that increasingly leverage GaN where it offers clear performance gains.[5][10][4]
+
+If you want, a deeper dive into Rui Ma’s specific GaN publications or pSemi’s individual GaN driver datasheets can be outlined next.
+
+[1](https://psemi.com/about-psemi/)
+[2](https://en.wikipedia.org/wiki/Peregrine_Semiconductor)
+[3](https://psemi.com)
+[4](https://www.linkedin.com/company/psemi)
+[5](https://www.everythingrf.com/companies/79/peregrine-semiconductor)
+[6](https://psemi.com/products/power-management/gan-fet-drivers/pe29102/)
+[7](https://psemi.com/newsroom/press-releases/540754-psemi-gan-fet-driver-delivers-fast-switching-to-solid-state-lidar-systems/)
+[8](https://www.prnewswire.com/news-releases/psemi-gan-fet-driver-delivers-fast-switching-to-solid-state-lidar-systems-300664583.html)
+[9](https://www.marketsizeandtrends.com/report/gan-field-effect-transistors-market/)
+[10](https://semiengineering.com/tag/psemi/)
+[11](https://mtt.org/profile/rui-ma/)
+[12](http://x.com/MTT_IMS/status/1859673179477680309)
+[13](https://events.vtools.ieee.org/m/421805)
+[14](https://psemi.com/ieee-mtt-s-names-rui-ma-distinguished-microwave-lecturer/)
+[15](https://www.linkedin.com/in/rmawave)
+[16](https://scholar.google.com/citations?user=Rug9kjkAAAAJ&hl=en)
+[17](https://www.bloomberg.com/profile/company/34P:GR)
+[18](https://ntrs.nasa.gov/api/citations/20205007412/downloads/GaN%20BOK.pdf)
+[19](https://www.linkedin.com/posts/rmawave_machine-learning-power-amplifier-activity-6733465803288526848-Qs_Z)
+[20](https://ims-ieee.org/RuiMa)
+
+pSemi（前身为Peregrine Semiconductor）是一家由村田制作所控股的无晶圆厂半导体公司，总部位于圣地亚哥，专注于为智能手机、基础设施、汽车、工业和物联网应用领域提供高性能射频、电源管理和传感器集成电路。该公司以其专有的UltraCMOS/RF-SOI技术而闻名，并通过驱动器和功率器件解决方案，日益积极地参与到氮化镓（GaN）生态系统中。​
+
+公司概况
+pSemi 是村田制作所旗下的公司，由 Peregrine Semiconductor 发展而来，其核心优势在于射频 CMOS 和 UltraCMOS (SOI/SOS) 技术，可实现高度集成的射频前端、天线调谐和连接解决方​​案。​
+
+该公司作为一家无晶圆厂供应商运营，目标应用领域涵盖移动设备、5G 基站、宽带、航空航天/国防、电动汽车、数据中心和其他互联系统。​
+
+氮化镓相关活动
+pSemi 提供专为驱动外部 GaN FET 而设计的高速栅极驱动器 IC，例如 PE29101/PE29102，可为包括 LiDAR、无线充电和 D 类音频在内的高频功率应用提供亚纳秒级开关。​
+
+行业报告和产品定位将 pSemi 置于参与 GaN 功率器件生态系统的供应商之列（通常与 Murata 的模块专业知识相结合），专注于在系统层面提取 GaN 的高速和效率优势，而不仅仅是作为分立器件制造商。​
+
+主要技术专家
+与pSemi的射频/毫米波和氮化镓相关工作有联系的公开知名专家包括：
+
+瑞马博士 – mmWave PA Systems 总监
+
+领导 pSemi 的毫米波功率放大器系统，是 IEEE MTT-S 杰出微波讲师，在射频应用的 GaN HEMT 和 GaN PA 开发方面有着丰富的经验。​
+
+此前曾任三菱电机研究实验室高级首席科学家兼器件团队负责人，因氮化镓开发和射频应用而获得公司奖项，目前在 pSemi 专注于先进的射频/毫米波发射器和 5G/6G 前端。​
+
+更广泛的技术团队（代表角色）
+
+公司资料强调其全球射频集成电路设计和系统工程团队专注于射频SOI前端、电源管理、互联传感器和5G/毫米波系统，这为其UltraCMOS和GaN驱动器产品提供了支撑。​
+
+pSemi 的领导层和首席工程师（并非全部公开姓名）与 Murata 的模块业务密切合作，结合 RFIC、封装和功率器件方面的专业知识，开发下一代射频和功率解决方案，这些解决方案越来越多地利用 GaN 技术来获得明显的性能提升。​
+
+如果您有兴趣，接下来可以详细介绍 Rui Ma 的具体 GaN 出版物或 pSemi 的各个 GaN 驱动器数据手册。
 
 
 
