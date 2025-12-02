@@ -168,6 +168,7 @@
   - [37. Semiconductor quantum dots: Technological progress and future challenges](#37-semiconductor-quantum-dots-technological-progress-and-future-challenges)
   - [38. Machine Learning Potentials for Property Predictions of Two-Dimensional Group-III Nitrides](#38-machine-learning-potentials-for-property-predictions-of-two-dimensional-group-iii-nitrides)
   - [39. Research progresses on epitaxy and sidewall treatment for micro-LEDs](#39-research-progresses-on-epitaxy-and-sidewall-treatment-for-micro-leds)
+- [40. Impact of low-temperature cover layer growth of InAs/GaAs quantum dots on their optical properties](#40-impact-of-low-temperature-cover-layer-growth-of-inasgaas-quantum-dots-on-their-optical-properties)
 
 链接不需要加<>，直接copy https链接
 
@@ -824,3 +825,7 @@ https://www.nature.com/articles/nature16454
 ## 39. Research progresses on epitaxy and sidewall treatment for micro-LEDs
 
 <https://www.sciencedirect.com/science/article/abs/pii/S0079672725000461?via%3Dihub>
+
+# 40. Impact of low-temperature cover layer growth of InAs/GaAs quantum dots on their optical properties
+
+<https://iopscience.iop.org/article/10.35848/1347-4065/ac7caa/meta>
