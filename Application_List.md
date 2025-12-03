@@ -89,6 +89,12 @@
   - [Company overview](#company-overview-2)
   - [GaN-related activities](#gan-related-activities)
   - [Main technical experts](#main-technical-experts)
+- [20. Lumentum](#20-lumentum)
+  - [Company overview](#company-overview-3)
+  - [Core photonics business](#core-photonics-business)
+  - [III-V materials focus (InP, GaAs)](#iii-v-materials-focus-inp-gaas)
+  - [Facilities and capacity for III-V](#facilities-and-capacity-for-iii-v)
+  - [III-V research directions and applications](#iii-v-research-directions-and-applications)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -1409,6 +1415,90 @@ pSemi 提供专为驱动外部 GaN FET 而设计的高速栅极驱动器 IC，�
 pSemi 的领导层和首席工程师（并非全部公开姓名）与 Murata 的模块业务密切合作，结合 RFIC、封装和功率器件方面的专业知识，开发下一代射频和功率解决方案，这些解决方案越来越多地利用 GaN 技术来获得明显的性能提升。​
 
 如果您有兴趣，接下来可以详细介绍 Rui Ma 的具体 GaN 出版物或 pSemi 的各个 GaN 驱动器数据手册。
+
+# 20. Lumentum
+
+Lumentum is a leading US photonics company focused on optical communications and industrial lasers, and it is heavily invested in III-V compound semiconductor platforms, especially indium phosphide (InP) and gallium arsenide (GaAs). Its III-V research and manufacturing underpin high‑speed datacom/telecom transceivers, co‑packaged optics for AI data centers, and 3D sensing and laser applications.[1][2][3][4][5]
+
+## Company overview  
+
+- Lumentum originated in 2015 as a spin‑off from JDS Uniphase to focus on optical networking components and commercial lasers.[6][7]
+- The company is headquartered in San Jose, California, with R&D and manufacturing sites worldwide, and generates over 1 billion USD in annual revenue from photonics products for cloud, telecom, and industrial markets.[1][6]
+
+## Core photonics business  
+
+- Lumentum supplies optical components and subsystems used in telecom, enterprise, and hyperscale data‑center networks, including lasers and photonic integrated circuits (PICs) for 400G–1.6T links.[3][1]
+- It also sells high‑power industrial and commercial lasers used in advanced manufacturing and 3D sensing (for example in consumer and automotive applications).[8][1]
+
+## III-V materials focus (InP, GaAs)  
+
+- Lumentum emphasizes a proprietary indium phosphide platform for high‑speed, energy‑efficient laser chips and PICs, enabling 100–200 Gb/s‑per‑lane optics and beyond.[9][3]
+- The company also highlights its high‑volume expertise in both InP and GaAs laser devices, positioning these III‑V materials as core to its optical transceivers and sensing products.[2][4]
+
+## Facilities and capacity for III-V  
+
+- Lumentum operates InP wafer‑fab and laser‑chip lines in San Jose, where it designs and manufactures ultra‑high‑power InP lasers for co‑packaged optics used in AI data‑center switches.[10][5]
+- The firm has announced multiple capacity‑expansion programs to roughly double InP wafer fabrication and increase GaAs‑device output, reflecting strong demand for III‑V‑based optical components.[2][10]
+
+## III-V research directions and applications  
+
+- III‑V R&D at Lumentum targets higher baud‑rate coherent and IM/DD lasers, more integrated InP PICs, and ultra‑reliable UHP lasers for co‑packaged optics, all aiming at lower power per bit in AI and cloud networks.[3][9]
+- On the application side, its III‑V technology supports long‑haul/coherent transmission, short‑reach datacom, and 3D sensing/VCSEL‑class functions, where III‑V bandgaps and high electron mobility offer advantages over pure silicon photonics.[11][2]
+
+If you want, a follow‑up can focus specifically on InP vs GaAs at Lumentum (e.g., device types, epitaxy, or integration with Si photonics).
+
+[1](https://www.lumentum.com/en/company)
+[2](https://optics.org/news/11/8/18)
+[3](https://www.lumentum.com/en/Enabling-the-Future-of-AI)
+[4](https://www.lumentum.com/en/media-room/news-releases/lumentum-expands-state-art-datacom-laser-chip-portfolio)
+[5](https://www.lumentum.com/en/media-room/news-releases/lumentum-expands-us-manufacturing-ai-driven-co-packaged-optics)
+[6](https://matrixbcg.com/blogs/brief-history/lumentum)
+[7](https://golden.com/wiki/Lumentum-GEZ3NKZ)
+[8](https://investor.lumentum.com/overview/default.aspx)
+[9](https://www.lumentum.com/en/media-room/news-releases/lumentum-showcases-next-generation-inp-chip-solutions-enabling-scalable-ai)
+[10](https://picmagazine.net/article/122327/Lumentum_expands_capacity_at_US_semiconductor_facility)
+[11](https://compoundsemiconductor.net/article/121623/Cutting_the_cost_of_InP-based_devices)
+[12](https://ca.finance.yahoo.com/quote/LITE/profile/)
+[13](https://www.lumentum.com/en)
+[14](https://ca.linkedin.com/company/lumentum)
+[15](https://pubs.aip.org/aip/adv/article/15/2/025319/3336309/InP-on-GaAs-engineered-substrates-A-pathway-toward)
+[16](https://stacks.stanford.edu/file/druid:jd346xj7166/Chien-Yu%20thesis%20draft_031317-augmented.pdf)
+[17](https://www.light-am.com/en/article/doi/10.37188/lam.2021.005)
+[18](https://www.sciencedirect.com/science/article/pii/S1369702109701105)
+[19](https://www.tandfonline.com/doi/full/10.1080/23746149.2022.2097020)
+[20](https://pubs.acs.org/doi/10.1021/nl404743j)
+
+Lumentum是一家领先的美国光子学公司，专注于光通信和工业激光器，并在III-V族化合物半导体平台方面投入巨资，特别是磷化铟（InP）和砷化镓（GaAs）。其III-V族化合物的研究和制造为高速数据通信/电信收发器、用于人工智能数据中心的共封装光学器件以及3D传感和激光应用奠定了基础。​
+
+公司概况
+
+Lumentum 成立于 2015 年，是 JDS Uniphase 的衍生公司，专注于光网络组件和商用激光器。​
+
+该公司总部位于加利福尼亚州圣何塞，在全球设有研发和制造基地，其面向云、电信和工业市场的光子产品年收入超过 10 亿美元。​
+
+核心光子业务
+
+Lumentum 为电信、企业和超大规模数据中心网络提供光学元件和子系统，包括用于 400G–1.6T 链路的激光器和光子集成电路 (PIC)。​
+
+该公司还销售用于先进制造和 3D 传感（例如消费品和汽车应用）的高功率工业和商业激光器。​
+
+III-V族材料研究（InP、GaAs）
+
+Lumentum 强调其专有的磷化铟平台，用于高速、节能的激光芯片和光子集成电路，可实现每通道 100–200 Gb/s 及以上的光传输速度。​
+
+该公司还强调了其在 InP 和 GaAs 激光器件方面的大规模生产技术，并将这些 III-V 族材料定位为其光收发器和传感产品的核心。​
+
+III-V 类设备的设施和容量
+
+Lumentum 在圣何塞运营 InP 晶圆制造厂和激光芯片生产线，在那里设计和制造用于 AI 数据中心交换机的共封装光学器件的超高功率 InP 激光器。​
+
+该公司已宣布多项产能扩张计划，旨在将 InP 晶圆制造能力大致提高一倍，并增加 GaAs 器件产量，这反映出市场对 III-V 族光学元件的强劲需求。​
+
+III-V 类研究方向及应用
+
+Lumentum 的 III-V 族研发目标是更高波特率的相干激光器和 IM/DD 激光器、更集成的 InP PIC 以及用于共封装光学器件的超可靠 UHP 激光器，所有这些都旨在降低 AI 和云网络中每比特的功耗。​
+
+在应用方面，其 III-V 技术支持长距离/相干传输、短距离数据通信和 3D 传感/VCSEL 级功能，其中 III-V 带隙和高电子迁移率比纯硅光子学具有优势。​
 
 
 
