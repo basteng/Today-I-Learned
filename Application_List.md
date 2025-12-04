@@ -95,6 +95,13 @@
   - [III-V materials focus (InP, GaAs)](#iii-v-materials-focus-inp-gaas)
   - [Facilities and capacity for III-V](#facilities-and-capacity-for-iii-v)
   - [III-V research directions and applications](#iii-v-research-directions-and-applications)
+- [21. Toshiba Research Europe Limited](#21-toshiba-research-europe-limited)
+  - [Who they are and where](#who-they-are-and-where)
+  - [Main research areas](#main-research-areas)
+  - [Collaboration and impact](#collaboration-and-impact-1)
+  - [Current role](#current-role)
+  - [Research background and contributions](#research-background-and-contributions)
+  - [Recognition and impact](#recognition-and-impact)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -1499,6 +1506,114 @@ III-V 类研究方向及应用
 Lumentum 的 III-V 族研发目标是更高波特率的相干激光器和 IM/DD 激光器、更集成的 InP PIC 以及用于共封装光学器件的超可靠 UHP 激光器，所有这些都旨在降低 AI 和云网络中每比特的功耗。​
 
 在应用方面，其 III-V 技术支持长距离/相干传输、短距离数据通信和 3D 传感/VCSEL 级功能，其中 III-V 带隙和高电子迁移率比纯硅光子学具有优势。​
+
+# 21. Toshiba Research Europe Limited
+
+Toshiba Research Europe Limited (often associated with Toshiba’s Cambridge Research Laboratory) is a UK-based part of Toshiba’s global R&D organization, focused on advanced information, communication, and AI/quantum technologies.[1][2][3]
+
+## Who they are and where
+
+- Toshiba’s Cambridge Research Laboratory (CRL), originally founded in 1991 as the Toshiba Cambridge Research Centre, was Toshiba’s first overseas corporate-level R&D lab and is located at Cambridge Science Park, Cambridge, UK.[2][3][4][1]
+- TREL historically also included a telecommunications/BRIL laboratory in Bristol, with activities integrated under Toshiba Europe Limited since 2020, but the Cambridge lab remains the main research hub people usually mean by “Toshiba Research Europe.”[3][5][6][1]
+
+## Main research areas
+
+- CRL’s current research teams work on quantum information (especially quantum key distribution and quantum devices), speech and language technology, and computer vision / machine learning, combining physics, engineering, and computer science.[7][8][2][3]
+- The Quantum Information Group has achieved several “world firsts” in quantum communications (e.g., long-distance fiber QKD, high-rate QKD, and quantum-secured WDM transmission), and underpins Toshiba’s commercial quantum key distribution products and secure communication solutions.[9][10][11][12]
+
+## Collaboration and impact
+
+- The lab collaborates closely with the University of Cambridge (Cavendish Laboratory and Engineering Department) and other European universities and companies, funding research students and joint projects in quantum technologies, AI, and vision.[8][13][2][7]
+- Its technologies have been transferred into Toshiba products, including quantum-secure networking solutions and advanced imaging/AI components, and it has also contributed to spin-out companies (for example in terahertz technology) and broader European quantum and AI initiatives.[11][12][13][2]
+
+[1](https://www.global.toshiba/ww/technology/corporate/rdc/about/global/trel.html)
+[2](https://www.cambridgenetwork.co.uk/directories/companies/3536)
+[3](https://www.toshiba.eu/pages/eu/Cambridge-Research-Laboratory/about-us)
+[4](https://www.cambridgesciencepark.co.uk/directory/toshiba-research-europe-ltd/)
+[5](https://www.global.toshiba/ww/technology/corporate/rdc/about/access.html)
+[6](https://www.swan-partnership.ac.uk/toshiba-research-europe-limited/)
+[7](https://www.toshiba.eu/cambridge-research-laboratory/)
+[8](https://www.toshiba.eu/cambridge-research-laboratory/about-us/)
+[9](https://www.toshiba.eu/cambridge-research-laboratory/quantum-information-group/)
+[10](https://www.toshiba.eu/pages/eu/Cambridge-Research-Laboratory/quantum-information)
+[11](https://quantiki.org/research-group/toshiba-europe-ltd-quantum-information-group)
+[12](https://www.global.toshiba/ww/products-solutions/security-ict/qkd.html)
+[13](https://www.toshiba-clip.com/en/detail/p=4974)
+[14](https://find-and-update.company-information.service.gov.uk/company/02519556)
+[15](https://inspirehep.net/institutions/911576)
+[16](https://www.global.toshiba/jp/news/corporate/1998/07/pr3001.html)
+[17](https://www.global.toshiba/ww/technology/corporate/rdc/rd/fields.html)
+[18](https://www.global.toshiba/ww/technology/corporate/rdc/about/global.html)
+[19](http://www.elsnet.org/orgs/3767.html)
+[20](https://jp.linkedin.com/company/toshiba-research-europe-limited)
+
+东芝欧洲研究有限公司（通常与东芝剑桥研究实验室联系在一起）是东芝全球研发机构在英国的分支机构，专注于先进的信息、通信和人工智能/量子技术。​
+
+他们是谁，在哪里？
+
+东芝剑桥研究实验室（CRL）最初于 1991 年成立，名为东芝剑桥研究中心，是东芝在海外设立的第一个企业级研发实验室，位于英国剑桥剑桥科学园。​
+
+TREL 历史上还包括位于布里斯托尔的电信/BRIL 实验室，自 2020 年以来，其活动已整合到东芝欧洲有限公司旗下，但剑桥实验室仍然是人们通常所说的“东芝欧洲研究中心”的主要研究中心。​
+
+主要研究领域
+
+CRL 目前的研究团队致力于量子信息（特别是量子密钥分发和量子器件）、语音和语言技术以及计算机视觉/机器学习，结合了物理学、工程学和计算机科学。​
+
+量子信息集团在量子通信领域取得了多项“世界第一”（例如，长距离光纤量子密钥分发、高速量子密钥分发和量子安全WDM传输），并为东芝的商业量子密钥分发产品和安全通信解决方案提供了支持。​
+
+协作与影响
+
+该实验室与剑桥大学（卡文迪什实验室和工程系）以及其他欧洲大学和公司密切合作，资助量子技术、人工智能和视觉领域的研究生和联合项目。​
+
+其技术已转移到东芝产品中，包括量子安全网络解决方案和先进的成像/人工智能组件，并且还为衍生公司（例如太赫兹技术）和更广泛的欧洲量子和人工智能计划做出了贡献。​
+
+Andrew J. Shields is a physicist and research leader known for his work in quantum communication, quantum photonics, and semiconductor quantum light sources. He is based at Toshiba Europe Limited in Cambridge, U.K., at 208 Cambridge Science Park, Milton Road, CB4 0GZ, where he leads Toshiba’s quantum technology activities.[1][5][6]
+
+## Current role
+
+- Shields serves as Vice President at Toshiba Europe Ltd and Head of the Quantum Technology Division, overseeing the development and commercialization of quantum-safe communication technologies, especially quantum key distribution (QKD) systems.[4][6][1]
+- In this role he connects long-term research with product development, guiding teams that turn laboratory quantum communication demonstrations into practical, deployable secure-networking solutions for government, finance, and critical infrastructure customers.[3][5][6]
+
+## Research background and contributions
+
+- He has worked at Toshiba’s Cambridge research lab since the early 1990s, progressing from research scientist to group leader and assistant managing director before taking on division and corporate leadership roles, with a research background spanning semiconductor quantum dots, single-photon sources, and quantum optics.[2][8][1]
+- Shields is well known academically for pioneering results in semiconductor-based single-photon and entangled-photon sources, high-speed single-photon detectors, and high-rate, long-distance QKD over optical fiber, with highly cited papers in journals such as Science, Nature, and Nature Photonics.[2][3]
+
+## Recognition and impact
+
+- In 2022 he received the Institute of Physics Katharine Burr Blodgett Medal and Prize, recognizing his leading role in developing quantum communication devices and systems that can be integrated into conventional telecom networks.[3]
+- His work has significantly advanced the readiness level of quantum communication, helping move the field from small-scale experiments toward commercial quantum-secure networks and influencing international developments in quantum-safe infrastructure.[5][6][3]
+
+[1](https://uk.linkedin.com/in/andrew-shields-366b3173)
+[2](https://scholar.google.com/citations?user=nMVHN0QAAAAJ&hl=en)
+[3](https://www.toshiba.eu/pages/eu/Cambridge-Research-Laboratory/toshiba-dr-andrew-shields-awarded-institute-of-physics-2022)
+[4](https://orcid.org/0000-0003-4100-3489)
+[5](https://www.toshiba-clip.com/en/detail/p=3766)
+[6](https://www.optica.org/events/industry_events/2025/optica_2025_quantum_industry_summit_-_fourth-edition/speakers/andrew_shields/)
+[7](https://www.toshiba.eu/cambridge-research-laboratory/)
+[8](https://nccr-qsit.ethz.ch/news/conferences-events/monte-verita-2012/abstracts-talks/andrew-shields--toshiba-research.html)
+[9](https://arxiv.org/html/2507.01648v1)
+
+安德鲁·J·希尔兹是一位物理学家和研究领军人物，以其在量子通信、量子光子学和半导体量子光源领域的研究而闻名。他目前在英国剑桥东芝欧洲有限公司工作，地址是剑桥科学园208号，米尔顿路，邮编CB4 0GZ，负责领导东芝的量子技术业务。​
+
+目前职位
+
+Shields 担任东芝欧洲有限公司副总裁兼量子技术部门主管，负责监督量子安全通信技术（特别是量子密钥分发 (QKD) 系统）的开发和商业化。​
+
+在这个职位上，他将长期研究与产品开发联系起来，指导团队将实验室量子通信演示转化为政府、金融和关键基础设施客户可实际部署的安全网络解决方案。​
+
+研究背景及贡献
+
+自 20 世纪 90 年代初以来，他一直在东芝剑桥研究实验室工作，从研究科学家晋升为小组组长和助理总经理，之后又担任部门和公司领导职务，其研究背景涵盖半导体量子点、单光子源和量子光学。​
+
+Shields 在学术界以半导体单光子和纠缠光子源、高速单光子探测器以及光纤上的高速长距离量子密钥分发方面的开创性成果而闻名，他在《科学》、《自然》和《自然·光子学》等期刊上发表了大量被引用的论文。​
+
+认可与影响
+
+2022 年，他获得了英国物理学会颁发的 Katharine Burr Blodgett 奖章和奖金，以表彰他在开发可集成到传统电信网络中的量子通信设备和系统方面发挥的领导作用。​
+
+他的工作极大地提高了量子通信的成熟度，帮助该领域从小型实验发展到商业量子安全网络，并影响了量子安全基础设施的国际发展。
+
 
 
 
