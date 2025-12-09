@@ -73,6 +73,7 @@
 - [38. VS Code 配置 GitHub 代理](#38-vs-code-配置-github-代理)
   - [方法 1：配置 Git 全局代理（推荐）](#方法-1配置-git-全局代理推荐)
   - [查看代理](#查看代理)
+- [39. 代理修改后，系统变量中的代理也需要修改](#39-代理修改后系统变量中的代理也需要修改)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1550,3 +1551,19 @@ PS D:\27_Github\Today-I-Learned\Today-I-Learned> git config --global --list | Se
 
 http.proxy=http://127.0.0.1:7899 
 https.proxy=http://127.0.0.1:7899
+
+# 39. 代理修改后，系统变量中的代理也需要修改
+
+打开系统环境变量设置：
+
+按 Win + R，输入 sysdm.cpl，回车
+
+点击 高级 → 环境变量
+
+在"用户变量"或"系统变量"中查找并修改：
+
+http_proxy → 改为 http://127.0.0.1:7899
+
+https_proxy → 改为 http://127.0.0.1:7899
+
+all_proxy → 改为 socks5://127.0.0.1:7898
