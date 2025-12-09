@@ -1035,7 +1035,9 @@ curl https://google.com
 
 ## 30.1 当代理修改时，需要修改端口
 
-Clash Verge 设置-clash设置-端口设置-用鼠标点“7897”-显示混合端口7897，socks代理端口7898，https代理端口7899
+Clash Verge 
+
+设置-clash设置-端口设置-用鼠标点“7897”-显示混合端口7897，socks代理端口7898，https代理端口7899
 
 http: 7899
 socks5: 7898
