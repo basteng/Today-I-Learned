@@ -53,6 +53,7 @@
   - [4. 直接测试](#4-直接测试)
   - [5. 进阶：Privoxy 转 HTTP 代理（可选）](#5-进阶privoxy-转-http-代理可选)
 - [30. WSL科学上网](#30-wsl科学上网)
+  - [30.1 当代理修改时，需要修改端口](#301-当代理修改时需要修改端口)
 - [31. VSCode如何打开WSL路径](#31-vscode如何打开wsl路径)
 - [32. 输入命令：code .，打开的是cursor，怎么换成VS CODE](#32-输入命令code-打开的是cursor怎么换成vs-code)
 - [33. how to install claude code in windows](#33-how-to-install-claude-code-in-windows)
@@ -1028,6 +1029,27 @@ export all_proxy="socks5://127.0.0.1:7891"
 保存并执行：
 
 source ~/.bashrc
+测试一下网络连通性：
+
+curl https://google.com
+
+## 30.1 当代理修改时，需要修改端口
+
+Clash Verge 设置-clash设置-端口设置-用鼠标点“7897”-显示混合端口7897，socks代理端口7898，https代理端口7899
+
+http: 7899
+socks5: 7898
+
+nano ~/.bashrc
+
+export http_proxy="http://127.0.0.1:7899" 
+export https_proxy="http://127.0.0.1:7899" 
+export all_proxy="socks5://127.0.0.1:7898"
+
+保存并执行：
+
+source ~/.bashrc
+
 测试一下网络连通性：
 
 curl https://google.com
