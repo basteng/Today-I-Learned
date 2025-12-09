@@ -75,14 +75,14 @@
   - [查看代理](#查看代理)
 - [39. 代理修改后，系统变量中的代理也需要修改](#39-代理修改后系统变量中的代理也需要修改)
 - [40. 绘制连续时间轴双Y轴图表的方法总结](#40-绘制连续时间轴双y轴图表的方法总结)
-  - [40.1 核心代码](#401-核心代码)
+  - [**核心代码**](#核心代码)
   - [1. 读取数据并转换日期](#1-读取数据并转换日期)
   - [2. 创建时间数组（关键步骤）](#2-创建时间数组关键步骤)
   - [3. 自定义日期格式化函数（关键步骤）](#3-自定义日期格式化函数关键步骤)
   - [4. 使用索引作为X轴（关键步骤）](#4-使用索引作为x轴关键步骤)
   - [5. 创建双Y轴图表](#5-创建双y轴图表)
-  - [左Y轴](#左y轴)
-  - [右Y轴](#右y轴)
+    - [左Y轴](#左y轴)
+    - [右Y轴](#右y轴)
   - [6. 应用自定义格式化（关键步骤）](#6-应用自定义格式化关键步骤)
   - [7. 保存图表](#7-保存图表)
 
@@ -1581,7 +1581,7 @@ all_proxy → 改为 socks5://127.0.0.1:7898
 
 # 40. 绘制连续时间轴双Y轴图表的方法总结
 
-## 40.1 核心代码
+## **核心代码**
 
 ```
         def format_datetime(x, pos=None):
@@ -1619,11 +1619,11 @@ x_indices = np.arange(len(df))
 ## 5. 创建双Y轴图表
 fig, ax1 = plt.subplots(figsize=(16, 8))
 
-## 左Y轴
+### 左Y轴
 ax1.plot(x_indices, df['LeftColumn'], color='tab:blue', label='Left Axis')
 ax1.set_ylabel('Left Axis Label', color='tab:blue')
 
-## 右Y轴
+### 右Y轴
 ax2 = ax1.twinx()
 ax2.plot(x_indices, df['RightColumn'], color='tab:red', label='Right Axis')
 ax2.set_ylabel('Right Axis Label', color='tab:red')
