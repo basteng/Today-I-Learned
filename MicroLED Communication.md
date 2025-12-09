@@ -154,6 +154,9 @@
   - [5.66 专利：使用基于 MicroLED 的光学链路互连网络](#566-专利使用基于-microled-的光学链路互连网络)
   - [5.67 基于MicroLED的飞行时间系统](#567-基于microled的飞行时间系统)
   - [5.68 要么扩大规模，要么退出市场：后铜时代人工智能计算的未来是微型LED - Jess Brown](#568-要么扩大规模要么退出市场后铜时代人工智能计算的未来是微型led---jess-brown)
+  - [5.69 Sharada Yeluri](#569-sharada-yeluri)
+    - [5.69.1 关于HBM](#5691-关于hbm)
+      - [Bardia的相关评论](#bardia的相关评论)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -4371,6 +4374,95 @@ GB200 NVL72 由 18 个计算托架和 9 个交换机托架组成，每个托架�
 人工智能的飞速发展持续推动着对更强大的数据中心和规模更大的GPU集群的需求。然而，传统的铜互连技术存在严重的瓶颈，其带宽和传输距离均有限，制约着GPU架构的扩展。解决这些挑战的方案是基于microLED的光互连技术，它能够使GPU集群扩展到多个机架和数千个GPU，同时实现业界领先的能效，低于1pJ/bit。
 
 <https://www.electrooptics.com/article/scale-or-ship-out-post-copper-future-ai-compute-microleds>
+
+## 5.69 Sharada Yeluri
+
+### 5.69.1 关于HBM
+
+#HBM bandwidth is absolutely critical for AI training and inference - and the industry continues to demand a 2x jump every other year. HBM4, expected in mass production by early/mid 2026, hits this target with 2K pins at 8-10 Gbps per pin and 8–12 stacks of DRAM dies, with some vendors exploring 16-high stacks. Many offer custom base dies allowing customers to add their logic in them. HBM4E is expected to boost bandwidth another ~50% in 2027. HBM5 will likely double data width and density with >16-stack designs.
+
+But scaling traditional TSV micro-bumps to 16-high and beyond stacks hits a physical wall. With bump height and underfill taking up ~15 µm, each die needs to be <25 µm thick to fit within the 775 µm JEDEC stack-height limit. Dies at this thickness can crack and warp due to internal stress release during singulation. Further, micro-bumps act like a thermal blanket and trap heat in the lower dies. More the number of stacks, heat dissipation gets challening. 
+
+This is why vendors are transitioning to hybrid bonding, with Samsung leading the pack for 16-stack HBM4. Hybrid bonding eliminates micro-bumps completely and bonds planarized sub-10-µm-pitch Cu-to-Cu pads. No underfill. No solder. Dies are stacked flush. The result: shorter interconnects, higher bandwidth density, and a true vertical thermal path - thermal resistance improves by roughly 20–30%. It also enables vendors to add more stacks or thicker dies within the 775um limit.
+
+The challenge? 🤔 Yield!
+
+Solder mico bumps are forgiving - they reflow and heal surface imperfections. Hybrid bonding is not. It demands extreme surface flatness and cleanliness, where even tiny particles or slight height variations can create weak bonds or open connections across thousands of I/Os. Thin DRAM dies tend to warp, making precise alignment harder, and any misalignment at these fine pitches can cause shorts. Any voids or contamination during bonding can turn into long-term failures. 
+
+Hybrid-bonding equipment must combine high precision with high throughput, which is still maturing. The industry is adopting plasma dicing to eliminate debris and adopting collective die-to-wafer bonding to bond multiple dies simultaneously. Redundancy/repair inside the memory stack also helps tolerate a small number of bad bonds. Together, these efforts aim to make hybrid bonding viable for HBM4 and beyond.
+
+What’s next? There are parallel advances like 3D DRAM (Vertical-Gate / monolithic DRAM) - a new cell architecture where multiple DRAM layers are fabricated on the same wafer. This can substantially increase the density and bandwidth per die, enabling throughput gains without increasing the number of stacked dies. Major DRAM vendors now show this in their roadmaps.
+
+Between the move to advanced logic base dies, the transition to hybrid bonding, and future monolithic 3D structures, a 2x density/bandwidth jump every ~2 years remains a reasonable expectation for the next few HBM generations.
+
+Anything thoughts?
+
+HBM 带宽对于人工智能训练和推理至关重要——而且业界每两年都要求带宽翻一番。HBM4 预计将于 2026 年初/年中量产，它将通过 2K 引脚、每个引脚 8-10 Gbps 的速度以及 8-12 层 DRAM 芯片堆叠来实现这一目标，一些供应商甚至正在探索 16 层堆叠。许多供应商提供定制基板芯片，允许客户在其中添加自己的逻辑电路。HBM4E 预计将在 2027 年将带宽再提升约 50%。HBM5 有望通过超过 16 层堆叠的设计将数据宽度和密度翻倍。
+
+但是，将传统的 TSV 微凸块扩展到 16 层及以上的堆叠会遇到物理瓶颈。由于凸块高度和底部填充物占据约 15 µm 的空间，每个芯片的厚度必须小于 25 µm 才能符合 775 µm 的 JEDEC 堆叠高度限制。如此薄的芯片在切割过程中由于内部应力释放容易开裂和翘曲。此外，微凸块就像隔热层一样，会将热量滞留在下层芯片中。堆叠层数越多，散热就越困难。
+
+这就是为什么供应商正在转向混合键合技术，三星在 16 层 HBM4 方面处于领先地位。混合键合完全消除了微凸块，并连接平面化的亚 10 µm 间距的铜对铜焊盘​​。无需底部填充物，无需焊料。芯片堆叠紧密。结果是：更短的互连线、更高的带宽密度和真正的垂直散热路径——热阻降低约 20-30%。它还使供应商能够在 775 µm 的限制内添加更多层或更厚的芯片。
+
+挑战是什么？🤔 良率！
+
+焊料微凸块具有一定的容错性——它们可以回流并修复表面缺陷。但混合键合则不然。它需要极高的表面平整度和清洁度，即使是微小的颗粒或轻微的高度变化也可能导致数千个 I/O 连接出现弱连接或断开。薄型 DRAM 芯片容易翘曲，使得精确对准更加困难，而在如此精细的间距下，任何错位都可能导致短路。键合过程中任何空隙或污染物都可能导致长期故障。
+
+混合键合设备必须兼具高精度和高吞吐量，而这项技术目前仍在发展完善中。该行业正在采用等离子切割技术来消除碎屑，并采用集体晶圆级键合技术同时键合多个芯片。内存堆栈内部的冗余/修复功能也有助于容忍少量不良键合。这些努力旨在使混合键合技术在 HBM4 及更高版本中切实可行。
+
+下一步是什么？还有一些并行发展，例如 3D DRAM（垂直栅极/单片式 DRAM）——一种新的单元架构，其中多个 DRAM 层在同一晶圆上制造。这可以显著提高每个芯片的密度和带宽，从而在不增加堆叠芯片数量的情况下提高吞吐量。主要 DRAM 供应商目前已将此技术纳入其发展路线图。
+
+考虑到向先进逻辑基底芯片的转变、向混合键合技术的过渡以及未来的单片式 3D 结构，在接下来的几代 HBM 产品中，每两年实现密度/带宽翻倍仍然是一个合理的预期。
+
+您有什么想法？
+
+#### Bardia的相关评论
+
+```
+Bardia
+
+optical I/O out of the base die, using my favorite approach! It can be much denser Tb/mm^2 that bumps, and since you are no longer reach limited, you don't have to stack as high. You can distribute the memory over a larger area.
+
+用我最喜欢的方法，直接从基础芯片输出光纤I/O！ 它可以是更密集的 Tb/mm^2，而且因为你不再受限于触达范围，也不需要堆得那么高。 你可以把内存分布到更大的区域。
+
+```
+
+```
+Sharada Yeluri
+
+
+Bardia, I was thinking about it. While several startups are exploring optical HBMs - and some vendors even show this in their long-term roadmaps - I’m not sure how this can replace the ultra-low-latency L1/L2 caches that HBM effectively serves today. Optical interfaces add latency with the parallel-to-serial conversion (assuming we use traditional optical I/O with SerDes/transceivers) plus the multiple electrical-to-optical and optical-to-electrical conversions. And HBMs with optical I/O can’t really sit inside the same package as the XPU, right? The optical engines and waveguide structures don’t integrate into the silicon interposer the same way micro-bumps or hybrid bonds do.
+This mau work for pooled memory architectures - several HBMs with optical I/O sitting in memory trays, and GPUs accessing them over optical links within a rack or even across racks, for accesses that can tolerate much higher latency. Would love to hear your thoughts on the applications. 
+
+
+Bardia ，我刚才在想。虽然有几家初创公司正在探索光HBM——甚至有些厂商在长期规划中展示了这一点——但我不确定它如何取代HBM目前有效服务的超低延迟L1/L2缓存。光接口通过并行转串行转换（假设使用传统的光输入输出配合SerDes/收发器）以及多次电转光和光电转换会增加延迟。而且带光输入输出的HBM不能和XPU放在同一个封装里，对吧？光学引擎和波导结构与硅中介体的集成方式不同于微凸起键或混合键。
+这种多单元设计适用于共享内存架构——多个带有光输入输出的 HBM 存储在内存托盘中，GPU 通过机架内甚至机架间的光链路访问它们，从而实现能够容忍更高延迟的访问。很想听听你对申请的看法。 
+
+```
+
+```
+Henrik Akesson
+
+Sharada Yeluri 
+Blue light optical interfaces are definitely parallel and can go on interposers
+
+沙拉达·耶卢里
+蓝光光学接口绝对是并联的，可以安装在中介体上
+```
+
+```
+Bardia
+
+Sharada Yeluri You are right, most optical interfaces add latency with parallel to serial conversion. But not if your optical bus is super-wide. With microLEDs, you can basically translate the 2000 lanes from electrical to the same number optical. So stay wide. And you can make the optics fit into the HBM base die, or just below the base die. We actually have better density than the bumps. Currently we are at 50um spacing, and going to 25um spacing. Finally, fiber bundles are super compact and can be integrated into the the package. A 25um fiber bundle with 2000 lanes is 1.1mm x 1.1mm. This is the future and why Avicena now has a dozen copycats doing microLEDs
+
+
+Sharada Yeluri 你说得对，大多数光接口在并行转串行转换时会增加延迟。 但如果你的光纤总线非常宽，就不行了。 用微LED灯，你基本上可以把电网的2000条通道转换成同样数量的光线。 所以要保持广阔。 你也可以让光学元件装进HBM的基础模具里，或者刚好在基础模具下方。 我们的密度实际上比凸起还要好。 目前我们是50微米间距，正准备到25微米间距。 最后，光纤束非常紧凑，可以集成到封装中。 一个25微米的光纤束，有2000条线路，尺寸是1.1毫米 x 1.1毫米。 这就是未来，也解释了为什么Avicena现在有十几个模仿者在做microLED的原因
+
+
+BTW, though I see a dozen folks copying our approach, I don't see anyone else copying Celestial and Lightmatter's ground-breaking innovations.
+
+
+顺便说一句，虽然我看到有十几个人在模仿我们的做法，但我没看到有人在模仿Celestial和Lightmatter的突破性创新。
+```
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 

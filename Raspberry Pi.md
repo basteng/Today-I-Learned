@@ -72,8 +72,8 @@
     - [2. **修改服务器 IP 地址**](#2-修改服务器-ip-地址)
     - [3. **保存并退出**](#3-保存并退出)
     - [4.找出之前占用1080端口的PID，并且kill](#4找出之前占用1080端口的pid并且kill)
-- [找出占用1080端口的进程](#找出占用1080端口的进程)
-- [停止该进程（假设PID是12345）](#停止该进程假设pid是12345)
+      - [找出占用1080端口的进程](#找出占用1080端口的进程)
+      - [停止该进程（假设PID是12345）](#停止该进程假设pid是12345)
     - [5. **重启 Shadowsocks 服务**](#5-重启-shadowsocks-服务)
     - [6. **检查服务状态**](#6-检查服务状态)
     - [7. **测试翻墙是否正常**](#7-测试翻墙是否正常)
@@ -86,11 +86,11 @@
     - [4. 测试网络连接](#4-测试网络连接)
     - [5. 推荐的启动命令](#5-推荐的启动命令)
     - [6. 更新加密方法](#6-更新加密方法)
-    - [2. 重启服务](#2-重启服务)
-    - [3. 验证监听地址](#3-验证监听地址)
-    - [4. 配置 iptables 透明代理规则](#4-配置-iptables-透明代理规则)
-    - [5. 启用 IP 转发](#5-启用-ip-转发)
-    - [6. 验证配置](#6-验证配置)
+    - [7. 重启服务](#7-重启服务)
+    - [8. 验证监听地址](#8-验证监听地址)
+    - [9. 配置 iptables 透明代理规则](#9-配置-iptables-透明代理规则)
+    - [10. 启用 IP 转发](#10-启用-ip-转发)
+    - [11. 验证配置](#11-验证配置)
   - [当前配置状态检查](#当前配置状态检查)
     - [1. 检查 ss-redir 配置](#1-检查-ss-redir-配置)
     - [2. 启用 IP 转发](#2-启用-ip-转发)
@@ -104,11 +104,17 @@
     - [方法4: 手动创建启动脚本](#方法4-手动创建启动脚本)
   - [服务器失效的时候更换办法](#服务器失效的时候更换办法)
     - [1. sudo nano /etc/shadowsocks-libev/redir.json](#1-sudo-nano-etcshadowsocks-libevredirjson)
-    - [2.  netstat -tlnp | grep 1081](#2--netstat--tlnp--grep-1081)
-    - [3. sudo systemctl restart shadowsocks-libev-redir@redir](#3-sudo-systemctl-restart-shadowsocks-libev-redirredir)
-    - [4. sudo systemctl status shadowsocks-libev-redir@redir](#4-sudo-systemctl-status-shadowsocks-libev-redirredir)
-    - [5. sudo iptables -t nat -L SHADOWSOCKS -n -v](#5-sudo-iptables--t-nat--l-shadowsocks--n--v)
-    - [6. sudo netstat -tlnp | grep 1081](#6-sudo-netstat--tlnp--grep-1081)
+    - [2.  sudo netstat -tlnp | grep 1081](#2--sudo-netstat--tlnp--grep-1081)
+    - [3. 现在 iptables 规则里的 `149.28.79.242` 是**旧的服务器 IP**，需要改成你当前的服务器 IP `144.202.119.245`。](#3-现在-iptables-规则里的-1492879242-是旧的服务器-ip需要改成你当前的服务器-ip-144202119245)
+      - [修改步骤](#修改步骤)
+        - [1. 先删除旧规则](#1-先删除旧规则)
+        - [2. 添加新规则](#2-添加新规则)
+        - [3. 验证规则](#3-验证规则)
+        - [4. 保存规则（重要！）](#4-保存规则重要)
+    - [4. sudo systemctl restart shadowsocks-libev-redir@redir](#4-sudo-systemctl-restart-shadowsocks-libev-redirredir)
+    - [5. sudo systemctl status shadowsocks-libev-redir@redir](#5-sudo-systemctl-status-shadowsocks-libev-redirredir)
+    - [6. sudo iptables -t nat -L SHADOWSOCKS -n -v](#6-sudo-iptables--t-nat--l-shadowsocks--n--v)
+    - [7. sudo netstat -tlnp | grep 1081](#7-sudo-netstat--tlnp--grep-1081)
 - [17. Gridcoin](#17-gridcoin)
   - [17.1 添加自启动服务](#171-添加自启动服务)
   - [方法1：使用 systemd 服务（推荐）](#方法1使用-systemd-服务推荐)
@@ -1579,10 +1585,10 @@ sudo nano /etc/shadowsocks-libev/config.json
 
 如果你想保持本地端口为1080，需要先找出并停止占用1080端口的进程：
 
-# 找出占用1080端口的进程
+#### 找出占用1080端口的进程
 sudo netstat -tlnp | grep 1080
 
-# 停止该进程（假设PID是12345）
+#### 停止该进程（假设PID是12345）
 sudo kill 12345
 
 ### 5. **重启 Shadowsocks 服务**
@@ -1742,18 +1748,18 @@ ss-redir -c /etc/shadowsocks-libev/redir.json -f /var/run/ss-redir.pid
 
 ---------------------------------------------
 
-### 2. 重启服务
+### 7. 重启服务
 ```bash
 sudo systemctl restart shadowsocks-libev-redir@redir
 ```
 
-### 3. 验证监听地址
+### 8. 验证监听地址
 ```bash
 sudo netstat -tlnp | grep 1081
 ```
 应该看到 `0.0.0.0:1081` 而不是 `127.0.0.1:1081`
 
-### 4. 配置 iptables 透明代理规则
+### 9. 配置 iptables 透明代理规则
 ```bash
 # 创建 SHADOWSOCKS 链
 sudo iptables -t nat -N SHADOWSOCKS 2>/dev/null
@@ -1776,13 +1782,13 @@ sudo iptables -t nat -A SHADOWSOCKS -p tcp -j REDIRECT --to-ports 1081
 sudo iptables -t nat -A PREROUTING -s 192.168.4.0/24 -p tcp -j SHADOWSOCKS
 ```
 
-### 5. 启用 IP 转发
+### 10. 启用 IP 转发
 ```bash
 echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
 echo 'net.ipv4.ip_forward=1' | sudo tee -a /etc/sysctl.conf
 ```
 
-### 6. 验证配置
+### 11. 验证配置
 ```bash
 # 检查服务状态
 sudo systemctl status shadowsocks-libev-redir@redir
@@ -1938,15 +1944,55 @@ sudo update-rc.d iptables-restore defaults
 
 修改IP或者端口
 
-### 2.  netstat -tlnp | grep 1081
+### 2.  sudo netstat -tlnp | grep 1081
 
 检查1081端口是否有占用，有占用则kill掉
 
-### 3. sudo systemctl restart shadowsocks-libev-redir@redir
+sudo kill <PID>
+
+### 3. 现在 iptables 规则里的 `149.28.79.242` 是**旧的服务器 IP**，需要改成你当前的服务器 IP `144.202.119.245`。
+
+#### 修改步骤
+
+##### 1. 先删除旧规则
+
+```bash
+sudo iptables -t nat -D SHADOWSOCKS -d 149.28.79.242 -j RETURN
+```
+
+##### 2. 添加新规则
+
+```bash
+sudo iptables -t nat -I SHADOWSOCKS -d 144.202.119.245 -j RETURN
+```
+
+##### 3. 验证规则
+
+```bash
+sudo iptables -t nat -L SHADOWSOCKS -n -v
+```
+
+应该能看到 `144.202.119.245` 在第一条。
+
+##### 4. 保存规则（重要！）
+
+否则重启后规则会丢失：
+
+```bash
+sudo iptables-save > /etc/iptables/rules.v4
+```
+
+或者如果安装了 `iptables-persistent`：
+
+```bash
+sudo netfilter-persistent save
+```
+
+### 4. sudo systemctl restart shadowsocks-libev-redir@redir
 
 重启ss-redir服务
 
-### 4. sudo systemctl status shadowsocks-libev-redir@redir
+### 5. sudo systemctl status shadowsocks-libev-redir@redir
 
 basteng@basteng:~ $ sudo systemctl status shadowsocks-libev-redir@redir
 
@@ -1966,13 +2012,13 @@ Sep 21 23:47:45 basteng ss-redir[44720]:  2025-09-21 23:47:45 INFO: Stream ciphe
 Sep 21 23:47:45 basteng ss-redir[44720]:  2025-09-21 23:47:45 INFO: listening at 0.0.0.0:1081
 Sep 21 23:47:45 basteng ss-redir[44720]:  2025-09-21 23:47:45 INFO: UDP relay enabled
 
-### 5. sudo iptables -t nat -L SHADOWSOCKS -n -v
+### 6. sudo iptables -t nat -L SHADOWSOCKS -n -v
 
 basteng@basteng:~ $ sudo iptables -t nat -L SHADOWSOCKS -n -v
 
 Chain SHADOWSOCKS (1 references)
  pkts bytes target     prot opt in     out     source               destination
-    0     0 RETURN     0    --  *      *       0.0.0.0/0            149.28.79.242
+    0     0 RETURN     0    --  *      *       0.0.0.0/0            144.202.119.245
     0     0 RETURN     0    --  *      *       0.0.0.0/0            0.0.0.0/8
     0     0 RETURN     0    --  *      *       0.0.0.0/0            127.0.0.0/8
     0     0 RETURN     0    --  *      *       0.0.0.0/0            169.254.0.0/16
@@ -1981,7 +2027,7 @@ Chain SHADOWSOCKS (1 references)
     0     0 REDIRECT   6    --  *      *       0.0.0.0/0            0.0.0.0/0            redir ports 1081
     0     0 REDIRECT   6    --  *      *       0.0.0.0/0            0.0.0.0/0            redir ports 1081
 
-### 6. sudo netstat -tlnp | grep 1081
+### 7. sudo netstat -tlnp | grep 1081
 
 basteng@basteng:~ $ sudo netstat -tlnp | grep 1081
 
