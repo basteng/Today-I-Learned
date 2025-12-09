@@ -74,6 +74,17 @@
   - [方法 1：配置 Git 全局代理（推荐）](#方法-1配置-git-全局代理推荐)
   - [查看代理](#查看代理)
 - [39. 代理修改后，系统变量中的代理也需要修改](#39-代理修改后系统变量中的代理也需要修改)
+- [40. 绘制连续时间轴双Y轴图表的方法总结](#40-绘制连续时间轴双y轴图表的方法总结)
+  - [40.1 核心代码](#401-核心代码)
+  - [1. 读取数据并转换日期](#1-读取数据并转换日期)
+  - [2. 创建时间数组（关键步骤）](#2-创建时间数组关键步骤)
+  - [3. 自定义日期格式化函数（关键步骤）](#3-自定义日期格式化函数关键步骤)
+  - [4. 使用索引作为X轴（关键步骤）](#4-使用索引作为x轴关键步骤)
+  - [5. 创建双Y轴图表](#5-创建双y轴图表)
+  - [左Y轴](#左y轴)
+  - [右Y轴](#右y轴)
+  - [6. 应用自定义格式化（关键步骤）](#6-应用自定义格式化关键步骤)
+  - [7. 保存图表](#7-保存图表)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1567,3 +1578,72 @@ http_proxy → 改为 http://127.0.0.1:7899
 https_proxy → 改为 http://127.0.0.1:7899
 
 all_proxy → 改为 socks5://127.0.0.1:7898
+
+# 40. 绘制连续时间轴双Y轴图表的方法总结
+
+## 40.1 核心代码
+
+```
+        def format_datetime(x, pos=None):
+            this = np.clip(int(x+0.5), 0, len(array_time)-1)
+            return array_time[this].astype(datetime.datetime)
+
+        func_ax.xaxis.set_major_formatter(ticker.FuncFormatter(format_datetime))
+        func_fig.autofmt_xdate()
+```
+
+核心技巧
+
+问题：使用日期时间作为X轴时，matplotlib会在数据缺失的时间段（如非交易时段）产生断点，导致图表不连续。 解决方案：使用索引作为X轴，通过自定义格式化函数将索引映射回日期时间显示。
+实现代码模板
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
+import numpy as np
+
+## 1. 读取数据并转换日期
+df = pd.read_csv('your_data.csv')
+df['Date'] = pd.to_datetime(df['Date'])
+
+## 2. 创建时间数组（关键步骤）
+array_time = df['Date'].values
+
+## 3. 自定义日期格式化函数（关键步骤）
+def format_datetime(x, pos=None):
+    this = np.clip(int(x+0.5), 0, len(array_time)-1)
+    return pd.to_datetime(array_time[this]).strftime('%Y-%m-%d %H:%M')
+
+## 4. 使用索引作为X轴（关键步骤）
+x_indices = np.arange(len(df))
+
+## 5. 创建双Y轴图表
+fig, ax1 = plt.subplots(figsize=(16, 8))
+
+## 左Y轴
+ax1.plot(x_indices, df['LeftColumn'], color='tab:blue', label='Left Axis')
+ax1.set_ylabel('Left Axis Label', color='tab:blue')
+
+## 右Y轴
+ax2 = ax1.twinx()
+ax2.plot(x_indices, df['RightColumn'], color='tab:red', label='Right Axis')
+ax2.set_ylabel('Right Axis Label', color='tab:red')
+
+## 6. 应用自定义格式化（关键步骤）
+ax1.xaxis.set_major_formatter(ticker.FuncFormatter(format_datetime))
+fig.autofmt_xdate()
+
+## 7. 保存图表
+plt.tight_layout()
+plt.savefig('output.png', dpi=300, bbox_inches='tight')
+关键要点
+使用索引而非日期：x_indices = np.arange(len(df)) 确保X轴连续
+时间数组映射：array_time = df['Date'].values 保存实际时间
+自定义格式化器：ticker.FuncFormatter(format_datetime) 将索引转换为日期显示
+自动格式化：fig.autofmt_xdate() 自动旋转和对齐日期标签
+索引裁剪：np.clip(int(x+0.5), 0, len(array_time)-1) 防止越界
+适用场景
+金融时间序列数据（股票、期权等）
+有交易时段的数据（非24小时连续）
+需要双Y轴显示不同量纲的指标
+需要连续显示而不显示数据空隙的场景
+
