@@ -70,6 +70,15 @@
 - [35. Kodi插件配置](#35-kodi插件配置)
 - [36. 设置Gemini CLI API Key](#36-设置gemini-cli-api-key)
 - [37. Foxmail 6.5导入邮件](#37-foxmail-65导入邮件)
+- [38. VS Code 配置 GitHub 代理](#38-vs-code-配置-github-代理)
+  - [VS Code 配置 GitHub 代理](#vs-code-配置-github-代理)
+    - [方法 1：配置 Git 全局代理（推荐）](#方法-1配置-git-全局代理推荐)
+    - [方法 2：只为 GitHub 配置代理](#方法-2只为-github-配置代理)
+    - [方法 3：在 VS Code 设置中配置](#方法-3在-vs-code-设置中配置)
+    - [方法 4：配置 SSH 代理（如果使用 SSH 连接 GitHub）](#方法-4配置-ssh-代理如果使用-ssh-连接-github)
+    - [验证代理配置](#验证代理配置)
+    - [取消代理配置（如果需要）](#取消代理配置如果需要)
+  - [在 WSL 中配置（如果你在 WSL 里使用 VS Code）](#在-wsl-中配置如果你在-wsl-里使用-vs-code)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1521,4 +1530,119 @@ gemini
 
 D:\Program Files (x86)\Foxmail\mail\lvwb09@tsinghua.edu.cn
 
+# 38. VS Code 配置 GitHub 代理
+
+## VS Code 配置 GitHub 代理
+
+VS Code 中访问 GitHub 需要配置 Git 和 VS Code 的代理设置。
+
+### 方法 1：配置 Git 全局代理（推荐）
+
+打开终端（在 VS Code 中按 `Ctrl + ~`），运行：
+
+```bash
+# HTTP/HTTPS 代理
+git config --global http.proxy http://127.0.0.1:7899
+git config --global https.proxy http://127.0.0.1:7899
+
+# 如果需要 SOCKS5 代理
+git config --global http.proxy socks5://127.0.0.1:7900
+
+# 查看配置
+git config --global --list | grep proxy
+```
+
+### 方法 2：只为 GitHub 配置代理
+
+```bash
+# 只对 GitHub 使用代理
+git config --global http.https://github.com.proxy http://127.0.0.1:7899
+git config --global https.https://github.com.proxy http://127.0.0.1:7899
+
+# 查看配置
+git config --global --list | grep github
+```
+
+### 方法 3：在 VS Code 设置中配置
+
+1. 按 `Ctrl + ,` 打开设置
+2. 搜索 `proxy`
+3. 找到 **Http: Proxy** 设置
+4. 填入：`http://127.0.0.1:7899`
+
+或者直接编辑 `settings.json`：
+
+按 `Ctrl + Shift + P`，输入 `Preferences: Open Settings (JSON)`，添加：
+
+```json
+{
+    "http.proxy": "http://127.0.0.1:7899",
+    "http.proxyStrictSSL": false
+}
+```
+
+### 方法 4：配置 SSH 代理（如果使用 SSH 连接 GitHub）
+
+编辑 SSH 配置文件：
+
+```bash
+# Windows 路径
+nano ~/.ssh/config
+```
+
+添加以下内容：
+
+```
+Host github.com
+    Hostname github.com
+    User git
+    ProxyCommand connect -H 127.0.0.1:7899 %h %p
+```
+
+如果使用 SOCKS5：
+
+```
+Host github.com
+    Hostname github.com
+    User git
+    ProxyCommand connect -S 127.0.0.1:7900 %h %p
+```
+
+### 验证代理配置
+
+```bash
+# 测试 Git 连接
+git ls-remote https://github.com/torvalds/linux.git
+
+# 测试 SSH 连接（如果使用 SSH）
+ssh -T git@github.com
+```
+
+### 取消代理配置（如果需要）
+
+```bash
+# 取消全局代理
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+
+# 取消 GitHub 特定代理
+git config --global --unset http.https://github.com.proxy
+git config --global --unset https.https://github.com.proxy
+```
+
+## 在 WSL 中配置（如果你在 WSL 里使用 VS Code）
+
+如果你在 WSL 中使用 Git，可能需要使用 Windows 主机 IP：
+
+```bash
+# 获取 Windows 主机 IP
+export WINDOWS_HOST=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}' | head -n 1)
+echo $WINDOWS_HOST
+
+# 配置 Git 代理
+git config --global http.proxy http://$WINDOWS_HOST:7899
+git config --global https.proxy http://$WINDOWS_HOST:7899
+```
+
+配置完成后，VS Code 就能通过代理访问 GitHub 了！试试 `git clone` 或者同步 GitHub 仓库看看是否正常。
 
