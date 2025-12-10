@@ -106,6 +106,7 @@
     - [1. sudo nano /etc/shadowsocks-libev/redir.json](#1-sudo-nano-etcshadowsocks-libevredirjson)
     - [2.  sudo netstat -tlnp | grep 1081](#2--sudo-netstat--tlnp--grep-1081)
     - [3. 现在 iptables 规则里的 `149.28.79.242` 是**旧的服务器 IP**，需要改成你当前的服务器 IP `144.202.119.245`。](#3-现在-iptables-规则里的-1492879242-是旧的服务器-ip需要改成你当前的服务器-ip-144202119245)
+      - [首先检查规则，看是否有旧IP](#首先检查规则看是否有旧ip)
       - [修改步骤](#修改步骤)
         - [1. 先删除旧规则](#1-先删除旧规则)
         - [2. 添加新规则](#2-添加新规则)
@@ -1950,6 +1951,11 @@ sudo update-rc.d iptables-restore defaults
 sudo kill <PID>
 
 ### 3. 现在 iptables 规则里的 `149.28.79.242` 是**旧的服务器 IP**，需要改成你当前的服务器 IP `144.202.119.245`。
+
+#### 首先检查规则，看是否有旧IP
+```
+sudo iptables -t nat -L SHADOWSOCKS -n -v
+```
 
 #### 修改步骤
 
