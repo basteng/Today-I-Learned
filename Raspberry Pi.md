@@ -115,6 +115,7 @@
     - [4. sudo systemctl restart shadowsocks-libev-redir@redir](#4-sudo-systemctl-restart-shadowsocks-libev-redirredir)
     - [5. sudo systemctl status shadowsocks-libev-redir@redir](#5-sudo-systemctl-status-shadowsocks-libev-redirredir)
     - [6. sudo iptables -t nat -L SHADOWSOCKS -n -v](#6-sudo-iptables--t-nat--l-shadowsocks--n--v)
+    - [7. sudo netstat -tlnp | grep 1081](#7-sudo-netstat--tlnp--grep-1081)
 - [17. Gridcoin](#17-gridcoin)
   - [17.1 添加自启动服务](#171-添加自启动服务)
   - [方法1：使用 systemd 服务（推荐）](#方法1使用-systemd-服务推荐)
@@ -2034,13 +2035,13 @@ Chain SHADOWSOCKS (1 references)
     0     0 RETURN     0    --  *      *       0.0.0.0/0            10.0.0.0/8
     0     0 REDIRECT   6    --  *      *       0.0.0.0/0            0.0.0.0/0            redir ports 1081
     0     0 REDIRECT   6    --  *      *       0.0.0.0/0            0.0.0.0/0            redir ports 1081
-
+```
 ### 7. sudo netstat -tlnp | grep 1081
 
 basteng@basteng:~ $ sudo netstat -tlnp | grep 1081
 
 tcp        0      0 0.0.0.0:1081            0.0.0.0:*               LISTEN      44720/ss-redir
-```
+
 
 # 17. Gridcoin
 
