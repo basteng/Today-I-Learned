@@ -114,7 +114,6 @@
     - [4. sudo systemctl restart shadowsocks-libev-redir@redir](#4-sudo-systemctl-restart-shadowsocks-libev-redirredir)
     - [5. sudo systemctl status shadowsocks-libev-redir@redir](#5-sudo-systemctl-status-shadowsocks-libev-redirredir)
     - [6. sudo iptables -t nat -L SHADOWSOCKS -n -v](#6-sudo-iptables--t-nat--l-shadowsocks--n--v)
-    - [7. sudo netstat -tlnp | grep 1081](#7-sudo-netstat--tlnp--grep-1081)
 - [17. Gridcoin](#17-gridcoin)
   - [17.1 添加自启动服务](#171-添加自启动服务)
   - [方法1：使用 systemd 服务（推荐）](#方法1使用-systemd-服务推荐)
@@ -1994,6 +1993,7 @@ sudo netfilter-persistent save
 
 ### 5. sudo systemctl status shadowsocks-libev-redir@redir
 
+```
 basteng@basteng:~ $ sudo systemctl status shadowsocks-libev-redir@redir
 
 ● shadowsocks-libev-redir@redir.service - Shadowsocks-Libev Custom Client Service Redir Mode for redir
@@ -2011,9 +2011,11 @@ Sep 21 23:47:45 basteng ss-redir[44720]:  2025-09-21 23:47:45 INFO: initializing
 Sep 21 23:47:45 basteng ss-redir[44720]:  2025-09-21 23:47:45 INFO: Stream ciphers are insecure, therefore deprecated, and should be almost always avoided.
 Sep 21 23:47:45 basteng ss-redir[44720]:  2025-09-21 23:47:45 INFO: listening at 0.0.0.0:1081
 Sep 21 23:47:45 basteng ss-redir[44720]:  2025-09-21 23:47:45 INFO: UDP relay enabled
+```
 
 ### 6. sudo iptables -t nat -L SHADOWSOCKS -n -v
 
+```
 basteng@basteng:~ $ sudo iptables -t nat -L SHADOWSOCKS -n -v
 
 Chain SHADOWSOCKS (1 references)
@@ -2032,6 +2034,7 @@ Chain SHADOWSOCKS (1 references)
 basteng@basteng:~ $ sudo netstat -tlnp | grep 1081
 
 tcp        0      0 0.0.0.0:1081            0.0.0.0:*               LISTEN      44720/ss-redir
+```
 
 # 17. Gridcoin
 
