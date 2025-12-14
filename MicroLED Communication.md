@@ -8591,3 +8591,48 @@ MicroLED 能够呈现绚丽的色彩、高对比度和卓越的能效，使得�
 <https://www.cea.fr/cea-tech/leti/english/Documents/Presentation%20%20PPt/PW24_presentation-workshop-complete-V3_no_video.pdf>
 
 <https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/PW24_presentation-workshop-complete-V3_no_video.pdf>
+# 94. 生物医疗应用 - 脑机接口
+
+## 94.1 西北大学 Micro LED 神经刺激设备
+
+### 94.1.1 研究概述
+
+**发表期刊**：Nature Neuroscience  
+**研究机构**：美国西北大学（Northwestern University）  
+**文章来源**：https://mp.weixin.qq.com/s/quQuwG99C0k_JPYKvEEQOw
+
+近日，美国西北大学（Northwestern University）的科研团队在神经科学领域取得新成果。科学家们开发出一种基于Micro LED阵列技术的微型设备，能够利用光线绕过生物体自然的感官路径，直接向大脑发送信号。相关研究成果已发表在学术期刊《自然·神经科学》（Nature Neuroscience）上。
+
+### 94.1.2 技术特点
+
+**设备特性**：
+- **尺寸**：仅有邮票般大小
+- **LED数量**：集成了64个Micro LED
+- **植入方式**：非侵入式，植入在头皮之下、头骨之上（与传统脑机接口不同，无需深入脑组织内部）
+- **工作原理**：发出的精确光脉冲能够穿透骨骼，激活大脑皮层中特定的神经元群
+
+**技术优势**：
+- 柔软、灵活的微型设计
+- 实时控制每个LED的强度、频率和时序
+- 能够生成近乎无数的刺激图案
+- 模拟真实感官体验时，大脑皮层分布式的神经网络活动，而非仅仅激活局部神经元
+
+### 94.1.3 实验结果
+
+在技术实验过程中，研究人员将设备应用在经过基因改造、对光敏感的老鼠身上。
+
+**实验表现**：
+- 在没有触觉、视觉或听觉参与的情况下，老鼠也能迅速学会解读这些光信号
+- 将光信号视为有意义的指令
+- 据此做出决策，成功完成一系列复杂的行为任务
+
+### 94.1.4 应用前景
+
+研究团队表示，未来这项新技术能够应用在以下医疗场景当中：
+
+1. **假肢感觉反馈**
+2. **疼痛调控**
+3. **神经康复**
+4. **脑控机器人肢体**
+
+这项技术展示了Micro LED在神经科学和生物医疗领域的巨大潜力，为未来的脑机接口应用开辟了新的可能性。
