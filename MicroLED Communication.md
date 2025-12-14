@@ -342,7 +342,6 @@
     - [Key Advantages](#key-advantages)
     - [Applications](#applications)
     - [Technical Status (2025)](#technical-status-2025)
-- [d](#d)
   - [93.2 MicroLED 显示器中的平面传感 - 欧司朗](#932-microled-显示器中的平面传感---欧司朗)
   - [93.3 CEA-Leti workshop](#933-cea-leti-workshop)
 
@@ -8457,12 +8456,10 @@ MicroLED-based ToF technology is still in early commercialization but is expecte
 基于MicroLED的飞行时间 (ToF) 系统是一种新兴的光电传感架构，它使用微型发光二极管 (MicroLED) 作为超快光源来测量距离和深度。这些系统代表了深度传感、激光雷达 (LiDAR) 和 3D 成像的下一代技术，与传统的激光系统相比，在功率效率、速度和小型化方面均有提升。
 
 核心原则
-基于 MicroLED 的 ToF 系统通过发射短且时间精确的光脉冲并测量反射光返回光电探测器所需的时间来运行。距离
-d
+基于 MicroLED 的 ToF 系统通过发射短且时间精确的光脉冲并测量反射光返回光电探测器所需的时间来运行。距离d
 d使用以下方法确定：
 
-d
-=
+d =
 c
 ×
 D
