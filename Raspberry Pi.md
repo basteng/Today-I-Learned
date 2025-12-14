@@ -2191,6 +2191,8 @@ systemd 方法的优点：
 
 本文详细介绍了如何在 Raspberry Pi RP2350 微控制器上使用 PIO（Programmable I/O）和 DMA（Direct Memory Access）技术，实现无需 CPU 干预的高效数据传输。这项技术被广泛应用于需要高速 I/O 处理的场景，如 ROM 模拟、协议实现等。
 
+**原文链接：** <https://hackaday.com/2025/11/30/a-deep-dive-into-using-pio-and-dma-on-the-rp2350/>
+
 ## 什么是 PIO（Programmable I/O）
 
 PIO 是 RP2040 和 RP2350 微控制器的一个强大特性，它允许你配置微型状态机来处理简单的 I/O 逻辑，从而释放 CPU 去执行其他任务。
