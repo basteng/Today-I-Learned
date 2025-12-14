@@ -23,6 +23,7 @@
     - [3.6.2 科学](#362-科学)
     - [3.6.3 技术](#363-技术)
   - [3.7 The Harvard Crimson - 哈佛大学官方学生报纸](#37-the-harvard-crimson---哈佛大学官方学生报纸)
+- [4. AI](#4-ai)
   - [4.1 LifeArchitect.ai 一个非常有意思的AI新闻网站，深入浅出](#41-lifearchitectai-一个非常有意思的ai新闻网站深入浅出)
   - [4.2 寒武纪AI](#42-寒武纪ai)
     - [4.2.1 代表作 新兴的以内存为中心的数据中心](#421-代表作-新兴的以内存为中心的数据中心)
@@ -197,6 +198,8 @@ https://time.com/section/tech/
 The Harvard Crimson 是哈佛大学的官方学生报纸，成立于1873年，是美国历史最悠久的大学日报之一。报道内容涵盖校园新闻、学术研究、观点评论、艺术文化等，由哈佛大学学生独立运营。
 
 https://www.thecrimson.com/
+
+# 4. AI
 
 ## 4.1 LifeArchitect.ai 一个非常有意思的AI新闻网站，深入浅出
 
