@@ -344,6 +344,12 @@
     - [Technical Status (2025)](#technical-status-2025)
   - [93.2 MicroLED 显示器中的平面传感 - 欧司朗](#932-microled-显示器中的平面传感---欧司朗)
   - [93.3 CEA-Leti workshop](#933-cea-leti-workshop)
+- [94. 生物医疗应用 - 脑机接口](#94-生物医疗应用---脑机接口)
+  - [94.1 西北大学 Micro LED 神经刺激设备](#941-西北大学-micro-led-神经刺激设备)
+    - [94.1.1 研究概述](#9411-研究概述)
+    - [94.1.2 技术特点](#9412-技术特点)
+    - [94.1.3 实验结果](#9413-实验结果)
+    - [94.1.4 应用前景](#9414-应用前景)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -8588,6 +8594,7 @@ MicroLED 能够呈现绚丽的色彩、高对比度和卓越的能效，使得�
 <https://www.cea.fr/cea-tech/leti/english/Documents/Presentation%20%20PPt/PW24_presentation-workshop-complete-V3_no_video.pdf>
 
 <https://github.com/basteng/Today-I-Learned/blob/main/Research%20Report/PW24_presentation-workshop-complete-V3_no_video.pdf>
+
 # 94. 生物医疗应用 - 脑机接口
 
 ## 94.1 西北大学 Micro LED 神经刺激设备
