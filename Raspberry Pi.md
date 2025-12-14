@@ -128,6 +128,12 @@
   - [确保配置文件正确](#确保配置文件正确)
   - [验证自动启动](#验证自动启动)
   - [推荐使用方法1（systemd）](#推荐使用方法1systemd)
+- [18. 深入理解 RP2350 的 PIO 和 DMA 使用](#18-深入理解-rp2350-的-pio-和-dma-使用)
+  - [什么是 PIO（Programmable I/O）](#什么是-pioprogrammable-io)
+  - [DMA 与 PIO 的协作](#dma-与-pio-的协作)
+  - [实际应用案例：One ROM 项目](#实际应用案例one-rom-项目)
+  - [开发资源](#开发资源)
+  - [总结](#总结-2)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2180,4 +2186,106 @@ systemd 方法的优点：
 - 标准的Linux服务管理方式
 
 您想使用哪种方法？我推荐使用 systemd 服务的方法，它最为稳定和专业。
+
+# 18. 深入理解 RP2350 的 PIO 和 DMA 使用
+
+本文详细介绍了如何在 Raspberry Pi RP2350 微控制器上使用 PIO（Programmable I/O）和 DMA（Direct Memory Access）技术，实现无需 CPU 干预的高效数据传输。这项技术被广泛应用于需要高速 I/O 处理的场景，如 ROM 模拟、协议实现等。
+
+## 什么是 PIO（Programmable I/O）
+
+PIO 是 RP2040 和 RP2350 微控制器的一个强大特性，它允许你配置微型状态机来处理简单的 I/O 逻辑，从而释放 CPU 去执行其他任务。
+
+**RP2350 的 PIO 架构：**
+- **3 个 PIO 块**，每块包含 **4 个状态机**（共 12 个状态机）
+- 每个状态机配备：
+  - 移位寄存器（Shift Registers）：输入移位寄存器（ISR）和输出移位寄存器（OSR）
+  - 暂存寄存器（Scratch Registers）
+  - FIFO 缓冲区（First-In-First-Out Buffers）：用于与 CPU 或 DMA 交换数据
+  - 状态机程序存储器：最多 32 条指令
+
+**工作原理：**
+你可以编写非常简单的程序来执行快速高效的 I/O 操作，这些程序独立于微控制器上运行的其他代码。状态机通过 FIFO 与主程序通信，可以自动推送（auto-push）或拉取（auto-pull）数据。
+
+## DMA 与 PIO 的协作
+
+DMA（直接内存访问）允许外设直接访问内存，无需 CPU 干预。当 PIO 与 DMA 结合使用时，可以实现真正的零 CPU 开销数据传输。
+
+**协作流程：**
+1. CPU 配置 PIO 状态机和 DMA 通道
+2. 用数据填充内存缓冲区
+3. 启动 DMA
+4. PIO 通过 DREQ（数据请求）信号触发 DMA 传输
+5. DMA 自动将数据从内存传输到 PIO 的 FIFO
+6. PIO 状态机处理数据并输出到 GPIO 引脚
+
+此时，CPU 完全空闲，可以执行其他任务。由于 RP2350 具有高度并行的总线结构，通常不会出现明显的性能下降。
+
+**性能改进：**
+RP2350 相比 RP2040 在 PIO 和 DMA 之间有一个周期的延迟改进。当状态机推送/弹出 FIFO 时，DREQ 信号到达 DMA 的延迟减少了 1 个时钟周期。
+
+**时序特性：**
+- 输出在设置它们的指令执行后 **1 个周期**出现在引脚上
+- 输入在引脚上出现后 **1 个周期**对 PIO 程序可见
+
+## 实际应用案例：One ROM 项目
+
+Piers Finlayson 开发的 **One ROM** 项目是 PIO 和 DMA 技术的绝佳应用示例。该项目使用成本不到 2 美元的 RP2350 微控制器，为复古计算机系统提供了最灵活的 ROM 替代方案。
+
+**项目特点：**
+- **支持的 ROM 类型**：2364、2332 和 2316 ROM
+- **多 ROM 同时模拟**：可以同时为多个 ROM 插槽提供不同的镜像
+- **支持的系统**：Commodore 64、VIC-20、PET、1541 磁盘驱动器等
+- **两个版本**：
+  - **One ROM Fire 🔥**：基于 RP2350，双核处理器，支持更高级的运行时特性
+  - **One ROM Ice ❄️**：基于 STM32F4 微控制器
+
+**Commodore 64 应用：**
+在 Commodore 64 中，单个 One ROM 可以同时替换系统的 BASIC ROM、KERNAL ROM 和字符 ROM。使用 RP2350 A4 stepping 版本后，甚至可以直接在 C64 内部运行，无需电平转换器。
+
+**技术实现：**
+One ROM 项目最近切换到使用 **PIO 多 DMA 模式**，通过以下方式实现 ROM 模拟：
+1. PIO 状态机监听地址总线和控制信号
+2. 当检测到 ROM 读取请求时，通过 FIFO 触发 DMA
+3. DMA 从预加载的 ROM 镜像内存中获取数据
+4. PIO 将数据输出到数据总线
+
+这种方法能够以 **12MHz** 的速度准确模拟 ROM 行为，满足复古系统的时序要求。
+
+## 开发资源
+
+**代码配置要点：**
+```
+DMA 配置：
+- 设置源地址（ROM 镜像在内存中的位置）
+- 设置目标地址（PIO 的 FIFO）
+- 配置传输大小和触发条件
+
+PIO 配置：
+- 编写状态机程序（.pio 文件）
+- 配置引脚映射
+- 设置时钟分频器
+- 启用自动推送/拉取
+```
+
+**学习资源：**
+- [Hackaday 深入教程](https://hackaday.com/2025/11/30/a-deep-dive-into-using-pio-and-dma-on-the-rp2350/)
+- [One ROM GitHub 仓库](https://github.com/piersfinlayson/one-rom)
+- [One ROM 官网](https://onerom.org/)
+- [Raspberry Pi PIO 状态机教程](https://www.weigu.lu/microcontroller/pico_pio/index.html)
+- [MicroPython PIO 文档](https://docs.micropython.org/en/latest/rp2/tutorial/pio.html)
+- [RP2350 PIO 性能讨论](https://forums.raspberrypi.com/viewtopic.php?t=375095)
+
+**应用场景：**
+- 高速协议实现（SPI、I2C、UART 等自定义协议）
+- 视频信号生成（VGA、DVI）
+- ROM/RAM 模拟
+- LED 矩阵驱动（WS2812 等）
+- 音频处理（I2S）
+- 任意波形发生器
+
+## 总结
+
+PIO 和 DMA 的结合使用是 RP2350 微控制器的杀手级特性之一。通过将 I/O 密集型任务卸载到专用硬件，开发者可以构建出性能强大、成本低廉的嵌入式系统。One ROM 项目完美展示了这项技术的实用价值——用不到 2 美元的现代微控制器，为价值数百美元的复古计算机提供了灵活可靠的 ROM 解决方案。
+
+无论是学习嵌入式系统、复古计算，还是需要高性能 I/O 处理，RP2350 的 PIO 和 DMA 都值得深入研究。
 
