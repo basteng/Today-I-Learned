@@ -4464,6 +4464,56 @@ BTW, though I see a dozen folks copying our approach, I don't see anyone else co
 顺便说一句，虽然我看到有十几个人在模仿我们的做法，但我没看到有人在模仿Celestial和Lightmatter的突破性创新。
 ```
 
+## 5.70 Avicena 推进 MicroLED 和光电探测器阵列，实现世界最低功耗的 AI 扩展光学互连
+
+**发布时间**：2025年11月17日
+**会议**：SuperCompute 2025 (SC25)，St. Louis
+**来源**：https://avicena.tech/avicena-advances-microled-and-photo-detector-arrays-to-enable-the-worlds-lowest-power-ai-scale-up-optical-interconnects/
+
+Avicena 在 SC25 上宣布其 LightBundle™ microLED 互连技术取得重大突破，实现了世界最低功耗的 AI 扩展光学互连。
+
+### 关键技术参数
+
+**LightBundle™ 性能指标**：
+- **速度**：4 Gbps per lane
+- **发射电流**：低至 100 µA per LED
+- **能效**：80 fJ/bit per LED
+- **误码率 (BER)**：1×10⁻¹²（原始误码率）
+- **无需 FEC**（前向纠错）
+
+### 技术优势
+
+**与激光方案对比**：
+- 激光光学引擎无法在激光阈值以下工作
+- MicroLED 可以将发射功率扩展到几乎任意低的水平
+- 主要受限于接收器的信噪比（SNR）
+
+**接收器技术突破**：
+这一功耗里程碑得益于 Avicena 最新的高灵敏度接收器技术：
+- 与制造合作伙伴协作开发
+- 采用来自大批量图像传感器工艺的优化光电探测器
+- 显著提升了接收灵敏度，使得超低功耗传输成为可能
+
+### 应用场景
+
+**面向下一代 AI 基础设施**：
+- 扩展 AI 集群架构，跨越多个机架
+- 支持数千个 GPU 的互连
+- 为新兴的**代理 AI 工作负载**（agentic AI workloads）显著提高计算性能
+- 高效解决日益增长的带宽、距离和可靠性要求
+
+**合作伙伴**：
+- 超大规模数据中心
+- AI 加速器厂商
+- 内存合作伙伴
+
+此成果展示了 LightBundle 平台在为下一代 AI 基础设施提供世界最低功耗光学互连方面的能力。
+
+**相关报道**：
+- [Yahoo Finance](https://finance.yahoo.com/news/avicena-advances-microled-photo-detector-110000218.html)
+- [HPCwire](https://www.hpcwire.com/off-the-wire/avicena-advances-microled-and-photo-detector-arrays-to-enable-the-worlds-lowest-power-ai-scale-up-optical-interconnects/)
+- [Business Wire](https://www.businesswire.com/news/home/20251117987293/en/Avicena-Advances-microLED-and-Photo-Detector-Arrays-to-Enable-the-Worlds-Lowest-Power-AI-Scale-up-Optical-Interconnects)
+
 # 6. 《廉价光源可使人工智能更节能》Nature
 
 随着人工智能 (AI) 算法迅速成为日常生活中不可或缺的一部分，人们对训练和运行这些算法所需的大量能源产生了担忧1。实现更节能的 AI 的方法之一是用模拟元件替换传统数字计算机的某些部分。称为光子张量处理单元的设备依靠光来执行机器学习算法所需的矩阵乘法运算2，并且是这条道路上的关键一步。其中一些单元已经在使用3、4，但要在不大幅增加其尺寸的情况下增加它们所包含的组件数量 5 是一项挑战。Dong等人6在《自然》杂志上撰文提出了一种解决方案——一种利用廉价、高效的发光二极管 (LED) 产生的低质量光的计算机架构。
