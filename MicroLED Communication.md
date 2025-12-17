@@ -161,6 +161,7 @@
     - [关键技术参数](#关键技术参数)
     - [技术优势](#技术优势)
     - [应用场景](#应用场景)
+    - [和硅光的差异](#和硅光的差异)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -4522,6 +4523,19 @@ Avicena 在 SC25 上宣布其 LightBundle™ microLED 互连技术取得重大�
 - [Yahoo Finance](https://finance.yahoo.com/news/avicena-advances-microled-photo-detector-110000218.html)
 - [HPCwire](https://www.hpcwire.com/off-the-wire/avicena-advances-microled-and-photo-detector-arrays-to-enable-the-worlds-lowest-power-ai-scale-up-optical-interconnects/)
 - [Business Wire](https://www.businesswire.com/news/home/20251117987293/en/Avicena-Advances-microLED-and-Photo-Detector-Arrays-to-Enable-the-Worlds-Lowest-Power-AI-Scale-up-Optical-Interconnects)
+
+### 和硅光的差异
+
+我认为最重要的一句话
+
+```
+Unlike laser-based optical engines—which cannot operate below a lasing threshold—microLEDs can scale transmit power to nearly arbitrarily low levels, limited primarily by the receiver’s signal-to-noise ratio. While silicon photonics can achieve low effective power by splitting a single external laser across many resonant modulators, microLEDs inherently generate their own light, dramatically simplifying packaging.  Avicena microLED transmitters are only a few microns in size, require no temperature stabilization, and avoid complex control loops. These microscopic emitters can be arrayed at extremely high density to deliver terabits of aggregate bandwidth.
+```
+
+```
+与无法在激光阈值以下工作的激光光引擎不同，微型LED可以将发射功率扩展到几乎任意低的水平，其主要限制因素是接收器的信噪比。虽然硅光子学可以通过将单个外部激光器的光束分配到多个谐振调制器上来实现低有效功率，但微型LED本身就能产生光，从而显著简化封装。Avicena的微型LED发射器尺寸仅为几微米，无需温度稳定，并且避免了复杂的控制回路。这些微型发射器可以以极高的密度排列，从而提供太比特级的总带宽。
+```
+
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
