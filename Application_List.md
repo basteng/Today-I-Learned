@@ -102,6 +102,11 @@
   - [Current role](#current-role)
   - [Research background and contributions](#research-background-and-contributions)
   - [Recognition and impact](#recognition-and-impact)
+- [22. Gwangju Institute of Science and Technology (GIST, gist.ac.kr)](#22-gwangju-institute-of-science-and-technology-gist-gistackr)
+  - [GIST overview](#gist-overview)
+  - [GaN‑related research at GIST](#ganrelated-research-at-gist)
+  - [Representative GaN researchers at GIST](#representative-gan-researchers-at-gist)
+    - [Key GaN‑related figures (summary table)](#key-ganrelated-figures-summary-table)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -1613,6 +1618,97 @@ Shields 在学术界以半导体单光子和纠缠光子源、高速单光子探
 2022 年，他获得了英国物理学会颁发的 Katharine Burr Blodgett 奖章和奖金，以表彰他在开发可集成到传统电信网络中的量子通信设备和系统方面发挥的领导作用。​
 
 他的工作极大地提高了量子通信的成熟度，帮助该领域从小型实验发展到商业量子安全网络，并影响了量子安全基础设施的国际发展。
+
+# 22. Gwangju Institute of Science and Technology (GIST, gist.ac.kr)
+
+Gwangju Institute of Science and Technology (GIST, gist.ac.kr) is a government-sponsored, research‑oriented science and engineering university located in Gwangju, South Korea, founded in 1993 and regarded as one of Korea’s leading institutes in advanced science and technology.  It focuses heavily on graduate education and cutting‑edge research across areas such as electrical engineering, materials science, physics, photonics, and nanobio/semiconductors.[1][2][3][4][5]
+
+## GIST overview
+
+- GIST was established in 1993 by the Korean government as a research‑oriented graduate school and later expanded to include undergraduate programs.[4][1]
+- The institute aims to build a strong research base, foster international and domestic collaboration, and drive national science and technology development, operating under the motto “A Proud Creator of Future Science and Technology.”[2][3][4]
+- It is consistently ranked among the higher‑performing universities in Korea and Asia in innovation and research metrics (for example, Reuters “Most Innovative Universities in Asia”).[5][6][4]
+
+## GaN‑related research at GIST
+
+Gallium nitride (GaN) at GIST is mainly pursued in semiconductor, materials, and photonics groups, focusing on epitaxy, nanostructures, and optoelectronic devices.
+
+- A notable line of work is GaN remote epitaxy: a GIST team led by Prof. Dong‑Seon Lee demonstrated growth of GaN thin films on graphene/AlN templates by MOCVD, studying how AlN surface pits affect GaN growth and exfoliation for substrate‑reusable “GaN membrane” technology.[3]
+- GIST laboratories report projects on high‑quality GaN membranes using substrate‑reusable remote‑epitaxy, and on simultaneous growth/fabrication of group‑III‑nitride red/green/blue LEDs via selective‑area stress control, indicating active research in GaN thin films, nanowires, and LED device integration.[7][8]
+- GaN is also used as a platform for advanced optoelectronic and display devices, including GaN‑based micro‑LED and other compound‑semiconductor optoelectronic structures within GIST’s semiconductor device and fabrication research.[8]
+
+## Representative GaN researchers at GIST
+
+Public English‑language sources explicitly highlight a few GIST faculty as key figures in GaN‑related work.
+
+- Prof. Dong‑Seon Lee (School of Electrical Engineering and Computer Science / Department of Semiconductor Engineering) leads work on GaN remote epitaxy on graphene/AlN templates and GaN thin‑film devices; his group’s ACS Nano study on GaN remote epitaxy and substrate recycling for high‑quality GaN semiconductors is prominently featured.[3]
+- Prof. Hoe‑Min Kwak is listed as project leader for “Development of technology for fabrication of high‑quality GaN membrane based on substrate‑reusable remote‑epitaxy technique,” making him another central GaN researcher at GIST.[7]
+- Prof. Jeong‑Woon Kim is identified as project leader for “Development of simultaneous growth and fabrication of group‑III‑nitride‑based red/green/blue LEDs through selective‑area stress control,” which relies on GaN and related III‑nitride materials for full‑color LED integration.[8][7]
+
+### Key GaN‑related figures (summary table)
+
+| Role / focus at GIST                      | GaN‑related contribution (from public sources)                                  |
+|------------------------------------------|----------------------------------------------------------------------------------|
+| Prof. Dong‑Seon Lee                      | Remote epitaxy of GaN on graphene/AlN, GaN thin films and high‑quality GaN for power and EV‑related semiconductors. [3] |
+| Prof. Hoe‑Min Kwak                       | High‑quality GaN membranes via substrate‑reusable remote‑epitaxy techniques. [7] |
+| Prof. Jeong‑Woon Kim                     | Group‑III‑nitride (GaN‑based) RGB LEDs using selective‑area stress control. [7][8] |
+
+If you want, a next step can be a more detailed list of specific GaN papers or device types from each of these labs.
+
+[1](https://en.wikipedia.org/wiki/Gwangju_Institute_of_Science_and_Technology)
+[2](https://www.hipeac.net/network/institutions/7546/gist/)
+[3](https://www.eurekalert.org/news-releases/1001232)
+[4](https://service.gist.ac.kr/applicationGuide/Brochure%20of%20International%20Undergraduate%20Admission.pdf)
+[5](https://www.topuniversities.com/universities/gwangju-institute-science-technology-gist)
+[6](http://nturanking.csti.tw/ranking/bySchoolName/Gwangju%20Institute%20of%20Science%20and%20Technology)
+[7](https://ssll.gist.ac.kr/ssll/29234.do)
+[8](https://cwww.gist.ac.kr/semi_eng/sub03_0101.do;jsessionid=C7E9F51EF8EB7B22A04FC69CD087C0E9)
+[9](https://ewww.gist.ac.kr/en/)
+[10](https://life.gist.ac.kr/lifeeng/sub03_01_02.do)
+[11](https://life.gist.ac.kr/prog/gsPerson/lifeeng/P/list.do)
+[12](https://mse.gist.ac.kr/prog/gsMember/sanghan/S/sub01_01_02/list.do)
+[13](https://gist.amegroups.org/article/view/106129/html)
+[14](https://bmse.gist.ac.kr/prog/gsMember/aeml/ALL/sub03_01/list.do)
+[15](https://projecteuclid.org/journals/statistical-science/volume-20/issue-1/A-Conversation-with-Shelemyahu-Zacks/10.1214/088342305000000133.pdf)
+[16](https://dl.acm.org/doi/10.1145/3672457)
+[17](https://www.prnewswire.com/news-releases/gwangju-institute-of-science-and-technology-researchers-reveal-the-effect-of-aln-surface-pits-on-gan-remote-epitaxy-301925610.html)
+[18](https://orcid.org/members)
+[19](https://pmc.ncbi.nlm.nih.gov/articles/PMC5526756/)
+[20](https://webcms.kaust.edu.sa/topics/gan)
+
+光州科学技术院（GIST，gist.ac.kr）是一所位于韩国光州的政府资助的研究型理工大学，成立于1993年，被誉为韩国顶尖的先进科学技术研究机构之一。该校重点发展研究生教育，并在电气工程、材料科学、物理学、光子学和纳米生物/半导体等领域开展前沿研究。​
+
+GIST概述
+GIST由韩国政府于1993年创立，是一所研究型研究生院，后来扩展到包括本科课程。​
+
+该研究所旨在建立强大的研究基础，促进国际和国内合作，推动国家科技发展，以“未来科技的骄傲创造者”为座右铭。​
+
+在创新和研究指标方面，它一直位列韩国和亚洲表现较好的大学之列（例如，路透社“亚洲最具创新力的大学”）。​
+
+大江南理工学院的氮化镓相关研究
+GIST主要在半导体、材料和光子学研究小组开展氮化镓（GaN）的研究，重点是外延、纳米结构和光电器件。
+
+一项值得关注的研究方向是GaN远程外延：由李东善教授领导的GIST团队通过MOCVD技术在石墨烯/AlN模板上生长GaN薄膜，研究AlN表面凹坑如何影响GaN的生长和剥离，从而实现可重复利用衬底的“GaN膜”技术。​
+
+GIST 实验室报告了利用衬底可重复利用的远程外延技术制备高质量 GaN 薄膜的项目，以及通过选择性区域应力控制同时生长/制造 III 族氮化物红/绿/蓝 LED 的项目，表明 GaN 薄膜、纳米线和 LED 器件集成方面的研究正在积极开展。​
+
+GaN 也被用作先进光电和显示器件的平台，包括 GIST 半导体器件和制造研究中的 GaN 基微型 LED 和其他化合物半导体光电结构。​
+
+格陵兰科学技术研究院 (GIST) 的代表性氮化镓 (GaN) 研究人员
+公开的英文资料明确​​指出，GIST 的一些教职员工是 GaN 相关工作的关键人物。
+
+李东善教授（电气工程与计算机科学学院/半导体工程系）领导着石墨烯/氮化铝模板上的氮化镓远程外延和氮化镓薄膜器件的研究工作；他的团队在《ACS Nano》上发表了关于氮化镓远程外延和衬底回收利用以获得高质量氮化镓半导体的研究，该研究得到了重点介绍。​
+
+郭浩民教授被列为“基于衬底可重复利用的远程外延技术制造高质量GaN薄膜的技术开发”项目负责人，这使他成为GIST的另一位核心GaN研究人员。​
+
+Jeong‑Woon Kim 教授被认定为“通过选择性区域应力控制开发基于 III 族氮化物的红/绿/蓝 LED 的同步生长和制造”项目的负责人，该项目依赖于 GaN 和相关的 III 族氮化物材料来实现全彩 LED 集成。​
+
+关键氮化镓相关数据（汇总表）
+在GIST的角色/重点	GaN相关贡献（来自公开来源）
+李东善教授	在石墨烯/AlN上远程外延生长GaN，GaN薄膜和高质量GaN用于电力和电动汽车相关半导体。​
+郭浩民教授	采用衬底可重复利用的远程外延技术制备高质量GaN薄膜。​
+金正云教授	采用选择性区域应力控制的 III 族氮化物 (GaN) 基 RGB LED。​
+
 
 
 
