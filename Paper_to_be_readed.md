@@ -20,7 +20,7 @@
 **论文链接：**
 <https://webhomes.maths.ed.ac.uk/~v1ranick/papers/maxwell1>
 
-![](/paper/maxwell_控制论开山论文.pdf)
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/maxwell_%E6%8E%A7%E5%88%B6%E8%AE%BA%E5%BC%80%E5%B1%B1%E8%AE%BA%E6%96%87.pdf>
 
 ---
 
