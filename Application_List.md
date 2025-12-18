@@ -107,6 +107,12 @@
   - [GaN‑related research at GIST](#ganrelated-research-at-gist)
   - [Representative GaN researchers at GIST](#representative-gan-researchers-at-gist)
     - [Key GaN‑related figures (summary table)](#key-ganrelated-figures-summary-table)
+- [23. Kyma Technologies](#23-kyma-technologies)
+  - [What Kyma Technologies does](#what-kyma-technologies-does)
+  - [Products and services](#products-and-services)
+  - [Company background and mission](#company-background-and-mission)
+  - [How to contact or learn more](#how-to-contact-or-learn-more)
+  - [专家 Tanya Paskova - Nonpolar](#专家-tanya-paskova---nonpolar)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -1707,9 +1713,69 @@ Jeong‑Woon Kim 教授被认定为“通过选择性区域应力控制开发基
 在GIST的角色/重点	GaN相关贡献（来自公开来源）
 李东善教授	在石墨烯/AlN上远程外延生长GaN，GaN薄膜和高质量GaN用于电力和电动汽车相关半导体。​
 郭浩民教授	采用衬底可重复利用的远程外延技术制备高质量GaN薄膜。​
-金正云教授	采用选择性区域应力控制的 III 族氮化物 (GaN) 基 RGB LED。​
+金正云教授	采用选择性区域应力控制的 III 族氮化物 (GaN) 基 RGB LED。
 
+# 23. Kyma Technologies
 
+kymatech.com is the website for **Kyma Technologies**, a U.S.-based semiconductor materials company that focuses on wide bandgap materials such as gallium nitride (GaN), aluminum nitride (AlN), and gallium oxide (Ga₂O₃).[1][4]
 
+## What Kyma Technologies does
+- Develops and supplies substrates, templates, and epiwafers used in advanced power electronics, RF, optoelectronics, and some photovoltaic applications.[4][1]
+- Uses specialized crystal growth and epitaxy techniques (including hydride vapor phase epitaxy, HVPE) to improve material quality and scalability of GaN and related materials.[2][8]
 
+## Products and services
+- **Materials**: GaN, AlN, Ga₂O₃ substrates and templates, epiwafers, and related wide bandgap semiconductor materials for high-performance devices.[8][1][4]
+- **Tools and devices**: Crystal growth tools (such as HVPE growth systems) and high-speed power switching devices like the KO‑Switch for pulsed power and protection applications.[7][8]
+- **Engineering services**: Materials characterization, wafer polishing, device fabrication support, and specialty parts manufacturing for semiconductor R&D and production.[9][7]
 
+## Company background and mission
+- The company positions itself as supporting more efficient power electronics and energy technologies, with an emphasis on enabling cleaner and more sustainable energy systems.[2]
+- It has a history of collaborations and partnerships with universities, government labs, and industry on GaN, Ga₂O₃, and related advanced materials projects.[5][8]
+
+## How to contact or learn more
+- The main office is located in Raleigh, North Carolina, and the site provides contact details (email, phone, and address) plus sections for product info, news, and technical articles.[3][10][1]
+
+If you share what you want to do (buy materials, find jobs, or evaluate them as a supplier), a more tailored overview can be provided.
+
+[1](https://www.kymatech.com)
+[2](https://www.kymatech.com/general-about-page)
+[3](https://www.kymatech.com/contact-us)
+[4](https://www.kymatech.com/sub-divided-products/substrates)
+[5](https://www.kymatech.com/company-history)
+[6](https://kyma-tech.com/en/)
+[7](https://www.kymatech.com/sub-divided-products/engineering-services)
+[8](https://www.kymatech.com/view-all-page)
+[9](https://www.kymatech.com/news/imported-item-140)
+[10](https://www.kymatech.com/news)
+
+kymatech.com 是Kyma Technologies的网站，这是一家总部位于美国的半导体材料公司，专注于宽带隙材料，例如氮化镓 (GaN)、氮化铝 (AlN) 和氧化镓 (Ga₂O₃)。​
+
+Kyma Technologies 的业务范围
+开发并供应用于先进电力电子、射频、光电子和一些光伏应用的基板、模板和外延片。​
+
+采用专门的晶体生长和外延技术（包括氢化物气相外延，HVPE）来提高GaN及相关材料的材料质量和可扩展性。​
+
+产品和服务
+材料：GaN、AlN、Ga₂O₃衬底和模板、外延片以及用于高性能器件的相关宽带隙半导体材料。​
+
+工具和设备：晶体生长工具（如 HVPE 生长系统）和高速功率开关设备，如用于脉冲功率和保护应用的 KO-Switch。​
+
+工程服务：半导体研发和生产的材料表征、晶圆抛光、器件制造支持和特种零件制造。​
+
+公司背景和使命
+该公司致力于支持更高效的电力电子和能源技术，重点是实现更清洁、更可持续的能源系统。​
+
+该公司在氮化镓、氧化镓及相关先进材料项目方面，与大学、政府实验室和工业界有着长期的合作与伙伴关系。​
+
+如何联系或了解更多信息
+总部位于北卡罗来纳州罗利市，网站提供联系方式（电子邮件、电话和地址），以及产品信息、新闻和技术文章等版块。​
+
+如果您能分享您想做的事情（购买材料、寻找工作或作为供应商进行评估），我们可以提供更有针对性的概述。
+
+## 专家 Tanya Paskova - Nonpolar
+
+Tanya Paskova has obtained her academic degrees from Sofia University, Bulgaria and Linköping University, Sweden. She held posts as an assistant professor at Sofia University, a visiting lecturer and associate professor at Linköping University and University of Bremen, and has recently joined Kyma Technologies (a leading supplier of native bulk nitride material and related products) as a chief scientist. Her research interests are focused on development of GaN epitaxial growth for substrate applications and study of basic properties of nitride materials and structures. Dr. Paskova has authored more than 200 scientific papers, reviews, chapters, and invited talks at international forums and university seminars and has edited two books, entitled “Nitrides as seen by the technology” and “Nitrides with nonpolar surfaces: growth, properties and devices”.
+
+- Development and prospects of nitride materials and devices with nonpolar surfaces
+
+<DOI 10.1002/pssb.200743274>
