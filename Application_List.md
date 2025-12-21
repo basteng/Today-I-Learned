@@ -119,6 +119,11 @@
   - [GaN‑Based MicroLED Research Context](#ganbased-microled-research-context)
   - [Raxium’s LED and Display Targets](#raxiums-led-and-display-targets)
   - [People and “Famous” Researchers](#people-and-famous-researchers)
+  - [Aurelien David](#aurelien-david)
+  - [Who Aurelien David Is](#who-aurelien-david-is)
+  - [Role at Google / Raxium](#role-at-google--raxium)
+  - [Research Contributions in GaN / LEDs](#research-contributions-in-gan--leds)
+  - [Aurelien David](#aurelien-david-1)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -1893,3 +1898,67 @@ Raxium 的公开描述重点介绍了超紧凑型 RGB 微型 LED 阵列，旨在
 
 由于 Raxium 的详细员工名单和具体的明星研究人员尚未广泛披露，因此公开领域的大多数信息都集中在该公司的技术平台及其在谷歌内部的战略作用上，而不是个别科学家身上。
 
+## Aurelien David
+
+Aurelien David is a physicist and LED scientist working at Google / Raxium, with an address at 1600 Amphitheater Parkway, Mountain View, CA 94043, USA. He is widely recognized for his work on III‑nitride (GaN/InGaN) LEDs, microLED device physics, and color and vision science.[1][2][3][4]
+
+## Who Aurelien David Is
+
+- Aurelien David is an expert in III‑nitride device physics and an Optica Fellow with a PhD in applied physics from École Polytechnique / UC Santa Barbara.[4][1]
+- His Google Scholar profile lists major topics such as optics and spectroscopy, semiconductors, light‑emitting diodes, nanostructures, and color and vision science.[5][1]
+
+## Role at Google / Raxium
+
+- Recent publications list his affiliation as “Google / Raxium, 1600 Amphitheater Pkwy, Mountain View CA 94043, USA,” indicating a research role spanning both Google and its microLED subsidiary Raxium.[2][3]
+- He has given invited talks on microLEDs “from device physics to novel displays,” reflecting involvement in bridging fundamental GaN LED physics with AR / micro‑display applications.[6][4]
+
+## Research Contributions in GaN / LEDs
+
+- He has authored highly cited papers on InGaN/GaN LED efficiency, droop, carrier distribution, and photonic‑crystal GaN LEDs, which are foundational to high‑performance GaN‑based emitters.[7][1]
+- His work also includes advanced modeling of electrical and optical properties of III‑nitride LEDs and, more recently, the optical properties of InGaN quantum wells including the effects of disorder, relevant to microLED and high‑brightness display development.[8][2]
+
+[1](https://scholar.google.com/citations?user=9BnC3LEAAAAJ&hl=en)
+[2](https://arxiv.org/pdf/2512.11312.pdf)
+[3](https://arxiv.org/html/2512.11312v1)
+[4](https://spie.org/photonics-west/presentation/Disorder-and-the-luminescence-of-InGaN-emitters/13896-20)
+[5](https://scholar.google.com/citations?user=9BnC3LEAAAAJ)
+[6](https://pub.confit.atlas.jp/en/event/idw2021/presentation/PH1-02)
+[7](https://pubs.aip.org/aip/apl/article/110/25/253504/33549/All-optical-measurements-of-carrier-dynamics-in)
+[8](https://arxiv.org/abs/1606.09345)
+[9](https://scholar.google.com.tw/citations?user=9BnC3LEAAAAJ&hl=ja)
+[10](https://quantumzeitgeist.com/quantum-ingan-wells-model-accurately-explains-disorder-role-luminescence/)
+[11](https://www.societe.com/manager/Aurelien.DAVID.ubSPFTZXug6.html)
+[12](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13386/1338601/Front-Matter-Volume-13386/10.1117/12.3068353.pdf)
+[13](https://www.ecosenselighting.com/part-1-picking-the-brain-of-a-soraa-scientist-aurelien-david/)
+[14](http://www.aureliendavid.fr)
+[15](https://www.ecosenselighting.com/part-2-picking-the-brain-of-a-soraa-scientist-aurelien-david/)
+[16](https://scholar.google.com/citations?user=tFKkSBf17SMC&hl=en)
+[17](https://orcid.org/0000-0003-3155-6370)
+[18](https://scholar.google.co.il/citations?user=_rkaX6sAAAAJ&hl=fil)
+[19](https://aureliendavidphoto.com/who-i-am/)
+[20](https://www.linkedin.com/in/aurelien-david)
+
+## Aurelien David
+
+Aurelien David 是一位物理学家和 LED 科学家，就职于 Google / Raxium，地址为 1600 Amphitheater Parkway, Mountain View, CA 94043, USA。他在 III 族氮化物 (GaN/InGaN) LED、微型 LED 器件物理以及色彩和视觉科学领域的研究广受认可。
+​
+
+奥雷利安·大卫是谁
+Aurelien David 是 III 族氮化物器件物理领域的专家，也是 Optica 研究员，拥有巴黎综合理工学院/加州大学圣巴巴拉分校应用物理学博士学位。
+​
+
+他的 Google Scholar 个人资料列出了光学和光谱学、半导体、发光二极管、纳米结构以及色彩和视觉科学等主要研究领域。
+​
+
+Google/Raxium 的职位
+最近的出版物将他的隶属关系列为“Google / Raxium, 1600 Amphitheater Pkwy, Mountain View CA 94043, USA”，表明他的研究角色涵盖了 Google 及其 microLED 子公司 Raxium。
+​
+
+他曾受邀就微型 LED 发表演讲，“从器件物理到新型显示器”，这体现了他致力于将基础 GaN LED 物理与 AR / 微显示应用联系起来的努力。
+​
+
+GaN/LED领域的研究贡献
+他撰写了多篇关于 InGaN/GaN LED 效率、光衰、载流子分布和光子晶体 GaN LED 的高被引论文，这些论文是高性能 GaN 基发射器的基础。
+​
+
+他的研究工作还包括对 III 族氮化物 LED 的电学和光学特性进行高级建模，以及最近对 InGaN 量子阱的光学特性（包括无序效应）进行建模，这与微型 LED 和高亮度显示器的开发密切相关。
