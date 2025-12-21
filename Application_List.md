@@ -113,6 +113,12 @@
   - [Company background and mission](#company-background-and-mission)
   - [How to contact or learn more](#how-to-contact-or-learn-more)
   - [专家 Tanya Paskova - Nonpolar](#专家-tanya-paskova---nonpolar)
+- [24. Google - Raxium](#24-google---raxium)
+  - [What Raxium Is](#what-raxium-is)
+  - [MicroLED and GaN Focus](#microled-and-gan-focus)
+  - [GaN‑Based MicroLED Research Context](#ganbased-microled-research-context)
+  - [Raxium’s LED and Display Targets](#raxiums-led-and-display-targets)
+  - [People and “Famous” Researchers](#people-and-famous-researchers)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -1779,3 +1785,111 @@ Tanya Paskova has obtained her academic degrees from Sofia University, Bulgaria 
 - Development and prospects of nitride materials and devices with nonpolar surfaces
 
 <DOI 10.1002/pssb.200743274>
+
+# 24. Google - Raxium
+
+Raxium is a Google-owned microLED display company that focuses on ultra‑compact, high‑brightness LED technology for augmented reality (AR), mixed reality (MR), and advanced display systems. Its research is centered on GaN‑based microLEDs and monolithic integration, aiming at very high pixel density, high efficiency, and very high luminance suitable for AR glasses and light‑field displays.[1][2][3]
+
+## What Raxium Is
+
+- Raxium was founded around 2017 as a startup developing tiny, high‑efficiency light‑emitting diodes for display applications, especially AR and VR.[2][4]
+- Google announced the acquisition of Raxium in 2022 and integrated it into the Devices & Services organization to support future hardware such as AR headsets.[5][1]
+- The company focuses on **microLED** technology with pixels at micron to sub‑micron scale, targeting millions of nits of brightness, high wall‑plug efficiency, and very high resolution.[3][6]
+
+## MicroLED and GaN Focus
+
+- Raxium develops single‑panel microLED displays where the LED pixels themselves form the image, a key approach for compact AR and MR near‑eye displays.[6][5]
+- Its technology roadmap emphasizes monolithic integration of microLEDs on a single substrate, which can reduce manufacturing cost and improve yield versus mass‑transfer approaches.[7][3]
+- For visible microLEDs, gallium nitride (GaN) is the main semiconductor platform for blue and green, and advanced GaN/InGaN structures are being explored to extend emission toward efficient red, a major challenge for full‑color microLED displays.[8][9]
+
+## GaN‑Based MicroLED Research Context
+
+- GaN‑based microLEDs offer advantages such as high current‑density capability, faster modulation, and higher brightness than traditional LEDs, which makes them particularly attractive for AR and visible‑light communication.[10][8]
+- Recent research trends include low‑damage GaN etching, improved sidewall passivation, and novel epitaxial schemes (such as confined selective epitaxy and nanowire or porous‑GaN approaches) to boost external quantum efficiency for very small pixels.[11][8][10]
+- Across the industry, GaN microLED work also explores flexible substrates and new device geometries (for example, GaN microLED arrays on graphene and pyramidal GaN emitters) that could eventually complement or compete with approaches like those Raxium pursues.[12][13][14]
+
+## Raxium’s LED and Display Targets
+
+- Public descriptions from Raxium highlight ultra‑compact RGB microLED arrays aimed at both near‑eye micro‑displays and large light‑field panels, enabling autostereoscopic and light‑field visualization without headsets.[15][3][7]
+- Target specifications include very high luminance (on the order of millions of nits), high contrast, and high frame rate, which are necessary to overcome optical losses in AR waveguides and to support immersive light‑field displays.[3][6]
+- By combining high efficiency with small pixel pitch, the technology is intended to support high‑resolution AR glasses (internally associated with projects such as Google’s AR hardware efforts) while keeping power consumption low.[16][2]
+
+## People and “Famous” Researchers
+
+- Google’s public announcement does not list individual Raxium founders or scientists, but describes the team collectively as having “spent five years creating miniaturized, cost‑effective and energy efficient high‑resolution displays.”[1][5]
+- In the broader GaN and microLED field, influential researchers include groups working on GaN‑based microLED physics, sidewall passivation, and novel epitaxy (for example, teams reported in recent GaN microLED review articles and device innovation papers), though these are not explicitly tied to Raxium in public sources.[8][11]
+- Because detailed staff rosters and specific star researchers at Raxium have not been widely disclosed, most information in the public domain focuses on the company’s technology platform and its strategic role inside **Google** rather than on individual scientists.[4][1]
+
+[1](https://blog.google/inside-google/company-announcements/google-acquires-raxium/)
+[2](https://siliconangle.com/2022/05/04/google-confirms-acquired-microled-startup-raxium/)
+[3](https://raxium.google)
+[4](https://www.theinformation.com/articles/google-buys-hardware-startup-raxium-to-fuel-ar-ambitions)
+[5](https://www.channele2e.com/news/google-acquires-raxium-gains-augmented-reality-display-hardware)
+[6](https://vrx.vr-expert.com/google-acquires-ar-led-maker-raxium-for-one-billion-dollars/)
+[7](https://kguttag.com/2025/07/26/google-xr-glasses-using-googles-raxium-microleds-while-waveguide-lab-sold-to-vuzix/)
+[8](https://pmc.ncbi.nlm.nih.gov/articles/PMC10220879/)
+[9](https://kguttag.com/2023/01/16/ces-2023-part-2-porotech-the-most-advanced-microled-technology/)
+[10](https://semiengineering.com/microleds-move-toward-commercialization/)
+[11](https://www.depts.ttu.edu/ece/nanophotonics/news/Physics%20Today%20microLED.pdf)
+[12](https://www.microled-info.com/polar-light-technologies-fabricated-its-first-microled-microdisplay-using-its)
+[13](https://www.microled-info.com/researchers-succesfully-grow-gan-microled-arrays-flexible-graphene-substrate)
+[14](https://www.microledassociation.com/wp-content/uploads/2023/08/MicroLED-Monolithic-transfer-MIA-WP-2023-08.pdf)
+[15](https://www.reddit.com/r/AR_MR_XR/comments/tgacc2/google_acquires_microled_developer_raxium_for/)
+[16](https://www.xrtoday.com/augmented-reality/google-buys-raxium-to-boost-ar-hardware/)
+[17](https://www.led-professional.com/all/google-acquires-microled-startup-raxium)
+[18](https://www.cnet.com/tech/computing/google-acquires-microled-startup-raxium-for-future-ar-and-mr-tech/)
+[19](https://www.roadtovr.com/google-microled-ar-vr-xr-raxium/)
+[20](https://www.idtechex.com/en/research-report/micro-led-displays/968)
+
+Raxium是一家隶属于谷歌的微型LED显示公司，专注于为增强现实（AR）、混合现实（MR）和先进显示系统开发超紧凑、高亮度LED技术。其研究重点是基于GaN的微型LED和单片集成技术，旨在实现极高的像素密度、效率和亮度，以满足AR眼镜和光场显示器的需求。
+​
+
+Raxium是什么
+Raxium 成立于 2017 年左右，是一家初创公司，致力于开发用于显示应用（尤其是 AR 和 VR）的小型高效发光二极管。
+​
+
+谷歌于 2022 年宣布收购 Raxium，并将其整合到设备与服务部门，以支持未来的硬件，例如 AR 头显。
+​
+
+该公司专注于微米级到亚微米级像素的微型LED技术，目标是实现数百万尼特的亮度、高电能效率和极高的分辨率。
+​
+
+MicroLED 和 GaN 聚焦
+Raxium 开发出单面板微型 LED 显示器，其中 LED 像素本身形成图像，这是紧凑型 AR 和 MR 近眼显示器的关键方法。
+​
+
+其技术路线图强调在单个基板上单片集成微型LED，与大规模转移方法相比，这可以降低制造成本并提高良率。
+​
+
+对于可见光微型LED而言，氮化镓（GaN）是蓝色和绿色的主要半导体平台，而先进的GaN/InGaN结构正在被探索，以将发光扩展到高效的红色，这是全彩微型LED显示器面临的一个重大挑战。
+​
+
+基于氮化镓的微型LED研究背景
+与传统 LED 相比，基于 GaN 的微型 LED 具有高电流密度能力、更快的调制速度和更高的亮度等优势，这使得它们在 AR 和可见光通信领域特别具有吸引力。
+​
+
+近期研究趋势包括低损伤 GaN 刻蚀、改进的侧壁钝化以及新型外延方案（如受限选择性外延和纳米线或多孔 GaN 方法），以提高极小像素的外部量子效率。
+​
+
+整个行业都在探索 GaN 微型 LED 的柔性衬底和新的器件几何形状（例如，石墨烯上的 GaN 微型 LED 阵列和金字塔形 GaN 发射器），这些最终可能会与 Raxium 等公司所采用的方法形成互补或竞争。
+​
+
+Raxium 的 LED 和显示目标
+Raxium 的公开描述重点介绍了超紧凑型 RGB 微型 LED 阵列，旨在用于近眼微型显示器和大型光场面板，无需头戴式设备即可实现自动立体和光场可视化。
+​
+
+目标规格包括极高的亮度（数百万尼特级别）、高对比度和高帧率，这些对于克服 AR 波导中的光学损耗以及支持沉浸式光场显示是必要的。
+​
+
+该技术将高效率与小像素间距相结合，旨在支持高分辨率 AR 眼镜（内部与谷歌的 AR 硬件项目等相关），同时保持低功耗。
+​
+
+人物与“著名”研究人员
+谷歌的公开声明没有列出 Raxium 的个人创始人或科学家，而是将该团队描述为“花了五年时间创造了小型化、成本效益高且节能的高分辨率显示器”。
+​
+
+在更广泛的 GaN 和微型 LED 领域，有影响力的研究人员包括从事 GaN 基微型 LED 物理、侧壁钝化和新型外延研究的团队（例如，在最近的 GaN 微型 LED 综述文章和器件创新论文中报道的团队），尽管这些在公开资料中没有明确地与 Raxium 联系起来。
+​
+
+由于 Raxium 的详细员工名单和具体的明星研究人员尚未广泛披露，因此公开领域的大多数信息都集中在该公司的技术平台及其在谷歌内部的战略作用上，而不是个别科学家身上。
+
