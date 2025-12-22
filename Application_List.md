@@ -128,6 +128,11 @@
       - [博士论文](#博士论文)
       - [发表论文](#发表论文)
     - [向SORAA科学家奥雷利安·大卫请教](#向soraa科学家奥雷利安大卫请教)
+- [25. Ferdinand-Braun-Institut, Leibniz-Institut für Höchstfrequenztechnik (FBH)](#25-ferdinand-braun-institut-leibniz-institut-für-höchstfrequenztechnik-fbh)
+  - [Profile and Mission](#profile-and-mission)
+  - [Main Research Fields](#main-research-fields)
+  - [Technologies and Applications](#technologies-and-applications)
+  - [Infrastructure and Partnerships](#infrastructure-and-partnerships)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -2109,3 +2114,70 @@ SORAA 即将推出的智能灯具系列就是一个很好的例子，它按照�
 在纯科学方面，将会有很多关于材料和半导体的研究，以改进 LED 技术的基本原理。
 
 <https://www.ecosenselighting.com/part-3-picking-the-brain-of-a-soraa-scientist-aurelien-david/> 
+
+# 25. Ferdinand-Braun-Institut, Leibniz-Institut für Höchstfrequenztechnik (FBH)
+
+Ferdinand-Braun-Institut, Leibniz-Institut für Höchstfrequenztechnik (FBH) is an application-oriented research institute in Berlin specializing in high-frequency electronics, photonics, and quantum technologies based on compound semiconductors.[1][2]
+
+## Profile and Mission
+
+- FBH develops electronic and optical components, modules, and systems using III–V compound semiconductors, targeting real-world needs in communication, energy, health, and mobility.[7][1]
+- The institute is part of the Leibniz Association and is located in the Adlershof science and technology park in Berlin.[3][5]
+
+## Main Research Fields
+
+- **High-frequency** electronics: GaN microwave transistors, millimeter-wave and terahertz circuits, power amplifiers, and GaN power electronics for communications and sensing.[4][3]
+- Photonics and integrated quantum technology: high-power diode lasers, UV LEDs, hybrid laser modules, and components for quantum sensors and quantum communication.[3][4]
+
+## Technologies and Applications
+
+- FBH’s light sources span from visible to ultraviolet, enabling applications in medical technology, precision metrology, sensing, and optical satellite communications.[6][4]
+- In microwaves, FBH develops efficient amplifiers, frontends, laser drivers, and compact microwave plasma sources for mobile communications, industrial sensing, and automotive safety systems.[5][7]
+
+## Infrastructure and Partnerships
+
+- The institute operates industry-compatible cleanroom lines (2"–4" wafers) with MOVPE and HVPE epitaxy and comprehensive device processing and characterization facilities.[4][3]
+- Within Research Fab Microelectronics Germany, FBH collaborates with other institutes to offer a full micro- and nanoelectronics value chain and transfers technologies via strategic industry partnerships and spin-offs.[7][4]
+
+[1](https://www.fbh-berlin.de/en/about-us)
+[2](https://www.fbh-berlin.de/en/)
+[3](https://en.wikipedia.org/wiki/Ferdinand-Braun-Institut)
+[4](https://www.leibniz-gemeinschaft.de/institute/leibniz-institute-alle-listen/ferdinand-braun-institut-leibniz-institut-fuer-hoechstfrequenztechnik)
+[5](https://www.adlershof.de/en/companies-institutes/directory/firma/detail/ferdinand-braun-institut-leibniz-institut-fuer-hoechstfrequenztechnik-fbh)
+[6](https://photonics-west.german-pavilion.com/en/sites/exhibitors/131709)
+[7](https://www.linkedin.com/company/ferdinand-braun-institut)
+[8](https://www.nature.com/nature-index/institution-outputs/germany/ferdinand-braun-institut-leibniz-institut-fur-hochstfrequenztechnik-fbh/5195d3d9140ba08024000000)
+[9](https://www.zoominfo.com/c/ferdinand-braun-institut/373331442)
+[10](https://www.era-learn.eu/network-information/networks/eurostars-2/eurostars-cut-off-7/new-generation-of-compact-pantograph-inspection-laser-scanners-cpils/ferdinand-braun-institut-leibniz-institut-fur-hochstfrequenztechnik-fbh-im-forschungsverbund-berlin-e-v-fvb)
+
+费迪南德·布劳恩研究所，莱布尼茨高频技术研究所（FBH）是位于柏林的一家应用型研究机构，专门从事基于化合物半导体的高频电子学、光子学和量子技术的研究。
+​
+
+公司简介及使命
+FBH 利用 III-V 族化合物半导体开发电子和光学元件、模块和系统，以满足通信、能源、健康和移动领域的实际需求。
+​
+
+该研究所是莱布尼茨协会的一部分，位于柏林阿德勒斯霍夫科技园。
+​
+
+主要研究领域
+高频电子器件：氮化镓微波晶体管、毫米波和太赫兹电路、功率放大器以及用于通信和传感的氮化镓功率电子器件。
+​
+
+光子学和集成量子技术：高功率二极管激光器、紫外LED、混合激光模块以及用于量子传感器和量子通信的组件。
+​
+
+技术与应用
+FBH 的光源涵盖可见光到紫外光，可应用于医疗技术、精密计量、传感和光卫星通信等领域。
+​
+
+在微波领域，FBH 开发高效放大器、前端、激光驱动器和紧凑型微波等离子体源，用于移动通信、工业传感和汽车安全系统。
+​
+
+基础设施和合作伙伴关系
+该研究所拥有符合行业标准的洁净室生产线（2”–4”晶圆），配备MOVPE和HVPE外延技术以及全面的器件加工和表征设施。
+​
+
+在德国微电子研究中心 (Research Fab Microelectronics Germany) 内，FBH 与其他机构合作，提供完整的微电子和纳米电子价值链，并通过战略性产业合作和衍生公司转移技术。
+
+
