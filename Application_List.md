@@ -133,6 +133,12 @@
   - [Main Research Fields](#main-research-fields)
   - [Technologies and Applications](#technologies-and-applications)
   - [Infrastructure and Partnerships](#infrastructure-and-partnerships)
+- [26. The Institute of High Pressure Physics of the Polish Academy of Sciences in Warsaw (often called Unipress)](#26-the-institute-of-high-pressure-physics-of-the-polish-academy-of-sciences-in-warsaw-often-called-unipress)
+  - [Basic profile](#basic-profile-1)
+  - [Research areas](#research-areas)
+  - [Role of high pressure](#role-of-high-pressure)
+  - [Organization and leadership](#organization-and-leadership)
+  - [Michał Boćkowski](#michał-boćkowski)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -2179,5 +2185,98 @@ FBH 的光源涵盖可见光到紫外光，可应用于医疗技术、精密计�
 ​
 
 在德国微电子研究中心 (Research Fab Microelectronics Germany) 内，FBH 与其他机构合作，提供完整的微电子和纳米电子价值链，并通过战略性产业合作和衍生公司转移技术。
+
+# 26. The Institute of High Pressure Physics of the Polish Academy of Sciences in Warsaw (often called Unipress)
+
+The Institute of High Pressure Physics of the Polish Academy of Sciences in Warsaw (often called **Unipress**) is a research institute specializing in the science and technology of materials and processes under high pressure. It was founded in 1972 by the Polish Academy of Sciences and is located in Warsaw, Poland.[2][4][6]
+
+## Basic profile  
+
+- Unipress is a scientific institute within the structure of the Polish Academy of Sciences, dedicated to experimental and applied high-pressure research.[3][2]
+- Its headquarters are in Warsaw, with the address Sokołowska 29/37, postal code 01‑142 Warsaw, Poland.[4]
+
+## Research areas  
+
+- Main research fields include semiconductors, optoelectronics, superconductors, ceramics, nanocrystalline materials, and high‑pressure instrumentation.[2][4]
+- The institute also works on high‑pressure studies of biological materials and food processing, using pressure both as a research tool and as a technological method.[4]
+
+## Role of high pressure  
+
+- High pressure is used similarly to temperature or magnetic field as a controllable parameter to study physical properties of materials.[4]
+- It is also employed technologically, for example in high‑pressure crystal growth and high‑pressure sintering, enabling advanced materials with controlled grain size and uniformity.[4]
+
+## Organization and leadership  
+
+- The institute is commonly referred to internationally as IHPP PAS or IHPP PAN and is widely known under the short name “Unipress”.[2][4]
+- Information from recent profiles lists Prof. Izabella Grzegory as director, reflecting its active leadership in both basic and applied high‑pressure research.[4]
+
+[1](https://www.unipress.waw.pl)
+[2](https://en.wikipedia.org/wiki/Institute_of_High_Pressure_Physics_of_the_Polish_Academy_of_Sciences)
+[3](https://pan.pl/en/facility/institute-of-high-pressure-physics-of-the-polish-academy-of-sciences/)
+[4](https://euagenda.eu/organisers/institute-for-high-pressure-physics)
+[5](https://pan.pl/en/facility/institute-of-physics-of-the-polish-academy-of-sciences/)
+[6](https://www.wikidata.org/wiki/Q7886917)
+[7](https://www.ifpan.edu.pl/en/)
+[8](https://naccjp.com/en/science/ihpp-pas/)
+[9](https://colab.ws/organizations/00fb7yx07)
+[10](https://www.unipress.waw.pl/symposium50/institute.html)
+
+波兰科学院高压物理研究所（通常称为Unipress）是位于华沙的一家专门从事高压材料和工艺科学与技术研究的研究所。它由波兰科学院于1972年创立，位于波兰华沙。
+​
+
+基本资料
+Unipress 是波兰科学院下属的一个科研机构，致力于高压实验和应用研究。
+​
+
+其总部位于波兰华沙，地址为 Sokołowska 29/37，邮政编码 01‑142 华沙。
+​
+
+研究领域
+主要研究领域包括半导体、光电子学、超导体、陶瓷、纳米晶材料和高压仪器。
+​
+
+该研究所还致力于生物材料和食品加工的高压研究，将压力既作为研究工具，也作为技术方法。
+​
+
+高压的作用
+高压与温度或磁场类似，可作为可控参数用于研究材料的物理性质。
+​
+
+它也被应用于技术领域，例如高压晶体生长和高压烧结，从而能够制造出晶粒尺寸和均匀性可控的先进材料。
+​
+
+组织与领导
+该研究所国际上通常被称为 IHPP PAS 或 IHPP PAN，并以简称“Unipress”广为人知。
+​
+
+最近的简介显示，伊莎贝拉·格热戈里教授担任主任，这反映了该机构在基础研究和应用高压研究方面的积极领导地位。
+​
+## Michał Boćkowski
+
+ bocian@unipress.waw.pl
+
+@ www.unipress.waw.pl/growth/
+
+ORCID iD: 0000-0003-1616-685X
+
+Michał Boćkowski received the M.Sc. Eng. in Solid State Physics from the Warsaw University of Technology, Poland, (1989); the Ph.D. in the Chemistry of Solids from the University Montpellier II, France, (1995) and the D.Sc, (habilitation in physics), from the Institute of Physics Polish Academy of Sciences (IP PAS), Poland, (2013). From 2008 to 2015 he was a vice president at TopGaN Ltd., Poland. He is currently a professor and the head of Crystal Growth Laboratory at the Institute of High Pressure Physics PAS as well as Designated/Visiting professor at Center for Integrated Research of Future Electronics (CIRFE), Institute of Materials and Systems for Sustainability (IMaSS), Nagoya University and Institute of Global Innovation Research (IGIR), Tokyo University of Agriculture and Technology (TUAT), Japan.
+
+
+Research interests:
+
+Semiconductors Science and Technology; Nitride Semiconductors; Crystal Growth; High Pressure Science and Technology; Glasses and Soft Matter
+
+
+Major publications:
+
+Technology of Gallium Nitride Crystal Growth" (Springer Series in Materials Science 133) Springer; 1st Edition. (Feb 12 2010) ISBN-10: 3642048285; ISBN-13: 978-3642048289 ed. by D. Ehrentraut, E. Meissner and M. Boćkowski
+
+Bockowski M., Iwinska M., Amilusik M., Fijalkowski M., Lucznik B. and Sochacki T., Challenges and future perspectives in HVPE-GaN growth on ammonothermal GaN seeds, Topical Review in Semicond. Sci. Technol. 31 (2016) 093002
+
+Sakurai H., Omori M., Yamada S., Furukawa Y., Suzuki H., Narita T., Kataoka K., Horita M., Bockowski M., Suda J. and Kachi T., Highly effective activation of Mg-implanted p-type GaN by ultra-high-pressure annealing, Appl. Phys. Lett. 115 (14) 142104 (2019)
+
+Zajac M, Kucharski R, Grabianska K, Gwardys-Bak A, Puchalski A, Wasik D, Litwin-Staszewska E, Piotrzkowski R, Domagala JZ, Bockowski M., Basic ammonothermal growth of Gallium Nitride – State of the art, challenges, perspectives, Prog. Cryst. Growth Charact. Mater. 64, 63 (2018)
+
+Kucharski R., Sochacki T., Lucznik B. and Bockowski M. Bulk GaN growth J. Appl. Phys. 128, 050902 (2020)
 
 
