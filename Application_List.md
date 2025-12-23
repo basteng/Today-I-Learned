@@ -2279,4 +2279,14 @@ Zajac M, Kucharski R, Grabianska K, Gwardys-Bak A, Puchalski A, Wasik D, Litwin-
 
 Kucharski R., Sochacki T., Lucznik B. and Bockowski M. Bulk GaN growth J. Appl. Phys. 128, 050902 (2020)
 
+米哈乌·博奇科夫斯基 (Michał Boćkowski) 于 1989 年获得波兰华沙理工大学固体物理学硕士学位；1995 年获得法国蒙彼利埃第二大学固体化学博士学位；2013 年获得波兰科学院物理研究所物理学博士学位（特许任教资格）。2008 年至 2015 年，他曾任波兰 TopGaN 有限公司副总裁。目前，他是波兰科学院高压物理研究所晶体生长实验室主任兼教授，同时也是日本名古屋大学未来电子集成研究中心 (CIRFE)、可持续材料与系统研究所 (IMaSS) 以及东京农工大学全球创新研究所 (IGIR) 的特聘/客座教授。
+
+
+研究方向：
+
+半导体科学与技术；氮化物半导体；晶体生长；高压科学与技术；玻璃和软物质
+
+<https://pasific.pan.pl/supervisors-from-institute-of-high-pressure-physics/#tab-15662>
+
+
 
