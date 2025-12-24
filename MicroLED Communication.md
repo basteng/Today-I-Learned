@@ -124,6 +124,17 @@
     - [欢迎— 行政开幕](#欢迎-行政开幕)
       - [Om Nalamasu 博士，应用材料公司高级副总裁、首席技术官兼总裁，Applied Ventures, LLC](#om-nalamasu-博士应用材料公司高级副总裁首席技术官兼总裁applied-ventures-llc)
       - [A.S.博士Nag Patibandla，应用材料公司首席技术官集团副总裁](#as博士nag-patibandla应用材料公司首席技术官集团副总裁)
+        - [MicroLED Photonic Interconnects for AI Servers - By Nag Patibandla, Mingwei Zhu, Hou T Ng, and Sri Peruvemba on December 10, 2025](#microled-photonic-interconnects-for-ai-servers---by-nag-patibandla-mingwei-zhu-hou-t-ng-and-sri-peruvemba-on-december-10-2025)
+  - [author: Nag Patibandla, Mingwei Zhu, Hou T Ng, and Sri Peruvemba](#author-nag-patibandla-mingwei-zhu-hou-t-ng-and-sri-peruvemba)
+          - [MicroLED Photonic Interconnects for](#microled-photonic-interconnects-for)
+          - [Introduction](#introduction)
+          - [Background: The Data Communication Challenge in AI Servers](#background-the-data-communication-challenge-in-ai-servers)
+          - [Potential of MicroLED Photonic Interconnects](#potential-of-microled-photonic-interconnects)
+          - [Technical Barriers to Adoption](#technical-barriers-to-adoption)
+          - [Materials and Process Innovations](#materials-and-process-innovations)
+          - [Outlook](#outlook)
+          - [Conclusion](#conclusion)
+          - [References](#references)
     - [MicroLED 链接](#microled-链接)
       - [5.64.1 宽并行光互连的挑战与机遇| NVIDIA 网络总监 Ashkan Seyedi 博士](#5641-宽并行光互连的挑战与机遇-nvidia-网络总监-ashkan-seyedi-博士)
       - [5.64.2 面向短距离并行光通信的 GaN-on-Si MicroLED 和 MicroPD 阵列 3D 集成 | LETI MicroLED 和 OLED 合作经理 Vygintas Jankus 博士](#5642-面向短距离并行光通信的-gan-on-si-microled-和-micropd-阵列-3d-集成--leti-microled-和-oled-合作经理-vygintas-jankus-博士)
@@ -4009,6 +4020,78 @@ https://lnkd.in/gFsHzk4k
 <https://rocketreach.co/nag-patibandla-email_2955902>
 
 <https://news.rpi.edu/luwakkey/1430>
+
+##### MicroLED Photonic Interconnects for AI Servers - By Nag Patibandla, Mingwei Zhu, Hou T Ng, and Sri Peruvemba on December 10, 2025
+
+---
+created: 2025-12-24T15:44:00 (UTC +08:00)
+tags: []
+source: https://www.computer.org/publications/tech-news/trends/microled-photonic-ai
+author: Nag Patibandla, Mingwei Zhu, Hou T Ng, and Sri Peruvemba
+---
+
+###### MicroLED Photonic Interconnects for
+
+> ## Excerpt
+> Explore how MicroLED photonic interconnects can break AI server bandwidth limits with faster, more efficient data center communication.
+
+---
+![](https://www.computer.org/_next/image?url=https%3A%2F%2Fmain-cdn.computer.org%2Fwp-content%2Fuploads%2F2025%2F12%2Fgpu-hbm.png&w=640&q=75)Over the first half of this year, the contribution to GDP growth from data center investments has been the same as the contribution from consumer spending, according to the chief economist at Apollo Global \[1\]. Artificial intelligence (AI) servers are rapidly evolving into power- and bandwidth-hungry systems, demanding interconnects that exceed the capabilities of traditional copper links. CPO / laser based optical links are evolving and MicroLED (µLED) photonic interconnects are being touted as a promising new solution due to their ability to form massively parallel emitter arrays, enabling aggregate bandwidth densities suitable for next-generation AI workloads. This article reviews the drivers for high-speed interconnects in AI servers, the potential of µLED-based links, the barriers to commercialization, and the materials and process innovations that may overcome these challenges. An outlook is provided on the adoption trajectory of µLED interconnects within data centers.
+
+###### Introduction
+
+According to a McKinsey Report \[2\], the power demand of data centers is expected to grow more than three times (by additional 50 GW by 2030), rising from 3–4 percent of total U.S. power demand today to 11–12 percent of the total. This rapid increase in power usage driven by AI and large language model (LLM) computation necessitates improving energy efficiency and reducing the carbon footprint of computation. The next generation of interconnect solutions must deliver both higher performance and better energy efficiency to unlock the full promise of High Performance Computing- HPC for AI.
+
+AI workloads, especially those in LLMs and advanced neural networks, require unprecedented computational throughput. Scaling AI servers has greatly increased demand for both within the server and between servers’ communication. Copper interconnects currently used in such systems suffer from attenuation, crosstalk, and inefficiency at higher data rates. Optical interconnects using silicon photonic modulators provide higher capacity but are reaching limits in bandwidth density, cost, and energy per bit \[3\]. This growing disparity between compute throughput and communication bandwidth has created a “communication bottleneck” (also referred to as “Memory Wall”) in AI servers. Sustaining system scaling requires new classes of photonic interconnects that provide higher aggregate throughput, lower energy consumption, and scalable manufacturing. µLED -based photonic interconnects are one such pathway.
+
+The growth of high-performance compute and AI continues to drive demand for faster, more energy-efficient compute systems, but challenges remain. GPU utilization rates are poor, with FLOPS/Peak FLOPS ranging between 15–40%, while GPUs consume significant energy—60–80% of which is wasted in inefficient data movement at 10–20 pJ/bit for GPU-to-HBM or GPU-to-GPU communication. Compute systems scale to multi-GPU cores and multi-HBM stack packages without addressing the underlying “memory bottleneck” (GB/Peak FLOPS), which remains the root cause of performance limitations. Current approaches rely on HBM vendors to increase stack height from 8 to 12 or 16 dies, which lowers yield and increases cost, or to increase the GPU-HBM bus width from 1024 to 2048 lanes, which is limited by shoreline availability around GPUs.
+
+###### Background: The Data Communication Challenge in AI Servers
+
+Modern AI accelerators generate terabits per second of chiplet-to-chiplet traffic, often requiring more bandwidth within a server rack than between racks. Copper links are limited by skin effect and electromagnetic interference, scaling poorly beyond a few centimeters. Conventional optics – laser-based CPO – outperform copper at longer reaches but require higher power.  According to Jensen Huang (March 2024 Keynote address), an NVIDIA DGX system with 72 Blackwell B200 GPUs uses 500 NVLink cables, i.e. 2 miles of copper cables. Replacing those with optics would have required use of transceivers and retimers that would increase the power consumption by an additional 20 kW per rack \[4\]. In addition, lasers that drive optical links are generally packaged remotely as their performance at the operating temperatures is expected to be unreliable.
+
+As AI models grow from billions to trillions of parameters, rack-scale architectures need fabrics capable of tens of terabits per second per server. Meeting this demand within strict energy budgets (<1 pJ/bit) requires exploring new optical technologies. A visible light µLED array-based massively parallel optical interconnect solution is highly disruptive because it avoids serialization and deserialization (SerDes), which occupies large circuit area and accounts for nearly half the power in a 2 pJ/bit photonic link \[5\]. This approach reduces energy consumption for chip-to-chip transfers and creates a large virtual shoreline with present and future HBM generations. The picture shown here is a pictorial representation of GPU-HBM stack link that allows for higher number of HBM stacks to be connected to a GPU. The concept relies on building visible light µLED based transmit (Tx) and CMOS Image sensor-based receive (Rx) elements as interconnect bridges between GPU and HBMs. The visible light µLED interconnect may be packaged on advanced substrates to integrate thousands to hundreds of thousands of Tx/Rx parallel channels within a small footprint (millimeters squared), using low-cost multimode waveguides or short-length, multi-core fiber bundles making up a parallel bus. These links have an entitlement to reach 0.1 pJ/bit while enabling a fivefold increase in memory capacity and package bandwidth compared to today’s state of the art (>0.6 TB and 25 TB/s vs. 141 GB and 4.92 TB/s in NVIDIA’s H200).
+
+µLED based links could also enable much higher GPU-to-GPU bandwidth in wafer-scale systems, surpassing NVLink 5.0 (1.8 TB/s) and even projected NVLink 6.0 (3.6 TB/s at 448G speed). Data rates scale simply by adding more µLEDs and inexpensive waveguides. By eliminating SerDes-based electrical connections, µLEDs reduce power consumption and latency while improving efficiency. µLEDs are also robust, operating reliably at high currents and temperatures above >100°C, making them ideal for data centers’ AI computation. They resist partition noise and interference, maintaining low BER for reliable transmission. This combination of efficiency, scalability, and durability makes µLEDs a sustainable solution for future compute and communication systems.
+
+###### Potential of MicroLED Photonic Interconnects
+
+MicroLEDs represent a new scaling paradigm that prioritizes parallelism over single-channel speed – few and fast vs. many and slow. µLEDs fabricated from III-nitride semiconductors can reach modulation speeds of several hundred megahertz, with new designs pushing into gigahertz range. While slower than VCSELs, throughput scales linearly with the number of emitters. Dense arrays of thousands of emitters achieve terabit-per-second aggregate rates even at moderate channel speeds. Operating in the visible spectrum, µLEDs couple efficiently into polymer waveguides and multicore fibers with limited/acceptable dispersion over short distances (<30 m). Shorter wavelengths allow tighter pitch spacing, increasing shoreline density.
+
+![](https://www.computer.org/_next/image?url=https%3A%2F%2Fmain-cdn.computer.org%2Fwp-content%2Fuploads%2F2025%2F12%2FGPU-HBM-link.png&w=1920&q=75)
+
+The picture shown above is a conceptual representation of a GPU-HBM link on a PCB board. Dense 32x32 arrays provide massively parallel interconnects with >1 Tbps throughput at 1 Gbps/channel, ideal for interposer and chiplet connections where integration is tight. Heterogeneous integration of µLEDs with CMOS drivers minimizes parasitics and latency, creating architectures optimized for AI server topologies. This shifts the model from ultra-fast individual links to moderately fast massively parallel links, boosting bandwidth density without excessive energy.
+
+On the detection side, Si photodetectors outperform Germanium and InGaAs photodetectors in the 400–550 nm range, offering excellent quantum efficiency (>60%), low noise, and bandwidth ~ 9 GHz \[6\]. They are widely manufactured into arrays on 8” and 12” wafers, making them ideal as receivers. Transimpedance amplifiers (TIAs), which convert detector current into voltage, support 10–100+ GHz bandwidth and can integrate easily with Si photodetectors. The design of integrated transmit/receive arrays with µLEDs and detectors built into advanced substrates to link directly with HBM base dies.
+
+###### Technical Barriers to Adoption
+
+Despite their strong promise, µLED photonic interconnects face hurdles. µLEDs emit with wide divergence angles, making efficient coupling into fibers or waveguides challenging. This requires the use of  micro-optics or high numerical aperture (NA) polymer waveguides, and present scalability challenges in aligning thousands of emitters. Multicore fibers with high core density introduce crosstalk that requires trench-assisted cladding and optimized layouts, adding fabrication complexity. Fiber bundles also stiffen with diameter (scaling to the fourth power), limiting bundle size unless flexible materials are developed. Conventional silica fibers perform poorly at visible wavelengths, so fluoride glasses or perfluorinated polymers are being investigated, though their thermal and reliability performance is yet to be proven. Packaging complexity is another challenge, as scaling thousands of optical channels requires wafer bonding or TSV packaging, both with yield and cost issues. Finally, µLED efficiency droop at high current density and sidewall recombination threaten the energy efficiency of the link. Effective passivation, heat management, and mirror coatings are needed to reach requisite performance. These limitations suggest µLEDs will first be adopted in short-reach, high-bandwidth applications before rack-scale deployments. Multi-layer low-loss waveguides for microLED present significant processing challenges due to the precision required for maintaining tight dimensional tolerances across multiple stacked layers while minimizing scattering losses at interfaces. The fabrication complexity increases substantially with the need for precise alignment between waveguide layers and microLED arrays, often requiring advanced manufacturing techniques and specialized processes that can maintain sub-micron accuracy while preserving the optical properties.
+
+###### Materials and Process Innovations
+
+Optical fiber bundles made from borosilicate or silica, with 25 µm cores and customizable cladding ratios as low as 1.04, show strong potential for µLED integration, with <0.001 dB/cm attenuation, NA values of 0.2–0.8, and thermal stability up to 480°C. Leached imaging bundles with 16,600 cores at 4.4 μm further highlight scaling potential. As stated before, µLEDs emit incoherent light, creating challenges for efficient coupling into fibers or waveguides. Improvements are needed in µLED light directionality (e.g. vertical cavities, sidewall mirrors, microlenses), fiber/waveguide coupling structures (e.g. refractive index tuning, dispersion control, reflection suppression, isolation structures), and transmission mode choices (single vs. multimode).
+
+Recent advances directly address these challenges. Low-loss polymers now achieve <0.1 dB/cm propagation at visible wavelengths, enabling flexible, board-embedded µLED links. Experimental fibers with up to 10,000 cores demonstrate scalability, while trench-assisted designs suppress crosstalk for multi-terabit capacity. In µLED die-design and fabrication, in-situ surface treatment and atomic layer deposition has cut non-radiative recombination, boosting external quantum efficiency by >50%, while sidewall mirrors improve emission directionality. Adapted mass transfer techniques from display industry such as the double-transfer process, allow high-density µLED arrays to be assembled on 300 mm wafers with 10 µm pitch, enabling semiconductor-grade interposer integration. Silicon nitride waveguides provide ultra-low-loss visible wavelength operation, supporting direct µLED-to-waveguide coupling in CMOS-compatible flows. Hybrid bonding achieves <5 µm pitch interconnects, surpassing microbump density limits and enabling dense µLED–photodiode packaging. Together, these developments mark a convergence of semiconductor, display, and photonic innovations that may deliver scalable µLED interconnects.
+
+###### Outlook
+
+MicroLED interconnects are positioned as longer-term enablers of bandwidth scaling in HPC and AI. Early adoption will likely focus on chiplet-to-chiplet and board-level interconnects, where massive parallelism offsets modest per-channel speeds. Scalability to rack-to-rack communication depends on continued progress in fibers, polymers, and packaging. If successful, µLED links could drive interconnect energy below 1 pJ/bit while providing bandwidths of tens of Tbps per server, enabling AI growth without prohibitive energy and cost.
+
+###### Conclusion
+
+The evolution of AI servers has created an urgent need for interconnect technologies that combine high bandwidth density, low energy per bit, and manufacturability. MicroLED photonic interconnects offer a disruptive path based on massively parallel architectures. Despite barriers in coupling, materials, and packaging, recent innovations show credible progress. The trajectory indicates that µLEDs may soon complement or surpass traditional optical interconnects in targeted applications, playing a critical role in future AI infrastructure.
+
+###### References
+
+1.  Apollo Global report: [https://www.apolloacademy.com/similar-contribution-to-gdp-growth-from-consumer-spending-and-data-center-investments/](https://www.apolloacademy.com/similar-contribution-to-gdp-growth-from-consumer-spending-and-data-center-investments/)
+2.  McKinsey Report: [https://www.mckinsey.com/industries/private-capital/our-insights/how-data-centers-and-the-energy-sector-can-sate-ais-hunger-for-power#/](https://www.mckinsey.com/industries/private-capital/our-insights/how-data-centers-and-the-energy-sector-can-sate-ais-hunger-for-power#/)
+3.  Kaoutar Benyahya, Ariel Gomez Diaz, Junyi Liu, Vassily Lyutsarev, Marianna, Pantouvaki, Kai Shi, Shawn Yohanes Siew, Hitesh Ballani, Thomas, Burridge, Daniel Cletheroe, Thomas Karagiannis, Brian Robertson, Ant Rowstron, Mengyang Yang, Arash Behziz, Jamie Gaudette, and Paolo Costa. 2025. MOSAIC: Breaking the Optics versus Copper Trade-off with a Wide-and-Slow Architecture and MicroLEDs. In ACM SIGCOMM 2025 Conference
+4.  Jensen Huang. 2024. GTC March 2024 Keynote. [https://www.youtube.com/live/Y2F8yisiS6E?feature=shared&t=2867](https://www.youtube.com/live/Y2F8yisiS6E?feature=shared&t=2867).
+5.  Michard A, Carpentier JF, Michit N, Le Maitre P, Benabes P, Ferreira PM. IEEE J Select Top Quantum Electron. 2020;26(2):1–10\]
+6.  Lin, Y., Yong, Z., Luo, X. et al. Monolithically integrated, broadband, high-efficiency silicon nitride-on-silicon waveguide photodetectors in a visible-light integrated photonics platform. Nat Commun 13, 6362 (2022). [https://doi.org/10.1038/s41467-022-34100-3](https://doi.org/10.1038/s41467-022-34100-3)
+
+Disclaimer: The authors are completely responsible for the content of this article. The opinions expressed are their own and do not represent IEEE’s position nor that of the Computer Society nor its Leadership.
 
 ### MicroLED 链接
 
