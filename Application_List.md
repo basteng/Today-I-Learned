@@ -139,6 +139,10 @@
   - [Role of high pressure](#role-of-high-pressure)
   - [Organization and leadership](#organization-and-leadership)
   - [Michał Boćkowski](#michał-boćkowski)
+- [27. Nanovation](#27-nanovation)
+  - [Présentation de l’entreprise](#présentation-de-lentreprise)
+  - [Technologies et matériaux](#technologies-et-matériaux)
+  - [Applications principales](#applications-principales)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -2288,5 +2292,43 @@ Kucharski R., Sochacki T., Lucznik B. and Bockowski M. Bulk GaN growth J. Appl. 
 
 <https://pasific.pan.pl/supervisors-from-institute-of-high-pressure-physics/#tab-15662>
 
+# 27. Nanovation
 
+nanovation.com/fr présente **nanovation**, une société française spécialisée dans les couches minces à base d’oxydes, les nanostructures (oxydes et métaux) et les composants associés, utilisée dans de nombreuses applications électroniques et photoniques.[1]
 
+## Présentation de l’entreprise
+- nanovation est une société française fondée en mars 2001 et reconnue comme un leader mondial dans la fabrication de couches minces à base d’oxydes et de nanostructures.[1]
+- L’entreprise se positionne sur des technologies de matériaux avancés destinées aux secteurs des capteurs, de l’affichage, de l’énergie et de l’électronique de pointe.[1]
+
+## Technologies et matériaux
+- nanovation produit des epiwafers d’oxydes et des nanostructures d’oxydes et de métaux, conçus pour exploiter les propriétés remarquables des oxydes (optiques, électroniques, magnétiques, etc.).[1]
+- Les nanostructures développées couvrent notamment des couches anti‑reflet, des capteurs plasmoniques et des revêtements antimicrobiens, ouvrant la voie à de nouveaux développements applicatifs.[1]
+
+## Applications principales
+- Les epiwafers fabriqués par nanovation ont déjà démontré une amélioration significative des performances de divers types de capteurs, écrans, cellules solaires, composants d’électronique de puissance et dispositifs photoniques, électroniques et magnétiques.[1]
+- Les solutions de nanovation visent à améliorer l’efficacité, la sensibilité et la durabilité des dispositifs dans lesquels ces matériaux sont intégrés.[1]
+
+[1](https://nanovation.com)
+
+法国一家专门从事氧化物基沙发、纳米结构（氧化物和金属）和复合材料协会、电子和光子应用的纳米技术协会。
+​
+
+企业介绍
+Nanovation 是 2001 年 3 月法国火狐基金会的联合创始人，以氧化物和纳米结构为基础的沙发制造领域的领导者。
+​
+
+该企业定位于先进材料技术和捕获、附属、能源和尖端电子技术领域。
+​
+
+技术与材料
+Nanovation 产品是氧化物外延片和氧化物纳米结构以及金属材料，旨在开发氧化物的专有特性（光学、电子、磁性等）。
+​
+
+纳米结构开发了抗反射沙发、等离激元捕获和抗菌剂修复，以及新开发的应用程序。
+​
+
+应用原理
+纳米晶圆制造对多种类型的捕获、微晶、太阳能电池、光子、电子和磁学的电子组合物的性能具有显着的改善作用。
+​
+
+纳米振动解决方案具有改善功效、敏感性和耐用性的特点，并且具有材料完整的特点。
