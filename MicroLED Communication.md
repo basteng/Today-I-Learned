@@ -4480,6 +4480,28 @@ BTW, though I see a dozen folks copying our approach, I don't see anyone else co
 顺便说一句，虽然我看到有十几个人在模仿我们的做法，但我没看到有人在模仿Celestial和Lightmatter的突破性创新。
 ```
 
+Sharada Yeluri
+
+Sounds interesting. Any technology that can scale HBM BW without forcing HBMs out of the XPU dies will have a great potential. Is anyone trying out microLED based optical HBM prototypes? 
+
+听起来很有趣。任何能在不强制HPU模具中强行释放HBM的情况下，提升HBM生物量的技术都具有巨大潜力。有人在尝试基于microLED的光学HBM原型吗？ 
+
+Vivek Khanzode
+
+for latency can we talk some numbers? What are the expected latencies of the two approaches?
+
+关于延迟，我们能谈谈一些数字吗？这两种方法的预期延迟是多少？
+
+Bardia Pezeshki
+
+When you stay with a wide NRZ bus, there is no serialization, complex modulation scheme, DSP, FEC etc...  You may want to do some ECC to get to extremely low bit rates.  But latency is basically speed of light and a few cycles - thus a few nanoseconds.   Simply put, staying wide minimizes latency - which is key for memory applications. 
+
+如果你继续使用宽的NRZ总线，就没有序列化、复杂调制方案、DSP、FEC等功能。 你可能需要做一些ECC处理，以达到极低的比特率。 但延迟基本上是光速和几个周期——也就是几纳秒。  简单来说，保持宽广可以最小化延迟——这对内存应用至关重要。  
+
+<https://www.linkedin.com/posts/sharada-yeluri_hbm-share-7403380697551544320-DIMc?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
+
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7403380697551544320?collapsed=1" height="263" width="504" frameborder="0" allowfullscreen="" title="已嵌入的动态"></iframe>
+
 ## 5.70 Avicena 推进 MicroLED 和光电探测器阵列，实现世界最低功耗的 AI 扩展光学互连
 
 **发布时间**：2025年11月17日
