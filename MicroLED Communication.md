@@ -4093,6 +4093,8 @@ The evolution of AI servers has created an urgent need for interconnect technolo
 
 Disclaimer: The authors are completely responsible for the content of this article. The opinions expressed are their own and do not represent IEEE’s position nor that of the Computer Society nor its Leadership.
 
+<https://www.computer.org/publications/tech-news/trends/microled-photonic-ai>
+
 ### MicroLED 链接
 
 #### 5.64.1 宽并行光互连的挑战与机遇| NVIDIA 网络总监 Ashkan Seyedi 博士
