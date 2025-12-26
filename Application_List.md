@@ -143,6 +143,10 @@
   - [Présentation de l’entreprise](#présentation-de-lentreprise)
   - [Technologies et matériaux](#technologies-et-matériaux)
   - [Applications principales](#applications-principales)
+- [28.  Ferdinand-Braun-Institut, Leibniz-Institut für Höchstfrequenztechnik (FBH)](#28--ferdinand-braun-institut-leibniz-institut-für-höchstfrequenztechnik-fbh)
+  - [About FBH](#about-fbh)
+  - [Research focus](#research-focus-1)
+  - [Role of experts like Arne Knauer](#role-of-experts-like-arne-knauer)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -2332,3 +2336,59 @@ Nanovation 产品是氧化物外延片和氧化物纳米结构以及金属材料
 ​
 
 纳米振动解决方案具有改善功效、敏感性和耐用性的特点，并且具有材料完整的特点。
+
+# 28.  Ferdinand-Braun-Institut, Leibniz-Institut für Höchstfrequenztechnik (FBH)
+
+Ferdinand-Braun-Institut, Leibniz-Institut für Höchstfrequenztechnik (FBH) is a Berlin-based research institute specializing in high-frequency electronics, photonics, and quantum technologies, while Arne Knauer is one of its technical experts working in the diode laser/photonic area (typically on high‑power diode lasers and related systems).[2][3]
+
+## About FBH
+
+- FBH is an application-oriented institute that develops electronic and optical components, modules, and systems based on III‑V compound semiconductors, serving needs in communications, energy, health, and mobility.[1][6]
+- The institute is part of the Leibniz Association and is located at the Berlin-Adlershof science and technology park, operating extensive cleanroom and laboratory infrastructure for micro- and optoelectronics research.[3][5]
+
+## Research focus
+
+- In **high-frequency electronics**, FBH works on GaN microwave transistors, power amplifiers, terahertz electronics, and GaN power electronics for applications such as mobile communications and sensing.[4][3]
+- In **photonics**, FBH develops high-power diode lasers, spectrally narrow and high-brilliance lasers, UV LEDs, and hybrid laser modules from the infrared to the ultraviolet range for medical, metrology, sensing, and space communications applications.[6][3]
+
+## Role of experts like Arne Knauer
+
+- Experts such as Arne Knauer typically contribute to the design, characterization, and optimization of diode laser chips and modules, including high-power and high-brilliance sources used in industry, medicine, and precision metrology.[3][6]
+- They often work in interdisciplinary project teams with industry and academic partners, supporting technology transfer from fundamental III‑V semiconductor research into prototype devices and spin-off companies.[2][4]
+
+[1](https://www.fbh-berlin.de/en/about-us)
+[2](https://www.fbh-berlin.de/en/)
+[3](https://en.wikipedia.org/wiki/Ferdinand-Braun-Institut)
+[4](https://www.leibniz-gemeinschaft.de/institute/leibniz-institute-alle-listen/ferdinand-braun-institut-leibniz-institut-fuer-hoechstfrequenztechnik)
+[5](https://www.adlershof.de/en/companies-institutes/directory/firma/detail/ferdinand-braun-institut-leibniz-institut-fuer-hoechstfrequenztechnik-fbh)
+[6](https://exhibitors.world-of-photonics.com/exhibitor-portal/2025/list-of-exhibitors/exhibitordetails/ferdinand-braun-institut-ggmbh-leibniz-institut-fuer-hoechstfrequenztechnik/?elb=178.1100.3081.1.111&uls=2)
+[7](https://www.linkedin.com/company/ferdinand-braun-institut)
+[8](https://www.nature.com/nature-index/institution-outputs/germany/ferdinand-braun-institut-leibniz-institut-fur-hochstfrequenztechnik-fbh/5195d3d9140ba08024000000)
+[9](https://www.scimagoir.com/institution.php?idp=21455)
+[10](https://www.cbinsights.com/company/ferdinand-braun-institute)
+
+费迪南德·布劳恩研究所（Ferdinand-Braun-Institut）和莱布尼茨高频技术研究所（Leibniz-Institut für Höchstfrequenztechnik，简称FBH）是一家位于柏林的研究所，专门从事高频电子学、光子学和量子技术的研究，而阿恩·克瑙尔（Arne Knauer）是该研究所的技术专家之一，主要从事二极管激光器/光子学领域的研究（通常是高功率二极管激光器及相关系统）。
+​
+
+关于 FBH
+FBH 是一家应用型研究所，致力于开发基于 III-V 族化合物半导体的电子和光学元件、模块和系统，以满足通信、能源、健康和移动领域的需求。
+​
+
+该研究所隶属于莱布尼茨协会，位于柏林阿德勒斯霍夫科技园，拥有广泛的洁净室和实验室基础设施，用于微电子和光电子研究。
+​
+
+研究重点
+在高频电子领域，FBH 致力于氮化镓微波晶体管、功率放大器、太赫兹电子器件和氮化镓功率电子器件的研究，应用领域包括移动通信和传感。
+​
+
+在光子学领域，FBH 开发了从红外到紫外范围的高功率二极管激光器、光谱窄且高亮度激光器、紫外 LED 和混合激光模块，用于医疗、计量、传感和空间通信应用。
+​
+
+阿恩·诺尔等专家的作用
+像 Arne Knauer 这样的专家通常会参与二极管激光芯片和模块的设计、表征和优化，包括用于工业、医疗和精密计量的高功率和高亮度光源。
+​
+
+他们经常与工业界和学术界的合作伙伴组成跨学科项目团队，支持从 III-V 族半导体基础研究到原型器件和衍生公司的技术转移。
+​
+<https://www.fbh-berlin.de/>
+
