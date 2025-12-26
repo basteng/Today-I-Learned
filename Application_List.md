@@ -144,9 +144,10 @@
   - [Technologies et matériaux](#technologies-et-matériaux)
   - [Applications principales](#applications-principales)
 - [28.  Ferdinand-Braun-Institut, Leibniz-Institut für Höchstfrequenztechnik (FBH)](#28--ferdinand-braun-institut-leibniz-institut-für-höchstfrequenztechnik-fbh)
-  - [About FBH](#about-fbh)
-  - [Research focus](#research-focus-1)
-  - [Role of experts like Arne Knauer](#role-of-experts-like-arne-knauer)
+  - [Profile and mission](#profile-and-mission-1)
+  - [Main research areas](#main-research-areas-1)
+  - [Infrastructure and collaborations](#infrastructure-and-collaborations)
+  - [Industrial relevance and spin-offs](#industrial-relevance-and-spin-offs)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -2339,56 +2340,63 @@ Nanovation 产品是氧化物外延片和氧化物纳米结构以及金属材料
 
 # 28.  Ferdinand-Braun-Institut, Leibniz-Institut für Höchstfrequenztechnik (FBH)
 
-Ferdinand-Braun-Institut, Leibniz-Institut für Höchstfrequenztechnik (FBH) is a Berlin-based research institute specializing in high-frequency electronics, photonics, and quantum technologies, while Arne Knauer is one of its technical experts working in the diode laser/photonic area (typically on high‑power diode lasers and related systems).[2][3]
+Ferdinand-Braun-Institut, Leibniz-Institut für Höchstfrequenztechnik (FBH) is an application-oriented research institute in Berlin that focuses on high-frequency electronics, photonics, and integrated quantum technologies based on compound (III‑V) semiconductors.[1][2]
 
-## About FBH
+## Profile and mission
+- FBH develops electronic and optical components, modules, and systems that serve applications in communications, energy, health, mobility, and quantum technology.[3][7]
+- The institute is part of the Leibniz Association and is located in the Berlin-Adlershof science and technology park, operating as a center of competence for III‑V compound semiconductors from design through fabrication to device characterization.[2][8]
 
-- FBH is an application-oriented institute that develops electronic and optical components, modules, and systems based on III‑V compound semiconductors, serving needs in communications, energy, health, and mobility.[1][6]
-- The institute is part of the Leibniz Association and is located at the Berlin-Adlershof science and technology park, operating extensive cleanroom and laboratory infrastructure for micro- and optoelectronics research.[3][5]
+## Main research areas
+- In **III‑V electronics**, FBH works on GaN microwave transistors and MMICs, high-efficiency power amplifiers, terahertz electronics, GaN power electronics, laser drivers, and compact atmospheric microwave plasma sources.[8][2]
+- In **photonics and quantum**, it develops high-power and high-brilliance diode lasers, UV laser diodes and LEDs, hybrid laser modules from visible to ultraviolet, and components for integrated quantum technology used in sensing, metrology, biophotonics, and space optical communications.[2][8]
 
-## Research focus
+## Infrastructure and collaborations
+- FBH operates industry-compatible cleanroom and lab facilities (including MOVPE/HVPE and full process lines) that support prototyping of GaAs/GaN microwave and optoelectronic devices and pilot series of circuits and laser diodes.[1][2]
+- The institute collaborates closely with universities (such as TU Berlin and Humboldt-Universität zu Berlin), industry partners, and participates in Research Fab Microelectronics Germany (FMD) together with other German institutes to offer a complete micro‑ and nanoelectronics value chain.[8][2]
 
-- In **high-frequency electronics**, FBH works on GaN microwave transistors, power amplifiers, terahertz electronics, and GaN power electronics for applications such as mobile communications and sensing.[4][3]
-- In **photonics**, FBH develops high-power diode lasers, spectrally narrow and high-brilliance lasers, UV LEDs, and hybrid laser modules from the infrared to the ultraviolet range for medical, metrology, sensing, and space communications applications.[6][3]
+## Industrial relevance and spin-offs
+- FBH is recognized as one of the leading institutes worldwide for applied research in microwaves and optoelectronics, supplying high-frequency components for communications and sensing, and high-power diode lasers for materials processing, medical technology, and precision metrology.[5][6]
+- The institute transfers results into practice via strategic industrial partnerships and multiple spin-offs (for example in UV LEDs, plasma sources, and optical simulation software), strengthening its role as a bridge between fundamental III‑V semiconductor research and market-ready technologies.[4][2]
 
-## Role of experts like Arne Knauer
-
-- Experts such as Arne Knauer typically contribute to the design, characterization, and optimization of diode laser chips and modules, including high-power and high-brilliance sources used in industry, medicine, and precision metrology.[3][6]
-- They often work in interdisciplinary project teams with industry and academic partners, supporting technology transfer from fundamental III‑V semiconductor research into prototype devices and spin-off companies.[2][4]
-
-[1](https://www.fbh-berlin.de/en/about-us)
-[2](https://www.fbh-berlin.de/en/)
-[3](https://en.wikipedia.org/wiki/Ferdinand-Braun-Institut)
+[1](https://www.fbh-berlin.de/en/)
+[2](https://en.wikipedia.org/wiki/Ferdinand-Braun-Institut)
+[3](https://www.fbh-berlin.de/en/about-us)
 [4](https://www.leibniz-gemeinschaft.de/institute/leibniz-institute-alle-listen/ferdinand-braun-institut-leibniz-institut-fuer-hoechstfrequenztechnik)
 [5](https://www.adlershof.de/en/companies-institutes/directory/firma/detail/ferdinand-braun-institut-leibniz-institut-fuer-hoechstfrequenztechnik-fbh)
-[6](https://exhibitors.world-of-photonics.com/exhibitor-portal/2025/list-of-exhibitors/exhibitordetails/ferdinand-braun-institut-ggmbh-leibniz-institut-fuer-hoechstfrequenztechnik/?elb=178.1100.3081.1.111&uls=2)
+[6](https://www.adlershof.de/firmensuche-institute/adressverzeichnis/firma/detail/ferdinand-braun-institut-leibniz-institut-fuer-hoechstfrequenztechnik-fbh)
 [7](https://www.linkedin.com/company/ferdinand-braun-institut)
-[8](https://www.nature.com/nature-index/institution-outputs/germany/ferdinand-braun-institut-leibniz-institut-fur-hochstfrequenztechnik-fbh/5195d3d9140ba08024000000)
-[9](https://www.scimagoir.com/institution.php?idp=21455)
-[10](https://www.cbinsights.com/company/ferdinand-braun-institute)
+[8](https://www.leibniz-gemeinschaft.de/en/institutes/leibniz-institutes-all-lists/ferdinand-braun-institut-leibniz-institut-fuer-hoechstfrequenztechnik)
+[9](https://de.wikipedia.org/wiki/Ferdinand-Braun-Institut,_Leibniz-Institut_f%C3%BCr_H%C3%B6chstfrequenztechnik)
+[10](https://karrierewiki.modul-berlin.de/Ein_Einblick_in_das_Ferdinand-Braun-Institut)
 
-费迪南德·布劳恩研究所（Ferdinand-Braun-Institut）和莱布尼茨高频技术研究所（Leibniz-Institut für Höchstfrequenztechnik，简称FBH）是一家位于柏林的研究所，专门从事高频电子学、光子学和量子技术的研究，而阿恩·克瑙尔（Arne Knauer）是该研究所的技术专家之一，主要从事二极管激光器/光子学领域的研究（通常是高功率二极管激光器及相关系统）。
+费迪南德·布劳恩研究所，莱布尼茨高频技术研究所（FBH）是柏林一家应用型研究机构，专注于基于化合物（III-V族）半导体的高频电子学、光子学和集成量子技术。
 ​
 
-关于 FBH
-FBH 是一家应用型研究所，致力于开发基于 III-V 族化合物半导体的电子和光学元件、模块和系统，以满足通信、能源、健康和移动领域的需求。
+公司简介及使命
+FBH 开发电子和光学元件、模块和系统，服务于通信、能源、健康、移动和量子技术等领域的应用。
 ​
 
-该研究所隶属于莱布尼茨协会，位于柏林阿德勒斯霍夫科技园，拥有广泛的洁净室和实验室基础设施，用于微电子和光电子研究。
+该研究所隶属于莱布尼茨协会，位于柏林阿德勒斯霍夫科技园，是 III-V 族化合物半导体从设计、制造到器件表征的卓越中心。
 ​
 
-研究重点
-在高频电子领域，FBH 致力于氮化镓微波晶体管、功率放大器、太赫兹电子器件和氮化镓功率电子器件的研究，应用领域包括移动通信和传感。
+主要研究领域
+在III-V 电子学领域，FBH 致力于氮化镓微波晶体管和 MMIC、高效功率放大器、太赫兹电子学、氮化镓功率电子学、激光驱动器和紧凑型大气微波等离子体源的研究。
 ​
 
-在光子学领域，FBH 开发了从红外到紫外范围的高功率二极管激光器、光谱窄且高亮度激光器、紫外 LED 和混合激光模块，用于医疗、计量、传感和空间通信应用。
+在光子学和量子领域，该公司开发了高功率、高亮度二极管激光器、紫外激光二极管和 LED、从可见光到紫外光的混合激光模块，以及用于传感、计量、生物光子学和空间光通信的集成量子技术的组件。
 ​
 
-阿恩·诺尔等专家的作用
-像 Arne Knauer 这样的专家通常会参与二极管激光芯片和模块的设计、表征和优化，包括用于工业、医疗和精密计量的高功率和高亮度光源。
+基础设施和合作
+FBH 运营符合行业标准的洁净室和实验室设施（包括 MOVPE/HVPE 和完整的工艺线），支持 GaAs/GaN 微波和光电器件的原型制作以及电路和激光二极管的试点系列生产。
 ​
 
-他们经常与工业界和学术界的合作伙伴组成跨学科项目团队，支持从 III-V 族半导体基础研究到原型器件和衍生公司的技术转移。
+该研究所与大学（如柏林工业大学和柏林洪堡大学）、工业合作伙伴密切合作，并与其他德国研究所一起参与德国微电子研究制造厂（FMD），以提供完整的微电子和纳米电子价值链。
 ​
+
+产业相关性和衍生产品
+FBH 被公认为全球领先的微波和光电子应用研究机构之一，为通信和传感提供高频元件，并为材料加工、医疗技术和精密计量提供高功率二极管激光器。
+​
+
+该研究所通过战略性产业合作和多个衍生公司（例如紫外LED、等离子体源和光学模拟软件）将研究成果转化为实践，从而加强了其作为III-V族半导体基础研究与市场化技术之间桥梁的作用。
+
 <https://www.fbh-berlin.de/>
-
