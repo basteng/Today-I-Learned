@@ -148,6 +148,16 @@
   - [Main research areas](#main-research-areas-1)
   - [Infrastructure and collaborations](#infrastructure-and-collaborations)
   - [Industrial relevance and spin-offs](#industrial-relevance-and-spin-offs)
+- [29. Nitek Inc.](#29-nitek-inc)
+  - [Company overview](#company-overview-4)
+  - [Core technologies and products](#core-technologies-and-products-1)
+  - [Location and contact](#location-and-contact)
+  - [Iftikhar Ahmad](#iftikhar-ahmad)
+    - [Relationship with Nitek Inc.](#relationship-with-nitek-inc)
+    - [Current position and expertise](#current-position-and-expertise)
+    - [his related areas:](#his-related-areas)
+    - [Deep‑UV AlGaN emitters (LEDs \& lasers)](#deepuv-algan-emitters-leds--lasers)
+    - [Ultra‑/wide‑bandgap semiconductor research](#ultrawidebandgap-semiconductor-research)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -2400,3 +2410,155 @@ FBH 被公认为全球领先的微波和光电子应用研究机构之一，为�
 该研究所通过战略性产业合作和多个衍生公司（例如紫外LED、等离子体源和光学模拟软件）将研究成果转化为实践，从而加强了其作为III-V族半导体基础研究与市场化技术之间桥梁的作用。
 
 <https://www.fbh-berlin.de/>
+
+# 29. Nitek Inc.
+
+Nitek Inc. is a US semiconductor company focused on advanced III-V/III-N (nitride-based) materials and devices, especially MicroLEDs and GaN RF/power components.[1][2]
+
+## Company overview
+
+- Nitek Inc. is a technology company developing deep‑ultraviolet (DUV) and visible MicroLED, GaN RF, and GaN power devices based on AlN/AlGaN material platforms.[2][3][1]
+- The company traces its roots to the research of Prof. Asif Khan’s group (a pioneer in GaN/AlGaN materials and devices), commercializing university-developed nitride technologies.[4][2]
+
+## Core technologies and products
+
+- **MicroLED & DUV emitters**: Nitek works on high‑efficiency AlGaN/AlN emitters for deep‑UV light sources and MicroLEDs for high‑brightness, low‑power displays and AR/VR applications.[3][1][2]
+- **GaN RF devices**: It develops GaN high‑electron‑mobility transistors (HEMTs) and related RF components for 5G/6G, satellite communication, radar, and defense markets.[1][3]
+- **GaN power electronics**: Nitek’s GaN power devices target applications such as data‑center power supplies, electric vehicles, and renewable‑energy power conversion where high efficiency and high voltage are critical.[3][1]
+
+## Location and contact
+
+- The company lists its main office at 1762 Technology Drive, Suite 227, San Jose, California 95110, USA.[5]
+- General contact is via email at **info@nitekusa.com**, with additional contact details on its website’s contact page.[5]
+
+If you share whether you care more about MicroLED, RF, or power electronics, a more targeted technical summary of Nitek’s work in that area can be provided.
+
+[1](https://nitekusa.com)
+[2](https://nitekusa.com/about/)
+[3](https://nitekusa.com/technology/)
+[4](https://www.zoominfo.com/c/nitek-inc/353743205)
+[5](https://nitekusa.com/contact_us/)
+
+Nitek Inc. 是一家美国半导体公司，专注于先进的 III-V/III-N（氮化物基）材料和器件，特别是 MicroLED 和 GaN 射频/功率元件。
+​
+
+公司概况
+Nitek Inc. 是一家科技公司，致力于开发基于 AlN/AlGaN 材料平台的深紫外 (DUV) 和可见光 MicroLED、GaN RF 和 GaN 功率器件。
+​
+
+该公司起源于 Asif Khan 教授团队（GaN/AlGaN 材料和器件领域的先驱）的研究，将大学开发的氮化物技术商业化。
+​
+
+核心技术和产品
+MicroLED 和 DUV 发射器：Nitek 致力于研发用于深紫外光源的高效 AlGaN/AlN 发射器和用于高亮度、低功耗显示器和 AR/VR 应用的 MicroLED。
+​
+
+GaN射频器件：该公司开发用于5G/6G、卫星通信、雷达和国防市场的GaN高电子迁移率晶体管（HEMT）及相关射频组件。
+​
+
+GaN 功率电子器件：Nitek 的 GaN 功率器件面向数据中心电源、电动汽车和可再生能源电力转换等应用，在这些应用中，高效率和高电压至关重要。
+​
+
+地点和联系方式
+该公司将其主要办公地点列为：美国加利福尼亚州圣何塞市科技大道 1762 号 227 室，邮编 95110。
+​
+
+一般联系方式是通过电子邮件info@nitekusa.com，更多联系方式请访问其网站的联系页面。
+​
+<https://nitekusa.com/>
+
+## Iftikhar Ahmad
+
+Yes, there is a researcher named **Iftikhar Ahmad** who previously worked at Nitek Inc., but he is now a faculty member at the University of South Carolina rather than currently listed as Nitek staff.  
+
+### Relationship with Nitek Inc.
+
+- A CV from the University of South Carolina shows that **Dr. Iftikhar Ahmad** worked at **Nitek Inc., Columbia, South Carolina** as a Research Scientist (2010–2014) and then Senior Research Scientist (2014–2015).[1][2]
+- Several papers on deep‑UV AlGaN materials and devices list his affiliation as **Nitek Inc.** and use the email **iftikhar@nitekusa.com**, confirming his research role there in III‑nitride materials and deep‑UV optoelectronics.[3][4][5][6]
+
+### Current position and expertise
+
+- Dr. Ahmad is now an assistant professor (tenure‑track) of electrical engineering at the **University of South Carolina**, working on ultra‑wide‑bandgap semiconductors.[7]
+- His expertise covers MOCVD growth of AlN/AlGaN and related III‑nitride materials, deep‑UV light emitters, and wide‑bandgap device physics, bridging his academic work with his earlier industrial research at Nitek.[8][9][7]
+
+If you say whether you care more about his deep‑UV LED work or his newer ultra‑wide‑bandgap research, a concise technical summary of his main contributions can be provided.
+
+[1](https://sam.research.sc.edu/uscera/facultyExpertise/cv/38356)
+[2](https://liu.se)
+[3](https://onlinelibrary.wiley.com/doi/10.1002/pssa.201001104)
+[4](https://pubs.aip.org/avs/jvb/article-abstract/32/6/061204/103088)
+[5](https://onlinelibrary.wiley.com/doi/abs/10.1002/pssc.201300661)
+[6](https://onlinelibrary.wiley.com/doi/abs/10.1002/pssa.201001104)
+[7](https://sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/ahmad.php)
+[8](https://www.linkedin.com/in/iftikhar-ahmad-a9b8352a)
+[9](https://scholar.google.com/citations?user=eYJPqXQAAAAJ&hl=en)
+[10](https://sc.edu/study/colleges_schools/engineering_and_computing/docs/cv/iftikhar_ahmad-cv.pdf)
+[11](https://www.pame.org.pk/Books/MedicalHistory/17.Iftikhar%20Ahmad.pdf)
+[12](https://www.academia.edu/93084259/276_nm_Substrate_Free_Flip_Chip_AlGaN_Light_Emitting_Diodes)
+[13](https://www.imdb.com/title/tt13892722/)
+[14](https://pubs.rsc.org/en/content/articlelanding/2020/cp/d0cp03434g)
+[15](https://pubs.aip.org/avs/jvb/article/32/6/061204/103088/Deep-ultraviolet-photopumped-stimulated-emission)
+[16](https://www.lancaster.sc.edu/study/colleges_schools/engineering_and_computing/docs/cv/iftikhar_ahmad-cv.pdf)
+[17](https://scholar.google.com/citations?user=ZT6q7qAAAAAJ&hl=en)
+[18](https://www.academia.edu/30550053/Pulsed_modulation_doping_of_Al_x_Ga_1_x_N_x_0_6_AlGaN_epilayers_for_deep_UV_optoelectronic_devices)
+[19](https://scholar.google.com.au/citations?user=ZT6q7qAAAAAJ&hl=th)
+[20](https://pubs.aip.org/avs/jvb/article-pdf/doi/10.1116/1.4898694/15752719/061204_1_online.pdf)
+[21](https://www.sciencedirect.com/science/article/abs/pii/S0022459621008434)
+
+是的，有一位名叫Iftikhar Ahmad的研究员，他以前在 Nitek 公司工作，但他现在是南卡罗来纳大学的教员，而不是 Nitek 公司的员工。
+
+与Nitek公司的关系
+南卡罗来纳大学的一份简历显示，伊夫提哈尔·艾哈迈德博士曾在南卡罗来纳州哥伦比亚市的 Nitek 公司担任研究科学家（2010-2014 年）和高级研究科学家（2014-2015 年）。
+​
+
+多篇关于深紫外 AlGaN 材料和器件的论文都列出了他的隶属关系为Nitek Inc.，并使用了邮箱iftikhar@nitekusa.com，证实了他在那里从事 III 族氮化物材料和深紫外光电子学方面的研究工作。
+​
+
+目前职位和专长
+艾哈迈德博士目前是南卡罗来纳大学电气工程系的助理教授（终身教职），从事超宽带隙半导体的研究。
+​
+
+他的专长涵盖 AlN/AlGaN 及相关 III 族氮化物材料的 MOCVD 生长、深紫外光发射器和宽带隙器件物理，将他的学术工作与他在 Nitek 早期的工业研究联系起来。
+​
+### his related areas:
+
+Dr. Iftikhar Ahmad’s main technical contributions fall into two closely related areas: **deep‑UV AlGaN optoelectronics** and **(ultra)wide‑bandgap nitride materials/devices**.[1][2][3][4]
+
+### Deep‑UV AlGaN emitters (LEDs & lasers)
+
+- He has worked extensively on **high‑Al‑content AlGaN epitaxy** to enable deep‑UV light emitters (≈220–280 nm), focusing on reducing dislocations and improving crystal quality for efficient LEDs and laser structures.[2][3][4][1]
+- Publications report advances such as dislocation reduction in high‑Al AlGaN, pulsed‑modulation doping techniques, and demonstration of **deep‑UV stimulated emission** from AlGaN structures, which are important steps toward practical deep‑UV laser diodes.[3][5][2]
+
+### Ultra‑/wide‑bandgap semiconductor research
+
+- In his more recent academic role, his work extends to **wide‑ and ultra‑wide‑bandgap materials** (e.g., GaN and related alloys) with an emphasis on electronic and photocatalytic properties, strain effects, and device‑relevant band engineering.[6][7][8]
+- This includes theoretical and experimental studies on heterostructures and nitride‑based devices aimed at high‑power, high‑frequency, and high‑temperature electronics, linking naturally to GaN power and RF device applications.[8][9][6]
+
+If you say whether you are more interested in **epitaxy/growth**, **device design (LED/LD/HEMT)**, or **applications** (e.g., sterilization, power electronics), a more targeted list of 2–3 representative papers can be suggested as starting points.
+
+[1](https://onlinelibrary.wiley.com/doi/10.1002/pssa.201001104)
+[2](https://pubs.aip.org/avs/jvb/article-abstract/32/6/061204/103088)
+[3](https://onlinelibrary.wiley.com/doi/abs/10.1002/pssc.201300661)
+[4](https://onlinelibrary.wiley.com/doi/abs/10.1002/pssa.201001104)
+[5](https://pubs.aip.org/avs/jvb/article-pdf/doi/10.1116/1.4898694/15752719/061204_1_online.pdf)
+[6](https://scholar.google.com/citations?user=eYJPqXQAAAAJ&hl=en)
+[7](https://pubs.rsc.org/en/content/articlelanding/2020/cp/d0cp03434g)
+[8](https://www.sciencedirect.com/science/article/abs/pii/S0022459621008434)
+[9](https://sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/ahmad.php)
+
+Iftikhar Ahmad 博士的主要技术贡献体现在两个密切相关的领域：深紫外 AlGaN 光电子学和（超）宽带隙氮化物材料/器件。
+​
+
+深紫外AlGaN发光器件（LED和激光器）
+他广泛研究了高铝组分 AlGaN 外延技术，以实现深紫外发光器件（≈220-280 nm），重点是减少位错并提高晶体质量，从而实现高效的 LED 和激光结构。
+​
+
+出版物报道了诸如高铝AlGaN中的位错减少、脉冲调制掺杂技术以及AlGaN结构中深紫外受激发射的演示等进展，这些都是实现实用深紫外激光二极管的重要步骤。
+​
+
+超/宽带隙半导体研究
+在他最近的学术工作中，他的研究方向扩展到宽带隙和超宽带隙材料（例如GaN及相关合金），重点是电子和光催化特性、应变效应以及与器件相关的能带工程。
+​
+
+这包括针对高功率、高频和高温电子器件的异质结构和氮化物基器件的理论和实验研究，自然而然地与氮化镓功率和射频器件应用联系起来。
+​
