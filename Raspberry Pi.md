@@ -2300,6 +2300,44 @@ PIO 和 DMA 的结合使用是 RP2350 微控制器的杀手级特性之一。通
 
 # 19. 备份
 
+需要先安装 `rpi-clone`：
+
+```bash
+# 克隆仓库
+git clone https://github.com/billw2/rpi-clone.git
+
+# 进入目录
+cd rpi-clone
+
+# 安装
+sudo cp rpi-clone rpi-clone-setup /usr/local/sbin
+
+# 返回主目录
+cd ~
+
+# 现在可以使用了
+sudo rpi-clone sda
+```
+
+**或者使用图形界面工具（如果有桌面环境）**：
+
+菜单 → Accessories → SD Card Copier
+
+---
+
+**如果 git 也没安装**：
+
+```bash
+# 先安装 git
+sudo apt-get update
+sudo apt-get install git
+
+# 然后按上面步骤安装 rpi-clone
+```
+
+安装完成后执行 `sudo rpi-clone sda` 就可以开始克隆了。
+
+
 ## `sda` 是什么
 
 `sda` 是 Linux 系统中**设备名称**，代表你插入的 USB 读卡器中的 SD 卡。
