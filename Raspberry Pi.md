@@ -2391,3 +2391,61 @@ lsblk -o NAME,SIZE,TYPE,MOUNTPOINT
 - 不需要挂载，`rpi-clone` 自动处理
 - 克隆完成后新卡直接可用
 
+```
+basteng@basteng:~ $ lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda           8:0    1 116.5G  0 disk
+├─sda1        8:1    1   256M  0 part /media/basteng/bootfs
+└─sda2        8:2    1 116.2G  0 part /media/basteng/rootfs
+mmcblk0     179:0    0  59.4G  0 disk
+├─mmcblk0p1 179:1    0   256M  0 part /boot
+└─mmcblk0p2 179:2    0  59.2G  0 part /
+```
+
+```
+basteng@basteng:~ $ sudo rpi-clone sda
+
+  Destination disk partition /dev/sda2 is mounted on /media/basteng/rootfs.
+  The clone cannot proceed unless it is unmounted.
+Do you want to unmount /media/basteng/rootfs?  (yes/no): yes
+
+  Destination disk partition /dev/sda1 is mounted on /media/basteng/bootfs.
+  The clone cannot proceed unless it is unmounted.
+Do you want to unmount /media/basteng/bootfs?  (yes/no): yes
+
+Booted disk: mmcblk0 63.8GB                Destination disk: sda 125.1GB
+---------------------------------------------------------------------------
+Part      Size    FS     Label           Part   Size    FS     Label
+1 /boot   256.0M  fat32  --              1      256.0M  fat32  --
+2 root     59.2G  ext4   rootfs          2      116.2G  ext4   rootfs
+---------------------------------------------------------------------------
+== SYNC mmcblk0 file systems to sda ==
+/boot                 (50.0M used)   : SYNC to sda1 (256.0M size)
+/                     (6.3G used)    : SYNC to sda2 (116.2G size)
+---------------------------------------------------------------------------
+Run setup script       : no.
+Verbose mode           : no.
+-----------------------:
+
+Ok to proceed with the clone?  (yes/no): yes
+
+Syncing file systems (can take a long time)
+Syncing mounted partitions:
+  Mounting /dev/sda2 on /mnt/clone
+  => rsync // /mnt/clone with-root-excludes ...
+  Mounting /dev/sda1 on /mnt/clone/boot
+  => rsync /boot/ /mnt/clone/boot  ...
+
+Editing /mnt/clone/boot/cmdline.txt PARTUUID to use ff146215
+Editing /mnt/clone/etc/fstab PARTUUID to use ff146215
+===============================
+Done with clone to /dev/sda
+   Start - 22:15:28    End - 22:19:19    Elapsed Time - 3:51
+
+Cloned partitions are mounted on /mnt/clone for inspection or customizing.
+
+Hit Enter when ready to unmount the /dev/sda partitions ...
+  unmounting /mnt/clone/boot
+  unmounting /mnt/clone
+===============================
+```
