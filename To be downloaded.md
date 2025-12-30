@@ -168,9 +168,9 @@
   - [37. Semiconductor quantum dots: Technological progress and future challenges](#37-semiconductor-quantum-dots-technological-progress-and-future-challenges)
   - [38. Machine Learning Potentials for Property Predictions of Two-Dimensional Group-III Nitrides](#38-machine-learning-potentials-for-property-predictions-of-two-dimensional-group-iii-nitrides)
   - [39. Research progresses on epitaxy and sidewall treatment for micro-LEDs](#39-research-progresses-on-epitaxy-and-sidewall-treatment-for-micro-leds)
-- [40. Impact of low-temperature cover layer growth of InAs/GaAs quantum dots on their optical properties](#40-impact-of-low-temperature-cover-layer-growth-of-inasgaas-quantum-dots-on-their-optical-properties)
-- [41. Optical Nanoantennas for Photovoltaic Applications](#41-optical-nanoantennas-for-photovoltaic-applications)
-- [42. Review of GaN optical device characteristics, applications, and optical analysis technology](#42-review-of-gan-optical-device-characteristics-applications-and-optical-analysis-technology)
+  - [40. Impact of low-temperature cover layer growth of InAs/GaAs quantum dots on their optical properties](#40-impact-of-low-temperature-cover-layer-growth-of-inasgaas-quantum-dots-on-their-optical-properties)
+  - [41. Optical Nanoantennas for Photovoltaic Applications](#41-optical-nanoantennas-for-photovoltaic-applications)
+  - [42. Review of GaN optical device characteristics, applications, and optical analysis technology](#42-review-of-gan-optical-device-characteristics-applications-and-optical-analysis-technology)
 
 链接不需要加<>，直接copy https链接
 
@@ -828,14 +828,14 @@ https://www.nature.com/articles/nature16454
 
 <https://www.sciencedirect.com/science/article/abs/pii/S0079672725000461?via%3Dihub>
 
-# 40. Impact of low-temperature cover layer growth of InAs/GaAs quantum dots on their optical properties
+## 40. Impact of low-temperature cover layer growth of InAs/GaAs quantum dots on their optical properties
 
 <https://iopscience.iop.org/article/10.35848/1347-4065/ac7caa/meta>
 
-# 41. Optical Nanoantennas for Photovoltaic Applications
+## 41. Optical Nanoantennas for Photovoltaic Applications
 
 <https://pmc.ncbi.nlm.nih.gov/articles/PMC7915844/>
 
-# 42. Review of GaN optical device characteristics, applications, and optical analysis technology
+## 42. Review of GaN optical device characteristics, applications, and optical analysis technology
 
 <https://www.sciencedirect.com/science/article/abs/pii/S2214785320404456>
