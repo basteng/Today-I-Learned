@@ -171,6 +171,8 @@
   - [40. Impact of low-temperature cover layer growth of InAs/GaAs quantum dots on their optical properties](#40-impact-of-low-temperature-cover-layer-growth-of-inasgaas-quantum-dots-on-their-optical-properties)
   - [41. Optical Nanoantennas for Photovoltaic Applications](#41-optical-nanoantennas-for-photovoltaic-applications)
   - [42. Review of GaN optical device characteristics, applications, and optical analysis technology](#42-review-of-gan-optical-device-characteristics-applications-and-optical-analysis-technology)
+  - [43. Experimental investigation of high-speed WDM-visible light communication using blue, green, and red InGaN µLEDs](#43-experimental-investigation-of-high-speed-wdm-visible-light-communication-using-blue-green-and-red-ingan-µleds)
+  - [44. Effective integration of a MOSFET phototransistor to a GaN LED for UV sensing](#44-effective-integration-of-a-mosfet-phototransistor-to-a-gan-led-for-uv-sensing)
 
 链接不需要加<>，直接copy https链接
 
@@ -839,3 +841,11 @@ https://www.nature.com/articles/nature16454
 ## 42. Review of GaN optical device characteristics, applications, and optical analysis technology
 
 <https://www.sciencedirect.com/science/article/abs/pii/S2214785320404456>
+
+## 43. Experimental investigation of high-speed WDM-visible light communication using blue, green, and red InGaN µLEDs
+
+<https://doi.org/10.1364/OL.521996>
+
+## 44. Effective integration of a MOSFET phototransistor to a GaN LED for UV sensing
+
+<https://doi.org/10.1364/OL.463236>
