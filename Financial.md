@@ -12,6 +12,9 @@
   - [3.1 集思录文章](#31-集思录文章)
     - [3.1.1 我的套利之旅](#311-我的套利之旅)
     - [3.1.2 期现套利这个稳定的肥肉没了，我来求职了](#312-期现套利这个稳定的肥肉没了我来求职了)
+- [4. 要约收购](#4-要约收购)
+  - [4.1 深交所](#41-深交所)
+  - [4.2 上交所](#42-上交所)
 
 
 # 1.债券
@@ -214,4 +217,14 @@ http://www.optbbs.com/?fromuid=510
 对我有兴趣的大佬，可直接私信或者回复我~~
 
 <https://www.jisilu.cn/question/63352>
+
+# 4. 要约收购
+
+## 4.1 深交所
+
+<https://www.szse.cn/disclosure/deal/offer/index.html>
+
+## 4.2 上交所
+
+<https://www.sse.com.cn/disclosure/diclosure/tenderoffer/>
 
