@@ -158,6 +158,21 @@
     - [his related areas:](#his-related-areas)
     - [Deep‑UV AlGaN emitters (LEDs \& lasers)](#deepuv-algan-emitters-leds--lasers)
     - [Ultra‑/wide‑bandgap semiconductor research](#ultrawidebandgap-semiconductor-research)
+- [30. The Laboratory of Ultra-wide Bandgap Semiconductors at NUST MISIS](#30-the-laboratory-of-ultra-wide-bandgap-semiconductors-at-nust-misis)
+  - [Main scientific goals](#main-scientific-goals)
+  - [Materials and devices studied](#materials-and-devices-studied)
+  - [Key achievements](#key-achievements)
+  - [Collaborations and role](#collaborations-and-role)
+  - [Education and training](#education-and-training)
+  - [author:](#author)
+  - [Laboratory of Ultra](#laboratory-of-ultra)
+      - [Activities of the Laboratory](#activities-ofthe-laboratory)
+  - [30.1 Alexander Polyakov](#301-alexander-polyakov)
+  - [Research role and affiliation](#research-role-and-affiliation)
+  - [Ga₂O₃ and wide bandgap focus](#gao-and-wide-bandgap-focus)
+  - [Specific Ga₂O₃ results](#specific-gao-results)
+  - [Radiation and extreme environments](#radiation-and-extreme-environments)
+  - [Context within Ga₂O₃ research](#context-within-gao-research)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -2561,4 +2576,212 @@ Iftikhar Ahmad 博士的主要技术贡献体现在两个密切相关的领域�
 ​
 
 这包括针对高功率、高频和高温电子器件的异质结构和氮化物基器件的理论和实验研究，自然而然地与氮化镓功率和射频器件应用联系起来。
+
+# 30. The Laboratory of Ultra-wide Bandgap Semiconductors at NUST MISIS
+
+The Laboratory of Ultra-wide Bandgap Semiconductors at NUST MISIS is a research center focused on gallium oxide (Ga₂O₃) and related wide/ultra‑wide bandgap materials for next‑generation power and radiation‑hard electronics. It is led on the physics/device side by Professor Alexander Polyakov and is part of the university’s advanced semiconductor research infrastructure.[1][2][3]
+
+## Main scientific goals  
+
+- To understand how high concentrations of point defects and related elastic stress in Ga₂O₃ can be used to overcome key drawbacks: low thermal conductivity, lack of effective p‑type conductivity, strong polymorphism, and metastable properties.[2][1]
+- To actively use radiation‑induced defects (for example from ion implantation, proton or carbon irradiation) in order to tailor material properties for devices operating in harsh environments.[2]
+
+## Materials and devices studied  
+
+- Core materials include gallium oxide polymorphs (α‑, β‑, κ‑, γ‑Ga₂O₃), group‑III nitrides, silicon carbide, diamond and other ultra‑wide bandgap semiconductors.[1][2]
+- The lab fabricates and analyzes diodes and other test structures to extract electrical characteristics, deep‑level spectra and breakdown behavior, particularly in Ga₂O₃‑based layers and heterostructures.[1][2]
+
+## Key achievements  
+
+- Demonstrated growth of thick, high‑quality α‑Ga₂O₃ films doped with tin, enabling wide‑range control of electron concentration for power devices.[2][1]
+- Reported, for the first time, formation of a two‑dimensional hole gas in heterojunctions involving the κ‑polymorph of Ga₂O₃, and studied radiation‑induced defects in high‑resistivity α‑Ga₂O₃ films under proton and carbon irradiation.[2]
+
+## Collaborations and role  
+
+- The laboratory collaborates with institutions such as the University of Florida, University of Oslo, Korean universities, the Ioffe Institute, Tomsk University, and the Kurchatov Institute.[1][2]
+- It aims to act as a Russian coordination center for research on fundamental properties and device physics of wide‑bandgap materials, with a near‑term emphasis on comprehensive studies of the Ga₂O₃ system.[1][2]
+
+## Education and training  
+
+- The lab is closely linked to MISIS educational programs in semiconductor physics, optoelectronic devices, and energy converters, providing research training for bachelor’s, master’s, and PhD students.[7][9]
+- Young researchers, such as PhD graduates working on deep‑level spectroscopy and β‑Ga₂O₃ epitaxial films, are being trained within the laboratory’s projects.[2]
+
+[1](https://en.misis.ru/university/struktura-universiteta/lab/115/)
+[2](https://megagrant.ru/en/labs/lab_eng_92525/)
+[3](https://en.misis.ru/science/community/scientists/3641/)
+[4](https://en.misis.ru/science/structure/)
+[5](https://www.scribd.com/document/728177688/Ultrawide-bandgap-p-n-heterojunction-of-diamondb-G)
+[6](https://pubmed.ncbi.nlm.nih.gov/41259511/)
+[7](https://en.misis.ru/applicants/admission/baccalaureate-and-specialty/faculties/electro/poluprovodnik/)
+[8](https://en.misis.ru/science/community/scientists/international/)
+[9](https://en.misis.ru/applicants/admission/magistracy/faculties/elektnanoel/poluppreoben/)
+
+莫斯科国立科技大学（NUST MISIS）超宽带隙半导体实验室是一个专注于氧化镓（Ga₂O₃）及相关宽带隙/超宽带隙材料的研究中心，致力于开发用于下一代功率和抗辐射电子器件的产品。该实验室由亚历山大·波利亚科夫教授领导物理/器件方面的研究，是该大学先进半导体研究基础设施的一部分。
+​
+
+主要科学目标
+了解 Ga₂O₃ 中高浓度的点缺陷和相关的弹性应力如何用于克服其主要缺点：导热性低、缺乏有效的 p 型导电性、多晶型性强和亚稳态特性。
+​
+
+积极利用辐射引起的缺陷（例如离子注入、质子或碳辐照）来定制材料特性，以用于在恶劣环境下运行的器件。
+​
+
+研究的材料和器件
+核心材料包括氧化镓多晶型物（α-、β-、κ-、γ-Ga₂O₃）、III族氮化物、碳化硅、金刚石和其他超宽带隙半导体。
+​
+
+该实验室制造和分析二极管和其他测试结构，以提取电特性、深能级谱和击穿行为，尤其是在 Ga₂O₃ 基层和异质结构中。
+​
+
+主要成就
+已证实可生长出掺杂锡的厚、高质量的α-Ga₂O₃薄膜，从而能够对功率器件的电子浓度进行大范围控制。
+​
+
+首次报道了在涉及 κ-Ga₂O₃ 多晶型的异质结中形成二维空穴气体，并研究了质子和碳辐照下高电阻率 α-Ga₂O₃ 薄膜中的辐射诱导缺陷。
+​
+
+合作与角色
+该实验室与佛罗里达大学、奥斯陆大学、韩国大学、约费物理技术研究所、托木斯克大学和库尔恰托夫研究所等机构开展合作。
+​
+
+它旨在成为俄罗斯宽带隙材料基本性质和器件物理研究的协调中心，近期重点是对 Ga₂O₃ 系统进行全面研究。
+​
+
+教育和培训
+该实验室与 MISIS 的半导体物理、光电器件和能量转换器教育项目紧密相关，为本科生、硕士生和博士生提供研究培训。
+​
+
+实验室的项目正在培养年轻的研究人员，例如从事深能级光谱学和β-Ga₂O₃外延薄膜研究的博士毕业生。
+​
+
+---
+created: 2026-01-01T14:39:51 (UTC +08:00)
+tags: []
+source: https://en.misis.ru/university/struktura-universiteta/lab/115/
+author: 
+---
+
+## Laboratory of Ultra
+
+> ### Excerpt
+> About MISIS. Laboratories
+
+---
+The role of wide-bandgap semiconductors in advanced technologies is increasing every year. New experimental approaches provide a rapid transition from large-area planar LEDs to micro- and nanoscale LEDs used in augmented reality systems, optical communication and optical microscopy beyond diffraction limitations.
+
+Wide-bandgap materials of a new generation, such as gallium oxide, define the face of power electronics of the XXI century in applications related to electric vehicles, electric trains, distribution systems, as well as high and low voltage switching networks.
+
+#### Activities of the Laboratory
+
+The research goal of the project is to find out how high concentrations of point defects and associated elastic stresses in wide-bandgap semiconductors based on gallium oxide can overcome the main disadvantages of such a system: low thermal conductivity, absence of impurities or defects that create effective hole conductivity, pronounced polymorphism, strong metastability of properties. All this currently slows down the introduction of devices based on gallium oxide into real electronic and optoelectronic devices and hinders the commercialization of technologies based on this material.
+
+The scientists of the project demonstrated the possibility of manufacturing a new material and effectively managing its properties using an economical technology of its cultivation. Ga2O3 is a promising alternative to silicon in power semiconductor electronic devices and allows one to work with higher voltages, at higher temperatures and with less power loss.
+
+The group of Professor Vladimir Nikolaev managed to grow thick α-Ga2O3 films with a sufficiently high structural perfection and introduce impurity tin atoms into them, supplying electrons and changing the conductivity of the films in a very wide range. Researchers led by Professor Alexander Polyakov created test diode structures from the prepared films and studied in detail the electronic properties of the material, as well as the electronic structure of the impurities and defects present in it. The results obtained inspire optimism about the prospects of using Ga2O3 in power devices, but very serious additional research will be required to increase the stability of the material and improve its characteristics and their reproducibility.
+
+The research team of the Laboratory of Ultra-wide Bandgap Semiconductors actively cooperates with the University of Kore (South Korea), the University of Oslo (Norway), the University of Florida, the Ioffe Institute (St. Petersburg), Tomsk University, the Kurchatov Institute, etc.
+
+The laboratory will become a Russian coordination center for research of fundamental properties and physics of devices based on wide-bandgap materials: gallium oxide, nitrides of the third group, diamond, silicon carbide, etc. In particular, in the near future efforts will be focused on comprehensive studies of the gallium oxide system.
+
+​宽带隙半导体在先进技术中的作用逐年增加。新的实验方法使得从大面积平面LED到用于增强现实系统、光通信和光学显微镜的微纳尺度LED的快速过渡成为可能，突破了衍射极限。
+
+新一代宽带隙材料，如氧化镓，定义了 21 世纪电力电子技术的发展方向，其应用领域包括电动汽车、电力火车、配电系统以及高低压开关网络。
+
+实验室活动
+该项目的研究目标是探究基于氧化镓的宽带隙半导体中高浓度的点缺陷及其相关的弹性应力如何克服该体系的主要缺点：导热系数低、缺乏能够产生有效空穴导电性的杂质或缺陷、显著的多晶型现象以及性质的强亚稳态。所有这些缺点目前都阻碍了基于氧化镓的器件在实际电子和光电子器件中的应用，并妨碍了基于该材料的技术的商业化。
+
+该项目的科学家们展示了利用经济高效的培养技术制造新型材料并有效调控其性能的可能性。Ga₂O₃有望成为功率半导体电子器件中硅的替代品，它能够使器件在高电压、高温度下工作，并降低功率损耗。
+
+弗拉基米尔·尼古拉耶夫教授的研究团队成功生长出具有足够高结构完整性的厚α-Ga₂O₃薄膜，并向其中引入锡原子杂质，从而提供电子并大范围改变薄膜的电导率。亚历山大·波利亚科夫教授领导的研究团队利用制备的薄膜构建了测试二极管结构，并详细研究了材料的电子特性以及其中存在的杂质和缺陷的电子结构。所得结果令人对Ga₂O₃在功率器件中的应用前景充满信心，但仍需开展大量深入的研究，以提高材料的稳定性，并改善其特性及其可重复性。
+
+超宽带隙半导体实验室的研究团队与韩国高丽大学、挪威奥斯陆大学、佛罗里达大学、圣彼得堡约费物理技术研究所、托木斯克大学、库尔恰托夫研究所等机构积极开展合作。
+
+该实验室将成为俄罗斯研究基于宽带隙材料（如氧化镓、第三族氮化物、金刚石、碳化硅等）器件的基本特性和物理性质的协调中心。尤其是在不久的将来，研究工作将集中于对氧化镓体系的全面研究。
+
+## 30.1 Alexander Polyakov
+
+Alexander Polyakov is a physicist at NUST MISIS whose group fabricates and studies gallium oxide (Ga₂O₃)–based test devices, especially diodes, with a focus on defects, doping, and electronic properties for power electronics and radiation environments. His recent Ga₂O₃ work includes κ‑Ga₂O₃ epitaxial layers and heterostructures where polarization effects can induce unusual hole‑like conductivity at κ‑Ga₂O₃/GaN interfaces, relevant for novel ultra‑wide‑bandgap device concepts.[1][2][3][4][5]
+
+## Research role and affiliation
+
+- Alexander Y. Polyakov is a leading researcher in **wide** bandgap and ultra‑wide‑bandgap semiconductors, including GaN, SiC, and various polymorphs of Ga₂O₃.[3][6]
+- He is affiliated with the National University of Science and Technology MISIS (NUST MISIS) and collaborates with groups in Florida, Oslo, Korea, and several Russian institutes on Ga₂O₃ and related materials.[1][3]
+
+## Ga₂O₃ and wide bandgap focus
+
+- At the Laboratory of Ultra‑wide Bandgap Semiconductors at NUST MISIS, Polyakov’s team studies how point defects, elastic stress, and impurity doping in Ga₂O₃ affect conductivity, stability, and suitability for high‑power switching devices.[7][1]
+- They fabricate Schottky and p–n‑like test diodes from doped Ga₂O₃ films (for example, Sn‑doped α‑ and κ‑Ga₂O₃) to extract parameters such as carrier concentration, trap spectra, and breakdown behavior.[4][8][1]
+
+## Specific Ga₂O₃ results
+
+- In thick α‑Ga₂O₃ films grown by collaborators, Polyakov’s group demonstrated that Sn doping can tune electron concentration over a wide range while maintaining good structural quality, which is crucial for controllable power devices.[8][1]
+- For κ‑Ga₂O₃ grown by epitaxial lateral overgrowth, they reported improved crystalline quality and evidence of p‑type‑like behavior in thin films on GaN/sapphire, interpreted as a possible two‑dimensional hole gas at the κ‑Ga₂O₃/GaN interface due to polarization.[2][4]
+
+## Radiation and extreme environments
+
+- Polyakov is a co‑author on key reviews and papers about radiation damage in wide‑ and ultra‑wide‑bandgap semiconductors, including Ga₂O₃, examining how neutron, proton, and gamma irradiation affect device performance.[5][9][7]
+- This work positions Ga₂O₃ as a promising material for radiation‑hard detectors and electronics, complementing its appeal for high‑voltage, high‑temperature power applications.[10][11][5]
+
+## Context within Ga₂O₃ research
+
+- Recent reviews on Ga₂O₃ for power electronics and radiation detection frequently cite Polyakov’s Ga₂O₃ defect and radiation‑effects work as part of the core literature on the material’s reliability and defect physics.[12][5][7]
+- His Ga₂O₃ research sits alongside broader contributions to wide‑bandgap device physics, helping define how defects, interfaces, and polarization should be engineered in next‑generation Ga₂O₃‑based power and detector devices.[13][6][9]
+
+[1](https://en.misis.ru/university/struktura-universiteta/lab/115/)
+[2](https://www.ssrn.com/abstract=4238530)
+[3](https://scholar.google.com/citations?user=PJV-rEUAAAAJ)
+[4](https://onlinelibrary.wiley.com/doi/abs/10.1002/admi.202300394)
+[5](https://pubs.aip.org/aip/apm/article/13/4/041116/3344427/Gallium-oxide-Ga2O3-as-a-radiation-detector)
+[6](https://pubs.aip.org/aip/jap/article/131/23/230401/2837041/Wide-bandgap-semiconductor-materials-and-devices)
+[7](https://pubs.rsc.org/en/content/articlelanding/2019/tc/c8tc04193h)
+[8](https://core.ac.uk/download/pdf/459153620.pdf)
+[9](https://pure.psu.edu/en/publications/review-radiation-damage-in-wide-and-ultra-wide-bandgap-semiconduc/)
+[10](https://pmc.ncbi.nlm.nih.gov/articles/PMC10934017/)
+[11](https://info.ornl.gov/sites/publications/Files/Pub168429.pdf)
+[12](https://www.sciencedirect.com/science/article/pii/S2772569322000019)
+[13](https://www.sciencedirect.com/science/article/pii/S2709472323000357)
+[14](https://scholar.google.com/citations?user=PJV-rEUAAAAJ&hl=ru)
+[15](https://inspirehep.net/literature/352901)
+[16](https://en.wikipedia.org/wiki/Alexander_Markovich_Polyakov)
+[17](https://www.linkedin.com/in/alexander-polyakov-4154b179)
+[18](https://www.linkedin.com/in/polyakovaleksandr)
+[19](https://www.osti.gov/biblio/1499688)
+[20](https://onlinelibrary.wiley.com/doi/abs/10.1002/admt.202200539)
+
+Alexander Polyakov是NUST MISIS的物理学家，他的研究团队致力于制造和研究基于氧化镓（Ga₂O₃）的测试器件，特别是二极管，重点关注缺陷、掺杂以及在电力电子和辐射环境下的电子特性。他近期的Ga₂O₃研究包括κ-Ga₂O₃外延层和异质结构，其中极化效应可在κ-Ga₂O₃/GaN界面处诱导出异常的空穴型导电性，这对于新型超宽带隙器件的概念至关重要。
+​
+
+研究角色和隶属关系
+Alexander Y. Polyakov 是宽带隙和超宽带隙半导体领域的领先研究员，包括 GaN、SiC 和各种 Ga₂O₃ 多晶型物。
+​
+
+他隶属于俄罗斯国立科技大学（NUST MISIS），并与佛罗里达州、奥斯陆、韩国和俄罗斯的几个研究所的团队合作研究 Ga₂O₃ 及相关材料。
+​
+
+Ga₂O₃和宽带隙聚焦
+在 NUST MISIS 的超宽带隙半导体实验室，波利亚科夫的团队研究了 Ga₂O₃ 中的点缺陷、弹性应力和杂质掺杂如何影响其导电性、稳定性和作为高功率开关器件的适用性。
+​
+
+他们利用掺杂的 Ga₂O₃ 薄膜（例如，Sn 掺杂的 α- 和 κ-Ga₂O₃）制造肖特基和 p-n 型测试二极管，以提取载流子浓度、陷阱谱和击穿行为等参数。
+​
+
+具体的Ga₂O₃结果
+在合作者生长的厚 α‐Ga₂O₃ 薄膜中，波利亚科夫的研究小组证明，Sn 掺杂可以在保持良好结构质量的同时，在很宽的范围内调节电子浓度，这对于可控功率器件至关重要。
+​
+
+对于通过外延横向生长法生长的 κ-Ga₂O₃，他们报告称晶体质量得到改善，并且在 GaN/蓝宝石上的薄膜中出现了类似 p 型的行为，这被解释为由于极化作用，κ-Ga₂O₃/GaN 界面处可能存在二维空穴气体。
+​
+
+辐射和极端环境
+Polyakov 是有关宽带隙和超宽带隙半导体（包括 Ga₂O₃）辐射损伤的关键评论和论文的合著者，研究了中子、质子和伽马射线辐照如何影响器件性能。
+​
+
+这项工作将 Ga₂O₃ 定位为抗辐射探测器和电子器件的一种很有前途的材料，进一步增强了其在高压、高温功率应用方面的吸引力。
+​
+
+Ga₂O₃ 研究的背景
+最近关于 Ga₂O₃ 在电力电子和辐射探测方面的评论经常引用 Polyakov 的 Ga₂O₃ 缺陷和辐射效应研究，作为该材料可靠性和缺陷物理的核心文献的一部分。
+​
+
+他对 Ga₂O₃ 的研究与他对宽带隙器件物理的更广泛贡献相辅相成，有助于定义下一代 Ga₂O₃ 基功率和探测器器件中缺陷、界面和极化的工程化方式。
 ​
