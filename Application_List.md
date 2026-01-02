@@ -183,6 +183,16 @@
   - [His research activities](#his-research-activities)
   - [His institute / laboratory](#his-institute--laboratory)
   - [Kyoto University department context](#kyoto-university-department-context)
+- [32. DISMI and the Micro‑ and Nano‑Electronics Group](#32-dismi-and-the-micro-and-nanoelectronics-group)
+  - [Role and mission](#role-and-mission)
+  - [Main scientific areas](#main-scientific-areas)
+  - [Education and training](#education-and-training-1)
+  - [Research and external collaborations](#research-and-external-collaborations)
+  - [giovanni.verzellesi@unimore.it](#giovanniverzellesiunimoreit)
+  - [Who Giovanni Verzellesi is](#who-giovanni-verzellesi-is)
+  - [Academic position and roles](#academic-position-and-roles)
+  - [Research fields](#research-fields)
+  - [His institute and lab](#his-institute-and-lab)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -2941,4 +2951,140 @@ akio.kaneta@optomater.kuee.kyoto-u.ac.jp这个地址属于Akio Kaneta 博士，�
 ​
 
 该部门的员工和合作者致力于光子晶体、量子光电子学和半导体光谱学等课题的研究，这与 Kaneta 对先进光学测量方法的研究方向相一致。
+
+
+# 32. DISMI and the Micro‑ and Nano‑Electronics Group
+
+The Department of Sciences and Methods for Engineering (DISMI) at the University of Modena and Reggio Emilia is an engineering department based on the Reggio Emilia (San Lazzaro) campus that combines engineering, applied sciences, and management-oriented disciplines. It focuses on both research and teaching in several key areas of modern engineering.
+
+## Role and mission
+
+- DISMI carries out methodological and applied research, university teaching, and technology transfer in multiple engineering fields and in basic sciences applied to engineering.  
+- The department aims to provide advanced, interdisciplinary skills to tackle complex technological challenges, from theoretical studies to design, prototyping, and testing of solutions.
+
+## Main scientific areas
+
+- Management and industrial engineering (including operations, innovation management, and industrial organization).  
+- Mechatronics and mechanical engineering, energetic/energy engineering, and basic sciences (mathematics, physics, computer science) applied to engineering problems.
+
+## Education and training
+
+- DISMI is responsible for several bachelor’s and master’s programmes in engineering disciplines located in Reggio Emilia, having inherited the role of the former local Faculty of Engineering after Italian university reforms.  
+- Teaching is tightly linked to ongoing research and to collaborations with industry, giving students exposure to real-world projects and technology transfer activities.
+
+## Research and external collaborations
+
+- The department participates in national and European research projects and collaborates with companies and institutions in areas such as advanced manufacturing, mechatronics, energy technologies, and industrial digitalization.  
+- It is involved in regional high‑technology clusters and technopoles, supporting innovation and technology transfer for industry, especially in Emilia‑Romagna’s strong mechanical and automotive sectors.
+
+[1](https://www.dismi.unimore.it/en/department)
+[2](https://www.dismi.unimore.it/en)
+[3](https://www.unimore.it/en/university/departments-schools-and-faculties/department-engineering-science-and-methods)
+[4](https://www.nanoinnovation2021.eu/home/index.php/co-organizers-menu/152-unimore)
+[5](https://www.earpa.eu/organisations/university-of-modena-and-reggio-emilia/)
+[6](https://www.effra.eu/members/university-modena-and-reggio-emilia/)
+[7](https://en.wikipedia.org/wiki/University_of_Modena_and_Reggio_Emilia)
+[8](https://www.dismi.unimore.it/en/department/mission)
+[9](https://www.dismi.unimore.it/sites/dip09/files/2024-03/Verbale_Tavolo_Strategico_14_02_2024.pdf)
+
+摩德纳和雷焦艾米利亚大学的工程科学与方法系（DISMI）是一个位于雷焦艾米利亚（圣拉扎罗）校区的工程系，它融合了工程、应用科学和管理导向的学科。该系专注于现代工程几个关键领域的研究和教学。
+
+角色与使命
+DISMI 在多个工程领域和应用于工程的基础科学领域开展方法论和应用研究、大学教学和技术转让。
+
+该系旨在提供先进的跨学科技能，以应对复杂的技术挑战，涵盖从理论研究到解决方案的设计、原型制作和测试等各个方面。
+
+主要科学领域
+管理和工业工程（包括运营、创新管理和产业组织）。
+
+机电一体化和机械工程、能源/能源工程以及应用于工程问题的基础科学（数学、物理、计算机科学）。
+
+教育和培训
+DISMI 负责雷焦艾米利亚多个工程学科的本科和硕士课程，在意大利大学改革后继承了原当地工程学院的职能。
+
+教学与正在进行的研究以及与行业的合作紧密相连，使学生有机会接触到现实世界的项目和技术转移活动。
+
+研究与外部合作
+该部门参与国家和欧洲的研究项目，并与先进制造、机电一体化、能源技术和工业数字化等领域的公司和机构开展合作。
+
+它参与区域高科技集群和科技园区，支持工业创新和技术转让，尤其是在艾米利亚-罗马涅地区强大的机械和汽车行业。
+
+## giovanni.verzellesi@unimore.it
+
+Giovanni Verzellesi (giovanni.verzellesi@unimore.it) is an Italian **professor** of Electronics at the University of Modena and Reggio Emilia (UNIMORE), known for his work on semiconductor devices and wide‑bandgap power electronics.[1][2]
+
+## Who Giovanni Verzellesi is
+
+- Born in Reggio Emilia in 1964, he obtained his Laurea degree (cum laude) in Electrical Engineering from the University of Bologna and later a PhD in the same field.[3][4][5]
+- He has been a full professor of Electronics at UNIMORE since 2006, after serving as an associate professor from 2000 to 2006.[6][2]
+
+## Academic position and roles
+
+- He is a professor in the Department of Sciences and Methods for Engineering (DISMI) at UNIMORE and is listed within the Micro‑ and Nano‑Electronics Group.[7][2]
+- He has served in senior university roles (such as pro‑rector) and participates in national and international committees, including program committees of major electron‑device and reliability conferences.[8][9][10]
+
+## Research fields
+
+- His research focuses on semiconductor devices, especially wide‑bandgap materials and GaN‑based high‑electron‑mobility transistors (HEMTs), device reliability, and modeling of high‑efficiency power electronics.[11][1][8]
+- He is involved in European Horizon Europe projects on condition monitoring and wide‑bandgap power electronics, and contributes to pilot‑line initiatives for advanced power devices.[9]
+
+## His institute and lab
+
+- At UNIMORE he works within DISMI and the Micro‑ and Nano‑Electronics Group, which studies design, modeling, and characterization of electronic and optoelectronic devices.[2][7]
+- He is also identified as responsible for the “High‑Energy‑Efficiency Electronic Systems” area within the university’s technology and innovation structures, linking academic research with industrial applications.[12][13]
+
+[1](https://scholar.google.com/citations?user=VqyA9LgAAAAJ&hl=en)
+[2](https://www.e-lab.unimore.it/people/gverzellesi/)
+[3](http://www.elettronica.unimore.it/site/home/people/giovanni-verzellesi.html)
+[4](https://orcid.org/0000-0001-5770-6512)
+[5](https://loop.frontiersin.org/people/692689/overview)
+[6](https://unimore.unifind.cineca.it/v1/dataservice/files/ugovcv/VERZELLESI_Giovanni_it_7436.pdf)
+[7](http://www.elettronica.unimore.it/site/home/people.html)
+[8](https://www.youtube.com/watch?v=8YGlWHkJkfM)
+[9](https://unimore.unifind.cineca.it/get/person/014547)
+[10](https://www.magazine.unimore.it/site/home/notizie/articolo820051351.html)
+[11](https://scholar.google.it/citations?hl=en&user=VqyA9LgAAAAJ)
+[12](https://www.enetech.unimore.it/site/home/il-centro/contatti/documento68020844.html)
+[13](http://www.elettronica.unimore.it/site/home/laboratories/bright-lab/documento40057522.html)
+[14](https://www.applykite.com/professors/giovanni-verzellesi-683658f5-4200-48b9-a463-eb86a3a2b964)
+[15](https://www.unipr.it/sites/default/files/allegatiparagrafo/02-02-2018/tecnologie_dellinformazione_-_27_mar_2018_-_ore_9-30_-_conv_2.pdf)
+[16](https://it.linkedin.com/in/giovanni-verzellesi-28466684)
+[17](https://verzellesi.it/en/azienda.php)
+[18](https://amministrazionetrasparente.unimore.it/archivio3_personale_0_44942_701_1.html)
+[19](https://www.poliba.it/sites/default/files/bandi-docenti/verbale_n._1_del_23-11-2020_-_definizione_criteri_di_valutazione_e_calendario_colloquio_-_rutda.refin_.dei_.20.23_0.pdf)
 ​
+Giovanni Verzellesi（giovanni.verzellesi@unimore.it）是摩德纳和雷焦艾米利亚大学（UNIMORE）的意大利电子学教授，以其在半导体器件和宽带隙电力电子领域的研究而闻名。
+​
+
+乔瓦尼·韦尔泽莱西是谁？
+
+他于 1964 年出生于雷焦艾米利亚，在博洛尼亚大学获得电气工程学士学位（优等），后来又获得了同一领域的博士学位。
+​
+
+自 2006 年以来，他一直是 UNIMORE 电子学系的正教授，此前他于 2000 年至 2006 年担任副教授。
+​
+
+学术职位和角色
+
+他是莫雷大学工程科学与方法系 (DISMI) 的教授，隶属于微纳电子组。
+​
+
+他曾担任大学高级职务（如副校长），并参与国家和国际委员会的工作，包括主要电子器件和可靠性会议的程序委员会。
+​
+​
+
+研究领域
+
+他的研究重点是半导体器件，特别是宽带隙材料和基于氮化镓的高电子迁移率晶体管（HEMT）、器件可靠性以及高效电力电子器件的建模。
+​
+​
+
+他参与了欧洲地平线欧洲计划中的状态监测和宽禁带电力电子项目，并为先进电力器件的试点生产线计划做出了贡献。
+​
+
+他的研究所和实验室
+
+在 UNIMORE，他隶属于 DISMI 和微纳电子小组，该小组研究电子和光电子器件的设计、建模和表征。
+​
+
+他还负责大学技术和创新结构中的“高能效电子系统”领域，将学术研究与工业应用联系起来。
