@@ -173,6 +173,16 @@
   - [Specific Ga₂O₃ results](#specific-gao-results)
   - [Radiation and extreme environments](#radiation-and-extreme-environments)
   - [Context within Ga₂O₃ research](#context-within-gao-research)
+- [31. Kawakami Laboratory(Optoelectronic Materials Science and Engineering)](#31-kawakami-laboratoryoptoelectronic-materials-science-and-engineering)
+  - [Main research themes](#main-research-themes)
+  - [Scientific approach](#scientific-approach)
+  - [Applications and industrial links](#applications-and-industrial-links)
+  - [Position within Kyoto University](#position-within-kyoto-university)
+  - [akio.kaneta@optomater.kuee.kyoto-u.ac.jp](#akiokanetaoptomaterkueekyoto-uacjp)
+  - [Who Akio Kaneta is](#who-akio-kaneta-is)
+  - [His research activities](#his-research-activities)
+  - [His institute / laboratory](#his-institute--laboratory)
+  - [Kyoto University department context](#kyoto-university-department-context)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -2784,4 +2794,151 @@ Ga₂O₃ 研究的背景
 ​
 
 他对 Ga₂O₃ 的研究与他对宽带隙器件物理的更广泛贡献相辅相成，有助于定义下一代 Ga₂O₃ 基功率和探测器器件中缺陷、界面和极化的工程化方式。
+
+# 31. Kawakami Laboratory(Optoelectronic Materials Science and Engineering)
+
+Kawakami Laboratory, formally called **Optoelectronic Materials Science and Engineering**, is a research group in the Department of Electrical and Electronic Engineering at Kyoto University that focuses on light–matter interaction and optoelectronic devices.[1][3]
+
+## Main research themes
+
+- Discovery and elucidation of new material properties arising from the interaction between light and materials, especially in nitride semiconductor light‑emitting devices such as InGaN‑based LEDs.[3][8]
+- Development of advanced optical devices and applications, including polychromatic InGaN miniature light sources, optical biosensing systems, and specialized illumination products like white‑LED goggles.[3]
+
+## Scientific approach
+
+- Use of ultrafast laser spectroscopy and spatially resolved microscopy (near‑field and confocal) to study carrier dynamics and nano‑localized recombination centers that govern emission efficiency in semiconductors.[8][3]
+- Engineering of three‑dimensional nanostructures in nitride semiconductors, aiming to control emission color, enhance luminous efficiency, and reduce polarization effects by precise structural and compositional control.[3]
+
+## Applications and industrial links
+
+- Translation of laboratory discoveries into practical optoelectronic components, emphasizing high‑performance lighting and sensing devices for medical, cultural, and other specialized uses.[3]
+- Active pursuit of patents, commercialization, and venture creation around technologies such as advanced white‑LED illumination and other novel optical systems.[3]
+
+## Position within Kyoto University
+
+- The lab is part of the Graduate School of Engineering’s electrical and electronic disciplines, working alongside other groups in optoelectronics and semiconductor science.[7][3]
+- Its work on nitride semiconductors and spectroscopic evaluation methods underpins both basic photophysics and device‑oriented research within Kyoto University’s broader optoelectronics program.[8][3]
+
+[1](https://www.optomater.kuee.kyoto-u.ac.jp/index-e.html)
+[2](https://www.optomater.kuee.kyoto-u.ac.jp/english.html)
+[3](https://www.s-ee.t.kyoto-u.ac.jp/en/information/laboratory/optomater/index.html)
+[4](https://www.scl.kyoto-u.ac.jp/~wakamiya/english/projects.html)
+[5](https://www.s-ee.t.kyoto-u.ac.jp/en/information/laboratory/semicon/index.html)
+[6](https://rigaku.com/about/news-and-press-releases/rigaku-launches-innovation-core)
+[7](https://www.s-ee.t.kyoto-u.ac.jp/en/information/laboratory/index.html)
+[8](https://onlinelibrary.wiley.com/doi/abs/10.1002/1521-396X(200101)183:1%3C41::AID-PSSA41%3E3.0.CO;2-V)
+[9](https://www.kuas.ac.jp/en/admission/grad-list/?doing_wp_cron=1719286418.5761699676513671875000)
+
+川上实验室（正式名称为光电材料科学与工程）是京都大学电气电子工程系的一个研究小组，专注于光与物质的相互作用和光电器件。
+​
+
+主要研究主题
+
+发现和阐明光与材料相互作用产生的新材料特性，尤其是在氮化物半导体发光器件（如基于 InGaN 的 LED）中。
+​
+
+开发先进的光学器件和应用，包括多色 InGaN 微型光源、光学生物传感系统和专用照明产品，如白光 LED 护目镜。
+​
+
+科学方法
+
+利用超快激光光谱和空间分辨显微镜（近场和共聚焦）研究半导体中控制发射效率的载流子动力学和纳米局域复合中心。
+​
+
+通过精确的结构和成分控制，对氮化物半导体中的三维纳米结构进行工程设计，旨在控制发射颜色、提高发光效率并减少偏振效应。
+​
+
+应用及产业联系
+
+将实验室发现转化为实用的光电子元件，重点是用于医疗、文化和其他特殊用途的高性能照明和传感设备。
+​
+
+积极寻求专利、商业化和围绕先进白光LED照明和其他新型光学系统等技术创建企业。
+​
+
+京都大学职位
+
+该实验室隶属于工程研究生院的电气和电子学科，与光电子学和半导体科学领域的其他团队合作。
+​
+
+其在氮化物半导体和光谱评估方法方面的工作，为京都大学更广泛的光电子学计划中的基础光物理学和面向器件的研究奠定了基础。
+​
+## akio.kaneta@optomater.kuee.kyoto-u.ac.jp
+
+​The address akio.kaneta@optomater.kuee.kyoto-u.ac.jp belongs to Dr. **Akio** Kaneta, a Japanese researcher in optical spectroscopy and semiconductor-related optics connected with Kyoto University and related research groups in Japan.[1][2][3]
+
+## Who Akio Kaneta is
+
+- Akio Kaneta (金田昭男) is a physicist/engineer whose work focuses on optical and magneto‑optical spectroscopy, including methods such as magneto‑circular dichroism and related measurement techniques.[4][5][1]
+- His publications include studies on nonradiative recombination centers in semiconductors and efficient spectral measurement methods, showing a background in electronic/optical materials and applied spectroscopy.[6][2][3]
+
+## His research activities
+
+- Recent papers list him as an author on work about highly efficient spectral measurement methods using newly developed high‑throughput MCD and MCPL systems and on automated evaluation methods for aggregation‑induced circularly polarized luminescence.[7][6][4]
+- In some of these studies, he is affiliated with research and development groups such as JASCO Corporation, indicating strong links between academic spectroscopy and instrument development.[8][4]
+
+## His institute / laboratory
+
+- The email domain optomater.kuee.kyoto-u.ac.jp corresponds to the “Optomater” group within the Department of Electronic Science and Engineering, Graduate School of Engineering, Kyoto University, which studies light–matter interaction in semiconductors and related materials.[9][10][11]
+- This laboratory (often referred to as the Kawakami Laboratory in public English pages) focuses on optical properties of semiconductors, including LEDs and wide‑bandgap materials, combining experimental spectroscopy with device‑oriented physics.[10][11]
+
+## Kyoto University department context
+
+- The Department of Electronic Science and Engineering at Kyoto University’s Katsura Campus conducts research on optoelectronics, photonics, and semiconductor devices as part of the Graduate School of Engineering.[2][12][11]
+- Staff and collaborators in this department work on topics such as photonic crystals, quantum optoelectronics, and semiconductor spectroscopy, which aligns with Kaneta’s research on advanced optical measurement methods.[12][2][10]
+
+[1](https://researchmap.jp/read0066333)
+[2](https://onlinelibrary.wiley.com/doi/abs/10.1002/pssc.200565403)
+[3](https://pubs.aip.org/aip/apl/article/83/17/3462/512647/Discrimination-of-local-radiative-and-nonradiative)
+[4](https://www.jasco-global.com/solutions/highly-efficient-spectral-measurement-methods-using-high-throughput-mcd-and-mcpl-systems-and-their-applications/)
+[5](https://tohoku.elsevierpure.com/en/publications/highly-efficient-spectral-measurement-methods-using-newly-develop/)
+[6](https://pubmed.ncbi.nlm.nih.gov/39663982)
+[7](https://pubmed.ncbi.nlm.nih.gov/40613566/)
+[8](https://onlinelibrary.wiley.com/doi/abs/10.1002/chir.70048)
+[9](http://jglobal.jst.go.jp/en/public/202001001584439079)
+[10](https://www.optomater.kuee.kyoto-u.ac.jp/index-e.html)
+[11](https://www.iring.t.kyoto-u.ac.jp/en/research/list/r-ishii/r-ishii)
+[12](https://www.s-ee.t.kyoto-u.ac.jp/en/information/laboratory/qoe/index.html)
+[13](https://akio.lol)
+[14](https://www.ar.t.kyoto-u.ac.jp/en/information/laboratory/production)
+[15](https://www.optomater.kuee.kyoto-u.ac.jp/members_old/members-e.html)
+[16](https://www.facebook.com/people/Akio-Kaneta/100007992225660/)
+[17](https://akio.one/)
+[18](https://www.ist.kuee.kyoto-u.ac.jp/~t-sakamo/pdf/CV_Takuya_Sakamoto.pdf)
+[19](https://www.reddit.com/r/DemonSlayerAnime/comments/1ebjrqk/kny_oc_akio/)
+[20](https://kdb.iimc.kyoto-u.ac.jp/profile/en.1e5ba81ae867c2ce.html)
+
+akio.kaneta@optomater.kuee.kyoto-u.ac.jp这个地址属于Akio Kaneta 博士，他是日本京都大学及日本相关研究小组的光学光谱学和半导体光学研究员。
+​
+
+阿基奥·卡内塔是谁？
+
+金田昭男是一位物理学家/工程师，他的研究重点是光学和磁光光谱学，包括磁圆二色性等方法及相关测量技术。
+​
+
+他的出版物包括对半导体中非辐射复合中心和高效光谱测量方法的研究，表明他在电子/光学材料和应用光谱学方面具有深厚的背景。
+​
+
+他的研究活动
+
+最近的论文将他列为作者之一，论文内容涉及使用新开发的高通量 MCD 和 MCPL 系统进行高效光谱测量的方法，以及聚集诱导圆偏振发光的自动评估方法。
+​
+
+在某些研究中，他与 JASCO 公司等研发团队有联系，这表明学术光谱学与仪器开发之间存在着密切联系。
+​
+
+他的研究所/实验室
+
+电子邮件域名 optomater.kuee.kyoto-u.ac.jp 对应于京都大学工学研究生院电子科学与工程系的“Optomater”研究组，该研究组研究半导体及相关材料中的光与物质相互作用。
+​
+
+该实验室（在公开的英文网页上通常被称为川上实验室）专注于半导体的光学性质，包括 LED 和宽带隙材料，将实验光谱学与面向器件的物理学相结合。
+​
+
+京都大学系部背景
+
+京都大学桂校区电子科学与工程系隶属于工学研究生院，主要从事光电子学、光子学和半导体器件方面的研究。
+​
+
+该部门的员工和合作者致力于光子晶体、量子光电子学和半导体光谱学等课题的研究，这与 Kaneta 对先进光学测量方法的研究方向相一致。
 ​
