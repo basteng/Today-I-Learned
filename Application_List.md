@@ -3142,6 +3142,20 @@ Michael Kunzer 是 Fraunhofer IAF 的研究员和团队负责人，专门研究 
 ​
 
 该研究所的工作涵盖氮化镓功率电子器件、半导体激光器和发光二极管、红外探测器以及量子传感器和组件，为通信、移动、传感和量子计算行业的研发和原型开发提供服务。
+
+弗劳恩霍夫IAF研究所
+
+Fraunhofer CAP 与Fraunhofer IAF（德国弗莱堡固体物理研究所）建立了重要的合作伙伴关系，这使我们能够共同努力，帮助英国、德国和整个欧洲的工业界。
+
+弗劳恩霍夫应用半导体技术研究所 (Fraunhofer IAF) 在半导体激光器、LED 研究以及红外探测器和光源领域拥有领先的技术专长。其他核心能力包括氮化镓 (GaN) 功率电子器件、毫米波电路和化学气相沉积 (CVD) 金刚石技术。弗劳恩霍夫应用半导体技术研究所 (Fraunhofer IAF) 世界领先的 III-V 族半导体研发和制造设施，与弗劳恩霍夫应用半导体技术研究所 (Fraunhofer CAP) 在设计和新型激光光源开发方面的知识和经验相结合，共同打造出尖端产品。
+
+Fraunhofer CAP 和 Fraunhofer IAF 在一系列欧洲资助项目（例如 Horizo​​n 2020 框架）上开展合作，我们帮助英国和德国的创新型公司建立了新的联系，并获得了新的项目支持。
+
+Fraunhofer CAP 和 Fraunhofer IAF 的员工拥有多年的合作经验，致力于开发新的基于光子学的系统，特别是用于传感应用的系统，他们在光源和探测器开发以及传感算法方面拥有互补的专业知识。
+
+我们共同为英国、德国和欧洲工业界提供广泛的服务，从应用研究和开发项目到组件、源、探测器和完整的演示系统，以满足贵公司的需求。
+
+<https://www.fraunhofer.co.uk/en/FraunhoferUKResearchHome/fraunhofer-iaf.html>
 ​
 Michael Kunzer (michael.kunzer@iaf.fraunhofer.de) is a **physicist** and senior researcher at the Fraunhofer Institute for Applied Solid State Physics (Fraunhofer IAF) in Freiburg, Germany, working on III–V semiconductor devices, LEDs, and quantum sensors.[1][2][3]
 
