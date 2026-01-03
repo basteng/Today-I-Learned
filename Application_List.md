@@ -193,6 +193,12 @@
   - [Academic position and roles](#academic-position-and-roles)
   - [Research fields](#research-fields)
   - [His institute and lab](#his-institute-and-lab)
+- [33. 弗劳恩霍夫应用固体物理研究所 (Fraunhofer IAF)](#33-弗劳恩霍夫应用固体物理研究所-fraunhofer-iaf)
+  - [Who Michael Kunzer is](#who-michael-kunzer-is)
+  - [His institute: Fraunhofer IAF](#his-institute-fraunhofer-iaf)
+  - [Background and position](#background-and-position)
+  - [Research fields](#research-fields-1)
+  - [Projects and applications](#projects-and-applications)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -3088,3 +3094,117 @@ Giovanni Verzellesi（giovanni.verzellesi@unimore.it）是摩德纳和雷焦艾�
 ​
 
 他还负责大学技术和创新结构中的“高能效电子系统”领域，将学术研究与工业应用联系起来。
+
+# 33. 弗劳恩霍夫应用固体物理研究所 (Fraunhofer IAF) 
+
+## Who Michael Kunzer is
+
+- Michael Kunzer is a researcher and group leader at Fraunhofer IAF, specializing in III–V semiconductor devices, especially GaN-based LEDs and power electronics, and in LED system efficiency and thermal management.[3][4][1]
+- He has led projects such as SusLight_works, which develops intelligent, energy‑efficient LED workplace lighting, and contributes to work on diamond‑based quantum sensors and other advanced optoelectronic and quantum components.[2][5][6]
+
+## His institute: Fraunhofer IAF
+
+- Fraunhofer IAF (Fraunhofer-Institut für Angewandte Festkörperphysik) in Freiburg is one of the leading research centers worldwide for III–V semiconductors and synthetic diamond, developing devices for high‑frequency and power electronics, optoelectronics, and quantum technologies.[7][8]
+- The institute’s work spans GaN power electronics, semiconductor lasers and LEDs, infrared detectors, and quantum sensors and components, providing R&D and prototype development for industry in communications, mobility, sensing, and quantum computing.[8][9][3]
+
+[1](https://publica.fraunhofer.de/entities/person/15cc80ef-2611-438a-bdec-46e963294935)
+[2](https://www.leistungszentrum-nachhaltigkeit.de/demoprojekte/suslight-works/)
+[3](https://www.iaf.fraunhofer.de/en/customers/electronic-circuits/power-electronics.html)
+[4](https://www.fraunhofer.de/en/press/research-news/2014/march/led-lamps.html)
+[5](https://www.eurekalert.org/news-releases/1087820)
+[6](https://www.iaf.fraunhofer.de/en/media-library/publications/quantum-components/quantum-components-2024.html)
+[7](https://www.fraunhofer.co.uk/en/FraunhoferUKResearchHome/fraunhofer-iaf.html)
+[8](https://www.iaf.fraunhofer.de)
+[9](https://www.iaf.fraunhofer.de/en/media-library/publications/power-electronics.html)
+[10](https://www.iaf.fraunhofer.de/de/medien/newsarchiv/suslight_works.html)
+[11](https://www.mikroelektronik.fraunhofer.de/content/dam/mikroelektronik/en/MikroelektronikNachrichten/Fraunhofer_Microelectronics_News_55_August_2014.pdf)
+[12](https://www.iaf.fraunhofer.de/en/contact.html)
+[13](https://onlinelibrary.wiley.com/doi/pdf/10.1002/latj.201190027)
+[14](https://freidok.uni-freiburg.de/files/232328/e2LSCU4mhN6H_aF7/Dissertation_Felix_A_Hahl.pdf)
+[15](https://publica.fraunhofer.de/entities/publication/e1129afa-108c-4c5e-9e64-79f0e501d580)
+[16](https://publica.fraunhofer.de/entities/publication/3adb9760-6c5d-4555-b190-5e73dce4a8cd)
+[17](https://idw-online.de/de/news?print=1&id=853999)
+[18](https://www.bafg.de/SharedDocs/Downloads/DE/bfg_publikationen_OeA/fue_kompendium_2024_2025.pdf?__blob=publicationFile&v=4)
+[19](https://onlinelibrary.wiley.com/doi/abs/10.1002/pssc.201300417)
+[20](https://www.maxfunsports.com/result-pdf/team?competitionId=4319&type=5er+Team)
+
+迈克尔·昆泽是谁
+
+Michael Kunzer 是 Fraunhofer IAF 的研究员和团队负责人，专门研究 III-V 族半导体器件，特别是基于 GaN 的 LED 和功率电子器件，以及 LED 系统效率和热管理。
+​
+
+他曾领导 SusLight_works 等项目，该项目开发智能、节能的 LED 工作场所照明，并参与了基于金刚石的量子传感器和其他先进的光电子和量子元件的研究工作。
+​
+
+他的研究所：弗劳恩霍夫航空航天研究所
+
+弗莱堡的弗劳恩霍夫应用固体物理研究所 (Fraunhofer IAF) 是全球领先的 III-V 族半导体和合成金刚石研究中心之一，致力于开发用于高频和功率电子、光电子和量子技术的器件。
+​
+
+该研究所的工作涵盖氮化镓功率电子器件、半导体激光器和发光二极管、红外探测器以及量子传感器和组件，为通信、移动、传感和量子计算行业的研发和原型开发提供服务。
+​
+Michael Kunzer (michael.kunzer@iaf.fraunhofer.de) is a **physicist** and senior researcher at the Fraunhofer Institute for Applied Solid State Physics (Fraunhofer IAF) in Freiburg, Germany, working on III–V semiconductor devices, LEDs, and quantum sensors.[1][2][3]
+
+## Background and position
+
+- He studied physics at the University of Freiburg, where he received both his Diplom and PhD degrees, with work on optically detected magnetic resonance in III–V semiconductors.[2][4]
+- At Fraunhofer IAF he serves as a group manager and project leader, responsible for R&D projects that bridge advanced semiconductor device technology with application-oriented systems.[3][5][1]
+
+## Research fields
+
+- His work covers GaN-based light‑emitting diodes and power devices, including thermal management, efficiency optimization, and system integration of LEDs and GaN-on-Si power electronics.[6][7][5]
+- More recently he has also managed projects on diamond‑based nitrogen‑vacancy quantum magnetometers, developing compact, robust sensors for precise magnetic‑field measurements.[8][3]
+
+## Projects and applications
+
+- As project manager of the SusLight_works initiative, he has led development of smart, energy‑efficient LED workplace lighting systems, including high‑efficiency drivers using GaN power technology.[9][10][6]
+- His publications include work on GaN-based micro‑LED arrays for bio‑applications, hybrid circular GaN LEDs, and rapid‑prototyping processes for GaN LEDs, illustrating a focus from device physics to real-world lighting and sensing solutions.[11][12][13]
+
+[1](https://publica.fraunhofer.de/entities/person/15cc80ef-2611-438a-bdec-46e963294935)
+[2](https://aminer.org/profile/michael-kunzer/53f456e2dabfaeb22f503087)
+[3](https://www.iaf.fraunhofer.de/en/media-library/press-releases/miniaturized-quantum-magnetometer-offers-new-measurement-possibilities.html)
+[4](https://spie.org/spie-sensors-imaging/presentation/Towards-fieldable-NVC-quantum-sensors-for-defense-applications/13676-28)
+[5](https://www.fraunhofer.de/en/press/research-news/2014/march/led-lamps.html)
+[6](https://www.iaf.fraunhofer.de/en/media-library/press-releases/intelligent-led-work-lighting.html)
+[7](https://www.led-professional.com/resources-1/articles/led-retrofit-based-on-algan-gan-on-si-field-effect-transistor-drivers)
+[8](https://www.iaf.fraunhofer.de/en/media-library/publications/quantum-components/quantum-components-2024.html)
+[9](https://www.iaf.fraunhofer.de/en/researchers/optoelectronic-devices/suslight.html)
+[10](https://www.leistungszentrum-nachhaltigkeit.de/en/forschungsprojekte/demonstratorprojekte/suslight-works/)
+[11](https://www.tu-chemnitz.de/physik/EXSE/ForPhySe/Gossler-JPhysD-2014.pdf)
+[12](https://onlinelibrary.wiley.com/doi/abs/10.1002/pssc.201300417)
+[13](https://pubs.aip.org/aip/jap/article-abstract/113/10/103107/963624)
+[14](https://www.sciencedirect.com/author/7004033957/michael-kunzer)
+[15](https://de.linkedin.com/company/fraunhofer-iaf)
+[16](https://www.elektroniknet.de/optoelektronik/lichtqualitaet-rauf-stromverbrauch-runter.194788.html)
+[17](https://www.iaf.fraunhofer.de/en/media-library/press-releases/LED-effect-suslight.html)
+[18](https://www.leistungszentrum-nachhaltigkeit.de/en/forschungsprojekte/demonstratorprojekte/)
+[19](https://www.microtec-suedwest.de/news-termine/newsuebersicht/item/2499-im-richtigen-licht-intelligente-und-nachhaltige-led-arbeitsbeleuchtung)
+[20](https://www.iaf.fraunhofer.de/en/media-library/publications/diamond-devices-2020.html)
+
+Michael Kunzer（michael.kunzer@iaf.fraunhofer.de）是德国弗莱堡弗劳恩霍夫应用固体物理研究所（Fraunhofer IAF）的物理学家和高级研究员，从事 III-V 族半导体器件、LED 和量子传感器的研究。
+​
+
+背景和职位
+
+他在弗莱堡大学学习物理，并获得了硕士和博士学位，其研究方向是 III-V 族半导体中的光探测磁共振。
+​
+
+在弗劳恩霍夫IAF研究所，他担任团队经理和项目负责人，负责将先进半导体器件技术与面向应用的系统相结合的研发项目。
+​
+
+研究领域
+
+他的研究工作涵盖基于氮化镓的发光二极管和功率器件，包括热管理、效率优化以及LED和氮化镓硅基功率电子器件的系统集成。
+​
+
+最近，他还负责管理基于金刚石的氮空位量子磁力计项目，开发紧凑、坚固的传感器，用于精确的磁场测量。
+​
+
+项目和应用
+
+作为 SusLight_works 项目的项目经理，他领导开发了智能、节能的 LED 工作场所照明系统，包括使用 GaN 功率技术的高效驱动器。
+​
+
+他的出版物包括用于生物应用的 GaN 基微型 LED 阵列、混合圆形 GaN LED 以及 GaN LED 的快速原型制作工艺，这表明他的研究重点是从器件物理到现实世界的照明和传感解决方案。
+
+
