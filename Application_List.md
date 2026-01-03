@@ -178,6 +178,7 @@
   - [Scientific approach](#scientific-approach)
   - [Applications and industrial links](#applications-and-industrial-links)
   - [Position within Kyoto University](#position-within-kyoto-university)
+  - [川上研究室](#川上研究室)
   - [akio.kaneta@optomater.kuee.kyoto-u.ac.jp](#akiokanetaoptomaterkueekyoto-uacjp)
   - [Who Akio Kaneta is](#who-akio-kaneta-is)
   - [His research activities](#his-research-activities)
@@ -2878,6 +2879,22 @@ Kawakami Laboratory, formally called **Optoelectronic Materials Science and Engi
 ​
 
 其在氮化物半导体和光谱评估方法方面的工作，为京都大学更广泛的光电子学计划中的基础光物理学和面向器件的研究奠定了基础。
+
+## 川上研究室
+
+在川上教授的实验室里，我们研究光与物质的相互作用；我们致力于阐明并可能发现相互作用过程中涉及的物理机制。我们推动此类研究，最终目标是实现能够极大地丰富人类活动的尖端光学器件和应用。我们主要开展三项研究：
+
+（1）开发用于研究纳米尺度光发射动力学的新型测量技术；
+（2）将（1）中开发的原创技术应用于材料和生物样本的纳米和微观物理性质研究。我们研究并实现了新型生物传感器和器件；
+（3）我们还实现了对光学器件晶体结构生长过程的调控方法，以获得具有所需发射颜色和100%量子效率的光源。
+
+合成所需光谱自然与定制固态光学器件的实现密切相关。（1）和（2）中的主题自然相互关联，并且都与研究方向（3）紧密相连。换言之，新材料的开发及其基本光学和物理性质的研究，为新型器件、应用和创新测量技术的实现提供了积极的反馈。
+
+光学材料的应用领域之一是生物和医疗系统。在不久的将来，我们希望能够实现可进入人体并执行测量或操作的微型机械，正如1966年的科幻电影《神奇旅程》所启发的那样。我们的研究致力于实现更小、更高分辨率的光源和探测器件，这些都是此类应用不可或缺的要素。最近，我们通过特殊的生长技术成功控制了光学器件的光谱发射。这项技术也为最终实现可植入人体的超小型光源带来了希望。
+
+最后，我们希望了解与固态照明相关的基本光学过程，从而实现新型照明系统。我们正在努力实现纳米级光源、高效便携式照明元件以及具有宽光谱范围和可控光谱特性的光学器件。我们投身于这项充满挑战的事业，希望能够开发出用于医疗和技术领域的新型系统。
+
+<https://www.optomater.kuee.kyoto-u.ac.jp/index-e.html>
 ​
 ## akio.kaneta@optomater.kuee.kyoto-u.ac.jp
 
