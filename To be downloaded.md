@@ -173,6 +173,7 @@
   - [42. Review of GaN optical device characteristics, applications, and optical analysis technology](#42-review-of-gan-optical-device-characteristics-applications-and-optical-analysis-technology)
   - [43. Experimental investigation of high-speed WDM-visible light communication using blue, green, and red InGaN µLEDs](#43-experimental-investigation-of-high-speed-wdm-visible-light-communication-using-blue-green-and-red-ingan-µleds)
   - [44. Effective integration of a MOSFET phototransistor to a GaN LED for UV sensing](#44-effective-integration-of-a-mosfet-phototransistor-to-a-gan-led-for-uv-sensing)
+  - [45. Connecting Switch to Fiber: The Energy Efficiency Challenge](#45-connecting-switch-to-fiber-the-energy-efficiency-challenge)
 
 链接不需要加<>，直接copy https链接
 
@@ -849,3 +850,7 @@ https://www.nature.com/articles/nature16454
 ## 44. Effective integration of a MOSFET phototransistor to a GaN LED for UV sensing
 
 <https://doi.org/10.1364/OL.463236>
+
+## 45. Connecting Switch to Fiber: The Energy Efficiency Challenge
+
+<https://opg.optica.org/abstract.cfm?uri=OFC-2024-W4H.2>

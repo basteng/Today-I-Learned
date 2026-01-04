@@ -141,6 +141,14 @@
   - [完整操作流程](#完整操作流程)
   - [⚠️ 重要警告](#️-重要警告)
   - [总结](#总结-3)
+- [20. 内网穿透-多个树莓派共用一个服务器](#20-内网穿透-多个树莓派共用一个服务器)
+  - [阿里云端需要修改端口设置](#阿里云端需要修改端口设置)
+  - [设置开机自动启动](#设置开机自动启动)
+    - [刷新服务](#刷新服务)
+    - [允许开机启动](#允许开机启动)
+    - [运行服务](#运行服务)
+    - [查看状态](#查看状态)
+  - [如果出现 frpc.service start request repeat too quickly 错误](#如果出现-frpcservice-start-request-repeat-too-quickly-错误)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2487,3 +2495,134 @@ Hit Enter when ready to unmount the /dev/sda partitions ...
   unmounting /mnt/clone
 ===============================
 ```
+
+# 20. 内网穿透-多个树莓派共用一个服务器
+
+客户端
+#创建安装目录
+mkdir frp_service
+#切换目录
+cd frp_service/
+#下载frp
+wget https://github.com/fatedier/frp/releases/download/v0.66.0/frp_0.66.0_linux_arm.tar.gz
+ （注意版本号要更新至最新）
+#解压
+tar -zxvf frp_0.66.0_linux_arm.tar.gz
+#切换目录
+cd frp_0.49.0_linux_arm frp
+#删除服务器端配置文件
+rm -f frps
+rm -f frps.toml
+#修改配置文件,vi命令也行
+sudo nano frpc.toml
+
+```
+serverAddr = "8.130.93.178"
+serverPort = 7000
+
+[[proxies]]
+name = "test-tcp"
+type = "tcp"
+localIP = "192.168.0.249"
+localPort = 22
+remotePort = 6051
+```
+
+主要是remotePort的端口和已有的不一样即可
+localIP需要设置为该树莓派的IP
+
+## 阿里云端需要修改端口设置
+
+```
+## 2. 检查阿里云安全组（最关键）
+
+这是最常见的问题！即使端口在监听，如果安全组没开放，外网也连不上。
+
+**操作步骤：**
+1. 登录阿里云控制台：https://ecs.console.aliyun.com
+2. 找到实例 `iZ0jlh44ji8it4xad12urwZ`
+3. 点击"安全组" → "访问规则" → "入方向"
+4. 点击"增加规则"
+5. 检查入方向规则是否包含：
+
+端口范围: 6051/6051
+授权对象: 0.0.0.0/0
+协议类型: TCP
+```
+
+## 设置开机自动启动
+
+客户端
+sudo nano /etc/systemd/system/frpc.service
+
+```
+[Unit]
+Description=frpc
+After=network.target
+[Service]
+TimeoutStartSec=30
+WorkingDirectory=/home/basteng/frp_service/frp
+ExecStart=/home/basteng/frp_service/frp/frpc -c /home/basteng/frp_service/frp/frpc.toml
+Restart=on-failure
+[Install]
+WantedBy=multi-user.target
+
+```
+
+然后ctrl o, ctrl x
+
+### 刷新服务
+sudo systemctl daemon-reload
+### 允许开机启动
+sudo systemctl enable frpc.service
+### 运行服务
+sudo systemctl start frpc.service
+### 查看状态
+sudo systemctl status frpc.service
+
+## 如果出现 frpc.service start request repeat too quickly 错误
+
+要实现在开机1分钟后运行 `frpc.service` 服务，可以按照以下步骤操作：
+
+1. 创建一个新的 `systemd` 定时器单元文件。可以使用以下命令在 `/etc/systemd/system` 目录下创建一个名为 `frpc.timer` 的新文件：
+
+```
+sudo nano /etc/systemd/system/frpc.timer
+```
+
+2. 在 `frpc.timer` 文件中添加以下内容：   
+
+```
+[Unit]
+Description=Run frpc.service 2 minute after boot
+
+[Timer]
+OnBootSec=2min
+Unit=frpc.service
+
+[Install]
+WantedBy=timers.target
+```
+
+   在上述配置中，`OnBootSec` 指定了在开机后多少时间后运行服务，这里设置为 `1min` 即1分钟后运行。`Unit` 指定了要运行的服务单元，这里设置为 `frpc.service`。`WantedBy` 指定了定时器单元应该启动的目标单元，这里设置为 `timers.target`。
+
+3. 保存并关闭 `frpc.timer` 文件。
+
+4. 重新加载 `systemd` 守护进程配置并启用 `frpc.timer` 和 `frpc.service` 单元。可以使用以下命令完成此操作：
+```
+sudo systemctl daemon-reload
+sudo systemctl enable frpc.timer
+sudo systemctl enable frpc.service
+```
+
+   重新加载 `systemd` 配置以使其生效，然后使用 `enable` 命令启用 `frpc.timer` 和 `frpc.service` 单元，以便它们可以在下次启动时自动启动。
+
+5. 重启系统以使更改生效。可以使用以下命令重启系统：
+
+```
+sudo reboot
+```
+
+6. 等待1分钟后，系统应该自动启动 `frpc.service` 服务。
+
+现在，`frpc.service` 服务应该会在开机1分钟后自动启动。可以使用 `systemctl status frpc` 命令检查服务的状态以确保它已经成功启动。
