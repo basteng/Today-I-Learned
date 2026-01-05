@@ -2499,6 +2499,7 @@ Hit Enter when ready to unmount the /dev/sda partitions ...
 # 20. 内网穿透-多个树莓派共用一个服务器
 
 客户端
+```
 #创建安装目录
 mkdir frp_service
 #切换目录
@@ -2530,11 +2531,12 @@ remotePort = 6051
 
 主要是remotePort的端口和已有的不一样即可
 localIP需要设置为该树莓派的IP
+```
 
 ## 阿里云端需要修改端口设置
 
 ```
-## 2. 检查阿里云安全组（最关键）
+## 检查阿里云安全组（最关键）
 
 这是最常见的问题！即使端口在监听，如果安全组没开放，外网也连不上。
 
