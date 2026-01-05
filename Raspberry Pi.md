@@ -2520,7 +2520,9 @@ tar -zxvf frp_0.66.0_linux_arm.tar.gz
 
 #切换目录
 
-cd frp_0.49.0_linux_arm frp
+cp -r frp_0.66.0_linux_amd64 frp
+
+cd frp
 
 #删除服务器端配置文件
 
