@@ -200,6 +200,10 @@
   - [Background and position](#background-and-position)
   - [Research fields](#research-fields-1)
   - [Projects and applications](#projects-and-applications)
+- [34. A. F. Ioffe Physico‑Technical Institute 约费物理技术研究所](#34-a-f-ioffe-physicotechnical-institute-约费物理技术研究所)
+  - [Who Elena V. Konenkova is](#who-elena-v-konenkova-is)
+  - [Her institute: Ioffe Institute](#her-institute-ioffe-institute)
+  - [Research themes linked to this email](#research-themes-linked-to-this-email)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -3238,4 +3242,68 @@ Michael Kunzer（michael.kunzer@iaf.fraunhofer.de）是德国弗莱堡弗劳恩�
 
 他的出版物包括用于生物应用的 GaN 基微型 LED 阵列、混合圆形 GaN LED 以及 GaN LED 的快速原型制作工艺，这表明他的研究重点是从器件物理到现实世界的照明和传感解决方案。
 
+# 34. A. F. Ioffe Physico‑Technical Institute 约费物理技术研究所
+
+The address lena@triat.ioffe.rssi.ru belongs to Dr. **Elena V. Konenkova**, a researcher at the A. F. Ioffe Physico‑Technical Institute (Ioffe Institute) in St. Petersburg, Russia, working on III‑nitride semiconductors such as GaN and AlN.[1][2][3][4]
+
+## Who Elena V. Konenkova is
+
+- Scientific articles list E. V. Konenkova of the Ioffe Institute as corresponding author with the email lena@triat.ioffe.rssi.ru (and variants like lena@triat.ioffe.ru), in work on GaN nucleation, free‑standing GaN, and AlN/GaN growth on Si(100).[2][5][3][1]
+- Her research covers Raman spectroscopy of GaN, radiationless recombination mechanisms in GaN surface layers, and synthesis of hexagonal AlN and GaN, indicating expertise in optical characterization and epitaxy of nitride semiconductors.[5][3][4][2]
+
+## Her institute: Ioffe Institute
+
+- The Ioffe Institute (A. F. Ioffe Physico‑Technical Institute) in St. Petersburg is a major research center of the Russian Academy of Sciences, active in semiconductor physics, optoelectronics, photovoltaics, quantum electronics, and related fields.[6][7][2]
+- Within Ioffe, the “triat” email subdomain is used by semiconductor and surface‑physics groups that publish in journals such as Semiconductors, Technical Physics, and physica status solidi, including work on AlN, GaN, GaSb, InP, and III–V surface passivation.[7][8][9][6]
+
+## Research themes linked to this email
+
+- Papers using this contact address deal with growth and morphology of AlN layers (including semipolar orientations), GaN nucleation on foreign substrates, and analysis of recombination and defect processes at GaN surfaces.[3][10][11][2]
+- These topics support device development in optoelectronics and power electronics (for example, high‑quality GaN/AlN for LEDs, lasers, and high‑power devices), placing Konenkova’s work squarely in advanced nitride semiconductor materials research.[4][10][3]
+
+[1](https://journals.rcsi.science/1063-7842/article/view/203279)
+[2](https://pubs.aip.org/aip/apl/article-pdf/83/4/629/18580124/629_1_online.pdf)
+[3](http://labspt.ru/download/2017_Bessolov_Journal_of_Crystal_GrowthSemipolarAlN%20and%20GaN_2017.pdf)
+[4](https://onlinelibrary.wiley.com/doi/pdf/10.1002/pssa.200306279)
+[5](https://www.mathnet.ru/php/getFT.phtml?jrnid=jtf&paperid=5645&what=fullt&option_lang=rus)
+[6](https://journals.ioffe.ru/articles/viewPDF/59451)
+[7](https://www.pleiades.online/cgi-perl/search.pl?type=abstract&name=techphys&number=5&year=24&page=1119)
+[8](https://pubs.rsc.org/en/content/articlehtml/2022/tc/d1tc03493f)
+[9](https://pubs.acs.org/doi/abs/10.1021/jp0035434)
+[10](https://journals.ioffe.ru/articles/viewPDF/58114)
+[11](https://journals.ioffe.ru/articles/viewPDF/61553)
+[12](https://journals.ioffe.ru/articles/49305)
+[13](https://www.nstu.ru/files/dissertations/otzyv_na_avtoreferat-1_bez_pechati_147874358158.pdf)
+[14](https://www.reddit.com/r/triathlon/comments/17qpklw/tridot_tr/)
+[15](https://www.tu-chemnitz.de/physik/HLPH/publications/p_src/494.pdf)
+[16](https://journal-vniispk.ru/1063-7826/article/view/206464)
+[17](https://journals.ioffe.ru/articles/58114)
+[18](https://journals.rcsi.science/1063-7826/article/view/201040)
+[19](https://www.pleiades.online/cgi-perl/search.pl?type=abstract&name=techphlt&number=6&year=10&page=496)
+
+地址lena@triat.ioffe.rssi.ru属于Elena V. Konenkova博士，她是俄罗斯圣彼得堡 AF Ioffe 物理技术研究所（Ioffe 研究所）的研究员，从事 III 族氮化物半导体（如 GaN 和 AlN）的研究。
+​
+
+埃琳娜·V·科年科娃是谁？
+
+科学文章将约费研究所的 EV Konenkova 列为通讯作者，其电子邮件地址为lena@triat.ioffe.rssi.ru（以及lena@triat.ioffe.ru等变体），研究方向为 GaN 成核、独立式 GaN 以及在 Si(100) 上生长 AlN/GaN。
+​
+
+她的研究涵盖了氮化镓的拉曼光谱、氮化镓表面层的无辐射复合机制以及六方氮化铝和氮化镓的合成，表明她在氮化物半导体的光学表征和外延方面具有专业知识。
+​
+
+她的研究所：约​​费研究所
+
+位于圣彼得堡的约费物理技术研究所（AF Ioffe Physico‑Technical Institute）是俄罗斯科学院的主要研究中心，活跃于半导体物理、光电子学、光伏、量子电子学及相关领域。
+​
+
+在约费研究所内，“triat”电子邮件子域名被半导体和表面物理研究小组使用，这些小组在《半导体》、《技术物理》和《固态物理》等期刊上发表文章，包括关于 AlN、GaN、GaSb、InP 和 III-V 族表面钝化的研究。
+​
+
+与此邮件相关的研究主题
+
+使用此联系地址的论文涉及 AlN 层的生长和形貌（包括半极性取向）、GaN 在异质衬底上的成核以及 GaN 表面复合和缺陷过程的分析。
+​
+
+这些主题支持光电子和电力电子器件的开发（例如，用于 LED、激光器和高功率器件的高质量 GaN/AlN），使 Konenkova 的工作完全处于先进氮化物半导体材料研究领域。
 
