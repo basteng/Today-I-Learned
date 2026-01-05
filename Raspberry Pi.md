@@ -2520,7 +2520,7 @@ tar -zxvf frp_0.66.0_linux_arm.tar.gz
 
 #切换目录
 
-cp -r frp_0.66.0_linux_amd64 frp
+cp -r frp_0.66.0_linux_arm frp
 
 cd frp
 
