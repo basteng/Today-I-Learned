@@ -2501,20 +2501,35 @@ Hit Enter when ready to unmount the /dev/sda partitions ...
 客户端
 
 #创建安装目录
+
 mkdir frp_service
+
 #切换目录
+
 cd frp_service/
+
 #下载frp
+
 wget https://github.com/fatedier/frp/releases/download/v0.66.0/frp_0.66.0_linux_arm.tar.gz
+
  （注意版本号要更新至最新）
+
 #解压
+
 tar -zxvf frp_0.66.0_linux_arm.tar.gz
+
 #切换目录
+
 cd frp_0.49.0_linux_arm frp
+
 #删除服务器端配置文件
+
 rm -f frps
+
 rm -f frps.toml
+
 #修改配置文件,vi命令也行
+
 sudo nano frpc.toml
 
 ```
