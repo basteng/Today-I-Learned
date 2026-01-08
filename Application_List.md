@@ -204,6 +204,10 @@
   - [Who Elena V. Konenkova is](#who-elena-v-konenkova-is)
   - [Her institute: Ioffe Institute](#her-institute-ioffe-institute)
   - [Research themes linked to this email](#research-themes-linked-to-this-email)
+- [35. III-V Lab (the joint Alcatel-Lucent, Thales and CEA-Leti industrial research laboratory)](#35-iii-v-lab-the-joint-alcatel-lucent-thales-and-cea-leti-industrial-research-laboratory)
+  - [Address and location](#address-and-location)
+  - [Role and activities](#role-and-activities)
+  - [Organizational evolution](#organizational-evolution)
 
 
 # 1. INM - Leibniz-Institut für Neue Materialien gGmbH 莱布尼茨新材料研究所
@@ -3306,4 +3310,95 @@ The address lena@triat.ioffe.rssi.ru belongs to Dr. **Elena V. Konenkova**, a re
 ​
 
 这些主题支持光电子和电力电子器件的开发（例如，用于 LED、激光器和高功率器件的高质量 GaN/AlN），使 Konenkova 的工作完全处于先进氮化物半导体材料研究领域。
+
+# 35. III-V Lab (the joint Alcatel-Lucent, Thales and CEA-Leti industrial research laboratory)
+
+III-V 实验室近 20 年的研究与创新
+
+2004 年 - 根据法国法律法规 GIE（“经济利益集团”）成立 III-V 实验室，其成员包括诺基亚（阿尔卡特朗讯）和泰雷兹。
+
+2011 年 - CEA 成为 III-V 实验室的新成员。
+
+数十年来积累的文化和科学遗产
+
+这些团队来自半导体领域著名的实验室，例如诺基亚贝尔实验室（上个世纪激光和晶体管领域的先驱）和 Orange Lab（法国电信 - CNET），该实验室于 1998 年与诺基亚（阿尔卡特）合并为 Opto+ 实验室。
+
+自1956年以来，这里一直是萨克雷高原中心地带的所在地。
+
+泰雷兹公司在部署之前，其研究工作就在萨克雷高原的科尔贝维尔庄园进行，该庄园距离位于帕莱索的现有办公楼约1公里。巴黎-萨克雷是一个以萨克雷高原为核心的科技集群，目前正在蓬勃发展。泰雷兹（CSF）在20世纪30年代广播、短波、电声和早期雷达的发展中发挥了关键作用。
+
+受益于本地专业知识
+
+格勒诺布尔是法国微电子技术的历史发源地。CEA-Leti是微纳米技术领域的先驱。
+
+有利于创新和发现的环境
+
+无论是在萨克雷高原还是在格勒诺布尔，大学、研究所、产业集团和初创企业之间的交流互动都促进了卓有成效的合作。这种环境孕育了众多诺贝尔奖得主，也提升了多所大学在国际排名中的地位。
+
+<https://www.3-5lab.fr/history.php>
+
+CEA-Leti 加入 III-V 实验室
+
+在法国，为了加强位于马尔库西的III-V族实验室的产业研究能力，格勒诺布尔的CEA-Leti（一家研究和技术机构）将加入该中心。该中心由巴黎的阿尔卡特-朗讯公司和塞纳河畔讷伊的泰雷兹公司于2004年共同创立，是一个公私合作项目，旨在整合III-V族半导体和硅技术，从而拓展研究视野和活力。扩建后的实验室将拥有超过130名研究人员、技术人员和博士生，充分利用三家公司在硅、微电子和异构集成方面的优势。研究方向包括基于硅的III-V族CMOS集成电路，以及将有源III-V族元件与硅电路和微系统异构集成的更智能、更小巧的元件。
+
+<https://www.photonics.com/Articles/CEA-Leti_Joins_III-V_Lab/a46856>
+
+Alcatel‑Thales III‑V Lab was an industrial research laboratory specializing in III‑V compound semiconductor technologies for photonics and high‑speed electronics, historically located on Route de Nozay, 91460 Marcoussis, France. It was created as a joint lab by Alcatel (later Alcatel‑Lucent/Bell Labs) and Thales, with CEA‑Leti later joining the partnership.[1][2][7]
+
+## Address and location
+
+- The commonly cited address in publications is: “Alcatel‑Thales III‑V Lab, route de Nozay, 91460 Marcoussis, France.”[5][10]
+- The Marcoussis site is on the Plateau de Saclay in Essonne, part of the wider Paris‑region “Optics Valley” high‑tech cluster.[2][4]
+
+## Role and activities
+
+- The lab focused on research and pre‑industrial development of III‑V semiconductor devices such as lasers, photonic integrated circuits, and high‑speed InP-based components for telecom and related applications.[9][1]
+- It supported its parent companies’ work in optoelectronics and microwave technologies, developing components for high‑bit‑rate optical transmission and advanced photonic systems.[3][2]
+
+## Organizational evolution
+
+- The III‑V Lab was established around 2004 as a joint Alcatel‑Lucent and Thales industrial research center, later enlarged when CEA‑Leti joined in 2011.[7][2]
+- In 2016, spin‑off company Almae Technologies took over the Marcoussis facilities and equipment to industrialize III‑V epitaxial wafer and laser technologies originating from the lab.[4]
+
+[1](https://www.3-5lab.fr/index.php)
+[2](https://compoundsemiconductor.net/article/83397/Thales_and_Alcatel_form_III-V_research_lab)
+[3](https://www.photonics.com/Articles/Thales-and-Alcatel-Open-Industrial-Research-Lab/a19894)
+[4](https://www.semiconductor-today.com/news_items/2016/jul/almae-iiivlab_110716.shtml)
+[5](https://pubmed.ncbi.nlm.nih.gov/22108989/)
+[6](https://www.ovid.com/journals/oqel/abstract/00010363-200638040-00004~optimization-and-characterization-of-ingaasngaas)
+[7](https://www.photonics.com/Articles/CEA-Leti_Joins_III-V_Lab/a46856)
+[8](http://jglobal.jst.go.jp/public/201702273690751690)
+[9](https://eprints.soton.ac.uk/368064/1/JSTQE_laser_Final.pdf)
+[10](https://ieeexplore.ieee.org/iel5/4629856/4635974/04635997.pdf)
+[11](https://dl.acm.org/doi/abs/10.5555/1658600.1658604)
+[12](https://www.vde-verlag.de/proceedings-en/563042102.html)
+[13](https://cir.nii.ac.jp/crid/1360018299021486080)
+
+阿尔卡特-泰雷兹 III-V 实验室是一家工业研究实验室，专门从事用于光子学和高速电子学的 III-V 族化合物半导体技术的研究，其历史地址为法国马库西 91460 诺扎伊路。该实验室由阿尔卡特（后来的阿尔卡特-朗讯/贝尔实验室）和泰雷兹联合创建，法国原子能委员会-莱蒂后来也加入了合作。
+​
+
+地址和位置
+
+出版物中通常引用的地址是：“Alcatel‑Thales III‑V Lab, route de Nozay, 91460 Marcoussis, France”。
+​
+
+马尔库西工厂位于埃松省萨克雷高原，是巴黎大区“光学谷”高科技集群的一部分。
+​
+
+角色和活动
+
+该实验室专注于 III-V 族半导体器件（如激光器、光子集成电路和用于电信及相关应用的高速 InP 基组件）的研究和工业前开发。
+​
+
+它支持其母公司在光电子和微波技术领域的工作，开发用于高比特率光传输和先进光子系统的组件。
+​
+
+组织演化
+
+III-V 实验室成立于 2004 年左右，是阿尔卡特朗讯和泰雷兹联合成立的工业研究中心，后来在 2011 年 CEA-Leti 加入后规模扩大。
+​
+
+2016 年，衍生公司 Almae Technologies 接管了 Marcoussis 的设施和设备，将源自该实验室的 III-V 族外延晶片和激光技术产业化。
+​
+
 
