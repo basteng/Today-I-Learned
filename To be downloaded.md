@@ -175,6 +175,7 @@
   - [44. Effective integration of a MOSFET phototransistor to a GaN LED for UV sensing](#44-effective-integration-of-a-mosfet-phototransistor-to-a-gan-led-for-uv-sensing)
   - [45. Optical Characterization of Microstructures and Optoelectronic Devices Based on Wide Band Gap Semiconductors](#45-optical-characterization-of-microstructures-and-optoelectronic-devices-based-on-wide-band-gap-semiconductors)
   - [46. Achievement and perspective of GaN technology for microwave applications](#46-achievement-and-perspective-of-gan-technology-for-microwave-applications)
+  - [47. Avalanche durability of high-voltage GaN p–n diodes with tunnel junctions as anode contacts](#47-avalanche-durability-of-high-voltage-gan-pn-diodes-with-tunnel-junctions-as-anode-contacts)
 
 链接不需要加<>，直接copy https链接
 
@@ -859,3 +860,7 @@ https://www.nature.com/articles/nature16454
 ## 46. Achievement and perspective of GaN technology for microwave applications
 
 <https://ieeexplore.ieee.org/document/5540506>
+
+## 47. Avalanche durability of high-voltage GaN p–n diodes with tunnel junctions as anode contacts
+
+<https://doi.org/10.1063/5.0300544>
