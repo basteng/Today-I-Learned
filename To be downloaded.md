@@ -176,6 +176,12 @@
   - [45. Optical Characterization of Microstructures and Optoelectronic Devices Based on Wide Band Gap Semiconductors](#45-optical-characterization-of-microstructures-and-optoelectronic-devices-based-on-wide-band-gap-semiconductors)
   - [46. Achievement and perspective of GaN technology for microwave applications](#46-achievement-and-perspective-of-gan-technology-for-microwave-applications)
   - [47. Avalanche durability of high-voltage GaN p–n diodes with tunnel junctions as anode contacts](#47-avalanche-durability-of-high-voltage-gan-pn-diodes-with-tunnel-junctions-as-anode-contacts)
+  - [48. Polarization fields in nitride-based quantum dots grown on nonpolar substrates](#48-polarization-fields-in-nitride-based-quantum-dots-grown-on-nonpolar-substrates)
+  - [49. Optical properties of GaN quantum dots grown on nonpolar (11-20) SiC by molecular-beam epitaxy](#49-optical-properties-of-gan-quantum-dots-grown-on-nonpolar-11-20-sic-by-molecular-beam-epitaxy)
+  - [50. First-principles calculation of the piezoelectric tensor of III–V nitrides](#50-first-principles-calculation-of-the-piezoelectric-tensor-of-iiiv-nitrides)
+  - [51. Piezoelectric fields in quantum wells on different crystal facets](#51-piezoelectric-fields-in-quantum-wells-on-different-crystal-facets)
+  - [52. Electromechanical coupling coefficient for surface acoustic waves in single-crystal bulk aluminum nitride](#52-electromechanical-coupling-coefficient-for-surface-acoustic-waves-in-single-crystal-bulk-aluminum-nitride)
+  - [53. Unambiguous evidence of the existence of polarization field crossover in a semipolar InGaN/GaN single quantum well](#53-unambiguous-evidence-of-the-existence-of-polarization-field-crossover-in-a-semipolar-ingangan-single-quantum-well)
 
 链接不需要加<>，直接copy https链接
 
@@ -864,3 +870,28 @@ https://www.nature.com/articles/nature16454
 ## 47. Avalanche durability of high-voltage GaN p–n diodes with tunnel junctions as anode contacts
 
 <https://doi.org/10.1063/5.0300544>
+
+## 48. Polarization fields in nitride-based quantum dots grown on nonpolar substrates
+
+https://doi.org/10.1103/PhysRevB.79.081401
+
+## 49. Optical properties of GaN quantum dots grown on nonpolar (11-20) SiC by molecular-beam epitaxy
+
+https://doi.org/10.1063/1.1905807
+
+## 50. First-principles calculation of the piezoelectric tensor of III–V nitrides
+
+https://doi.org/10.1063/1.1482796
+
+## 51. Piezoelectric fields in quantum wells on different crystal facets
+
+https://doi.org/10.1063/1.2405866
+
+## 52. Electromechanical coupling coefficient for surface acoustic waves in single-crystal bulk aluminum nitride
+
+https://doi.org/10.1063/1.1755843
+
+## 53. Unambiguous evidence of the existence of polarization field crossover in a semipolar InGaN/GaN single quantum well
+
+https://doi.org/10.1063/1.3167809
+

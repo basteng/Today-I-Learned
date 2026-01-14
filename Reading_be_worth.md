@@ -68,6 +68,7 @@
 - [58. 创始人创业领导力与新创团队绩效：团队学习的视角 - SERI - Jungwoo Park](#58-创始人创业领导力与新创团队绩效团队学习的视角---seri---jungwoo-park)
 - [59. 集思录](#59-集思录)
   - [59.1 经常听人说，年轻时好好赚钱，老了就可以好好享受世界了](#591-经常听人说年轻时好好赚钱老了就可以好好享受世界了)
+- [60. Underdamped LCR in parallel](#60-underdamped-lcr-in-parallel)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2632,3 +2633,7 @@ So how can you tell if something truly awakens your inner vitality? When an acti
 珍贵就在当下
 
 <https://www.jisilu.cn/question/504771>
+
+# 60. Underdamped LCR in parallel 
+
+<https://www.instagram.com/eeanimation/reel/DTRWhHaDUVm/>
