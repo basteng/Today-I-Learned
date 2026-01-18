@@ -2697,7 +2697,7 @@ ps aux | grep frpc
 
 ```bash
 # 从你的PC测试
-ssh -p 6002 basteng@8.130.93.178
+ssh -p 6053 basteng@8.130.93.178
 ```
 
 **确保服务器端也配置了：**
