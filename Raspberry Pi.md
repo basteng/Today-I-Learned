@@ -149,6 +149,7 @@
     - [运行服务](#运行服务)
     - [查看状态](#查看状态)
   - [如果出现 frpc.service start request repeat too quickly 错误](#如果出现-frpcservice-start-request-repeat-too-quickly-错误)
+- [21. 树莓派2通过树莓派1连接互联网](#21-树莓派2通过树莓派1连接互联网)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2645,3 +2646,61 @@ sudo reboot
 6. 等待1分钟后，系统应该自动启动 `frpc.service` 服务。
 
 现在，`frpc.service` 服务应该会在开机1分钟后自动启动。可以使用 `systemctl status frpc` 命令检查服务的状态以确保它已经成功启动。
+
+# 21. 树莓派2通过树莓派1连接互联网
+
+看到了，你的frpc是新版本的TOML格式。添加树莓派2的SSH映射很简单：
+
+首先设置树莓派2通过树莓派1联网时的固定IP，这里为 10.42.0.177
+
+```toml
+serverAddr = "8.130.93.178"
+serverPort = 7000
+
+[[proxies]]
+name = "test-tcp-rpi4"
+type = "tcp"
+localIP = "192.168.0.105"
+localPort = 22
+remotePort = 6052
+
+[[proxies]]
+name = "ssh-rpi2"
+type = "tcp"
+localIP = "10.42.0.177"    # 树莓派2的IP
+localPort = 22
+remotePort = 6053          # 新的远程端口
+```
+
+**保存后重启frpc：**
+
+```bash
+# 如果是systemd服务
+sudo systemctl restart frpc
+
+# 如果是手动运行
+pkill frpc
+./frpc -c frpc.toml
+```
+
+**验证配置：**
+
+```bash
+# 查看frpc日志
+sudo journalctl -u frpc -f
+
+# 或者查看进程
+ps aux | grep frpc
+```
+
+**测试连接：**
+
+```bash
+# 从你的PC测试
+ssh -p 6002 basteng@8.130.93.178
+```
+
+**确保服务器端也配置了：**
+
+服务器端要打开6053端口
+
