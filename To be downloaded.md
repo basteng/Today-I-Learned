@@ -182,6 +182,7 @@
   - [51. Piezoelectric fields in quantum wells on different crystal facets](#51-piezoelectric-fields-in-quantum-wells-on-different-crystal-facets)
   - [52. Electromechanical coupling coefficient for surface acoustic waves in single-crystal bulk aluminum nitride](#52-electromechanical-coupling-coefficient-for-surface-acoustic-waves-in-single-crystal-bulk-aluminum-nitride)
   - [53. Unambiguous evidence of the existence of polarization field crossover in a semipolar InGaN/GaN single quantum well](#53-unambiguous-evidence-of-the-existence-of-polarization-field-crossover-in-a-semipolar-ingangan-single-quantum-well)
+  - [54. Deterministic Fabrication of Uniform and Bright InGaN Quantum Dot Emitters toward Exciton Bohr Radius Regime by a Combination of Dry and Anisotropic, Controlled Wet Etching Techniques](#54-deterministic-fabrication-of-uniform-and-bright-ingan-quantum-dot-emitters-toward-exciton-bohr-radius-regime-by-a-combination-of-dry-and-anisotropic-controlled-wet-etching-techniques)
 
 链接不需要加<>，直接copy https链接
 
@@ -895,3 +896,6 @@ https://doi.org/10.1063/1.1755843
 
 https://doi.org/10.1063/1.3167809
 
+## 54. Deterministic Fabrication of Uniform and Bright InGaN Quantum Dot Emitters toward Exciton Bohr Radius Regime by a Combination of Dry and Anisotropic, Controlled Wet Etching Techniques
+
+https://pubs.acs.org/doi/10.1021/acsaom.5c00521
