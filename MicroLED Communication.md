@@ -341,8 +341,12 @@
   - [88.1 水下无线光通信关键技术与应用展望综述（特邀）](#881-水下无线光通信关键技术与应用展望综述特邀)
 - [89. OLED光通信](#89-oled光通信)
   - [89.1 OLED 用于无线通信？](#891-oled-用于无线通信)
-- [90. LETI](#90-leti)
+- [90. CEA-Leti](#90-cea-leti)
   - [90.1 Short range optical communication with GaN-on-Si microLED and microPD matrices](#901-short-range-optical-communication-with-gan-on-si-microled-and-micropd-matrices)
+  - [author: Pat Brans](#author-pat-brans)
+  - [90.2 深入了解CEA-Leti如何推动MicroLED互连技术的产业化——E](#902-深入了解cea-leti如何推动microled互连技术的产业化e)
+    - [**为什么选择microLED？为什么是现在？**](#为什么选择microled为什么是现在)
+    - [**加速成熟，而不仅仅是分享专业知识**](#加速成熟而不仅仅是分享专业知识)
 - [91. 研究机构](#91-研究机构)
   - [91.1 UCSB](#911-ucsb)
     - [91.1.1 Steven Denbaars](#9111-steven-denbaars)
@@ -8530,13 +8534,90 @@ K. Yoshida等人，Adv. Photon. 7(3), 036005 (2025)
 
 <https://compoundsemiconductor.net/article/122154/OLEDs_for_wireless_comms>
 
-# 90. LETI
+# 90. CEA-Leti
 
 ## 90.1 Short range optical communication with GaN-on-Si microLED and microPD matrices
 
 <https://sid.onlinelibrary.wiley.com/doi/10.1002/jsid.2012>
 
 <https://github.com/basteng/Today-I-Learned/blob/main/paper/J%20Soc%20Info%20Display%20-%202024%20-%20Le%20Maitre%20-%20Short%20range%20optical%20communication%20with%20GaN%E2%80%90on%E2%80%90Si%20microLED%20and%20microPD%20matrices.pdf>
+
+---
+created: 2026-01-19T15:00:04 (UTC +08:00)
+tags: [ee times,electrical engineering,electronic engineering times,electronics,eet,news,analysis,opinion,business,technology,EELife,EELive! electronic design,community,embedded systems,software,education,EE Times University,Designline,learning,eet,part search,tech papers,fundamentals courses,product search,electronic components,video,analog,digital,mixed signal,semiconductors,silicon,software]
+source: https://www.eetimes.com/inside-cea-letis-push-to-industrialize-microled-interconnects/
+author: Pat Brans
+---
+
+## 90.2 深入了解CEA-Leti如何推动MicroLED互连技术的产业化——E
+
+> ### Excerpt
+> CEA-Leti is launching a multilateral partnership to co-develop scalable microLED-based interconnects for future AI systems.
+
+---
+随着人工智能系统向着密度越来越高的GPU集群和内存密集型架构扩展，互连技术正成为主要瓶颈。计算性能持续呈指数级增长，但处理器、加速器和内存之间的连接在能效和可靠性方面都难以跟上步伐。
+
+在此背景下，CEA-Leti 启动了一项新的为期三年的多边研发计划，旨在加速基于 microLED 的光数据链路，用于短距离到中距离、超高带宽通信。
+
+![](https://www.eetimes.com/wp-content/uploads/Working-principle-of-microLED-based-Data-Link_CEA.png?w=640&resize=640%2C401)
+
+_基于微型LED的数据链路工作原理。（来源：_CEA-Leti，Patrick Le Maitre_）_
+
+该项目计划于2026年初启动，将汇集微电子和光子学价值链上的各个环节，涵盖微型LED发射器和光纤供应商、芯片制造商、系统集成商以及超大规模数据中心运营商。其目标是开发可扩展、可制造的微型LED互连技术，与目前基于铜和激光的解决方案相比，在能效和带宽密度方面实现数量级的提升。
+
+### **为什么选择microLED？为什么是现在？**
+
+其动机很简单。铜缆链路虽然节能可靠，但随着数据速率的提高，其传输距离会急剧缩短，使其在短距离之外几乎无法使用。基于激光的光链路虽然传输距离更远，但代价是功耗高、封装复杂，且大规模应用时可靠性下降。互连性能已无法跟上计算能力增长的步伐——这造成了日益扩大的差距，威胁着下一代人工智能系统的发展。
+
+微型LED有望带来不同的权衡。微型LED最初是为显示技术开发的，其尺寸比传统LED小几个数量级，并且可以通过简单的开关信号以每秒数吉比特的速度直接调制。由于其工作功率远低于激光器，并且可以制造成高密度阵列，微型LED为大规模并行光链路——众多低速通道而非少数极高速通道——打开了大门。
+
+![](https://www.eetimes.com/wp-content/uploads/An-example-of-a-microLED-array_CEA.png?w=640&resize=640%2C480)
+
+_图中所示为微型LED阵列的示例，其直径约为300微米。（来源：CEA-Leti，Patrick Le Maitre）_
+
+[这种“宽而慢”的架构是MOSAIC](https://www.microsoft.com/en-us/research/wp-content/uploads/2025/08/benyahya25mosaic.pdf)的核心，MOSAIC是微软研究院近期详细介绍的一种基于microLED的光互连概念。在这项研究中，微软展示了一个原型光链路，该链路使用数百个并行microLED通道并结合多芯成像光纤，与现有光链路相比，功耗降低了高达68%，传输距离是铜缆的十倍，可靠性也显著提高。
+
+CEA-Leti 的项目正是基于这一架构理念，旨在将其从研究原型转化为可扩展的、具有工业应用价值的技术。与以往许多依赖研究机构与单一工业合作伙伴双边合作的研发项目不同，CEA-Leti 特意为微型 LED 数据链路选择了多边合作项目结构。
+
+据CEA-Leti微型LED技术合作经理Vygintas Jankus称，由于需要改进的技术方面众多，取得进展的最佳途径是将生态系统中不同环节的参与者聚集在一起。“一个环节的改变会影响其他环节的参数，” Jankus在接受EE Times独家采访时表示，“如果不同的合作伙伴各自为政，缺乏协调，这些环节就无法完美契合。”
+
+这些“砖块”涵盖了广泛的价值链：微型LED发射器、CMOS驱动和接收器电子器件、多芯光纤、光耦合和封装技术，以及系统级集成。Jankus表示，系统集成商和超大规模数据中心也是至关重要的参与者，因为他们从一开始就帮助制定切实可行的规格。
+
+“发射器、光纤、封装、系统集成商、设计——所有这些都很重要，”他说。“因为一个环节的改变会影响其他环节，所以所有环节都需要协调一致。”
+
+![](https://www.eetimes.com/wp-content/uploads/Fabrication-of-pixels_CEA.jpg?w=640&resize=640%2C345)
+
+_像素尺寸可小至1微米。（来源：CEA-Leti）_
+
+### **加速成熟，而不仅仅是分享专业知识**
+
+尽管合作伙伴需贡献现有专业知识，但该计划的目标明确是加速供应链中薄弱环节的成熟。CEA-Leti计划开发具有可扩展性能的共享测试车辆和联合演示样机，使合作伙伴能够根据共同路线图验证各自的技术。
+
+“这个项目的目的是帮助供应链中的某些环节更快地成熟，”扬库斯解释说。“光纤供应商可能没有自己的LED，LED供应商可能无法控制封装或光学元件——但通过这个项目，他们可以尽早获得这些信息，并调整他们的设计以提高可扩展性和可制造性。”
+
+合作伙伴将定期收到技术更新、演示样机的使用权限，以及在项目期间开发的CEA-Leti知识产权的许可。每家公司保留其背景知识产权的所有权，而任何共同发明的前景知识产权将根据双边协议进行处理。
+
+CEA-Leti制定了雄心勃勃但分阶段的技术目标。在最初的一到两年内，该研究所的目标是利用集成定制ASIC的混合键合微型LED，实现低于1皮焦耳/比特的能效，所有器件均采用标准微电子工艺制造。下一个里程碑的目标是利用[UCIe](https://www.eetimes.com/ucie-3-0-doubles-data-rate-for-2d-chiplets/)等行业标准电接口，实现每秒每毫米1.3太比特的带宽密度。
+
+到项目结束时，预计传输速率将达到每毫米10.5太比特每秒，功耗低于每比特0.5皮焦耳，这一目标在能效和密度方面都将显著超越目前的光互连技术。然而，路线图并非一成不变。“我们非常乐意讨论光学和封装元件，”扬库斯表示，“我们会从我们的方案开始，但也会根据合作伙伴的意见灵活调整。”
+
+尽管微型LED互连技术具有颠覆性潜力，但CEA-Leti并未将其定位为硅光子学或激光光学技术的全面替代品。相反，该研究所认为其未来将呈现分段式发展。
+
+“每种技术都有其适用场景，”扬库斯说道。“基于MicroLED的互连技术适用于中等距离的点对点连接（GPU到GPU、GPU到内存）。而硅光子技术更适合远距离连接和交换机级互连。”
+
+该项目也着眼于未来。它并非着眼于近期可插拔光模块，而是旨在影响2028年后的架构，届时光链路将更靠近计算芯片本身。“我们的目标是将光链路集成到GPU和内存附近，”Jankus说道。“这需要一些时间。真正的部署预计要到2030年左右。”
+
+根据 Jankus 与潜在合作伙伴的讨论，他们的动机各不相同。一些公司将 microLED 互连视为避免人工智能系统规模扩大时遇到“互连瓶颈”的一种途径。另一些公司则看重其可靠性——microLED 的耐温性本质上优于激光器——或者看重其无需特殊制造工艺即可降低功耗的优势。
+
+至关重要的是，该项目旨在最大限度地降低准入风险。CEA-Leti 强调采用与标准铸造厂兼容的工艺，并避免使用需要新建工厂的材料。“你不需要新建铸造厂，”扬库斯说，“你可以利用现有的产能。”
+
+如果成功，这项多边计划的作用不仅限于验证一种新的互连技术。它还有助于围绕microLED数据链路构建一个新兴生态系统——赶在碎片化出现之前——并为人工智能基础设施的扩展提供一条可靠的替代路径，使其超越铜和传统光学器件的限制。
+
+![](https://www.eetimes.com/wp-content/uploads/Pat-Brans-headshot.jpg?fit=173%2C173)
+
+[帕特·布兰斯](https://www.eetimes.com/author/pat-brans/ "Pat Brans 的帖子")
+
+_帕特·布兰斯是《EE Times》和《EE Times Europe》的特约撰稿人。在高科技行业工作22年后，布兰斯开启了新的征程，成为一名自由科技记者。他居住在法国格勒诺布尔，并与世界各地的顶尖科学家、技术专家和企业高管保持着广泛的联系。在过去15年的专业写作生涯中，布兰斯采访了超过1000人，撰写了超过1000篇文章。他还曾在格勒诺布尔高等商学院教授本科生和研究生课程，并著有两本书：《掌控当下：50位CEO教你时间管理的秘诀》和《动员你的企业：通过无线技术获得竞争优势》。_
 
 # 91. 研究机构
 
