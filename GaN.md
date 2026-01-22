@@ -184,6 +184,8 @@
   - [57.1 SiLENSe—software tool for light emitting diode (LED) bandgap engineering](#571-silensesoftware-tool-for-light-emitting-diode-led-bandgap-engineering)
 - [58. 教职/研究机会](#58-教职研究机会)
   - [58.1 德克萨斯大学奥斯汀分校的教职招聘](#581-德克萨斯大学奥斯汀分校的教职招聘)
+- [59. 存储器](#59-存储器)
+  - [59.1 耗尽型 GaN 非易失性存储器的研究 - 南京电子器件研究所](#591-耗尽型-gan-非易失性存储器的研究---南京电子器件研究所)
 <div STYLE="page-break-after: always;"></div>
 
 # Google-Scholar和Researchgate链接
@@ -3425,4 +3427,8 @@ LED 照明有多个版本：
 
 <https://www.ece.utexas.edu/people/faculty/openings/tenure-track-faculty-positions-electrical-and-computer-engineering-fall>
 
+# 59. 存储器
 
+## 59.1 耗尽型 GaN 非易失性存储器的研究 - 南京电子器件研究所
+
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/%E8%80%97%E5%B0%BD%E5%9E%8BGaN%E9%9D%9E%E6%98%93%E5%A4%B1%E6%80%A7%E5%AD%98%E5%82%A8%E5%99%A8%E7%9A%84%E7%A0%94%E7%A9%B6.pdf>
