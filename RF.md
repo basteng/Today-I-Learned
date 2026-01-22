@@ -41,6 +41,8 @@
   - [2. GaN](#2-gan)
     - [刘新宇](#刘新宇)
     - [罗卫军](#罗卫军)
+- [SiGe](#sige)
+  - [THE SiGe HBT DREAM](#the-sige-hbt-dream)
 
 ---
 
@@ -537,3 +539,41 @@ III-V族化合物（GaAs、InP、GaN）半导体器件和电路工艺，微波MM
 专利号：CN200910312074.8
 
 <http://www.ime.cas.cn/sourcedb/zw/zjrck/201211/t20121115_3684076.html>
+
+# SiGe
+
+---
+created: 2026-01-22T15:06:25 (UTC +08:00)
+tags: []
+source: https://aerospace.org/story/sige-hbt-dream
+author: Paper Author:
+                      John D. Cressler , Georgia Institute of Technology, Atlanta, GA
+---
+
+## THE SiGe HBT DREAM
+
+> ### Excerpt
+> The SiGe heterojunction bipolar transistor (HBT) is the first practical bandgap-engineered device to be realized in the silicon material system.
+
+---
+Microelectronic device and circuit designers have long sought to combine the superior transport properties and design flexibility offered by bandgap engineering (as routinely practiced in compound semiconductors such as gallium arsenide and indium phosphide), with the high yield and low cost of conventional silicon (Si) fabrication. With the introduction of epitaxial silicon germanium (SiGe) alloys, that dream has finally become a reality.
+
+The SiGe heterojunction bipolar transistor (HBT) is the first practical bandgap-engineered device to be realized in the silicon material system. Integration of SiGe HBTs with best-of-breed Si complementary metal oxide semiconductors (CMOS) to form a SiGe HBT BiCMOS technology is an obvious fit for addressing emerging system-on-a-chip and system-on-a-package integrated circuit solutions.
+
+![Getting It Right SiGe](https://aerospace.org/sites/default/files/2020-03/Cressler_SiGe_Dream-01_0.jpg)
+
+While SiGe technology enjoys a growing importance in performance-constrained analog, digital, and radio frequency through mm-wave circuits and systems, emerging SiGe applications for which reliability issues present both nuanced challenges and exciting opportunities include space systems, the quantum realm, power electronics, and integrated photonics.
+
+The notion of integrated circuit reliability must be broadened beyond classical interpretation to address:
+
+•  robust operation from direct current to near-Tera Hz speeds, under both static and dynamic electrical stress, as a function varying impedance environments and feedback mechanisms
+
+•  operation over extreme temperatures
+
+•  operation within intense radiation fields, including total ionizing dose, displacement damage, and single event transient phenomena
+
+_Scanning electron micrograph of a SiGe HBT. The SiGe alloy is shown in orange._
+
+_Photo courtesy of John D. Cressler_
+
+This story appears in the [March 2020 issue](https://aerospace.org/getting-it-right/getting-it-right-march-2020) of _Getting It Right, Collaborating for Mission Success._
