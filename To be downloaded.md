@@ -184,6 +184,12 @@
   - [53. Unambiguous evidence of the existence of polarization field crossover in a semipolar InGaN/GaN single quantum well](#53-unambiguous-evidence-of-the-existence-of-polarization-field-crossover-in-a-semipolar-ingangan-single-quantum-well)
   - [54. Deterministic Fabrication of Uniform and Bright InGaN Quantum Dot Emitters toward Exciton Bohr Radius Regime by a Combination of Dry and Anisotropic, Controlled Wet Etching Techniques](#54-deterministic-fabrication-of-uniform-and-bright-ingan-quantum-dot-emitters-toward-exciton-bohr-radius-regime-by-a-combination-of-dry-and-anisotropic-controlled-wet-etching-techniques)
   - [55. InGaN: An overview of the growth kinetics, physical properties and emission mechanisms](#55-ingan-an-overview-of-the-growth-kinetics-physical-properties-and-emission-mechanisms)
+  - [56. A 108 Gb/s PAM-4 VCSEL-Based Direct-Drive Optical Engine for Co-Packaged Optics Applications](#56-a-108-gbs-pam-4-vcsel-based-direct-drive-optical-engine-for-co-packaged-optics-applications)
+  - [57. Lithographic Aperture VCSELs Enabling Beyond 100G Datacom Applications](#57-lithographic-aperture-vcsels-enabling-beyond-100g-datacom-applications)
+  - [58. Co-Packaged Optics Technology Evaluation for Hyperscale Data Center Fabric Switches](#58-co-packaged-optics-technology-evaluation-for-hyperscale-data-center-fabric-switches)
+  - [59. Long-Reach 1060 nm SM VCSEL - SMF Optical Interconnects](#59-long-reach-1060-nm-sm-vcsel---smf-optical-interconnects)
+  - [60. Heterogeneous Integration of a Compact Universal Photonic Engine for Silicon Photonics Applications in HPC](#60-heterogeneous-integration-of-a-compact-universal-photonic-engine-for-silicon-photonics-applications-in-hpc)
+  - [61. Laser Reliability Performance of High-Speed Optical Interconnects in Hyperscale Datacenters for PAM4 applications](#61-laser-reliability-performance-of-high-speed-optical-interconnects-in-hyperscale-datacenters-for-pam4-applications)
 
 链接不需要加<>，直接copy https链接
 
@@ -904,4 +910,30 @@ https://pubs.acs.org/doi/10.1021/acsaom.5c00521
 ## 55. InGaN: An overview of the growth kinetics, physical properties and emission mechanisms
 
 https://doi.org/10.1016/j.spmi.2007.05.001
+
+## 56. A 108 Gb/s PAM-4 VCSEL-Based Direct-Drive Optical Engine for Co-Packaged Optics Applications
+
+https://ieeexplore.ieee.org/document/11165151
+
+## 57. Lithographic Aperture VCSELs Enabling Beyond 100G Datacom Applications
+
+https://ieeexplore.ieee.org/document/10526514
+
+## 58. Co-Packaged Optics Technology Evaluation for Hyperscale Data Center Fabric Switches
+
+https://ieeexplore.ieee.org/document/11263202
+
+## 59. Long-Reach 1060 nm SM VCSEL - SMF Optical Interconnects
+
+https://ieeexplore.ieee.org/document/8535524
+
+## 60. Heterogeneous Integration of a Compact Universal Photonic Engine for Silicon Photonics Applications in HPC
+
+https://ieeexplore.ieee.org/document/9501846
+
+## 61. Laser Reliability Performance of High-Speed Optical Interconnects in Hyperscale Datacenters for PAM4 applications
+
+https://opg.optica.org/abstract.cfm?URI=FiO-2023-FM5D.6
+
+https://doi.org/10.1364/FIO.2023.FM5D.6
 
