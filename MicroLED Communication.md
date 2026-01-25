@@ -8991,6 +8991,7 @@ VCSEL, COHR https://coherent.com/networking/optoelectronic-devices/datacom-vcsel
 created: 2026-01-25T13:21:39 (UTC +08:00)
 tags: []
 source: https://blog.artechhouse.com/2024/07/03/exclusive-interview-from-our-author-khaled-ahmed/
+
 author: 
 ---
 
