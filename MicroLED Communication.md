@@ -376,6 +376,12 @@
       - [CW雷射搭配2D阵列光耦合满足Scale-out需求](#cw雷射搭配2d阵列光耦合满足scale-out需求)
       - [Scale-up另一套解法：MicroLED光源](#scale-up另一套解法microled光源)
     - [光互连成为效能提升关键光循成功吸引大厂注意](#光互连成为效能提升关键光循成功吸引大厂注意)
+- [96. SiPh, VCSEL, MicroLED](#96-siph-vcsel-microled)
+  - [96.1 基于VCSEL的人工智能数据中心扩展CPO现状与展望](#961-基于vcsel的人工智能数据中心扩展cpo现状与展望)
+- [97. 好书](#97-好书)
+  - [97.1 MicroLED Devices and Systems](#971-microled-devices-and-systems)
+  - [author:](#author)
+    - [独家专访作者 Khaled Ahmed – Artech House](#独家专访作者-khaled-ahmed--artech-house)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -8958,4 +8964,86 @@ AI资料中心正在逼迫光通讯产业走向下一个阶段。而光循选择
 在这个背景脉络下，光循正试图用最具台湾优势的技术组合，打造AI世代真正可量产、可扩展的光互连基础建设。也因为光循提出的解法，正好能解决当前AI产业所面临的挑战，因此公司正式成立至今的时间虽然不长，却已吸引到多家国际云端服务大厂注意，并且有许多研发、工程方面的合作正在进行中。预期2026年，公司就能够从这些客户收到一次性工程费用(NRE)收入。
 
 当然，光循还是以做产品(Product)为目标，而不是做专案(Project)。但事情总需要一步一脚印地进行。光循的技术团队来自工研院，并且在相关领域已经耕耘多年，但作为一家公司，还是非常年轻的。新进者总是必须先向市场证实自己的能力，取得客户信任之后，才能走到做产品的阶段。
+
+# 96. SiPh, VCSEL, MicroLED
+
+## 96.1 基于VCSEL的人工智能数据中心扩展CPO现状与展望
+
+<https://arxiv.org/pdf/2601.14342>
+
+Mature VCSEL offers the ideal combination
+
+M Kohli, COHR https://scholar.google.com/citations?user=kMPss_sAAAAJ&view_op=list_works&sortby=pubdate
+
+J Teissier, COHR https://scholar.google.com/citations?user=BeW1B9wAAAAJ&view_op=list_works&sortby=pubdate
+
+VCSEL, COHR https://coherent.com/networking/optoelectronic-devices/datacom-vcsel-photodiodes/vcsel-arrays
+
+<https://x.com/ogawa_tter/status/2014212480340578694>
+
+# 97. 好书
+
+## 97.1 MicroLED Devices and Systems
+
+<https://us.artechhouse.com/MicroLEDs-Devices-and-Systems-P2408.aspx>
+
+---
+created: 2026-01-25T13:21:39 (UTC +08:00)
+tags: []
+source: https://blog.artechhouse.com/2024/07/03/exclusive-interview-from-our-author-khaled-ahmed/
+author: 
+---
+
+### 独家专访作者 Khaled Ahmed – Artech House
+
+> #### Excerpt
+> 
+
+---
+[![](https://blog.artechhouse.com/wp-content/uploads/sites/5/Diana039s-UK/Ahmed-Banner-780x333.png)](https://blog.artechhouse.com/2024/07/03/exclusive-interview-from-our-author-khaled-ahmed/ "链接至：“作者 Khaled Ahmed 的独家专访”")
+
+[在本次采访中，我们与《MicroLED器件与系统》](https://us.artechhouse.com/MicroLEDs-Devices-and-Systems-P2408.aspx)一书的作者Khaled进行了对话。我们讨论了他撰写本书的动机、目标读者、本书最有用的方面、写作过程中遇到的挑战，以及他对其他考虑写书的工程师的建议。 
+
+**Khaled Ahmed**是英特尔公司系统供应链部门的首席工程师兼首席技术官。Ahmed博士分别于1991年和1994年获得埃及艾因夏姆斯大学电气工程学士和硕士学位，并于1998年获得北卡罗来纳州立大学电气工程博士学位。Ahmed博士曾负责英特尔MicroLED显示项目的架构设计。
+
+1.  **你写作这本书的主要动机是什么？**
+
+我从事MicroLED技术的研究已有九年，涵盖MicroLED器件设计、集成光学、微组装、驱动电路和颜色转换等多个方面。我曾在英特尔公司内外发表过多篇论文。作为系统供应链部门的一员，我的目标是推动颠覆性技术和供应商开发支持英特尔平台的系统组件。我意识到，撰写一本关于这项技术的书籍能够启发和影响整个MicroLED生态系统的读者。我希望倡导变革，推广新理念，并影响行业趋势。此外，撰写本书也让我能够触及比其他传播方式（例如期刊文章或会议报告）更广泛的受众。 
+
+2.**你的书的主要目标读者是谁？他们最欣赏这本书的哪些方面？**
+
+我的目标是影响参与MicroLED技术各个环节的供应商。因此，我的主要目标读者是负责该领域投资决策的研发工程师和管理人员。然而，在写作过程中，我决定扩大目标读者范围，纳入新的群体，例如未来生态系统中的研究生。最后，我又调整了目标读者范围，将大学教授也纳入其中，因为我意识到，为了使MicroLED器件和系统在未来20年或更长时间内保持良好的应用和性能，需要在多个领域开展长期研究。
+
+3.**你认为你的书最大的用途是什么？**
+
+本书的一个主题是利用基于物理的解析表达式，根据器件的几何和材料特性来定义器件性能指标。这种方法为创新者提供了所需的直觉，从而创造出能够显著提升性能的新器件概念。另一个主题是利用一套简单而精确的解析表达式来构建MicroLED系统的“数值原型”，例如MicroLED显示器和数据通信系统。这些数值原型使工程师和技术创新经理能够根据输入组件的指标来估算系统性能。它们还有助于为各个系统组件设定关键性能目标，以实现特定的系统性能目标。
+
+其中一章专门探讨MicroLED系统的技术经济学，重点关注MicroLED显示器。本章对于评估初创企业的投资经理尤为有用，因为它深入分析了特定技术方案的可行性和盈利能力。
+
+4.**你觉得写这本书的过程如何？你是否有特定的写作流程，或者你的写作方法是否相当有条理？**
+
+我热爱技术写作，因为它能帮助我理清思路，发现“技术”叙述中的漏洞。这些漏洞往往能启发我找到富有创意的解决方案。为前面提到的多元化读者群体撰写这本书，帮助我发现了新的解决方案，并将它们收录在书中。事实上，为技术读者量身打造故事是本书最终成书的关键所在。
+
+由于我坚持使用数据而不是观点，以确保避免教条主义，因此撰写本书也耗费了大量时间。
+
+5.**你在写作这本书时遇到了哪些挑战，你是如何克服这些挑战的？**
+
+最大的挑战在于如何平衡写作时间、陪伴家人的时间以及日常工作的时间。大约一年的时间里，我每天凌晨四点起床，从四点到八点写作，包括周末和节假日。妻子给予我的支持至关重要。
+
+6.**对于其他考虑写书的工程师，您有什么建议？**
+
+第一条建议是选择你充满热情且有实践经验的课题。第二条建议是争取家人的支持，让他们全程陪伴你。第三条建议是避免使用 ChatGPT 或其他任何人工智能工具。对于技术性课题，你需要引用具体的参考文献，以免落入“伪科学”的陷阱。
+
+7.**你接下来在做什么？**
+
+我一直对微型LED等新型光源非常着迷。在本书中，我与读者分享了将这项技术从实验室转化为商业化生产所需的创新，包括工程研发和资金投入。探测这些新型光源发出的光对系统提出了新的挑战，需要同时具备先进的光源和新型光电探测器。因此，我开始撰写一本新书的稿件，重点介绍新型光电探测器，特别是可见光波段的光电探测器。
+
+**请访问我们的网站，了解更多关于本书的信息。**
+
+[ARTECH HOUSE USA：微型LED器件和系统](https://us.artechhouse.com/MicroLEDs-Devices-and-Systems-P2408.aspx)
+
+[ARTECH HOUSE UK：微型LED器件和系统](https://uk.artechhouse.com/MicroLEDs-Devices-and-Systems-P2344.aspx)
+
+**更多移动**光子学**内容请点击此处：** [光子学 – Artech House Insider](https://blog.artechhouse.com/category/subjects/photonics/)
+
 
