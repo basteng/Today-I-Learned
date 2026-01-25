@@ -380,7 +380,6 @@
   - [96.1 基于VCSEL的人工智能数据中心扩展CPO现状与展望](#961-基于vcsel的人工智能数据中心扩展cpo现状与展望)
 - [97. 好书](#97-好书)
   - [97.1 MicroLED Devices and Systems](#971-microled-devices-and-systems)
-  - [author:](#author)
     - [独家专访作者 Khaled Ahmed – Artech House](#独家专访作者-khaled-ahmed--artech-house)
 
 <div STYLE="page-break-after: always;"></div>
@@ -8992,7 +8991,6 @@ created: 2026-01-25T13:21:39 (UTC +08:00)
 tags: []
 source: https://blog.artechhouse.com/2024/07/03/exclusive-interview-from-our-author-khaled-ahmed/
 
-author: 
 ---
 
 ### 独家专访作者 Khaled Ahmed – Artech House
