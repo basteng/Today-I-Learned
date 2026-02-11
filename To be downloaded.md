@@ -190,6 +190,7 @@
   - [59. Long-Reach 1060 nm SM VCSEL - SMF Optical Interconnects](#59-long-reach-1060-nm-sm-vcsel---smf-optical-interconnects)
   - [60. Heterogeneous Integration of a Compact Universal Photonic Engine for Silicon Photonics Applications in HPC](#60-heterogeneous-integration-of-a-compact-universal-photonic-engine-for-silicon-photonics-applications-in-hpc)
   - [61. Laser Reliability Performance of High-Speed Optical Interconnects in Hyperscale Datacenters for PAM4 applications](#61-laser-reliability-performance-of-high-speed-optical-interconnects-in-hyperscale-datacenters-for-pam4-applications)
+  - [62. Modeling GaN-on-Si MicroLEDs and MicroPDs for Chip-to-Chip Optical Links](#62-modeling-gan-on-si-microleds-and-micropds-for-chip-to-chip-optical-links)
 
 链接不需要加<>，直接copy https链接
 
@@ -937,3 +938,6 @@ https://opg.optica.org/abstract.cfm?URI=FiO-2023-FM5D.6
 
 https://doi.org/10.1364/FIO.2023.FM5D.6
 
+## 62. Modeling GaN-on-Si MicroLEDs and MicroPDs for Chip-to-Chip Optical Links
+
+<https://ieeexplore.ieee.org/document/11282170>
