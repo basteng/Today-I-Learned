@@ -381,6 +381,13 @@
 - [97. 好书](#97-好书)
   - [97.1 MicroLED Devices and Systems](#971-microled-devices-and-systems)
     - [独家专访作者 Khaled Ahmed – Artech House](#独家专访作者-khaled-ahmed--artech-house)
+- [98. AOC](#98-aoc)
+  - [author: leslie](#author-leslie)
+  - [关于 400G AOC](#关于-400g-aoc)
+    - [**400G AOC 的工作原理**](#400g-aoc-的工作原理)
+    - [**400G AOC 的主要优势**](#400g-aoc-的主要优势)
+    - [**400G AOC 的应用**](#400g-aoc-的应用)
+    - [**结论**](#结论)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -9044,5 +9051,65 @@ source: https://blog.artechhouse.com/2024/07/03/exclusive-interview-from-our-aut
 [ARTECH HOUSE UK：微型LED器件和系统](https://uk.artechhouse.com/MicroLEDs-Devices-and-Systems-P2344.aspx)
 
 **更多移动**光子学**内容请点击此处：** [光子学 – Artech House Insider](https://blog.artechhouse.com/category/subjects/photonics/)
+
+# 98. AOC
+
+---
+created: 2026-02-11T15:35:29 (UTC +08:00)
+tags: []
+source: https://www.6comgiga.com/everything-you-should-know-about-400g-aoc/
+author: leslie
+---
+
+## 关于 400G AOC
+
+> ### Excerpt
+> This article explains what 400G AOC is, how it works, its advantages, and its specific applications. It will serve as a helpful reference when deploying your network, enabling you to build a better network infrastructure.
+
+---
+随着数据中心架构的不断扩展，以及人工智能训练、云服务和高性能计算等工作负载对带宽需求的不断增长，400G互连正从未来的发展蓝图逐渐成为现实。在众多可选方案中，400G有源光缆（AOC）凭借其简洁高效的部署方式脱颖而出，成为一种无需增加不必要复杂性即可实现高速链路的理想选择。
+
+本文将深入探讨 400G AOC 技术，包括它的定义、工作原理、最佳应用场景，以及为什么许多运营商认为它是 100G 和 200G 布线解决方案的自然演进。
+
+[400G AOC](https://www.6comgiga.com/product/400g-qsfp56-to-4-x-100g-qsfp56-active-optical-cable-aoc-1m-20m/)是一种集成式光互连解决方案，它将光收发器和光纤集成到一个工厂预端接的组件中。光缆的每一端都包含一个嵌入式 400G 光模块，通常采用 QSFP-DD 或 OSFP 封装，而中间的传输介质是光纤而非铜缆。
+
+与需要独立收发器和光纤跳线的传统可插拔光模块不同，400G AOC 采用完整的即插即用线缆形式。连接到交换机、服务器或加速器的端口后，无需任何额外配置即可立即提供 400Gbps 链路。这种集成式设计简化了部署，减少了安装错误，并缩短了设置时间，尤其是在高密度环境中。
+
+与依赖铜线且传输距离非常短的 400G DAC 相比，AOC 使用光信号传输，可在保持相对较低的功耗的同时，实现更远的传输距离和更高的信号完整性。
+
+![](https://www.6comgiga.com/wp-content/uploads/2025/12/400G-AOC.jpg)
+
+### **400G AOC 的工作原理**
+
+从功能角度来看，400G AOC 的工作原理与一对永久连接到光纤链路上的光模块非常相似。在发送端，来自主机设备的高速电信号通过内置光学器件转换为光信号。这些光信号通过光纤传输到远端，并在接收端被转换回电信号，供接收设备使用。
+
+这种电光转换和光电转换是双向的，从而实现了400Gbps的全双工通信。由于传输介质是光纤，信号在很大程度上不受电磁干扰，这有助于在布线密集和高功率消耗的环境中保持稳定性。
+
+其结果是形成了一个高带宽、低延迟的链路，其性能与标准光纤连接类似，但部署复杂性却低得多。
+
+### **400G AOC 的主要优势**
+
+400G AOC最大的优势之一在于其性能与简易性之间的平衡。它既能提供现代工作负载所需的带宽，又能避免管理独立光模块和光纤库存带来的运营开销。
+
+距离是另一个明显的优势。虽然基于铜缆的[400G DAC](https://www.6comgiga.com/product/400g-qsfp-dd-to-4x100g-qsfp56-30awg-passive-direct-attach-copper-cable-dac-1m-3m/)通常只能传输几米，但 400G AOC 通常支持从几米到几十米的传输距离，因此非常适合机架间和跨排连接。
+
+重量和线缆管理也得到了显著改善。光纤AOC比粗铜缆更轻更灵活，减轻了端口的压力，使高密度机架的管理更加便捷。
+
+此外，400G AOC 具有可预测的功耗和散热性能，这非常重要，因为端口密度和机架总功率都在不断增加。
+
+### **400G AOC 的应用**
+
+在现代数据中心中，400G AOC 常用于叶交换机和脊交换机之间以及交换机和高性能服务器之间的短距离到中距离连接。它们在端口密度高且对线缆布线要求严格的环境中尤为常见。
+
+人工智能和机器学习集群是另一个重要的应用场景。GPU 服务器会产生海量的东西向流量，而 400G AOC 可以提供所需的带宽和低延迟，从而在不过度设计物理层的前提下，确保训练任务高效运行。
+
+高性能计算环境也受益于 400G AOC，因为在这些环境中，大型数据集必须在计算节点和交换机之间快速传输。AOC 的即插即用特性简化了在这些紧密耦合系统中的部署。
+
+### **结论**
+
+随着网络速度超越 100G 和 200G，400G AOC 已成为高速内部连接的实用且成熟的解决方案。它兼具卓越的光纤性能和简化的安装方式，有效解决了运营商在密集型数据中心环境中扩展带宽时面临的诸多挑战。
+
+虽然400G AOC可能无法完全取代所有可插拔光模块，但在对传输距离、可靠性和部署便捷性要求较高的场景下，它扮演着重要的角色。对于许多组织而言，它是构建更快、更清晰、更易于管理的高速网络的必然之选。
+
 
 
