@@ -86,6 +86,12 @@
   - [6. 应用自定义格式化（关键步骤）](#6-应用自定义格式化关键步骤)
   - [7. 保存图表](#7-保存图表)
 - [41. Clash和SSR的端口统一配置为1080](#41-clash和ssr的端口统一配置为1080)
+- [42. Clash Verge修改规则](#42-clash-verge修改规则)
+- [Clash Verge 自定义规则配置](#clash-verge-自定义规则配置)
+  - [配置步骤](#配置步骤)
+    - [1. 编辑订阅规则（注意此处编辑的规则**不会**随着订阅更新而失效）](#1-编辑订阅规则注意此处编辑的规则不会随着订阅更新而失效)
+    - [2. 添加规则](#2-添加规则)
+    - [3. 规则类型说明](#3-规则类型说明)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1651,4 +1657,32 @@ plt.savefig('output.png', dpi=300, bbox_inches='tight')
 # 41. Clash和SSR的端口统一配置为1080
 
 主要是Clash的混合端口代理改为1080，主要是为了VSCODE上传github时不需要重复配置端口
+
+# 42. Clash Verge修改规则
+
+具体操作参见
+
+<https://www.clashverge.dev/guide/rules.html#2>
+
+# Clash Verge 自定义规则配置
+
+> 自定义规则可以精确控制流量分流，实现特定网站或应用的直连、代理或阻断。
+
+## 配置步骤
+
+### 1. 编辑订阅规则（注意此处编辑的规则**不会**随着订阅更新而失效）
+
+右键点击订阅配置文件，选择 **"编辑规则"**。
+
+![edit-rules](https://github.com/clash-verge-rev/clash-verge-rev.github.io/raw/main/docs/assets/guide/custom_rules/edit-rules.png)
+
+### 2. 添加规则
+
+![add-rules](/picture/add-rules.png)
+
+### 3. 规则类型说明
+
+规则从上到下依次匹配，匹配到第一条符合条件的规则后停止。
+
+![verge](/picture/ClashVerge_20260211.png)
 
