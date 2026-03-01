@@ -191,6 +191,7 @@
   - [60. Heterogeneous Integration of a Compact Universal Photonic Engine for Silicon Photonics Applications in HPC](#60-heterogeneous-integration-of-a-compact-universal-photonic-engine-for-silicon-photonics-applications-in-hpc)
   - [61. Laser Reliability Performance of High-Speed Optical Interconnects in Hyperscale Datacenters for PAM4 applications](#61-laser-reliability-performance-of-high-speed-optical-interconnects-in-hyperscale-datacenters-for-pam4-applications)
   - [62. Modeling GaN-on-Si MicroLEDs and MicroPDs for Chip-to-Chip Optical Links](#62-modeling-gan-on-si-microleds-and-micropds-for-chip-to-chip-optical-links)
+  - [63. Tutorial: Fundamentals of DRAM I/O: Standards and Circuits](#63-tutorial-fundamentals-of-dram-io-standards-and-circuits)
 
 链接不需要加<>，直接copy https链接
 
@@ -940,4 +941,8 @@ https://doi.org/10.1364/FIO.2023.FM5D.6
 
 ## 62. Modeling GaN-on-Si MicroLEDs and MicroPDs for Chip-to-Chip Optical Links
 
-<https://ieeexplore.ieee.org/document/11282170>
+https://ieeexplore.ieee.org/document/11282170
+
+## 63. Tutorial: Fundamentals of DRAM I/O: Standards and Circuits
+
+https://ieeexplore.ieee.org/document/11076120
