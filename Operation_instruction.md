@@ -87,11 +87,12 @@
   - [7. 保存图表](#7-保存图表)
 - [41. Clash和SSR的端口统一配置为1080](#41-clash和ssr的端口统一配置为1080)
 - [42. Clash Verge修改规则](#42-clash-verge修改规则)
-- [Clash Verge 自定义规则配置](#clash-verge-自定义规则配置)
+  - [Clash Verge 自定义规则配置](#clash-verge-自定义规则配置)
   - [配置步骤](#配置步骤)
     - [1. 编辑订阅规则（注意此处编辑的规则**不会**随着订阅更新而失效）](#1-编辑订阅规则注意此处编辑的规则不会随着订阅更新而失效)
     - [2. 添加规则](#2-添加规则)
     - [3. 规则类型说明](#3-规则类型说明)
+- [43. MobaXterm设置跳板IP](#43-mobaxterm设置跳板ip)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1664,7 +1665,7 @@ plt.savefig('output.png', dpi=300, bbox_inches='tight')
 
 <https://www.clashverge.dev/guide/rules.html#2>
 
-# Clash Verge 自定义规则配置
+## Clash Verge 自定义规则配置
 
 > 自定义规则可以精确控制流量分流，实现特定网站或应用的直连、代理或阻断。
 
@@ -1685,4 +1686,46 @@ plt.savefig('output.png', dpi=300, bbox_inches='tight')
 规则从上到下依次匹配，匹配到第一条符合条件的规则后停止。
 
 ![verge](/picture/ClashVerge_20260211.png)
+
+# 43. MobaXterm设置跳板IP
+
+好，完整步骤如下：
+
+**第一步：打开MobaXterm本地bash终端**
+
+MobaXterm → Start local terminal，确认是bash环境。
+
+**第二步：生成密钥**
+```bash
+ssh-keygen -t rsa -b 4096
+```
+一路回车，不用设密码。
+
+**第三步：确认密钥生成成功**
+```bash
+ls ~/.ssh/
+```
+应该看到 `id_rsa` 和 `id_rsa.pub`。
+
+**第四步：把公钥上传到树莓派2**
+```bash
+ssh-copy-id basteng@树莓派2的IP
+```
+会让你输一次树莓派2的登录密码，输完即完成。
+
+**第五步：验证免密登录是否成功**
+```bash
+ssh basteng@树莓派2的IP
+```
+如果不需要输密码直接进去，说明配置成功。
+
+**第六步：MobaXterm配置跳板机**
+- Session → SSH
+- Remote host填树莓派1的IP
+- Network settings → Connect through SSH gateway
+- Gateway host填树莓派2的IP
+- Username填 `basteng`
+- 勾选 Use SSH key，路径填 `C:\Users\baste\AppData\Local\Temp\Mxt230\tmp\home_baste\.ssh\id_rsa`
+
+**注意这里的路径**
 
