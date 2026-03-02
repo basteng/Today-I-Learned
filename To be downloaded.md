@@ -192,6 +192,7 @@
   - [61. Laser Reliability Performance of High-Speed Optical Interconnects in Hyperscale Datacenters for PAM4 applications](#61-laser-reliability-performance-of-high-speed-optical-interconnects-in-hyperscale-datacenters-for-pam4-applications)
   - [62. Modeling GaN-on-Si MicroLEDs and MicroPDs for Chip-to-Chip Optical Links](#62-modeling-gan-on-si-microleds-and-micropds-for-chip-to-chip-optical-links)
   - [63. Tutorial: Fundamentals of DRAM I/O: Standards and Circuits](#63-tutorial-fundamentals-of-dram-io-standards-and-circuits)
+  - [64. 1060nm Single-mode Metal-aperture VCSEL Array with Transverse Resonance and Low Power Consumption below 50 fJ/bit](#64-1060nm-single-mode-metal-aperture-vcsel-array-with-transverse-resonance-and-low-power-consumption-below-50-fjbit)
 
 链接不需要加<>，直接copy https链接
 
@@ -946,3 +947,7 @@ https://ieeexplore.ieee.org/document/11282170
 ## 63. Tutorial: Fundamentals of DRAM I/O: Standards and Circuits
 
 https://ieeexplore.ieee.org/document/11076120
+
+## 64. 1060nm Single-mode Metal-aperture VCSEL Array with Transverse Resonance and Low Power Consumption below 50 fJ/bit
+
+https://ieeexplore.ieee.org/document/9606028
