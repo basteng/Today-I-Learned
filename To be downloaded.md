@@ -193,6 +193,7 @@
   - [62. Modeling GaN-on-Si MicroLEDs and MicroPDs for Chip-to-Chip Optical Links](#62-modeling-gan-on-si-microleds-and-micropds-for-chip-to-chip-optical-links)
   - [63. Tutorial: Fundamentals of DRAM I/O: Standards and Circuits](#63-tutorial-fundamentals-of-dram-io-standards-and-circuits)
   - [64. 1060nm Single-mode Metal-aperture VCSEL Array with Transverse Resonance and Low Power Consumption below 50 fJ/bit](#64-1060nm-single-mode-metal-aperture-vcsel-array-with-transverse-resonance-and-low-power-consumption-below-50-fjbit)
+  - [65. A High-Density Energy-Efficient 850-nm VCSEL-Based 106-Gb/s × 8-Channel CPO Transceiver for AI/ML Applications](#65-a-high-density-energy-efficient-850-nm-vcsel-based-106-gbs--8-channel-cpo-transceiver-for-aiml-applications)
 
 链接不需要加<>，直接copy https链接
 
@@ -951,3 +952,8 @@ https://ieeexplore.ieee.org/document/11076120
 ## 64. 1060nm Single-mode Metal-aperture VCSEL Array with Transverse Resonance and Low Power Consumption below 50 fJ/bit
 
 https://ieeexplore.ieee.org/document/9606028
+
+## 65. A High-Density Energy-Efficient 850-nm VCSEL-Based 106-Gb/s × 8-Channel CPO Transceiver for AI/ML Applications
+
+https://ieeexplore.ieee.org/document/11319416
+ 
