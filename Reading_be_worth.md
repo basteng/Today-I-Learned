@@ -69,6 +69,7 @@
 - [59. 集思录](#59-集思录)
   - [59.1 经常听人说，年轻时好好赚钱，老了就可以好好享受世界了](#591-经常听人说年轻时好好赚钱老了就可以好好享受世界了)
 - [60. Underdamped LCR in parallel](#60-underdamped-lcr-in-parallel)
+- [61. 金钱是人类发明的最伟大的工具，只有金钱会向穷人开放，而权力则永远不会。](#61-金钱是人类发明的最伟大的工具只有金钱会向穷人开放而权力则永远不会)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2637,3 +2638,11 @@ So how can you tell if something truly awakens your inner vitality? When an acti
 # 60. Underdamped LCR in parallel 
 
 <https://www.instagram.com/eeanimation/reel/DTRWhHaDUVm/>
+
+# 61. 金钱是人类发明的最伟大的工具，只有金钱会向穷人开放，而权力则永远不会。
+
+Money is one of the greatest instruments of freedom ever invented by man. It is money which in existing society opens an astounding range of choice to the poor man, a range greater than that which not many generations ago was open to the wealthy.
+
+<https://www.inspiringquotes.us/author/6901-friedrich-august-von-hayek>
+
+哈耶克
