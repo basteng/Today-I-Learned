@@ -193,6 +193,9 @@
   - [62. Modeling GaN-on-Si MicroLEDs and MicroPDs for Chip-to-Chip Optical Links](#62-modeling-gan-on-si-microleds-and-micropds-for-chip-to-chip-optical-links)
   - [63. Tutorial: Fundamentals of DRAM I/O: Standards and Circuits](#63-tutorial-fundamentals-of-dram-io-standards-and-circuits)
 - [64. Second-line tarlatamab improves OS in SCLC](#64-second-line-tarlatamab-improves-os-in-sclc)
+- [65. Wavelength-stable InGaN-based amber micro-LEDs](#65-wavelength-stable-ingan-based-amber-micro-leds)
+- [66. GaN-DFB lasers covering the 400–520nm spectrum](#66-gan-dfb-lasers-covering-the-400520nm-spectrum)
+- [67. A 40Gb/s 8mW-OMA 1-to-N VCSEL Driver for Parallel and Wireless Optical Links Using 150nm GaN HEMT](#67-a-40gbs-8mw-oma-1-to-n-vcsel-driver-for-parallel-and-wireless-optical-links-using-150nm-gan-hemt)
 
 链接不需要加<>，直接copy https链接
 
@@ -951,3 +954,15 @@ https://ieeexplore.ieee.org/document/11076120
 # 64. Second-line tarlatamab improves OS in SCLC
 
 https://www.nature.com/articles/s41571-025-01047-5
+
+# 65. Wavelength-stable InGaN-based amber micro-LEDs
+
+https://doi.org/10.1364/OL.588217
+
+# 66. GaN-DFB lasers covering the 400–520nm spectrum
+
+https://doi.org/10.1117/12.3080363
+
+# 67. A 40Gb/s 8mW-OMA 1-to-N VCSEL Driver for Parallel and Wireless Optical Links Using 150nm GaN HEMT
+
+https://ieeexplore.ieee.org/document/11409357
