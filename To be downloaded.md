@@ -196,6 +196,12 @@
 - [65. Wavelength-stable InGaN-based amber micro-LEDs](#65-wavelength-stable-ingan-based-amber-micro-leds)
 - [66. GaN-DFB lasers covering the 400–520nm spectrum](#66-gan-dfb-lasers-covering-the-400520nm-spectrum)
 - [67. A 40Gb/s 8mW-OMA 1-to-N VCSEL Driver for Parallel and Wireless Optical Links Using 150nm GaN HEMT](#67-a-40gbs-8mw-oma-1-to-n-vcsel-driver-for-parallel-and-wireless-optical-links-using-150nm-gan-hemt)
+- [68. High bandwidth InGaN/GaN micro-LEDs](#68-high-bandwidth-ingangan-micro-leds)
+- [69. Pushing the limits of VCSEL technology: \>200 Gb/s 1060-nm single-mode VCSEL array for next-generation SMF/MMF interconnects](#69-pushing-the-limits-of-vcsel-technology-200-gbs-1060-nm-single-mode-vcsel-array-for-next-generation-smfmmf-interconnects)
+- [70. OTenna: a reconfigurable free-space optical fabric for chip-to-chip interconnects](#70-otenna-a-reconfigurable-free-space-optical-fabric-for-chip-to-chip-interconnects)
+- [71. Advancing VCSEL technology for short reach data links](#71-advancing-vcsel-technology-for-short-reach-data-links)
+- [72. High-density connectivity solutions for short reach datacenter applications](#72-high-density-connectivity-solutions-for-short-reach-datacenter-applications)
+- [73. A rapid cancer screening by plasmonic InGaN quantum wells](#73-a-rapid-cancer-screening-by-plasmonic-ingan-quantum-wells)
 
 链接不需要加<>，直接copy https链接
 
@@ -966,3 +972,27 @@ https://doi.org/10.1117/12.3080363
 # 67. A 40Gb/s 8mW-OMA 1-to-N VCSEL Driver for Parallel and Wireless Optical Links Using 150nm GaN HEMT
 
 https://ieeexplore.ieee.org/document/11409357
+
+# 68. High bandwidth InGaN/GaN micro-LEDs
+
+https://doi.org/10.1117/12.3100532
+
+# 69. Pushing the limits of VCSEL technology: >200 Gb/s 1060-nm single-mode VCSEL array for next-generation SMF/MMF interconnects
+
+https://doi.org/10.1117/12.3089572
+
+# 70. OTenna: a reconfigurable free-space optical fabric for chip-to-chip interconnects
+
+https://doi.org/10.1117/12.3081694
+
+# 71. Advancing VCSEL technology for short reach data links
+
+https://doi.org/10.1117/12.3081682
+
+# 72. High-density connectivity solutions for short reach datacenter applications
+
+https://doi.org/10.1117/12.3079466
+
+# 73. A rapid cancer screening by plasmonic InGaN quantum wells
+
+https://doi.org/10.1117/12.3078559
