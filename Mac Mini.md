@@ -1,4 +1,10 @@
-
+- [1. 安装Homebrew](#1-安装homebrew)
+  - [对于 macOS 用户，系统自带 bash、git 和 curl，在命令行输入 xcode-select --install 安装 CLT for Xcode 即可。](#对于-macos-用户系统自带-bashgit-和-curl在命令行输入-xcode-select---install-安装-clt-for-xcode-即可)
+  - [接着，在终端输入以下几行命令设置环境变量：](#接着在终端输入以下几行命令设置环境变量)
+  - [前往 Homebrew bottles 镜像使用帮助中「长期替换」一节设置好 HOMEBREW\_API\_DOMAIN 与 HOMEBREW\_BOTTLE\_DOMAIN。](#前往-homebrew-bottles-镜像使用帮助中长期替换一节设置好-homebrew_api_domain-与-homebrew_bottle_domain)
+  - [前往 PyPI 镜像使用帮助中「Homebrew」一节设置好 HOMEBREW\_PIP\_INDEX\_URL。](#前往-pypi-镜像使用帮助中homebrew一节设置好-homebrew_pip_index_url)
+  - [最后，在终端运行以下命令以安装 Homebrew / Linuxbrew：](#最后在终端运行以下命令以安装-homebrew--linuxbrew)
+  - [安装成功后需将 brew 程序的相关路径加入到环境变量中：](#安装成功后需将-brew-程序的相关路径加入到环境变量中)
 
 # 1. 安装Homebrew
 
