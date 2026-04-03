@@ -4675,9 +4675,7 @@ Unlike laser-based optical engines—which cannot operate below a lasing thresho
 
 <https://utoronto.scholaris.ca/server/api/core/bitstreams/7124cf3b-4b06-4dc8-928d-4b553e265375/content>
 
-
-
-
+<https://github.com/basteng/Today-I-Learned/blob/main/paper/Mu_Xin_202603_PhD_thesis_%E5%BE%AE%E6%B5%81%E6%8E%A7%E9%80%9A%E9%81%93%E4%B8%8E%E6%BF%80%E5%85%89%E4%BA%8C%E6%9E%81%E7%AE%A1%E4%B8%8E%E5%8F%AF%E8%A7%81%E5%85%89%E5%85%89%E5%AD%90%E5%AD%A6%E7%9A%84%E6%95%B4%E5%90%88%EF%BC%8C%E7%94%A8%E4%BA%8E%E7%A5%9E%E7%BB%8F%E6%8A%80%E6%9C%AF.pdf>
 
 # 6. 《廉价光源可使人工智能更节能》Nature
 
