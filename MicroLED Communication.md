@@ -173,6 +173,7 @@
     - [技术优势](#技术优势)
     - [应用场景](#应用场景)
     - [和硅光的差异](#和硅光的差异)
+  - [5.71 微流控通道与激光二极管与可见光光子学的整合，用于神经技术](#571-微流控通道与激光二极管与可见光光子学的整合用于神经技术)
 - [6. 《廉价光源可使人工智能更节能》Nature](#6-廉价光源可使人工智能更节能nature)
 - [7. 多孔硅](#7-多孔硅)
 - [8. -3 dB带宽](#8--3-db带宽)
@@ -4667,6 +4668,15 @@ Unlike laser-based optical engines—which cannot operate below a lasing thresho
 
 
 与无法在激光阈值以下工作的激光光引擎不同，微型LED可以将发射功率扩展到几乎任意低的水平，其主要限制因素是接收器的信噪比。虽然硅光子学可以通过将单个外部激光器的光束分配到多个谐振调制器上来实现低有效功率，但微型LED本身就能产生光，从而显著简化封装。Avicena的微型LED发射器尺寸仅为几微米，无需温度稳定，并且避免了复杂的控制回路。这些微型发射器可以以极高的密度排列，从而提供太比特级的总带宽。
+
+## 5.71 微流控通道与激光二极管与可见光光子学的整合，用于神经技术
+
+引用Bardia文章 10Gbps NRZ per lane data links with transferred Micro-LEDs with ...
+
+<https://utoronto.scholaris.ca/server/api/core/bitstreams/7124cf3b-4b06-4dc8-928d-4b553e265375/content>
+
+
+
 
 
 # 6. 《廉价光源可使人工智能更节能》Nature
