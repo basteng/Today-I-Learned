@@ -93,6 +93,7 @@
     - [2. 添加规则](#2-添加规则)
     - [3. 规则类型说明](#3-规则类型说明)
 - [43. MobaXterm设置跳板IP](#43-mobaxterm设置跳板ip)
+- [44. 设置Claude在Clash Verge走单独的流量](#44-设置claude在clash-verge走单独的流量)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1746,4 +1747,35 @@ ssh basteng@树莓派2的IP
 - **公钥**（`id_rsa.pub`）：上传到树莓派，相当于锁，可以公开
 
 PC拿着私钥去敲树莓派的锁，匹配上就登录成功，全程不传密码。
+
+# 44. 设置Claude在Clash Verge走单独的流量
+
+Clash Verge - 订阅 - 右键 - 扩展脚本
+
+function main(config, profileName) {
+  // 1. 追加 SSR 节点
+  config.proxies = config.proxies || [];
+  config.proxies.push({
+    name: "My SSR Node",
+    type: "ssr",
+    server: "149.248.1.201",
+    port: 20004,
+    cipher: "chacha20-ietf",
+    password: "XXXXXXXXX",   // ← 填真实密码
+    obfs: "plain",
+    protocol: "origin",
+    "obfs-param": "",
+    "protocol-param": ""
+  });
+
+  // 2. 只在 rules 最前面插入 Claude 规则，其余不动
+  const claudeRules = [
+    "DOMAIN-SUFFIX,anthropic.com,My SSR Node",
+    "DOMAIN-SUFFIX,claude.ai,My SSR Node",
+    "DOMAIN-SUFFIX,claudeusercontent.com,My SSR Node"
+  ];
+  config.rules = [...claudeRules, ...(config.rules || [])];
+  return config;
+}
+
 
