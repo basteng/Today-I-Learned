@@ -192,16 +192,18 @@
   - [61. Laser Reliability Performance of High-Speed Optical Interconnects in Hyperscale Datacenters for PAM4 applications](#61-laser-reliability-performance-of-high-speed-optical-interconnects-in-hyperscale-datacenters-for-pam4-applications)
   - [62. Modeling GaN-on-Si MicroLEDs and MicroPDs for Chip-to-Chip Optical Links](#62-modeling-gan-on-si-microleds-and-micropds-for-chip-to-chip-optical-links)
   - [63. Tutorial: Fundamentals of DRAM I/O: Standards and Circuits](#63-tutorial-fundamentals-of-dram-io-standards-and-circuits)
-- [64. Second-line tarlatamab improves OS in SCLC](#64-second-line-tarlatamab-improves-os-in-sclc)
-- [65. Wavelength-stable InGaN-based amber micro-LEDs](#65-wavelength-stable-ingan-based-amber-micro-leds)
-- [66. GaN-DFB lasers covering the 400–520nm spectrum](#66-gan-dfb-lasers-covering-the-400520nm-spectrum)
-- [67. A 40Gb/s 8mW-OMA 1-to-N VCSEL Driver for Parallel and Wireless Optical Links Using 150nm GaN HEMT](#67-a-40gbs-8mw-oma-1-to-n-vcsel-driver-for-parallel-and-wireless-optical-links-using-150nm-gan-hemt)
-- [68. High bandwidth InGaN/GaN micro-LEDs](#68-high-bandwidth-ingangan-micro-leds)
-- [69. Pushing the limits of VCSEL technology: \>200 Gb/s 1060-nm single-mode VCSEL array for next-generation SMF/MMF interconnects](#69-pushing-the-limits-of-vcsel-technology-200-gbs-1060-nm-single-mode-vcsel-array-for-next-generation-smfmmf-interconnects)
-- [70. OTenna: a reconfigurable free-space optical fabric for chip-to-chip interconnects](#70-otenna-a-reconfigurable-free-space-optical-fabric-for-chip-to-chip-interconnects)
-- [71. Advancing VCSEL technology for short reach data links](#71-advancing-vcsel-technology-for-short-reach-data-links)
-- [72. High-density connectivity solutions for short reach datacenter applications](#72-high-density-connectivity-solutions-for-short-reach-datacenter-applications)
-- [73. A rapid cancer screening by plasmonic InGaN quantum wells](#73-a-rapid-cancer-screening-by-plasmonic-ingan-quantum-wells)
+  - [64. Second-line tarlatamab improves OS in SCLC](#64-second-line-tarlatamab-improves-os-in-sclc)
+  - [65. Wavelength-stable InGaN-based amber micro-LEDs](#65-wavelength-stable-ingan-based-amber-micro-leds)
+  - [66. GaN-DFB lasers covering the 400–520nm spectrum](#66-gan-dfb-lasers-covering-the-400520nm-spectrum)
+  - [67. A 40Gb/s 8mW-OMA 1-to-N VCSEL Driver for Parallel and Wireless Optical Links Using 150nm GaN HEMT](#67-a-40gbs-8mw-oma-1-to-n-vcsel-driver-for-parallel-and-wireless-optical-links-using-150nm-gan-hemt)
+  - [68. High bandwidth InGaN/GaN micro-LEDs](#68-high-bandwidth-ingangan-micro-leds)
+  - [69. Pushing the limits of VCSEL technology: \>200 Gb/s 1060-nm single-mode VCSEL array for next-generation SMF/MMF interconnects](#69-pushing-the-limits-of-vcsel-technology-200-gbs-1060-nm-single-mode-vcsel-array-for-next-generation-smfmmf-interconnects)
+  - [70. OTenna: a reconfigurable free-space optical fabric for chip-to-chip interconnects](#70-otenna-a-reconfigurable-free-space-optical-fabric-for-chip-to-chip-interconnects)
+  - [71. Advancing VCSEL technology for short reach data links](#71-advancing-vcsel-technology-for-short-reach-data-links)
+  - [72. High-density connectivity solutions for short reach datacenter applications](#72-high-density-connectivity-solutions-for-short-reach-datacenter-applications)
+  - [73. A rapid cancer screening by plasmonic InGaN quantum wells](#73-a-rapid-cancer-screening-by-plasmonic-ingan-quantum-wells)
+- [**From 20260412**](#from-20260412)
+  - [1. Bandwidth enhancement in hexagonal M-plane InGaN/GaN MQW micro-photodetectors via TMAH sidewall treatment](#1-bandwidth-enhancement-in-hexagonal-m-plane-ingangan-mqw-micro-photodetectors-via-tmah-sidewall-treatment)
 
 链接不需要加<>，直接copy https链接
 
@@ -957,42 +959,48 @@ https://ieeexplore.ieee.org/document/11282170
 
 https://ieeexplore.ieee.org/document/11076120
 
-# 64. Second-line tarlatamab improves OS in SCLC
+## 64. Second-line tarlatamab improves OS in SCLC
 
 https://www.nature.com/articles/s41571-025-01047-5
 
-# 65. Wavelength-stable InGaN-based amber micro-LEDs
+## 65. Wavelength-stable InGaN-based amber micro-LEDs
 
 https://doi.org/10.1364/OL.588217
 
-# 66. GaN-DFB lasers covering the 400–520nm spectrum
+## 66. GaN-DFB lasers covering the 400–520nm spectrum
 
 https://doi.org/10.1117/12.3080363
 
-# 67. A 40Gb/s 8mW-OMA 1-to-N VCSEL Driver for Parallel and Wireless Optical Links Using 150nm GaN HEMT
+## 67. A 40Gb/s 8mW-OMA 1-to-N VCSEL Driver for Parallel and Wireless Optical Links Using 150nm GaN HEMT
 
 https://ieeexplore.ieee.org/document/11409357
 
-# 68. High bandwidth InGaN/GaN micro-LEDs
+## 68. High bandwidth InGaN/GaN micro-LEDs
 
 https://doi.org/10.1117/12.3100532
 
-# 69. Pushing the limits of VCSEL technology: >200 Gb/s 1060-nm single-mode VCSEL array for next-generation SMF/MMF interconnects
+## 69. Pushing the limits of VCSEL technology: >200 Gb/s 1060-nm single-mode VCSEL array for next-generation SMF/MMF interconnects
 
 https://doi.org/10.1117/12.3089572
 
-# 70. OTenna: a reconfigurable free-space optical fabric for chip-to-chip interconnects
+## 70. OTenna: a reconfigurable free-space optical fabric for chip-to-chip interconnects
 
 https://doi.org/10.1117/12.3081694
 
-# 71. Advancing VCSEL technology for short reach data links
+## 71. Advancing VCSEL technology for short reach data links
 
 https://doi.org/10.1117/12.3081682
 
-# 72. High-density connectivity solutions for short reach datacenter applications
+## 72. High-density connectivity solutions for short reach datacenter applications
 
 https://doi.org/10.1117/12.3079466
 
-# 73. A rapid cancer screening by plasmonic InGaN quantum wells
+## 73. A rapid cancer screening by plasmonic InGaN quantum wells
 
 https://doi.org/10.1117/12.3078559
+
+# **From 20260412**
+
+## 1. Bandwidth enhancement in hexagonal M-plane InGaN/GaN MQW micro-photodetectors via TMAH sidewall treatment 
+
+https://doi.org/10.1063/5.0324924
