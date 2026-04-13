@@ -204,6 +204,26 @@
   - [73. A rapid cancer screening by plasmonic InGaN quantum wells](#73-a-rapid-cancer-screening-by-plasmonic-ingan-quantum-wells)
 - [**From 20260412**](#from-20260412)
   - [1. Bandwidth enhancement in hexagonal M-plane InGaN/GaN MQW micro-photodetectors via TMAH sidewall treatment](#1-bandwidth-enhancement-in-hexagonal-m-plane-ingangan-mqw-micro-photodetectors-via-tmah-sidewall-treatment)
+  - [2. A Monolithically Integrated DWDM Si-Photonics Transceiver for Chiplet Optical I/O](#2-a-monolithically-integrated-dwdm-si-photonics-transceiver-for-chiplet-optical-io)
+  - [3. 1200 V Fully-Vertical GaN-on-Si Power MOSFET](#3-1200-v-fully-vertical-gan-on-si-power-mosfet)
+  - [4. Low-Noise and High-Survivability 55–65-GHz GaN MMIC LNA for Millimeter-Wave Communications](#4-low-noise-and-high-survivability-5565-ghz-gan-mmic-lna-for-millimeter-wave-communications)
+  - [5. 4.2 W/mm at 10 GHz in silicon delta-doped AlN/GaN/AlN pseudomorphic HEMTs with PECVD SiN passivation](#5-42-wmm-at-10-ghz-in-silicon-delta-doped-alnganaln-pseudomorphic-hemts-with-pecvd-sin-passivation)
+  - [6. Recent advances in micron scale III-nitrides based RGB MicroLEDs](#6-recent-advances-in-micron-scale-iii-nitrides-based-rgb-microleds)
+  - [7. Investigation of Luminescence Spectra for InGaN/GaN Rectangular, Trapezoidal, and Triangular MQW Light-Emitting Diodes](#7-investigation-of-luminescence-spectra-for-ingangan-rectangular-trapezoidal-and-triangular-mqw-light-emitting-diodes)
+  - [8. GaN SLCFET Technology for Next Generation mmW Systems, Demonstrating Pout of 10.87 W/mm With 43% PAE at 94 GHz](#8-gan-slcfet-technology-for-next-generation-mmw-systems-demonstrating-pout-of-1087-wmm-with-43-pae-at-94-ghz)
+  - [9. Overview of Wide/Ultrawide Bandgap Power Semiconductor Devices for Distributed Energy Resources](#9-overview-of-wideultrawide-bandgap-power-semiconductor-devices-for-distributed-energy-resources)
+  - [10. N-Polar GaN HEMTs in a High-Uniformity 100-mm Wafer Process With 43.6% Power-Added Efficiency and 2 W/mm at 94 GHz](#10-n-polar-gan-hemts-in-a-high-uniformity-100-mm-wafer-process-with-436-power-added-efficiency-and-2-wmm-at-94-ghz)
+  - [11. Defects in epitaxial multilayers: I. Misfit dislocations](#11-defects-in-epitaxial-multilayers-i-misfit-dislocations)
+  - [12. Microwave and Millimeter-Wave Permittivities of Single-Crystal AlN, Including Thickness and Temperature Dependence](#12-microwave-and-millimeter-wave-permittivities-of-single-crystal-aln-including-thickness-and-temperature-dependence)
+  - [13. Microwave Photonics Empowered Integrated Sensing and Communication for 6G](#13-microwave-photonics-empowered-integrated-sensing-and-communication-for-6g)
+  - [14. Machine Learning Potentials for Property Predictions of Two-Dimensional Group-III Nitrides](#14-machine-learning-potentials-for-property-predictions-of-two-dimensional-group-iii-nitrides)
+  - [15. Tutorial: Fundamentals of DRAM I/O: Standards and Circuits](#15-tutorial-fundamentals-of-dram-io-standards-and-circuits)
+  - [16. High bandwidth InGaN/GaN micro-LEDs 需录屏](#16-high-bandwidth-ingangan-micro-leds-需录屏)
+  - [17. Pushing the limits of VCSEL technology: \>200 Gb/s 1060-nm single-mode VCSEL array for next-generation SMF/MMF interconnects](#17-pushing-the-limits-of-vcsel-technology-200-gbs-1060-nm-single-mode-vcsel-array-for-next-generation-smfmmf-interconnects)
+  - [18. OTenna: a reconfigurable free-space optical fabric for chip-to-chip interconnects](#18-otenna-a-reconfigurable-free-space-optical-fabric-for-chip-to-chip-interconnects)
+  - [19. Advancing VCSEL technology for short reach data links](#19-advancing-vcsel-technology-for-short-reach-data-links)
+  - [20. High-density connectivity solutions for short reach datacenter applications](#20-high-density-connectivity-solutions-for-short-reach-datacenter-applications)
+  - [21. A rapid cancer screening by plasmonic InGaN quantum wells](#21-a-rapid-cancer-screening-by-plasmonic-ingan-quantum-wells)
 
 链接不需要加<>，直接copy https链接
 
@@ -1004,3 +1024,84 @@ https://doi.org/10.1117/12.3078559
 ## 1. Bandwidth enhancement in hexagonal M-plane InGaN/GaN MQW micro-photodetectors via TMAH sidewall treatment 
 
 https://doi.org/10.1063/5.0324924
+
+## 2. A Monolithically Integrated DWDM Si-Photonics Transceiver for Chiplet Optical I/O
+
+https://ieeexplore.ieee.org/document/11080352
+
+## 3. 1200 V Fully-Vertical GaN-on-Si Power MOSFET
+
+https://ieeexplore.ieee.org/document/11072711
+
+## 4. Low-Noise and High-Survivability 55–65-GHz GaN MMIC LNA for Millimeter-Wave Communications
+
+https://ieeexplore.ieee.org/document/11099007
+
+## 5. 4.2 W/mm at 10 GHz in silicon delta-doped AlN/GaN/AlN pseudomorphic HEMTs with PECVD SiN passivation
+
+https://ieeexplore.ieee.org/document/11115098
+
+## 6. Recent advances in micron scale III-nitrides based RGB MicroLEDs
+
+https://www.researchgate.net/publication/378934633_Recent_advances_in_micron_scale_III-nitrides_based_RGB_MicroLEDs
+
+## 7. Investigation of Luminescence Spectra for InGaN/GaN Rectangular, Trapezoidal, and Triangular MQW Light-Emitting Diodes
+
+https://link.springer.com/article/10.1134/S1063783425601328
+
+## 8. GaN SLCFET Technology for Next Generation mmW Systems, Demonstrating Pout of 10.87 W/mm With 43% PAE at 94 GHz
+
+https://ieeexplore.ieee.org/document/10122235
+
+## 9. Overview of Wide/Ultrawide Bandgap Power Semiconductor Devices for Distributed Energy Resources
+
+https://ieeexplore.ieee.org/document/10129950
+
+## 10. N-Polar GaN HEMTs in a High-Uniformity 100-mm Wafer Process With 43.6% Power-Added Efficiency and 2 W/mm at 94 GHz
+
+https://ieeexplore.ieee.org/document/10098257
+
+## 11. Defects in epitaxial multilayers: I. Misfit dislocations
+
+https://www.sciencedirect.com/science/article/abs/pii/S0022024874800552
+
+## 12. Microwave and Millimeter-Wave Permittivities of Single-Crystal AlN, Including Thickness and Temperature Dependence
+
+https://ieeexplore.ieee.org/document/11220929
+
+## 13. Microwave Photonics Empowered Integrated Sensing and Communication for 6G
+
+https://ieeexplore.ieee.org/document/10870472/authors#authors
+
+## 14. Machine Learning Potentials for Property Predictions of Two-Dimensional Group-III Nitrides
+
+https://doi.org/10.1016/j.actphy.2025.100224
+
+## 15. Tutorial: Fundamentals of DRAM I/O: Standards and Circuits
+
+https://ieeexplore.ieee.org/document/11076120
+
+## 16. High bandwidth InGaN/GaN micro-LEDs 需录屏
+
+https://doi.org/10.1117/12.3100532
+
+## 17. Pushing the limits of VCSEL technology: >200 Gb/s 1060-nm single-mode VCSEL array for next-generation SMF/MMF interconnects
+
+https://doi.org/10.1117/12.3089572
+
+## 18. OTenna: a reconfigurable free-space optical fabric for chip-to-chip interconnects
+
+https://doi.org/10.1117/12.3081694
+
+## 19. Advancing VCSEL technology for short reach data links
+
+https://doi.org/10.1117/12.3081682
+
+## 20. High-density connectivity solutions for short reach datacenter applications
+
+https://doi.org/10.1117/12.3079466
+
+## 21. A rapid cancer screening by plasmonic InGaN quantum wells
+
+https://doi.org/10.1117/12.3078559
+
