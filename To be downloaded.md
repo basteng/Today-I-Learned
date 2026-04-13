@@ -224,6 +224,7 @@
   - [19. Advancing VCSEL technology for short reach data links](#19-advancing-vcsel-technology-for-short-reach-data-links)
   - [20. High-density connectivity solutions for short reach datacenter applications](#20-high-density-connectivity-solutions-for-short-reach-datacenter-applications)
   - [21. A rapid cancer screening by plasmonic InGaN quantum wells](#21-a-rapid-cancer-screening-by-plasmonic-ingan-quantum-wells)
+  - [22. GaN-on-Si photonics platform for heterogenous blue lasers: A perspective and feasibility study](#22-gan-on-si-photonics-platform-for-heterogenous-blue-lasers-a-perspective-and-feasibility-study)
 
 链接不需要加<>，直接copy https链接
 
@@ -1104,4 +1105,8 @@ https://doi.org/10.1117/12.3079466
 ## 21. A rapid cancer screening by plasmonic InGaN quantum wells
 
 https://doi.org/10.1117/12.3078559
+
+## 22. GaN-on-Si photonics platform for heterogenous blue lasers: A perspective and feasibility study
+
+https://ieeexplore.ieee.org/document/11478788
 
