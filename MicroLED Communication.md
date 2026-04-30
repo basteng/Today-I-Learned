@@ -1,3 +1,54 @@
+## 0. LED通信专题总纲（Academic Agent 汇总）
+
+### 0.1 这个专题的中心正在迁移
+这份资料最初可以从传统 LED/VLC 视角阅读，但随着 AI 与 HPC 互连需求爆发，专题重心已经明显外移到 **短距、高并行、低功耗光互连**。因此，后续不应只把它理解成“LED 做通信”，而应把它放进 **AI 服务器、chip-to-chip、package-to-package、memory disaggregation、scale-up / scale-out** 的更大语境里。
+
+### 0.2 以后建议用三角框架看路线
+当前最值得长期比较的不是单一路线，而是三角关系：
+1. **SiPh / optical I/O**：代表路线是 Ayar Labs，重点在封装内 / 片边光学 I/O、UCIe、远程光源与系统级架构重构。
+2. **VCSEL / 激光**：代表现有较成熟的短距或中间态路线，兼具较高单 lane 速率与成熟供应链。
+3. **microLED**：代表路线是 Avicena，重点在 wide-but-slow、高并行、低 pJ/bit、短距互连。
+
+这意味着以后判断任何新材料时，都不应孤立看 microLED，而应放在 **SiPh / VCSEL / microLED** 的竞争关系里判断。
+
+### 0.3 microLED 的关键判断
+从目前积累的论文、访谈、专利和产业动态看，microLED 的竞争逻辑更像：
+- 不追求单 lane 正面打败 DFB/EML
+- 更强调 **低功耗、并行、短距、高密度**
+- 更适合在 AI/HPC 互连里寻找独立生态位
+
+因此，microLED 更像一条 **wide-but-slow** 路线。它的上限不能只看调制带宽，还要结合：
+- QW vs QD
+- RC 限制
+- differential carrier lifetime
+- linewidth / dispersion
+- 耦合方式
+- gearbox 与整体链路功耗
+
+### 0.4 需要长期澄清的系统问题
+这个专题后续最容易混淆、但也最关键的几个系统级问题是：
+- **CPO vs optical I/O** 不是一回事
+- 可插拔光模块、CPO、封装内 optical I/O、microLED 并行互连，属于不同层级架构
+- 真正的竞争不只是“光替代铜”，而是不同光路线在 **功耗、带宽密度、距离、延迟、制造复杂度、生态成熟度** 之间重新分工
+- memory disaggregation、scale-up / scale-out 可能比传统网络链路更早成为新路线落地场景
+
+### 0.5 目前最值得长期跟踪的主线
+从整个资料池看，后续最值得继续盯的主线包括：
+- **Ayar Labs**：SiPh / optical I/O / UCIe / memory disaggregation
+- **Avicena**：microLED / LightBundle / 高并行低功耗 AI 互连
+- **TSMC**：是否把新型光互连真正带入制造与系统生态
+- **VCSEL / 激光中间态路线**：是否在成本与成熟度上继续维持优势
+- **QD microLED**：是否成为突破传统 QW 带宽天花板的关键器件路线
+
+### 0.6 这份资料以后建议怎么读
+建议把这份资料理解成一个“长期资料池”，而不是一篇线性综述。
+后续可以按三层结构不断回看和补充：
+- **器件层**：QW/QD、RC、寿命、高温、尺寸
+- **链路/封装层**：光纤束、PD 阵列、CPO、optical I/O、并行互连
+- **系统/产业层**：AI/HPC、功耗、延迟、生态、量产节奏
+
+这样这份文档就不只是资料堆积，而会慢慢变成一个可持续迭代的 LED / microLED / optical I/O 知识总库。
+
 - [0. LED通信专题总纲（Academic Agent 汇总）](#0-led通信专题总纲academic-agent-汇总)
 - [1.关于封装内光学 I/O 的三个常见误解](#1关于封装内光学-io-的三个常见误解)
 - [2. Lizhenhao Paper](#2-lizhenhao-paper)
