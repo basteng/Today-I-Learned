@@ -1,4 +1,5 @@
 - [0. LED通信专题总纲（Academic Agent 汇总）](#0-led通信专题总纲academic-agent-汇总)
+- [0A. 外部高质量综述：Wide and Slow: The Physics of µLED](#0a-外部高质量综述wide-and-slow-the-physics-of-µled)
 - [1.关于封装内光学 I/O 的三个常见误解](#1关于封装内光学-io-的三个常见误解)
 - [2. Lizhenhao Paper](#2-lizhenhao-paper)
   - [2.1 《Bandwidth Analysis of High-Speed InGaN Micro-LEDs by an Equivalent Circuit Model》](#21-bandwidth-analysis-of-high-speed-ingan-micro-leds-by-an-equivalent-circuit-model)
@@ -449,6 +450,457 @@
 - **系统/产业层**：AI/HPC、功耗、延迟、生态、量产节奏
 
 这样这份文档就不只是资料堆积，而会慢慢变成一个可持续迭代的 LED / microLED / optical I/O 知识总库。
+
+# 0A. 外部高质量综述：Wide and Slow: The Physics of µLED
+
+> 来源：XZ_Tech，原始整理文件 `/home/basteng/MicroLED_Communication/Wide-and-Slow-The-Physics-of-µLED.md`  
+> 原始链接：<https://ampluscoepi464433.substack.com/p/wide-and-slow-the-physics-of-led?r=5qnwxp&utm_medium=ios&triedRedirect=true>
+
+## Wide and Slow: The Physics of µLED
+
+> ## Excerpt
+> The architectural pitch, the physics that bounds it, and where the research is going.
+
+---
+> _**Disclosure**_: _All information in this report is based on publicly available sources and first-principles physics analysis. No proprietary or confidential information from any employer or client is used._
+> 
+> _**Personal views**: All views expressed are the author’s personal opinions and do not represent the position of any employer or company. **This article is not investment advice** and is not a recommendation to buy, sell, or hold any security._
+
+### **Intro**
+
+µLED is just small inorganic LED, shrunk down to a few–tens of microns. In the display industry, we have them in watches (Garmin), in AR microdisplays (Meta Orion), and now, increasingly, on the cover slides of AI-infrastructure pitch decks. The marketing line writes itself: low cost to make, longer-lived than a laser, simpler overall architecture.
+
+The pitch goes like this — pick µLED emitters, place them on a CMOS driver, light up an imaging fiber, and send terabits per second across an AI rack. Avicena is doing it with $120M committed, partnerships with TSMC and ams OSRAM, and SK hynix as a strategic investor. Microsoft’s MOSAIC won Best Paper at SIGCOMM 2025 with the same idea. Marvell and Mojo Vision announced a multi-generational µLED optical-interconnect partnership in March 2026. Credo paid $92M for Hyperlume. That’s at least five different commercial bets pointed at the same architecture.
+
+So how hard can it be?
+
+Hard enough that the industry has been at it for over a decade. The reason isn’t engineering laziness — **the underlying physics fights you at every step**. There are **physics constraints** that conspire against pushing a µLED into datacom-relevant territory, and every one of them is encoded in textbook equations a photonics graduate student has already seen.
+
+This post does five things:
+
+1.  Lays out **what the µLED architecture is actually selling** — the link-level pitch, plus five physics-driven architectural advantages over laser-based optics.
+    
+2.  Walks through the **five fundamental physics constraints** that have to hold for that pitch to close — from first principles, with literature numbers and worked calculations.
+    
+3.  Maps the **active research paths** in three maturity tiers: sampling today, engineering-stage commercial bets, and academic frontier.
+    
+4.  Surfaces the **IQE tax** every LED-side bandwidth path pays — almost every research direction that raises bandwidth costs efficiency, mapped across all seven paths.
+    
+5.  Plots where the commercial implementations (Avicena, San’an + Tsinghua, Hyperlume, Microsoft MOSAIC) sit on that map. They’re combinations of research paths, not magic.
+    
+
+### **The architectural pitch — what µLED wide-and-slow is selling**
+
+Before we get to the physics critique, it’s worth pinning down **what the µLED proposition actually is at the link level**. The nominal pitch is genuinely attractive, and the critique only carries weight if you measure it against the full case being made — not a strawman.
+
+### **The mainstream optical link**
+
+Here is what a high-speed optical link looks like today:
+
+[![](picture/wide-and-slow/3ea77b44-b0af-49f9-b1b8-da4d66ae73b7.png)](https://substackcdn.com/image/fetch/$s_!b5R-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1f584ea3-ae79-4c83-b539-9561e8756c04_1016x866.png)
+
+Every box on that diagram is a component, and every component costs money, dissipates power, demands alignment, and contributes a failure mode:
+
+-   **Laser source** (DFB / EML / VCSEL) — wavelength stabilization, thermal control (often a TEC), bias-current control, often hermetic packaging.
+    
+-   **External modulator** (Mach-Zehnder, micro-ring, or electro-absorption) — DC bias, RF driver, and for MRMs a heater for thermal locking.
+    
+-   **Fiber + connectors** — single-mode fiber demands sub-µm alignment to launch.
+    
+-   **Receive side** — photodetector + TIA + clock-data-recovery; for coherent links, a local oscillator + balanced detection + a DSP block.
+    
+-   **DSP / equalizer** — at 224 Gbps PAM4, the DSP alone can consume ~50% of a pluggable transceiver’s power budget.
+    
+
+This stack has been engineered relentlessly for thirty years to push per-lane bandwidth from megabits to 200+ gigabits. It works. But the per-channel tax — components, power, alignment cost — stays roughly flat, while AI scale-up workloads now want even more bandwidth, and the cost of the optical link is becoming a larger and larger fraction of the datacenter bill.
+
+### **The µLED wide-and-slow alternative**
+
+Here is what µLED proposes in its place:
+
+[![](picture/wide-and-slow/3c9eb073-d18c-4145-b489-bd422c823c5a.png)](https://substackcdn.com/image/fetch/$s_!2Rsk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb275144b-5179-4088-beb7-f07e6694ccc0_1016x534.png)
+
+That’s it. **No laser. No external modulator. No DSP. No thermal stabilization. No isolators. No polarization control. No balanced detection.** The µLED is its own emitter and modulator (drive current → light, directly). The fiber is a passive multicore glass bundle. The photodetector is built in standard CMOS as part of the receiver IC. The TIA is the only analog block on the receive side that has to do real work.
+
+### **The pitch — at a glance**
+
+[![](picture/wide-and-slow/660cfa22-8d3a-4c1c-ad4b-a32a2d67ecee.jpg)](https://substackcdn.com/image/fetch/$s_!3iqy!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d941c72-3514-4d7d-949e-062d2d0dbdcd_3870x2363.png)
+
+The headline reads: **fewer components, simpler modulation, cheaper devices, massive parallelism.** Run those numbers across hundreds of channels per package and the system-level economics start looking dramatically better than narrow-and-fast at chip-to-chip distances. This is why Microsoft MOSAIC won Best Paper at SIGCOMM 2025, why Marvell and Mojo Vision launched a multi-generational µLED interconnect partnership in March 2026, why Credo paid $92M for Hyperlume, and why Avicena has $120M committed.
+
+But the table is only half the case. The deeper reason this architecture is interesting is the **advantages come from the physics of incoherent visible-wavelength emission** — they aren’t engineering tradeoffs you could replicate any other way:
+
+1.  **NRZ on-off keying is sufficient.** No PAM4, no coherent QAM, no equalizer DSP. One driver design, replicated 300+ times across the array. End-to-end latency below 2 ns is plausible. Per-channel variation is tolerated rather than calibrated out, because each lane is one bit at a time on a slow clock.
+    
+2.  **No coherence noise.** Lasers in fiber suffer from modal noise, mode-partition noise, and interferometric noise from stray reflections — every datacom transceiver designer has war stories. An incoherent µLED is immune to all of it. Avicena’s CSMANTECH 2022 paper shows the cleanest demonstration: a Michelson interferometer that introduces controlled feedback **dramatically degrades** the BER of an FP-laser link but **leaves a µLED link mostly unchanged**. At the system level, this translates directly to no isolators, no polarization control, and no precision wavelength stabilization — major savings when you are integrating 300+ channels.
+    
+3.  **Silicon photodetectors via standard CMOS.** Blue light has a short absorption depth in silicon (~0.5 µm), so the PD junction sits shallow in the substrate. That gives very low capacitance per unit area (under 10 fF for a 15 µm device), which lets the TIA run at high gain at low TIA power. The PD is built in a standard CMOS process with no extra mask steps — you simply block the n-well and p-well during the source/drain implant. No exotic InGaAs III-V receiver, no separate die. The receiver is _part of_ the receiver IC.
+    
+4.  **High-temperature behavior is better than lasers.** µLEDs are _less_ sensitive to high junction temperature than lasers — they actually speed up. Lasers degrade at high T (mirror-facet aging, COD risk, threshold rise), while µLEDs see faster recombination as the bandgap narrows, and Avicena has shown BER actually _improving_ at 105°C base. For datacenter racks running at 50–110°C ambient, this is a real reliability advantage with a peer-reviewed mechanistic basis (Zhang et al., _Nanomaterials_ 2020).
+    
+5.  **Wide-and-slow is yield-friendly at scale.** With 300+ channels per link, a single failed lane is a 0.3% degradation — versus 12.5% in an 8-lane laser link. Spare lanes can replace failed channels at runtime. The architecture composes far better at scale than narrow-and-fast, where every high-speed channel is mission-critical and a single bad lane is a fielded defect.
+    
+
+Combine the component-count advantage from the table with these five physics-driven architectural wins, and the µLED pitch is **genuinely compelling** for sub-100 m chip-to-chip links. This is not just marketing. It is a different shape of optical link, exploiting properties of incoherent visible emission that lasers cannot reproduce.
+
+### **So why isn’t this a done deal?**
+
+Because the pitch above quietly assumes you can actually **make the µLED fast enough at low enough current density to be reliable, with good enough coupling efficiency, narrow enough spectrum, and viable manufacturing yield**. Each of those assumptions runs into a fundamental physics constraint that doesn’t bend just because the architecture is clever.
+
+The next section walks through the physics constraints that have to be solved — or sidestepped — for the architectural pitch to close. None of them is fatal. All of them are hard.
+
+This is the honest setup. The architectural pitch is real, the physics is real, and the question is whether the active research paths attacking the physics have already crossed the threshold of one regime, and whether they will cross the threshold of the next.
+
+### **Part A — Where the Pitch Meets the Physics**
+
+The architectural pitch closes by promising you can run a µLED fast enough at low enough current density to be reliable, with narrow enough spectrum and viable yield. Each clause is a physics constraint, and each binds independently. They share carrier-density dependencies underneath, but none can be substituted for another — you have to solve or sidestep each on its own merits. The sub-sections that follow walk through them from first principles, with literature numbers and worked calculations at each step.
+
+### **§1 — Why µLEDs are slow: carrier-recombination physics**
+
+A µLED is a forward-biased p-n junction with a quantum well in the middle. **Modulation bandwidth is set by the effective carrier-recombination lifetime.**
+
+From small-signal analysis of the carrier rate equation, an LED has a single-pole modulation response, giving:
+
+In the **radiative-dominated regime** (high injection, n ≈ p), the radiative lifetime is set by bimolecular recombination:
+
+Carrier density n in turn depends on current density J and active-region thickness d (in steady state with bimolecular recombination dominant):
+
+Substituting back:
+
+This is the **textbook result**: bandwidth scales as **√J**, and inversely as **√d**. Doubling the bandwidth needs 4× higher current density (or 4× thinner active region) — _assuming_ you stay in the radiative-dominated regime. That qualifier matters; it’s the entire opening Path A in Part B walks through.
+
+#### **Why c-plane GaN starts slow — the QCSE problem**
+
+For c-plane GaN/InGaN on sapphire (the dominant epitaxial direction used in display production), the **quantum-confined Stark effect (QCSE)** spatially separates electron and hole wavefunctions in the quantum well due to piezoelectric polarization fields. Lower wavefunction overlap means **B is reduced** and τ\_r is long.
+
+Peer-reviewed values for InGaN MQWs at typical operating densities (10¹⁸–10¹⁹ cm⁻³) cluster around:
+
+-   **c-plane (polar) InGaN QW**: B ≈ **10⁻¹² to 10⁻¹¹ cm³/s**, varying ~100× across QW thickness — thin QW → better wavefunction overlap → higher B.
+    
+-   **Non-polar / semi-polar InGaN QW**: B ≈ **10⁻¹⁰ cm³/s**, 5–10× higher because QCSE is eliminated.
+    
+-   **Coulomb enhancement** in thin (~2.5 nm) QWs at low n: an additional ~10× boost to B before screening kicks in.
+    
+
+The 100× variation in B with QW design is a leading-order effect — every µLED data point in the literature has to be read with its specific B regime in mind. (Reference: _“The Physics of Recombinations in III-Nitride Emitters,”_ **ECS J. Solid State Sci. Technol.** **9**, 015002 (2020).)
+
+#### **Where the µLED-bandwidth literature actually clusters**
+
+The scaling above is convention-independent, but the _absolute_ current density at a given f₃dB depends on real-device effects the toy formula doesn’t capture — Coulomb screening that raises B at high n, residual non-radiative paths, RC contributions at small d. So rather than “what the equation predicts,” the table below summarizes where the published µLED bandwidth measurements actually cluster, with representative c-plane parameters (B ≈ 10⁻¹¹ cm³/s at ~10¹⁹ carrier density, d ≈ 3 nm single QW) for orientation:
+
+[![](picture/wide-and-slow/48b81393-95c7-4975-bbed-77b91a94af13.jpg)](https://substackcdn.com/image/fetch/$s_!ZgRm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa399c88a-54ca-48b9-9ab3-282658685c54_3240x1629.png)
+
+A display-grade c-plane µLED at typical drive (~10 A/cm²) is bandwidth-limited to a few hundred megahertz — two orders of magnitude too slow for chip-to-chip datacom. Pushing from 1 GHz to 5 GHz needs 25× higher current density, which is _the_ reason §2 (high current density) is the conventional path forward, and why 10+ Gbps NRZ per lane in the radiative regime requires current densities that approach the catastrophic-failure region. Non-polar / semi-polar QWs (Path D in Part B) shift the entire curve by ~10×: the same bandwidth at 10× lower J. This is the mechanistic basis for Saphlux’s “4× BW improvement” claim — and it’s why the planar non-polar m-plane result of 1.5 GHz is the III-nitride LED literature record.
+
+[![](picture/wide-and-slow/48e730a5-b354-4994-b23c-434652a14d1b.jpg)](https://substackcdn.com/image/fetch/$s_!g4IO!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffbadce8b-2684-488b-b464-68c0cadd0da5_1630x1120.png)
+
+The literature has documented several mechanisms for pushing the bandwidth-J curve more favorably. **Auger** kicks in at very high N → shortens τ\_total but is non-radiative (you pay in efficiency). **Built-in field screening** at high carrier injection partially undoes QCSE → effectively raises B. **Smaller devices** reduce RC time constant — important when device area drops below ~10 µm. **Defect engineering** shifts τ\_total from radiative-dominated to non-radiative-dominated, sidestepping J²-scaling assumption (this is the CROME approach — Path A in Part B). And **non-polar/semi-polar substrates** eliminate QCSE entirely, raising B by an order of magnitude (Path D). Each of these is a knob with side effects we cover in §2-§4 (high J → droop, reliability) or in Part B (the research paths to bypass them).
+
+### **§2 — The high-current-density problem**
+
+§1 already established the bandwidth-current-density math: GHz-class bandwidth on a c-plane µLED needs ~10 kA/cm² (or ~1 kA/cm² on non-polar). The reason “just push the current” doesn’t compose to a wide-and-slow array has nothing to do with that math. It’s that the per-channel current and total-array power scale catastrophically.
+
+Take a back-of-envelope wide-and-slow array running in the bandwidth-pushing regime: **400 lanes of 25 µm × 25 µm pixels, each driven at 10 kA/cm²**. The math:
+
+-   **Per-pixel current**: I = J × A = 10⁴ A/cm² × 6.25 × 10⁻⁶ cm² = **62.5 mA per emitter**
+    
+-   **Per-pixel electrical drive** (V\_f ≈ 3.5 V at high J): 3.5 V × 62.5 mA ≈ **220 mW per emitter**, concentrated in 625 µm² of GaN epi → **~35 kW/cm² thermal density**
+    
+-   **Total array current** (400 lanes): 400 × 62.5 mA = **25 A peak at the package edge**
+    
+-   **Total array power**: 400 × 220 mW ≈ **88 W**
+    
+
+For context, Avicena’s published operating point — 5 µm pixels at ~400 A/cm², 100 µA per LED, ~300 channels — draws **~30 mA total at ~90 mW** of electrical drive. Pushing the same channel-count architecture from that production point into the high-J bandwidth regime scales total array current by **~800×** and total array power by **~1000×**.
+
+That’s the array-scale problem in concrete numbers. Per-pin current — not voltage — is the binding constraint in modern CMOS. PMIC complexity, on-chip decoupling, transient-current handling, and the power-delivery network all scale poorly with simultaneous high-J modulation across hundreds of channels. The pin-count and PDN problem is the part of “wide-and-slow” that the architectural pitch quietly assumes away — and the part that the electronics-side treatment in **EP2** will dig into.
+
+The wide-and-slow architecture only works if there’s a path to GHz-class bandwidth at _low_ current density and at smaller pixel— sidestepping the per-pixel and array-level current problems above. Radiative recombination alone can’t deliver that, which is why Path A (defect engineering), Path D (non-polar substrates), and Path E (InGaN QD active region) all exist as alternative routes. Part B walks through them.
+
+### **§3 — Efficiency droop at high current**
+
+GaN µLED efficiency vs current density is **non-monotonic**, set by three carrier-loss mechanisms with different power-law dependence on N:
+
+[![](picture/wide-and-slow/61777bcb-d050-422c-a23f-61c0b4a2fa2e.jpg)](https://substackcdn.com/image/fetch/$s_!K1wF!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F08097979-c078-4b5e-b3a7-775e1797edf8_2490x1434.png)
+
+In the literature, droop becomes severe above ~5 kA/cm². This is the **fundamental tension at the heart of the µLED-for-datacom problem**. High J → faster recombination → higher BW. High J → Auger dominates → lower efficiency, more heat. Both effects scale with the same N — at the device level, you can’t separate them.
+
+[![](picture/wide-and-slow/1260ed74-d29a-4371-84bb-065c0cf09fb0.jpg)](https://substackcdn.com/image/fetch/$s_!7VF-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa013fc6f-9fae-463f-8b33-c403ad8aa768_1632x1079.png)
+
+_Numbers above are illustrative._
+
+For display use (~1–10 A/cm²), droop is irrelevant. For µLEDs pushed to 40+ kA/cm² for high BW, droop is severe — wall-plug efficiency drops to 10–20%, and the lost energy becomes heat that further degrades the device. Tunnel-junction stacking (Path G in Part B) is one academic response: spread the carrier load across multiple QW stages, raising the effective J at which droop sets in by roughly N× the stack count. None of the Tier 1 paths attacks droop directly, because the wide-and-slow architectural choice is itself the answer — stay at low J per channel, scale by adding channels.
+
+### **§4 — Reliability at high current density and high temperature**
+
+The standard µLED MTBF claim — “10⁶–10⁸ hours” — comes from **display drive conditions**: ~1–10 A/cm², low duty cycle, room temperature. Datacom drive is a different regime entirely: 100–1000× higher current density (especially as per-channel rate scales past 5 Gbps), 24/7 100% duty cycle, datacenter ambient 30–50°C with junction temperatures of 80–110°C, and cycle-to-cycle current swings from NRZ modulation that create thermal stress on the active region.
+
+[![](picture/wide-and-slow/406a5ac6-eba6-4b88-bc63-2866f2481133.jpg)](https://substackcdn.com/image/fetch/$s_!s7vr!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8c29e77b-e50c-4e9f-a024-15c7376fe458_1742x1126.png)
+
+_Illustrative plot of the qualitative reliability trend implied by the Black equation under representative assumed parameters._
+
+What the peer-reviewed literature _does_ show, from Zhang et al., _Nanomaterials_ 2020 (DOI 10.3390/nano10040689; GaN µLEDs at 445 nm / 22 nm FWHM — essentially the same device class as Avicena’s CROME emitters):
+
+[![](picture/wide-and-slow/0172f199-7ec6-4ae0-8455-8192b34e7e27.png)](https://substackcdn.com/image/fetch/$s_!0z9N!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3357cd44-30cd-4aa1-a214-31dff3d9cdad_1428x392.png)
+
+For comparison, the same paper notes OLED _“degrades by half within 20h with basic encapsulation.”_ The µLED humidity-tolerance and packaging-leniency advantage is genuine, peer-reviewed, and significant.
+
+Given the information search, what’s **missing from the peer-reviewed record** is aging at >5 kA/cm² operating conditions for thousands of hours under continuous high-J modulation — the actual datacom use case. To the best of my reading of the public record, no company has yet published this data in a peer-reviewed venue. Avicena’s marketing references “thousands of hours at 4× nominal J,” but “nominal” is undefined and the underlying data isn’t public. The bullish reliability narrative skips this gap, and any next-gen scaling argument that leans on µLED reliability has to confront it.
+
+### **§5 — Spectral width and the dispersion ceiling**
+
+GaN µLED spectral linewidth is **10–30 nm FWHM**, typically ~20 nm at the 430–450 nm blue peak. Avicena’s CROME emits at 430 nm with 20 nm FWHM, and MOSAIC operates in the same regime. For comparison:
+
+[![](picture/wide-and-slow/42e41fb3-45d7-4d84-a873-0cdf319a31ca.png)](https://substackcdn.com/image/fetch/$s_!YsFn!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F29067aae-7077-42ea-a04c-d24e27e74c96_402x270.png)
+
+The 100–1000× linewidth gap is the **single biggest physical difference between µLED and laser sources**, and it directly imposes a chromatic-dispersion-limited bandwidth-distance ceiling that no engineering can erase.
+
+#### **The fiber**
+
+The fiber in this architecture is a silica-based glass imaging bundle. Avicena’s LightBundle, MOSAIC’s link, and the broader endoscopy supply chain that feeds them are sourced from **Fujikura** (FIGH series — germanium-doped silica cores with fluorine-doped silica cladding, 10,000 cores at ~3.2 µm pitch), **Sumitomo** (similar silica construction), and **Schott** (borosilicate K5/N16B). Loss at 430 nm runs ~0.2 dB/m, matching Avicena’s published spec. Because we’re working in silica, dispersion follows silica’s Sellmeier equation — which is the math the next sub-section uses.
+
+#### **The chromatic-dispersion math**
+
+When a broad-spectrum optical pulse propagates through fiber, different wavelength components travel at different group velocities. Pulse broadening:
+
+where **D** is the chromatic-dispersion parameter \[ps/(nm·km)\], **Δλ** the source spectral width (FWHM), and **L** the fiber length.
+
+For fused silica, D depends strongly on wavelength because we’re operating far from the zero-dispersion point at ~1276 nm:
+
+[![](picture/wide-and-slow/2f565eea-78da-4f2a-9fb3-82fb7cb00367.png)](https://substackcdn.com/image/fetch/$s_!AcrO!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F208bfca3-34e1-4501-bf41-21e425d999aa_1078x360.png)
+
+The 430 nm value is from the Malitson Sellmeier equation for fused silica, evaluated as `D = -(λ/c) · d²n/dλ²`. Different glass compositions used in imaging bundles can shift this by ±30%, but **|D| ≈ 200 ps/(nm·km) is a good first-order estimate for blue light in silica imaging fiber**.
+
+#### **What this gives quantitatively**
+
+For a µLED with **Δλ = 20 nm** at 430 nm in silica imaging fiber (|D| = 200 ps/(nm·km)):
+
+Pulse broadening vs distance:
+
+[![](picture/wide-and-slow/f6c75252-a86b-4642-b4ff-906b36790795.png)](https://substackcdn.com/image/fetch/$s_!kXnZ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc04cd437-8010-4cf2-a6d7-694790754864_852x432.png)
+
+The dispersion-limited bandwidth-distance product is:
+
+This is **~30× worse** than typical 850 nm graded-index multimode glass MMF used with VCSELs (BDP ~3.5 GHz·km) — exactly why VCSEL-based 100 Gbps SR4/SR8 links can reach 100 m but a µLED link cannot at the same per-channel rate. The deeper driver is **source linewidth, not fiber type**: a VCSEL at 850 nm has Δλ ≈ 0.3 nm versus 20 nm for a µLED at 430 nm, and OM4’s BDP is dominated by modal dispersion at that narrow linewidth. Replace the source with a 20 nm-FWHM µLED in the same OM4 fiber and chromatic dispersion takes over, collapsing the BDP toward the µLED-imaging-fiber regime.
+
+#### **Verification against MOSAIC’s measured BER vs distance**
+
+Microsoft’s MOSAIC paper (SIGCOMM ‘25) directly maps this physics. From Figure 12:
+
+-   **1.3 Gbps per channel: error-free (BER < 10⁻¹²) up to 20 m, no FEC.**
+    
+-   **2 Gbps per channel: error-free up to 10 m, no FEC.**
+    
+-   **With FEC: 100 channels × 1.6 Gbps over 30 m, or 100 × 2 Gbps over 20 m.**
+    
+
+The paper explicitly states: _“This improvement is due to reduced chromatic dispersion at lower speeds and shorter distances. While laser sources typically have very narrow linewidths (<1 pm), microLEDs emit over a much broader spectrum (>10 nm), making chromatic dispersion more significant.”_
+
+These numbers fit the BDP estimate (0.125 GHz·km) within ~20%:
+
+-   1.3 Gbps × 20 m = 26 Gbps·m (well under the limit, hence error-free without FEC)
+    
+-   2 Gbps × 10 m = 20 Gbps·m (similar)
+    
+-   1.6 Gbps × 30 m = 48 Gbps·m (with FEC, closer to the limit)
+    
+-   4 Gbps × 30 m = 120 Gbps·m (Avicena’s claim, **right at the dispersion-limited edge**)
+    
+
+Avicena’s 4 Gbps × 30 m demonstration sits at the analytical limit of dispersion-limited operation. There is no room left for further reach extension at this per-channel rate without spectral narrowing.
+
+#### **Modal dispersion: present but sub-dominant**
+
+Imaging fibers have thousands of small (~3–10 µm) glass cores in a fixed geometry, and each core supports a modest number of modes at 430 nm. Modal dispersion exists — and MOSAIC’s authors call out their µLED-launch beam shape and TIR-lens coupling design (§3.4 in their paper) as deliberately suppressing it — but their analysis (§7.2) explicitly flags **noise and chromatic dispersion as the primary limiting factors**, not modal.
+
+**Back-of-envelope on the magnitude.** Use MOSAIC’s measured operating point to bound it. At 1.3 Gbps × 20 m with BER < 10⁻¹² (Figure 12 above), the total pulse spread budget is σ\_total ≲ T\_bit/4 ≈ 200 ps over 20 m. Chromatic at 20 nm FWHM accounts for ~80 ps of that (4 ps/m × 20 m from the §5 chromatic math above). The remaining headroom upper-bounds **effective σ\_modal at ≲ 10 ps/m** in MOSAIC’s launch regime — same order as chromatic at this rate-distance, not orders below.
+
+**Why chromatic is still the binding constraint.** What pins the BDP edge isn’t which is larger at 1.3 Gbps × 20 m — it’s the _scaling_. Chromatic grows linearly in both source linewidth and fiber length. Modal saturates over multi-meter fibers due to mode coupling and is set once by fiber design. Push to Avicena’s 4 Gbps × 30 m demonstration and chromatic alone is at ~120 ps over 30 m — already past the σ < T\_bit/4 line — while modal hasn’t moved. The high-rate / long-reach corner of the design space is hit by chromatic first, which is why MOSAIC’s §7.2 calls it out as the primary limit.
+
+#### **What this means for the architectural pitch**
+
+µLED’s wide-and-slow architecture is fundamentally bounded to **sub-100 m for any per-channel rate above 1 Gbps**, with a sharp **~30–50 m limit at 4 Gbps**. No improvement in CMOS receivers, modulator design, or coupling efficiency moves this number. Only a **narrower-spectrum source** (Path F: cavity enhancement, in Part B) or a **lower-dispersion fiber** (specialty glass, dispersion-shifted designs) can extend the reach.
+
+This is the cleanest physics-bound result in the article. Every µLED-for-interconnect commercial play targets sub-100 m **by necessity, not by choice**. The Avicena/MOSAIC 30 m demonstration isn’t an arbitrary marketing number — it’s the dispersion-limited operating point of 20-nm-FWHM µLED + silica imaging fiber at production-grade per-channel rates. Any pitch promising significantly longer reach is either using a different (narrow-spectrum) source or a different (shorter-wavelength-zero-dispersion) fiber, and either choice surrenders the cost or supply-chain advantages that motivated µLED in the first place.
+
+### **Part B — Seven Research Paths in Three Maturity Tiers**
+
+The seven research paths attacking the physics constraints split cleanly by deployment maturity: what’s sampling today (Tier 1), what has crossed into commercial engineering bets but not yet broad volume (Tier 2), and what’s still academic frontier (Tier 3). Companies build commercial systems by combining paths — Avicena uses Tier 1 paths exclusively today; the more ambitious roadmaps require pulling Tier 2 and Tier 3 paths into volume.
+
+### **Tier 1 — Sampling today**
+
+These paths run in real chiplets you can sample or evaluate today. Combined, they enable Avicena’s 4 Gbps × 304 channels = 1 Tbps engineering-grade demonstrator and Microsoft MOSAIC’s 1.6 Gbps × 30 m research prototype.
+
+#### **Path A — Defect engineering for fast SRH at low J (Avicena’s CROME)**
+
+**Attacks**: §1 (slow τ\_r) while sidestepping §2–§3 (high J + droop).
+
+**Mechanism**: Deliberately introduce non-radiative defects so τ\_nr dominates τ\_total — breaking radiative-dominated assumption. The bandwidth equation becomes f\_3dB ∝ 1/τ\_nr where τ\_nr is set by defect density, not carrier density. Run backwards on Avicena’s published 1.5–2 GHz at <100 A/cm²: τ\_r at that J would be ~12.5 ns (giving only ~50 MHz in the radiative-only picture). The measured 1.5 GHz implies **τ\_nr ≈ 230 ps — defects shorter than τ\_r by ~50×.**
+
+**The trade**: roughly halved IQE (~80% peak on a brightness-optimized baseline → ~40% range on the speed-optimized variant, per Avicena’s published NSF-PAR characterization), lower at low J.
+
+**Verified in**: Avicena’s published chiplet spec at 4 Gbps × 100 µA per LED (Pezeshki NSF-PAR paper, ECOC 2025 demos). No academic follow-on group — defect engineering for high speed is unusual in the µLED literature, which has historically optimized for IQE.
+
+#### **Path B — Coupling engineering (the only IQE-neutral LED-side path)**
+
+**Attacks**: Lambertian emission → fiber coupling. Native µLED-to-fiber coupling is 1–5%, which is unworkable. Engineering response stack: microlens arrays (5–10× improvement), TIR custom lenses (Microsoft MOSAIC, claimed >2× over MLA), imaging-fiber bundles (face-coupled), substrate removal via laser lift-off (LLO), patterned sapphire substrates (PSS).
+
+**Verified in**: Avicena (MLA + imaging fiber + PSS + AuSn bonding + LLO), MOSAIC (TIR lens design + 100-channel imaging fiber), broad display-industry maturity. Achieves coupling ~30–50% in commercial implementations.
+
+**Why this matters most**: of the seven paths, **B is the only LED-side path that doesn’t trade against efficiency** — improving coupling extracts more of the optical power without paying an IQE penalty. It’s pure engineering, not physics. (Path C, the receiver-side innovation, is also IQE-neutral by construction.)
+
+#### **Path C — Si PD via standard CMOS (TSMC CIS process)**
+
+**Attacks**: receiver-side power budget. Blue 430 nm light has ~0.5 µm absorption depth in silicon → shallow PD junction → very low capacitance per unit area (~10 fF for a 15 µm device) → high TIA gain at low TIA power. The PD is built with no extra mask steps — just block n-well and p-well during the source/drain implant. No exotic InGaAs needed.
+
+**Verified in**: Avicena + TSMC (April 2025 partnership, CIS process); Hyperlume + Credo low-power receiver circuitry. Si PD responsivity at 430 nm: 0.20–0.25 A/W.
+
+**Limitation**: visible wavelength only. Doesn’t help any IR/NIR µLED scheme.
+
+### **Tier 2 — Engineering-stage commercial bets**
+
+The Tier-2 paths are past lab-record demonstrations and into commercial pilot or near-volume production, but not yet broadly deployed. Path D and Path E represent **two structurally different ways to attack the same low-J / high-BW regime** — non-polar substrates raise B at the material level, QD active regions raise B at the carrier-confinement level.
+
+#### **Path D — Non-polar / semi-polar GaN substrates**
+
+**Attacks**: c-plane GaN’s QCSE → low B (§1). Growing on m-plane / a-plane / semi-polar (11-22) / (20-21) eliminates piezoelectric polarization fields → higher wavefunction overlap → ~5–10× higher B (10⁻¹¹ → ~10⁻¹⁰ cm³/s).
+
+**Records**: 1.5 GHz on planar non-polar m-plane (the highest III-nitride LED 3 dB BW); 1.1–1.2 GHz on m-plane core-shell nanowire (Aledia geometry, 1.3 ns lifetime); 756 MHz on semi-polar (20-21) green at 2 kA/cm².
+
+**Commercial**: **Saphlux** (semi-polar GaN-on-sapphire, 6-inch wafer mass production, founded Yale 2014, $43.5M raised, primary focus AR/VR); **Aledia** (3D nanowire core-shell, display-focused with datacom potential). UCSB Bowers/Speck and Imperial College anchor the academic baseline.
+
+**Tradeoff**: substrate cost (non-polar bulk GaN expensive), growth maturity (semi-polar is 5+ years from c-plane parity in yield). Saphlux’s “4× BW improvement” marketing claim is consistent with the ~5–10× B improvement physics.
+
+#### **Path E — InGaN quantum-dot active region**
+
+**Attacks**: §1 (slow τ\_r), but at the active-region scale rather than at the substrate scale. InGaN quantum dots in place of conventional InGaN MQW concentrate carriers in 0D states with stronger wavefunction overlap, raising effective B at the same J without changing the substrate. **Lai Wang’s group at Tsinghua (BNRist + Department of Electronic Engineering)** has anchored this approach with a multi-year progression — a 1.3 GHz E-O record on c-plane via nano-structured InGaN wetting layer (_Photonics Research_ 2021), a 3.6 GHz blue / 1.4 GHz green E-E demonstration at <1 kA/cm² in 20 µm devices (_IEEE EDL_ 2023), and a 2024 _APL Photonics_ review on InGaN-QD device physics.
+
+**The analytical contribution**: the 2023 EDL paper (Li et al., _“Bandwidth Analysis of High-Speed InGaN Micro-LEDs by an Equivalent Circuit Model”_, DOI 10.1109/LED.2023.3256422) builds a small-signal equivalent-circuit model that **separates τ\_RC from τ\_recombination** as contributions to µLED bandwidth. Its central finding: at d ≤ 20 µm and J >500 A/cm², blue µLEDs are **RC-limited, not recombination-limited** — recombination has been made fast enough by the QD active region, so the next round of bandwidth gain has to come from capacitance reduction (smaller device, thinner active region).
+
+This is a different way of arriving at the same low-J / high-BW operating point that Avicena’s CROME hits via defect engineering. The trajectory’s natural endpoint — smaller-d, lower-C blue µLEDs with QD active region — points toward single-device bandwidths approaching ~8 GHz, though that number hasn’t yet been published as a peer-reviewed upper-bound derivation.
+
+**Commercial**: **San’an Optoelectronics + Tsinghua + China Mobile** announced a collaborative microLED optical I/O light source in **early 2026 with >7 GHz 3 dB modulation bandwidth and projected NRZ-OOK >10 Gbps** (TrendForce / MicroLED-Info coverage, March 2026). This is the China-track engineering-stage commercial arm, parallel to Avicena’s US-track productization of Path A.
+
+**Tradeoff**: ultra-thin or QD active regions reduce IQE by ~10–20% (smaller volume, surface-state effects). Process complexity in QD-uniformity growth. The advantage over Path A is that the IQE penalty is structural (~10–20%) rather than deliberate (~50% in CROME), so QD-track devices may scale better at the link-budget level — though this hasn’t been independently verified at production scale.
+
+### **Tier 3 — Academic frontier**
+
+What remains in Tier 3 is at lab-record stage with no clear commercial timeline.
+
+#### **Path F — Cavity enhancement (RCLED-style)**
+
+**Attacks both §1 and §5 simultaneously.** A resonant cavity around the active region: Purcell enhancement → shorter τ\_r → faster modulation; mode selection → ~5–10× spectral narrowing. A 5× linewidth reduction (20 nm → 4 nm) extends dispersion-limited BDP from 0.125 GHz·km to ~0.6 GHz·km — comparable to 850 nm VCSEL territory. **The only path that meaningfully extends µLED reach without changing fiber type.**
+
+**Players**: InPHRED (early commercial μRCLED platform); UCSB / EPFL / Tyndall academic groups.
+
+**Tradeoff**: process complexity (DBR mirrors), reduced angular emission, tighter fab tolerances. **At extreme cavity Q the device essentially becomes a VCSEL — at which point the µLED architectural pitch erodes.**
+
+#### **Path G — Tunnel-junction stacked LEDs**
+
+**Attacks §3 (efficiency droop)** by stacking multiple QW active regions vertically, separated by tunnel junctions that recycle electrons and holes. More photons per electron → effectively raises the J at which droop sets in by N× the stack count.
+
+**Status**: pure academic. UCSB Speck group, Mishra group, Stanford — 2-stack and 3-stack demos of EQE retention to higher J. No commercial path yet.
+
+**Tradeoff**: epi complexity, extra forward voltage drop per stack (~1 V each), tunnel-junction series resistance.
+
+### **How the paths combine — and which players use which**
+
+The commercial implementations are **combinations of these paths**, not single-path bets:
+
+[![](picture/wide-and-slow/27608394-5011-45c6-acfe-e29d5a23a8ab.png)](https://substackcdn.com/image/fetch/$s_!yupo!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd2cf8c13-2a22-4c46-b13c-a6952e098142_1428x764.png)
+
+The competitive question is **which combinations close the system-level case at next-generation scaling** (10+ Gbps/lane), and that’s exactly what’s not yet known. Two structural patterns are visible: a **defect-engineering track** (Avicena, possibly Hyperlume) that takes the IQE penalty deliberately to gain bandwidth at low J, and a **structural-active-region track** (Wang group + San’an, Saphlux, Aledia) that attacks the bandwidth ceiling via raised B from QD active regions or non-polar substrates. Both converge on the same operating point — a few GHz at low current density. They differ in _how_ they pay for that bandwidth — and that brings us to the deeper observation tying all seven paths together.
+
+### **Almost every path costs IQE/EQE**
+
+**Almost every research path that increases bandwidth simultaneously reduces the LED’s IQE or EQE** compared to a brightness-optimized display µLED. Only Paths B (coupling) and C (CMOS receiver) escape this efficiency tax — and both are receiver/coupling-side, not on the LED itself.
+
+[![](picture/wide-and-slow/213a6588-98b6-40ce-97ec-3f328ec7f9ff.png)](https://substackcdn.com/image/fetch/$s_!0cRb!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff54f71db-276c-4c5c-8994-f82f4fdcbd60_1444x952.png)
+
+The pattern: bandwidth comes at the cost of efficiency in every active research direction on the LED itself (Paths A, D, E, F, G). The µLEDs used in datacom links are **fundamentally less efficient** than the µLEDs in your display. This is why the wide-and-slow architecture’s energy-per-bit advantage doesn’t come from a more-efficient emitter — it comes from architectural amortization, which EP2 will quantify in the full link-budget reality (Avicena waterfall, VCSEL side-by-side, the per-bit energy story, and the compounding tax at next-generation scaling).
+
+### **The other half of wide-and-slow**
+
+This article has been about one half of wide-and-slow — the **slow** half, the per-channel physics of getting a small LED to modulate fast enough at low enough current to be reliable, with bounded enough spectrum to reach across an AI rack. That’s the question this post answers.
+
+The **wide** half is its own substantial domain, and it has two layers: (a) the electronics that make hundreds of parallel channels work as a coherent system on real silicon, and (b) the link-budget reality that quantifies how the LED-side choices in this article actually compose into per-bit energy, link margin, and reach.
+
+On the electronics side: driving 300+ µLEDs in parallel from a single CMOS chip means a per-channel driver footprint that has to amortize at 16nm, a power-delivery network that doesn’t sag under simultaneous switching, and clock distribution that survives across a transmitter array. The receive side runs a TIA array at sub-µA photocurrents with strict channel-to-channel matching, on-chip calibration to compensate for per-pixel variation, and BIST for fielded reliability. The signal architecture above — NRZ for simplicity, FEC for reach extension, spare-lane training, and the back-end SerDes that bridges thousands of NRZ channels into a host ASIC’s Gen6 PCIe or NVLink fabric — is its own set of tradeoffs.
+
+On the link-budget side: the **Every path costs IQE/EQE** matrix at the end of Part B is the qualitative frame, but the quantitative answer requires walking the full waterfall from electrical drive to photocurrent at the receiver — coupling losses, fiber transmission, PD efficiency, link margin — and a side-by-side comparison with a 25 Gbps VCSEL link at matched aggregate bandwidth. That comparison turns out counter to marketing: at the per-emitter level, a defect-engineered µLED is highly likely _worse_ on WPE than a modern oxide-confined VCSEL. The wide-and-slow energy advantage is real, but it comes from architectural amortization (NRZ + no DSP + parallel channels), not from the LED being a more efficient emitter.
+
+Avicena’s 1 Tbps in <12 mm² of 16nm finFET is real engineering on each of these axes. Microsoft’s MOSAIC paper spends as much page count on the receiver IC and the FEC layer as it does on the µLED itself. None of it is solved by construction, and the system-level case for wide-and-slow only closes if both the electronics scaling and the link-budget reality close together.
+
+That’s **EP2 of this series**. For now, the verdict that follows is scoped to what this post has covered: **the per-channel LED-physics question.**
+
+### **Part C — The Honest Verdict (LED-physics scope)**
+
+A reminder on what this verdict covers and what it doesn’t. This article has analyzed the per-channel LED physics — whether the µLED itself can be fast enough at low enough current density to be reliable, with bounded enough spectrum to reach across an AI rack. The architecture-level question — whether the silicon scales to thousands of parallel channels with usable margin and acceptable energy — is the subject of EP2. The verdict that follows is scoped to the half this post has covered.
+
+### **Where µLED works today**
+
+The narrow regime is real, and the supporting evidence is on the public record:
+
+-   **4 Gbps × ~300 channels** in a single transceiver chiplet at sub-pJ/bit total link energy — Avicena’s published chiplet specs (verified, ECOC 2025 demonstrations).
+    
+-   **30 m reach** demonstrated at this per-channel rate (Avicena ECOC 2024).
+    
+-   **Display-grade reliability at moderate drive**: 369 days unpackaged with forward I/V drift <10%, OLED-class humidity tolerance (Zhang et al., _Nanomaterials_ 2020 — peer-reviewed and complementary to industry marketing claims).
+    
+-   **High-temperature behavior the opposite of lasers**: BER actually improves at 105°C base, with a mechanistic basis in bandgap-narrowing (Zhang 2020 + Avicena CSMANTECH 2022).
+    
+-   **No coherence noise**: incoherent visible emission immune to FP-laser interferometric degradation, eliminating isolators / polarization control / wavelength stabilization at the link level (basic physics + Avicena’s CSMANTECH 2022 Michelson-interferometer demonstration).
+    
+-   **Si PD via standard CMOS at visible wavelengths**: shallow blue absorption depth, low junction capacitance, no mask additions, no exotic InGaAs receiver (Avicena + TSMC partnership announced April 2025).
+    
+
+These are not projections. They are shipping or demonstrated at the per-channel LED level.
+
+### **Where the per-channel case is open**
+
+The next-generation question — pushing per-channel rate past 10 Gbps for Rubin-class NVLink-style fabrics — has open answers on every axis that matters:
+
+-   **Bandwidth scaling past 10 Gbps/channel without entering the high-J droop regime** depends on Tier 2 (Path D non-polar/semi-polar substrates) maturing into datacom volume, plus at least one Tier 3 path (most likely Path F cavity enhancement, possibly Path E InGaN-QD if the Wang-group RC-limited regime can be pushed further by capacitance reduction at smaller d) crossing into commercial production.
+    
+-   **Reliability at >5 kA/cm²** is uncharacterized in the peer-reviewed literature. Avicena’s “thousands of hours at 4× nominal J” marketing line doesn’t define “nominal” and isn’t independently verified.
+    
+-   **Coupling efficiency above 50% at production yield** is undisclosed across all commercial players. EP2’s link-budget walkthrough will show this is the largest single source of uncertainty in the per-bit power claim, but the qualitative gap is already visible in the **Every path costs IQE** matrix above — Path B (coupling) is one of the only two IQE-neutral knobs the architecture has.
+    
+-   **CROME-specific aging vs. display-grade aging** has no published data; the Zhang 2020 reliability anchor covers display-grade material, not deliberately defect-engineered material.
+    
+-   **Hyperscaler customer disclosure** has not happened. Until Microsoft, Meta, AWS, or Google announces a deployment, the production-at-scale case remains marketing.
+    
+
+### **What’s real today, and what’s still engineering work**
+
+The narrow regime — sub-100 m × sub-10 Gbps/lane × hundreds of channels — **is real today**. The three Tier 1 paths (A defect engineering + B coupling + C Si PD) combine cleverly at today’s operating regime, and the architectural amortization (NRZ + no DSP + parallel channels) carries the energy-per-bit advantage at the system level. Avicena’s 4 Gbps × 304-channel eKit, Microsoft MOSAIC’s 100-channel × 2 Gbps × 20 m prototype, and the San’an + Tsinghua + China Mobile >7 GHz announcement are the visible end of a decade of µLED-display-industry maturation landing in datacom.
+
+Pushing past 10 Gbps/lane to compete with VCSEL and MRM-based CPO at next-gen NVLink rates is **engineering work in progress**. The question is which of the seven research paths matures, on what timeline, and in what combination.
+
+Several of these paths look credibly close to commercial-production thresholds. None has crossed. Each pays in IQE, process complexity, or fab maturity. The watch list below is how to read which path matures first.
+
+### **What to watch in the next 24 months**
+
+Five signals decide whether the per-channel LED-physics case scales beyond its current production regime:
+
+1.  **Bandwidth scaling**: does any company publish a 10+ Gbps/lane demo at <1 kA/cm² current density — i.e., not just by pushing into the droop regime? The Wang-group equivalent-circuit-model paper suggests this is achievable via capacitance reduction at smaller d, but a peer-reviewed demonstration at sub-1-kA/cm² is the watershed.
+    
+2.  **Reliability methodology**: does anyone publish a peer-reviewed 10⁵+ device-hour MTBF at datacom drive conditions, with explicit Arrhenius extrapolation methodology? The Zhang 2020 anchor covers display-grade aging at moderate drive — the production-scale gap is the open question.
+    
+3.  **Hyperscaler pilot disclosure**: Microsoft is the obvious candidate (MOSAIC + MediaTek path), with Meta, AWS, or Google as alternatives. The first public hyperscaler-production deployment is the watershed for the whole architecture.
+    
+4.  **Path consolidation**: do the seven research paths converge to one winning combination, or do multiple architectures coexist? Convergence reads as industry maturity. Continued fragmentation reads as a niche outcome.
+    
+5.  **Coupling efficiency disclosure**: when someone publishes >70% LED-to-fiber coupling efficiency at production microlens-array yields, the per-bit power story becomes unimpeachable. Until then, the link-budget margin (which EP2 quantifies in detail) rests on rule-of-thumb estimates that none of the commercial players has independently verified.
+    
+
+Watch these signals as they arrive. The sequence in which they land does more to predict µLED’s trajectory than any 2027/2028 timeline call.
+
+### **Closing — the per-channel LED-physics verdict**
+
+The per-channel LED physics **works today**. Three paths — defect-engineered emitters, microlens + imaging-fiber coupling, Si PD on standard CMOS — combine into a real, shipping engineering platform at sub-100 m × sub-10 Gbps/lane operating points. That regime carries an order-of-magnitude system-level energy and cost win at the chip-to-chip distances AI infrastructure cares about.
+
+Pushing past it — to 10+ Gbps/lane, longer reach, hyperscaler-scale deployment — is engineering work the Tier 2 and Tier 3 paths are doing right now. Several look credibly close. None has crossed yet. Each pays its own price in IQE, process complexity, or fab maturity. The full architecture verdict, including whether the silicon supporting hundreds of parallel channels closes at production scale, is **EP2’s job**.
 
 # 1.关于封装内光学 I/O 的三个常见误解
 随着光学 I/O 逐渐融入产品设计，一些误解浮现出来，可能会影响利益相关者对这项技术的理解和期望。让我们来解释并消除关于光学 I/O 的三个常见误解。
@@ -9233,7 +9685,6 @@ MicroLED被视为最精简且可靠的短距离光源选择，具备延迟低、
 半导体业界分析，MicroLED为核心的超低功耗光互连架构，专攻AI Scale-Up Networks内部互连，透过大量并行通道，在单通道仅4～16Gbps下，实现数Tb/s总频宽；除此之外，MicroLED具备高密度、耐高温与成熟制造优势，适合部署于GPU、HBM与加速器邻近的封装层，有机会成为AI内部互连从铜缆迈向光化的关键转折。
 
 [![光通讯技术发光源比较](https://images.ctee.com.tw/newsphoto/2026-02-09/1024/A03AA3_Table_Clipping_02_6.jpg)](https://images.ctee.com.tw/newsphoto/2026-02-09/1024/A03AA3_Table_Clipping_02_6.jpg "放大图片")
-
 
 
 
