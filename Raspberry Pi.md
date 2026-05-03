@@ -150,7 +150,7 @@
     - [查看状态](#查看状态)
   - [如果出现 frpc.service start request repeat too quickly 错误](#如果出现-frpcservice-start-request-repeat-too-quickly-错误)
 - [21. 树莓派2通过树莓派1连接互联网](#21-树莓派2通过树莓派1连接互联网)
-- [22. 树莓派A 透明代理配置总结](#22-树莓派a-透明代理配置总结)
+- [22. 树莓派A透明代理 iptables 规则清理以及中国IP直连 配置总结](#22-树莓派a透明代理-iptables-规则清理以及中国ip直连-配置总结)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2707,7 +2707,7 @@ ssh -p 6053 basteng@8.130.93.178
 
 
 
-# 22. 树莓派A 透明代理配置总结
+# 22. 树莓派A透明代理 iptables 规则清理以及中国IP直连 配置总结
 
 ## 环境说明
 - 树莓派A：无线中继，`wlan0 10.42.0.1/24`，`eth0 192.168.0.105/24`
