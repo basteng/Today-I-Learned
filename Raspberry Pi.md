@@ -150,6 +150,7 @@
     - [查看状态](#查看状态)
   - [如果出现 frpc.service start request repeat too quickly 错误](#如果出现-frpcservice-start-request-repeat-too-quickly-错误)
 - [21. 树莓派2通过树莓派1连接互联网](#21-树莓派2通过树莓派1连接互联网)
+- [22. 树莓派A 透明代理配置总结](#22-树莓派a-透明代理配置总结)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2704,3 +2705,147 @@ ssh -p 6053 basteng@8.130.93.178
 
 服务器端要打开6053端口
 
+
+
+# 22. 树莓派A 透明代理配置总结
+
+## 环境说明
+- 树莓派A：无线中继，`wlan0 10.42.0.1/24`，`eth0 192.168.0.105/24`
+- `ss-redir` 监听端口：`1081`
+- SSR 服务器：`149.248.1.201`
+
+## 一、整理 iptables 规则
+
+1. 备份现有配置
+```bash
+sudo cp /etc/iptables/rules.v4 /etc/iptables/rules.v4.bak
+```
+
+2. 写入新配置
+```bash
+sudo nano /etc/iptables/rules.v4
+```
+
+内容：
+```iptables
+*nat
+:PREROUTING ACCEPT [0:0]
+:INPUT ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:POSTROUTING ACCEPT [0:0]
+:SHADOWSOCKS - [0:0]
+
+-A PREROUTING -i wlan0 -p tcp -j SHADOWSOCKS
+
+-A SHADOWSOCKS -d 149.248.1.201/32 -j RETURN
+-A SHADOWSOCKS -d 0.0.0.0/8 -j RETURN
+-A SHADOWSOCKS -d 127.0.0.0/8 -j RETURN
+-A SHADOWSOCKS -d 169.254.0.0/16 -j RETURN
+-A SHADOWSOCKS -d 192.168.0.0/16 -j RETURN
+-A SHADOWSOCKS -d 10.0.0.0/8 -j RETURN
+-A SHADOWSOCKS -m set --match-set china dst -j RETURN
+-A SHADOWSOCKS -p tcp -j REDIRECT --to-ports 1081
+
+-A POSTROUTING -o eth0 -j MASQUERADE
+
+COMMIT
+```
+
+3. 生效
+```bash
+sudo sh -c 'iptables-restore < /etc/iptables/rules.v4'
+```
+
+4. 验证
+```bash
+sudo iptables -t nat -L -n --line-numbers
+```
+
+## 二、中国 IP 直连（ipset）
+
+1. 安装 ipset
+```bash
+sudo apt install ipset ipset-persistent -y
+```
+
+2. 创建 ipset 并导入中国 IP 列表
+```bash
+sudo ipset create china hash:net
+curl -s https://raw.githubusercontent.com/17mon/china_ip_list/master/china_ip_list.txt | sudo xargs -I {} ipset add china {}
+```
+
+3. 保存 ipset 配置
+```bash
+sudo ipset save > /tmp/ipset.save
+sudo cp /tmp/ipset.save /etc/iptables/ipset.save
+```
+
+4. 创建开机自动加载服务
+```bash
+sudo nano /etc/systemd/system/ipset-persistent.service
+```
+
+内容：
+```ini
+[Unit]
+Description=Load ipset rules
+Before=iptables.service
+Before=netfilter-persistent.service
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/ipset restore -! -f /etc/iptables/ipset.save
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+```
+
+5. 启用并启动服务
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable ipset-persistent.service
+sudo systemctl start ipset-persistent.service
+```
+
+6. 验证服务状态
+```bash
+sudo systemctl status ipset-persistent.service
+```
+
+## 三、还原方法（出问题时）
+
+```bash
+sudo iptables-restore < /etc/iptables/rules.v4.bak
+```
+
+## 四、测试验证
+
+树莓派A 开启流量监控：
+```bash
+watch -n 1 'sudo iptables -t nat -L SHADOWSOCKS -n -v'
+```
+
+树莓派B 测试访问：
+```bash
+# 国内直连
+curl -o /dev/null -s -w "%{time_total}\n" https://www.baidu.com
+
+# 国外走代理
+curl -o /dev/null -s -w "%{time_total}\n" https://www.google.com
+```
+
+预期结果：
+- 访问 `baidu.com` 时，树莓派A 第 7 条（`china`）`pkts` 增加
+- 访问 `google.com` 时，树莓派A 第 8 条（`REDIRECT 1081`）`pkts` 增加
+
+## 五、当前流量逻辑
+
+```text
+PREROUTING (wlan0 TCP)
+ └─ SHADOWSOCKS 链
+    ├─ 目标是 SSR 服务器 IP → RETURN 直连
+    ├─ 目标是保留地址段 → RETURN 直连
+    ├─ 目标是中国大陆 IP → RETURN 直连
+    └─ 其余 → REDIRECT 1081 走代理
+```
