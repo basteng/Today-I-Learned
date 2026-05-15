@@ -227,6 +227,7 @@
   - [22. GaN-on-Si photonics platform for heterogenous blue lasers: A perspective and feasibility study](#22-gan-on-si-photonics-platform-for-heterogenous-blue-lasers-a-perspective-and-feasibility-study)
   - [23.Nitride Micro-LEDs toward Biointegrated Platforms: Growth, Integration, and Emerging Applications](#23nitride-micro-leds-toward-biointegrated-platforms-growth-integration-and-emerging-applications)
   - [24. Quantitative Cathodoluminescence Mapping of External Radiative Efficiency in LEDs](#24-quantitative-cathodoluminescence-mapping-of-external-radiative-efficiency-in-leds)
+  - [25. Development of optical interconnect technologies based on different light sources](#25-development-of-optical-interconnect-technologies-based-on-different-light-sources)
 
 链接不需要加<>，直接copy https链接
 
@@ -1119,3 +1120,7 @@ https://pubs.acs.org/doi/10.1021/acsnano.5c21282
 ## 24. Quantitative Cathodoluminescence Mapping of External Radiative Efficiency in LEDs
 
 https://pubs.acs.org/doi/10.1021/acsphotonics.5c02927
+
+## 25. Development of optical interconnect technologies based on different light sources
+
+https://doi.org/10.1117/12.3109688
