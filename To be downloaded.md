@@ -227,9 +227,10 @@
   - [22. GaN-on-Si photonics platform for heterogenous blue lasers: A perspective and feasibility study](#22-gan-on-si-photonics-platform-for-heterogenous-blue-lasers-a-perspective-and-feasibility-study)
   - [23.Nitride Micro-LEDs toward Biointegrated Platforms: Growth, Integration, and Emerging Applications](#23nitride-micro-leds-toward-biointegrated-platforms-growth-integration-and-emerging-applications)
   - [24. Quantitative Cathodoluminescence Mapping of External Radiative Efficiency in LEDs](#24-quantitative-cathodoluminescence-mapping-of-external-radiative-efficiency-in-leds)
-  - [25. Development of optical interconnect technologies based on different light sources](#25-development-of-optical-interconnect-technologies-based-on-different-light-sources)
-  - [26. Enhancement of InGaN Laser Photovoltaic Cell Performance with InGaN Quantum Structures as Stress Relief Layers](#26-enhancement-of-ingan-laser-photovoltaic-cell-performance-with-ingan-quantum-structures-as-stress-relief-layers)
-  - [27. Investigation on compositional pulling effect of InGaN red multiple quantum wells and its remedy](#27-investigation-on-compositional-pulling-effect-of-ingan-red-multiple-quantum-wells-and-its-remedy)
+  - [25. Enhancement of InGaN Laser Photovoltaic Cell Performance with InGaN Quantum Structures as Stress Relief Layers](#25-enhancement-of-ingan-laser-photovoltaic-cell-performance-with-ingan-quantum-structures-as-stress-relief-layers)
+  - [26. Investigation on compositional pulling effect of InGaN red multiple quantum wells and its remedy](#26-investigation-on-compositional-pulling-effect-of-ingan-red-multiple-quantum-wells-and-its-remedy)
+  - [27. Investigation on the electroluminescence 2D microscopic localization intensity distribution of GaN-based flip-chip green mini-LEDs](#27-investigation-on-the-electroluminescence-2d-microscopic-localization-intensity-distribution-of-gan-based-flip-chip-green-mini-leds)
+  - [28. FPGA-Controlled Focal Plane VCSEL Array for High-Speed Optical Wireless Communication](#28-fpga-controlled-focal-plane-vcsel-array-for-high-speed-optical-wireless-communication)
 
 链接不需要加<>，直接copy https链接
 
@@ -1123,14 +1124,18 @@ https://pubs.acs.org/doi/10.1021/acsnano.5c21282
 
 https://pubs.acs.org/doi/10.1021/acsphotonics.5c02927
 
-## 25. Development of optical interconnect technologies based on different light sources
-
-https://doi.org/10.1117/12.3109688
-
-## 26. Enhancement of InGaN Laser Photovoltaic Cell Performance with InGaN Quantum Structures as Stress Relief Layers
+## 25. Enhancement of InGaN Laser Photovoltaic Cell Performance with InGaN Quantum Structures as Stress Relief Layers
 
 https://iopscience.iop.org/article/10.1149/2162-8777/ae613b/meta
 
-## 27. Investigation on compositional pulling effect of InGaN red multiple quantum wells and its remedy
+## 26. Investigation on compositional pulling effect of InGaN red multiple quantum wells and its remedy
 
 https://doi.org/10.1063/5.0324915
+
+## 27. Investigation on the electroluminescence 2D microscopic localization intensity distribution of GaN-based flip-chip green mini-LEDs
+
+https://doi.org/10.1063/5.0334759
+
+## 28. FPGA-Controlled Focal Plane VCSEL Array for High-Speed Optical Wireless Communication
+
+https://doi.org/10.1109/JLT.2026.3693164
