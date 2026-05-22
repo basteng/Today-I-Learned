@@ -151,6 +151,14 @@
   - [如果出现 frpc.service start request repeat too quickly 错误](#如果出现-frpcservice-start-request-repeat-too-quickly-错误)
 - [21. 树莓派2通过树莓派1连接互联网](#21-树莓派2通过树莓派1连接互联网)
 - [22. 树莓派A透明代理 iptables 规则清理以及中国IP直连 配置总结](#22-树莓派a透明代理-iptables-规则清理以及中国ip直连-配置总结)
+  - [环境说明](#环境说明)
+  - [一、整理 iptables 规则](#一整理-iptables-规则)
+  - [二、中国 IP 直连（ipset）](#二中国-ip-直连ipset)
+  - [三、还原方法（出问题时）](#三还原方法出问题时)
+  - [四、测试验证](#四测试验证)
+  - [五、当前流量逻辑](#五当前流量逻辑)
+- [23. PCIE](#23-pcie)
+  - [默认PCIE是不启动的，需要设置](#默认pcie是不启动的需要设置)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2849,3 +2857,11 @@ PREROUTING (wlan0 TCP)
     ├─ 目标是中国大陆 IP → RETURN 直连
     └─ 其余 → REDIRECT 1081 走代理
 ```
+
+# 23. PCIE
+
+## 默认PCIE是不启动的，需要设置
+
+sudo nano /boot/firmware/config.txt
+在最后添加
+dtparam=pciex1
