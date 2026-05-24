@@ -231,6 +231,7 @@
   - [26. Investigation on compositional pulling effect of InGaN red multiple quantum wells and its remedy](#26-investigation-on-compositional-pulling-effect-of-ingan-red-multiple-quantum-wells-and-its-remedy)
   - [27. Investigation on the electroluminescence 2D microscopic localization intensity distribution of GaN-based flip-chip green mini-LEDs](#27-investigation-on-the-electroluminescence-2d-microscopic-localization-intensity-distribution-of-gan-based-flip-chip-green-mini-leds)
   - [28. FPGA-Controlled Focal Plane VCSEL Array for High-Speed Optical Wireless Communication](#28-fpga-controlled-focal-plane-vcsel-array-for-high-speed-optical-wireless-communication)
+  - [29. III-Nitride nanowire heterostructure: An emerging solution for next generation all-colour solid state light sources](#29-iii-nitride-nanowire-heterostructure-an-emerging-solution-for-next-generation-all-colour-solid-state-light-sources)
 
 链接不需要加<>，直接copy https链接
 
@@ -1139,3 +1140,7 @@ https://doi.org/10.1063/5.0334759
 ## 28. FPGA-Controlled Focal Plane VCSEL Array for High-Speed Optical Wireless Communication
 
 https://doi.org/10.1109/JLT.2026.3693164
+
+## 29. III-Nitride nanowire heterostructure: An emerging solution for next generation all-colour solid state light sources
+
+https://iopscience.iop.org/article/10.1088/1361-6528/ae6f18/pdf
