@@ -47,6 +47,33 @@
 - [28. 3D DRAM应用中多达120个Si/SiGe双层的外延增长](#28-3d-dram应用中多达120个sisige双层的外延增长)
 - [29. 片上和封装内互连：面向工程师的基础知识 SemiEnigeering](#29-片上和封装内互连面向工程师的基础知识-semienigeering)
 - [30. 45nm Process Flow](#30-45nm-process-flow)
+- [31.Advanced Packaging: Intels EMIB vs](#31advanced-packaging-intels-emib-vs)
+  - [author: Austin Lyons](#author-austin-lyons)
+  - [What is the reticle limit?](#what-is-the-reticle-limit)
+  - [What is 2.5D packaging, and why is it called that?](#what-is-25d-packaging-and-why-is-it-called-that)
+  - [TSMC’s CoWoS family: three variants](#tsmcs-cowos-family-three-variants)
+    - [CoWoS-S: full silicon interposer](#cowos-s-full-silicon-interposer)
+    - [CoWoS-R: organic RDL interposer](#cowos-r-organic-rdl-interposer)
+    - [CoWoS-L: local silicon bridges in an interposer](#cowos-l-local-silicon-bridges-in-an-interposer)
+    - [EMIB-T and EMIB-M](#emib-t-and-emib-m)
+  - [EMIB vs CoWoS-L, side by side](#emib-vs-cowos-l-side-by-side)
+    - [1. Cost](#1-cost)
+    - [2. Panel utilization](#2-panel-utilization)
+    - [3. Scalability past the reticle limit](#3-scalability-past-the-reticle-limit)
+    - [4. Yield through smaller bonded pieces](#4-yield-through-smaller-bonded-pieces)
+- [32.TSMC Prepares CoWoS to CoPoS Shift](#32tsmc-prepares-cowos-to-copos-shift)
+- [33.Advanced packaging technology](#33advanced-packaging-technology)
+  - [author:](#author)
+- [34.TSMC Next Ｗave : CoPoS and its](#34tsmc-next-ｗave--copos-and-its)
+  - [author: SEMIVISION](#author-semivision)
+- [35.Advanced Packaging’s New Contest:](#35advanced-packagings-new-contest)
+  - [author: Boris Chou](#author-boris-chou)
+    - [Why it matters now](#why-it-matters-now)
+    - [(1) CoWoS — today’s gold standard](#1-cowos--todays-gold-standard)
+    - [(2) CoPoS — pragmatic evolution by “squaring the circle”](#2-copos--pragmatic-evolution-by-squaring-the-circle)
+    - [(3) CoWoP — bold but risky](#3-cowop--bold-but-risky)
+    - [Market \& supply-chain implications](#market--supply-chain-implications)
+    - [Bottom line](#bottom-line)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1263,6 +1290,559 @@ DRAM近年应对这个问题的措施包含在电晶体结构的变更，包括�
 
 <https://www.linkedin.com/posts/tanj-bennett-879aa313_45-nm-cmos-fabrication-process-flow-ugcPost-7374851116456595456-13YA?utm_source=share&utm_medium=member_desktop&rcm=ACoAABGWyPMBLFNxf3scogFtv9nykpinaNDDgrc>
 
+# 31.Advanced Packaging: Intels EMIB vs
+
+---
+created: 2026-05-25T11:45:06 (UTC +08:00)
+tags: []
+source: https://www.chipstrat.com/p/advanced-packaging-intels-emib-vs
+author: Austin Lyons
+---
+
+> ## Excerpt
+> Is Intel's EMIB better than TSMC's CoWoS for AI accelerators? A primer on both, an honest look at the trade-offs, and where it goes from here.
+
+---
+Nvidia’s Rubin Ultra is going to be a huge chip. So huge that it likely takes four reticle-sized compute dies stitched together into one package.
+
+[
+
+![Pasted image 20260511175609.png](https://substackcdn.com/image/fetch/$s_!4hxk!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6188bbba-9e88-4c10-ab24-b1549fcddbbc_1200x675.png "Pasted image 20260511175609.png")
+
+](https://substackcdn.com/image/fetch/$s_!4hxk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6188bbba-9e88-4c10-ab24-b1549fcddbbc_1200x675.png)
+
+Bottom right: Rubin Ultra, the big bad boy.
+
+_Well... [allegedly](https://x.com/jukan05/status/2038798257560936939). There are rumors of a warpage problem on the 4-die package, and chatter that TSMC is leaning on panel-level packaging (CoPoS) to deal with it, maybe even a fallback to a 2+2 config. Hold that thought._
+
+So how do you connect four pieces of silicon together such that they behave electrically like a single chip? That’s the question of **advanced packaging**. And as AI accelerators keep getting bigger, the packaging itself is becoming the dominant cost variable in the bill of materials.
+
+Today we’ll cover:
+
+-   A primer on **2.5D advanced packaging**, and the reticle limit that started the whole story
+    
+-   **TSMC’s CoWoS family** (CoWoS-S, CoWoS-R, CoWoS-L)
+    
+-   **Intel’s EMIB**
+    
+-   **EMIB vs CoWoS-L**
+    
+
+## What is the reticle limit?
+
+The way you make a chip more powerful, historically, has been to make it bigger. More transistors, more compute, more parallelism per die.
+
+The ceiling on “bigger” is the **reticle limit**: the largest area a lithography stepper can pattern in a single exposure. About 26 mm × 33 mm, or roughly **858 mm²**.
+
+[
+
+![Pasted image 20260511112622.png](https://substackcdn.com/image/fetch/$s_!5YaV!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe78bc682-f699-4bef-9508-6e941d208528_1614x1070.png "Pasted image 20260511112622.png")
+
+](https://substackcdn.com/image/fetch/$s_!5YaV!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe78bc682-f699-4bef-9508-6e941d208528_1614x1070.png)
+
+NVIDIA’s H100 was already pushing the reticle. Blackwell broke through by stitching two reticle-sized compute dies together into a single GPU:
+
+[
+
+![Pasted image 20260511111326.png](https://substackcdn.com/image/fetch/$s_!zIcj!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fff25cfc8-83d6-4a0e-914e-7de8042fad6d_1536x816.png "Pasted image 20260511111326.png")
+
+](https://substackcdn.com/image/fetch/$s_!zIcj!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fff25cfc8-83d6-4a0e-914e-7de8042fad6d_1536x816.png)
+
+Two compute dies (one left, one right)
+
+Once you cross that line (i.e. when one die isn’t enough) you need a way to physically connect multiple dies so they behave electrically like a single chip:
+
+[
+
+![Pasted image 20260511113245.png](https://substackcdn.com/image/fetch/$s_!YqQz!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc1323484-da2a-4145-afff-6c9784b56028_1826x728.png "Pasted image 20260511113245.png")
+
+](https://substackcdn.com/image/fetch/$s_!YqQz!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc1323484-da2a-4145-afff-6c9784b56028_1826x728.png)
+
+_AI sketch… gotta connect those die_
+
+**That’s advanced packaging.** And as accelerator sizes grow, the cost of the packaging itself becomes a dominant economic variable.
+
+## What is 2.5D packaging, and why is it called that?
+
+[
+
+![Pasted image 20260511114301.png](https://substackcdn.com/image/fetch/$s_!-pV7!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F59a6bbfa-4084-4d0a-86bc-5f73018bf9fa_1662x998.png "Pasted image 20260511114301.png")
+
+](https://substackcdn.com/image/fetch/$s_!-pV7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F59a6bbfa-4084-4d0a-86bc-5f73018bf9fa_1662x998.png)
+
+**2D** is one or more dies sitting directly on the organic substrate. No interposer, no bridge. Routing runs through the substrate itself.
+
+That covers classic monolithic packages and chiplet designs where the dies talk through substrate traces. The constraint is density. Substrate pitch is coarse, so you get moderate die-to-die bandwidth, not the tight compute-to-HBM coupling AI accelerators need.
+
+**2.5D** adds a passive silicon routing layer between the dies and the substrate. That can be a full silicon interposer, a silicon bridge embedded in the substrate like Intel EMIB, or silicon bridges inside an RDL interposer like TSMC CoWoS-L. It carries fine-pitch routing and sometimes TSVs, but no working transistors. It moves signals, it does not compute.
+
+That is what makes tight compute-to-HBM coupling possible, and it is the dominant architecture in modern AI accelerators.
+
+**3D goes vertical.** Silicon stacked on silicon — AMD 3D V-Cache, Intel Foveros, TSMC SoIC.
+
+To get nitpicky: 2.5D with CoWoS-S is also technically “silicon on silicon”, but the interposer underneath is passive. Think of 3D as _active on active_ and 2.5D CoWoS-S as _active on passive_.
+
+HBM stacks are 3D internally, though they usually sit in a 2.5D package.
+
+## TSMC’s CoWoS family: three variants
+
+**Chip-on-Wafer-on-Substrate** (CoWoS) is TSMC’s umbrella for 2.5D packaging. There are three commercially relevant variants. They differ mainly in how much silicon is used for interconnect.
+
+### CoWoS-S: full silicon interposer
+
+The original. Entered production with Xilinx’s Virtex-7 2000T FPGA around 2011, where four FPGA slices were stitched together on a passive silicon interposer:
+
+How it works:
+
+[
+
+![](https://substackcdn.com/image/fetch/$s_!L4Zo!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2de68c41-bf2d-49a5-bb76-c2b8368fbb9c_1550x988.png)
+
+](https://substackcdn.com/image/fetch/$s_!L4Zo!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2de68c41-bf2d-49a5-bb76-c2b8368fbb9c_1550x988.png)
+
+-   Multiple active dies sit on top of a large passive silicon interposer
+    
+-   The interposer sits on the organic package substrate below
+    
+-   The interposer carries fine-pitch metal routing for dense lateral interconnect, plus _Through-Silicon Vias_ (TSVs) that route signals and power vertically down to the substrate
+    
+
+Important nuance: the interposer is not a “logic chip” in the compute sense. It’s processed on a mature silicon node optimized for routing density and TSV formation, not transistor performance. No logic, no transistors doing work on it.
+
+Think of it as a tiny circuit board made out of silicon. Same job as a PCB, just at lithography pitch instead of PCB pitch, with several fine-pitch metal layers plus a forest of vertical vias.
+
+Electrically, this gives you tens of thousands of short, fine-pitch interconnects between neighboring dies, at far lower latency and power than routing the same signals through an organic substrate.
+
+Here’s what that original Xilinx example looked like:
+
+[
+
+![Pasted image 20260511140111.png](https://substackcdn.com/image/fetch/$s_!3SaP!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe8097187-25ca-4c94-b9d8-064dde90beb6_1876x1430.png "Pasted image 20260511140111.png")
+
+](https://substackcdn.com/image/fetch/$s_!3SaP!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe8097187-25ca-4c94-b9d8-064dde90beb6_1876x1430.png)
+
+HBM made this silicon interposer the default approach for flagship AI parts. The HBM interface is too wide and too dense for conventional packaging. Once GPUs adopted HBM (notably AMD’s Fiji / Radeon R9 Fury X), large silicon interposers became standard across every high-end AI accelerator that uses HBM:
+
+[
+
+![Pasted image 20260511141706.png](https://substackcdn.com/image/fetch/$s_!MR-w!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc433bf7f-5455-44d9-8265-11ca39b06a90_3999x2250.png "Pasted image 20260511141706.png")
+
+](https://substackcdn.com/image/fetch/$s_!MR-w!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc433bf7f-5455-44d9-8265-11ca39b06a90_3999x2250.png)
+
+_AMD’s slide from back in 2015! Pretty wild._
+
+There’s an economic problem though. **The silicon wafer is being consumed for** _**routing**_**, not compute.** _That’s expensive._ As HBM stack counts grow and compute reticle counts grow, the per-package silicon bill grows right alongside them.
+
+### CoWoS-R: organic RDL interposer
+
+TSMC’s response to the silicon interposer cost is to build the routing in **Redistribution Layers** **(RDL)** of organic material instead of silicon:
+
+[
+
+![Pasted image 20260511142310.png](https://substackcdn.com/image/fetch/$s_!I-Mx!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F591d543c-ac2f-4e79-a1ff-bb67114255e2_3054x1556.png "Pasted image 20260511142310.png")
+
+](https://substackcdn.com/image/fetch/$s_!I-Mx!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F591d543c-ac2f-4e79-a1ff-bb67114255e2_3054x1556.png)
+
+This is cheaper, but isn’t a silver bullet. Organic processes have wider lithographic tolerances than silicon. Trace pitch widens, layer count climbs, and the assembly can’t match the bandwidth density that an HBM-to-GPU interface demands.
+
+Thus, **CoWoS-R is useful for cost-sensitive products that don’t need the densest die-to-die interconnect.** It cannot carry flagship AI accelerator workloads on its own.
+
+_Trade-offs!_
+
+### CoWoS-L: local silicon bridges in an interposer
+
+TSMC’s current frontier, which places small silicon bridges only where you need high-density routing (compute-to-compute, compute-to-HBM). Use cheaper organic RDL material everywhere else on the interposer.
+
+[
+
+![Pasted image 20260511164420.png](https://substackcdn.com/image/fetch/$s_!Cj6C!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd5179e76-7186-424a-b066-7c8248ae9123_2338x1308.png "Pasted image 20260511164420.png")
+
+](https://substackcdn.com/image/fetch/$s_!Cj6C!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd5179e76-7186-424a-b066-7c8248ae9123_2338x1308.png)
+
+The bridges sit _inside the interposer_. The interposer is then attached to the package substrate as one large piece.
+
+This is the TSMC architecture used for Blackwell-class accelerators.
+
+The move is elegant balancing of trade-offs, with silicon where you need bandwidth, organic where you don’t. _Beautiful in principle._ The catch is that you’ve still got a separate interposer to build (an RDL carrier with those silicon bridges embedded in it), and then you have to dice it and attach the whole thing onto the package substrate. _Two pieces, two attach steps._
+
+**Embedded Multi-die Interconnect Bridge** (EMIB) shares CoWoS-L’s central insight (silicon only where you need it) but resolves it very differently.
+
+**EMIB skips the interposer entirely.** The silicon bridges are embedded directly into the _organic substrate_ of the package:
+
+[
+
+![Pasted image 20260511165405.png](https://substackcdn.com/image/fetch/$s_!hIjo!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe99f58f4-226e-45ce-8c61-998bd44940d0_1616x1072.png "Pasted image 20260511165405.png")
+
+](https://substackcdn.com/image/fetch/$s_!hIjo!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe99f58f4-226e-45ce-8c61-998bd44940d0_1616x1072.png)
+
+_My AI-drawn sketch. Take it loosely._
+
+Here’s a cleaner version from Intel’s foundry blog:
+
+Note that EMIB has only two layers. Dies and substrate.
+
+### EMIB-T and EMIB-M
+
+Worth noting quick: Intel has next-iteration variants. **EMIB-T** adds _Through-Silicon Vias_ through the embedded bridges themselves, which lets power and high-speed signals flow vertically through the bridge, not just laterally. HBM-heavy designs increasingly need this. **EMIB-M** integrates MIM (Metal-Insulator-Metal) capacitors into the bridge for on-package power decoupling.
+
+Both are direct descendants of the same “embedded in the substrate” architecture. Worth a watch on [Intel’s recent EMIB-T/M explainer](https://www.youtube.com/watch?v=O5i9JehZF8Y):
+
+<iframe src="https://www.youtube-nocookie.com/embed/O5i9JehZF8Y?rel=0&amp;autoplay=0&amp;showinfo=0&amp;enablejsapi=0" frameborder="0" loading="lazy" gesture="media" allow="autoplay; fullscreen" allowautoplay="true" allowfullscreen="true" width="728" height="409"></iframe>
+
+## EMIB vs CoWoS-L, side by side
+
+So EMIB and CoWoS-L are both bridges right? Which is better?
+
+-   **EMIB:** silicon bridges embedded directly in the organic substrate. One piece, one attach step.
+    
+-   **CoWoS-L:** silicon bridges embedded in an RDL interposer; that interposer then attached to the package substrate. Two pieces, two attach steps.
+    
+    [
+    
+    ![](https://substackcdn.com/image/fetch/$s_!EHaH!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe84bae34-7d21-4190-8005-f77bcc6c85d0_1860x1236.png)
+    
+    ](https://substackcdn.com/image/fetch/$s_!EHaH!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe84bae34-7d21-4190-8005-f77bcc6c85d0_1860x1236.png)
+    
+    Intel EMIB vs TSMC CoWoS. _Update: earlier image had some label errors. Thanks to the reader who caught it!_
+    
+
+That one difference leads to these value props:
+
+### 1\. Cost
+
+**EMIB doesn’t have a separate interposer to amortize at all.** The silicon bridges are small dice embedded in a package substrate that already exists.
+
+Let’s be precise about what’s being compared here. Every flip-chip package, EMIB or CoWoS, sits on a panel-made organic substrate. CoWoS-L additionally builds and attaches a separate interposer (an RDL carrier with small silicon bridges embedded in it) between the dies and that substrate. That extra interposer, plus the extra process steps and the extra attach, is the cost difference. And in current-gen CoWoS-L that interposer is built in round-wafer format, so the panel-vs-wafer waste from the next section applies to it too. EMIB just doesn’t have any of it. The bridges are cheap because they’re tiny, and you get thousands per wafer.
+
+Process steps eliminated:
+
+-   Interposer build
+    
+-   Interposer dicing
+    
+-   The interposer-to-substrate attach
+    
+
+That’s three places where cost and yield could go wrong, but won’t for EMIB, because they don’t happen.
+
+### 2\. Panel utilization
+
+This is a big one, even if it sounds boring, and it matters more the further along the roadmap we go.
+
+Silicon interposers are cut from 300 mm round wafers. Packages are rectangles. Rectangles on round wafers leave significant edge waste, and the waste fraction **grows** with interposer size. The bigger the interposer, the more wafer area you throw away at the edges.
+
+Substrates use rectangular panels (a common size is roughly 510 mm × 515 mm). Rectangles tiled into a rectangle. The math is much friendlier.
+
+Intel cites approximately **60% wafer utilization for interposer-class CoWoS versus approximately 90% panel utilization for EMIB**:
+
+That’s the cost headline. On a flagship part with a multi-reticle package, you’re looking at a substantial cost-of-goods delta before counting anything else.
+
+And remember the Rubin Ultra rumor from up top? The fix that keeps coming up is **CoPoS** (Chip-on-Panel-on-Substrate), which is TSMC moving its advanced packaging off round wafers and onto rectangular panels. CoPoS isn’t EMIB. **TSMC keeps its carrier-and-RDL approach; it just runs it on a panel.** But the package got too big for a round wafer, and the fix is panels. _Intel’s package substrate was a rectangle from the start._
+
+### 3\. Scalability past the reticle limit
+
+This one is just geometry.
+
+A reticle is roughly 26 mm × 33 mm = **858 mm²**.
+
+-   A 5-reticle complex (think Blackwell-scale, roughly Rubin-ish): ~4,290 mm², or about 43 cm².
+    
+-   A 14-reticle ceiling: ~12,000 mm².
+    
+
+A 300 mm wafer has π × (150 mm)² ≈ 70,686 mm² of total area, and the usable rectangular yield is meaningfully smaller once you account for edge waste and dicing kerf. At 14-reticle interposer sizes, **you’re approaching one interposer per wafer**.
+
+_One. Interposer. Per. Wafer._
+
+[
+
+![Pasted image 20260511182356.png](https://substackcdn.com/image/fetch/$s_!xGnw!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5372d2d6-366e-4adf-b17a-5293bdf09e4e_1982x1328.png "Pasted image 20260511182356.png")
+
+](https://substackcdn.com/image/fetch/$s_!xGnw!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5372d2d6-366e-4adf-b17a-5293bdf09e4e_1982x1328.png)
+
+At that point the interposer absorbs the entire cost of the wafer. Packaging cost stops scaling and starts cliff-diving in the wrong direction.
+
+EMIB stretches in X and Y across say a 515 mm × 510 mm panel (≈ 263,000 mm² of usable area). The “one interposer per wafer” problem doesn’t arise.
+
+So the cost curves diverge. **The larger the package, the wider EMIB’s margin gets.**
+
+And packages keep getting larger every generation.
+
+### 4\. Yield through smaller bonded pieces
+
+Bonding a single 5-reticle silicon interposer onto a substrate is a tough operation. You’re moving a ≈ 43 cm² silicon piece through reflow, and silicon and substrate have different coefficients of thermal expansion. **Warpage** at that size is a yield-limiting problem. _Remember that alleged Rubin Ultra issue above?_
+
+EMIB attaches dies _individually_ to the substrate. Each attach is small, locally thermally controlled, and decoupled from the others.
+
+**Small-piece bonding is inherently higher-yield than big-piece bonding.** The yield advantage compounds with package size for the same geometric reason the cost advantage does.
+
+_That’s the case for EMIB on the merits. For paid subscribers: three forward scenarios with my thoughts, the “TSMC will just do CoPoS” pushback, the Amkor partnership that adds a second source for EMIB (and why it’s a 2028 story, not a 2026 one), and what it all means for how you read Intel Foundry’s hand. If those tickle your fancy, keep reading._
+
+# 32.TSMC Prepares CoWoS to CoPoS Shift
+
+---
+created: 2026-05-25T11:48:30 (UTC +08:00)
+tags: []
+source: https://www.techpowerup.com/339963/tsmc-prepares-cowos-to-copos-shift-with-750-x-620-mm-panels
+author: 05:37
+				by
+				JustBenching
+---
 
 
 
+> ## Excerpt
+> TSMC is reportedly preparing to transition its advanced packaging strategy from CoWoS to a panelized approach called CoPoS, which stands for Chip-on-Panel-on-Substrate. The company plans pilot lines as soon as 2026 and aims for mass production between late 2028 and the first half of 2029. The change...
+
+---
+TSMC is reportedly preparing to transition its advanced packaging strategy from CoWoS to a panelized approach called CoPoS, which stands for [Chip-on-Panel-on-Substrate](https://www.techpowerup.com/337960/tsmc-prepares-copos-next-gen-310-x-310-mm-packages). The company plans pilot lines as soon as 2026 and aims for mass production between late 2028 and the first half of 2029. The change involves swapping around 300 mm silicon interposers for large square and rectangular panels, with early formats measuring around 310 × 310 mm and later options extending to 515 × 510 mm and even 750 × 620 mm. That larger, square format is intended to reduce wasted edge area, allow bigger reticles and masks for AI accelerators, and make it easier to place more dies and HBM on a single package.
+
+Technically, CoPoS combines CoWoS ideas with fan-out panel-level packaging, building RDL layers on glass or sapphire panels rather than on circular silicon. TSMC is lining up CoPoS development and production at its AP7 Chiayi campus, where phases 4 and 5 are expected to host panel work, and it plans related capacity in [future Arizona facilities](https://www.techpowerup.com/338847/tsmc-plans-copos-and-soic-advanced-packaging-for-arizona-fab). Equipment and tooling orders are already being placed, and the supplier list includes global names like KLA and Applied Materials, as well as many Taiwanese manufacturers, such as Innolux. The panel route promises higher area utilization, lower cost per packaged accelerator, and fewer warpage issues as package sizes grow, while TSMC continues to support its existing CoWoS lineup during the transition.
+
+[![](https://tpucdn.com/img/3PXkMQXw1IE6etB4_thm.jpg)](https://www.techpowerup.com/img/3PXkMQXw1IE6etB4.jpg) [![](https://tpucdn.com/img/sbyphc5sbXb9C2Pj_thm.jpg)](https://www.techpowerup.com/img/sbyphc5sbXb9C2Pj.jpg)
+
+# 33.Advanced packaging technology
+
+---
+created: 2026-05-25T11:51:33 (UTC +08:00)
+tags: []
+source: https://www.intelligent-stock.com/en/newsshow_77.html
+author: 
+---
+
+> ## Excerpt
+> Founded in 2014, I-stock is based on automation, intelligence as the road, digitalization as the core, integration as a measure, to provide a full range of intelligent workshop solutions for electronic manufacturing enterprises and semiconductor enterprise customers! At the same time, optimize the supply chain process of electronic components and realize the platform management of logistics sharing economy! Help physical manufacturing enterprises realize the strategic transformation of automatio
+
+---
+In today's semiconductor industry, which continues to pursue higher performance, lower power consumption, and smaller size, advanced packaging technology has become an important engine driving chip development. CoWoP, CoWoS, and CoPoS, as the three mainstream 2.5D/3D packaging technologies, are often mentioned by industry insiders, but their differences and application scenarios have left many people confused. This article will provide you with a detailed analysis of the similarities and differences among these three technologies.
+
+Current Overlord: The Brilliance and Challenges of CoWoS Technology
+
+CoWoS (Chip on Wafer on Substrate)
+
+CoWoS, as an advanced packaging technology led by TSMC, has become an indispensable infrastructure in the AI era. This technology achieves high-density integration of processors, accelerators, and high bandwidth storage (HBM) by mounting bare chips on silicon wafers and combining them with silicon intermediate layers, and then encapsulating them on organic substrates.
+
+In terms of technical principle, CoWoS adopts a four layer structure: silicon chip+intermediate layer+organic packaging substrate+PCB motherboard. The micro bump inversion technology connects the chip to the silicon intermediate layer, and then connects it to the motherboard through the packaging substrate. This design significantly shortens the distance between chips, improves bandwidth and energy efficiency, allowing AI accelerators such as NVIDIA A100/H100 to fully utilize their performance.
+
+![](https://www.intelligent-stock.com/UpLoad/image/20250828/20250828152954065406.jpg)
+
+**CoWoS has evolved over multiple generations, including:**
+
+CoWoS-S: Standard Silicon Interlayer Version
+
+CoWoS-R: Replacing Part of Silicon Intermediary with Re routing Layer (RDL)
+
+CoWoS-L: Combining local silicon interconnects with RDL, becoming the current mainstream
+
+**However, CoWoS faces three major bottlenecks:**
+
+The utilization rate of circular wafers is only about 85%, and there is serious waste in the edge area.
+
+The cost of silicon interlayer and ABF substrate remains high.
+
+As the power density of chips increases, heat dissipation and signal transmission approach physical limits.
+
+![](https://www.intelligent-stock.com/UpLoad/image/20250828/20250828153137733773.jpg)
+
+Although TSMC plans to increase the monthly CoWoS production capacity to 90000 to 110000 pieces by 2026, market demand still far exceeds supply capacity, and orders from giants such as Amazon and Microsoft have been delayed for several years. This' sweet annoyance 'is accelerating the birth of the next generation of packaging technology.
+
+Revolutionary Breakthrough: CoPoS Technology Panel Transformation Introduction
+
+In TSMC's technology blueprint, CoPoS (Chip on Panel on Subsystem) is seen as the successor to CoWoS. This technology transforms circular wafers into square panels and replaces traditional silicon interlayers with rectangular substrates, achieving a packaging revolution of "replacing circles with squares".
+
+**The core innovation lies in:**
+
+1\. Substrate form: Adopting square panels ranging from 310 × 310mm to 750 × 620mm, with an area utilization rate of over 95%.
+
+2\. Material Innovation: Replacing silicon with glass/sapphire interlayer to enhance thermal stability and cost-effectiveness.
+
+3\. Process optimization: Supports larger photomasks and single packaging of more chips.
+
+4\. Compared with similar technologies like FOPLP, CoPoS retains the intermediate layer structure and excels in signal integrity and power transmission, making it particularly suitable for high-end products that integrate GPU and HBM.
+
+**The production roadmap has been clearly defined:**
+
+In 2026, the first experimental line will be established at TSMC's Chiayi AP7 plant.
+
+2028-2029: Achieve mass production and gradually replace CoWoS-L15.
+
+Industry analysis suggests that CoPoS can reduce unit area costs by 20-30%, providing the possibility for the widespread adoption of AI chips. This "bigger, more cost-effective, and more efficient" technological roadmap is attracting close attention from giants such as NVIDIA.
+
+![](https://www.intelligent-stock.com/UpLoad/image/20250828/20250828153191259125.jpg)
+
+Disruptive Idea: The Cost Revolution of CoWoP Technology
+
+Beyond CoPoS, CoWoP (Chip on Wafer on PCB) reconstructs the encapsulation architecture in a more aggressive way. This technology directly omits the expensive ABF substrate and welds the silicon intermediate layer with chips onto the PCB through C4 bumps, forming a minimalist structure of "chip intermediate layer PCB".
+
+**The technological advantages are obvious:**
+
+1\. Cost reduction of 30-50%: Remove packaging substrates that account for 40% of the cost.
+
+2\. Shorter signal path: reduces the loss of signals from the substrate to the motherboard in traditional packaging.
+
+3\. More efficient heat dissipation: The uncovered design allows the heat sink to directly touch the chip.
+
+**However, the technological challenges are equally enormous:**
+
+1\. The PCB needs to have the wiring capability of sub-10 μ m line width/spacing, far exceeding the current level of 20-35 μ m for HDI PCBs.
+
+2\. The flatness and material matching issues of large-sized PCBs.
+
+3\. Difficulty in controlling mass production yield.
+
+According to industry sources, Nvidia is currently testing the CoWoP solution with a 450 × 450mm specification, but in the short term, its flagship Rubin chip will still use traditional ABF substrates. This reflects the numerous obstacles that new technologies face from concept to mass production.
+
+![](https://www.intelligent-stock.com/UpLoad/image/20250828/20250828153179067906.jpg)
+
+Technical Comparison and Future Prospects
+
+The future trend has emerged:
+
+Short term (2-3 years): CoWoS remains mainstream, with CoWoS-L as the focus direction.
+
+Mid term (3-5 years): CoPoS will gradually enter mass production and develop in parallel with CoWoS.
+
+Long term (over 5 years): If CoWoP breaks through technological bottlenecks or reshapes the packaging ecosystem.
+
+Glass substrate technology will become a key variable, and its advantages in thermal stability, signal loss, and flatness may simultaneously affect the development path of CoPoS and CoWoP.
+
+Conclusion: Technological evolution is endless
+
+From CoWoS to CoPoS and then to CoWoP, semiconductor packaging technology is undergoing a profound transformation from "round" to "square" and from "multi-layer" to "simplified". This transformation is not only a change in form, but also a shift in the paradigm of chip system design - expanding semiconductor integration logic from wafer level thinking to panel level dimensions.
+
+In today's era of exponential growth in demand for AI computing power, packaging technology is no longer the "back-end link" of chip manufacturing, but the strategic frontier that determines the ceiling of computing power. Regardless of which technological route ultimately wins, the entire computing industry and end users will benefit.
+
+As an industry expert once said, "The creators of history always stand on the shoulders of their predecessors to open the next era." CoWoS laid the foundation for advanced packaging, while CoPoS and CoWoP represent a more efficient and economical future direction. In this technological evolution, we look forward to witnessing more innovative breakthroughs that are closer, more cost-effective, and more sensual.
+
+![](https://www.intelligent-stock.com/UpLoad/image/20250828/20250828153229272927.jpg)
+
+# 34.TSMC Next Ｗave : CoPoS and its
+
+---
+created: 2026-05-25T11:53:46 (UTC +08:00)
+tags: []
+source: https://tspasemiconductor.substack.com/p/tsmc-next-ave-copos-and-its-taiwan
+author: SEMIVISION
+---
+
+
+
+> ## Excerpt
+> Original Article by SemiVision Research (TSMC/ Nvidia/AMD)
+
+---
+**Advanced Packaging: Taiwan’s Strategic Push in FOPLP and CoPoS**
+
+[
+
+![](https://substackcdn.com/image/fetch/$s_!dxkm!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2345a4b6-dba8-4bdf-b854-e68e9afc5bcc_1536x1024.png)
+
+](https://substackcdn.com/image/fetch/$s_!dxkm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2345a4b6-dba8-4bdf-b854-e68e9afc5bcc_1536x1024.png)
+
+Advanced packaging is widely recognized as a critical technological pathway to extend and surpass Moore’s Law. In the face of physical limitations on chip scaling and the slowing pace of process node miniaturization, advanced packaging enables continued improvements in computing performance and energy efficiency through system-in-package (SiP), heterogeneous integration, and high-density interconnects.
+
+TSMC’s Technology Forum is about to take place, and according to foreign media reports, TSMC is expected to discuss the technical concept of CoPoS at the event. This will coincide with the 2025 Touch Taiwan Technology Forum, creating a synergistic effect. SemiVision Research will provide an in-depth discussion on CoPoS technology, along with an analysis of both Taiwan’s and the global supply chain landscape.
+
+[
+
+![](https://substackcdn.com/image/fetch/$s_!mCuK!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4f614d3e-425e-4588-afd0-cf43d9dbe9d4_946x550.png)
+
+](https://substackcdn.com/image/fetch/$s_!mCuK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4f614d3e-425e-4588-afd0-cf43d9dbe9d4_946x550.png)
+
+[
+
+![](https://substackcdn.com/image/fetch/$s_!qMdN!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2aa32e52-dec1-477b-88d8-5f3ffe00f5ac_390x409.png)
+
+](https://substackcdn.com/image/fetch/$s_!qMdN!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2aa32e52-dec1-477b-88d8-5f3ffe00f5ac_390x409.png)
+
+Since this packaging technology is closely related to panel-based processes, Taiwan’s panel maker **Innolux** has emerged as a leading company in the discussion. However, their primary focus has been on **FOPLP (Fan-out Panel Level Packaging)** rather than CoPoS.
+
+FOPLP (Fan-out Panel Level Packaging) and CoPoS (Chip-on-Panel-on-Substrate) both utilize large panel substrates for packaging, but they differ significantly in architecture and application, particularly in the use of **interposers**. FOPLP is a packaging approach **without an interposer**, where chip dies are redistributed directly onto a panel substrate and interconnected through redistribution layers (RDL). This results in advantages such as lower cost, high I/O density, and flexible form factor, making it suitable for applications like edge AI, mobile devices, and mid-range ASICs where integration density is moderate.
+
+In contrast, **CoPoS incorporates an interposer**, which enables higher signal integrity and stable power delivery—especially important when integrating multiple high-performance, high-power dies, such as GPU and HBM. The presence of an interposer makes CoPoS more suitable for high-end AI and HPC systems that require large-area packaging and high-speed data transmission.
+
+Moreover, the interposer material in CoPoS is evolving from traditional **silicon** to **glass**, which offers better cost efficiency and thermal stability. Glass interposers also provide improved coefficient of thermal expansion (CTE) matching and reduced warpage, leading to higher yield and better process control for large-area integration. This is a key focus for TSMC and its supply chain partners, positioning CoPoS as a potential replacement for CoWoS-L in the future.
+
+Previously, we discussed in depth _why_ advanced packaging is essential, and analyzed TSMC’s strategic promotion of Chip-on-Panel-on-Substrate (CoPoS). This approach responds to increasing AI GPU packaging area demands and the production capacity constraints of CoWoS, with panel-based substrates emerging as a key enabler for future scaling and cost optimization.
+
+Now, we turn our focus to Taiwan’s current landscape in Fan-Out Panel-Level Packaging (FOPLP) and the broader CoPoS ecosystem.
+
+**For Paid Members, SemiVision will discuss topics on**
+
+-   Innolux: A Leading Domestic Driver
+    
+-   “Panel Semiconductor”: A New Cross-Industry Concept
+    
+-   From HPC to Automotive Integration from FOPLP
+    
+-   Process Strategy and Technological Differentiation: Innolux and TSMC's Evolving Paths in Panel-Level Packaging
+    
+-   TSMC’s CoWoS Bottleneck and the Strategic Shift Toward CoPoS
+    
+-   Taiwan E-core Ecosystem (Supply chain)
+    
+-   Glass substrate fabrication process
+    
+-   TSMC CoPoS Innovation and Roadmap
+    
+    > **[Technology Forum: CPO and CoPoS Challenge and Opportunities](https://tspasemiconductor.substack.com/p/technology-forum-cpo-and-copos-challenge)**
+
+# 35.Advanced Packaging’s New Contest:
+
+---
+created: 2026-05-25T11:55:47 (UTC +08:00)
+tags: []
+source: https://www.linkedin.com/pulse/advanced-packagings-new-contest-cowos-copos-cowop-bo-tsun-chou-qr5jc/
+author: Boris Chou
+---
+
+
+
+> ## Excerpt
+> As AI/HPC ramps, bandwidth, latency, power integrity and thermo-mechanical limits increasingly hinge on packaging rather than transistor scaling alone. TSMC’s CoWoS remains the performance workhorse, but its economics and size are constrained—TSMC publicly caps CoWoS-S interposers at 3.3× reticle (~2,700 mm²); larger sizes require other CoWoS variants.
+
+---
+___
+
+### Why it matters now
+
+As AI/HPC ramps, bandwidth, latency, power integrity and thermo-mechanical limits increasingly hinge on **packaging** rather than transistor scaling alone. TSMC’s CoWoS remains the performance workhorse, but its economics and size are constrained—TSMC publicly caps CoWoS-S interposers at **3.3× reticle (~2,700 mm²)**; larger sizes require other CoWoS variants.
+
+### (1) CoWoS — today’s gold standard
+
+**Architecture**: multi-die (GPU/ASIC + HBM) on a **silicon** interposer, mounted on an organic substrate (ABF/BT).
+
+**Pros**: best-in-class wiring density and bandwidth for top AI accelerators. **Constraints**: high interposer cost, reticle and circular-wafer utilization limits as package footprints scale up.
+
+### (2) CoPoS — pragmatic evolution by “squaring the circle”
+
+**Idea**: keep 2.5D with an interposer, but switch the **carrier format** from a 300 mm round wafer to **rectangular panels** (e.g., 310×310, **515×510 mm**, even ~700×700 mm). Canon’s **FPA-8000iW** stepper supports **1.0 µm** resolution across a **52×68/55×65 mm** field on **515×510 mm** panels—an enabler for high-yield PLP/CoPoS.
+
+**Utilization & cost**: IMAPS data shows that for 55 mm packages, a **300 mm wafer achieves ~64%** area utilization, while **panels can reach ~90%**, directly improving cost/throughput for very large AI packages.
+
+**Materials trend: glass core substrate (GCS)**
+
+Glass offers low CTE and excellent flatness at panel sizes. Intel announced glass substrates targeted for the **latter part of this decade**; the U.S. CHIPS program awarded **up to $75 M** to **Absolics (SKC)** to commercialize glass substrates in Georgia—strong policy validation for glass.
+
+**Schedule & customers (industry reports, not official commitments)**: multiple outlets report **TSMC will pilot CoPoS in 2026** and **ramp 2028–2029**, with **NVIDIA** as a likely lead customer. Treat as market reporting, not corporate guidance.
+
+### (3) CoWoP — bold but risky
+
+**Concept**: eliminate the IC substrate and BGA, attach the interposer+dies **directly** to a **very fine-line PCB**.
+
+**Potential upside**: shorter paths (latency/power), fewer materials, lower BOM.
+
+**Hard blocker**: today’s **mass-production PCB** lines are typically **50–100 µm** L/S (advanced HDI may hit ~50 µm; some vendors advertise 2–3 mil in niche/expensive flows). Replacing ABF substrates would require **≤10/10 µm** on the board side—**far beyond** mainstream PCB capability. Meanwhile, **organic IC substrates already ship at ≤10/10 µm**, and literature has **demonstrated ≤5/5 µm**. The density gap is the core reason skepticism persists.
+
+### Market & supply-chain implications
+
+-   **CoPoS as CoWoS’ successor for big AI packages**: panelization boosts usable area and die per carrier without discarding the 2.5D ecosystem (interposers, ABF, multi-layer RDL), so execution risk is lower than a clean-sheet approach.
+-   **Glass substrates rise**: Intel’s public roadmap (late-decade) and CHIPS funding to Absolics anchor the shift toward glass at panel scale.
+-   **Total addressable market**: Yole pegs **advanced packaging at ~$46 B in 2024, >$79.4 B by 2030**; **PLP** specifically is still small (~$160 M in 2024) but growing **~27% CAGR (2024–2030)**.
+-   **Thermals**: for large HPC packages, **top-side cold plates** typically carry the dominant heat flux; with a good path to the lid, **~80–90%** of heat can be extracted from the top. Panelization/CoWoP alter mechanical/PI constraints, but cooling remains largely defined by the lid/TIM/cold-plate stack.
+
+### Bottom line
+
+-   **Near-to-mid term**: **CoPoS** is the most credible path to scale **package size and cost** for AI accelerators while reusing the mature 2.5D toolchain.
+-   **Long term**: **CoWoP** could unlock step-function cost reductions, but only if PCB manufacturing and assembly leap to **substrate-class** feature sizes; absent that, it is unlikely to displace ABF-based architectures at the high end.
+-   **Where value accrues**: panel steppers/overlay, panel metrology/inspection, and **glass substrate** capacity; ABF remains central at the top end, with roadmaps pushing toward **≤5/5 µm** L/S and improved warpage control.
