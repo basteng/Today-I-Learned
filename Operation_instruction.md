@@ -94,6 +94,7 @@
     - [3. 规则类型说明](#3-规则类型说明)
 - [43. MobaXterm设置跳板IP](#43-mobaxterm设置跳板ip)
 - [44. 设置Claude在Clash Verge走单独的流量](#44-设置claude在clash-verge走单独的流量)
+- [45. openclaw增加机器人的操作步骤](#45-openclaw增加机器人的操作步骤)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1778,4 +1779,50 @@ function main(config, profileName) {
   return config;
 }
 
+# 45. openclaw增加机器人的操作步骤
 
+主要是修改第0步的四个变量，下面的步骤直接copy进树莓派里回车即可
+
+~~~
+# ── 第 0 步：设定变量 ──────────────────────────
+AGENT_NAME="twitter"
+NEW_ACCOUNT_ID="twitter-Radar-bot"
+NEW_BOT_TOKEN="878888888:AAH4xxxxxxxxxx"
+NEW_BOT_NAME="twitter Radar"
+
+# ── 第 1 步：创建 agent ────────────────────────
+openclaw agents add "$AGENT_NAME" \
+  --workspace /home/basteng/.openclaw/workspace/agents/"$AGENT_NAME" \
+  --non-interactive
+
+# ── 第 2 步：写入 bot 到 openclaw.json ─────────
+python3 - << EOF
+import json
+
+path = "/home/basteng/.openclaw/openclaw.json"
+
+with open(path, "r", encoding="utf-8") as f:
+    data = json.load(f)
+
+accounts = data.setdefault("channels", {}).setdefault("telegram", {}).setdefault("accounts", {})
+accounts["$NEW_ACCOUNT_ID"] = {
+    "botToken": "$NEW_BOT_TOKEN",
+    "enabled": True,
+    "name": "$NEW_BOT_NAME"
+}
+
+with open(path, "w", encoding="utf-8") as f:
+    json.dump(data, f, indent=2, ensure_ascii=False)
+
+print("Done. 当前所有 Telegram accounts:")
+for name in accounts:
+    print(f" - {name}")
+EOF
+
+# ── 第 3 步：绑定路由 ──────────────────────────
+openclaw agents bind --agent "$AGENT_NAME" --bind telegram:"$NEW_ACCOUNT_ID"
+
+# ── 第 4 步：重启 + 验证 ───────────────────────
+openclaw gateway restart
+openclaw agents bindings
+~~~
