@@ -95,6 +95,18 @@
 - [43. MobaXterm设置跳板IP](#43-mobaxterm设置跳板ip)
 - [44. 设置Claude在Clash Verge走单独的流量](#44-设置claude在clash-verge走单独的流量)
 - [45. openclaw增加机器人的操作步骤](#45-openclaw增加机器人的操作步骤)
+- [46. 树莓派做旁路由的调试过程](#46-树莓派做旁路由的调试过程)
+  - [最终网络架构](#最终网络架构)
+  - [树莓派4 最终配置](#树莓派4-最终配置)
+    - [iptables 规则 (`/etc/iptables/rules.v4`)](#iptables-规则-etciptablesrulesv4)
+    - [ss-redir 实例](#ss-redir-实例)
+    - [ipset china](#ipset-china)
+    - [conntrack 自动清除](#conntrack-自动清除)
+  - [Mac Mini 配置](#mac-mini-配置)
+  - [调试经验总结](#调试经验总结)
+    - [踩过的坑](#踩过的坑)
+    - [核心经验](#核心经验)
+  - [验证命令](#验证命令)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -1826,3 +1838,165 @@ openclaw agents bind --agent "$AGENT_NAME" --bind telegram:"$NEW_ACCOUNT_ID"
 openclaw gateway restart
 openclaw agents bindings
 ~~~
+
+# 46. 树莓派做旁路由的调试过程
+
+完整总结I
+
+## 最终网络架构
+
+```
+主路由 (192.168.0.1)
+  ├── Mac Mini
+  │     ├── 有线 en0: 192.168.0.111，网关 192.168.0.105
+  │     └── WiFi en1: 192.168.0.103，网关 192.168.0.105
+  ├── 树莓派5 (10.42.0.177) 自带 Cloudflare WARP
+  └── 树莓派4 (192.168.0.105) 旁路由/透明代理
+        eth0: 192.168.0.105 (上行，连主路由)
+```
+
+---
+
+## 树莓派4 最终配置
+
+### iptables 规则 (`/etc/iptables/rules.v4`)
+
+```
+*nat
+:PREROUTING ACCEPT
+:INPUT ACCEPT
+:OUTPUT ACCEPT
+:POSTROUTING ACCEPT
+:SHADOWSOCKS - [0:0]
+
+-A PREROUTING -i eth0 -p tcp -j SHADOWSOCKS
+
+-A SHADOWSOCKS -d 149.248.1.201/32 -j RETURN
+-A SHADOWSOCKS -d 149.248.10.48/32 -j RETURN
+-A SHADOWSOCKS -d 0.0.0.0/8 -j RETURN
+-A SHADOWSOCKS -d 127.0.0.0/8 -j RETURN
+-A SHADOWSOCKS -d 169.254.0.0/16 -j RETURN
+-A SHADOWSOCKS -d 10.0.0.0/8 -j RETURN
+-A SHADOWSOCKS -m set --match-set china dst -j RETURN
+-A SHADOWSOCKS -s 192.168.0.103/32 -p tcp -j REDIRECT --to-ports 1082
+-A SHADOWSOCKS -s 192.168.0.111/32 -p tcp -j REDIRECT --to-ports 1082
+-A SHADOWSOCKS -d 192.168.0.0/16 -j RETURN
+-A SHADOWSOCKS -s 10.42.0.177/32 -p tcp -j REDIRECT --to-ports 1081
+
+-A POSTROUTING -s 192.168.0.103/32 -o eth0 -j MASQUERADE
+-A POSTROUTING -s 192.168.0.111/32 -o eth0 -j MASQUERADE
+-A POSTROUTING -o eth0 -j MASQUERADE
+
+COMMIT
+```
+
+### ss-redir 实例
+
+**实例一（树莓派5）**
+- 配置：`/etc/shadowsocks-libev/redir.json`
+- 服务器：`149.248.1.201:20004`，`chacha20-ietf`
+- 本地端口：1081
+- 服务：`shadowsocks-libev-redir@redir`
+
+**实例二（Mac Mini）**
+- 配置：`/etc/shadowsocks-libev/redir-macmini.json`
+- 服务器：`149.248.10.48:20000`，`aes-256-gcm`
+- 本地端口：1082
+- 服务：`shadowsocks-libev-redir@redir-macmini`
+
+**systemd override**（两个实例都有）：
+```
+[Service]
+DynamicUser=false
+User=root
+ExecStart=
+ExecStart=/usr/bin/ss-redir -c /etc/shadowsocks-libev/%i.json -v
+```
+
+### ipset china
+- 保存文件：`/etc/iptables/ipset.save`
+- 服务：`ipset-persistent.service`（开机自动加载）
+
+### conntrack 自动清除
+- 服务：`conntrack-flush.service`（开机自动执行）
+
+---
+
+## Mac Mini 配置
+
+**有线（Ethernet）：**
+- IP：`192.168.0.111`，子网：`255.255.255.0`
+- 网关：`192.168.0.105`
+- DNS：`1.1.1.1`, `8.8.8.8`
+
+**WiFi（Wi-Fi）：**
+- IP：`192.168.0.103`，子网：`255.255.255.0`
+- 网关：`192.168.0.105`
+- DNS：`1.1.1.1`, `8.8.8.8`
+
+---
+
+## 调试经验总结
+
+### 踩过的坑
+
+**1. nftables vs iptables-legacy**
+树莓派 Debian 默认用 `iptables-nft`，透明代理行为异常。
+解决：切换到 `iptables-legacy`。
+```bash
+sudo update-alternatives --config iptables  # 选 legacy
+```
+
+**2. brcmfmac WiFi AP fast-path**
+树莓派内置 WiFi 在 AP 热点模式下，主流量绕过 netfilter NAT，iptables REDIRECT 无法拦截主连接。
+解决：放弃热点模式，改用旁路由。
+
+**3. conntrack 缓存**
+重启后或切换网络后，旧的 conntrack 记录导致新连接绕过 iptables 规则。
+解决：开机自动执行 `conntrack -F`。
+
+**4. 多网卡路由竞争**
+Mac Mini 有多个网卡时，优先级高的 default 路由会抢走流量。
+解决：所有网卡的网关都指向树莓派4。
+
+**5. REDIRECT vs DNAT**
+`REDIRECT` 对转发流量在某些场景下不生效，折腾了很久 DNAT、TPROXY。
+最终发现：**旁路由模式下 REDIRECT 完全正常工作**，问题根本不在这里。
+
+**6. IPv6 绕过**
+macOS 优先使用 IPv6，完全绕过 iptables（只处理 IPv4）。
+解决：`networksetup -setv6off Wi-Fi` 或者在 ip6tables 里也加规则。
+
+### 核心经验
+
+**旁路由是正确的方案**
+- 不依赖树莓派 WiFi AP
+- 走标准 Linux forwarding 路径
+- iptables 规则完全可靠
+
+**调试方法**
+- `tcpdump` 确认流量路径
+- `iptables -L -n -v` 看包计数
+- `conntrack -L` 看连接跟踪
+- `curl -v` 看实际连接 IP
+- `ifconfig.me` 验证出口 IP
+
+**规则顺序很重要**
+- REDIRECT 规则必须放在 `192.168.0.0/16 RETURN` 之前
+- 否则 Mac Mini 的外网流量会被直连放行
+
+---
+
+## 验证命令
+
+```bash
+# Mac Mini 验证出口 IP
+curl -4 --max-time 10 https://ifconfig.me
+# 应该返回 149.248.10.48
+
+# 树莓派4 看流量计数
+sudo iptables -t nat -L SHADOWSOCKS -n -v
+
+# 查看 ss-redir 日志
+sudo journalctl -u shadowsocks-libev-redir@redir-macmini -f
+```
