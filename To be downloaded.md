@@ -232,6 +232,8 @@
   - [27. Investigation on the electroluminescence 2D microscopic localization intensity distribution of GaN-based flip-chip green mini-LEDs](#27-investigation-on-the-electroluminescence-2d-microscopic-localization-intensity-distribution-of-gan-based-flip-chip-green-mini-leds)
   - [28. FPGA-Controlled Focal Plane VCSEL Array for High-Speed Optical Wireless Communication](#28-fpga-controlled-focal-plane-vcsel-array-for-high-speed-optical-wireless-communication)
   - [29. III-Nitride nanowire heterostructure: An emerging solution for next generation all-colour solid state light sources](#29-iii-nitride-nanowire-heterostructure-an-emerging-solution-for-next-generation-all-colour-solid-state-light-sources)
+  - [30. Nanosecond-Response and Low-Thermal-Diffusion Micro-LED Arrays for High-Speed Optogenetic Modulation With Artifact Suppression](#30-nanosecond-response-and-low-thermal-diffusion-micro-led-arrays-for-high-speed-optogenetic-modulation-with-artifact-suppression)
+  - [31. Annealing-modulated localized contact at ITO/p-GaN interface for high-efficiency micro-LEDs at low current density](#31-annealing-modulated-localized-contact-at-itop-gan-interface-for-high-efficiency-micro-leds-at-low-current-density)
 
 链接不需要加<>，直接copy https链接
 
@@ -1144,3 +1146,11 @@ https://doi.org/10.1109/JLT.2026.3693164
 ## 29. III-Nitride nanowire heterostructure: An emerging solution for next generation all-colour solid state light sources
 
 https://iopscience.iop.org/article/10.1088/1361-6528/ae6f18/pdf
+
+## 30. Nanosecond-Response and Low-Thermal-Diffusion Micro-LED Arrays for High-Speed Optogenetic Modulation With Artifact Suppression
+
+https://doi.org/10.1002/smll.73620
+
+## 31. Annealing-modulated localized contact at ITO/p-GaN interface for high-efficiency micro-LEDs at low current density
+
+http://dx.doi.org/10.1088/1674-4926/26030032
