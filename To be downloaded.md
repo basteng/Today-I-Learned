@@ -235,6 +235,7 @@
   - [30. Nanosecond-Response and Low-Thermal-Diffusion Micro-LED Arrays for High-Speed Optogenetic Modulation With Artifact Suppression](#30-nanosecond-response-and-low-thermal-diffusion-micro-led-arrays-for-high-speed-optogenetic-modulation-with-artifact-suppression)
   - [31. Annealing-modulated localized contact at ITO/p-GaN interface for high-efficiency micro-LEDs at low current density](#31-annealing-modulated-localized-contact-at-itop-gan-interface-for-high-efficiency-micro-leds-at-low-current-density)
   - [32. Advances of high-speed GaN-based laser diodes for emerging applications](#32-advances-of-high-speed-gan-based-laser-diodes-for-emerging-applications)
+- [33. Micro-LED array for double-sided display, projection and space division multiplexing visible light communication](#33-micro-led-array-for-double-sided-display-projection-and-space-division-multiplexing-visible-light-communication)
 
 链接不需要加<>，直接copy https链接
 
@@ -1159,3 +1160,7 @@ http://dx.doi.org/10.1088/1674-4926/26030032
 ## 32. Advances of high-speed GaN-based laser diodes for emerging applications
 
 https://doi.org/10.1016/j.pquantelec.2026.100633
+
+# 33. Micro-LED array for double-sided display, projection and space division multiplexing visible light communication
+
+https://doi.org/10.1016/j.optlaseng.2026.109936
