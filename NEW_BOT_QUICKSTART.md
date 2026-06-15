@@ -31,12 +31,16 @@ NEW_BOT_NAME="Career" \
 bash /home/basteng/.openclaw/workspace/scripts/create_independent_bot_agent.sh
 ```
 
+> 脚本内部会用 `AGENT_ID` 做实际绑定，`AGENT_NAME` 只是给人看的显示名。
+
 ### 这几个变量的含义
 
 #### `AGENT_ID`
 - 机器用
 - 全小写
 - 尽量不带符号
+- 是 agent 的唯一稳定标识
+- 脚本绑定 route 时实际使用的是 `AGENT_ID`，不是 `AGENT_NAME`
 - 例子：
   - `career`
   - `news`
@@ -77,20 +81,26 @@ Enter bot token for Career_Lyu_bot:
 
 ---
 
-## 第四步：给 bot 发一条消息
+## 第四步：去 Telegram 点 `/start` 并完成配对
 
-打开 Telegram，找到刚创建的 bot，发送任意一条消息，例如：
+打开 Telegram，找到刚创建的 bot，先点击：
 
 ```text
-hi
+/start
 ```
 
-> 这一步必须做。  
-> 不然 bot 没法主动给你发消息。
+然后按 bot 返回的提示完成配对。
+
+如果返回了配对码，就按提示用这个配对码完成绑定确认。
+
+> 这一步是关键。  
+> 不是简单发一句 hi，而是要真正完成 Telegram 侧和树莓派侧的配对接入。
 
 ---
 
 ## 第五步：验证 bot 和 agent 绑定成功
+
+> 说明：底层绑定看的是 `AGENT_ID`，`AGENT_NAME` 只是显示名。
 
 在树莓派终端运行：
 
@@ -103,15 +113,33 @@ openclaw agents bindings
 - `Career`
 - `Career_Lyu_bot`
 
-就说明它们已经接上了。
+说明 route 已经绑上。完成配对后，这个 bot 才能正常接入系统并主动发消息。
 
 ---
 
 ## 如果你以后要把某个 cron 推送切到这个 bot
 
-### 第六步（可选）：切换 cron 到新 bot
+### 第六步（可选）：先确认 cron 任务的确切名字
 
-使用第二个脚本：
+先在树莓派终端运行：
+
+```bash
+openclaw cron list
+```
+
+从这里确认你要切换的任务的**确切名字**。
+
+如果任务很多，也可以配合 `grep` 查关键词，例如：
+
+```bash
+openclaw cron list | grep 新闻
+openclaw cron list | grep twitter
+openclaw cron list | grep 要约
+```
+
+### 第七步（可选）：切换 cron 到新 bot
+
+确认好任务名后，再使用第二个脚本：
 
 ```bash
 bash /home/basteng/.openclaw/workspace/scripts/switch_cron_bot.sh \
@@ -213,11 +241,9 @@ bash /home/basteng/.openclaw/workspace/scripts/create_independent_bot_agent.sh
 Enter bot token for Career_Lyu_bot:
 ```
 
-#### 4. 去 Telegram 给 bot 发一句
+#### 4. 去 Telegram 点 `/start` 并按提示完成配对
 
-```text
-hi
-```
+如果 bot 返回配对码，就按提示完成绑定确认。
 
 #### 5. 验证绑定
 
@@ -237,4 +263,4 @@ bash /home/basteng/.openclaw/workspace/scripts/switch_cron_bot.sh \
 
 ## 一句话总结
 
-> **BotFather 创建 → 树莓派跑 create 脚本 → 给 bot 发一句 hi → 需要时再跑 switch 脚本切 cron。**
+> **BotFather 创建 → 树莓派跑 create 脚本 → 去 Telegram 点 `/start` 并完成配对 → 需要时再跑 switch 脚本切 cron。**
