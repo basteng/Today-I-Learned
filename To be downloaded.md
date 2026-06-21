@@ -238,6 +238,7 @@
   - [33. Micro-LED array for double-sided display, projection and space division multiplexing visible light communication](#33-micro-led-array-for-double-sided-display-projection-and-space-division-multiplexing-visible-light-communication)
   - [34. The physics of GaN-based light-emitting diodes](#34-the-physics-of-gan-based-light-emitting-diodes)
   - [35. Roadmap of micro-LED based optical wireless communications systems](#35-roadmap-of-micro-led-based-optical-wireless-communications-systems)
+  - [36. Advances and Future Challenges in Monolithic 3D Integrated Logic, Power, and Optoelectronics Technologies for Tightly Interconnected Intelligent Systems](#36-advances-and-future-challenges-in-monolithic-3d-integrated-logic-power-and-optoelectronics-technologies-for-tightly-interconnected-intelligent-systems)
 
 链接不需要加<>，直接copy https链接
 
@@ -1174,3 +1175,7 @@ https://www.nature.com/articles/s42254-026-00949-2
 ## 35. Roadmap of micro-LED based optical wireless communications systems
 
 https://doi.org/10.1016/bs.semsem.2026.05.003
+
+## 36. Advances and Future Challenges in Monolithic 3D Integrated Logic, Power, and Optoelectronics Technologies for Tightly Interconnected Intelligent Systems
+
+https://pubs.acs.org/doi/abs/10.1021/acsnano.5c15601
