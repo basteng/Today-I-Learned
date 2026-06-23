@@ -108,6 +108,13 @@
     - [踩过的坑](#踩过的坑)
     - [核心经验](#核心经验)
   - [验证命令](#验证命令)
+- [47. Pi5通过Pi4固定出口代理Claude流量](#47-pi5通过pi4固定出口代理claude流量)
+  - [Pi5通过Pi4固定出口代理Claude流量](#pi5通过pi4固定出口代理claude流量)
+    - [背景](#背景)
+    - [Pi4上的配置](#pi4上的配置)
+    - [Pi5上的配置](#pi5上的配置)
+    - [验证方法](#验证方法)
+    - [注意事项](#注意事项)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2211,3 +2218,115 @@ sudo iptables -t nat -L SHADOWSOCKS -n -v
 # 查看 ss-redir 日志
 sudo journalctl -u shadowsocks-libev-redir@redir-macmini -f
 ```
+
+# 47. Pi5通过Pi4固定出口代理Claude流量
+
+好，总结如下：
+
+---
+
+## Pi5通过Pi4固定出口代理Claude流量
+
+### 背景
+- Pi5（192.168.0.249）运行WARP，IP会变，Claude账号有被封风险
+- Pi4（192.168.0.105）有固定SS出口（149.248.1.201），适合作为Claude的固定代理
+- 目标：Pi5的Claude CLI和OpenClaw调用Claude时走Pi4，其他流量走WARP
+
+---
+
+### Pi4上的配置
+
+**1. 修复ss-local**
+
+原来`/etc/shadowsocks-libev/local.json`配置错误（端口和加密方式与服务器不匹配），参考`redir.json`修正：
+
+```json
+{
+    "server": "149.248.1.201",
+    "server_port": 19999,
+    "local_address": "0.0.0.0",
+    "local_port": 1080,
+    "password": "你的密码",
+    "timeout": 86400,
+    "method": "aes-256-gcm",
+    "fast_open": false
+}
+```
+
+禁掉冲突的默认服务（会占用1080端口）：
+```bash
+sudo systemctl disable shadowsocks-libev.service
+sudo systemctl mask shadowsocks-libev.service
+sudo systemctl restart shadowsocks-libev-local@local
+```
+
+**2. 配置privoxy（HTTP代理转SOCKS5）**
+
+Node.js不支持SOCKS5，需要privoxy把HTTP代理请求转成SOCKS5。
+
+修改`/etc/privoxy/config`：
+```bash
+# 对局域网开放
+sudo sed -i 's/listen-address  127.0.0.1:8118/listen-address  0.0.0.0:8118/' /etc/privoxy/config
+# 转发到ss-local
+echo 'forward-socks5 / 127.0.0.1:1080 .' | sudo tee -a /etc/privoxy/config
+sudo systemctl restart privoxy
+```
+
+链路：`Pi5 → Pi4:8118(privoxy) → Pi4:1080(ss-local) → 149.248.1.201(SS服务器)`
+
+---
+
+### Pi5上的配置
+
+**1. Claude CLI**
+
+在`~/.bashrc`加alias：
+```bash
+echo 'alias claude="HTTPS_PROXY=http://192.168.0.105:8118 claude"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+验证出口IP：
+```bash
+HTTPS_PROXY=http://192.168.0.105:8118 curl https://ifconfig.me --ipv4
+# 应返回 149.248.1.201
+```
+
+**2. OpenClaw（systemd服务）**
+
+OpenClaw通过`claude-cli`模式调用本地claude命令，alias对systemd无效，需要在服务环境变量里配置。
+
+编辑`~/.config/systemd/user/openclaw-gateway.service.d/proxy.conf`：
+```ini
+[Service]
+Environment="NODE_OPTIONS=--dns-result-order=ipv4first"
+Environment="HTTPS_PROXY=http://192.168.0.105:8118"
+Environment="NO_PROXY=localhost,127.0.0.1,192.168.0.0/24,api.openai.com,openai.com,chatgpt.com,api.minimaxi.com,minimaxi.com,api.telegram.org,telegram.org,t.me,api.perplexity.ai,perplexity.ai,github.com,api.github.com"
+```
+
+重启：
+```bash
+systemctl --user daemon-reload
+systemctl --user restart openclaw-gateway
+```
+
+---
+
+### 验证方法
+
+Pi4上抓包看CONNECT请求目标域名：
+```bash
+sudo tcpdump -i eth0 -n -A 'tcp port 8118' 2>/dev/null | grep 'CONNECT'
+```
+
+如果发现非Claude域名出现在抓包里，说明NO_PROXY有遗漏，补充进去即可。
+
+---
+
+### 注意事项
+
+- Pi4重启后`shadowsocks-libev.service`已mask，不会再冲突
+- WARP在Pi5上继续运行，非代理流量不受影响
+- NO_PROXY需要随OpenClaw接入新服务时持续维护
+- `chatgpt.com`是易漏域名，已确认需要加入NO_PROXY
