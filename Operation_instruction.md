@@ -115,6 +115,14 @@
     - [Pi5上的配置](#pi5上的配置)
     - [验证方法](#验证方法)
     - [注意事项](#注意事项)
+- [48. OpenClaw 微信机器人新建流程](#48-openclaw-微信机器人新建流程)
+  - [OpenClaw 微信机器人新建流程](#openclaw-微信机器人新建流程)
+    - [前提](#前提)
+    - [1. 确认 accountId](#1-确认-accountid)
+    - [2. 写入 agent + binding](#2-写入-agent--binding)
+    - [3. 建 workspace 和 SOUL](#3-建-workspace-和-soul)
+    - [4. 重启](#4-重启)
+    - [关键点备忘](#关键点备忘)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2330,3 +2338,96 @@ sudo tcpdump -i eth0 -n -A 'tcp port 8118' 2>/dev/null | grep 'CONNECT'
 - WARP在Pi5上继续运行，非代理流量不受影响
 - NO_PROXY需要随OpenClaw接入新服务时持续维护
 - `chatgpt.com`是易漏域名，已确认需要加入NO_PROXY
+
+# 48. OpenClaw 微信机器人新建流程
+
+## OpenClaw 微信机器人新建流程
+
+### 前提
+微信 channel (`openclaw-weixin`) 已配置好，只是新建 agent 并绑定。
+
+---
+
+### 1. 确认 accountId
+
+```bash
+cat ~/.openclaw/openclaw-weixin/accounts.json
+```
+
+记下数组里的值，例如 `4e37143c81bd-im-bot`。
+
+---
+
+### 2. 写入 agent + binding
+
+```bash
+python3 << 'EOF'
+import json, pathlib
+
+cfg_path = pathlib.Path.home() / ".openclaw/openclaw.json"
+data = json.loads(cfg_path.read_text())
+cfg = data.get('data', data)
+
+AGENT_ID   = "wechat"
+AGENT_NAME = "WeChat"
+ACCOUNT_ID = "4e37143c81bd-im-bot"   # 从上一步确认
+
+new_agent = {
+    "id": AGENT_ID,
+    "name": AGENT_NAME,
+    "workspace": f"/home/basteng/.openclaw/workspace/agents/{AGENT_ID}"
+}
+new_binding = {
+    "type": "route",
+    "agentId": AGENT_ID,
+    "match": {"channel": "openclaw-weixin", "accountId": ACCOUNT_ID}
+}
+
+if not any(a.get("id") == AGENT_ID for a in cfg["agents"]["list"]):
+    cfg["agents"]["list"].append(new_agent)
+    print(f"+ agent {AGENT_ID} 已添加")
+
+if not any(b.get("agentId") == AGENT_ID for b in cfg["bindings"]):
+    cfg["bindings"].append(new_binding)
+    print(f"+ binding 已添加")
+
+cfg_path.write_text(json.dumps(data, ensure_ascii=False, indent=2))
+print("✅ 写入完成")
+EOF
+```
+
+---
+
+### 3. 建 workspace 和 SOUL
+
+```bash
+mkdir -p ~/.openclaw/workspace/agents/wechat
+
+cat > ~/.openclaw/workspace/agents/wechat/SOUL.md << 'EOF'
+# Soul
+
+你是 Hou 的私人助手，通过微信聊天。
+可以聊任何话题：日常、技术、投资、新闻、瞎扯都行。
+风格自然随意，像朋友一样。用中文回复，技术词汇可以夹英文。
+EOF
+```
+
+---
+
+### 4. 重启
+
+```bash
+systemctl --user restart openclaw-gateway
+systemctl --user status openclaw-gateway --no-pager | tail -3
+```
+
+---
+
+### 关键点备忘
+
+| 项目 | 说明 |
+|------|------|
+| channel 名 | `openclaw-weixin`（固定） |
+| accountId | 从 `accounts.json` 读，**不能省略**，否则路由不生效 |
+| SOUL.md | 放在 workspace 目录下，定义性格 |
+| Telegram 脚本 | `create_independent_bot_agent.sh` 不适用微信，需手动操作 |
