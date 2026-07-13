@@ -241,6 +241,8 @@
   - [36. Advances and Future Challenges in Monolithic 3D Integrated Logic, Power, and Optoelectronics Technologies for Tightly Interconnected Intelligent Systems](#36-advances-and-future-challenges-in-monolithic-3d-integrated-logic-power-and-optoelectronics-technologies-for-tightly-interconnected-intelligent-systems)
   - [37. Room-temperature single-photon emission from III-nitride nanowire quantum dots: towards realization of the photonic qubit-based quantum computer](#37-room-temperature-single-photon-emission-from-iii-nitride-nanowire-quantum-dots-towards-realization-of-the-photonic-qubit-based-quantum-computer)
   - [38. Unveiling asymmetric carrier dynamics and space-charge compensation in InGaN/GaN multiple quantum wells via capacitance transient spectroscopy](#38-unveiling-asymmetric-carrier-dynamics-and-space-charge-compensation-in-ingangan-multiple-quantum-wells-via-capacitance-transient-spectroscopy)
+  - [39. nanoLED Wavelength Division Multiplexer Analysis](#39-nanoled-wavelength-division-multiplexer-analysis)
+  - [40. Efficient Coupling of an Optical Antenna-LED to a Single-Mode Waveguide](#40-efficient-coupling-of-an-optical-antenna-led-to-a-single-mode-waveguide)
 
 链接不需要加<>，直接copy https链接
 
@@ -1189,3 +1191,11 @@ https://doi.org/10.1039/D5CE01123J
 ## 38. Unveiling asymmetric carrier dynamics and space-charge compensation in InGaN/GaN multiple quantum wells via capacitance transient spectroscopy
 
 https://doi.org/10.1063/5.0340402
+
+## 39. nanoLED Wavelength Division Multiplexer Analysis
+
+https://doi.org/10.1364/CLEO_QELS.2019.FW3C.6
+
+## 40. Efficient Coupling of an Optical Antenna-LED to a Single-Mode Waveguide
+
+https://doi.org/10.1109/IPC47351.2020.9252248
