@@ -243,6 +243,8 @@
   - [38. Unveiling asymmetric carrier dynamics and space-charge compensation in InGaN/GaN multiple quantum wells via capacitance transient spectroscopy](#38-unveiling-asymmetric-carrier-dynamics-and-space-charge-compensation-in-ingangan-multiple-quantum-wells-via-capacitance-transient-spectroscopy)
   - [39. nanoLED Wavelength Division Multiplexer Analysis](#39-nanoled-wavelength-division-multiplexer-analysis)
   - [40. Efficient Coupling of an Optical Antenna-LED to a Single-Mode Waveguide](#40-efficient-coupling-of-an-optical-antenna-led-to-a-single-mode-waveguide)
+  - [41. Investigation of the Purcell effect in GaN-based vertical LED structures using FDTD simulation](#41-investigation-of-the-purcell-effect-in-gan-based-vertical-led-structures-using-fdtd-simulation)
+  - [42. Surface-plasmon-enhanced light emitters based on InGaN quantum wells](#42-surface-plasmon-enhanced-light-emitters-based-on-ingan-quantum-wells)
 
 链接不需要加<>，直接copy https链接
 
@@ -1199,3 +1201,13 @@ https://doi.org/10.1364/CLEO_QELS.2019.FW3C.6
 ## 40. Efficient Coupling of an Optical Antenna-LED to a Single-Mode Waveguide
 
 https://doi.org/10.1109/IPC47351.2020.9252248
+
+## 41. Investigation of the Purcell effect in GaN-based vertical LED structures using FDTD simulation 
+
+https://link.springer.com/article/10.1007/s11082-015-0276-1
+
+DOI: 10.1007/s11082-015-0276-1
+
+## 42. Surface-plasmon-enhanced light emitters based on InGaN quantum wells
+
+https://www.nature.com/articles/nmat1198
