@@ -6,6 +6,9 @@
   - [4. Toripalimab Plus Chemotherapy as a First-Line Therapy for Extensive-Stage Small Cell Lung Cancer](#4-toripalimab-plus-chemotherapy-as-a-first-line-therapy-for-extensive-stage-small-cell-lung-cancer)
   - [5. Gallium Nitride and Related Materials: Device Processing and Materials](#5-gallium-nitride-and-related-materials-device-processing-and-materials)
   - [6. LED LIGHTING: DEVICES AND COLORIMETRY](#6-led-lighting-devices-and-colorimetry)
+  - [7. High bandwidth InGaN/GaN micro-LEDs 视频](#7-high-bandwidth-ingangan-micro-leds-视频)
+  - [8. Recent advances in micron scale III-nitrides based RGB MicroLEDs 视频](#8-recent-advances-in-micron-scale-iii-nitrides-based-rgb-microleds-视频)
+  - [9. Investigation of Luminescence Spectra for InGaN/GaN Rectangular, Trapezoidal, and Triangular MQW Light-Emitting Diodes 书](#9-investigation-of-luminescence-spectra-for-ingangan-rectangular-trapezoidal-and-triangular-mqw-light-emitting-diodes-书)
 - [已下载（非数据库内容）](#已下载非数据库内容)
   - [1.Introduction to the Light-Emitting Diode - 已下载](#1introduction-to-the-light-emitting-diode---已下载)
   - [2.李振浩博士论文 - 已打印](#2李振浩博士论文---已打印)
@@ -287,6 +290,17 @@ https://books.google.fr/books?hl=en&lr=lang_en&id=F5ZYEQAAQBAJ&oi=fnd&pg=PA419&o
 ## 6. LED LIGHTING: DEVICES AND COLORIMETRY
 
 https://spie.org/Publications/Book/100371
+
+## 7. High bandwidth InGaN/GaN micro-LEDs 视频
+https://doi.org/10.1117/12.3100532
+
+## 8. Recent advances in micron scale III-nitrides based RGB MicroLEDs 视频
+
+https://www.researchgate.net/publication/378934633_Recent_advances_in_micron_scale_III-nitrides_based_RGB_MicroLEDs 
+
+## 9. Investigation of Luminescence Spectra for InGaN/GaN Rectangular, Trapezoidal, and Triangular MQW Light-Emitting Diodes 书
+
+https://link.springer.com/article/10.1134/S1063783425601328 
 
 # 已下载（非数据库内容）
 
