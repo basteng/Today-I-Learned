@@ -249,6 +249,8 @@
   - [41. Investigation of the Purcell effect in GaN-based vertical LED structures using FDTD simulation](#41-investigation-of-the-purcell-effect-in-gan-based-vertical-led-structures-using-fdtd-simulation)
   - [42. Surface-plasmon-enhanced light emitters based on InGaN quantum wells](#42-surface-plasmon-enhanced-light-emitters-based-on-ingan-quantum-wells)
 - [**From 20260718**](#from-20260718)
+  - [1.Optical Interconnects for Future Advanced Antenna Systems: Architectures, Requirements and Technologies](#1optical-interconnects-for-future-advanced-antenna-systems-architectures-requirements-and-technologies)
+  - [2. A review of gallium nitride LEDs for multi-gigabit-per-second visible light data communications](#2-a-review-of-gallium-nitride-leds-for-multi-gigabit-per-second-visible-light-data-communications)
 
 链接不需要加<>，直接copy https链接
 
@@ -1228,3 +1230,11 @@ DOI: 10.1007/s11082-015-0276-1
 https://www.nature.com/articles/nmat1198
 
 # **From 20260718**
+
+## 1.Optical Interconnects for Future Advanced Antenna Systems: Architectures, Requirements and Technologies
+
+https://doi.org/10.1109/JLT.2021.3113999
+
+## 2. A review of gallium nitride LEDs for multi-gigabit-per-second visible light data communications
+
+https://iopscience.iop.org/article/10.1088/1361-6641/32/2/023001
