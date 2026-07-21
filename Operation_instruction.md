@@ -2252,9 +2252,9 @@ sudo journalctl -u shadowsocks-libev-redir@redir-macmini -f
 **本身上网：** 直连主路由出去
 
 **提供的服务：**
-- `ss-redir @ port 1082` → 给 Mac Mini 用，服务器 `149.248.1.201:20004`
+- `ss-redir @ port 1082` → 给 Mac Mini 用，服务器 `149.248.1.201:19999`
 - `ss-local @ port 1080` (SOCKS5) → 给 Privoxy 用
-- `Privoxy @ port 8118` (HTTP代理) → `1080` → `149.248.1.201:20004` → 给 Pi5 OpenClaw 用
+- `Privoxy @ port 8118` (HTTP代理) → `1080` → `149.248.1.201:19999` → 给 Pi5 OpenClaw 用
 - `iptables 透明代理` → 拦截 Mac Mini 流量重定向到 1082
 
 ---
@@ -2264,7 +2264,7 @@ sudo journalctl -u shadowsocks-libev-redir@redir-macmini -f
 **网关指向 Pi4**，所有流量先到 Pi4 的 iptables：
 
 - 国内 IP → 直连出去
-- 境外 IP → 透明重定向到 `port 1082` → `149.248.1.201:20004` → 出去
+- 境外 IP → 透明重定向到 `port 1082` → `149.248.1.201:19999` → 出去
 - 不需要任何代理配置，对 Mac Mini 完全透明
 
 ---
@@ -2276,7 +2276,7 @@ sudo journalctl -u shadowsocks-libev-redir@redir-macmini -f
 | 流量类型 | 出口 |
 |---------|------|
 | 系统一般流量 | Cloudflare WARP |
-| OpenClaw（Claude等） | `HTTPS_PROXY=192.168.0.105:8118` → Pi4 Privoxy → `149.248.1.201:20004` |
+| OpenClaw（Claude等） | `HTTPS_PROXY=192.168.0.105:8118` → Pi4 Privoxy → `149.248.1.201:19999` |
 | OpenAI/Telegram/GitHub | `NO_PROXY` 直连，走 WARP |
 
 ---
