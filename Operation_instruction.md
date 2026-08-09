@@ -128,6 +128,7 @@
     - [3. 建 workspace 和 SOUL](#3-建-workspace-和-soul)
     - [4. 重启](#4-重启)
     - [关键点备忘](#关键点备忘)
+- [49. tmux](#49-tmux)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2487,3 +2488,77 @@ systemctl --user status openclaw-gateway --no-pager | tail -3
 | accountId | 从 `accounts.json` 读，**不能省略**，否则路由不生效 |
 | SOUL.md | 放在 workspace 目录下，定义性格 |
 | Telegram 脚本 | `create_independent_bot_agent.sh` 不适用微信，需手动操作 |
+
+# 49. tmux
+
+用 tmux/screen 在树莓派那端开会话：即使 iPad 端断开，SSH 连接虽然断了，但树莓派上的任务/shell 会话不受影响，回来重新 SSH 进去再 `tmux attach` 就能接回原来的状态  这个是什么意思
+
+意思是：**把你的终端会话"寄存"在树莓派上，而不是寄存在 iPad 上**。
+
+正常情况下你 SSH 连进树莓派，跑的命令、开的窗口，本质上是依附在这次 SSH 连接上的——**连接一断，这个会话就没了**（进程可能被杀、你输入到一半的东西也没了）。iSH 被 iOS 挂后台就是导致连接断开的原因。
+
+tmux（或 screen）的作用是在树莓派上创建一个"独立于 SSH 连接"的持久化终端会话：
+
+**具体流程：**
+
+1. SSH 连进树莓派后，启动一个 tmux 会话：
+```bash
+tmux new -s work
+```
+这会打开一个新的终端窗口（在 tmux 里面）。
+
+2. 你在这个 tmux 窗口里正常操作、跑命令，比如：
+```bash
+python long_running_script.py
+```
+
+3. iSH 被 iOS 挂后台，SSH 连接断了。**但因为这个进程是跑在 tmux 会话里，而 tmux 是运行在树莓派上的一个独立进程**，跟你的 SSH 连接没有绑定关系，所以 SSH 断了，tmux 里的东西照样在树莓派上跑着，没受影响。
+
+4. 你回到 iSH，重新 SSH 连进树莓派：
+```bash
+ssh -p <端口> basteng@<地址>
+```
+
+5. 用这条命令"接回"刚才那个 tmux 会话，就像什么都没发生过一样，之前的输出、正在跑的程序都还在：
+```bash
+tmux attach -t work
+```
+
+**核心比喻**：SSH 连接就像一根电话线，tmux 会话是电话那头的人在做的事。电话线断了（SSH 断连），那头的人（tmux 里的任务）并没有停下来，只是你暂时听不到他说话了。你再打一次电话（重新 SSH + attach），就能接着听。
+
+如果你的树莓派上经常跑一些耗时任务（编译、下载、脚本），强烈建议养成习惯先 `tmux new -s <名字>` 再干活，这样完全不怕 SSH 断连。
+
+tmux attach -t work  这里是通过work这个名字来确定是刚才执行的任务吗
+
+对，`work` 就是你给这个 tmux 会话起的名字（session name），`tmux attach -t work` 就是"接回名字叫 work 的这个会话"。
+
+准确说，`work` 标识的是**会话本身**，不是某个具体任务——会话里你可以开好几个窗口/面板，跑好几个不同的命令，`work` 这个名字对应的是整个终端环境，不是单独指某一个进程。
+
+**几个实用细节：**
+
+1. **名字随便起，方便区分多个会话**，比如你同时跑几个不同任务：
+```bash
+tmux new -s download    # 跑下载任务
+tmux new -s compile     # 跑编译任务
+```
+下次接回哪个就 `tmux attach -t download` 或 `tmux attach -t compile`。
+
+2. **忘了叫什么名字也没关系**，先列出所有会话：
+```bash
+tmux ls
+```
+会显示类似：
+```
+work: 1 windows (created ...)
+download: 2 windows (created ...)
+```
+再根据名字 attach。
+
+3. **如果创建时没起名字**（直接 `tmux` 不加 `-s`），系统会自动编号（0、1、2...），这时候接回就是：
+```bash
+tmux attach -t 0
+```
+
+4. **一台机器上可以同时存在很多个会话**，互不干扰，只要不手动 kill 掉，重启机器之前会一直保留在后台。
+
+所以本质上 `work` 只是个"标签"，方便你在多个持久化会话之间切换，不是任务本身的标识。
