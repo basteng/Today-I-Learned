@@ -251,6 +251,9 @@
 - [**From 20260718**](#from-20260718)
   - [1.Optical Interconnects for Future Advanced Antenna Systems: Architectures, Requirements and Technologies](#1optical-interconnects-for-future-advanced-antenna-systems-architectures-requirements-and-technologies)
   - [2. A review of gallium nitride LEDs for multi-gigabit-per-second visible light data communications](#2-a-review-of-gallium-nitride-leds-for-multi-gigabit-per-second-visible-light-data-communications)
+  - [3. All-GaN Monolithic 2T1C-μLED Pixel with MHz Optical Modulation for High-Refresh-Rate Microdisplays](#3-all-gan-monolithic-2t1c-μled-pixel-with-mhz-optical-modulation-for-high-refresh-rate-microdisplays)
+  - [4. Green LEDs with V-defects formed from intentional dislocation half-loops](#4-green-leds-with-v-defects-formed-from-intentional-dislocation-half-loops)
+  - [5. Large Modulation Bandwidth GaN-Based Micro-LED Arrays on Si Substrates With Graded in Composition Barriers](#5-large-modulation-bandwidth-gan-based-micro-led-arrays-on-si-substrates-with-graded-in-composition-barriers)
 
 链接不需要加<>，直接copy https链接
 
@@ -1238,3 +1241,16 @@ https://doi.org/10.1109/JLT.2021.3113999
 ## 2. A review of gallium nitride LEDs for multi-gigabit-per-second visible light data communications
 
 https://iopscience.iop.org/article/10.1088/1361-6641/32/2/023001
+
+## 3. All-GaN Monolithic 2T1C-μLED Pixel with MHz Optical Modulation for High-Refresh-Rate Microdisplays
+
+https://doi.org/10.1109/LED.2026.3718731
+
+## 4. Green LEDs with V-defects formed from intentional dislocation half-loops
+
+https://doi.org/10.1063/5.0339738
+
+## 5. Large Modulation Bandwidth GaN-Based Micro-LED Arrays on Si Substrates With Graded in Composition Barriers
+
+https://doi.org/10.1109/LED.2024.3495654
+
