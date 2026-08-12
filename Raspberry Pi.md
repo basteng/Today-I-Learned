@@ -159,6 +159,12 @@
   - [五、当前流量逻辑](#五当前流量逻辑)
 - [23. PCIE](#23-pcie)
   - [默认PCIE是不启动的，需要设置](#默认pcie是不启动的需要设置)
+- [24. 升级gridcoion](#24-升级gridcoion)
+  - [1. Check your setup](#1-check-your-setup)
+  - [2. Stop Gridcoin and back up](#2-stop-gridcoin-and-back-up)
+  - [3. Upgrade using an ARM package](#3-upgrade-using-an-arm-package)
+  - [4. Build on the Pi if no ARM package exists](#4-build-on-the-pi-if-no-arm-package-exists)
+  - [5. Start and verify](#5-start-and-verify)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2865,3 +2871,155 @@ PREROUTING (wlan0 TCP)
 sudo nano /boot/firmware/config.txt
 在最后添加
 dtparam=pciex1
+
+# 24. 升级gridcoion
+
+To upgrade a Gridcoin wallet on a Raspberry Pi, **back up the wallet, stop the running client cleanly, then replace only the executable/package—not the data directory**. Your keys and wallet live in `~/.GridcoinResearch`, so do not delete that folder. [gridcoin](https://gridcoin.us/wiki/faq.html)
+
+## 1. Check your setup
+
+```bash
+uname -m
+cat /etc/os-release
+which gridcoinresearchd gridcoinresearch-qt
+gridcoinresearchd --version 2>/dev/null || gridcoinresearch-qt --version
+```
+
+Typical architectures:
+
+- `armv7l` = 32-bit Raspberry Pi OS (`armhf`)
+- `aarch64` = 64-bit Raspberry Pi OS (`arm64`)
+
+The latest tagged mainnet release visible in the project repository is 5.4.9.0; its Debian binaries are listed for `amd64`, so Raspberry Pi users may need to build from source unless a trusted maintainer supplies an ARM package for their exact OS/architecture. Do **not** install an `amd64` `.deb` on the Pi. [github](https://github.com/gridcoin-community/Gridcoin-Research/releases)
+
+## 2. Stop Gridcoin and back up
+
+If you run the daemon:
+
+```bash
+gridcoinresearchd stop
+```
+
+If it is managed by systemd:
+
+```bash
+sudo systemctl stop gridcoinresearchd
+```
+
+Confirm no wallet process remains:
+
+```bash
+pgrep -a -f 'gridcoinresearch|gridcoinresearchd'
+```
+
+Back up the wallet and configuration to another device or USB disk:
+
+```bash
+mkdir -p ~/gridcoin-backup-$(date +%F)
+cp -a ~/.GridcoinResearch/wallet.dat \
+      ~/.GridcoinResearch/gridcoinresearch.conf \
+      ~/.GridcoinResearch/walletbackups \
+      ~/gridcoin-backup-$(date +%F)/ 2>/dev/null
+```
+
+Then copy that backup directory **off the Pi**. Gridcoin also makes periodic backups under `~/.GridcoinResearch/walletbackups`, but keep an independent backup before upgrading. [gridcoin](https://gridcoin.us/wiki/faq.html)
+
+If your wallet is encrypted, ensure you know the passphrase. A `wallet.dat` backup without its passphrase may not be useful.
+
+## 3. Upgrade using an ARM package
+
+If you have a release `.deb` specifically matching your Pi OS and architecture—such as `*_armhf.deb` for a 32-bit OS or `*_arm64.deb` for 64-bit—install it over the existing wallet:
+
+```bash
+cd ~/Downloads
+sudo apt update
+sudo apt install ./gridcoinresearchd_<VERSION>_<ARCH>.deb
+```
+
+For the graphical wallet, use the corresponding `gridcoinresearch-qt_...deb` package:
+
+```bash
+sudo apt install ./gridcoinresearch-qt_<VERSION>_<ARCH>.deb
+```
+
+If APT reports unresolved dependencies:
+
+```bash
+sudo dpkg -i ./gridcoinresearchd_<VERSION>_<ARCH>.deb
+sudo apt -f install
+```
+
+Use packages obtained from the official Gridcoin GitHub releases or a trusted distribution maintainer, and verify the published SHA-256 file when available. The project explicitly recommends installing over the old client and preserving the data directory. [gridcoin](https://gridcoin.us/wiki/faq.html)
+
+## 4. Build on the Pi if no ARM package exists
+
+For a headless/staking Pi, building `gridcoinresearchd` is generally preferable to installing Qt GUI dependencies.
+
+```bash
+sudo apt update
+sudo apt full-upgrade
+sudo apt install -y git cmake build-essential pkgconf \
+  libssl-dev libboost-all-dev libcurl4-openssl-dev \
+  libzip-dev libminiupnpc-dev
+```
+
+Clone the stable release tag, rather than the development branch:
+
+```bash
+cd ~
+git clone https://github.com/gridcoin-community/Gridcoin-Research.git
+cd Gridcoin-Research
+git checkout 5.4.9.0-leisure
+```
+
+Build and install:
+
+```bash
+mkdir -p build
+cd build
+cmake ..
+cmake --build . -j"$(nproc)"
+sudo cmake --install .
+```
+
+The upstream README lists CMake, OpenSSL, Boost, curl, libzip, and miniupnpc as core build dependencies, and supports a CMake build via `cmake ..` followed by `cmake --build .`. Qt and QR-code libraries are only needed if you build the GUI. [github](https://github.com/gridcoin-community/Gridcoin-Research/blob/development/README.md)
+
+If `cmake --install .` is unsupported by your build configuration, copy the resulting daemon binary only after locating it:
+
+```bash
+find . -type f -name gridcoinresearchd -executable
+```
+
+Then place it in a directory in your `PATH`, commonly `/usr/local/bin`, while retaining the old binary until you have verified startup.
+
+## 5. Start and verify
+
+Start the wallet again:
+
+```bash
+sudo systemctl start gridcoinresearchd
+sudo systemctl status gridcoinresearchd --no-pager
+```
+
+Or, if you do not use systemd:
+
+```bash
+gridcoinresearchd -daemon
+```
+
+Check version and synchronization:
+
+```bash
+gridcoinresearchd --version
+gridcoinresearchd getblockcount
+gridcoinresearchd getwalletinfo
+```
+
+View logs if it fails to start:
+
+```bash
+tail -n 100 ~/.GridcoinResearch/debug.log
+journalctl -u gridcoinresearchd -n 100 --no-pager
+```
+
+If the upgrade requires a blockchain rebuild or the node is clearly stuck, leave `wallet.dat` intact. Gridcoin’s documented recovery path is to stop the client and remove only chain-state items such as `accrual/`, `txleveldb/`, and `blk00*.dat`, then restart and resync. [gridcoin](https://gridcoin.us/wiki/faq.html)
