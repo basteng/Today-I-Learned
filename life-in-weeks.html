@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>Life in Weeks</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg: #eef1f2;
+    --fg: #1b232b;
+    --muted: #62707d;
+    --grid-line: #d7dee2;
+    --box-empty: #e2e8eb;
+    --box-past: #b9c4ca;
+    --box-future: #e9edef;
+    --accent: #c1502e;
+    --header-bg: #eef1f2;
+    --serif: Iowan Old Style, "Palatino Linotype", Palatino, Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12171a;
+      --fg: #e6ebed;
+      --muted: #8b99a1;
+      --grid-line: #262f34;
+      --box-empty: #1b2226;
+      --box-past: #37444b;
+      --box-future: #191f23;
+      --accent: #e2764f;
+      --header-bg: #12171a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12171a;
+    --fg: #e6ebed;
+    --muted: #8b99a1;
+    --grid-line: #262f34;
+    --box-empty: #1b2226;
+    --box-past: #37444b;
+    --box-future: #191f23;
+    --accent: #e2764f;
+    --header-bg: #12171a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.5rem 6rem;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--sans);
+  }
+  header.page-head { max-width: 960px; margin: 0 auto 2.25rem; }
+  h1 {
+    margin: 0 0 0.3rem; font-size: 1.85rem; font-family: var(--serif);
+    font-weight: 400; letter-spacing: 0.01em; text-wrap: balance;
+  }
+  .subtitle {
+    color: var(--muted); font-size: 0.82rem; margin: 0;
+    font-family: var(--mono); font-variant-numeric: tabular-nums;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; }
+
+  .legend {
+    display: flex; flex-wrap: wrap; gap: 0.5rem 1rem;
+    margin: 1.5rem 0 2.25rem; padding: 0.65rem 0.85rem;
+    border: 1px solid var(--grid-line); border-radius: 8px;
+    font-size: 0.76rem; color: var(--muted); background: var(--box-future);
+  }
+  .legend-item { display: flex; align-items: center; gap: 0.4rem; }
+  .swatch { width: 0.65rem; height: 0.65rem; border-radius: 2px; display: inline-block; }
+
+  .decade {
+    position: sticky; top: 0; z-index: 2;
+    background: var(--header-bg);
+    padding: 0.7rem 0 0.35rem;
+    font-size: 0.7rem; font-weight: 600; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 0.12em;
+    border-bottom: 1px solid var(--grid-line);
+    margin-top: 2rem;
+  }
+  .decade:first-of-type { margin-top: 0; }
+
+  .year-row { display: flex; align-items: center; gap: 0.65rem; margin: 3px 0; }
+  .year-label {
+    width: 2rem; flex: none; text-align: right;
+    font-size: 0.68rem; color: var(--muted);
+    font-family: var(--mono); font-variant-numeric: tabular-nums;
+  }
+  .weeks { display: flex; flex-wrap: wrap; gap: 3px; flex: 1; }
+
+  .week {
+    width: 11px; height: 11px;
+    background: var(--box-empty);
+    border-radius: 2px;
+    cursor: default;
+    position: relative;
+  }
+  .week.past { background: var(--box-past); }
+  .week.future { background: var(--box-future); }
+  .week.has-event { cursor: pointer; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.18); }
+  .week.today { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .week:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+  .tooltip {
+    position: fixed;
+    max-width: 260px;
+    background: var(--fg);
+    color: var(--bg);
+    padding: 0.6rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    line-height: 1.35;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    z-index: 10;
+    pointer-events: none;
+    display: none;
+  }
+  .tooltip.visible { display: block; }
+  .tooltip .t-name { font-weight: 600; margin-bottom: 0.15rem; }
+  .tooltip .t-date { opacity: 0.7; font-size: 0.7rem; margin-bottom: 0.3rem; }
+  .tooltip .t-desc { opacity: 0.9; }
+  .tooltip a { color: inherit; text-decoration: underline; }
+
+  footer.hint {
+    max-width: 960px; margin: 2.5rem auto 0; font-size: 0.78rem; color: var(--muted);
+  }
+  code { background: var(--box-empty); padding: 0.1rem 0.3rem; border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<header class="page-head">
+  <h1 id="page-title">Life in Weeks</h1>
+  <p class="subtitle" id="page-subtitle"></p>
+</header>
+
+<div class="wrap">
+  <div class="legend" id="legend"></div>
+  <div id="grid"></div>
+</div>
+
+<footer class="hint">
+  编辑本文件顶部 <code>&lt;script&gt;</code> 里的 <code>CONFIG</code> 和 <code>EVENTS</code>（标了 <code>EDIT ME</code>
+  的部分），改成你自己的出生日期和人生事件，保存后刷新浏览器即可。整个页面零依赖，纯 HTML + CSS + JS。
+</footer>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+/* ======================================================================
+ * EDIT ME — 把下面这一块换成你自己的信息
+ * ==================================================================== */
+const CONFIG = {
+  title: "Life in Weeks",
+  birthDate: "1980-01-31",   // 你的出生日期 (YYYY-MM-DD)
+  endYear: 2070,             // 画到哪一年为止（比如 出生年份 + 90）
+};
+
+// key 为 'YYYY-MM-DD'，value 为这一天所在那一周发生的事件列表
+const EVENTS = {
+  "1980-01-31": [
+    { name: "🎉 我出生了", category: "self",
+      desc: "把这一条换成你自己的出生故事。" }
+  ],
+  "1986-09-01": [
+    { name: "🏫 小学开学", category: "school" }
+  ],
+  "1992-09-01": [
+    { name: "🏫 初中开学", category: "school" }
+  ],
+  "1995-09-01": [
+    { name: "🏫 高中开学", category: "school" }
+  ],
+  "1998-09-01": [
+    { name: "🎓 大学开学", category: "school" }
+  ],
+  "2002-09-01": [
+    { name: "🎓 硕士研究生开学", category: "school" }
+  ],
+  "2009-09-01": [
+    { name: "🎓 博士研究生开学", category: "school" }
+  ],
+  "2026-08-15": [
+    { name: "📝 做了这个 Life in Weeks 页面", category: "self" }
+  ],
+};
+
+// 分类 -> 颜色，可以按需增删
+const CATEGORY_COLORS = {
+  self:          "#c98a3e",
+  family:        "#b25a6c",
+  relationships: "#9c3f4a",
+  school:        "#3f7ea3",
+  work:          "#4c8f72",
+  writing:       "#7c6aa6",
+  world:         "#5b6773",
+  birthday:      "#cf7b33",
+  travel:        "#2f8f9c",
+};
+/* ==================================================================== */
+
+document.getElementById("page-title").textContent = CONFIG.title;
+
+function parseISO(s) {
+  const [y, m, d] = s.split("-").map(Number);
+  return new Date(y, m - 1, d);
+}
+function addDays(date, n) {
+  const d = new Date(date);
+  d.setDate(d.getDate() + n);
+  return d;
+}
+function fmt(date) {
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, "0");
+  const d = String(date.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
+}
+
+const birth = parseISO(CONFIG.birthDate);
+const end = new Date(CONFIG.endYear, 11, 31);
+const today = new Date();
+
+document.getElementById("page-subtitle").textContent =
+  `从 ${fmt(birth)} 起，每个方格代表一周，共约 ${Math.round((end - birth) / (7 * 86400000))} 周`;
+
+// index events by week-start (Sunday-aligned to birth weekday for simplicity: aligned to birth date)
+const eventsByWeekStart = new Map();
+for (const [dateStr, list] of Object.entries(EVENTS)) {
+  const d = parseISO(dateStr);
+  const weeksSinceBirth = Math.floor((d - birth) / (7 * 86400000));
+  const weekStart = fmt(addDays(birth, weeksSinceBirth * 7));
+  if (!eventsByWeekStart.has(weekStart)) eventsByWeekStart.set(weekStart, []);
+  eventsByWeekStart.get(weekStart).push(...list.map(e => ({ ...e, date: dateStr })));
+}
+
+// legend
+const usedCategories = new Set();
+for (const list of Object.values(EVENTS)) for (const e of list) usedCategories.add(e.category || "other");
+const legend = document.getElementById("legend");
+for (const cat of usedCategories) {
+  const color = CATEGORY_COLORS[cat] || "#9ca3af";
+  const item = document.createElement("div");
+  item.className = "legend-item";
+  item.innerHTML = `<span class="swatch" style="background:${color}"></span><span>${cat}</span>`;
+  legend.appendChild(item);
+}
+
+// build grid, grouped by decade (every 10 years from birth year)
+const grid = document.getElementById("grid");
+let cursor = new Date(birth);
+let yearIndex = 0;
+let currentDecadeEl = null;
+
+while (cursor.getFullYear() <= end.getFullYear()) {
+  if (yearIndex % 10 === 0) {
+    const decadeHeader = document.createElement("div");
+    decadeHeader.className = "decade";
+    decadeHeader.textContent = `${yearIndex} - ${yearIndex + 9} 岁`;
+    grid.appendChild(decadeHeader);
+  }
+
+  const row = document.createElement("div");
+  row.className = "year-row";
+  const label = document.createElement("div");
+  label.className = "year-label";
+  label.textContent = yearIndex;
+  row.appendChild(label);
+
+  const weeksWrap = document.createElement("div");
+  weeksWrap.className = "weeks";
+
+  for (let w = 0; w < 52; w++) {
+    const weekStart = addDays(cursor, w * 7);
+    const weekStartStr = fmt(weekStart);
+    const box = document.createElement("div");
+    box.className = "week";
+
+    if (weekStart <= today) box.classList.add("past"); else box.classList.add("future");
+    if (fmt(weekStart) <= fmt(today) && fmt(addDays(weekStart, 7)) > fmt(today)) box.classList.add("today");
+
+    const evs = eventsByWeekStart.get(weekStartStr);
+    if (evs && evs.length) {
+      box.classList.add("has-event");
+      const color = CATEGORY_COLORS[evs[0].category] || "#9ca3af";
+      box.style.background = color;
+      box.tabIndex = 0;
+      box.setAttribute("role", "button");
+      box.setAttribute("aria-label", evs.map(e => e.name).join("; "));
+      attachTooltip(box, evs);
+    }
+    weeksWrap.appendChild(box);
+  }
+
+  row.appendChild(weeksWrap);
+  grid.appendChild(row);
+
+  cursor = addDays(cursor, 52 * 7);
+  yearIndex++;
+}
+
+// tooltip logic
+const tooltipEl = document.getElementById("tooltip");
+function attachTooltip(box, evs) {
+  function show(x, y) {
+    tooltipEl.innerHTML = evs.map(e => `
+      <div class="t-name">${e.name}</div>
+      <div class="t-date">${e.date}</div>
+      ${e.desc ? `<div class="t-desc">${e.desc}</div>` : ""}
+      ${e.link ? `<div><a href="${e.link}" target="_blank" rel="noopener">${e.link}</a></div>` : ""}
+    `).join("<hr style='opacity:0.2;margin:6px 0'>");
+    const vw = window.innerWidth, vh = window.innerHeight;
+    tooltipEl.style.left = Math.min(x + 12, vw - 280) + "px";
+    tooltipEl.style.top = Math.min(y + 12, vh - 120) + "px";
+    tooltipEl.classList.add("visible");
+  }
+  function hide() { tooltipEl.classList.remove("visible"); }
+
+  box.addEventListener("mouseenter", (ev) => show(ev.clientX, ev.clientY));
+  box.addEventListener("mousemove", (ev) => show(ev.clientX, ev.clientY));
+  box.addEventListener("mouseleave", hide);
+  box.addEventListener("focus", () => {
+    const r = box.getBoundingClientRect();
+    show(r.left, r.bottom);
+  });
+  box.addEventListener("blur", hide);
+  box.addEventListener("click", (ev) => show(ev.clientX, ev.clientY));
+}
+</script>
+</body>
+</html>
