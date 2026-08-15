@@ -198,7 +198,7 @@ const EVENTS = {
     { name: "💍 结婚了", category: "relationships" }
   ],
   "2021-12-21": [
-    { name: "👶 宝宝出生", category: "family" }
+    { name: "👶 宝宝出生", category: "family", hideDate: true }
   ],
   "2026-08-15": [
     { name: "📝 做了这个 Life in Weeks 页面", category: "self" },
@@ -327,7 +327,7 @@ function attachTooltip(box, evs) {
   function show(x, y) {
     tooltipEl.innerHTML = evs.map(e => `
       <div class="t-name">${e.name}</div>
-      <div class="t-date">${e.date}</div>
+      ${e.hideDate ? "" : `<div class="t-date">${e.date}</div>`}
       ${e.desc ? `<div class="t-desc">${e.desc}</div>` : ""}
       ${e.link ? `<div><a href="${e.link}" target="_blank" rel="noopener">${e.link}</a></div>` : ""}
     `).join("<hr style='opacity:0.2;margin:6px 0'>");
