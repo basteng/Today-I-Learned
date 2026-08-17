@@ -254,6 +254,7 @@
   - [3. All-GaN Monolithic 2T1C-μLED Pixel with MHz Optical Modulation for High-Refresh-Rate Microdisplays](#3-all-gan-monolithic-2t1c-μled-pixel-with-mhz-optical-modulation-for-high-refresh-rate-microdisplays)
   - [4. Green LEDs with V-defects formed from intentional dislocation half-loops](#4-green-leds-with-v-defects-formed-from-intentional-dislocation-half-loops)
   - [5. Large Modulation Bandwidth GaN-Based Micro-LED Arrays on Si Substrates With Graded in Composition Barriers](#5-large-modulation-bandwidth-gan-based-micro-led-arrays-on-si-substrates-with-graded-in-composition-barriers)
+  - [6. Size-dependent carrier transport and thermal behavior in InGaN quantum-dot-embedded GaN-based VCSELs](#6-size-dependent-carrier-transport-and-thermal-behavior-in-ingan-quantum-dot-embedded-gan-based-vcsels)
 
 链接不需要加<>，直接copy https链接
 
@@ -1253,4 +1254,8 @@ https://doi.org/10.1063/5.0339738
 ## 5. Large Modulation Bandwidth GaN-Based Micro-LED Arrays on Si Substrates With Graded in Composition Barriers
 
 https://doi.org/10.1109/LED.2024.3495654
+
+## 6. Size-dependent carrier transport and thermal behavior in InGaN quantum-dot-embedded GaN-based VCSELs
+
+https://iopscience.iop.org/article/10.1088/1361-6641/ae98ac
 
