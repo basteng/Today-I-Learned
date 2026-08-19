@@ -155,7 +155,7 @@
 const CONFIG = {
   title: "Life in Weeks",
   birthDate: "1980-01-31",   // 你的出生日期 (YYYY-MM-DD)
-  endYear: 2070,             // 画到哪一年为止（比如 出生年份 + 90）
+  endYear: 2079,             // 画到哪一年为止（比如 出生年份 + 99）
 };
 
 // key 为 'YYYY-MM-DD'，value 为这一天所在那一周发生的事件列表
@@ -282,9 +282,9 @@ for (const cat of usedCategories) {
 const grid = document.getElementById("grid");
 let cursor = new Date(birth);
 let yearIndex = 0;
-let currentDecadeEl = null;
+const totalAgeRows = CONFIG.endYear - birth.getFullYear() + 1;
 
-while (cursor.getFullYear() <= end.getFullYear()) {
+while (yearIndex < totalAgeRows) {
   if (yearIndex % 10 === 0) {
     const decadeHeader = document.createElement("div");
     decadeHeader.className = "decade";
