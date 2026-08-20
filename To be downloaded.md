@@ -1259,3 +1259,6 @@ https://doi.org/10.1109/LED.2024.3495654
 
 https://iopscience.iop.org/article/10.1088/1361-6641/ae98ac
 
+## 7. Free-Space Reconfigurable Optical Interconnects for the Next Generation Datacenters
+
+https://doi.org/10.1109/OMN70392.2026.11646797
