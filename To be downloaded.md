@@ -1262,3 +1262,7 @@ https://iopscience.iop.org/article/10.1088/1361-6641/ae98ac
 ## 7. Free-Space Reconfigurable Optical Interconnects for the Next Generation Datacenters
 
 https://doi.org/10.1109/OMN70392.2026.11646797
+
+## 8. Co-packaged optics for high-performance computing and artificial intelligence
+
+https://www.nature.com/articles/s41928-026-01681-6
