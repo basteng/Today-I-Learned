@@ -256,6 +256,9 @@
   - [5. Large Modulation Bandwidth GaN-Based Micro-LED Arrays on Si Substrates With Graded in Composition Barriers](#5-large-modulation-bandwidth-gan-based-micro-led-arrays-on-si-substrates-with-graded-in-composition-barriers)
   - [6. Size-dependent carrier transport and thermal behavior in InGaN quantum-dot-embedded GaN-based VCSELs](#6-size-dependent-carrier-transport-and-thermal-behavior-in-ingan-quantum-dot-embedded-gan-based-vcsels)
   - [7. True-Red InGaN Light-Emitting Diodes for Display Applications](#7-true-red-ingan-light-emitting-diodes-for-display-applications)
+  - [7. Free-Space Reconfigurable Optical Interconnects for the Next Generation Datacenters](#7-free-space-reconfigurable-optical-interconnects-for-the-next-generation-datacenters)
+  - [8. Co-packaged optics for high-performance computing and artificial intelligence](#8-co-packaged-optics-for-high-performance-computing-and-artificial-intelligence)
+  - [9. Optical properties of (In,Ga)N quantum wells: Accurately modeling the effects of disorder](#9-optical-properties-of-ingan-quantum-wells-accurately-modeling-the-effects-of-disorder)
 
 链接不需要加<>，直接copy https链接
 
@@ -1264,3 +1267,14 @@ https://iopscience.iop.org/article/10.1088/1361-6641/ae98ac
 
 https://doi.org/10.1002/pssr.202400012
 
+## 7. Free-Space Reconfigurable Optical Interconnects for the Next Generation Datacenters
+
+https://doi.org/10.1109/OMN70392.2026.11646797
+
+## 8. Co-packaged optics for high-performance computing and artificial intelligence
+
+https://www.nature.com/articles/s41928-026-01681-6
+
+## 9. Optical properties of (In,Ga)N quantum wells: Accurately modeling the effects of disorder
+
+https://journals.aps.org/prapplied/abstract/10.1103/5218-jrqw

@@ -155,7 +155,7 @@
 const CONFIG = {
   title: "Life in Weeks",
   birthDate: "1980-01-31",   // 你的出生日期 (YYYY-MM-DD)
-  endYear: 2070,             // 画到哪一年为止（比如 出生年份 + 90）
+  endYear: 2079,             // 画到哪一年为止（比如 出生年份 + 99）
 };
 
 // key 为 'YYYY-MM-DD'，value 为这一天所在那一周发生的事件列表
@@ -194,6 +194,12 @@ const EVENTS = {
   "2024-02-22": [
     { name: "💼 入职北京电控科技创新部，高级经理", category: "work" }
   ],
+  "2016-10-06": [
+    { name: "💔 妈妈去世", category: "family" }
+  ],
+  "2017-09-19": [
+    { name: "💔 爸爸去世", category: "family" }
+  ],
   "2020-09-19": [
     { name: "💍 结婚了", category: "relationships", hideDate: true }
   ],
@@ -204,6 +210,10 @@ const EVENTS = {
     { name: "📝 做了这个 Life in Weeks 页面", category: "self" },
     { name: "🏆 深势科技黑客松第4季第3轮", category: "self",
       desc: "第一次把 OpenCode 和 Pi 代理调通，用 DeepSeek V4 Flash 在平台上做对了第一道题。" }
+  ],
+  "2026-08-16": [
+    { name: "🏥 岳母胸腺瘤手术", category: "family",
+      desc: "在北京宣武医院。" }
   ],
 };
 
@@ -272,9 +282,9 @@ for (const cat of usedCategories) {
 const grid = document.getElementById("grid");
 let cursor = new Date(birth);
 let yearIndex = 0;
-let currentDecadeEl = null;
+const totalAgeRows = CONFIG.endYear - birth.getFullYear() + 1;
 
-while (cursor.getFullYear() <= end.getFullYear()) {
+while (yearIndex < totalAgeRows) {
   if (yearIndex % 10 === 0) {
     const decadeHeader = document.createElement("div");
     decadeHeader.className = "decade";
