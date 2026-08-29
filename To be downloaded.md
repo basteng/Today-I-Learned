@@ -262,6 +262,7 @@
   - [11. Quantum-well-resolved evaluation of recombination kinetics in InGaN multiple quantum wells: An insight into the role of luminescence enhancement in InGaN underlayer systems](#11-quantum-well-resolved-evaluation-of-recombination-kinetics-in-ingan-multiple-quantum-wells-an-insight-into-the-role-of-luminescence-enhancement-in-ingan-underlayer-systems)
   - [12. Silicon Photonics for Co-Packaged Optics: A Review of Core PIC Components and Industry Strategies](#12-silicon-photonics-for-co-packaged-optics-a-review-of-core-pic-components-and-industry-strategies)
   - [13. Pixel-Engineered Deep Ultraviolet Micro-LED Arrays for High-Speed Optical Interconnects](#13-pixel-engineered-deep-ultraviolet-micro-led-arrays-for-high-speed-optical-interconnects)
+  - [14. Tuning absorptivity and quantum efficiency through In0.3Ga0.7N/GaN quantum-dot size control](#14-tuning-absorptivity-and-quantum-efficiency-through-in03ga07ngan-quantum-dot-size-control)
 
 链接不需要加<>，直接copy https链接
 
@@ -1293,3 +1294,7 @@ https://doi.org/10.1002/admt.71266
 ## 13. Pixel-Engineered Deep Ultraviolet Micro-LED Arrays for High-Speed Optical Interconnects
 
 https://doi.org/10.1002/adom.71648
+
+## 14. Tuning absorptivity and quantum efficiency through In0.3Ga0.7N/GaN quantum-dot size control
+
+https://link.springer.com/article/10.1007/s12596-026-03260-6
