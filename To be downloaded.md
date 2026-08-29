@@ -259,6 +259,9 @@
   - [8. Free-Space Reconfigurable Optical Interconnects for the Next Generation Datacenters](#8-free-space-reconfigurable-optical-interconnects-for-the-next-generation-datacenters)
   - [9. Co-packaged optics for high-performance computing and artificial intelligence](#9-co-packaged-optics-for-high-performance-computing-and-artificial-intelligence)
   - [10. Optical properties of (In,Ga)N quantum wells: Accurately modeling the effects of disorder](#10-optical-properties-of-ingan-quantum-wells-accurately-modeling-the-effects-of-disorder)
+  - [11. Quantum-well-resolved evaluation of recombination kinetics in InGaN multiple quantum wells: An insight into the role of luminescence enhancement in InGaN underlayer systems](#11-quantum-well-resolved-evaluation-of-recombination-kinetics-in-ingan-multiple-quantum-wells-an-insight-into-the-role-of-luminescence-enhancement-in-ingan-underlayer-systems)
+  - [12. Silicon Photonics for Co-Packaged Optics: A Review of Core PIC Components and Industry Strategies](#12-silicon-photonics-for-co-packaged-optics-a-review-of-core-pic-components-and-industry-strategies)
+  - [13. Pixel-Engineered Deep Ultraviolet Micro-LED Arrays for High-Speed Optical Interconnects](#13-pixel-engineered-deep-ultraviolet-micro-led-arrays-for-high-speed-optical-interconnects)
 
 链接不需要加<>，直接copy https链接
 
@@ -1278,3 +1281,15 @@ https://www.nature.com/articles/s41928-026-01681-6
 ## 10. Optical properties of (In,Ga)N quantum wells: Accurately modeling the effects of disorder
 
 https://journals.aps.org/prapplied/abstract/10.1103/5218-jrqw
+
+## 11. Quantum-well-resolved evaluation of recombination kinetics in InGaN multiple quantum wells: An insight into the role of luminescence enhancement in InGaN underlayer systems
+
+https://doi.org/10.1063/5.0338013
+
+## 12. Silicon Photonics for Co-Packaged Optics: A Review of Core PIC Components and Industry Strategies
+
+https://doi.org/10.1002/admt.71266
+
+## 13. Pixel-Engineered Deep Ultraviolet Micro-LED Arrays for High-Speed Optical Interconnects
+
+https://doi.org/10.1002/adom.71648
