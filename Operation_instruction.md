@@ -129,6 +129,7 @@
     - [4. 重启](#4-重启)
     - [关键点备忘](#关键点备忘)
 - [49. tmux](#49-tmux)
+- [50 Claude Science使用流程和踩坑点:](#50-claude-science使用流程和踩坑点)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2562,3 +2563,40 @@ tmux attach -t 0
 4. **一台机器上可以同时存在很多个会话**，互不干扰，只要不手动 kill 掉，重启机器之前会一直保留在后台。
 
 所以本质上 `work` 只是个"标签"，方便你在多个持久化会话之间切换，不是任务本身的标识。
+
+# 50 Claude Science使用流程和踩坑点:
+
+**正常启动流程**
+
+1. 在 WSL 终端里执行:
+```bash
+claude-science serve
+```
+2. 终端日志会打印一个带 nonce 的一次性登录链接,类似:
+```
+Web UI → http://127.0.0.1:8000/?nonce=xxxxxxxx
+```
+3. 直接在 Windows 浏览器里打开这个链接即可进入 Claude Science 的 Web UI——因为你的 WSL2 用的是"镜像网络模式"(`.wslconfig` 里 `networkingMode=mirrored`),WSL 和 Windows 共享同一个网络栈,所以 `127.0.0.1` 在两边是通的,不需要额外做端口转发。
+4. 首次使用/token 过期时,网页会显示登录卡片,点 "Sign in" 走一遍账号授权即可。
+5. 这个链接是一次性的,大约 3 分钟内有效,过期了就重新跑一遍 `claude-science serve`(或者用 `claude-science url` 单独再要一个新链接,不用重启整个 daemon)。
+
+**这次踩的坑,及原因**
+
+1. **HOST_IP 指向错误**:`.bashrc` 里原来的 Clash Verge 代理配置用的是
+   ```bash
+   export HOST_IP=$(ip route show default | awk '{print $3}')
+   export https_proxy="http://$HOST_IP:1080"
+   ```
+   在传统 WSL2 NAT 模式下,`ip route` 拿到的默认网关就是 Windows 主机在 WSL 虚拟网卡上的地址,这样写没问题。但**你用的是镜像网络模式**,这时候默认网关其实是你家路由器的地址(192.168.0.1),不是 Windows 主机本身——所以代理请求被发到了路由器的 1080 端口,自然连不上(Connection refused)。
+   → 解决方法是把代理地址直接写死成 `http://127.0.0.1:1080`,镜像模式下 Windows 主机上跑的 Clash Verge 就能直接被 WSL 访问到。这也是为什么这个 `HOST_IP` 的写法"不知道为什么会错"——它是给 NAT 模式设计的,镜像模式下语义变了。
+
+2. **claude-science 版本过旧**:改完代理后一度还遇到 `ECONNRESET`(连上了又断)和 `invalid_grant: Refresh token expired`,折腾一圈发现根源是 claude-science 本身版本过旧,跑
+   ```bash
+   claude-science update
+   ```
+   更新后问题消失。
+
+**以后建议养成的习惯**
+
+- 如果 WSL 用的是镜像网络模式,涉及"连 Windows 主机上的服务"的配置(代理、本地数据库等),一律用 `127.0.0.1`,不要用 `ip route` 拿到的网关地址。
+- 遇到怪异的登录/网络报错,先跑一下 `claude-science update --check`,排除版本过旧的可能性,能省不少排查时间。
