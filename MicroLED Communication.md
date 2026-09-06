@@ -1,5 +1,52 @@
 - [0. LED通信专题总纲（Academic Agent 汇总）](#0-led通信专题总纲academic-agent-汇总)
+  - [0.1 这个专题的中心正在迁移](#01-这个专题的中心正在迁移)
+  - [0.2 以后建议用三角框架看路线](#02-以后建议用三角框架看路线)
+  - [0.3 microLED 的关键判断](#03-microled-的关键判断)
+  - [0.4 需要长期澄清的系统问题](#04-需要长期澄清的系统问题)
+  - [0.5 目前最值得长期跟踪的主线](#05-目前最值得长期跟踪的主线)
+  - [0.6 这份资料以后建议怎么读](#06-这份资料以后建议怎么读)
 - [0A. 外部高质量综述：Wide and Slow: The Physics of µLED](#0a-外部高质量综述wide-and-slow-the-physics-of-µled)
+  - [Wide and Slow: The Physics of µLED](#wide-and-slow-the-physics-of-µled)
+    - [**Intro**](#intro)
+    - [**The architectural pitch — what µLED wide-and-slow is selling**](#the-architectural-pitch--what-µled-wide-and-slow-is-selling)
+    - [**The mainstream optical link**](#the-mainstream-optical-link)
+    - [**The µLED wide-and-slow alternative**](#the-µled-wide-and-slow-alternative)
+    - [**The pitch — at a glance**](#the-pitch--at-a-glance)
+    - [**So why isn’t this a done deal?**](#so-why-isnt-this-a-done-deal)
+    - [**Part A — Where the Pitch Meets the Physics**](#part-a--where-the-pitch-meets-the-physics)
+    - [**§1 — Why µLEDs are slow: carrier-recombination physics**](#1--why-µleds-are-slow-carrier-recombination-physics)
+      - [**Why c-plane GaN starts slow — the QCSE problem**](#why-c-plane-gan-starts-slow--the-qcse-problem)
+      - [**Where the µLED-bandwidth literature actually clusters**](#where-the-µled-bandwidth-literature-actually-clusters)
+    - [**§2 — The high-current-density problem**](#2--the-high-current-density-problem)
+    - [**§3 — Efficiency droop at high current**](#3--efficiency-droop-at-high-current)
+    - [**§4 — Reliability at high current density and high temperature**](#4--reliability-at-high-current-density-and-high-temperature)
+    - [**§5 — Spectral width and the dispersion ceiling**](#5--spectral-width-and-the-dispersion-ceiling)
+      - [**The fiber**](#the-fiber)
+      - [**The chromatic-dispersion math**](#the-chromatic-dispersion-math)
+      - [**What this gives quantitatively**](#what-this-gives-quantitatively)
+      - [**Verification against MOSAIC’s measured BER vs distance**](#verification-against-mosaics-measured-ber-vs-distance)
+      - [**Modal dispersion: present but sub-dominant**](#modal-dispersion-present-but-sub-dominant)
+      - [**What this means for the architectural pitch**](#what-this-means-for-the-architectural-pitch)
+    - [**Part B — Seven Research Paths in Three Maturity Tiers**](#part-b--seven-research-paths-in-three-maturity-tiers)
+    - [**Tier 1 — Sampling today**](#tier-1--sampling-today)
+      - [**Path A — Defect engineering for fast SRH at low J (Avicena’s CROME)**](#path-a--defect-engineering-for-fast-srh-at-low-j-avicenas-crome)
+      - [**Path B — Coupling engineering (the only IQE-neutral LED-side path)**](#path-b--coupling-engineering-the-only-iqe-neutral-led-side-path)
+      - [**Path C — Si PD via standard CMOS (TSMC CIS process)**](#path-c--si-pd-via-standard-cmos-tsmc-cis-process)
+    - [**Tier 2 — Engineering-stage commercial bets**](#tier-2--engineering-stage-commercial-bets)
+      - [**Path D — Non-polar / semi-polar GaN substrates**](#path-d--non-polar--semi-polar-gan-substrates)
+      - [**Path E — InGaN quantum-dot active region**](#path-e--ingan-quantum-dot-active-region)
+    - [**Tier 3 — Academic frontier**](#tier-3--academic-frontier)
+      - [**Path F — Cavity enhancement (RCLED-style)**](#path-f--cavity-enhancement-rcled-style)
+      - [**Path G — Tunnel-junction stacked LEDs**](#path-g--tunnel-junction-stacked-leds)
+    - [**How the paths combine — and which players use which**](#how-the-paths-combine--and-which-players-use-which)
+    - [**Almost every path costs IQE/EQE**](#almost-every-path-costs-iqeeqe)
+    - [**The other half of wide-and-slow**](#the-other-half-of-wide-and-slow)
+    - [**Part C — The Honest Verdict (LED-physics scope)**](#part-c--the-honest-verdict-led-physics-scope)
+    - [**Where µLED works today**](#where-µled-works-today)
+    - [**Where the per-channel case is open**](#where-the-per-channel-case-is-open)
+    - [**What’s real today, and what’s still engineering work**](#whats-real-today-and-whats-still-engineering-work)
+    - [**What to watch in the next 24 months**](#what-to-watch-in-the-next-24-months)
+    - [**Closing — the per-channel LED-physics verdict**](#closing--the-per-channel-led-physics-verdict)
 - [1.关于封装内光学 I/O 的三个常见误解](#1关于封装内光学-io-的三个常见误解)
 - [2. Lizhenhao Paper](#2-lizhenhao-paper)
   - [2.1 《Bandwidth Analysis of High-Speed InGaN Micro-LEDs by an Equivalent Circuit Model》](#21-bandwidth-analysis-of-high-speed-ingan-micro-leds-by-an-equivalent-circuit-model)
@@ -397,6 +444,12 @@
   - [author: 張珈睿](#author-張珈睿)
   - [别只看矽光子！联发科MicroLED](#别只看矽光子联发科microled)
     - [揭新一代光通讯布局，提供AI系统互连领域新选项…](#揭新一代光通讯布局提供ai系统互连领域新选项)
+- [100. Marvell 收购 Celestial AI：交易梳理](#100-marvell-收购-celestial-ai交易梳理)
+  - [交易本身](#交易本身)
+  - [Celestial AI 的技术方案：确定是硅光,不是 VCSEL](#celestial-ai-的技术方案确定是硅光不是-vcsel)
+  - [硅光 vs VCSEL vs MicroLED:有没有直接对比的论文](#硅光-vs-vcsel-vs-microled有没有直接对比的论文)
+  - [Marvell 为什么愿意花这么多钱](#marvell-为什么愿意花这么多钱)
+  - [我的看法](#我的看法)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -9687,5 +9740,69 @@ MicroLED被视为最精简且可靠的短距离光源选择，具备延迟低、
 [![光通讯技术发光源比较](https://images.ctee.com.tw/newsphoto/2026-02-09/1024/A03AA3_Table_Clipping_02_6.jpg)](https://images.ctee.com.tw/newsphoto/2026-02-09/1024/A03AA3_Table_Clipping_02_6.jpg "放大图片")
 
 
+# 100. Marvell 收购 Celestial AI：交易梳理
 
+## 交易本身
+
+这笔交易是 2025 年 12 月底官宣、2026 年 2 月 1 日完成交割的。结构分两层：前端对价 32.5 亿美元（10 亿美元现金 + 约 2720 万股 Marvell 股票，按 10 日成交量加权均价折算约 22.5 亿美元），外加最多 22.5 亿美元的营收对赌（earnout）——如果 Celestial AI 到 2029 财年末累计营收达到 5 亿美元可拿到部分对赌款，达到 20 亿美元以上才能拿满,所以媒体上出现的"32.5 亿"和"55 亿"两个数字并不矛盾,只是前者是确定对价、后者是加上对赌上限的总额。Marvell 给出的营收预期是 2028 财年 Q4 达到 5 亿美元年化营收、2029 财年末达到 10 亿美元年化,这也解释了为什么把一大半对价做成了跟营收挂钩的对赌——这更像是一笔"押注未来现金流"而非"买现成收入"的交易。
+
+## Celestial AI 的技术方案：确定是硅光,不是 VCSEL
+
+先回答你最关心的问题:Celestial AI 的 Photonic Fabric 走的是**硅光子(Silicon Photonics)路线,不是 VCSEL,更不是 MicroLED**。具体到器件层面有几个关键选择,这些在 OFC 2025(论文 *Photonic Fabric for Memory and Compute Disaggregation*, Sahni 等 16 位作者)、EQEC 2025(*Photonic Fabric™ for Optical Interconnect Networks in AI*, Lazovsky 领衔 17 位作者)以及 CEO Dave Lazovsky 接受 eeNews Europe 采访时讲得比较清楚:
+
+调制器上,他们没有用业界更常见的微环谐振腔调制器(ring modulator),而是选择了电吸收调制器(EAM)。Lazovsky 给出的理由是环形调制器对温度极其敏感,而封装在高功耗 XPU 旁边的光芯片,ASIC 侧和光子侧的热时间常数完全不在一个量级,环形谐振波长会随温度漂移,需要额外的热调谐电路,而 EAM 在约 85℃ 的工作窗口内配合直流偏置补偿就能稳定工作,不需要主动热控,这对于"贴着发热大户 XPU 封装"这个场景是刚需。EAM 用的材料体系是标准 CMOS 兼容的硅光平台,锗硅(SiGe)光电探测器,这也是他们 2024 年花 2000 万美元收购 Rockley Photonics 硅光专利包(涵盖光电集成封装、EAM、光开关三大类)的原因——直接补强这条技术路线的专利壁垒,目前号称专利总数超过 200 件。
+
+波长和复用方式上,用的是 C 波段/L 波段的密集波分复用(WDM)。第一代产品是 4 路 56Gb/s NRZ 波长绑定,合计 224Gb/s;第二代(2025 年底)升级到 8 路 112Gb/s PAM4。Lazovsky 自己说得很直白:"上 WDM 唯一的理由是降低光纤成本",这说明他们对 WDM 的态度是工程务实,而不是为了炫技。
+
+架构上最关键的差异化在于光 I/O 的位置:传统 CPO(不管是 Nvidia、Broadcom 还是 Ayar Labs 的方案)光接口基本还是布在芯片"沿边"(die 边缘的"beachfront"),而多芯粒封装的周长是线性增长、面积是平方增长,边缘迟早会成为带宽瓶颈。Celestial 把光接口做到了封装的中心区域,通过一层叫 PFLink 的光子中介层(interposer)直接垫在 HBM 堆栈下面,这样电学 I/O 和光学 I/O 不再抢占同一片"沿边"资源。链路整体是纯模拟架构,不带数字信号处理(DSP),省掉了 DSP 带来的功耗和延迟开销,这也是它敢喊"纳秒级延迟"的底气。给出的数字是:光链路能效约 6.2pJ/bit,对比 NVLink 的 64.2pJ/bit,大约十倍的功耗优势;第二代芯内能效做到 0.025pJ/bit,封装间 0.7pJ/bit。
+
+内存解耦(memory disaggregation)具体怎么实现:他们自研了一颗 5nm 的"内存模组 ASIC",集成 HBM3e 控制器+PHY、支持 8 通道的 DDR5 控制器+PHY、一个 8Tb/s 的电学交换网络,再挂上光子织物接口。效果是把单颗芯粒可寻址的内存容量从传统 36GB(片上 HBM 上限)拉到 1440GB 的池化规模,通过 CXL 协议把远端内存暴露给 XPU,官方给出的数字是 50 米以上的机架间/跨机架距离下,新增延迟小于 150ns,单模块带宽 16Tbps。Hot Chips 2025 披露的产品化进度是:第一代已经是一款 16 端口光交换机(交换机侧挂内存),用 TSMC 的 CoWoS-L 封装,已经完成 4 次流片。
+
+## 硅光 vs VCSEL vs MicroLED:有没有直接对比的论文
+
+坦白说,我没有找到一篇专门针对"内存解耦场景"、把硅光子、VCSEL、MicroLED 三条路线放在同一张表里做严格头对头对比的同行评审论文。SPIE 有一篇标题非常贴切的会议论文《Development of optical interconnect technologies based on different light sources》,但我这边访问受限(被 CDN 验证挡住),拿不到正文内容,不能替你转述细节,这里如实告知而不是编。能找到的是行业分析/技术媒体给出的三分框架,逻辑上是站得住的,可以作为参考:
+
+InP 边发射激光器(1310/1550nm),受激辐射、相干性好、线宽窄,单模光纤下可以做到公里级距离,但每颗芯片成本较高(800G 模块里大约 80-100 美元的量级),主要用在机柜间/机房间的长距(scale-out)场景,和内存解耦这种短距场景关系不大。
+
+GaAs VCSEL(850nm),表面发射,多模光纤下几十米量级距离,因为可以晶圆级测试和阵列式印刷,单位成本压得非常低,现在的演进方向是"很多路慢速并行"(比如 Coherent 的 wide-and-slow VCSEL CPO 方案,32 路 x 50G),适合短距 scale-up 场景,是 Celestial 硅光路线在成本敏感场景里最直接的竞争对手。
+
+GaN MicroLED,自发辐射、没有阈值电流,功耗可以做到极低(公开数据从 200fJ/bit 降到了 80fJ/bit 的量级),定位是芯片到芯片的超短距(10 米以内)、尤其是内存互连这个具体场景,代表公司是 Avicena(LightBundle 平台),而且它已经和台积电结成了联盟一起推进制造。这条路线正好是你有实际外延生长经验的方向,值得重点盯一下——Avicena 目前更多还处于技术验证和产业联盟阶段,商业化节奏比 Celestial 慢,但如果 TSMC 深度介入制造,长期在成本和功耗上有反超的潜力。
+
+把这三者和 Celestial 放在一起看,我自己的结论是:Celestial/Ayar Labs 这类硅光+EAM(或环形)+WDM 的路线,目前是"带宽密度 x 传输距离"这个乘积上最均衡、也是唯一能兼顾机架内几米和跨机架几十米两种场景的方案,这也是它能被 Nvidia、Broadcom、Marvell 同时选中做主力路线的原因;VCSEL 的优势纯粹是便宜和工艺成熟,适合对延迟/带宽密度要求没那么极致、但对成本极度敏感的场景;MicroLED 理论功耗天花板最低,但目前无论是调制速率、良率还是生态成熟度都还在追赶阶段,是一个"如果做成了,长期最省电"的选项,但短期内还不是主流数据中心的量产选择。这更多是我基于各方公开数据做的定性判断,不是某篇论文的结论,这一点需要跟你说清楚。
+
+## Marvell 为什么愿意花这么多钱
+
+我看下来主要是这几层逻辑叠加:
+
+第一层是行业共识的转向——AI 集群的瓶颈已经从算力(FLOPs)转移到了内存带宽和容量,尤其是 MoE 模型和长上下文/大 KV Cache 的推理场景,单颗 XPU 能直接摸到的 HBM 容量成了硬约束,而铜互连在几米之外的带宽功耗曲线已经很难看,"内存墙"是行业公认要靠光互连才能绕开的问题,Marvell 官方通稿和多家分析都直接用了"break the memory wall"这个提法。
+
+第二层是生态位卡位——Nvidia 靠 NVLink 把 scale-up 互连做成了自己的护城河,Marvell 本身是 AMD、以及一大批做自研 XPU 的超大规模云厂商(往这个方向猜,不点名具体客户)的定制芯片(ASIC)设计伙伴,如果这些客户的自研芯片在机架内/机架间互连上打不过 Nvidia 的 NVLink,Marvell 的定制硅业务本身就会受损。收购 Celestial 让 Marvell 能提供一套开放标准(UALink 做计算间互连、CXL 做内存池化)+ 光互连的整体方案,把"NVLink 级别的性能"卖给所有不想被 Nvidia 绑定的客户,这是防御性也是进攻性的动作。
+
+第三层是补全产品线——Marvell 手上已经有电学 SerDes/PHY、光模块用的 DSP、交换机芯片(Teralynx)、CXL 控制器,唯一缺的就是"贴身"这一段的超低延迟光互连和光子化内存扩展芯片,Celestial 正好填上这块拼图,让 Marvell 能讲一个"从铜到光、从芯片到机柜、从计算到内存"全打通的完整故事,这对于说服超大规模客户把整个互连栈都交给 Marvell 很关键。
+
+第四层是技术就绪度和真实商业化进度——多篇分析都提到 Celestial 的方案"现在就能实际封装"、热稳定性能匹配当下的高功耗 XPU(这也印证了前面提到的 EAM 选型逻辑),而且已经有超大规模云厂商的设计导入(design win),这大幅降低了 Marvell 收购后的整合和商业化风险,对赌条款(收入达标才付满 55 亿)也说明双方对这个"已经有客户在验证"的判断有一定信心,但 Marvell 自己也在用支付结构对冲执行风险。
+
+## 我的看法
+
+我认为这笔交易战略逻辑是成立的,时机也踩得比较准——"内存墙"和"scale-up 光互连不可避免"这两个判断在 2025-2026 年已经基本是行业共识,不是 Marvell 一家的一厢情愿,Nvidia、Broadcom 自己也在往硅光 CPO 走,只是 Marvell 选择用收购而不是自研来快速拿到一条相对成熟、且已经有客户验证的技术路线,速度上比自研更快,但代价是价格不便宜、而且大部分对价放在了未来营收对赌上,说明 Marvell 内部对短期能否真正放量其实是有保留的。
+
+需要留意的风险主要在执行层面:一是封装良率和长期可靠性,EAM+光子中介层贴着 HBM 和高功耗 XPU 这种极端热环境下的量产良率还没有经过大规模验证;二是生态站队问题,UALink/CXL 这条开放路线能不能真正对抗 Nvidia NVLink 的生态引力,很大程度上不取决于技术本身,而取决于 AMD 和主要云厂商是否愿意大规模采用,这是 Marvell 自己控制不了的变量;三是 5 亿到 20 亿美元营收的对赌目标(2028-2029 财年)在时间上其实相当激进,对于一个还没有大规模量产历史的光子集成技术来说,能否按时爬坡存在不确定性。
+
+如果拿你熟悉的 MicroLED 路线做参照,我倒觉得 Avicena 那条线更值得中长期跟踪而不是现在就下结论谁赢——Celestial 现在赢在"已经可以量产验证+被大厂收编",但 MicroLED 在自发辐射带来的功耗天花板上理论优势更大,一旦 TSMC 的制造联盟把良率和调制速率问题解决,在超短距(纯粹的芯片到内存这一段)场景里未必没有反超空间,这个赛道现在远没有到终局。
+
+Sources:
+- [Marvell To Acquire Celestial AI In $3.25 Billion Deal](https://pulse2.com/marvell-to-acquire-celestial-ai-in-3-25-billion-deal-to-accelerate-optical-scale-up-connectivity/)
+- [Celestial AI Acquisition Perfectly Positions Marvell For Upcoming Multi-Rack Scale-Up Boom](https://counterpointresearch.com/en/insights/Celestial-AI-Acquisition-Perfectly-Positions-Marvell-For-Upcoming-Multi-Rack-Scale-Up-Boom)
+- [Marvell Inks $5.5B Celestial AI Deal to Break Memory Wall](https://techarena.ai/content/marvell-inks-5-5b-celestial-ai-deal-to-break-memory-wall)
+- [Marvell Completes Acquisition of Celestial AI](https://www.businesswire.com/news/home/20260201331090/en/marvell-completes-acquisition-of-celestial-ai)
+- [Photonic Fabric for Memory and Compute Disaggregation (OFC 2025)](https://opg.optica.org/abstract.cfm?uri=OFC-2025-W3D.1)
+- [Photonic Fabric™ for Optical Interconnect Networks in AI (EQEC 2025)](https://opg.optica.org/abstract.cfm?uri=EQEC-2025-jsi_1_1)
+- [CEO interview: Celestial AI's terabit optical interconnect](https://www.eenewseurope.com/en/ceo-interview-celestial-ais-terabit-optical-interconnect/)
+- [Celestial AI Photonic Fabric Module at Hot Chips 2025 - ServeTheHome](https://www.servethehome.com/celestial-ai-photonic-fabric-module-at-hot-chips-2025/)
+- [Celestial AI: venture support for advanced interconnect | imec](https://www.imec-int.com/en/articles/deep-tech-venture-support-advanced-optical-interconnect-technology)
+- [Celestial AI Acquires Rockley Photonics Patent Portfolio](https://www.datacenterdynamics.com/en/news/celestial-ai-acquires-rockley-photonics-patent-portfolio-for-20m/)
+- [The AI Light Source War Is Not a Speed Race: InP, VCSEL, and μLED](https://photoncap.net/p/the-ai-light-source-war-is-not-a)
+- [Avicena partners with TSMC to make its microLED links - Gazettabyte](https://www.gazettabyte.com/home/2025/5/11/avicena-partners-with-tsmc-to-make-its-microled-links.html)
+- [All AI Data Center Interconnects Will Be Optical Within 5 Years - Semiengineering](https://semiengineering.com/all-ai-data-center-interconnects-will-be-optical-within-5-years/)
+- [Development of optical interconnect technologies based on different light sources (SPIE)](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/14177/1417781/Development-of-optical-interconnect-technologies-based-on-different-light-sources/10.1117/12.3109688.full)
 
