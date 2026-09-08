@@ -264,6 +264,10 @@
   - [13. Pixel-Engineered Deep Ultraviolet Micro-LED Arrays for High-Speed Optical Interconnects](#13-pixel-engineered-deep-ultraviolet-micro-led-arrays-for-high-speed-optical-interconnects)
   - [14. Tuning absorptivity and quantum efficiency through In0.3Ga0.7N/GaN quantum-dot size control](#14-tuning-absorptivity-and-quantum-efficiency-through-in03ga07ngan-quantum-dot-size-control)
   - [15. Scaling the 3rd Dimension: High-Density Component Development for 3D Photonic Integrated Circuits](#15-scaling-the-3rd-dimension-high-density-component-development-for-3d-photonic-integrated-circuits)
+  - [16. An InGaN amber nano-light-emitting diode with external quantum efficiency of 10.1%](#16-an-ingan-amber-nano-light-emitting-diode-with-external-quantum-efficiency-of-101)
+  - [17. 4 × 4 AlGaN LED-PD integrated arrays for ultraviolet disinfection](#17-4--4-algan-led-pd-integrated-arrays-for-ultraviolet-disinfection)
+  - [18. Numerical analysis of carrier transport and in In0.2Ga0.8N single-quantum-well blue light-emitting diodes](#18-numerical-analysis-of-carrier-transport-and-in-in02ga08n-single-quantum-well-blue-light-emitting-diodes)
+  - [19. Effect of thermal load on lasing characteristics of InGaN/GaN single- and Double-QW laser diode](#19-effect-of-thermal-load-on-lasing-characteristics-of-ingangan-single--and-double-qw-laser-diode)
 
 链接不需要加<>，直接copy https链接
 
@@ -1303,3 +1307,19 @@ https://link.springer.com/article/10.1007/s12596-026-03260-6
 ## 15. Scaling the 3rd Dimension: High-Density Component Development for 3D Photonic Integrated Circuits
 
 https://doi.org/10.1109/SUM69529.2026.11660055
+
+## 16. An InGaN amber nano-light-emitting diode with external quantum efficiency of 10.1%
+
+https://doi.org/10.1063/5.0344152
+
+## 17. 4 × 4 AlGaN LED-PD integrated arrays for ultraviolet disinfection
+
+https://opg.optica.org/ol/viewmedia.cfm?uri=ol-51-18-5052
+
+## 18. Numerical analysis of carrier transport and in In0.2Ga0.8N single-quantum-well blue light-emitting diodes
+
+https://doi.org/10.1117/12.3122023
+
+## 19. Effect of thermal load on lasing characteristics of InGaN/GaN single- and Double-QW laser diode
+
+https://doi.org/10.1016/j.physe.2026.116662
