@@ -130,6 +130,14 @@
     - [关键点备忘](#关键点备忘)
 - [49. tmux](#49-tmux)
 - [50 Claude Science使用流程和踩坑点:](#50-claude-science使用流程和踩坑点)
+- [51. WSL2 升级与代理修复手册](#51-wsl2-升级与代理修复手册)
+  - [01. 诊断：为什么 claude 执行报错](#01-诊断为什么-claude-执行报错)
+  - [02. Windows 侧：开启虚拟化相关功能](#02-windows-侧开启虚拟化相关功能)
+  - [03. Windows 侧：修复 Hyper-V 启动开关](#03-windows-侧修复-hyper-v-启动开关)
+  - [04. 执行版本转换并验证](#04-执行版本转换并验证)
+  - [05. 新问题：claude 能跑了，但连不上 API](#05-新问题claude-能跑了但连不上-api)
+  - [06. 以后要留意的坑](#06-以后要留意的坑)
+  - [✓ 快速排查清单](#-快速排查清单)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2600,3 +2608,140 @@ Web UI → http://127.0.0.1:8000/?nonce=xxxxxxxx
 
 - 如果 WSL 用的是镜像网络模式,涉及"连 Windows 主机上的服务"的配置(代理、本地数据库等),一律用 `127.0.0.1`,不要用 `ip route` 拿到的网关地址。
 - 遇到怪异的登录/网络报错,先跑一下 `claude-science update --check`,排除版本过旧的可能性,能省不少排查时间。
+
+# 51. WSL2 升级与代理修复手册
+
+记录时间：2026-09-08
+机型：Dell OptiPlex 7040 / Windows 10 Pro 19045 / Ubuntu (WSL) / Clash Verge
+
+从 WSL1 报 `Exec format error`，到升级 WSL2，再到修好代理连上 Claude Code 的完整踩坑记录，供下次同类问题直接照抄命令。
+
+---
+
+## 01. 诊断：为什么 claude 执行报错
+
+**现象**：在 WSL 里执行 `claude`，报 `cannot execute binary file: Exec format error`。
+
+**排查发现**：装好的二进制文件本身是正常的 x86-64 Linux ELF（不是错装了 Windows 版）：
+
+```bash
+# 确认文件真实类型（-L 跟随符号链接）
+file -L $(which claude)
+
+# 确认 WSL 版本（含 "4.4.0-...-Microsoft" 即 WSL1）
+cat /proc/version
+```
+
+**根因**：发行版还停留在 **WSL 1**（`/proc/version` 显示 `4.4.0-19041-Microsoft` 这个经典 WSL1 内核标识）。WSL1 的系统调用兼容层对新式编译的二进制支持不完整，导致合法 ELF 也跑不起来。
+
+---
+
+## 02. Windows 侧：开启虚拟化相关功能
+
+升级 WSL2 前，先确保 Windows 的虚拟机平台功能已开启。全程在**管理员 PowerShell / CMD** 执行。
+
+```powershell
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+```
+
+> ⚠️ 执行完**必须重启电脑**才会生效——这一步最容易被漏掉，也是本次排查绕了最多弯路的地方。
+
+---
+
+## 03. Windows 侧：修复 Hyper-V 启动开关
+
+功能开启、重启后仍报 `HCS_E_HYPERV_NOT_INSTALLED`，即使任务管理器显示 CPU 虚拟化已启用——那是硬件层面，这里报错的是系统启动配置层面的开关被关掉了。
+
+**根因**：系统启动配置里 `hypervisorlaunchtype` 被设成了 `Off`，需要手动改回 `Auto`。
+
+```cmd
+:: 用 CMD，不要用 PowerShell —— 曾遇到补全干扰导致参数出错
+
+:: 查看当前状态
+bcdedit /enum {current}
+
+:: 若 hypervisorlaunchtype 为 Off，改成 Auto
+bcdedit /set hypervisorlaunchtype auto
+```
+
+> 改完**再重启一次**。重启后用 `bcdedit /enum {current}` 确认 `hypervisorlaunchtype` 已变成 `Auto`。
+
+---
+
+## 04. 执行版本转换并验证
+
+前置条件都满足后，正式把发行版转成 WSL2。
+
+```powershell
+# 转换（把 Ubuntu 换成实际发行版名，从 wsl -l -v 里看）
+wsl --update
+wsl --set-version Ubuntu 2
+
+# 验证：VERSION 列应显示 2
+wsl -l -v
+```
+
+```bash
+# 进入 WSL 后再确认内核（应含 microsoft-standard-WSL2）
+cat /proc/version
+```
+
+> 转换过程中会刷出一长串 `pax format cannot archive sockets` 提示（VS Code Remote 遗留的 socket 文件无法打包），属正常现象，忽略即可，耐心等它跑完。
+
+---
+
+## 05. 新问题：claude 能跑了，但连不上 API
+
+升级到 WSL2 后 `claude` 可以执行了，但报 `ConnectionRefused`，一直重试连不上 Anthropic API。
+
+**根因**：原来 `.bashrc` 里代理设置的是 `127.0.0.1`（Clash Verge 监听地址）。WSL1 下 `127.0.0.1` 与 Windows 主机共享，能直连代理；WSL2 有独立虚拟网卡走 NAT，`127.0.0.1` 变成 WSL2 自己的回环地址，不再指向 Windows 主机。
+
+```bash
+# 查 Windows 主机在 WSL2 里的 IP
+cat /etc/resolv.conf
+# 或
+ip route show | grep default | awk '{print $3}'
+```
+
+```bash
+# ~/.bashrc 里把代理地址改成这个 IP（clash Verge，端口沿用软件里设的）
+export http_proxy="http://172.19.112.1:7899"
+export https_proxy="http://172.19.112.1:7899"
+export all_proxy="socks5://172.19.112.1:7898"
+```
+
+```bash
+# 生效并验证
+source ~/.bashrc
+curl -v https://api.anthropic.com
+# 看到 TLS 握手成功 + HTTP/2 响应即代表已连通
+```
+
+> ⚠️ **Clash Verge 里必须打开"允许局域网连接"**（一般在软件主界面/常规设置，不在端口设置弹窗里），否则代理会拒绝来自 WSL2 虚拟网卡的连接，光改 IP 没用。
+
+---
+
+## 06. 以后要留意的坑
+
+**主机 IP 会变。** WSL2 分配给 Windows 主机的地址（`/etc/resolv.conf` 里的 `nameserver`）在重启后可能变化。下次又连不上，先重新查一遍这个 IP。想省事可以在 `.bashrc` 里换成自动获取：
+
+```bash
+WSL_HOST=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}')
+export http_proxy="http://$WSL_HOST:7899"
+export https_proxy="http://$WSL_HOST:7899"
+export all_proxy="socks5://$WSL_HOST:7898"
+```
+
+---
+
+## ✓ 快速排查清单
+
+| # | 问题 | 处理 |
+|---|------|------|
+| 1 | 报 `Exec format error` | 先查 `cat /proc/version`，确认是不是还在 WSL1 |
+| 2 | 升级卡在虚拟机平台报错 | `dism.exe` 开启功能，**重启** |
+| 3 | 升级卡在 `HCS_E_HYPERV_NOT_INSTALLED` | 检查 `bcdedit /enum {current}` 里的 `hypervisorlaunchtype`，改成 `auto`，**重启** |
+| 4 | 转换时刷屏 `pax format cannot archive sockets` | 正常现象，等它跑完 |
+| 5 | claude 能跑但连不上 API | 代理地址是否还是 `127.0.0.1`，换成 `/etc/resolv.conf` 里的主机 IP |
+| 6 | 换了 IP 还是连不上 | 确认代理软件"允许局域网连接"是否打开 |
