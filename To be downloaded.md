@@ -268,6 +268,8 @@
   - [17. 4 × 4 AlGaN LED-PD integrated arrays for ultraviolet disinfection](#17-4--4-algan-led-pd-integrated-arrays-for-ultraviolet-disinfection)
   - [18. Numerical analysis of carrier transport and in In0.2Ga0.8N single-quantum-well blue light-emitting diodes](#18-numerical-analysis-of-carrier-transport-and-in-in02ga08n-single-quantum-well-blue-light-emitting-diodes)
   - [19. Effect of thermal load on lasing characteristics of InGaN/GaN single- and Double-QW laser diode](#19-effect-of-thermal-load-on-lasing-characteristics-of-ingangan-single--and-double-qw-laser-diode)
+  - [20. Research Progress and Challenges of GaN-Based Micro-LEDs in Short-Reach Optical Interconnects](#20-research-progress-and-challenges-of-gan-based-micro-leds-in-short-reach-optical-interconnects)
+  - [21. A Review on III-Nitride Light-Emitting Diodes for Emerging Optoelectronics Applications](#21-a-review-on-iii-nitride-light-emitting-diodes-for-emerging-optoelectronics-applications)
 
 链接不需要加<>，直接copy https链接
 
@@ -1323,3 +1325,11 @@ https://doi.org/10.1117/12.3122023
 ## 19. Effect of thermal load on lasing characteristics of InGaN/GaN single- and Double-QW laser diode
 
 https://doi.org/10.1016/j.physe.2026.116662
+
+## 20. Research Progress and Challenges of GaN-Based Micro-LEDs in Short-Reach Optical Interconnects
+
+https://doi.org/10.1002/lpor.71855
+
+## 21. A Review on III-Nitride Light-Emitting Diodes for Emerging Optoelectronics Applications
+
+https://doi.org/10.1109/EDR.2026.3731558
