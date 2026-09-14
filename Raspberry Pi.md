@@ -2568,7 +2568,110 @@ Hit Enter when ready to unmount the /dev/sda partitions ...
 nano fix-clone-partuuid.sh
 ```
 
-把上一条消息里的完整脚本内容粘贴进去，保存退出（`Ctrl+O` 回车，`Ctrl+X` 退出）。
+
+
+把完整脚本内容粘贴进去，保存退出（`Ctrl+O` 回车，`Ctrl+X` 退出）。
+
+```
+#!/bin/bash
+set -e
+
+# 找到当前系统正在运行的根盘（要排除掉，不能拿自己开刀）
+CURRENT_ROOT_PART=$(findmnt -no SOURCE /)
+CURRENT_ROOT_DISK=$(lsblk -no PKNAME "$CURRENT_ROOT_PART")
+
+echo "当前系统运行盘：/dev/$CURRENT_ROOT_DISK（会被排除）"
+echo ""
+echo "===== 当前磁盘情况 ====="
+lsblk -o NAME,SIZE,PARTUUID,MOUNTPOINT,TYPE
+
+# 找出所有候选磁盘：type=disk，排除系统盘，排除 loop 设备
+CANDIDATES=$(lsblk -ndo NAME,TYPE | awk '$2=="disk"{print $1}' | grep -v "^${CURRENT_ROOT_DISK}$" || true)
+
+CANDIDATE_COUNT=$(echo "$CANDIDATES" | grep -c . || true)
+
+if [ "$CANDIDATE_COUNT" -eq 0 ]; then
+    echo ""
+    echo "错误：没找到除系统盘以外的其他磁盘，请检查克隆盘是否已连接"
+    exit 1
+elif [ "$CANDIDATE_COUNT" -eq 1 ]; then
+    DISK="$CANDIDATES"
+    echo ""
+    echo "自动识别到克隆盘：/dev/$DISK"
+else
+    echo ""
+    echo "检测到多个候选磁盘，请手动选择："
+    select DISK in $CANDIDATES; do
+        [ -n "$DISK" ] && break
+    done
+fi
+
+BOOT_PART="/dev/${DISK}1"
+ROOT_PART="/dev/${DISK}2"
+
+if [ ! -b "$BOOT_PART" ] || [ ! -b "$ROOT_PART" ]; then
+    echo "错误：找不到 $BOOT_PART 或 $ROOT_PART，请检查该盘分区结构是否是标准的 boot+root"
+    exit 1
+fi
+
+# 获取挂载点，如果没挂载就自动挂载
+BOOTFS=$(lsblk -no MOUNTPOINT "$BOOT_PART")
+ROOTFS=$(lsblk -no MOUNTPOINT "$ROOT_PART")
+
+if [ -z "$BOOTFS" ]; then
+    BOOTFS="/mnt/fix-bootfs"
+    sudo mkdir -p "$BOOTFS"
+    sudo mount "$BOOT_PART" "$BOOTFS"
+    echo "已挂载 $BOOT_PART 到 $BOOTFS"
+fi
+
+if [ -z "$ROOTFS" ]; then
+    ROOTFS="/mnt/fix-rootfs"
+    sudo mkdir -p "$ROOTFS"
+    sudo mount "$ROOT_PART" "$ROOTFS"
+    echo "已挂载 $ROOT_PART 到 $ROOTFS"
+fi
+
+echo ""
+echo "===== 修复前状态 ====="
+echo "-- cmdline.txt --"
+cat "$BOOTFS/cmdline.txt"
+echo ""
+echo "-- fstab 根分区行 --"
+grep ' / ' "$ROOTFS/etc/fstab"
+
+# 从 fstab 提取正确的 PARTUUID
+NEW_UUID=$(grep ' / ' "$ROOTFS/etc/fstab" | grep -oP 'PARTUUID=\K[0-9a-f]{8}')
+
+if [ -z "$NEW_UUID" ]; then
+    echo "错误：无法从 fstab 提取 PARTUUID，请手动检查"
+    exit 1
+fi
+
+echo ""
+echo "fstab 中的 PARTUUID: $NEW_UUID"
+
+CURRENT_UUID=$(grep -oP 'root=PARTUUID=\K[0-9a-f]{8}' "$BOOTFS/cmdline.txt")
+echo "cmdline.txt 中当前的 PARTUUID: $CURRENT_UUID"
+
+if [ "$NEW_UUID" == "$CURRENT_UUID" ]; then
+    echo ""
+    echo "两者已经一致，无需修改。"
+else
+    echo ""
+    echo "检测到不一致，正在修复 cmdline.txt ..."
+    sudo sed -i -E "s/root=PARTUUID=[0-9a-f]{8}-02/root=PARTUUID=${NEW_UUID}-02/" "$BOOTFS/cmdline.txt"
+    echo ""
+    echo "===== 修复后 cmdline.txt ====="
+    cat "$BOOTFS/cmdline.txt"
+fi
+
+echo ""
+read -p "确认无误后按 Enter 卸载克隆盘（Ctrl+C 取消）..."
+sudo umount "$BOOTFS" "$ROOTFS"
+echo "已卸载，完成。"
+```
+
 
 赋予执行权限（只需做一次）：
 
