@@ -138,6 +138,11 @@
   - [05. 新问题：claude 能跑了，但连不上 API](#05-新问题claude-能跑了但连不上-api)
   - [06. 以后要留意的坑](#06-以后要留意的坑)
   - [✓ 快速排查清单](#-快速排查清单)
+- [52. Dell OptiPlex 7040 MT 内存升级备忘](#52-dell-optiplex-7040-mt-内存升级备忘)
+  - [硬件配置](#硬件配置)
+  - [当前已装内存](#当前已装内存)
+  - [升级方案](#升级方案)
+  - [操作提示](#操作提示)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2745,3 +2750,36 @@ export all_proxy="socks5://$WSL_HOST:7898"
 | 4 | 转换时刷屏 `pax format cannot archive sockets` | 正常现象，等它跑完 |
 | 5 | claude 能跑但连不上 API | 代理地址是否还是 `127.0.0.1`，换成 `/etc/resolv.conf` 里的主机 IP |
 | 6 | 换了 IP 还是连不上 | 确认代理软件"允许局域网连接"是否打开 |
+
+<div STYLE="page-break-after: always;"></div>
+
+# 52. Dell OptiPlex 7040 MT 内存升级备忘
+
+## 硬件配置
+
+- CPU：Intel Core i7-6700（Skylake-S）
+- 主板：Dell 0Y7WYT，Q170芯片组
+- 平台内存上限：DDR4-2133（更高频条子会被降频运行）
+- 内存插槽：共4条（DIMM1-4），当前占用2条（DIMM3、DIMM4），空闲2条
+
+## 当前已装内存
+
+1. Micron MTA8ATF51264AZ-2G1B1，4GB，DDR4-2666（PC4-21333），1Rx8，非ECC UDIMM
+2. TeamGroup TED4G4G2133C15BK，4GB，DDR4-2133，CL15-15-15-36，1.2V，非ECC UDIMM
+
+两条容量相同、品牌不同，混插后系统识别为 8GB 双通道，实际运行在1067MHz(DDR4-2133)，工作正常（此前一度显示单通道/4GB是插座接触不良所致，重新插紧后恢复正常）。
+
+## 升级方案
+
+- 加装：DDR4 UDIMM，非ECC，频率2133/2400/2666均可（会降频到2133）
+- 插入剩余2个空插槽（DIMM1、DIMM2）
+- 建议买2条同型号同容量新条子，避免继续混插
+  - 轻度需求：2×4GB → 总容量16GB
+  - 中高需求：2×8GB → 总容量24GB
+- 购买时认准：DDR4、UDIMM（不是笔记本用的SODIMM）、非ECC、频率≥2133
+
+## 操作提示
+
+- 机箱侧面硬盘/光驱架需要先拉开"PULL"卡扣再旋转打开，才能看到内存插槽
+- 插内存条时要垂直插到底，听到两侧卡扣"咔"一声扣紧，否则可能出现识别不到或容量异常的情况
+- 加装后开机若提示"The amount of system memory has changed"，是正常提示，按F1继续启动即可
