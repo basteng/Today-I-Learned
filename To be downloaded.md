@@ -271,6 +271,7 @@
   - [20. Research Progress and Challenges of GaN-Based Micro-LEDs in Short-Reach Optical Interconnects](#20-research-progress-and-challenges-of-gan-based-micro-leds-in-short-reach-optical-interconnects)
   - [21. A Review on III-Nitride Light-Emitting Diodes for Emerging Optoelectronics Applications](#21-a-review-on-iii-nitride-light-emitting-diodes-for-emerging-optoelectronics-applications)
   - [22. Silicon Photonics for Short-Reach Interconnects: Progress in High-Bandwidth and Energy-Efficient Optical I/O](#22-silicon-photonics-for-short-reach-interconnects-progress-in-high-bandwidth-and-energy-efficient-optical-io)
+  - [23. High-Gain Hybrid Metal Jerusalem-Slot THz Patch Antenna for Electromagnetic Dielectric Sensing of Lung Cancer](#23-high-gain-hybrid-metal-jerusalem-slot-thz-patch-antenna-for-electromagnetic-dielectric-sensing-of-lung-cancer)
 
 链接不需要加<>，直接copy https链接
 
@@ -1338,3 +1339,7 @@ https://doi.org/10.1109/EDR.2026.3731558
 ## 22. Silicon Photonics for Short-Reach Interconnects: Progress in High-Bandwidth and Energy-Efficient Optical I/O
 
 https://doi.org/10.1002/lpor.71894
+
+## 23. High-Gain Hybrid Metal Jerusalem-Slot THz Patch Antenna for Electromagnetic Dielectric Sensing of Lung Cancer
+
+https://ieeexplore.ieee.org/abstract/document/11688146
