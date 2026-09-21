@@ -2783,3 +2783,33 @@ export all_proxy="socks5://$WSL_HOST:7898"
 - 机箱侧面硬盘/光驱架需要先拉开"PULL"卡扣再旋转打开，才能看到内存插槽
 - 插内存条时要垂直插到底，听到两侧卡扣"咔"一声扣紧，否则可能出现识别不到或容量异常的情况
 - 加装后开机若提示"The amount of system memory has changed"，是正常提示，按F1继续启动即可
+
+# 53. FileZilla Server 挂载多个盘符/目录
+
+可以。FileZilla Server 没有"我的电脑"这种总入口，但你可以给每个盘符各加一个挂载点，登录后就是一个虚拟根目录下并列多个盘。
+
+## 做法
+
+Rights management → Users → `ftp_user` → Mount points，点 **Add**，逐个添加：
+
+| Virtual path | Native path |
+|---|---|
+| `/C` | `C:\` |
+| `/D` | `D:\` |
+| `/E` | `E:\` |
+
+每个挂载点单独选 Access mode，勾上 "Apply permissions to subdirectories"。改完点 Apply → OK，客户端重连后会看到 `C`、`D`、`E` 三个文件夹。
+
+## 要注意的限制
+
+- 能看到什么、能改什么，最终取决于运行 FileZilla Server 服务的 Windows 账户的 NTFS 权限。权限不够的目录（比如其他用户的个人文件夹、部分系统目录）会显示拒绝访问。账户可以在 `services.msc` 里双击该服务，看"登录"选项卡。
+- 不建议给服务账户提权到管理员或 SYSTEM 来"看全部"，风险很大。
+
+## 安全上的建议
+
+这台是公司电脑，挂载整个 C 盘并开放读写，意味着知道密码的人可以删改系统文件、其他用户的文档、软件目录，一个误操作就可能让系统起不来，也很可能违反公司的信息安全规定。比较稳妥的做法：
+
+- **数据盘（D、E）**：可以挂载，需要传文件的目录给 Read + Write，其余给 **Read only**。
+- **C 盘**：不建议整盘挂载。只需要某几个目录（比如桌面、下载、文档）的话，单独挂载 `C:\Users\你的用户名\Desktop` 这类子目录，比如 `/Desktop` → `C:\Users\note-lvwb\Desktop`。
+- 密码保持开启，不要回到无认证。
+- 想长期用，可以再建一个只读用户专门用来浏览，读写用户只给共享目录。
