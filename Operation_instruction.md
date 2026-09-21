@@ -143,6 +143,15 @@
   - [当前已装内存](#当前已装内存)
   - [升级方案](#升级方案)
   - [操作提示](#操作提示)
+- [53. FileZilla Server 挂载多个盘符/目录](#53-filezilla-server-挂载多个盘符目录)
+  - [做法](#做法)
+  - [要注意的限制](#要注意的限制)
+  - [安全上的建议](#安全上的建议)
+- [54. FileZilla Server 局域网 FTP 搭建与排坑记录](#54-filezilla-server-局域网-ftp-搭建与排坑记录)
+  - [服务端（运行 FileZilla Server 的机器，192.168.136.15）](#服务端运行-filezilla-server-的机器19216813615)
+  - [客户端（FileZilla 客户端）](#客户端filezilla-客户端)
+  - [这次踩到的坑](#这次踩到的坑)
+  - [后续注意](#后续注意)
 
 <div STYLE="page-break-after: always;"></div>
 
