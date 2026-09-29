@@ -152,6 +152,11 @@
   - [客户端（FileZilla 客户端）](#客户端filezilla-客户端)
   - [这次踩到的坑](#这次踩到的坑)
   - [后续注意](#后续注意)
+- [55. 用 Console 脚本抓取虚拟滚动长对话页面的完整聊天记录（以 ChatGPT 分享页为例）](#55-用-console-脚本抓取虚拟滚动长对话页面的完整聊天记录以-chatgpt-分享页为例)
+  - [为什么常规方法都拿不全](#为什么常规方法都拿不全)
+  - [最终方法的四个关键点](#最终方法的四个关键点)
+  - [可复用脚本（格式化版）](#可复用脚本格式化版)
+  - [使用步骤和注意事项](#使用步骤和注意事项)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2869,3 +2874,102 @@ Rights management → Users → `ftp_user` → Mount points，点 **Add**，逐�
 
 - 自签名证书有效期到 **2027/9/22**，到期后会再遇到同样的过期报错，按第 3 步重新生成即可。
 - 这台是公司电脑，共享目录对整个局域网开放，建议保留密码，不用的目录不要挂载。
+
+# 55. 用 Console 脚本抓取虚拟滚动长对话页面的完整聊天记录（以 ChatGPT 分享页为例）
+
+整个过程可以总结成"为什么常规方法都失败"和"最终方法怎么解决"两部分。
+
+## 为什么常规方法都拿不全
+
+| 方法 | 失败原因 |
+|---|---|
+| 服务端抓取（WebFetch/curl） | 分享页是 JS 渲染的，服务端只拿到页面外壳 |
+| 打印成 PDF | 内容在固定高度的滚动容器里，只打印出可见部分 |
+| 全选复制 / 一次性读 `innerText` | 页面用了**虚拟列表**，只渲染屏幕附近的几条消息 |
+| 按 `article` / `data-message-author-role` 选取 | 分享页的 DOM 结构和普通聊天页不同，一个都匹配不到 |
+| 设置 `scrollTop` 往下滚 | 容器是**倒序布局**（`column-reverse`）：0 表示最底部，往上翻是负数 |
+
+## 最终方法的四个关键点
+
+1. **按滚动高度找容器**：不猜类名，挑页面上 `scrollHeight` 最大、且 `overflow-y` 为 auto/scroll 的元素。
+2. **自动识别倒序**：先滚到 `-1e9`。如果 `scrollTop` 变成负数，就是倒序布局，负数最小值就是对话开头。
+3. **边滚边收集，按位置去重**：每次滚 0.6 屏，把当前渲染出来的消息块按它在整条长列表里的**绝对位置**记下来。同一块被卸载后再渲染回来，也不会重复计入。最后按位置排序拼接。
+4. **两条输出路径**：一是 Blob 直接下载成 `.md` 文件，二是剪贴板。`copy()` 是 DevTools 注入的函数，放在 `await` 之后会失效，所以要在开头先保存一份引用。
+
+## 可复用脚本（格式化版）
+
+```js
+(async () => {
+  const cp = copy;                                   // await 之前先保存 copy 的引用
+  const wait = ms => new Promise(r => setTimeout(r, ms));
+
+  // 1. 找真正的滚动容器
+  const sc = [...document.querySelectorAll('*')]
+    .filter(e => e.scrollHeight > e.clientHeight + 50 &&
+                 /(auto|scroll)/.test(getComputedStyle(e).overflowY))
+    .sort((a, b) => b.scrollHeight - a.scrollHeight)[0];
+
+  // 2. 判断是否倒序，并定位到对话开头
+  sc.scrollTo(0, -1e9); await wait(1500);
+  const rev = sc.scrollTop < 0;
+  if (!rev) { sc.scrollTo(0, 0); await wait(1500); }
+  const min = sc.scrollTop, range = sc.scrollHeight - sc.clientHeight;
+  console.log('倒序布局', rev, '起点', min);
+
+  // 3. 找虚拟列表的"高外壳"
+  let tall = sc;
+  for (;;) {
+    const k = [...tall.children].find(c => c.offsetHeight > 0.9 * sc.scrollHeight);
+    if (!k) break;
+    tall = k;
+  }
+
+  // 4. 收集：钻到消息层，按绝对位置记录
+  const seen = new Map();
+  const grab = () => {
+    let win = tall;
+    while (win.children.length === 1) win = win.children[0];
+    const base = tall.getBoundingClientRect().top - (tall === sc ? sc.scrollTop : 0);
+    for (const c of win.children) {
+      const t = c.innerText.trim();
+      if (!t) continue;
+      const key = Math.round(c.getBoundingClientRect().top - base);
+      const p = seen.get(key);
+      if (!p || p.length < t.length) seen.set(key, t);
+    }
+  };
+
+  // 5. 从头滚到尾
+  let end = 0;
+  for (let i = 0; i < 5000; i++) {
+    grab();
+    const prev = sc.scrollTop;
+    sc.scrollTo(0, prev + sc.clientHeight * 0.6);
+    await wait(400);
+    if (Math.abs(sc.scrollTop - prev) < 1) { if (++end >= 3) break; } else end = 0;
+    if (i % 50 === 0)
+      console.log('进度', Math.round(100 * (sc.scrollTop - min) / range) + '%', '块数', seen.size);
+  }
+  grab();
+
+  // 6. 排序、去重、输出
+  const parts = [...seen.entries()].sort((a, b) => a[0] - b[0]).map(e => e[1])
+    .filter((t, i, arr) => t !== arr[i - 1]);
+  const out = parts.join('\n\n---\n\n');
+  window.__chat = out;
+  console.log({ blocks: parts.length, chars: out.length });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([out], { type: 'text/markdown' }));
+  a.download = 'chat.md';
+  a.click();
+  try { cp(out); } catch (e) {}
+})()
+```
+
+## 使用步骤和注意事项
+
+- 在 Chrome 里打开分享链接，按 F12 打开 Console。第一次粘贴代码前要先手动输入 `allow pasting`。
+- 运行期间**不要切走标签页**，否则后台定时器会被降频，导致漏抓。
+- 看输出判断是否完整：`chars` 应该和对话长度相当。如果剪贴板是空的，就单独执行一次 `copy(window.__chat)`。
+- 这个方法有两个局限：不会标注每一块是用户还是 AI 说的，只能从内容上判断；公式渲染出的文本可能会重复一遍。
+- 通用性：只要页面是"单一大滚动容器 + 虚拟列表"的结构，无论正序还是倒序，这个脚本基本都适用，不局限于 ChatGPT。
