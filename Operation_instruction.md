@@ -169,6 +169,21 @@
     - [回滚](#回滚)
     - [更小范围的折中](#更小范围的折中)
   - [3. 安全提示](#3-安全提示)
+- [57. 用 Codex 桌面版通过 SSH 远程操作 Mac mini](#57-用-codex-桌面版通过-ssh-远程操作-mac-mini)
+  - [原理](#原理)
+  - [步骤](#步骤)
+    - [1. Mac mini：开启远程登录](#1-mac-mini开启远程登录)
+    - [2. 笔记本：检查或生成密钥](#2-笔记本检查或生成密钥)
+    - [3. 笔记本：把公钥传到 Mac mini](#3-笔记本把公钥传到-mac-mini)
+    - [4. 笔记本：编写 SSH config](#4-笔记本编写-ssh-config)
+    - [5. 笔记本：测试免密登录](#5-笔记本测试免密登录)
+    - [6. Mac mini：安装并登录 Codex CLI](#6-mac-mini安装并登录-codex-cli)
+    - [7. 让非交互 SSH 找到 codex（最常见的坑）](#7-让非交互-ssh-找到-codex最常见的坑)
+    - [8. 桌面版里添加](#8-桌面版里添加)
+  - [有两个 IP 时](#有两个-ip-时)
+  - [排错记录](#排错记录)
+  - [安全提示](#安全提示)
+  - [参考](#参考)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -3081,3 +3096,160 @@ sudo visudo -c
 - 如果同时开启了 agent 的自动放行，agent 的每一步命令都可能以 root 权限执行，风险叠加。建议保留 agent 的 `ask` 权限模式，让每次命令执行先经过人工确认。
 - 只是为了装几个包，输入一次密码或使用上面按命令限定的规则，比全局免密更稳妥。
 - 沙箱（bubblewrap）限制的是 agent 执行命令时的文件系统与环境，但并不能替代对 sudo 权限的控制，两者应分别考虑。
+
+# 57. 用 Codex 桌面版通过 SSH 远程操作 Mac mini
+
+笔记本（Windows）上的 Codex 桌面版作为界面，命令执行和文件读写都发生在 Mac mini 上。
+
+> 记录日期：2026-09-30
+> 环境：笔记本 Windows + OpenSSH 客户端；Mac mini macOS（Apple Silicon，Homebrew 在 `/opt/homebrew`）；Codex CLI 0.157.1
+> 文中 `<user>`、`<MAC_MINI_IP>` 为占位符，请替换成实际值。
+
+## 原理
+
+桌面版通过 SSH 登录到远程主机，用远程用户的登录 shell 启动 `codex app-server`。因此 Mac mini 上需要：
+
+1. 开启 SSH（远程登录）
+2. 安装 Codex CLI，并已登录
+3. 非交互 SSH 的 PATH 里能找到 `codex`
+
+这种方式是"在远程主机上开新的远程项目"，**不会显示** Mac mini 桌面版里已有的对话。如果要接管那些对话，用桌面版的 Settings > Connections > Control other devices（走 OpenAI 中继，不需要 SSH，是否可用取决于灰度发布）。
+
+## 步骤
+
+### 1. Mac mini：开启远程登录
+
+系统设置 > 通用 > 共享 > 打开「远程登录」。
+
+查看用户名和 IP：
+
+```bash
+whoami
+ipconfig getifaddr en0    # 有线可能是 en1
+```
+
+### 2. 笔记本：检查或生成密钥
+
+cmd 里：
+
+```
+dir %USERPROFILE%\.ssh
+```
+
+- 已有 `id_ed25519` 和 `id_ed25519.pub`：跳过生成
+- 没有：`ssh-keygen -t ed25519`，一路回车
+- 提示 `ssh-keygen` 不是命令：设置 > 系统 > 可选功能，添加「OpenSSH 客户端」
+
+### 3. 笔记本：把公钥传到 Mac mini
+
+Windows 没有 `ssh-copy-id`，用管道代替（会要求输一次 Mac mini 的登录密码）：
+
+```
+type %USERPROFILE%\.ssh\id_ed25519.pub | ssh <user>@<MAC_MINI_IP> "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 700 ~/.ssh && chmod 600 ~/.ssh/authorized_keys"
+```
+
+### 4. 笔记本：编写 SSH config
+
+文件路径：`C:\Users\<笔记本用户名>\.ssh\config`（**没有扩展名**）。
+
+```
+Host macmini
+  HostName <MAC_MINI_IP>
+  User <user>
+  IdentityFile C:/Users/<笔记本用户名>/.ssh/id_ed25519
+```
+
+- 路径用正斜杠
+- Codex 只读取具体的 Host 别名，忽略纯通配符的 Host
+- 用记事本保存时，文件类型选「所有文件」，否则会存成 `config.txt`。已经存错的话：
+
+  ```
+  ren %USERPROFILE%\.ssh\config.txt config
+  ```
+
+### 5. 笔记本：测试免密登录
+
+```
+ssh macmini
+```
+
+不输密码直接进入 Mac mini 即可，输入 `exit` 退回。
+
+### 6. Mac mini：安装并登录 Codex CLI
+
+```bash
+brew install node          # 没有 node 时
+npm i -g @openai/codex
+codex login
+```
+
+### 7. 让非交互 SSH 找到 codex（最常见的坑）
+
+从笔记本运行：
+
+```
+ssh macmini "codex --version"
+```
+
+如果提示 `zsh:1: command not found: codex`，是因为非交互 SSH 的 PATH 只有 `/usr/bin:/bin:/usr/sbin:/sbin`，不含 `/opt/homebrew/bin`。把 PATH 写进 `~/.zshenv`（它对所有 zsh 调用生效，包括非交互 SSH）：
+
+```
+ssh macmini "echo 'export PATH=/opt/homebrew/bin:$PATH' >> ~/.zshenv"
+```
+
+Intel 芯片的 Mac mini 换成 `/usr/local/bin`。只需执行一次。
+
+验证：
+
+```
+ssh macmini "codex --version"
+ssh macmini "codex login status"
+```
+
+期望输出：版本号，以及 `Logged in using ChatGPT`。
+
+### 8. 桌面版里添加
+
+1. Settings > Connections，添加或启用 `macmini`
+2. Add new project > Remote project，选 Mac mini 上的项目文件夹
+3. 在项目里让 Codex 执行 `whoami` / `pwd`，确认命令确实是在 Mac mini 上运行
+
+## 有两个 IP 时
+
+`HostName` 只写一个，选笔记本实际能连通且最稳定的：
+
+| 场景 | 建议 |
+| --- | --- |
+| 只在家里同一局域网使用 | 用局域网 IP，最好在路由器里给 Mac mini 绑定固定 IP |
+| 有线 + Wi-Fi 两个 IP | 用有线那个 |
+| 出门也要连 | 用 Tailscale 等组网地址，家里外面都能用 |
+
+如果想同时保留两个，写两个别名（如 `macmini-lan`、`macmini-ts`）。桌面版会把每个别名当成独立主机，用哪个就启用哪个，不要同时启用。
+
+出了本地网络，官方建议用 VPN 或 mesh 组网，**不要把 app server 直接暴露到公网**。
+
+## 排错记录
+
+| 现象 | 原因和处理 |
+| --- | --- |
+| `'ls' 不是内部或外部命令` | 在 Windows cmd 里，改用 `dir`；`~` 写成 `%USERPROFILE%` |
+| `dir` 显示 `config.txt` | 记事本自动加了扩展名，用 `ren` 改名 |
+| `Could not resolve hostname macmini`（提示符是 `xxx@Mac-mini ~ %`） | 已经登录进 Mac mini，别名只存在于笔记本的 config。先 `exit`，在笔记本提示符下运行 |
+| `zsh:1: command not found: codex` | 非交互 SSH 的 PATH 不含 Homebrew，见步骤 7 |
+| 一直要求输密码 | 公钥没传成功，重做步骤 3；检查 Mac mini 上 `~/.ssh` 权限为 700、`authorized_keys` 为 600 |
+| 桌面版 Connections 里看不到主机 | 完全退出桌面版再打开，让它重读 SSH config |
+| 连接后转圈或断开 | Mac mini 睡眠了；系统设置 > 能源里关闭自动睡眠 |
+| Codex 启动的 `ssh` 报 `No route to host`，终端手动 `ssh` 正常 | 已报告的 macOS 27 本地网络权限问题（openai/codex #35346） |
+| 连到了别的用户的实例 | 远程 app server 固定监听 `127.0.0.1:9234`，多用户主机上端口被占用会冲突（openai/codex #19590）；单用户机器基本不会遇到 |
+
+## 安全提示
+
+- 只提交本文档；**绝对不要把 `id_ed25519`（私钥）或整个 `.ssh` 目录传到 GitHub**
+- 仓库里的 IP、用户名建议保持占位符
+- 远程主机保持与普通 SSH 相同的安全要求：使用可信密钥、最小权限账户、不开放未认证的公网监听
+
+## 参考
+
+- [Remote connections – Codex docs](https://developers.openai.com/codex/remote-connections.md)
+- [openai/codex #19590：远程端口 9234 冲突](https://github.com/openai/codex/issues/19590)
+- [openai/codex #35346：macOS 27 本地网络权限](https://github.com/openai/codex/issues/35346)
