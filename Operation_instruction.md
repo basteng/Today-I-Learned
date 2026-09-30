@@ -157,6 +157,18 @@
   - [最终方法的四个关键点](#最终方法的四个关键点)
   - [可复用脚本（格式化版）](#可复用脚本格式化版)
   - [使用步骤和注意事项](#使用步骤和注意事项)
+- [56. WSL 下的 sudo 免密与 bubblewrap 沙箱配置](#56-wsl-下的-sudo-免密与-bubblewrap-沙箱配置)
+  - [1. bubblewrap 沙箱](#1-bubblewrap-沙箱)
+    - [背景](#背景-1)
+    - [安装](#安装)
+    - [验证](#验证)
+    - [排错](#排错)
+  - [2. sudo](#2-sudo)
+    - [默认行为](#默认行为)
+    - [开启免密（可选）](#开启免密可选)
+    - [回滚](#回滚)
+    - [更小范围的折中](#更小范围的折中)
+  - [3. 安全提示](#3-安全提示)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -2973,3 +2985,99 @@ Rights management → Users → `ftp_user` → Mount points，点 **Add**，逐�
 - 看输出判断是否完整：`chars` 应该和对话长度相当。如果剪贴板是空的，就单独执行一次 `copy(window.__chat)`。
 - 这个方法有两个局限：不会标注每一块是用户还是 AI 说的，只能从内容上判断；公式渲染出的文本可能会重复一遍。
 - 通用性：只要页面是"单一大滚动容器 + 虚拟列表"的结构，无论正序还是倒序，这个脚本基本都适用，不局限于 ChatGPT。
+
+# 56. WSL 下的 sudo 免密与 bubblewrap 沙箱配置
+
+在 WSL（Ubuntu 24.04）中为 AI 编码 agent（以 reasonix 为例）配置 bash 沙箱，并按需开启 sudo 免密。以下步骤均已在实际环境中验证。
+
+## 1. bubblewrap 沙箱
+
+### 背景
+
+reasonix 的 bash 工具默认运行在 `enforce` 沙箱模式：主机上没有可用的 OS 沙箱时，会拒绝执行 shell 命令，`reasonix doctor` 里会出现：
+
+```
+sandbox
+  bash         enforce (unavailable: no OS sandbox on this host; bash execution is refused. Install bubblewrap (`bwrap`), ...)
+```
+
+### 安装
+
+```bash
+sudo apt update && sudo apt install -y bubblewrap
+```
+
+### 验证
+
+```bash
+# 1. 直接测 bwrap 能否创建 namespace
+bwrap --ro-bind / / --dev /dev true && echo "bwrap 可用"
+
+# 2. 看 reasonix 的检测结果（不再出现 unavailable 即可）
+reasonix doctor | grep -A1 sandbox
+
+# 3. 端到端：让 agent 真正执行一条命令
+reasonix run "run the shell command 'echo sandbox-ok' and show its output"
+```
+
+### 排错
+
+- `bwrap` 报 `Creating new namespace failed`：内核或 WSL 版本对 namespace 支持不足。在 Windows PowerShell 用 `wsl -l -v` 确认发行版是 WSL 2。
+- 不想用沙箱时，可按 reasonix 提示显式选择 Full access（不受约束的会话），需自行评估风险。
+
+备注：本次环境中，doctor 最初报 unavailable，而后来执行 apt 时提示 bubblewrap 已是最新版，具体是何时装上的没有细究。结论只以上面三步验证结果为准。
+
+## 2. sudo
+
+### 默认行为
+
+- WSL 里 sudo 要输入的是创建 Linux 用户时设置的密码，不是 Windows 登录密码。
+- 输入时终端不回显，属正常现象。
+- 输入一次后，同一终端约 15 分钟内无需重复输入。
+- 忘记密码：在 Windows PowerShell 执行 `wsl -u root`，进入后 `passwd <用户名>` 直接重设，不需要旧密码。
+
+### 开启免密（可选）
+
+```bash
+echo "$USER ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/nopasswd-$USER
+sudo chmod 440 /etc/sudoers.d/nopasswd-$USER
+sudo visudo -c        # 必须看到 parsed OK
+```
+
+验证：
+
+```bash
+sudo -k                                   # 清除授权缓存
+sudo -n true && echo "免密生效"           # -n 禁止交互，仍需密码则直接报错
+```
+
+注意：`visudo -c` 建议单独一行执行。连同注释一起粘贴到终端时，末尾的命令可能被吞掉，导致没有真正校验。
+
+### 回滚
+
+```bash
+sudo rm /etc/sudoers.d/nopasswd-$USER
+```
+
+如果规则写坏导致 sudo 不可用，在 Windows PowerShell 中执行：
+
+```powershell
+wsl -u root rm /etc/sudoers.d/nopasswd-<用户名>
+```
+
+### 更小范围的折中
+
+只对 apt 免密（apt 本身也能被用来提权，所以这只是缩小范围，不是严格隔离）：
+
+```bash
+echo "$USER ALL=(root) NOPASSWD: /usr/bin/apt, /usr/bin/apt-get" | sudo tee /etc/sudoers.d/apt-nopasswd
+sudo chmod 440 /etc/sudoers.d/apt-nopasswd
+sudo visudo -c
+```
+
+## 3. 安全提示
+
+- 全局 `NOPASSWD:ALL` 意味着任何以你的用户身份运行的程序（包括 AI agent 执行的 shell 命令）都能不经确认获得 root。
+- 如果同时开启了 agent 的自动放行，agent 的每一步命令都可能以 root 权限执行，风险叠加。建议保留 agent 的 `ask` 权限模式，让每次命令执行先经过人工确认。
+- 只是为了装几个包，输入一次密码或使用上面按命令限定的规则，比全局免密更稳妥。
+- 沙箱（bubblewrap）限制的是 agent 执行命令时的文件系统与环境，但并不能替代对 sudo 权限的控制，两者应分别考虑。
