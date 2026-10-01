@@ -274,6 +274,7 @@
   - [23. High-Gain Hybrid Metal Jerusalem-Slot THz Patch Antenna for Electromagnetic Dielectric Sensing of Lung Cancer](#23-high-gain-hybrid-metal-jerusalem-slot-thz-patch-antenna-for-electromagnetic-dielectric-sensing-of-lung-cancer)
   - [24. Highly Thermally Stable Long-Wavelength InGaN Micro-light-emitting diodes for Gigabit Optical Links](#24-highly-thermally-stable-long-wavelength-ingan-micro-light-emitting-diodes-for-gigabit-optical-links)
   - [25. A monolithically integrated GaN light-emitting transistor with multifunctional electro-optical modulation and high current gain](#25-a-monolithically-integrated-gan-light-emitting-transistor-with-multifunctional-electro-optical-modulation-and-high-current-gain)
+  - [26. 304 channel MicroLED based CMOS transceiver IC with aggregate 1 Tbps and sub-pJ per bit capability](#26-304-channel-microled-based-cmos-transceiver-ic-with-aggregate-1-tbps-and-sub-pj-per-bit-capability)
 
 链接不需要加<>，直接copy https链接
 
@@ -1353,3 +1354,7 @@ https://ieeexplore.ieee.org/abstract/document/11690936
 ## 25. A monolithically integrated GaN light-emitting transistor with multifunctional electro-optical modulation and high current gain
 
 https://doi.org/10.1016/j.mtphys.2026.102214
+
+## 26. 304 channel MicroLED based CMOS transceiver IC with aggregate 1 Tbps and sub-pJ per bit capability
+
+https://doi.org/10.1364/OFC.2024.M3A.1
