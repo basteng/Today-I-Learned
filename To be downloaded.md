@@ -275,6 +275,7 @@
   - [24. Highly Thermally Stable Long-Wavelength InGaN Micro-light-emitting diodes for Gigabit Optical Links](#24-highly-thermally-stable-long-wavelength-ingan-micro-light-emitting-diodes-for-gigabit-optical-links)
   - [25. A monolithically integrated GaN light-emitting transistor with multifunctional electro-optical modulation and high current gain](#25-a-monolithically-integrated-gan-light-emitting-transistor-with-multifunctional-electro-optical-modulation-and-high-current-gain)
   - [26. 304 channel MicroLED based CMOS transceiver IC with aggregate 1 Tbps and sub-pJ per bit capability](#26-304-channel-microled-based-cmos-transceiver-ic-with-aggregate-1-tbps-and-sub-pj-per-bit-capability)
+  - [27. 20.8% Peak External Quantum Efficiency of Red (619 nm) InGaN/GaN MicroLEDs](#27-208-peak-external-quantum-efficiency-of-red-619-nm-ingangan-microleds)
 
 链接不需要加<>，直接copy https链接
 
@@ -1358,3 +1359,7 @@ https://doi.org/10.1016/j.mtphys.2026.102214
 ## 26. 304 channel MicroLED based CMOS transceiver IC with aggregate 1 Tbps and sub-pJ per bit capability
 
 https://doi.org/10.1364/OFC.2024.M3A.1
+
+## 27. 20.8% Peak External Quantum Efficiency of Red (619 nm) InGaN/GaN MicroLEDs
+
+https://doi.org/10.1021/acsphotonics.6c01611
