@@ -184,10 +184,11 @@
   - [排错记录](#排错记录)
   - [安全提示](#安全提示)
   - [参考](#参考)
-- [58. web_fetch 修复备忘（Clash Verge TUN fake-ip 场景）](#58-web_fetch-修复备忘clash-verge-tun-fake-ip-场景)
+- [58. web_fetch 修复备忘（这台电脑）](#58-web_fetch-修复备忘这台电脑)
   - [一、问题现象](#一问题现象)
   - [二、根因](#二根因)
   - [三、改动（唯一一处）](#三改动唯一一处)
+    - [关于改在"全局"而不是订阅自己的合并文件](#关于改在全局而不是订阅自己的合并文件)
   - [四、验证方法](#四验证方法)
   - [五、回退方法](#五回退方法)
   - [六、注意事项](#六注意事项)
@@ -3262,7 +3263,7 @@ ssh macmini "codex login status"
 - [openai/codex #19590：远程端口 9234 冲突](https://github.com/openai/codex/issues/19590)
 - [openai/codex #35346：macOS 27 本地网络权限](https://github.com/openai/codex/issues/35346)
 
-# 58. web_fetch 修复备忘（Clash Verge TUN fake-ip 场景）
+# 58. web_fetch 修复备忘（这台电脑）
 
 整理日期：2026-10-17
 
@@ -3281,10 +3282,9 @@ ssh macmini "codex login status"
 
 ## 三、改动（唯一一处）
 
-**文件**：`C:\Users\baste\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles\mzV2eNoCHVlF.yaml`
+**文件**：`C:\Users\baste\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles\Merge.yaml`
 
-**位置**：Clash Verge Rev → 订阅页 → `CLOUD.yaml` 卡片 → **编辑合并文件**
-（判断找对文件：文件头有 `# Profile Enhancement Merge Template for Clash Verge`）
+**位置**：Clash Verge Rev → **全局扩展覆写配置**（全局 Merge）
 
 **新增内容**：
 
@@ -3295,6 +3295,12 @@ dns:
 
 **其余保持不变，TUN 保持开启。**
 
+### 关于改在"全局"而不是订阅自己的合并文件
+
+- 生效范围：**所有订阅**（含以后新加的）
+- 订阅自己的合并文件 `mzV2eNoCHVlF.yaml` 保持空白、未被使用，无需再动
+- 判断找对文件：文件头有 `# Profile Enhancement Merge Template for Clash Verge`；该文件原有内容为 `profile: store-selected: true`
+
 ## 四、验证方法
 
 ```powershell
@@ -3302,18 +3308,23 @@ Resolve-DnsName eu.36kr.com -Type A | Select-Object -ExpandProperty IPAddress
 ```
 
 - 返回真实 IP（如 `47.243.53.17`）= 生效
-- 返回 `198.18.x.x` = 未生效，去订阅页确认合并文件还挂着
+- 返回 `198.18.x.x` = 未生效，去"全局扩展覆写配置"确认那两行还在
 
 2026-10-17 实测：返回 `47.243.53.17`，并成功抓到 36kr 文章全文（`HTTP 200`）。
 
+**生效核对**：Verge 生成的 `clash-verge.yaml` 于 08:10:24 重写，其中 `enhanced-mode: redir-host`；订阅原有的 `nameserver` / `fallback` / `fake-ip-filter` 等全部保留 —— 说明是**深度合并**，只覆盖了这一个键，没有误伤其他设置。
+
 ## 五、回退方法
 
-把那两行删掉 → 保存 → 立即恢复 fake-ip 原状。
+把 `dns:` 及 `enhanced-mode: redir-host` 两行删掉 → 保存 → 立即恢复 fake-ip 原状。
+（该文件原有的 `profile: store-selected: true` 请保留。）
 
 ## 六、注意事项
 
-- ✅ **不会被订阅自动更新冲掉**（合并文件是本地文件，更新后重新叠加）
-- ⚠️ **换订阅 / 删除重加订阅**时，挂载关系重置，需要重贴一次
+- ✅ **不会被订阅自动更新冲掉**
+- ✅ **换订阅 / 删除重加订阅也不用重贴**（因为是全局扩展，对所有订阅生效）—— 这是改在全局位置的好处
+- ⚠️ 如果哪天打开了设置里的 **DNS 覆写**（`enable_dns_settings: true`），那份 `dns_config.yaml`（当前内容是 fake-ip）会接管 dns 段，可能把这行盖回去；到时要**在那边也改成 `redir-host`**。非必要不要开它
+- ℹ️ 配置里残留的 `fake-ip-range: 198.18.0.1/16`、`fake-ip-filter` 在 redir-host 模式下会被忽略，无害，不用清理
 - ❌ **不要关 TUN**：关了会失去全局代理，DSH 自己的模型调用也会断
 - ❌ **不要改订阅本体** `profiles\RggZXLBjzIYv.yaml`（远程订阅，会被自动更新覆盖）
 
@@ -3344,5 +3355,7 @@ dns:
 - 那台 `web_fetch` 天生可用，只是因为它 **TUN 没开**、DNS 没被接管
 - 但 DSH **不读取 Windows 系统代理**，只认 `http_proxy` / `https_proxy` 环境变量，所以那台的抓取是**直连**：抓国内站可以，抓被墙站点会失败
 - 那台 `web_search` 一直正常的原因：`.credentials.yaml` 里**早就有** `DEEPSEEK_API_KEY`（这台是 2026-10-17 才补上的）
+
+**结论（放最后）**：改动只有一处 —— 在 **全局扩展覆写配置（`Merge.yaml`）** 里加了 `dns: enhanced-mode: redir-host` 两行，TUN 保持开启。改在全局位置反而更好：对所有订阅生效，**换订阅也不用重贴**。想回退就删掉那两行（保留原有的 `profile: store-selected: true`）；唯一要留意的是别去打开设置里的"DNS 覆写"开关，否则可能把它盖回 fake-ip。
 
 **结论**：总共只改了一处 —— `CLOUD.yaml` 的合并文件里加了 `dns: enhanced-mode: redir-host` 两行，保持 TUN 开启。想回退就删掉这两行；订阅自动更新不会冲掉它，只有换订阅或删除重加订阅时才需要重贴。
