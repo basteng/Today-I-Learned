@@ -184,6 +184,14 @@
   - [排错记录](#排错记录)
   - [安全提示](#安全提示)
   - [参考](#参考)
+- [58. web_fetch 修复备忘（Clash Verge TUN fake-ip 场景）](#58-web_fetch-修复备忘clash-verge-tun-fake-ip-场景)
+  - [一、问题现象](#一问题现象)
+  - [二、根因](#二根因)
+  - [三、改动（唯一一处）](#三改动唯一一处)
+  - [四、验证方法](#四验证方法)
+  - [五、回退方法](#五回退方法)
+  - [六、注意事项](#六注意事项)
+  - [七、另一台电脑的差异（备查）](#七另一台电脑的差异备查)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -3253,3 +3261,88 @@ ssh macmini "codex login status"
 - [Remote connections – Codex docs](https://developers.openai.com/codex/remote-connections.md)
 - [openai/codex #19590：远程端口 9234 冲突](https://github.com/openai/codex/issues/19590)
 - [openai/codex #35346：macOS 27 本地网络权限](https://github.com/openai/codex/issues/35346)
+
+# 58. web_fetch 修复备忘（Clash Verge TUN fake-ip 场景）
+
+整理日期：2026-10-17
+
+## 一、问题现象
+
+- DSH 的 `web_fetch` 抓任何域名都失败，报错：`URL hostname "xxx" resolves to a non-public IP address`
+- `web_search` 正常，不受影响
+
+## 二、根因
+
+1. 本机代理是 **Clash Verge Rev + TUN + fake-ip**，所有域名被解析成 `198.18.x.x`（假 IP）
+2. DSH 的抓取提供方有硬性规则：**解析结果必须全是公网单播地址，否则整体拒绝**（防 SSRF，让模型无法被诱导去抓 `127.0.0.1` / 内网）
+3. 该规则**没有配置项可以放宽**（可配的只有 maxResponseBytes / maxBodyChars / timeoutMs / maxRedirects / userAgent）
+
+所以只能在 DNS 侧解决。
+
+## 三、改动（唯一一处）
+
+**文件**：`C:\Users\baste\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles\mzV2eNoCHVlF.yaml`
+
+**位置**：Clash Verge Rev → 订阅页 → `CLOUD.yaml` 卡片 → **编辑合并文件**
+（判断找对文件：文件头有 `# Profile Enhancement Merge Template for Clash Verge`）
+
+**新增内容**：
+
+```yaml
+dns:
+  enhanced-mode: redir-host
+```
+
+**其余保持不变，TUN 保持开启。**
+
+## 四、验证方法
+
+```powershell
+Resolve-DnsName eu.36kr.com -Type A | Select-Object -ExpandProperty IPAddress
+```
+
+- 返回真实 IP（如 `47.243.53.17`）= 生效
+- 返回 `198.18.x.x` = 未生效，去订阅页确认合并文件还挂着
+
+2026-10-17 实测：返回 `47.243.53.17`，并成功抓到 36kr 文章全文（`HTTP 200`）。
+
+## 五、回退方法
+
+把那两行删掉 → 保存 → 立即恢复 fake-ip 原状。
+
+## 六、注意事项
+
+- ✅ **不会被订阅自动更新冲掉**（合并文件是本地文件，更新后重新叠加）
+- ⚠️ **换订阅 / 删除重加订阅**时，挂载关系重置，需要重贴一次
+- ❌ **不要关 TUN**：关了会失去全局代理，DSH 自己的模型调用也会断
+- ❌ **不要改订阅本体** `profiles\RggZXLBjzIYv.yaml`（远程订阅，会被自动更新覆盖）
+
+**副作用（三条，已知并接受）**：
+
+1. 域名解析回到本地，阿里/腾讯 DNS 能看到你访问的域名清单（fake-ip 下国外域名由节点侧解析）
+2. 首次访问新域名多一次真实 DNS 往返，稍慢（有缓存）
+3. 个别站点分流可能走错线路（域名匹配改为依赖 IP→域名缓存，且当前未开 sniffer）；遇到可开 `sniffer: {enable: true}` 或改回 fake-ip
+
+**如果只想抓固定几个站**（其他上网行为零影响），改用白名单写法替代：
+
+```yaml
+dns:
+  fake-ip-filter:
+    - '+.example.com'
+```
+
+## 七、另一台电脑的差异（备查）
+
+| 项目 | 这台 | 另一台 |
+|---|---|---|
+| 默认模型 | opencode-go / deepseek-v4.1-flash | 完全相同 |
+| 凭据 refs | OPENCODE_GO_API_KEY、DEEPSEEK_API_KEY | 完全相同 |
+| TUN | 开启 | **关闭**（`enable_tun_mode: false`） |
+| 系统代理 | 开 | 开（127.0.0.1:7897） |
+| DNS | 改前 fake-ip / 改后真解析 | 一直真解析 |
+
+- 那台 `web_fetch` 天生可用，只是因为它 **TUN 没开**、DNS 没被接管
+- 但 DSH **不读取 Windows 系统代理**，只认 `http_proxy` / `https_proxy` 环境变量，所以那台的抓取是**直连**：抓国内站可以，抓被墙站点会失败
+- 那台 `web_search` 一直正常的原因：`.credentials.yaml` 里**早就有** `DEEPSEEK_API_KEY`（这台是 2026-10-17 才补上的）
+
+**结论**：总共只改了一处 —— `CLOUD.yaml` 的合并文件里加了 `dns: enhanced-mode: redir-host` 两行，保持 TUN 开启。想回退就删掉这两行；订阅自动更新不会冲掉它，只有换订阅或删除重加订阅时才需要重贴。
