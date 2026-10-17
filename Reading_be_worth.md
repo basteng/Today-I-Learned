@@ -2646,3 +2646,34 @@ Money is one of the greatest instruments of freedom ever invented by man. It is 
 <https://www.inspiringquotes.us/author/6901-friedrich-august-von-hayek>
 
 哈耶克
+
+# 62. 17岁少年自学AI、两周退学，拿到5份约百万美元以上的offer——Deedy Das 原帖
+
+出处：Deedy Das（@deedydas）在 X 上的帖子，LinkedIn 有同文帖。
+
+* X 原帖：<https://x.com/deedydas/status/2109238984581001353>
+* LinkedIn 同文帖：<https://www.linkedin.com/posts/debarghyadas_met-a-kid-today-who-taught-himself-ai-with-activity-7515008653943414784-ODfQ>
+
+## 英文原文
+
+Met a kid today who taught himself AI with LLMs at 14 while barely speaking English, worked a 1yr long internship in a top AI company, flew across the world to attend a top 10 US undergrad, dropped out in 2 weeks, and has 5 ~$1M+ job offers from the top neolabs in SF at age 17.
+
+Traditional education is so dead.
+
+The young kids today are just built different.
+
+## 对应中文意思
+
+今天遇到一个少年。他14岁时英语还说不太好，就借助大语言模型自学 AI，在一家顶级 AI 公司实习了一整年，后来飞越半个地球，进入美国排名前十的大学读本科，却在两周后退学。如今17岁的他，已经拿到了旧金山顶级新兴 AI 实验室的5份工作 offer，金额约为100万美元以上。
+
+传统教育真是已经不行了。
+
+现在的年轻人，真的不一样。
+
+## 原帖里有几个需要注意的细节
+
+* 发布时间：检索到的原帖页面显示为 2026年10月11日，而不是今天（10月13日）。文中的 “today” 指的是作者发帖当天。
+* 少年的身份没有公开：Deedy 在回复中明确说了 “Keeping him private!”（保密，不公开他的身份）。原文也没有列出学校、实习公司或5家实验室的名字。
+* “百万美元”不等于明确的百万美元现金年薪：原文只写了 “5 ~$1M+ job offers”，没有说明是年薪、包含股权的年度总薪酬，还是其他口径。因此，“每份超过100万美元”是作者的概括，不能进一步当作已核实的现金年薪。
+
+所以，出处确实找到了，但故事的具体身份、公司及薪酬构成，在这条原帖中都没有披露。
