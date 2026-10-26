@@ -193,6 +193,7 @@
   - [五、回退方法](#五回退方法)
   - [六、注意事项](#六注意事项)
   - [七、另一台电脑的差异（备查）](#七另一台电脑的差异备查)
+- [59. 通过 frp + SSH 远程使用公司 Windows 电脑上的 DSH](#59-通过-frp--ssh-远程使用公司-windows-电脑上的-dsh)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -3359,3 +3360,499 @@ dns:
 **结论（放最后）**：改动只有一处 —— 在 **全局扩展覆写配置（`Merge.yaml`）** 里加了 `dns: enhanced-mode: redir-host` 两行，TUN 保持开启。改在全局位置反而更好：对所有订阅生效，**换订阅也不用重贴**。想回退就删掉那两行（保留原有的 `profile: store-selected: true`）；唯一要留意的是别去打开设置里的"DNS 覆写"开关，否则可能把它盖回 fake-ip。
 
 **结论**：总共只改了一处 —— `CLOUD.yaml` 的合并文件里加了 `dns: enhanced-mode: redir-host` 两行，保持 TUN 开启。想回退就删掉这两行；订阅自动更新不会冲掉它，只有换订阅或删除重加订阅时才需要重贴。
+
+所有真实 IP、实例 ID、主机名、用户名、token、路径都已替换成占位符；提交前按第 59.10 节替换成你自己的值，**不要把真实值提交到仓库**。
+
+---
+
+# 59. 通过 frp + SSH 远程使用公司 Windows 电脑上的 DSH
+
+> 本文所有 `<...>` 均为占位符。请复制到本地后替换为你自己的值，并确保真实配置、日志、密钥不进入 Git。
+
+## 59.0 适用场景
+
+- 家里 Windows / 手机，通过浏览器使用公司 Windows 电脑上的 DSH；
+- 公司电脑没有公网 IP，出口 IP 可能变化；
+- 有一台带公网 IP 的阿里云 ECS 作为 frp 服务端；
+- 只需要 SSH / 命令行 / Agent，不需要远程桌面。
+
+## 59.1 架构
+
+```text
+家里浏览器
+  http://127.0.0.1:<LOCAL_PORT>/?token=<TOKEN>
+        │
+        │  SSH 本地转发
+        ▼
+阿里云 <ECS_PUBLIC_IP>:<SSH_PORT>   （frps）
+        │
+        │  frp 隧道（公司 frpc 主动出站）
+        ▼
+公司 <COMPANY_PC>
+  ├─ sshd 127.0.0.1:22
+  └─ dsh --profile web 127.0.0.1:<DSH_PORT>
+```
+
+关键点：公司电脑**主动出站**连阿里云，所以公司公网 IP、局域网 IP 怎么变都不影响。
+
+## 59.2 前置条件
+
+- 阿里云 ECS：有公网 IP，能开放端口；
+- 公司 Windows：有管理员权限，能装 OpenSSH Server 和 frpc；
+- 家里 Windows：有 SSH 客户端；
+- 公司电脑已安装 DSH 桌面版（带 CLI 和 Web profile）；
+- 两端 frp 版本一致，本文示例为 `0.58.1`。
+
+## 59.3 阿里云 ECS
+
+### 59.3.1 安全组
+
+入站放行：
+
+| 端口 | 用途 |
+|---|---|
+| `<FRPS_PORT>`（示例 7000） | frpc 接入 |
+| `<SSH_PORT>`（示例 6056） | 家里 SSH 到公司 |
+
+管理用的 22 端口只放自己的 IP。
+
+### 59.3.2 frps.toml
+
+```toml
+bindPort = 7000
+
+auth.method = "token"
+auth.token = "REPLACE_WITH_LONG_RANDOM"
+
+transport.tls.force = true
+
+# 只允许这些远程端口，按你的实际改
+allowPorts = [{ start = 6000, end = 6100 }]
+```
+
+> 首次联调可以先注释掉 `auth` / `tls`，跑通后立刻补上。无认证的 frps 等于公开中继，任何人都能注册代理。
+
+### 59.3.3 启动
+
+```bash
+cd /opt/frp
+nohup ./frps -c ./frps.toml > frps.log 2>&1 &
+```
+
+或使用 systemd：
+
+```ini
+[Unit]
+Description=frp server
+After=network.target
+
+[Service]
+ExecStart=/opt/frp/frps -c /opt/frp/frps.toml
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```bash
+systemctl enable --now frps
+```
+
+### 59.3.4 验证
+
+```bash
+ss -lntp | grep -E '7000|6056'
+journalctl -u frps -n 80 --no-pager
+```
+
+## 59.4 公司 Windows
+
+### 59.4.1 安装 OpenSSH Server
+
+优先尝试系统可选功能：
+
+```powershell
+Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
+Start-Service sshd
+Set-Service -Name sshd -StartupType Automatic
+```
+
+如果报 `0x80070424` / `0x800f0954`（Windows Update 被限制），改用 GitHub 的 Win32-OpenSSH：
+
+1. 下载 `OpenSSH-Win64.zip`；
+2. 解压到 `C:\Program Files\OpenSSH`；
+3. 管理员 PowerShell：
+
+```powershell
+cd "C:\Program Files\OpenSSH"
+powershell -ExecutionPolicy Bypass -File .\install-sshd.ps1
+Start-Service sshd
+Set-Service -Name sshd -StartupType Automatic
+```
+
+验证：
+
+```powershell
+Get-Service sshd
+Get-NetTCPConnection -LocalPort 22 -State Listen
+ssh localhost
+```
+
+> Windows OpenSSH 默认 shell 是 cmd。想直接进 PowerShell，可以设置：
+>
+> ```powershell
+> New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell `
+>     -Value "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" `
+>     -PropertyType String -Force
+> ```
+
+### 59.4.2 配置 frpc
+
+下载与 ECS 同版本的 Windows 包：
+
+```text
+frp_<FRP_VERSION>_windows_amd64.zip
+```
+
+解压到 `C:\frp`，写 `C:\frp\frpc.toml`：
+
+```toml
+serverAddr = "<ECS_PUBLIC_IP>"
+serverPort = 7000
+
+auth.method = "token"
+auth.token = "REPLACE_WITH_LONG_RANDOM"
+transport.tls.enable = true
+
+[[proxies]]
+name = "company-ssh"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 22
+remotePort = 6056
+```
+
+先测出站：
+
+```powershell
+Test-NetConnection <ECS_PUBLIC_IP> -Port 7000
+```
+
+再启动：
+
+```powershell
+cd C:\frp
+.\frpc.exe -c .\frpc.toml
+```
+
+看到 `login to server success` 和 `start proxy success` 即成功。
+
+### 59.4.3 用 NSSM 把 frpc 做成服务
+
+NSSM 是一个开源的服务包装器，把 `frpc.exe` 变成 Windows 服务：
+
+```powershell
+$nssm = 'C:\nssm\nssm-2.24\win64\nssm.exe'
+
+& $nssm install frpc 'C:\frp\frpc.exe' '-c' 'C:\frp\frpc.toml'
+& $nssm set frpc AppDirectory 'C:\frp'
+& $nssm set frpc Start SERVICE_AUTO_START
+& $nssm set frpc AppExit Default Restart
+& $nssm set frpc AppRestartDelay 5000
+
+& $nssm set frpc AppStdout 'C:\frp\frpc-service.log'
+& $nssm set frpc AppStderr 'C:\frp\frpc-service.err.log'
+& $nssm set frpc AppRotateFiles 1
+& $nssm set frpc AppRotateOnline 1
+& $nssm set frpc AppRotateBytes 10485760
+
+& $nssm start frpc
+```
+
+验证：
+
+```powershell
+Get-Service frpc
+& $nssm status frpc
+Get-Process frpc | Select-Object Id, SessionId, StartTime
+```
+
+测试自动重启：
+
+```powershell
+Stop-Process -Name frpc -Force
+Start-Sleep 10
+Get-Process frpc | Select-Object Id, StartTime
+```
+
+卸载：
+
+```powershell
+& $nssm stop frpc
+& $nssm remove frpc confirm
+```
+
+> 如果不想用第三方工具，可以用“任务计划 + 每 5 分钟看门狗”替代，见 59.4.5。
+
+### 59.4.4 启动 DSH Web
+
+找到 CLI：
+
+```powershell
+$dsh = '<DSH_INSTALL_DIR>\resources\runtime\cli\bin\dsh.cmd'
+Test-Path $dsh
+& $dsh --version
+```
+
+启动 Web：
+
+```powershell
+& $dsh --profile web --no-open --port 3080
+```
+
+会打印：
+
+```text
+dsh web: http://127.0.0.1:3080/?token=<TOKEN>
+```
+
+### 59.4.5 可选：DSH Web 登录自启
+
+如果希望不依赖 SSH 窗口，用 `note-lvwb` 这类**用户账户**做登录任务（不要用 SYSTEM，否则读不到 `.dsh` 配置和凭据）。
+
+`C:\frp\start-dsh-web.ps1`：
+
+```powershell
+$dsh = '<DSH_INSTALL_DIR>\resources\runtime\cli\bin\dsh.cmd'
+$log = 'C:\frp\dsh-web.log'
+
+& $dsh --profile web --no-open --port 3080 *>> $log
+```
+
+注册任务：
+
+```powershell
+$user = "$env:COMPUTERNAME\<COMPANY_USER>"
+
+$action = New-ScheduledTaskAction -Execute 'powershell.exe' `
+    -Argument '-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File C:\frp\start-dsh-web.ps1'
+$trigger = New-ScheduledTaskTrigger -AtLogOn -User $user
+$settings = New-ScheduledTaskSettingsSet `
+    -AllowStartIfOnBatteries `
+    -DontStopIfGoingOnBatteries `
+    -StartWhenAvailable `
+    -RestartCount 999 `
+    -RestartInterval (New-TimeSpan -Minutes 1) `
+    -ExecutionTimeLimit ([TimeSpan]::Zero) `
+    -MultipleInstances IgnoreNew
+$principal = New-ScheduledTaskPrincipal -UserId $user -LogonType Interactive -RunLevel Limited
+
+Register-ScheduledTask -TaskName 'dsh-web' `
+    -Action $action -Trigger $trigger -Settings $settings -Principal $principal -Force
+```
+
+取最新 token：
+
+```powershell
+Select-String -Path C:\frp\dsh-web.log -Pattern 'dsh web:' | Select-Object -Last 1
+```
+
+注意：
+
+- 这个任务只在 `<COMPANY_USER>` 登录后触发；
+- 跑在用户会话里，能读到 DSH 的配置和凭据；
+- 日志里有 token，`.gitignore` 要排除。
+
+## 59.5 家里 Windows
+
+### 59.5.1 SSH 到公司
+
+```powershell
+ssh -p <SSH_PORT> <COMPANY_USER>@<ECS_PUBLIC_IP>
+```
+
+能进就说明 frp + sshd 整条链路通了。
+
+### 59.5.2 建 DSH 隧道
+
+另开一个 PowerShell：
+
+```powershell
+ssh -N -L <LOCAL_PORT>:127.0.0.1:<DSH_PORT> -p <SSH_PORT> `
+    <COMPANY_USER>@<ECS_PUBLIC_IP>
+```
+
+`-N` 不执行远程命令，所以没有提示符、没有输出，这是正常的。窗口保持不关。
+
+如果家里 `<LOCAL_PORT>` 被占用，换一个，比如 3081。
+
+### 59.5.3 浏览器
+
+打开公司电脑打印的地址：
+
+```text
+http://127.0.0.1:<LOCAL_PORT>/?token=<TOKEN>
+```
+
+首次用 token 换 cookie 后，收藏干净的 `http://127.0.0.1:<LOCAL_PORT>/`，默认 30 天内免 token。
+
+### 59.5.4 代理软件的坑
+
+如果本机开了 Mihomo / Clash 的 TUN，`Test-NetConnection` 的 True 可能是本地代理假装的，SSH 会报：
+
+```text
+kex_exchange_identification: Connection closed by remote host
+```
+
+解决：在规则最前面加直连：
+
+```yaml
+rules:
+  - IP-CIDR,<ECS_PUBLIC_IP>/32,DIRECT,no-resolve
+  - PROCESS-NAME,ssh.exe,DIRECT
+```
+
+或者临时关闭 TUN。
+
+## 59.6 日常维护
+
+### 59.6.1 常用命令
+
+```powershell
+# 公司电脑：看 frpc 服务
+Get-Service frpc
+& 'C:\nssm\nssm-2.24\win64\nssm.exe' status frpc
+Get-Content C:\frp\frpc-service.log -Tail 30
+
+# 重启 frpc
+Restart-Service frpc
+
+# 看 sshd
+Get-Service sshd
+Get-NetTCPConnection -LocalPort 22 -State Listen
+```
+
+```bash
+# 阿里云：看端口和 frps
+ss -lntp | grep -E '<FRPS_PORT>|<SSH_PORT>'
+journalctl -u frps -n 80 --no-pager
+systemctl restart frps
+```
+
+### 59.6.2 端口/地址变更
+
+- 公司 IP 变：不用管，frpc 主动出站；
+- 公司电脑重启：frpc 服务自动启动；DSH Web 需登录任务或手动启动；
+- 换 SSH 远程端口：改 `frpc.toml` 的 `remotePort`，重启 frpc，安全组放行新端口；
+- 换 ECS 公网 IP：改所有 `frpc.toml` 的 `serverAddr`，重启 frpc。
+
+## 59.7 安全清单
+
+- [ ] frps 配置 `auth.token` 和 `transport.tls.force = true`；
+- [ ] 所有 frpc 配置相同的 token，并 `transport.tls.enable = true`；
+- [ ] 用 `allowPorts` 限制 remotePort 范围；
+- [ ] SSH 改密钥登录，`PasswordAuthentication no`；
+- [ ] 不要把 3080 直接暴露公网，网页走 SSH `-L`；
+- [ ] ECS 安全组最小放行；
+- [ ] `.gitignore` 排除日志、密钥、`.credentials.yaml`；
+- [ ] 定期更新 frp。
+
+SSH 密钥示例：
+
+```powershell
+ssh-keygen -t ed25519 -f $env:USERPROFILE\.ssh\company_key
+```
+
+公钥放到公司电脑：
+
+- 管理员用户：`C:\ProgramData\ssh\administrators_authorized_keys`
+- 普通用户：`C:\Users\<COMPANY_USER>\.ssh\authorized_keys`
+
+管理员文件需要修 ACL：
+
+```powershell
+icacls C:\ProgramData\ssh\administrators_authorized_keys /inheritance:r /grant "Administrators:F" /grant "SYSTEM:F"
+```
+
+然后：
+
+```text
+# C:\ProgramData\ssh\sshd_config
+PasswordAuthentication no
+PubkeyAuthentication yes
+```
+
+```powershell
+Restart-Service sshd
+```
+
+## 59.8 已知问题
+
+### 59.8.1 PowerShell 在沙箱里崩溃
+
+现象：远程 DSH 的 `pwsh` 在 `workspace-write` 下启动即退出，返回 `0xC0000142`（`STATUS_DLL_INIT_FAILED`），切到 `danger-full-access` 才正常。
+
+排查：
+
+```powershell
+Get-Command pwsh | Format-List Name, Source
+powershell.exe -NoProfile -Command "hostname"
+Get-WinEvent -FilterHashtable @{LogName='Application'; Id=1000} -MaxEvents 5
+```
+
+常见原因：pwsh 是 Store 版 / per-user 安装，沙箱受限令牌加载不了它的 DLL；或沙箱令牌缺少桌面/窗口站权限。
+
+临时办法：改用 `powershell.exe`（5.1），或把 pwsh 重装为 MSI 版到 `C:\Program Files\PowerShell\7`。
+
+### 59.8.2 睡眠 / 注销 / BitLocker
+
+- 公司电脑睡眠时 frpc 不工作；
+- 注销后用户级 DSH Web 停止；
+- BitLocker 预启动 PIN 会让远程彻底失联。
+
+建议：
+
+```powershell
+powercfg /change standby-timeout-ac 0
+powercfg /change hibernate-timeout-ac 0
+```
+
+### 59.8.3 token / cookie
+
+- DSH 每次启动生成新 token；
+- 浏览器 cookie 默认 30 天，绑定 host + port；
+- 换端口、换浏览器、清 cookie 后需要重新用 token 登录；
+- 日志里的 token 属于凭据，不要提交。
+
+### 59.8.4 公网扫描
+
+frps 暴露在公网后，日志里会出现大量陌生 IP 尝试连接。必须加 token/TLS，SSH 只留密钥登录。
+
+## 59.9 排错
+
+| 现象 | 先查 |
+|---|---|
+| `<SSH_PORT>` 连不上 | 公司电脑是否开机/睡眠；`Get-Service frpc`；阿里云 `ss \| grep <SSH_PORT>` |
+| `kex_exchange_identification` | 本机代理 TUN；加 DIRECT 规则 |
+| SSH 能进但 DSH 页面打不开 | `dsh --profile web` 是否在跑；隧道窗口是否还在 |
+| 页面 401 | token 过期/不对；用带 token 的根路径重新打开 |
+| 页面 403 | 确认访问的是 `127.0.0.1`；走隧道不需要 `--trusted-host` |
+| frpc 服务起不来 | `C:\frp\frpc-service.err.log`；`nssm status frpc` |
+| 公司重启后连不上 | 是否有人登录；frpc 服务是否 Running；DSH Web 是否启动 |
+| 所有命令 `0xC0000142` | 远程 DSH 沙箱问题，临时切完全权限 |
+
+## 59.10 占位符
+
+| 占位符 | 含义 | 示例 |
+|---|---|---|
+| `<ECS_PUBLIC_IP>` | 阿里云 ECS 公网 IP | `203.0.113.10` |
+| `<FRPS_PORT>` | frps bindPort | `7000` |
+| `<SSH_PORT>` | 公司 SSH 的 remotePort | `6056` |
+| `<DSH_PORT>` | 公司 DSH Web 端口 | `3080` |
+| `<LOCAL_PORT>` | 家里隧道本地端口 | `3080` |
+| `<COMPANY_PC>` | 公司电脑主机名 | `office-pc` |
+| `<COMPANY_USER>` | 公司 Windows 用户名 | `alice` |
+| `<DSH_INSTALL_DIR>` | DSH 安装目录 | `C:\Program Files\DeepSeek Harness` |
+| `<TOKEN>` | DSH 一次性 token | `xxxxxxxx` |
+| `<FRP_VERSION>` | frp 版本 | `0.58.1` |
