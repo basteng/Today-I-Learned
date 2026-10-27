@@ -202,6 +202,7 @@
   - [五、副作用与遗留物](#五副作用与遗留物)
   - [六、以后怎么用](#六以后怎么用)
   - [七、回滚（保留备用）](#七回滚保留备用)
+- [61. DSH Web 远程访问运行手册](#61-dsh-web-远程访问运行手册)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -4003,3 +4004,135 @@ git config --local --unset 'http.https://github.com/.extraHeader'
 一句话：**这个仓库现在可以随时 commit + push，不用点授权**；网络断了走 SSH，token 死了换一个即可。
 
 > 备注：本章原计划编号 59，因远程已有 59 章（frp + SSH 远程使用公司 Windows 的 DSH）而顺延为 60。
+
+# 61. DSH Web 远程访问运行手册
+
+> 本文是第 59 节的**运维版**：59 讲怎么从零搭起来，这里讲搭好之后每天怎么用、出问题怎么查、怎么回滚。
+> 生成日期 2026-10-27，适用机器 `<COMPANY_PC>`。文中 `<...>` 沿用 59.10 的定义，另增 `<LAN_IP>`（公司电脑局域网 IP）。
+
+## 61.1 链路
+
+```text
+家里浏览器 http://127.0.0.1:<LOCAL_PORT>
+        ↓  ssh -L（在家里电脑上开本地门）
+家里 127.0.0.1:<LOCAL_PORT>  ──ssh -p <SSH_PORT>──▶  <ECS_PUBLIC_IP>:<SSH_PORT>
+        ↓  frp（公司电脑上的 frpc 把 <SSH_PORT> 反向映射到本机 22）
+公司电脑 sshd:22 → 隧道尽头 127.0.0.1:<DSH_PORT>
+        ↓
+公司电脑上的 dsh web（计划任务 "DSH Web <DSH_PORT>" 启动，跑在交互会话 session 1）
+```
+
+## 61.2 关键参数
+
+| 项 | 值 |
+|---|---|
+| 公司电脑局域网 IP | `<LAN_IP>`（WLAN，DHCP，可能变） |
+| 阿里云公网入口 | `<ECS_PUBLIC_IP>:<SSH_PORT>`（frp：company-ssh） |
+| frpc 服务 | Windows 服务 `frpc`（NSSM），配置 `C:\frp\frpc.toml` |
+| web 监听端口 | `127.0.0.1:<DSH_PORT>`（只监听回环，绝不暴露公网） |
+| 服务启动方式 | 计划任务 `DSH Web <DSH_PORT>`（登录时启动，交互会话） |
+| 启动脚本 | `C:\dsh-web\start-web.cmd` |
+| 日志（含 token） | `C:\dsh-web\web.log` |
+| web profile 配置 | `%USERPROFILE%\.dsh\profiles\web\cordis.patch.yml` |
+| 桌面端配置（互不影响） | `%USERPROFILE%\.dsh\profiles\desktop\cordis.patch.yml` |
+| 配置备份 | `D:\DSH-Workspace\dsh-web-backup\cordis.patch.yml.20261027-good` |
+
+## 61.3 日常操作
+
+### 到公司 / 开机
+
+零操作。登录后计划任务自动拉起服务；锁屏不影响，**注销会停服务**（重新登录自动恢复）。
+
+### 回家要用
+
+1. 在家里电脑开隧道（后台模式，不占窗口）：
+
+   ```powershell
+   ssh -N -f -p <SSH_PORT> -L <LOCAL_PORT>:127.0.0.1:<DSH_PORT> <COMPANY_USER>@<ECS_PUBLIC_IP>
+   ```
+
+2. 浏览器先试不带 token：`http://127.0.0.1:<LOCAL_PORT>/`
+3. 若提示 `dsh web authentication required`，按 61.4 取新 URL。
+
+### 改了配置要生效
+
+```powershell
+Stop-Process -Id (Get-NetTCPConnection -LocalPort <DSH_PORT> -State Listen).OwningProcess -Force
+Start-Sleep 2
+Start-ScheduledTask -TaskName "DSH Web <DSH_PORT>"
+Start-Sleep 12
+```
+
+## 61.4 取 token / 当前 URL
+
+在公司电脑侧执行（SSH 里，或让 agent 执行）：
+
+```powershell
+(Select-String -Path C:\dsh-web\web.log -Pattern 'http://127\.0\.0\.1:<DSH_PORT>/\?token=\S+' | Select-Object -Last 1).Matches[0].Value
+```
+
+输出整行就是完整 URL，直接粘进浏览器地址栏（不用手动拼）。
+
+- token 是**进程级凭证**：服务不重启就不变；
+- 重启后旧地址 401，必须重新取最新一条；
+- token 等同这台电脑的操作权限，不要截图外发、不要贴群。
+
+## 61.5 故障定位（按顺序）
+
+```powershell
+# 1) 服务在不在听
+netstat -ano | findstr :<DSH_PORT>
+
+# 2) 任务状态
+Get-ScheduledTask -TaskName "DSH Web <DSH_PORT>" | Select-Object TaskName,State
+
+# 3) 日志末尾
+Get-Content C:\dsh-web\web.log -Tail 40
+```
+
+| 现象 | 判定 | 处置 |
+|---|---|---|
+| 家里打不开，公司 `netstat` 有 LISTENING | 隧道问题 | 在家里重开 `ssh -L`；用 `netstat` 看家里本地是否在听 |
+| `netstat` 无 LISTENING | 服务没跑 | `Start-ScheduledTask -TaskName "DSH Web <DSH_PORT>"` |
+| 日志 `EADDRINUSE` | 旧进程没死 | `Stop-Process` 后重新 `Start-ScheduledTask` |
+| 页面 401 | token 过期 / URL 不全 | 按 61.4 取新 URL，注意别漏字符 |
+| 改配置后起不来 | 配置错误 | 还原备份（61.6） |
+| 能聊天但执行命令报 `0xC0000142` | 服务跑在 session 0 | 确认由计划任务启动，不是 SSH 里前台拉起 |
+
+## 61.6 回滚
+
+**A. 还原 web profile 配置（最常用）**
+
+```powershell
+Copy-Item "D:\DSH-Workspace\dsh-web-backup\cordis.patch.yml.20261027-good" `
+  "$env:USERPROFILE\.dsh\profiles\web\cordis.patch.yml" -Force
+```
+
+然后按 61.3 重启服务。
+
+**B. 只删掉某一段**：编辑 `cordis.patch.yml`，删掉对应条目（如 `- id: llm-pi-ai ...` 整段），保留其余条目，重启。
+
+**C. 放弃计划任务，回到手动前台启动**
+
+```powershell
+Unregister-ScheduledTask -TaskName "DSH Web <DSH_PORT>" -Confirm:$false
+```
+
+**D. 桌面端配置**：本次从未修改，回滚不涉及。
+
+## 61.7 注意事项
+
+1. **注销会停服务**：命令执行依赖「服务跑在交互会话」，代价是不能无人值守。
+2. **token = 凭证**：等同这台电脑的操作权限。
+3. **明文 HTTP**：`<DSH_PORT>` 没有 TLS，安全性完全依赖 SSH 隧道，永远不要把该端口映射到公网。
+4. **`<SSH_PORT>` 对公网开放**（frp 端口）：应确认只允许密钥登录、禁用密码、用安全组限制来源 IP。
+5. **IP 变化**：公司电脑是 DHCP，`<LAN_IP>` 变了只影响公司内网访问；frp 走外连，不受影响。
+6. **日志会增长**：`web.log` 每次启动追加，长期可定期清空。
+
+## 61.8 变更记录
+
+| 日期 | 变更 | 结果 |
+|---|---|---|
+| 2026-10-27 | web profile 增加 `llm-pi-ai` / `opencode-go`（26 个模型） | 生效，模型选择器出现 opencode 系列 |
+| 2026-10-27 | 默认模型改为 `opencode-go / deepseek-v4.1-flash` | 生效 |
+| 2026-10-27 | 服务改为计划任务 `DSH Web <DSH_PORT>` 启动（交互会话） | `0xC0000142` 消失，命令执行恢复 |
