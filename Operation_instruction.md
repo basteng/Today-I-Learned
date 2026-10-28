@@ -203,6 +203,7 @@
   - [六、以后怎么用](#六以后怎么用)
   - [七、回滚（保留备用）](#七回滚保留备用)
 - [61. DSH Web 远程访问运行手册](#61-dsh-web-远程访问运行手册)
+- [62. 树莓派上跑 DSH Web 并用 SSH 隧道访问](#62-树莓派上跑-dsh-web-并用-ssh-隧道访问)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -4136,3 +4137,274 @@ Unregister-ScheduledTask -TaskName "DSH Web <DSH_PORT>" -Confirm:$false
 | 2026-10-27 | web profile 增加 `llm-pi-ai` / `opencode-go`（26 个模型） | 生效，模型选择器出现 opencode 系列 |
 | 2026-10-27 | 默认模型改为 `opencode-go / deepseek-v4.1-flash` | 生效 |
 | 2026-10-27 | 服务改为计划任务 `DSH Web <DSH_PORT>` 启动（交互会话） | `0xC0000142` 消失，命令执行恢复 |
+
+# 62. 树莓派上跑 DSH Web 并用 SSH 隧道访问
+
+> 场景：Windows 电脑 SSH 连到树莓派，在 Pi 上跑 `dsh web`，用本机浏览器访问它的 Web 界面。
+> 和第 59、61 节的区别：那两节是公司 Windows 经 frp 反向映射回家；这篇是树莓派直接跑、靠 SSH 本地转发穿隧道，不涉及 frp。
+> 本章新增占位符 `<PI_USER>`、`<PI_WORKDIR>`、`<PI_SSH_PORT>`、`<PI_DSH_VERSION>`，其余沿用 59.10 的定义。
+
+## 62.1 关键参数
+
+| 项 | 值 |
+|---|---|
+| 树莓派 SSH 入口 | `<ECS_PUBLIC_IP>:<PI_SSH_PORT>` |
+| 登录用户 | `<PI_USER>` |
+| Pi 上工作目录 | `<PI_WORKDIR>` |
+| Pi 上 dsh 监听端口 | `<DSH_PORT>` |
+| Windows 本地隧道端口 | `<LOCAL_PORT>` |
+| DSH 版本 | `<PI_DSH_VERSION>` |
+
+**核心口诀：Pi 上用 `<DSH_PORT>`，浏览器用 `<LOCAL_PORT>`。**
+
+两个 `<DSH_PORT>` 不相干，这是最容易绕晕的地方：
+
+| 端口 | 在哪台机器 | 谁占用 |
+|---|---|---|
+| `<DSH_PORT>` | 树莓派 | `dsh web` 自己 |
+| `<DSH_PORT>` | Windows | ⚠️ 被本机 DeepSeek Harness 桌面版占用，不能用 |
+| `<LOCAL_PORT>` | Windows | SSH 隧道，给浏览器用 |
+
+## 62.2 一次性完整启动流程
+
+### 第 1 步 · 连树莓派
+
+Windows 打开 PowerShell ①：
+
+```powershell
+ssh -p <PI_SSH_PORT> <PI_USER>@<ECS_PUBLIC_IP>
+```
+
+输入密码，看到 `<PI_USER>@<PI_HOST>:~$` 这样的提示符即成功。
+
+### 第 2 步 · 在 tmux 里启动服务
+
+在 SSH 窗口里依次执行：
+
+```bash
+tmux new -s dsh
+cd <PI_WORKDIR>
+npx @deepseek-ai/dsh web --no-open --port <DSH_PORT>
+```
+
+预期输出（关键）：
+
+```text
+dsh web: http://127.0.0.1:<DSH_PORT>/?token=<TOKEN>
+```
+
+### 第 3 步 · 记下 token，脱离 tmux
+
+把 `token=` 后面那串完整字符记到记事本。
+
+然后按 `Ctrl-b`，松手，再按 `d` → 回到普通提示符，服务继续在后台跑。
+
+### 第 4 步 · 在 Windows 建隧道
+
+Windows 打开**另一个** PowerShell ②：
+
+```powershell
+ssh -N -L <LOCAL_PORT>:127.0.0.1:<DSH_PORT> -p <PI_SSH_PORT> <PI_USER>@<ECS_PUBLIC_IP>
+```
+
+输入密码后**没有任何输出、光标停住** = 隧道已通。
+👉 这个窗口不能关，关了隧道就断。
+
+> 用 MobaXterm 的话这一步可以省掉 —— 隧道能随会话自动建立，见 62.8。
+
+### 第 5 步 · 浏览器打开
+
+```text
+http://127.0.0.1:<LOCAL_PORT>/?token=<第 3 步记下的那串>
+```
+
+注意端口是 `<LOCAL_PORT>`，不是 `<DSH_PORT>`。
+
+### 第 6 步 · 首次进入配置（只做一次）
+
+1. **设置 → 模型** → 填 DeepSeek API key → 保存
+2. **选择工作区** → 选 `<PI_WORKDIR>`
+
+不选工作区，输入框是灰的。
+
+## 62.3 日常使用
+
+| 目的 | 操作 |
+|---|---|
+| 正常打开界面 | 保持 PowerShell ② 开着，浏览器访问 `http://127.0.0.1:<LOCAL_PORT>/`（同一浏览器 cookie 有效，不用再带 token） |
+| 看服务日志 / 找 token | `tmux attach -t dsh`，看完 `Ctrl-b` `d` |
+| 确认服务在跑 | Pi 上 `ss -ltnp \| grep <DSH_PORT>`，有输出即正常 |
+| 确认隧道在跑 | Windows 上 `netstat -ano \| findstr :<LOCAL_PORT>` |
+| 停服务 | `tmux kill-session -t dsh` |
+| 电脑重启后恢复 | 只重做**第 4 步**，浏览器开 `<LOCAL_PORT>` 即可 |
+| Pi 重启 / 服务停过 | 重做**第 1–5 步**，token 会变 |
+| 彻底退出 tmux 会话 | tmux 里 `Ctrl-C`（停服务）后 `exit` |
+
+## 62.4 token 的规则
+
+- 每次 `dsh web` 启动都会生成**新 token**，旧的立即作废。
+- token 在 URL 里，**换取 cookie 后即失效**（一次性）。
+- 所以：`authentication required` = 用了旧 token，或地址里压根没带 token。
+- 重启或换浏览器 → 从终端重新抄一条新的。
+
+## 62.5 故障排查
+
+| 现象 | 原因 | 处理 |
+|---|---|---|
+| `bind [127.0.0.1]:<DSH_PORT>: Permission denied` | Windows 本机 `<DSH_PORT>` 被 DSH 桌面版占用 | 用 `<LOCAL_PORT>` 作左侧端口（本手册即如此） |
+| `bind ... Address already in use` | 本机端口被占 | 左侧再换一个（如 `<LOCAL_PORT>`+1），浏览器同步改 |
+| `authentication required` | 没带 token / token 已失效 | 地址补 `?token=`，或重启服务拿新 token |
+| 页面一直转圈打不开 | 隧道窗口关了，或 Pi 上服务没跑 | 查 `netstat -ano \| findstr :<LOCAL_PORT>` 与 `ss -ltnp \| grep <DSH_PORT>` |
+| `403 Forbidden` | 地址填了 Pi 的公网 IP | 必须用 `127.0.0.1` |
+| 服务启动即退出 | 端口被占用 | Pi 上 `ss -ltnp \| grep <DSH_PORT>` 找到 PID 后 `kill <PID>` |
+| `MISSING_CREDENTIAL` | API key 没保存 | 设置 → 模型 → 重填 |
+| SSH 提示 `not known by any other names` | 首次连接 | 输入 `yes` 即可 |
+
+## 62.6 端口怎么改（原则）
+
+```powershell
+ssh -N -L <LOCAL_PORT>:127.0.0.1:<DSH_PORT> -p <PI_SSH_PORT> <PI_USER>@<ECS_PUBLIC_IP>
+#          ↑左边            ↑右边
+#       Windows 随便挑   必须等于 Pi 上的 --port
+```
+
+- 左边：Windows 任意空闲端口，改了浏览器跟着改；
+- 右边：必须与 Pi 上 `--port` 一致；
+- `-p <PI_SSH_PORT>`：SSH 服务端口，与上面两个无关。
+
+## 62.7 安全注意事项
+
+1. **不要**把 Pi 的 `<DSH_PORT>` 映射到公网。那条带 token 的 URL 就是全部凭据，拿到即可在 Pi 上执行命令、读写文件。
+2. `<PI_SSH_PORT>` 是公网暴露的 SSH：确保**只允许密钥登录**、关闭密码认证，建议装 `fail2ban`：
+
+   ```bash
+   sudo sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication no/' /etc/ssh/sshd_config
+   sudo systemctl restart ssh
+   sudo apt install -y fail2ban
+   ```
+
+3. token 不要贴到聊天群、截图里外发；泄漏了就重启服务换一个。
+4. 隧道用完关掉对应的 SSH 连接（PowerShell ② 或 MobaXterm 会话）即可；Pi 上的服务只监听 loopback，不影响安全。
+
+## 62.8 用 MobaXterm 建隧道（可选，省掉第 4 步）
+
+平时用 MobaXterm 连树莓派的话，可以让隧道**随会话自动建立**，不用再单独开一个 PowerShell 窗口。
+
+### 方式 A · 写进会话配置（一次配好，永久生效）
+
+1. 主界面 **Sessions** → 右键 `<PI_USER>@<ECS_PUBLIC_IP>` 会话 → **Edit session**
+2. 找到 **SSH tunneling**（在 Network settings / 高级设置区域，各版本位置略有差异，认 `Tunneling` 字样）
+3. 在 **Local port forwarding** 表格点 **+** 加一行：
+
+   | Local port | Remote server | Remote port |
+   |---|---|---|
+   | `<LOCAL_PORT>` | `127.0.0.1` | `<DSH_PORT>` |
+
+4. 点 **OK** 保存 → 双击打开会话，隧道自动带上
+
+### 方式 B · 顶部 Tunneling 按钮（临时开一条）
+
+1. 顶部工具栏点 **Tunneling**
+2. 选 **Local port forwarding**
+3. **SSH server** 选你的会话（`<PI_USER>@<ECS_PUBLIC_IP>:<PI_SSH_PORT>`）
+4. 填：Local port `<LOCAL_PORT>`、Remote server `127.0.0.1`、Remote port `<DSH_PORT>`
+5. 点 **Start**
+
+验证：
+
+```powershell
+netstat -ano | findstr :<LOCAL_PORT>
+```
+
+有 `LISTENING` 行即生效。
+
+### 哪些步骤能省
+
+| 原步骤 | 用 MobaXterm 后 |
+|---|---|
+| 第 1 步 · 连树莓派 | ✅ 保留（打开会话就是这一步） |
+| 第 2 步 · tmux 里启动 dsh | ✅ 保留 |
+| 第 3 步 · 抄 token | ✅ 保留 |
+| 第 4 步 · 另开 PowerShell 建隧道 | ❌ **省掉** |
+| 第 5 步 · 浏览器打开 | ✅ 保留 |
+| 第 6 步 · 首次配置 | ✅ 保留（只做一次） |
+
+窗口从 3 个减到 2 个：**MobaXterm 会话 + 浏览器**，也少输一次 SSH 密码。
+
+### 注意事项
+
+1. **隧道依赖会话连接**：MobaXterm 标签页或程序关掉，隧道就断。服务在 tmux 里不受影响，重连会话后隧道恢复，浏览器刷新即可（cookie 还在，不用再带 token）。
+2. `<LOCAL_PORT>` 被占就换一个（会话配置改一格，浏览器同步改）。
+3. MobaXterm 的本地转发默认只绑 `127.0.0.1`，保持默认，别改成 `0.0.0.0`。
+4. 左侧自带 **SFTP 面板**，编辑 Pi 上的 `cordis.patch.yml` 等配置可以直接拖拽，比 `nano` 方便。
+
+## 62.9 可选：开机自启（systemd）
+
+不想每次手动跑第 1–4 步（用 MobaXterm 则是第 1–3 步），可改为全局安装 + systemd 托管：
+
+```bash
+# Pi 上装一次
+npm i -g @deepseek-ai/dsh@<PI_DSH_VERSION>
+which dsh          # 记下绝对路径，例如 /usr/local/bin/dsh
+```
+
+新建 `~/.config/systemd/user/dsh.service`：
+
+```ini
+[Unit]
+Description=DeepSeek Harness Web
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/<PI_WORKDIR 的目录名>
+ExecStart=/usr/local/bin/dsh web --no-open --port <DSH_PORT>
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target
+```
+
+```bash
+systemctl --user daemon-reload
+systemctl --user enable --now dsh
+loginctl enable-linger <PI_USER>      # 登出后不停、开机自启
+journalctl --user -u dsh -n 30 --no-pager   # 从这里捞带 token 的 URL
+```
+
+注意：`WorkingDirectory` 就是 agent 的默认工作区根，别填 `/`。
+
+## 62.10 命令备查卡
+
+```powershell
+# Windows ①：登录
+ssh -p <PI_SSH_PORT> <PI_USER>@<ECS_PUBLIC_IP>
+
+# Windows ②：隧道（保持开启）
+ssh -N -L <LOCAL_PORT>:127.0.0.1:<DSH_PORT> -p <PI_SSH_PORT> <PI_USER>@<ECS_PUBLIC_IP>
+```
+
+```text
+# MobaXterm：省掉上面第 ② 项
+# SSH tunneling → Local port forwarding
+#   Local port <LOCAL_PORT> · Remote server 127.0.0.1 · Remote port <DSH_PORT>
+```
+
+```bash
+# 树莓派：启动
+tmux new -s dsh
+cd <PI_WORKDIR>
+npx @deepseek-ai/dsh web --no-open --port <DSH_PORT>
+# 复制 token URL → Ctrl-b 然后 d
+
+# 树莓派：查看 / 停止
+tmux attach -t dsh
+tmux kill-session -t dsh
+ss -ltnp | grep <DSH_PORT>
+```
+
+```text
+# 浏览器
+http://127.0.0.1:<LOCAL_PORT>/?token=<TOKEN>
+```
