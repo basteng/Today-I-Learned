@@ -277,6 +277,7 @@
   - [26. 304 channel MicroLED based CMOS transceiver IC with aggregate 1 Tbps and sub-pJ per bit capability](#26-304-channel-microled-based-cmos-transceiver-ic-with-aggregate-1-tbps-and-sub-pj-per-bit-capability)
   - [27. 20.8% Peak External Quantum Efficiency of Red (619 nm) InGaN/GaN MicroLEDs](#27-208-peak-external-quantum-efficiency-of-red-619-nm-ingangan-microleds)
   - [28. Scaling of GaN Micro-LEDs with a 2.75 GHz Bandwidth for High-Speed Optical Links](#28-scaling-of-gan-micro-leds-with-a-275-ghz-bandwidth-for-high-speed-optical-links)
+  - [29. Implantable neural chip with electrochemical sensing and optogenetic stimulation for monitoring of cholinergic pharmacological responses](#29-implantable-neural-chip-with-electrochemical-sensing-and-optogenetic-stimulation-for-monitoring-of-cholinergic-pharmacological-responses)
 
 链接不需要加<>，直接copy https链接
 
@@ -1368,3 +1369,7 @@ https://doi.org/10.1021/acsphotonics.6c01611
 ## 28. Scaling of GaN Micro-LEDs with a 2.75 GHz Bandwidth for High-Speed Optical Links
 
 https://doi.org/10.1109/LED.2026.3745737
+
+## 29. Implantable neural chip with electrochemical sensing and optogenetic stimulation for monitoring of cholinergic pharmacological responses
+
+https://doi.org/10.1016/j.device.2026.101329
