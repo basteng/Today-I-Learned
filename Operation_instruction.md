@@ -219,6 +219,7 @@
     - [Mac 重启后 / tmux 会话没了,从零恢复](#mac-重启后--tmux-会话没了从零恢复)
   - [六、出问题时怎么查](#六出问题时怎么查)
   - [七、两条硬注意事项](#七两条硬注意事项)
+  - [八、环境体检(2026-11-05 记录)](#八环境体检2026-11-05-记录)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -4507,9 +4508,10 @@ ss -ltnp | grep <DSH_PORT>
 http://127.0.0.1:<LOCAL_PORT>/?token=<TOKEN>
 ```
 
+
 # 63. 在 Windows 上用 Mac mini 的 DSH Web
 
-最后更新:2026-11-04 18:54
+最后更新:2026-11-05 19:10
 
 ## 一、这套东西是怎么连起来的
 
@@ -4520,7 +4522,7 @@ Windows 浏览器
 本机 SSH 隧道(open-mac-dsh.ps1)          ← 只绑 127.0.0.1,不对局域网暴露
    │  加密转发
    ▼
-Mac mini 192.168.0.103 的 127.0.0.1:3080
+Mac mini 192.168.0.111 的 127.0.0.1:3080
    │
    ▼
 macOS 上的 dsh web(pnpm dsh web,tmux 会话名 dsh)
@@ -4529,9 +4531,11 @@ macOS 上的 dsh web(pnpm dsh web,tmux 会话名 dsh)
 会话历史存在 Mac 的 ~/.dsh/sessions
 ```
 
-- **Mac 的地址**:`192.168.0.103` 和 `192.168.0.111` 是同一台机器(`WenbindeMac-mini.local`),SSH 端口 22,用户 `wenbinlv`,密钥免密。
-- **为什么必须走隧道**:Mac 上的 dsh web 只监听 `127.0.0.1:3080`,从局域网直接访问 `192.168.0.103:3080` 是打不开的。
-- **两个独立实例**:Windows 这台自己有一套 DSH;Mac 那套是另一个进程、另一份 `~/.dsh`。这个隧道只是让你用浏览器操作 Mac 那一套。
+- **Mac 的地址**:主机名 `WenbindeMac-mini.local`,SSH 端口 22,用户 `wenbinlv`,密钥免密。
+- **IP 会变**:2026-11-04 是 `192.168.0.103`,11-05 已变成 `192.168.0.111`(DHCP 重新分配)。
+  脚本会自动按 `.111 → .103 → 主机名` 顺序探测,谁通用谁,不用你改配置。
+- **为什么必须走隧道**:Mac 上的 dsh web 只监听 `127.0.0.1:3080`,从局域网直接访问 `192.168.0.111:3080` 打不开。
+- **两个独立实例**:Windows 这台自己有一套 DSH;Mac 那套是另一个进程、另一份 `~/.dsh`。隧道只是让你用浏览器操作 Mac 那一套。
 
 ## 二、日常怎么用(90% 的情况)
 
@@ -4539,7 +4543,7 @@ macOS 上的 dsh web(pnpm dsh web,tmux 会话名 dsh)
 
 直接访问:**http://127.0.0.1:3080/**
 
-不需要 token —— 之前那次带 token 的访问已经在浏览器里种了 cookie,有效期 30 天,重启 Mac 上的服务也不失效。
+不需要 token —— 之前带 token 那次已经在浏览器里种了 cookie,有效期 30 天,Mac 上服务重启也不失效。
 
 ### 场景 B:隧道没在(关机重开、会话结束、窗口关了)
 
@@ -4548,20 +4552,20 @@ cd D:\35_Deepseek_Harness
 powershell -ExecutionPolicy Bypass -File .\open-mac-dsh.ps1 -FetchToken
 ```
 
-它会自动:SSH 登录 Mac → 从 tmux 面板抓当前 token → 建隧道 → 3 秒后打开浏览器。
-窗口别关,关了隧道就断(断了浏览器就白屏)。
+它会自动:探测 Mac 地址 → SSH 登录 → 从 tmux 面板抓当前 token → 建隧道 → 3 秒后打开浏览器。
+窗口别关,关了隧道就断(浏览器随即白屏)。
 
 ### 场景 C:只想保持隧道,不自动开浏览器
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\open-mac-dsh.ps1
+powershell -ExecutionPolicy Bypass -File .\open-mac-dsh.ps1 -NoOpen
 ```
 
 然后自己开 `http://127.0.0.1:3080/`。
 
 ### 场景 D:换浏览器 / 清过缓存(最容易踩)
 
-新浏览器没有 cookie,裸地址会 401。用 `-FetchToken` 即可,它会带上当前 token:
+新浏览器没有 cookie,裸地址会 401。用 `-FetchToken` 即可:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\open-mac-dsh.ps1 -FetchToken
@@ -4573,24 +4577,28 @@ powershell -ExecutionPolicy Bypass -File .\open-mac-dsh.ps1 -FetchToken
 
 | 参数 | 默认值 | 作用 |
 |---|---|---|
-| `-FetchToken` | 关 | 自动从 Mac 抓当前 token(推荐每次新浏览器都用) |
+| `-FetchToken` | 关 | 自动从 Mac 抓当前 token 再打开(推荐) |
 | `-Token <str>` | 空 | 手动指定 token(不想自动抓时) |
+| `-NoOpen` | 关 | 只建隧道,不自动开浏览器 |
 | `-TmuxSession <名>` | `dsh` | Mac 上跑 dsh web 的 tmux 会话名 |
 | `-LocalPort <端口>` | `3080` | 本机监听端口 |
-| `-RemoteHost <地址>` | `192.168.0.103` | Mac 的 IP,`.111` 也行 |
+| `-RemoteHost <地址/数组>` | `.111 → .103 → WenbindeMac-mini.local` | 候选地址,按序探测 |
 | `-RemoteUser <用户>` | `wenbinlv` | 登录用户 |
 
 前提:本机要有 OpenSSH 客户端(Windows 10/11 自带),并且到 Mac 的 22 端口可达。
+
+**行为说明**:脚本先探测哪个地址能 ssh 通;抓 token 失败只告警不中断;隧道断开后会重新探测地址再重连。
+所以 Mac 睡眠、DHCP 换 IP、WiFi 抖动都能自己恢复 —— 只是断网期间浏览器白屏,恢复后刷新即可。
 
 ## 四、token 这件事(唯一需要理解的点)
 
 - token 是 **web 进程级凭据**,每次 `pnpm dsh web` 启动随机生成,**重启即换**。
 - 它只干一件事:**换一张 cookie**。换过之后,浏览器拿着 cookie 就能用 30 天。
-- 所以:**已经有 cookie 的浏览器不用管 token;只有新浏览器/清缓存才需要。**
+- 所以:**已有 cookie 的浏览器不用管 token;只有新浏览器/清缓存才需要。**
 - 手动抓当前 token(复制时注意别漏字符):
 
 ```powershell
-ssh wenbinlv@192.168.0.103 "tmux capture-pane -pt dsh -J | grep -o 'dsh web: http[^ ]*' | tail -1"
+ssh wenbinlv@192.168.0.111 "tmux capture-pane -pt dsh -J | grep -o 'dsh web: http[^ ]*' | tail -1"
 ```
 
 > `-J` 不能省。tmux 面板窄的时候启动行会折成两截,不加 `-J` 只能抓到半截 token,拿去请求必然 401。
@@ -4600,16 +4608,16 @@ ssh wenbinlv@192.168.0.103 "tmux capture-pane -pt dsh -J | grep -o 'dsh web: htt
 ### 看 dsh web 的日志
 
 ```bash
-ssh wenbinlv@192.168.0.103
+ssh wenbinlv@192.168.0.111
 tmux attach -t dsh        # 看完按 Ctrl+B 再按 D 脱离,别按 Ctrl+C
 ```
 
 ### 重启 dsh web(不丢会话历史)
 
 ```bash
-ssh wenbinlv@192.168.0.103 "tmux send-keys -t dsh C-c"          # 优雅停止,日志干净
-ssh wenbinlv@192.168.0.103 "tmux send-keys -t dsh 'pnpm dsh web' Enter"
-ssh wenbinlv@192.168.0.103 "tmux capture-pane -pt dsh | tail -5" # 看新打印的 URL
+ssh wenbinlv@192.168.0.111 "tmux send-keys -t dsh C-c"           # 优雅停止,日志干净
+ssh wenbinlv@192.168.0.111 "tmux send-keys -t dsh 'pnpm dsh web' Enter"
+ssh wenbinlv@192.168.0.111 "tmux capture-pane -pt dsh | tail -5"  # 看新打印的 URL
 ```
 
 不用重新构建 —— 构建产物(`pnpm run build`)还在,`pnpm dsh web` 只起服务,约 10 秒。
@@ -4617,25 +4625,36 @@ ssh wenbinlv@192.168.0.103 "tmux capture-pane -pt dsh | tail -5" # 看新打印�
 ### Mac 重启后 / tmux 会话没了,从零恢复
 
 ```bash
-ssh wenbinlv@192.168.0.103
+ssh wenbinlv@192.168.0.111
 cd ~/deepseek-harness
 tmux new -As dsh
 pnpm dsh web
 ```
 
-看到 `dsh web: http://127.0.0.1:3080/?token=...` 就起来了。如果提示产物缺失,先跑一次 `pnpm run build`(约 2 分钟)。
+看到 `dsh web: http://127.0.0.1:3080/?token=...` 就起来了。若提示产物缺失,先跑一次 `pnpm run build`(约 2 分钟)。
 
 ## 六、出问题时怎么查
 
 | 现象 | 原因 | 处理 |
 |---|---|---|
 | 页面提示 `authentication required; reopen the URL printed by dsh web` | 新浏览器没 cookie,或 token 已随重启失效 | 用 `-FetchToken` 重新打开 |
-| 脚本提示"本地 3080 已被占用" | 隧道已经在跑了 | 直接用浏览器访问,别重复启动 |
-| 浏览器白屏 / 转圈 | 隧道断了,或 Mac 上进程没了 | 先 `curl.exe -s -o NUL -w "%{http_code}" http://127.0.0.1:3080/` 看有没有响应(401/200 都算活着) |
-| 完全连不上(脚本里 ssh 报错) | Mac 没开机 / IP 变了 / 睡眠了 | `ssh wenbinlv@192.168.0.103 "echo ok"` 先验证;`.111` 再试一次 |
-| 脚本报"缺少右花括号"之类的解析错 | 文件丢了 UTF-8 BOM,中文注释被按 ANSI 读 | 给脚本加 `-ExecutionPolicy Bypass`;实在不行重新存成 UTF-8 with BOM |
+| 脚本提示"本地 3080 已被占用" | 隧道已经在跑 | 直接用浏览器访问,别重复启动 |
+| 浏览器白屏 / 转圈 | 隧道断了,或 Mac 上进程没了 | `curl.exe -s -o NUL -w "%{http_code}" http://127.0.0.1:3080/`,401/200 都算活着 |
+| ssh 报 `Connection timed out` | Mac 睡眠 / DHCP 换 IP / WiFi 抖动 | 脚本会自己重试;手动验证 `ssh wenbinlv@192.168.0.111 "echo ok"`,不行再试 `.103` |
+| **每 60 秒左右必断一次**,断完 5 秒又能连 | Mac 的休眠被设成了 **1 分钟**(`pmset` 里 `sleep 1`),空闲一分钟就整机睡眠,`womp` 再把它唤醒 | `sudo pmset -a sleep 0`,然后 `pmset -g \| grep sleep` 确认是 `sleep 0`。这是 2026-11-05 排了很久才定位到的根因 |
+| 脚本报"缺少右花括号"之类解析错 | 文件丢了 UTF-8 BOM,中文注释被按 ANSI 读 | 用 `-ExecutionPolicy Bypass`;或把脚本另存为 UTF-8 with BOM |
 
 ## 七、两条硬注意事项
 
-1. **token 等于登录权**。别把它贴到公开地方;隧道只绑 `127.0.0.1`,本机以外访问不到。
-2. **Mac 数据盘只剩 13 GB / 228 GB(94% 已用)**。装模型、跑构建、攒会话历史都会吃空间,真当主力机之前先清一清。
+1. **token 等于登录权**。别贴到公开地方;隧道只绑 `127.0.0.1`,本机以外访问不到。
+2. **Mac 数据盘只剩 13 GB / 228 GB(94% 已用)**。装模型、跑构建、攒会话历史都吃空间,当主力机之前先清一清。
+
+## 八、环境体检(2026-11-05 记录)
+
+| 项 | 状态 | 建议 |
+|---|---|---|
+| Mac 休眠 | `sleep 1`(1 分钟)→ **已改 `sleep 0`** | 已解决;这是"每 60 秒断一次"的真凶 |
+| 网卡 | 双网卡同网段:以太网 `192.168.0.111` + Wi-Fi `192.168.0.103` | 建议只留一条(关 Wi-Fi),避免回包走另一条腿 |
+| 以太网速率 | `100baseTX`(千兆机跑成百兆) | 多半是网线只通了 2 对,换线后应显示 `1000baseT` |
+| 地址 | `.111` 在某些时刻 ARP 指向别的 MAC | 建议路由器里做 DHCP 保留,或设池外静态 IP |
+| IP 变化 | 11-04 是 `.103`,11-05 变成 `.111` | 脚本已自动探测,无需改配置 |
