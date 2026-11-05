@@ -278,6 +278,9 @@
   - [27. 20.8% Peak External Quantum Efficiency of Red (619 nm) InGaN/GaN MicroLEDs](#27-208-peak-external-quantum-efficiency-of-red-619-nm-ingangan-microleds)
   - [28. Scaling of GaN Micro-LEDs with a 2.75 GHz Bandwidth for High-Speed Optical Links](#28-scaling-of-gan-micro-leds-with-a-275-ghz-bandwidth-for-high-speed-optical-links)
   - [29. Implantable neural chip with electrochemical sensing and optogenetic stimulation for monitoring of cholinergic pharmacological responses](#29-implantable-neural-chip-with-electrochemical-sensing-and-optogenetic-stimulation-for-monitoring-of-cholinergic-pharmacological-responses)
+  - [30. Silicon Photonics: From Datacom Toward Emerging Applications: (Invited)](#30-silicon-photonics-from-datacom-toward-emerging-applications-invited)
+  - [31. Quantum Barrier Engineering Enables Carrier Redistribution for High-Efficiency Green InGaN Micro-LEDs at Reduced Operating Current Density](#31-quantum-barrier-engineering-enables-carrier-redistribution-for-high-efficiency-green-ingan-micro-leds-at-reduced-operating-current-density)
+  - [32. High-Performance C-Plane GaN-Based Superluminescent Diodes Enabled by Tapered Waveguide Engineering for Multifunctional Light Sources](#32-high-performance-c-plane-gan-based-superluminescent-diodes-enabled-by-tapered-waveguide-engineering-for-multifunctional-light-sources)
 
 链接不需要加<>，直接copy https链接
 
@@ -1373,3 +1376,15 @@ https://doi.org/10.1109/LED.2026.3745737
 ## 29. Implantable neural chip with electrochemical sensing and optogenetic stimulation for monitoring of cholinergic pharmacological responses
 
 https://doi.org/10.1016/j.device.2026.101329
+
+## 30. Silicon Photonics: From Datacom Toward Emerging Applications: (Invited)
+
+https://doi.org/10.23919/MWP69134.2026.11734567
+
+## 31. Quantum Barrier Engineering Enables Carrier Redistribution for High-Efficiency Green InGaN Micro-LEDs at Reduced Operating Current Density
+
+https://doi.org/10.1021/acsphotonics.6c01862
+
+## 32. High-Performance C-Plane GaN-Based Superluminescent Diodes Enabled by Tapered Waveguide Engineering for Multifunctional Light Sources
+
+https://ieeexplore.ieee.org/abstract/document/11743084
