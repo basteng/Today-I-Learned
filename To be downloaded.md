@@ -281,6 +281,7 @@
   - [30. Silicon Photonics: From Datacom Toward Emerging Applications: (Invited)](#30-silicon-photonics-from-datacom-toward-emerging-applications-invited)
   - [31. Quantum Barrier Engineering Enables Carrier Redistribution for High-Efficiency Green InGaN Micro-LEDs at Reduced Operating Current Density](#31-quantum-barrier-engineering-enables-carrier-redistribution-for-high-efficiency-green-ingan-micro-leds-at-reduced-operating-current-density)
   - [32. High-Performance C-Plane GaN-Based Superluminescent Diodes Enabled by Tapered Waveguide Engineering for Multifunctional Light Sources](#32-high-performance-c-plane-gan-based-superluminescent-diodes-enabled-by-tapered-waveguide-engineering-for-multifunctional-light-sources)
+  - [33. Path-robust quantum-well-width responses and wavelength-dependent wide-well efficiency recovery in InGaN laser diodes](#33-path-robust-quantum-well-width-responses-and-wavelength-dependent-wide-well-efficiency-recovery-in-ingan-laser-diodes)
 
 链接不需要加<>，直接copy https链接
 
@@ -1388,3 +1389,7 @@ https://doi.org/10.1021/acsphotonics.6c01862
 ## 32. High-Performance C-Plane GaN-Based Superluminescent Diodes Enabled by Tapered Waveguide Engineering for Multifunctional Light Sources
 
 https://ieeexplore.ieee.org/abstract/document/11743084
+
+## 33. Path-robust quantum-well-width responses and wavelength-dependent wide-well efficiency recovery in InGaN laser diodes
+
+https://iopscience.iop.org/article/10.1088/1674-1056/aebeb1/meta
