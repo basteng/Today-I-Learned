@@ -282,6 +282,7 @@
   - [31. Quantum Barrier Engineering Enables Carrier Redistribution for High-Efficiency Green InGaN Micro-LEDs at Reduced Operating Current Density](#31-quantum-barrier-engineering-enables-carrier-redistribution-for-high-efficiency-green-ingan-micro-leds-at-reduced-operating-current-density)
   - [32. High-Performance C-Plane GaN-Based Superluminescent Diodes Enabled by Tapered Waveguide Engineering for Multifunctional Light Sources](#32-high-performance-c-plane-gan-based-superluminescent-diodes-enabled-by-tapered-waveguide-engineering-for-multifunctional-light-sources)
   - [33. Path-robust quantum-well-width responses and wavelength-dependent wide-well efficiency recovery in InGaN laser diodes](#33-path-robust-quantum-well-width-responses-and-wavelength-dependent-wide-well-efficiency-recovery-in-ingan-laser-diodes)
+  - [34. Revealing luminescence mechanisms in red InGaN micro-LEDs via spatially resolved, temperature- and current-dependent electroluminescence](#34-revealing-luminescence-mechanisms-in-red-ingan-micro-leds-via-spatially-resolved-temperature--and-current-dependent-electroluminescence)
 
 链接不需要加<>，直接copy https链接
 
@@ -1393,3 +1394,7 @@ https://ieeexplore.ieee.org/abstract/document/11743084
 ## 33. Path-robust quantum-well-width responses and wavelength-dependent wide-well efficiency recovery in InGaN laser diodes
 
 https://iopscience.iop.org/article/10.1088/1674-1056/aebeb1/meta
+
+## 34. Revealing luminescence mechanisms in red InGaN micro-LEDs via spatially resolved, temperature- and current-dependent electroluminescence
+
+https://doi.org/10.1063/5.0350584
